@@ -77,7 +77,7 @@
 
 
 函数声明：为了让函数能够被其他位置的代码调用，必须给他指定一个名称，也就是命名函数；函数声明是提前的，也就意味着函数可以在被声明之前的位置被调用。例如声明">
-<meta property="og:updated_time" content="2016-03-16T17:04:37.336Z">
+<meta property="og:updated_time" content="2016-03-16T17:09:39.261Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="理解JavaScript函数">
 <meta name="twitter:description" content="-【知识点】
@@ -377,6 +377,7 @@
 <ul>
 <li><code>函数声明</code>：为了让函数能够被其他位置的代码调用，必须给他指定一个名称，也就是命名函数；函数声明是提前的，也就意味着函数可以在被声明之前的位置被调用。例如声明一个名为<code>area()</code>的函数：</li>
 </ul>
+<a id="more"></a>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> size = area(<span class="number">10</span>,<span class="number">15</span>);</span><br><span class="line"><span class="built_in">console</span>.log(size);<span class="comment">//输出150，调用成功</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">area</span>(<span class="params">w,h</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> w*h;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <ul>
 <li><code>函数表达式</code>： 如果将函数放在表达式的位置，那他就看作为表达式。函数表达式中经常省略函数名，即匿名函数；在函数表达式之前是不能调用此函数的，上面的例子改为如下，情况就有所不同了：</li>
