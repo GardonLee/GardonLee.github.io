@@ -77,7 +77,7 @@
 
 
 函数声明：为了让函数能够被其他位置的代码调用，必须给他指定一个名称，也就是命名函数；函数的定义是提前的，也就意味着函数可以在被声明之前的位置被调用。例如声">
-<meta property="og:updated_time" content="2016-03-16T23:53:18.486Z">
+<meta property="og:updated_time" content="2016-03-17T05:13:07.250Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="理解JavaScript函数">
 <meta name="twitter:description" content="-【知识点】
@@ -396,7 +396,20 @@
 </li>
 </ul>
 <h4 id="3-F：arguments-是什么？"><a href="#3-F：arguments-是什么？" class="headerlink" title="3. -F：arguments 是什么？"></a><strong>3. -F：arguments 是什么？</strong></h4><p><strong>-Q:</strong></p>
-<h4 id="4-F：函数的重载怎样实现？"><a href="#4-F：函数的重载怎样实现？" class="headerlink" title="4. -F：函数的重载怎样实现？"></a><strong>4. -F：函数的重载怎样实现？</strong></h4><h4 id="5-F：立即执行函数表达式是什么？有什么作用"><a href="#5-F：立即执行函数表达式是什么？有什么作用" class="headerlink" title="5. -F：立即执行函数表达式是什么？有什么作用?"></a><strong>5. -F：立即执行函数表达式是什么？有什么作用?</strong></h4><h4 id="6-F：什么是函数的作用域链"><a href="#6-F：什么是函数的作用域链" class="headerlink" title="6. -F：什么是函数的作用域链?"></a><strong>6. -F：什么是函数的作用域链?</strong></h4><hr>
+<blockquote>
+<p><code>arguments</code>是函数的<code>类数组对象</code>，是当前函数的一个内置属性:</p>
+</blockquote>
+<ul>
+<li><code>ECMAScript</code>函数的参数在内部是用一个数组来表示的，在函数体内可以通过<code>arguments</code>对象来访问这个数组,从而获得传入函数的每一个参数。例如<code>arguments[0]</code>是传入的第一个参数；</li>
+<li><code>arguments</code>对象的长度是由实参个数而不是形参个数决定的,就是说使用<code>length</code>属性来确定传入的参数的个数。</li>
+</ul>
+<h4 id="4-F：函数的重载怎样实现？"><a href="#4-F：函数的重载怎样实现？" class="headerlink" title="4. -F：函数的重载怎样实现？"></a><strong>4. -F：函数的重载怎样实现？</strong></h4><blockquote>
+<p>函数重载其他面向对象语言实现多态的手段之一，我们可以为一个函数编写两个定义，前提是只要这两个函数签名不同（参数、类型或顺序不同），就可以实现函数重载。然而<code>JavaScript</code>函数从语言角度来说是没有重载的，这一点从前面的函数声明和调用特性可以看出。</p>
+</blockquote>
+<ul>
+<li>难道说JavaScript注定和重载无缘了？莫急…JavaScript可以通过自身的属性去模拟函数重载,法宝一：<code>if</code>+<code>arguments.length</code>:</li>
+</ul>
+<h4 id="5-F：立即执行函数表达式是什么？有什么作用"><a href="#5-F：立即执行函数表达式是什么？有什么作用" class="headerlink" title="5. -F：立即执行函数表达式是什么？有什么作用?"></a><strong>5. -F：立即执行函数表达式是什么？有什么作用?</strong></h4><h4 id="6-F：什么是函数的作用域链"><a href="#6-F：什么是函数的作用域链" class="headerlink" title="6. -F：什么是函数的作用域链?"></a><strong>6. -F：什么是函数的作用域链?</strong></h4><hr>
 <h3 id="【练习】"><a href="#【练习】" class="headerlink" title="-【练习】"></a>-【练习】</h3><h4 id="1-以下代码输出什么？"><a href="#1-以下代码输出什么？" class="headerlink" title="1.以下代码输出什么？"></a><strong>1.以下代码输出什么？</strong></h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getInfo</span>(<span class="params">name, age, sex</span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'name:'</span>,name);</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'age:'</span>, age);</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'sex:'</span>, sex);</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="built_in">arguments</span>);</span><br><span class="line">    <span class="built_in">arguments</span>[<span class="number">0</span>] = <span class="string">'valley'</span>;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'name'</span>, name);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">getInfo(<span class="string">'hunger'</span>, <span class="number">28</span>, <span class="string">'男'</span>);</span><br><span class="line">getInfo(<span class="string">'hunger'</span>, <span class="number">28</span>);</span><br><span class="line">getInfo(<span class="string">'男'</span>);</span><br></pre></td></tr></table></figure>
 <h4 id="2-写一个函数，返回参数的平方和？如"><a href="#2-写一个函数，返回参数的平方和？如" class="headerlink" title="2.写一个函数，返回参数的平方和？如:"></a><strong>2.写一个函数，返回参数的平方和？如:</strong></h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sumOfSquares</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">&#125;</span><br><span class="line">sumOfSquares(<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>);   <span class="comment">// 29</span></span><br><span class="line">sumOfSquares(<span class="number">1</span>,<span class="number">3</span>);   <span class="comment">// 10</span></span><br></pre></td></tr></table></figure>
 <h4 id="3-如下代码的输出？为什么"><a href="#3-如下代码的输出？为什么" class="headerlink" title="3..如下代码的输出？为什么?"></a><strong>3..如下代码的输出？为什么?</strong></h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(a);</span><br><span class="line"><span class="keyword">var</span> a = <span class="number">1</span>;</span><br><span class="line"><span class="built_in">console</span>.log(b);</span><br></pre></td></tr></table></figure>
@@ -414,6 +427,7 @@
 <li><a href="http://www.jb51.net/article/57888.htm" target="_blank" rel="external">JavaScript变量声明详解</a></li>
 <li><a href="http://www.cnblogs.com/silentjesse/p/4024536.html" target="_blank" rel="external">javascript变量声明提升(hoisting)</a></li>
 <li><a href="http://www.bootcss.com/article/variable-and-function-hoisting-in-javascript/" target="_blank" rel="external">Bootstrap中文网</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/arguments" target="_blank" rel="external">JavaScript|MDN</a></li>
 </ul>
 </blockquote>
 
