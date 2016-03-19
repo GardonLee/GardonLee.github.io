@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://licao404.com/"/>
-  <updated>2016-03-19T12:21:15.320Z</updated>
+  <updated>2016-03-19T12:47:21.116Z</updated>
   <id>http://licao404.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://licao404.com/2016/03/19/Hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E7%AC%94%E8%AE%B0/"/>
     <id>http://licao404.com/2016/03/19/Hexo常用命令笔记/</id>
     <published>2016-03-19T09:39:36.000Z</published>
-    <updated>2016-03-19T12:21:15.320Z</updated>
+    <updated>2016-03-19T12:47:21.116Z</updated>
     
     <content type="html">&lt;blockquote class=&quot;blockquote-center&quot;&gt;此文收集常用Hexo命令，欢迎补充，持续更新…&lt;/blockquote&gt;
 
@@ -64,9 +64,7 @@
 &lt;li&gt;&lt;p&gt;&lt;code&gt;hexo new [layout] &amp;lt;title&amp;gt;&lt;/code&gt; #新建布局名为layout的文章&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;code&gt;hexo new photo &amp;quot;My Gallery&amp;quot;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;hexo new &amp;quot;Hello World&amp;quot; --lang tw&lt;/code&gt; #设置文章显示语言&lt;table&gt;&lt;br&gt;  &lt;tr&gt;&lt;br&gt;      &lt;th&gt;变量&lt;/th&gt;&lt;br&gt;      &lt;th&gt;描述&lt;/th&gt;&lt;br&gt;  &lt;/tr&gt;&lt;br&gt;  &lt;tr&gt;&lt;br&gt;      &lt;td&gt;layout&lt;/td&gt;&lt;br&gt;      &lt;td&gt;布局&lt;/td&gt;&lt;br&gt;  &lt;/tr&gt;&lt;br&gt;  &lt;tr&gt;&lt;br&gt;      &lt;td&gt;title&lt;/td&gt;&lt;br&gt;      &lt;td&gt;标题&lt;/td&gt;&lt;br&gt;  &lt;/tr&gt;&lt;br&gt;  &lt;tr&gt;&lt;br&gt;      &lt;td&gt;date&lt;/td&gt;&lt;br&gt;      &lt;td&gt;文件建立日期&lt;/td&gt;&lt;br&gt;  &lt;/tr&gt;&lt;br&gt;&lt;/table&gt;
-
-&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hexo new &amp;quot;Hello World&amp;quot; --lang tw&lt;/code&gt; #设置文章显示语言&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&quot;设置文章摘要&quot;&gt;&lt;a href=&quot;#设置文章摘要&quot; class=&quot;headerlink&quot; title=&quot;设置文章摘要&quot;&gt;&lt;/a&gt;设置文章摘要&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;以上是文章摘要&lt;br&gt;&lt;code&gt;&amp;lt;!--more--&amp;gt;&lt;/code&gt;&lt;br&gt;以下是余下全文&lt;/p&gt;
