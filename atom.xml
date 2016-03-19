@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://licao404.com/"/>
-  <updated>2016-03-19T12:13:35.821Z</updated>
+  <updated>2016-03-19T12:17:04.662Z</updated>
   <id>http://licao404.com/</id>
   
   <author>
@@ -20,14 +20,14 @@
     <link href="http://licao404.com/2016/03/19/Hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E7%AC%94%E8%AE%B0/"/>
     <id>http://licao404.com/2016/03/19/Hexo常用命令笔记/</id>
     <published>2016-03-19T09:39:36.000Z</published>
-    <updated>2016-03-19T12:13:35.821Z</updated>
+    <updated>2016-03-19T12:17:04.662Z</updated>
     
     <content type="html">&lt;blockquote class=&quot;blockquote-center&quot;&gt;此文收集常用Hexo命令，欢迎补充，持续更新…&lt;/blockquote&gt;
 
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;h2 id=&quot;Hexo准备&quot;&gt;&lt;a href=&quot;#Hexo准备&quot; class=&quot;headerlink&quot; title=&quot;Hexo准备&quot;&gt;&lt;/a&gt;Hexo准备&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;&lt;code&gt;npm install hexo -g&lt;/code&gt; #安装&lt;br&gt;&lt;code&gt;npm update hexo -g&lt;/code&gt; #升级&lt;br&gt;&lt;code&gt;hexo init&lt;/code&gt; #初始化  &lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;h2 id=&quot;简写形式&quot;&gt;&lt;a href=&quot;#简写形式&quot; class=&quot;headerlink&quot; title=&quot;简写形式&quot;&gt;&lt;/a&gt;简写形式&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;hexo n &amp;quot;我的博客&amp;quot;&lt;/code&gt; == &lt;code&gt;hexo new &amp;quot;我的博客&amp;quot;&lt;/code&gt; #新建文章&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;hexo p&lt;/code&gt; == &lt;code&gt;hexo publish&lt;/code&gt;&lt;/li&gt;
@@ -80,10 +80,6 @@
     <summary type="html">
     
       &lt;blockquote class=&quot;blockquote-center&quot;&gt;此文收集常用Hexo命令，欢迎补充，持续更新…&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;Hexo准备&quot;&gt;&lt;a href=&quot;#Hexo准备&quot; class=&quot;headerlink&quot; title=&quot;Hexo准备&quot;&gt;&lt;/a&gt;Hexo准备&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;npm install hexo -g&lt;/code&gt; #安装&lt;br&gt;&lt;code&gt;npm update hexo -g&lt;/code&gt; #升级&lt;br&gt;&lt;code&gt;hexo init&lt;/code&gt; #初始化  &lt;/p&gt;
-&lt;/blockquote&gt;
     
     </summary>
     
@@ -183,14 +179,15 @@
     <link href="http://licao404.com/2016/03/16/%E7%90%86%E8%A7%A3JavaScript%E5%87%BD%E6%95%B0/"/>
     <id>http://licao404.com/2016/03/16/理解JavaScript函数/</id>
     <published>2016-03-16T13:51:40.000Z</published>
-    <updated>2016-03-19T09:37:43.797Z</updated>
+    <updated>2016-03-19T12:18:22.652Z</updated>
     
-    <content type="html">&lt;h2 id=&quot;【知识点】&quot;&gt;&lt;a href=&quot;#【知识点】&quot; class=&quot;headerlink&quot; title=&quot;-【知识点】&quot;&gt;&lt;/a&gt;-【知识点】&lt;/h2&gt;&lt;h3 id=&quot;1-F：函数声明和函数表达式有什么区别？&quot;&gt;&lt;a href=&quot;#1-F：函数声明和函数表达式有什么区别？&quot; class=&quot;headerlink&quot; title=&quot;1. -F：函数声明和函数表达式有什么区别？&quot;&gt;&lt;/a&gt;&lt;strong&gt;1. -F：函数声明和函数表达式有什么区别？&lt;/strong&gt;&lt;/h3&gt;&lt;h3 id=&quot;Q：&quot;&gt;&lt;a href=&quot;#Q：&quot; class=&quot;headerlink&quot; title=&quot;-Q：&quot;&gt;&lt;/a&gt;&lt;strong&gt;-Q：&lt;/strong&gt;&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;先自我回忆一下编程语言中函数的广泛&lt;code&gt;概念&lt;/code&gt;：函数是指可以将一系列语句组成一个整体（&lt;code&gt;打包&lt;/code&gt;在一个代码段中），以执行某一特定任务。如果在不同的地方有些任务要重复执行，则可以&lt;code&gt;重用函数&lt;/code&gt;。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+    <content type="html">&lt;h2 id=&quot;【知识点】&quot;&gt;&lt;a href=&quot;#【知识点】&quot; class=&quot;headerlink&quot; title=&quot;-【知识点】&quot;&gt;&lt;/a&gt;-【知识点】&lt;/h2&gt;&lt;h3 id=&quot;1-F：函数声明和函数表达式有什么区别？&quot;&gt;&lt;a href=&quot;#1-F：函数声明和函数表达式有什么区别？&quot; class=&quot;headerlink&quot; title=&quot;1. -F：函数声明和函数表达式有什么区别？&quot;&gt;&lt;/a&gt;&lt;strong&gt;1. -F：函数声明和函数表达式有什么区别？&lt;/strong&gt;&lt;/h3&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h3 id=&quot;Q：&quot;&gt;&lt;a href=&quot;#Q：&quot; class=&quot;headerlink&quot; title=&quot;-Q：&quot;&gt;&lt;/a&gt;&lt;strong&gt;-Q：&lt;/strong&gt;&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;先自我回忆一下编程语言中函数的广泛&lt;code&gt;概念&lt;/code&gt;：函数是指可以将一系列语句组成一个整体（&lt;code&gt;打包&lt;/code&gt;在一个代码段中），以执行某一特定任务。如果在不同的地方有些任务要重复执行，则可以&lt;code&gt;重用函数&lt;/code&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;函数声明&lt;/code&gt;：为了让函数能够被其他位置的代码调用，必须给他指定一个名称，也就是命名函数；函数的定义是提前的，也就意味着函数可以在被声明之前的位置被调用。例如声明一个名为&lt;code&gt;area()&lt;/code&gt;的函数：&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/blockquote&gt;
 &lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; size = area(&lt;span class=&quot;number&quot;&gt;10&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;15&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(size);&lt;span class=&quot;comment&quot;&gt;//输出150，调用成功&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;area&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;w,h&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; w*h;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;函数表达式&lt;/code&gt;： 如果将函数放在表达式的位置，那他就看作为表达式。函数表达式中经常省略函数名，即匿名函数；在函数表达式之前是不能调用此函数的，上面的例子改为如下，情况就有所不同了：&lt;/li&gt;
@@ -279,8 +276,7 @@
     
     <summary type="html">
     
-      &lt;h2 id=&quot;【知识点】&quot;&gt;&lt;a href=&quot;#【知识点】&quot; class=&quot;headerlink&quot; title=&quot;-【知识点】&quot;&gt;&lt;/a&gt;-【知识点】&lt;/h2&gt;&lt;h3 id=&quot;1-F：函数声明和函数表达式有什么区别？&quot;&gt;&lt;a href=&quot;#1-F：函数声明和函数表达式有什么区别？&quot; class=&quot;headerlink&quot; title=&quot;1. -F：函数声明和函数表达式有什么区别？&quot;&gt;&lt;/a&gt;&lt;strong&gt;1. -F：函数声明和函数表达式有什么区别？&lt;/strong&gt;&lt;/h3&gt;&lt;h3 id=&quot;Q：&quot;&gt;&lt;a href=&quot;#Q：&quot; class=&quot;headerlink&quot; title=&quot;-Q：&quot;&gt;&lt;/a&gt;&lt;strong&gt;-Q：&lt;/strong&gt;&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;先自我回忆一下编程语言中函数的广泛&lt;code&gt;概念&lt;/code&gt;：函数是指可以将一系列语句组成一个整体（&lt;code&gt;打包&lt;/code&gt;在一个代码段中），以执行某一特定任务。如果在不同的地方有些任务要重复执行，则可以&lt;code&gt;重用函数&lt;/code&gt;。&lt;br&gt;
+      &lt;h2 id=&quot;【知识点】&quot;&gt;&lt;a href=&quot;#【知识点】&quot; class=&quot;headerlink&quot; title=&quot;-【知识点】&quot;&gt;&lt;/a&gt;-【知识点】&lt;/h2&gt;&lt;h3 id=&quot;1-F：函数声明和函数表达式有什么区别？&quot;&gt;&lt;a href=&quot;#1-F：函数声明和函数表达式有什么区别？&quot; class=&quot;headerlink&quot; title=&quot;1. -F：函数声明和函数表达式有什么区别？&quot;&gt;&lt;/a&gt;&lt;strong&gt;1. -F：函数声明和函数表达式有什么区别？&lt;/strong&gt;&lt;/h3&gt;
     
     </summary>
     
