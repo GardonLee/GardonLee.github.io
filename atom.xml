@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://licao404.com/"/>
-  <updated>2016-03-19T12:47:21.116Z</updated>
+  <updated>2016-03-19T17:21:56.757Z</updated>
   <id>http://licao404.com/</id>
   
   <author>
@@ -14,6 +14,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>鲜花烂漫时</title>
+    <link href="http://licao404.com/2016/03/20/%E9%B2%9C%E8%8A%B1%E7%83%82%E6%BC%AB%E6%97%B6/"/>
+    <id>http://licao404.com/2016/03/20/鲜花烂漫时/</id>
+    <published>2016-03-19T16:00:08.000Z</published>
+    <updated>2016-03-19T17:21:56.757Z</updated>
+    
+    <content type="html">&lt;div class=&quot;group-picture&quot;&gt;&lt;div class=&quot;group-picture-container&quot;&gt;&lt;div class=&quot;group-picture-row&quot;&gt;&lt;div class=&quot;group-picture-column&quot; style=&quot;width: 100%;&quot;&gt;&lt;img src=&quot;http://7xrvo9.com1.z0.glb.clouddn.com/0320%2F2016-03-20%2012.19.57%201.jpg&quot; alt=&quot;&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;group-picture-row&quot;&gt;&lt;div class=&quot;group-picture-column&quot; style=&quot;width: 50%;&quot;&gt;&lt;img src=&quot;http://7xrvo9.com1.z0.glb.clouddn.com/0320%2F2016-03-20%2012.24.13%201.jpg&quot; alt=&quot;&quot;&gt;&lt;/div&gt;&lt;div class=&quot;group-picture-column&quot; style=&quot;width: 50%;&quot;&gt;&lt;img src=&quot;http://7xrvo9.com1.z0.glb.clouddn.com/0320%2F2016-03-20%2012.28.55%201.jpg&quot; alt=&quot;&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;div class=&quot;group-picture&quot;&gt;&lt;div class=&quot;group-picture-container&quot;&gt;&lt;div class=&quot;group-picture-row&quot;&gt;&lt;div class=&quot;group-picture-column&quot; style=&quot;widt
+    
+    </summary>
+    
+      <category term="随想" scheme="http://licao404.com/categories/%E9%9A%8F%E6%83%B3/"/>
+    
+      <category term="摄影" scheme="http://licao404.com/categories/%E9%9A%8F%E6%83%B3/%E6%91%84%E5%BD%B1/"/>
+    
+    
+      <category term="杂谈" scheme="http://licao404.com/tags/%E6%9D%82%E8%B0%88/"/>
+    
+      <category term="看看" scheme="http://licao404.com/tags/%E7%9C%8B%E7%9C%8B/"/>
+    
+      <category term="随手拍" scheme="http://licao404.com/tags/%E9%9A%8F%E6%89%8B%E6%8B%8D/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo常用命令收集</title>
