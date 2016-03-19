@@ -4,7 +4,7 @@
     
   <url>
     <loc>http://licao404.com/2016/03/19/JavaScript%E6%95%B0%E7%BB%84-%E5%AD%97%E7%AC%A6%E4%B8%B2-%E6%95%B0%E5%AD%A6%E5%87%BD%E6%95%B0/</loc>
-    <lastmod>2016-03-19T09:24:50.771Z</lastmod>
+    <lastmod>2016-03-19T09:29:18.431Z</lastmod>
     <data>
         <display>
         <title>JavaScript数组-字符串-数学函数</title>
@@ -15,7 +15,10 @@
          
            
              
-              <breadCrumb title="编程学习，前端基础" url="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0%EF%BC%8C%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/"/>
+              <breadCrumb title="编程学习" url="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/"/>
+          
+             
+              <breadCrumb title="前端基础" url="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/"/>
           
         </display>
     </data>
