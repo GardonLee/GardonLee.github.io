@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://licao404.com/"/>
-  <updated>2016-03-19T12:02:29.294Z</updated>
+  <updated>2016-03-19T12:13:35.821Z</updated>
   <id>http://licao404.com/</id>
   
   <author>
@@ -20,12 +20,14 @@
     <link href="http://licao404.com/2016/03/19/Hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E7%AC%94%E8%AE%B0/"/>
     <id>http://licao404.com/2016/03/19/Hexo常用命令笔记/</id>
     <published>2016-03-19T09:39:36.000Z</published>
-    <updated>2016-03-19T12:02:29.294Z</updated>
+    <updated>2016-03-19T12:13:35.821Z</updated>
     
-    <content type="html">&lt;blockquote class=&quot;blockquote-center&quot;&gt;此文收集Hexo命令，欢迎补充，持续更新…&lt;/blockquote&gt;
+    <content type="html">&lt;blockquote class=&quot;blockquote-center&quot;&gt;此文收集常用Hexo命令，欢迎补充，持续更新…&lt;/blockquote&gt;
 
 &lt;h2 id=&quot;Hexo准备&quot;&gt;&lt;a href=&quot;#Hexo准备&quot; class=&quot;headerlink&quot; title=&quot;Hexo准备&quot;&gt;&lt;/a&gt;Hexo准备&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;npm install hexo -g&lt;/code&gt; #安装&lt;br&gt;&lt;code&gt;npm update hexo -g&lt;/code&gt; #升级&lt;br&gt;&lt;code&gt;hexo init&lt;/code&gt; #初始化&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;npm install hexo -g&lt;/code&gt; #安装&lt;br&gt;&lt;code&gt;npm update hexo -g&lt;/code&gt; #升级&lt;br&gt;&lt;code&gt;hexo init&lt;/code&gt; #初始化  &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;h2 id=&quot;简写形式&quot;&gt;&lt;a href=&quot;#简写形式&quot; class=&quot;headerlink&quot; title=&quot;简写形式&quot;&gt;&lt;/a&gt;简写形式&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;hexo n &amp;quot;我的博客&amp;quot;&lt;/code&gt; == &lt;code&gt;hexo new &amp;quot;我的博客&amp;quot;&lt;/code&gt; #新建文章&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;hexo p&lt;/code&gt; == &lt;code&gt;hexo publish&lt;/code&gt;&lt;/li&gt;
@@ -33,7 +35,6 @@
 &lt;li&gt;&lt;code&gt;hexo s&lt;/code&gt; == &lt;code&gt;hexo server&lt;/code&gt; #启动服务预览&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;hexo d&lt;/code&gt; == &lt;code&gt;hexo deploy&lt;/code&gt;#部署&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/blockquote&gt;
 &lt;h2 id=&quot;服务器相关&quot;&gt;&lt;a href=&quot;#服务器相关&quot; class=&quot;headerlink&quot; title=&quot;服务器相关&quot;&gt;&lt;/a&gt;服务器相关&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;hexo clean&lt;/code&gt; #清除缓存 网页正常情况下可以忽略此条命令&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;hexo g&lt;/code&gt; #生成静态网页&lt;/li&gt;
@@ -47,14 +48,8 @@
 &lt;li&gt;&lt;code&gt;hexo generate --watch&lt;/code&gt; #监视文件变动&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&quot;完成后部署&quot;&gt;&lt;a href=&quot;#完成后部署&quot; class=&quot;headerlink&quot; title=&quot;完成后部署&quot;&gt;&lt;/a&gt;完成后部署&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;以下两条命令作用相同：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;hexo generate --deploy&lt;/code&gt;&lt;br&gt;   &lt;code&gt;hexo deploy --generate&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;常用复合命令：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;hexo deploy -g&lt;/code&gt;&lt;br&gt;   &lt;code&gt;hexo server -g&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;以下两条命令作用相同：&lt;br&gt; &lt;code&gt;hexo generate --deploy&lt;/code&gt;&lt;br&gt;   &lt;code&gt;hexo deploy --generate&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;常用复合命令：&lt;br&gt; &lt;code&gt;hexo deploy -g&lt;/code&gt;&lt;br&gt; &lt;code&gt;hexo server -g&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&quot;存为草稿&quot;&gt;&lt;a href=&quot;#存为草稿&quot; class=&quot;headerlink&quot; title=&quot;存为草稿&quot;&gt;&lt;/a&gt;存为草稿&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;hexo publish [layout] &amp;lt;title&amp;gt;&lt;/code&gt;&lt;/li&gt;
@@ -69,21 +64,26 @@
 &lt;li&gt;&lt;p&gt;&lt;code&gt;hexo new [layout] &amp;lt;title&amp;gt;&lt;/code&gt; #新建布局名为layout的文章&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;code&gt;hexo new photo &amp;quot;My Gallery&amp;quot;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;hexo new &amp;quot;Hello World&amp;quot; --lang tw&lt;/code&gt; #设置文章显示语言&lt;/li&gt;
-&lt;/ul&gt;
-&lt;table&gt;&lt;br&gt;    &lt;tr&gt;&lt;br&gt;        &lt;th&gt;变量&lt;/th&gt;&lt;br&gt;        &lt;th&gt;描述&lt;/th&gt;&lt;br&gt;    &lt;/tr&gt;&lt;br&gt;    &lt;tr&gt;&lt;br&gt;        &lt;td&gt;layout&lt;/td&gt;&lt;br&gt;        &lt;td&gt;布局&lt;/td&gt;&lt;br&gt;    &lt;/tr&gt;&lt;br&gt;    &lt;tr&gt;&lt;br&gt;        &lt;td&gt;title&lt;/td&gt;&lt;br&gt;        &lt;td&gt;标题&lt;/td&gt;&lt;br&gt;    &lt;/tr&gt;&lt;br&gt;    &lt;tr&gt;&lt;br&gt;        &lt;td&gt;date&lt;/td&gt;&lt;br&gt;        &lt;td&gt;文件建立日期&lt;/td&gt;&lt;br&gt;    &lt;/tr&gt;&lt;br&gt;&lt;/table&gt;
+&lt;li&gt;&lt;code&gt;hexo new &amp;quot;Hello World&amp;quot; --lang tw&lt;/code&gt; #设置文章显示语言&lt;table&gt;&lt;br&gt;  &lt;tr&gt;&lt;br&gt;      &lt;th&gt;变量&lt;/th&gt;&lt;br&gt;      &lt;th&gt;描述&lt;/th&gt;&lt;br&gt;  &lt;/tr&gt;&lt;br&gt;  &lt;tr&gt;&lt;br&gt;      &lt;td&gt;layout&lt;/td&gt;&lt;br&gt;      &lt;td&gt;布局&lt;/td&gt;&lt;br&gt;  &lt;/tr&gt;&lt;br&gt;  &lt;tr&gt;&lt;br&gt;      &lt;td&gt;title&lt;/td&gt;&lt;br&gt;      &lt;td&gt;标题&lt;/td&gt;&lt;br&gt;  &lt;/tr&gt;&lt;br&gt;  &lt;tr&gt;&lt;br&gt;      &lt;td&gt;date&lt;/td&gt;&lt;br&gt;      &lt;td&gt;文件建立日期&lt;/td&gt;&lt;br&gt;  &lt;/tr&gt;&lt;br&gt;&lt;/table&gt;
 
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&quot;设置文章摘要&quot;&gt;&lt;a href=&quot;#设置文章摘要&quot; class=&quot;headerlink&quot; title=&quot;设置文章摘要&quot;&gt;&lt;/a&gt;设置文章摘要&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;以上是文章摘要&lt;br&gt;&lt;code&gt;&amp;lt;!--more--&amp;gt;&lt;/code&gt;&lt;br&gt;以下是余下全文&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;参考原文&lt;a href=&quot;http://segmentfault.com/a/1190000002632530?utm_source=tuicool&amp;amp;utm_medium=referral&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://segmentfault.com/a/1190000002632530&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 </content>
     
     <summary type="html">
     
-      &lt;blockquote class=&quot;blockquote-center&quot;&gt;此文收集Hexo命令，欢迎补充，持续更新…&lt;/blockquote&gt;
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt;此文收集常用Hexo命令，欢迎补充，持续更新…&lt;/blockquote&gt;
 
 &lt;h2 id=&quot;Hexo准备&quot;&gt;&lt;a href=&quot;#Hexo准备&quot; class=&quot;headerlink&quot; title=&quot;Hexo准备&quot;&gt;&lt;/a&gt;Hexo准备&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;npm install hexo -g&lt;/code&gt; #安装&lt;br&gt;&lt;code&gt;npm update hexo -g&lt;/code&gt; #升级&lt;br&gt;&lt;code&gt;hexo init&lt;/code&gt; #初始化&lt;br&gt;
+&lt;p&gt;&lt;code&gt;npm install hexo -g&lt;/code&gt; #安装&lt;br&gt;&lt;code&gt;npm update hexo -g&lt;/code&gt; #升级&lt;br&gt;&lt;code&gt;hexo init&lt;/code&gt; #初始化  &lt;/p&gt;
+&lt;/blockquote&gt;
     
     </summary>
     
