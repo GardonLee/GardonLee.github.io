@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://licao404.com/"/>
-  <updated>2016-03-26T16:52:29.586Z</updated>
+  <updated>2016-03-27T01:59:25.557Z</updated>
   <id>http://licao404.com/</id>
   
   <author>
@@ -20,12 +20,13 @@
     <link href="http://licao404.com/2016/03/26/%E6%97%B6%E9%97%B4%E5%AF%B9%E8%B1%A1-%E5%BC%95%E7%94%A8%E7%B1%BB%E5%9E%8B/"/>
     <id>http://licao404.com/2016/03/26/时间对象-引用类型/</id>
     <published>2016-03-26T12:05:19.000Z</published>
-    <updated>2016-03-26T16:52:29.586Z</updated>
+    <updated>2016-03-27T01:59:25.557Z</updated>
     
     <content type="html">&lt;h1 id=&quot;【知识点】&quot;&gt;&lt;a href=&quot;#【知识点】&quot; class=&quot;headerlink&quot; title=&quot;-【知识点】&quot;&gt;&lt;/a&gt;-【知识点】&lt;/h1&gt;&lt;h3 id=&quot;1-F：基础类型有哪些？复杂类型有哪些？有什么特征？&quot;&gt;&lt;a href=&quot;#1-F：基础类型有哪些？复杂类型有哪些？有什么特征？&quot; class=&quot;headerlink&quot; title=&quot;1. -F：基础类型有哪些？复杂类型有哪些？有什么特征？&quot;&gt;&lt;/a&gt;&lt;strong&gt;1. -F：基础类型有哪些？复杂类型有哪些？有什么特征？&lt;/strong&gt;&lt;/h3&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;h3 id=&quot;Q：&quot;&gt;&lt;a href=&quot;#Q：&quot; class=&quot;headerlink&quot; title=&quot;-Q：&quot;&gt;&lt;/a&gt;&lt;strong&gt;-Q：&lt;/strong&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;基础类型：数值、字符串、布尔值、undefined、null；&lt;/li&gt;
-&lt;li&gt;复杂类型：函数、对象、数组、正则、Date……    &lt;blockquote&gt;
+&lt;li&gt;&lt;p&gt;复杂类型：函数、对象、数组、正则、Date……    &lt;/p&gt;
+&lt;blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;基本类型的数据是直接保存在栈内存里的，按值访问，操作实实在在保存的值；&lt;/li&gt;
 &lt;li&gt;引用类型保存在堆内存内,变量保存的是它们所在堆内存中的地址（指针）；&lt;/li&gt;
@@ -34,12 +35,9 @@
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
+&lt;li&gt;&lt;p&gt;正是因为变量保存的是指针，所以变量间复制的是栈内存里的指针，是指向堆中同一个对象，所以其中一个改变必然另外一个也要改变,如下图所示：&lt;br&gt;&lt;img src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task19%2F%E5%BC%95%E7%94%A8%E7%B1%BB%E5%9E%8B%E5%A4%8D%E5%88%B6.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;正是因为变量保存的是指针，所以变量间复制的是栈内存里的指针，是指向堆中同一个对象，所以其中一个改变必然另外一个也要改变,如下图所示：&lt;br&gt;&lt;img src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task19%2F%E5%BC%95%E7%94%A8%E7%B1%BB%E5%9E%8B%E5%A4%8D%E5%88%B6.jpg&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
 &lt;hr&gt;
 &lt;h1 id=&quot;【练习】&quot;&gt;&lt;a href=&quot;#【练习】&quot; class=&quot;headerlink&quot; title=&quot;-【练习】&quot;&gt;&lt;/a&gt;-【练习】&lt;/h1&gt;&lt;h3 id=&quot;1-写一个函数getIntv，获取从当前时间到指定日期的间隔时间&quot;&gt;&lt;a href=&quot;#1-写一个函数getIntv，获取从当前时间到指定日期的间隔时间&quot; class=&quot;headerlink&quot; title=&quot;1.写一个函数getIntv，获取从当前时间到指定日期的间隔时间&quot;&gt;&lt;/a&gt;&lt;strong&gt;1.写一个函数getIntv，获取从当前时间到指定日期的间隔时间&lt;/strong&gt;&lt;/h3&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;getIntv&lt;/span&gt; (&lt;span class=&quot;params&quot;&gt;date&lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;     &lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; allms = &lt;span class=&quot;built_in&quot;&gt;Date&lt;/span&gt;.parse(date) - &lt;span class=&quot;built_in&quot;&gt;Date&lt;/span&gt;.now(); &lt;span class=&quot;comment&quot;&gt;//当前时间距离目标时间的总毫秒数&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;     &lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; dayms = &lt;span class=&quot;number&quot;&gt;1000&lt;/span&gt;*&lt;span class=&quot;number&quot;&gt;60&lt;/span&gt;*&lt;span class=&quot;number&quot;&gt;60&lt;/span&gt;*&lt;span class=&quot;number&quot;&gt;24&lt;/span&gt;,&lt;span class=&quot;comment&quot;&gt;//1天&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;         houms = &lt;span class=&quot;number&quot;&gt;1000&lt;/span&gt;*&lt;span class=&quot;number&quot;&gt;60&lt;/span&gt;*&lt;span class=&quot;number&quot;&gt;60&lt;/span&gt;,&lt;span class=&quot;comment&quot;&gt;//1小时&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;         minms = &lt;span class=&quot;number&quot;&gt;1000&lt;/span&gt;*&lt;span class=&quot;number&quot;&gt;60&lt;/span&gt;,&lt;span class=&quot;comment&quot;&gt;//1分钟&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;         secms = &lt;span class=&quot;number&quot;&gt;1000&lt;/span&gt;;&lt;span class=&quot;comment&quot;&gt;//1秒&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;     &lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; day = &lt;span class=&quot;built_in&quot;&gt;Math&lt;/span&gt;.floor(allms/dayms);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;     &lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; hou = &lt;span class=&quot;built_in&quot;&gt;Math&lt;/span&gt;.floor((allms%dayms)/houms);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;     &lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; min = &lt;span class=&quot;built_in&quot;&gt;Math&lt;/span&gt;.floor(((allms%dayms)%houms)/minms);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;     &lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; sec = &lt;span class=&quot;built_in&quot;&gt;Math&lt;/span&gt;.floor((((allms%dayms)%houms)%minms)/secms);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;     &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;距离除夕还有 &quot;&lt;/span&gt;+day+&lt;span class=&quot;string&quot;&gt;&quot; 天 &quot;&lt;/span&gt;+hou+&lt;span class=&quot;string&quot;&gt;&quot; 小时 &quot;&lt;/span&gt;+min+&lt;span class=&quot;string&quot;&gt;&quot; 分 &quot;&lt;/span&gt;+sec+&lt;span class=&quot;string&quot;&gt;&quot; 秒&quot;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; str = getIntv(&lt;span class=&quot;string&quot;&gt;&quot;2017-01-27&quot;&lt;/span&gt;);&lt;span class=&quot;comment&quot;&gt;//2017年除夕&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(str);&lt;span class=&quot;comment&quot;&gt;// console.log(str);  // 距除夕还有 ？ 天 ？ 小时 ？ 分 ？ 秒&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 </content>

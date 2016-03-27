@@ -68,7 +68,7 @@
 <meta property="og:site_name" content="蓝岚爱肉肉">
 <meta property="og:description" content="-【知识点】1. -F：基础类型有哪些？复杂类型有哪些？有什么特征？">
 <meta property="og:image" content="http://7xr868.com1.z0.glb.clouddn.com/task19%2F%E5%BC%95%E7%94%A8%E7%B1%BB%E5%9E%8B%E5%A4%8D%E5%88%B6.jpg">
-<meta property="og:updated_time" content="2016-03-26T16:52:29.586Z">
+<meta property="og:updated_time" content="2016-03-27T01:59:25.557Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="时间对象/引用类型">
 <meta name="twitter:description" content="-【知识点】1. -F：基础类型有哪些？复杂类型有哪些？有什么特征？">
@@ -526,7 +526,8 @@
         <h1 id="【知识点】"><a href="#【知识点】" class="headerlink" title="-【知识点】"></a>-【知识点】</h1><h3 id="1-F：基础类型有哪些？复杂类型有哪些？有什么特征？"><a href="#1-F：基础类型有哪些？复杂类型有哪些？有什么特征？" class="headerlink" title="1. -F：基础类型有哪些？复杂类型有哪些？有什么特征？"></a><strong>1. -F：基础类型有哪些？复杂类型有哪些？有什么特征？</strong></h3><a id="more"></a>
 <h3 id="Q："><a href="#Q：" class="headerlink" title="-Q："></a><strong>-Q：</strong></h3><ul>
 <li>基础类型：数值、字符串、布尔值、undefined、null；</li>
-<li>复杂类型：函数、对象、数组、正则、Date……    <blockquote>
+<li><p>复杂类型：函数、对象、数组、正则、Date……    </p>
+<blockquote>
 <ul>
 <li>基本类型的数据是直接保存在栈内存里的，按值访问，操作实实在在保存的值；</li>
 <li>引用类型保存在堆内存内,变量保存的是它们所在堆内存中的地址（指针）；</li>
@@ -535,12 +536,9 @@
 </ul>
 </blockquote>
 </li>
+<li><p>正是因为变量保存的是指针，所以变量间复制的是栈内存里的指针，是指向堆中同一个对象，所以其中一个改变必然另外一个也要改变,如下图所示：<br><img src="http://7xr868.com1.z0.glb.clouddn.com/task19%2F%E5%BC%95%E7%94%A8%E7%B1%BB%E5%9E%8B%E5%A4%8D%E5%88%B6.jpg" alt=""></p>
+</li>
 </ul>
-<blockquote>
-<ul>
-<li>正是因为变量保存的是指针，所以变量间复制的是栈内存里的指针，是指向堆中同一个对象，所以其中一个改变必然另外一个也要改变,如下图所示：<br><img src="http://7xr868.com1.z0.glb.clouddn.com/task19%2F%E5%BC%95%E7%94%A8%E7%B1%BB%E5%9E%8B%E5%A4%8D%E5%88%B6.jpg" alt=""></li>
-</ul>
-</blockquote>
 <hr>
 <h1 id="【练习】"><a href="#【练习】" class="headerlink" title="-【练习】"></a>-【练习】</h1><h3 id="1-写一个函数getIntv，获取从当前时间到指定日期的间隔时间"><a href="#1-写一个函数getIntv，获取从当前时间到指定日期的间隔时间" class="headerlink" title="1.写一个函数getIntv，获取从当前时间到指定日期的间隔时间"></a><strong>1.写一个函数getIntv，获取从当前时间到指定日期的间隔时间</strong></h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getIntv</span> (<span class="params">date</span>) </span>&#123;</span><br><span class="line">     <span class="keyword">var</span> allms = <span class="built_in">Date</span>.parse(date) - <span class="built_in">Date</span>.now(); <span class="comment">//当前时间距离目标时间的总毫秒数</span></span><br><span class="line">     <span class="keyword">var</span> dayms = <span class="number">1000</span>*<span class="number">60</span>*<span class="number">60</span>*<span class="number">24</span>,<span class="comment">//1天</span></span><br><span class="line">         houms = <span class="number">1000</span>*<span class="number">60</span>*<span class="number">60</span>,<span class="comment">//1小时</span></span><br><span class="line">         minms = <span class="number">1000</span>*<span class="number">60</span>,<span class="comment">//1分钟</span></span><br><span class="line">         secms = <span class="number">1000</span>;<span class="comment">//1秒</span></span><br><span class="line">     <span class="keyword">var</span> day = <span class="built_in">Math</span>.floor(allms/dayms);</span><br><span class="line">     <span class="keyword">var</span> hou = <span class="built_in">Math</span>.floor((allms%dayms)/houms);</span><br><span class="line">     <span class="keyword">var</span> min = <span class="built_in">Math</span>.floor(((allms%dayms)%houms)/minms);</span><br><span class="line">     <span class="keyword">var</span> sec = <span class="built_in">Math</span>.floor((((allms%dayms)%houms)%minms)/secms);</span><br><span class="line">     <span class="keyword">return</span> <span class="string">"距离除夕还有 "</span>+day+<span class="string">" 天 "</span>+hou+<span class="string">" 小时 "</span>+min+<span class="string">" 分 "</span>+sec+<span class="string">" 秒"</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> str = getIntv(<span class="string">"2017-01-27"</span>);<span class="comment">//2017年除夕</span></span><br><span class="line"><span class="built_in">console</span>.log(str);<span class="comment">// console.log(str);  // 距除夕还有 ？ 天 ？ 小时 ？ 分 ？ 秒</span></span><br></pre></td></tr></table></figure>
 
