@@ -437,6 +437,150 @@
             
               
                 
+                <a class="post-title-link" href="/2016/03/28/闭包/" itemprop="url">
+                  闭包
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-03-28T23:33:27+08:00" content="2016-03-28">
+              2016-03-28
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/编程学习/" itemprop="url" rel="index">
+                    <span itemprop="name">编程学习</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/编程学习/前端基础/" itemprop="url" rel="index">
+                    <span itemprop="name">前端基础</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/03/28/闭包/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/28/闭包/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/03/28/闭包/" class="leancloud_visitors" data-flag-title="闭包">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="【知识点】"><a href="#【知识点】" class="headerlink" title="-【知识点】"></a>-【知识点】</h2><h3 id="1-F：什么是闭包-有什么作用？"><a href="#1-F：什么是闭包-有什么作用？" class="headerlink" title="1. -F：什么是闭包? 有什么作用？"></a><strong>1. -F：什么是闭包? 有什么作用？</strong></h3><h3 id="Q："><a href="#Q：" class="headerlink" title="-Q："></a><strong>-Q：</strong></h3><h4 id="闭包概念："><a href="#闭包概念：" class="headerlink" title="闭包概念："></a>闭包概念：</h4><ul>
+<li>简而言之，闭包就是有权访问另一个函数内部参数和变量的<code>函数</code>;</li>
+<li>只有函数中的<code>内部函数</code>才能一直访问该函数作用域中的局部变量，即使在其外部函数被返回了之后。那么这个内部函数可以理解为闭包（创建了闭包）；</li>
+<li>本质上，闭包就是沟通函数内部和函数外部的途径；</li>
+</ul>
+<h4 id="闭包作用："><a href="#闭包作用：" class="headerlink" title="闭包作用："></a>闭包作用：</h4><ol>
+<li>访问操作函数内部作用域中的参数和变量，例如下面一个例子：<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">dealWith</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">     <span class="keyword">var</span> i = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">     <span class="function"><span class="keyword">function</span> <span class="title">inc</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">         i++;</span><br><span class="line">     &#125;</span><br><span class="line">     <span class="function"><span class="keyword">function</span> <span class="title">dec</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">         i--;</span><br><span class="line">     &#125;</span><br><span class="line">     <span class="function"><span class="keyword">function</span> <span class="title">get</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">         <span class="built_in">console</span>.log(i);</span><br><span class="line">         <span class="keyword">return</span> i;</span><br><span class="line">     &#125;</span><br><span class="line">     <span class="function"><span class="keyword">function</span> <span class="title">set</span> (<span class="params">k</span>) </span>&#123;</span><br><span class="line">         i = k;</span><br><span class="line">     &#125;</span><br><span class="line"></span><br><span class="line">     <span class="keyword">return</span> &#123;</span><br><span class="line">        inc:inc,</span><br><span class="line">        dec:dec,</span><br><span class="line">        get:get,</span><br><span class="line">        set:set</span><br><span class="line">     &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> deal = dealWith();</span><br><span class="line">deal.set(<span class="number">10</span>);</span><br><span class="line">deal.inc();</span><br><span class="line">deal.get();<span class="comment">//11</span></span><br><span class="line">deal.dec();</span><br><span class="line">deal.get();<span class="comment">//10</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/03/28/为什么你应该（从现在开始就）写博客/" itemprop="url">
                   为什么你应该（从现在开始就）写博客
                 </a>
@@ -960,132 +1104,6 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/03/19/Hexo常用命令笔记/" itemprop="url">
-                  Hexo常用命令收集
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-19T17:39:36+08:00" content="2016-03-19">
-              2016-03-19
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/技巧分享/" itemprop="url" rel="index">
-                    <span itemprop="name">技巧分享</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/03/19/Hexo常用命令笔记/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/19/Hexo常用命令笔记/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2016/03/19/Hexo常用命令笔记/" class="leancloud_visitors" data-flag-title="Hexo常用命令收集">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <blockquote class="blockquote-center">此文收集常用Hexo命令，欢迎补充，持续更新…</blockquote>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/03/19/Hexo常用命令笔记/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1131,7 +1149,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">9</span>
+              <span class="site-state-item-count">10</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
