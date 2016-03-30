@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://licao404.com/"/>
-  <updated>2016-03-30T05:42:31.213Z</updated>
+  <updated>2016-03-30T04:16:34.162Z</updated>
   <id>http://licao404.com/</id>
   
   <author>
@@ -14,488 +14,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>CSS浏览器兼容</title>
-    <link href="http://licao404.com/2016/03/30/CSS%E6%B5%8F%E8%A7%88%E5%99%A8%E5%85%BC%E5%AE%B9/"/>
-    <id>http://licao404.com/2016/03/30/CSS浏览器兼容/</id>
-    <published>2016-03-30T05:39:11.000Z</published>
-    <updated>2016-03-30T05:42:31.213Z</updated>
-    
-    <content type="html">&lt;h2 id=&quot;【知识点】&quot;&gt;&lt;a href=&quot;#【知识点】&quot; class=&quot;headerlink&quot; title=&quot;-【知识点】&quot;&gt;&lt;/a&gt;-【知识点】&lt;/h2&gt;&lt;h4 id=&quot;1-如何调试-IE-浏览器&quot;&gt;&lt;a href=&quot;#1-如何调试-IE-浏览器&quot; class=&quot;headerlink&quot; title=&quot;1. 如何调试 IE 浏览器?&quot;&gt;&lt;/a&gt;&lt;strong&gt;1. 如何调试 IE 浏览器?&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt;1.通过高版本IE浏览器的开发者工具，可以仿真其之前版本IE浏览器的运行环境，基本上可以临时快速调试各版本IE浏览器：&lt;img src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task13IE%E5%BC%80%E5%8F%91%E8%80%85.png&quot; alt=&quot;IE调试01&quot;&gt;&lt;br&gt;2.用虚拟机运行xp等系统，用原生ie6浏览器调试；&lt;br&gt;3.如果有条件，远程到一台有相应版本浏览器的机器（服务器）上，进行调试；&lt;br&gt;4.使用第三方调试工具（&lt;code&gt;IETester&lt;/code&gt;等）模拟各种版本浏览器，不过存在一些未知的问题，毕竟是模拟的；&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h4 id=&quot;2-什么是CSS-hack？在-CSS-和-HTML里如何写-hack？在-CSS-中-ie6、ie7的-hack-方式？&quot;&gt;&lt;a href=&quot;#2-什么是CSS-hack？在-CSS-和-HTML里如何写-hack？在-CSS-中-ie6、ie7的-hack-方式？&quot; class=&quot;headerlink&quot; title=&quot;2. 什么是CSS hack？在 CSS 和 HTML里如何写 hack？在 CSS 中 ie6、ie7的 hack 方式？&quot;&gt;&lt;/a&gt;&lt;strong&gt;2. 什么是&lt;code&gt;CSS hack&lt;/code&gt;？在 CSS 和 HTML里如何写 &lt;code&gt;hack&lt;/code&gt;？在 CSS 中 ie6、ie7的 &lt;code&gt;hack&lt;/code&gt; 方式？&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt;由于不同浏览器和某浏览器的不同版本，特别是一些老浏览器，如IE6,7等，对CSS的支持、解析不一致，因此会导致页面的显示效果不一样，而&lt;code&gt;CSS hack&lt;/code&gt;是利用浏览器漏洞来让不同浏览器显示效果一致，我们把针对不同的浏览器/不同版本写相应的&lt;code&gt;CSS code&lt;/code&gt;的过程，叫做&lt;code&gt;CSS hack&lt;/code&gt;；&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;CSS hack&lt;/code&gt;基本上有4种方式：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;IE条件注释法（IE专有的hack方式，Microsoft官方推荐）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;只在IE下生效&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;&amp;lt;!--[if IE]&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;ie.css&quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;![endif]--&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;只在IE6下生效&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;&amp;lt;!--[if IE6]&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;ie6.css&quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;![endif]--&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;只在IE6以上版本生效&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;&amp;lt;!--[if gte IE]&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;ie.css&quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;![endif]--&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;非IE浏览器生效&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;&amp;lt;!--[if ！IE]&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;ie.css&quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;![endif]--&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;属性前缀法：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;_&lt;/code&gt;和&lt;code&gt;-&lt;/code&gt;只对&lt;code&gt;ie6&lt;/code&gt;有效；&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;*&lt;/code&gt;对&lt;code&gt;ie6,7&lt;/code&gt;有效；&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;\9&lt;/code&gt;对&lt;code&gt;ie11&lt;/code&gt;以下所有ie有效；&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;\0&lt;/code&gt;对&lt;code&gt;ie8,9,10&lt;/code&gt;有效；&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;\9\0&lt;/code&gt;只对&lt;code&gt;ie9,10&lt;/code&gt;有效；&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;\0\9&lt;/code&gt;只对&lt;code&gt;ie8,9&lt;/code&gt;有效；&lt;/li&gt;
-&lt;li&gt;… …&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;选择器前缀法：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;* 前缀&lt;/code&gt;只对IE6有效；&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;*+ 前缀&lt;/code&gt;只对IE7有效；&lt;/li&gt;
-&lt;li&gt;更多可以参考&lt;a href=&quot;http://browserhacks.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;browserhacks&lt;/a&gt;；&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;用&lt;code&gt;JavaScript&lt;/code&gt;判断&lt;code&gt;ie&lt;/code&gt;版本：&lt;/p&gt;
-&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// 是否小于等于ie8&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; isIE = &lt;span class=&quot;string&quot;&gt;&#39;\v&#39;&lt;/span&gt;==&lt;span class=&quot;string&quot;&gt;&#39;v&#39;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// 判断ie版本&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; ieVersion = (&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;) &lt;/span&gt;&amp;#123; &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;RegExp&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;MSIE     ([0-9]&amp;#123;1,&amp;#125;[\.0-9]&amp;#123;0,&amp;#125;)&quot;&lt;/span&gt;).exec(navigator.userAgent) != &lt;span class=&quot;literal&quot;&gt;null&lt;/span&gt;) &amp;#123; &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;parseFloat&lt;/span&gt;( &lt;span class=&quot;built_in&quot;&gt;RegExp&lt;/span&gt;.$&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt; ); &amp;#125; &lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt; &amp;#123; &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;; &amp;#125; &amp;#125;)();&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;3-列举几种-浏览器兼容问题&quot;&gt;&lt;a href=&quot;#3-列举几种-浏览器兼容问题&quot; class=&quot;headerlink&quot; title=&quot;3. 列举几种 浏览器兼容问题&quot;&gt;&lt;/a&gt;&lt;strong&gt;3. 列举几种 浏览器兼容问题&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt;1.不同浏览器对标签默认的内外边距不一致，最常见的兼容性问题，解决方式：在&lt;code&gt;css&lt;/code&gt;开头用通配选择器将所有元素重置&lt;code&gt;*{margin:0;padding:0;}&lt;/code&gt;;&lt;br&gt;2.块属性标签float后，又有横行的margin情况下，在IE6显示margin比设置的大,常见的问题体现是ie6中最后一块被顶到下面一行，解决方法：在float的标签样式控制中加入 display:inline;将其转化为行内属性；&lt;br&gt;3.图片默认有间距，几个img标签放在一起的时候，有些浏览器会有默认的间距，加了问题一中提到的通配符也不起作用；解决方法：用&lt;code&gt;float&lt;/code&gt;为图片布局；&lt;br&gt;4…. …更多兼容性问题参考&lt;a href=&quot;http://blog.csdn.net/chuyuqing/article/details/37561313&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;chuyuqing的专栏&lt;/a&gt;，&lt;a href=&quot;http://wenku.baidu.com/link?url=ysYAKTQTyuudp9fU8sLvVr-VlGdJvCrHFWRpN8RcJSo0hxw-XnBJ_zhiHVudTy7Mq3AQSM6TEmCMDFaS4CNrS2NXGkokWmvU9gKGFaqxVYe&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;文库&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;4-针对兼容、多浏览器覆盖有什么看法？渐进增强和优雅降级是什么意思？&quot;&gt;&lt;a href=&quot;#4-针对兼容、多浏览器覆盖有什么看法？渐进增强和优雅降级是什么意思？&quot; class=&quot;headerlink&quot; title=&quot;4. 针对兼容、多浏览器覆盖有什么看法？渐进增强和优雅降级是什么意思？&quot;&gt;&lt;/a&gt;&lt;strong&gt;4. 针对兼容、多浏览器覆盖有什么看法？渐进增强和优雅降级是什么意思？&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt;1.首先考虑产品的受众，设计师，是否需要兼容老版本的浏览器，比如说该产品用户大多不用IE浏览器，则不需要考虑兼容ie的老版本；&lt;br&gt;2.看你的&lt;code&gt;leader&lt;/code&gt;或者审阅产品的人在用什么浏览器,考虑兼容；&lt;br&gt;3.做到几乎全部的兼容覆盖并不现实，必须结合现有资源，用户实际需求，项目时间的综合考虑是否要做或做什么浏览器的兼容；&lt;br&gt;4.渐进增强：项目一开始就考虑低版本浏览器的兼容性，保证最基本的功能，再对高级浏览器进行效果改进。&lt;br&gt;5.优雅降级：一开始就构建完整的功能，完成后再进行低版本浏览器兼容；&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h4 id=&quot;5-reset-css和normalize-css分别是做什么的？为什么推荐使用-nomalize-css&quot;&gt;&lt;a href=&quot;#5-reset-css和normalize-css分别是做什么的？为什么推荐使用-nomalize-css&quot; class=&quot;headerlink&quot; title=&quot;5. reset.css和normalize.css分别是做什么的？为什么推荐使用 nomalize.css?&quot;&gt;&lt;/a&gt;&lt;strong&gt;5. &lt;code&gt;reset.css&lt;/code&gt;和&lt;code&gt;normalize.css&lt;/code&gt;分别是做什么的？为什么推荐使用 nomalize.css?&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt;1.&lt;code&gt;reset.css&lt;/code&gt;是全局样式重置，html标签在不同浏览器的默认样式存在差异，&lt;code&gt;reset.css&lt;/code&gt;一开始就将浏览器的默认样式全部暴力覆盖掉；&lt;br&gt;2.&lt;code&gt;normalize.css&lt;/code&gt;保留浏览器的原来样式并且做到每个浏览显示一致；&lt;br&gt;3.&lt;code&gt;Normalize&lt;/code&gt;相对&lt;code&gt;平和&lt;/code&gt;，注重通用的方案，重置掉该重置的样式，保留有用的&lt;code&gt;user agent&lt;/code&gt;样式，同时进行一些 bug 的修复，这点是 reset 所缺乏的,所以通用性和可维护性高；&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;【操作】&quot;&gt;&lt;a href=&quot;#【操作】&quot; class=&quot;headerlink&quot; title=&quot;-【操作】&quot;&gt;&lt;/a&gt;-【操作】&lt;/h2&gt;&lt;blockquote&gt;
-&lt;h3 id=&quot;1-安装-VirtualBox-下载-安装虚拟机&quot;&gt;&lt;a href=&quot;#1-安装-VirtualBox-下载-安装虚拟机&quot; class=&quot;headerlink&quot; title=&quot;1.安装 VirtualBox , 下载 安装虚拟机&quot;&gt;&lt;/a&gt;1.安装 VirtualBox , 下载 安装虚拟机&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task13Win_XP.png&quot; alt=&quot;虚拟机&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;2-在-ie-6-7-8中展示-盒模型、inline-block、max-width的区别&quot;&gt;&lt;a href=&quot;#2-在-ie-6-7-8中展示-盒模型、inline-block、max-width的区别&quot; class=&quot;headerlink&quot; title=&quot;2.在 ie 6, 7, 8中展示 盒模型、inline-block、max-width的区别&quot;&gt;&lt;/a&gt;2.在 ie 6, 7, 8中展示 &lt;code&gt;盒模型&lt;/code&gt;、&lt;code&gt;inline-block&lt;/code&gt;、&lt;code&gt;max-width&lt;/code&gt;的区别&lt;/h3&gt;&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;测试代码：&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;style&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;type&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;text/css&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;css&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  *&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  	&lt;span class=&quot;attribute&quot;&gt;padding&lt;/span&gt;: &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  	&lt;span class=&quot;attribute&quot;&gt;margin&lt;/span&gt;: &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;selector-class&quot;&gt;.box&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;attribute&quot;&gt;display&lt;/span&gt;: inline-block;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;attribute&quot;&gt;height&lt;/span&gt;:&lt;span class=&quot;number&quot;&gt;100px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;attribute&quot;&gt;width&lt;/span&gt;:&lt;span class=&quot;number&quot;&gt;100px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;attribute&quot;&gt;border&lt;/span&gt;:&lt;span class=&quot;number&quot;&gt;20px&lt;/span&gt; solid red;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;attribute&quot;&gt;padding&lt;/span&gt;:&lt;span class=&quot;number&quot;&gt;30px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;attribute&quot;&gt;margin&lt;/span&gt;: &lt;span class=&quot;number&quot;&gt;40px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;selector-class&quot;&gt;.box2&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;attribute&quot;&gt;display&lt;/span&gt;: inline-block;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;attribute&quot;&gt;height&lt;/span&gt;:&lt;span class=&quot;number&quot;&gt;100px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;attribute&quot;&gt;width&lt;/span&gt;:&lt;span class=&quot;number&quot;&gt;100px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;attribute&quot;&gt;max-width&lt;/span&gt;: &lt;span class=&quot;number&quot;&gt;50px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;attribute&quot;&gt;border&lt;/span&gt;:&lt;span class=&quot;number&quot;&gt;20px&lt;/span&gt; solid blue;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;attribute&quot;&gt;padding&lt;/span&gt;:&lt;span class=&quot;number&quot;&gt;30px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;attribute&quot;&gt;margin&lt;/span&gt;: &lt;span class=&quot;number&quot;&gt;40px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;style&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;&amp;lt;!--****************************************************--&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;box&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;box2&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;1.在标准模式下的盒模型如下图所示，&lt;code&gt;盒子总宽度/高度=width/height+padding+border+margin&lt;/code&gt;;&lt;img src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task13ie8%E6%A0%87%E5%87%86%E5%92%8C%E6%A8%A1%E5%9E%8B.png&quot; alt=&quot;标准盒子模型&quot;&gt;&lt;br&gt;在&lt;code&gt;ie6,7&lt;/code&gt;怪异模式下,&lt;code&gt;盒子总宽度/高度=width/height + margin = 内容区宽度/高度 + padding + border + margin&lt;/code&gt;;&lt;br&gt;2.&lt;code&gt;inline-block&lt;/code&gt;只有ie8支持，&lt;code&gt;max-width&lt;/code&gt;ie7,8支持（存在bug具体看&lt;a href=&quot;http://caniuse.com/#search=max-width&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;caniuse&lt;/a&gt;）：&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;p&gt;IE8&lt;/p&gt;
-&lt;h2 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; title=&quot;&quot;&gt;&lt;/a&gt;&lt;img src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task13inline-block-ie8.png&quot; alt=&quot;ie8&quot;&gt;&lt;/h2&gt;&lt;p&gt;IE7&lt;/p&gt;
-&lt;h2 id=&quot;-1&quot;&gt;&lt;a href=&quot;#-1&quot; class=&quot;headerlink&quot; title=&quot;&quot;&gt;&lt;/a&gt;&lt;img src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task13inline-block-ie7.png&quot; alt=&quot;ie7&quot;&gt;&lt;/h2&gt;&lt;p&gt;IE6&lt;br&gt;&lt;img src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task13ie6.png&quot; alt=&quot;ie6&quot;&gt;&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;【知识点】&quot;&gt;&lt;a href=&quot;#【知识点】&quot; class=&quot;headerlink&quot; title=&quot;-【知识点】&quot;&gt;&lt;/a&gt;-【知识点】&lt;/h2&gt;&lt;h4 id=&quot;1-如何调试-IE-浏览器&quot;&gt;&lt;a href=&quot;#1-如何调试-IE-浏览器&quot; class=&quot;head
-    
-    </summary>
-    
-      <category term="编程学习" scheme="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/"/>
-    
-      <category term="前端基础" scheme="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/"/>
-    
-    
-      <category term="CSS" scheme="http://licao404.com/tags/CSS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>圣杯布局+双飞翼布局</title>
-    <link href="http://licao404.com/2016/03/30/%E5%9C%A3%E6%9D%AF%E5%B8%83%E5%B1%80-%E5%8F%8C%E9%A3%9E%E7%BF%BC%E5%B8%83%E5%B1%80/"/>
-    <id>http://licao404.com/2016/03/30/圣杯布局-双飞翼布局/</id>
-    <published>2016-03-30T05:36:54.000Z</published>
-    <updated>2016-03-30T05:38:22.144Z</updated>
-    
-    <content type="html">&lt;h2 id=&quot;【基础知识】&quot;&gt;&lt;a href=&quot;#【基础知识】&quot; class=&quot;headerlink&quot; title=&quot;-【基础知识】&quot;&gt;&lt;/a&gt;-【基础知识】&lt;/h2&gt;&lt;h4 id=&quot;1-负边距在让元素产生偏移时和position-relative有什么区别&quot;&gt;&lt;a href=&quot;#1-负边距在让元素产生偏移时和position-relative有什么区别&quot; class=&quot;headerlink&quot; title=&quot;1. 负边距在让元素产生偏移时和position: relative有什么区别?&quot;&gt;&lt;/a&gt;&lt;strong&gt;1. 负边距在让元素产生偏移时和&lt;code&gt;position: relative&lt;/code&gt;有什么区别?&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt;最大的区别是负margin让元素移动时改变了文档流，同时可能影响其他元素排列；而&lt;code&gt;position:relative&lt;/code&gt;并未让元素脱离文档流，只是让元素相对于本来的位置进行定位，对其他元素的排列不会造成影响。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h4 id=&quot;2-使用负-margin-形成三栏布局有什么条件&quot;&gt;&lt;a href=&quot;#2-使用负-margin-形成三栏布局有什么条件&quot; class=&quot;headerlink&quot; title=&quot;2. 使用负 margin 形成三栏布局有什么条件?&quot;&gt;&lt;/a&gt;&lt;strong&gt;2. 使用负 margin 形成三栏布局有什么条件?&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt;1.&lt;code&gt;HTML&lt;/code&gt;代码中，中间主块要写在文档流的最前面让浏览器优先渲染，然后是左右边栏；&lt;br&gt;2.父容器内三个块必须都是浮动的;&lt;br&gt;3.且主块的宽度必须撑满父容器的宽度（&lt;code&gt;width:100%&lt;/code&gt;）&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h4 id=&quot;3-圣杯布局的原理是怎样的-简述实现圣杯布局的步骤？&quot;&gt;&lt;a href=&quot;#3-圣杯布局的原理是怎样的-简述实现圣杯布局的步骤？&quot; class=&quot;headerlink&quot; title=&quot;3. 圣杯布局的原理是怎样的? 简述实现圣杯布局的步骤？&quot;&gt;&lt;/a&gt;&lt;strong&gt;3. 圣杯布局的原理是怎样的? 简述实现圣杯布局的步骤？&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt;1.三栏浮动&lt;code&gt;float:left&lt;/code&gt;,相对定位&lt;code&gt;position:relative&lt;/code&gt;;&lt;br&gt;2.主块设置&lt;code&gt;width:100%&lt;/code&gt;占满宽度；&lt;br&gt;3.左块使用&lt;code&gt;margin-left:-100%&lt;/code&gt;拉到最左边，右块使用&lt;code&gt;margin-left:npx&lt;/code&gt;，n为右块的宽度；&lt;br&gt;4.父容器设置左右padding宽度能容纳下左右块；&lt;br&gt;5.左块用相对定位拉到父容器在左边空出的位置，右块同理；&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h4 id=&quot;4-双飞翼布局的原理-实现步骤&quot;&gt;&lt;a href=&quot;#4-双飞翼布局的原理-实现步骤&quot; class=&quot;headerlink&quot; title=&quot;4. 双飞翼布局的原理? 实现步骤?&quot;&gt;&lt;/a&gt;&lt;strong&gt;4. 双飞翼布局的原理? 实现步骤?&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt;1.三栏浮动&lt;code&gt;float:left&lt;/code&gt;,相对定位&lt;code&gt;position:relative&lt;/code&gt;;&lt;br&gt;2.主块设置&lt;code&gt;width:100%&lt;/code&gt;占满宽度；&lt;br&gt;3.左块使用&lt;code&gt;margin-left:-100%&lt;/code&gt;拉到最左边，右块使用&lt;code&gt;margin-left:npx&lt;/code&gt;，n为右块的宽度；&lt;br&gt;4.主块嵌套一个新块，设置该块左右&lt;code&gt;margin&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;【代码】&quot;&gt;&lt;a href=&quot;#【代码】&quot; class=&quot;headerlink&quot; title=&quot;-【代码】&quot;&gt;&lt;/a&gt;-【代码】&lt;/h2&gt;&lt;blockquote&gt;
-&lt;h3 id=&quot;task-12-1&quot;&gt;&lt;a href=&quot;#task-12-1&quot; class=&quot;headerlink&quot; title=&quot;task-12-1&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task12/task-12-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;task-12-1&lt;/a&gt;&lt;/h3&gt;&lt;h3 id=&quot;task-12-2&quot;&gt;&lt;a href=&quot;#task-12-2&quot; class=&quot;headerlink&quot; title=&quot;task-12-2&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task12/task-12-2.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;task-12-2&lt;/a&gt;&lt;/h3&gt;&lt;h3 id=&quot;task-12-3&quot;&gt;&lt;a href=&quot;#task-12-3&quot; class=&quot;headerlink&quot; title=&quot;task-12-3&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task12/task-12-3.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;task-12-3&lt;/a&gt;&lt;/h3&gt;&lt;h3 id=&quot;task-12-4&quot;&gt;&lt;a href=&quot;#task-12-4&quot; class=&quot;headerlink&quot; title=&quot;task-12-4&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task12/task-12-4.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;task-12-4&lt;/a&gt;&lt;/h3&gt;&lt;/blockquote&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;【基础知识】&quot;&gt;&lt;a href=&quot;#【基础知识】&quot; class=&quot;headerlink&quot; title=&quot;-【基础知识】&quot;&gt;&lt;/a&gt;-【基础知识】&lt;/h2&gt;&lt;h4 id=&quot;1-负边距在让元素产生偏移时和position-relative有什么区别&quot;&gt;&lt;a href=
-    
-    </summary>
-    
-      <category term="编程学习" scheme="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/"/>
-    
-      <category term="前端基础" scheme="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/"/>
-    
-    
-      <category term="CSS" scheme="http://licao404.com/tags/CSS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>BFC</title>
-    <link href="http://licao404.com/2016/03/30/BFC/"/>
-    <id>http://licao404.com/2016/03/30/BFC/</id>
-    <published>2016-03-30T05:32:34.000Z</published>
-    <updated>2016-03-30T05:38:03.543Z</updated>
-    
-    <content type="html">&lt;h2 id=&quot;【基础知识】&quot;&gt;&lt;a href=&quot;#【基础知识】&quot; class=&quot;headerlink&quot; title=&quot;-【基础知识】&quot;&gt;&lt;/a&gt;-【基础知识】&lt;/h2&gt;&lt;h4 id=&quot;1-在什么场景下会出现外边距合并？如何合并？如何不让相邻元素外边距合并？&quot;&gt;&lt;a href=&quot;#1-在什么场景下会出现外边距合并？如何合并？如何不让相邻元素外边距合并？&quot; class=&quot;headerlink&quot; title=&quot;1. 在什么场景下会出现外边距合并？如何合并？如何不让相邻元素外边距合并？&quot;&gt;&lt;/a&gt;&lt;strong&gt;1. 在什么场景下会出现外边距合并？如何合并？如何不让相邻元素外边距合并？&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;相邻块盒子的垂直外边距合并只有他们是在同一BFC，且没有padding与border将外边距隔开才会发生；&lt;/li&gt;
-&lt;li&gt;垂直相邻元素，子元素和父元素会发生合并，合并后的外边距的高度等于两个发生合并的外边距的高度中的较大者。&lt;/li&gt;
-&lt;li&gt;创建另外一个BFC，让不想发生外边距合并的元素处于不同的BFC。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h4 id=&quot;2-去除inline-block内缝隙有哪几种常见方法&quot;&gt;&lt;a href=&quot;#2-去除inline-block内缝隙有哪几种常见方法&quot; class=&quot;headerlink&quot; title=&quot;2. 去除inline-block内缝隙有哪几种常见方法?&quot;&gt;&lt;/a&gt;&lt;strong&gt;2. 去除&lt;code&gt;inline-block&lt;/code&gt;内缝隙有哪几种常见方法?&lt;/strong&gt;&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;1.修改&lt;code&gt;li&lt;/code&gt;的代码书写格式：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;img src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task11%E5%8E%BB%E7%BC%9D%E9%9A%99li.gif&quot; alt=&quot;li书写1&quot;&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;img src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task11%E5%8E%BB%E7%BC%9D%E9%9A%99li2.gif&quot; alt=&quot;li书写2&quot;&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ul&gt;
-&lt;li&gt;2.用&lt;code&gt;负margin&lt;/code&gt;：&lt;ul&gt;
-&lt;li&gt;&lt;img src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task11%E5%8E%BB%E7%BC%9D%E9%9A%99%E8%B4%9Fmargin.gif&quot; alt=&quot;-margin&quot;&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ul&gt;
-&lt;li&gt;3.用浮动并在父元素用&lt;code&gt;overflow:auto&lt;/code&gt;清除浮动：&lt;ul&gt;
-&lt;li&gt;&lt;img src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task11%E5%8E%BB%E7%BC%9D%E9%9A%99%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8.gif&quot; alt=&quot;float&quot;&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ul&gt;
-&lt;li&gt;设置父元素的&lt;code&gt;font-size&lt;/code&gt;为&lt;code&gt;0&lt;/code&gt;,子元素再给一个&lt;code&gt;font-size&lt;/code&gt;:&lt;ul&gt;
-&lt;li&gt;&lt;img src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task11%E5%8E%BB%E7%BC%9D%E9%9A%99fontsize.gif&quot; alt=&quot;父font-size&quot;&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ul&gt;
-&lt;li&gt;适配IE8以下加hack语句&lt;a href=&quot;http://js.jirengu.com/quvohojade/2/edit&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;code&gt;*display:inline&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;3-父容器使用overflow-auto-hidden撑开高度的原理是什么？&quot;&gt;&lt;a href=&quot;#3-父容器使用overflow-auto-hidden撑开高度的原理是什么？&quot; class=&quot;headerlink&quot; title=&quot;3. 父容器使用overflow: auto| hidden撑开高度的原理是什么？&quot;&gt;&lt;/a&gt;&lt;strong&gt;3. 父容器使用&lt;code&gt;overflow: auto| hidden&lt;/code&gt;撑开高度的原理是什么？&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt;给父容器添加&lt;code&gt;overflow: auto| hidden&lt;/code&gt;样式即触发了BFC，这时如果父容器内只有浮动元素，则会撑开父容器高度。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h4 id=&quot;4-BFC是什么？如何形成BFC，有什么作用&quot;&gt;&lt;a href=&quot;#4-BFC是什么？如何形成BFC，有什么作用&quot; class=&quot;headerlink&quot; title=&quot;4. BFC是什么？如何形成BFC，有什么作用?&quot;&gt;&lt;/a&gt;&lt;strong&gt;4. BFC是什么？如何形成BFC，有什么作用?&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;定义：浮动元素和绝对定位元素，非块级盒子的块级容器（例如 inline-block, table-cells, 和 table-captions），以及overflow值不为“visiable”的块级盒子，都会为他们的内容创建新的BFC（块级格式上下文）。&lt;/li&gt;
-&lt;li&gt;如何形成：可以通过给父容器添加一个触发BFC的样式即可。例如&lt;code&gt;float:left&lt;/code&gt;,&lt;code&gt;position:absolute&lt;/code&gt;,&lt;code&gt;overflow:hidde&lt;/code&gt;,&lt;code&gt;display:inline-block&lt;/code&gt;等；（用来清除浮动可能带来一些副作用，一般使用&lt;code&gt;overflow:auto&lt;/code&gt;）&lt;/li&gt;
-&lt;li&gt;&lt;ul&gt;
-&lt;li&gt;用于&lt;code&gt;包含浮动&lt;/code&gt;。如果父容器内存在浮动元素，则父容器没有高度，它的浮动孩子将会脱离文档流，影响到其他元素的排列。这时可以创建新的BFC，撑开父容器的高度可以包含子元素；&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;用于&lt;code&gt;防止边距合并&lt;/code&gt;，实质上外边距合并是由BFC导致的（&lt;a href=&quot;http://www.w3cplus.com/css/understanding-block-formatting-contexts-in-css.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;详细&lt;/a&gt;），毗邻块盒子的垂直外边距折叠只有他们是在同一BFC时才会发生，如果他们属于不同的BFC，他们之间的外边距将不会折叠。所以通过创建一个新的BFC我们可以防止外边距折叠；&lt;/li&gt;
-&lt;li&gt;用于&lt;code&gt;防止文字环绕&lt;/code&gt;；&lt;/li&gt;
-&lt;li&gt;用于&lt;code&gt;多列布局&lt;/code&gt;；当我们设计一个多列布局占满宽度时，最后一列被挤到下一行，在其中一个列的布局中建立了一个新的BFC，它将会在前一列填充完之后的后面占据所剩余的空间。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h4 id=&quot;5-浮动导致的父容器高度塌陷指什么？为什么会产生？有几种解决方法&quot;&gt;&lt;a href=&quot;#5-浮动导致的父容器高度塌陷指什么？为什么会产生？有几种解决方法&quot; class=&quot;headerlink&quot; title=&quot;5. 浮动导致的父容器高度塌陷指什么？为什么会产生？有几种解决方法&quot;&gt;&lt;/a&gt;&lt;strong&gt;5. 浮动导致的父容器高度塌陷指什么？为什么会产生？有几种解决方法&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt;概念：没有设置父容器的高度或者设置了&lt;code&gt;auto&lt;/code&gt;，容器内只含有浮动元素，则他们的父容器会没有高度属性，之后的元素会“挤上来”，造成“高度塌陷”。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;解决：&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol&gt;
-&lt;li&gt;给父容器添加&lt;code&gt;overflow: auto| hidden&lt;/code&gt;等样式触发BFC，撑开父容器高度。&lt;/li&gt;
-&lt;li&gt;使用伪类&lt;code&gt;:after&lt;/code&gt;,父容器通过&lt;code&gt;:after&lt;/code&gt;来为其内容末尾添加一个内容为空的块框，利用这个块框来清除浮动（需要hack兼容IE），&lt;code&gt;常常用这种方法&lt;/code&gt;!&lt;/li&gt;
-&lt;li&gt;给父容器后添加一个新标签，用这个新标签来清除浮动撑开高度，兼容性好，但是无语义；&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h4 id=&quot;6-以下代码每一行的作用是什么？-为什么会产生作用？-和BFC撑开空间有什么区别？&quot;&gt;&lt;a href=&quot;#6-以下代码每一行的作用是什么？-为什么会产生作用？-和BFC撑开空间有什么区别？&quot; class=&quot;headerlink&quot; title=&quot;6. 以下代码每一行的作用是什么？ 为什么会产生作用？ 和BFC撑开空间有什么区别？&quot;&gt;&lt;/a&gt;&lt;strong&gt;6. 以下代码每一行的作用是什么？ 为什么会产生作用？ 和BFC撑开空间有什么区别？&lt;/strong&gt;&lt;/h4&gt;&lt;figure class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;  .clearfix:after&amp;#123;      /*添加`:after`伪类*/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    content: &#39;&#39;;        /*内容是空的*/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    display: block;     /*空的内容生成块框*/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    clear: both;    /*清除两边浮动*/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;.clearfix&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    *zoom: 1;   /*IE的hack语句，为了兼容IE6,7，触发IE的hasLayout特有属性，但不会影响页面的显示效果*/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;blockquote&gt;
-&lt;p&gt;作用：在容器内部最后一个元素创建了一个空的块框，而该块框两则清除了浮动，容器外的其他元素就无法向上挤占了；&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;区别：BFC是包含容器内的浮动元素，形成一个封闭的小宇宙，不受外界干扰挤占；而这种方法是通过添加空块来清除浮动，不让其他元素上来，二者的实现思路是完全不一样的；&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;【代码】&quot;&gt;&lt;a href=&quot;#【代码】&quot; class=&quot;headerlink&quot; title=&quot;-【代码】&quot;&gt;&lt;/a&gt;-【代码】&lt;/h2&gt;&lt;blockquote&gt;
-&lt;h3 id=&quot;task-11-1&quot;&gt;&lt;a href=&quot;#task-11-1&quot; class=&quot;headerlink&quot; title=&quot;task-11-1&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task11/task-11-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;task-11-1&lt;/a&gt;&lt;/h3&gt;&lt;h3 id=&quot;task-11-2&quot;&gt;&lt;a href=&quot;#task-11-2&quot; class=&quot;headerlink&quot; title=&quot;task-11-2&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task11/task-11-2.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;task-11-2&lt;/a&gt;&lt;/h3&gt;&lt;/blockquote&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;【基础知识】&quot;&gt;&lt;a href=&quot;#【基础知识】&quot; class=&quot;headerlink&quot; title=&quot;-【基础知识】&quot;&gt;&lt;/a&gt;-【基础知识】&lt;/h2&gt;&lt;h4 id=&quot;1-在什么场景下会出现外边距合并？如何合并？如何不让相邻元素外边距合并？&quot;&gt;&lt;a href=&quot;
-    
-    </summary>
-    
-      <category term="编程学习" scheme="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/"/>
-    
-      <category term="前端基础" scheme="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/"/>
-    
-    
-      <category term="CSS" scheme="http://licao404.com/tags/CSS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>定位+浮动</title>
-    <link href="http://licao404.com/2016/03/30/%E5%AE%9A%E4%BD%8D-%E6%B5%AE%E5%8A%A8/"/>
-    <id>http://licao404.com/2016/03/30/定位-浮动/</id>
-    <published>2016-03-30T05:29:46.000Z</published>
-    <updated>2016-03-30T05:31:03.456Z</updated>
-    
-    <content type="html">&lt;h2 id=&quot;【基础知识】&quot;&gt;&lt;a href=&quot;#【基础知识】&quot; class=&quot;headerlink&quot; title=&quot;-【基础知识】&quot;&gt;&lt;/a&gt;-【基础知识】&lt;/h2&gt;&lt;h4 id=&quot;1-文档流的概念指什么？有哪种方式可以让元素脱离文档流&quot;&gt;&lt;a href=&quot;#1-文档流的概念指什么？有哪种方式可以让元素脱离文档流&quot; class=&quot;headerlink&quot; title=&quot;1. 文档流的概念指什么？有哪种方式可以让元素脱离文档流?&quot;&gt;&lt;/a&gt;&lt;strong&gt;1. 文档流的概念指什么？有哪种方式可以让元素脱离文档流?&lt;/strong&gt;&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;文档流是将窗体自上而下分成一行行，每行按照自左向右的顺序排列元素，从头到尾按照文档的顺序，该在什么位置就在什么位置；网页中大部分对象默认是占用文档流，也有一些对象是不占文档流的，比如表单中隐藏域。&lt;/li&gt;
-&lt;li&gt;有3种方式可以让元素脱离文档流而存在：浮动（&lt;code&gt;float&lt;/code&gt;）、固定定位（&lt;code&gt;position:fixed&lt;/code&gt;）、绝对定位（&lt;code&gt;position:absolute&lt;/code&gt;）&lt;ul&gt;
-&lt;li&gt;浮动元素不占用任何正常文档流空间，而他的定位仍是基于正常文档流；&lt;/li&gt;
-&lt;li&gt;绝对定位是完全脱离文档流，在文档流中的其他元素将忽略该元素并且填补他原先的位置；&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;2-有几种定位方式，分别是如何实现定位的，使用场景如何？&quot;&gt;&lt;a href=&quot;#2-有几种定位方式，分别是如何实现定位的，使用场景如何？&quot; class=&quot;headerlink&quot; title=&quot;2. 有几种定位方式，分别是如何实现定位的，使用场景如何？&quot;&gt;&lt;/a&gt;&lt;strong&gt;2. 有几种定位方式，分别是如何实现定位的，使用场景如何？&lt;/strong&gt;&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;position:static;&lt;/code&gt;：静态定位（缺省值）。元素出现在正常的文档流中，忽略&lt;code&gt;top,buttom,left,right,z-index&lt;/code&gt;声明；可以用于覆盖之前对position的定义；&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;position:fixed&lt;/code&gt;：固定定位，让元素完全脱离文档流，固定在浏览器窗口中某一位置，位置不随页面移动而发生变化。用在一些不想移动的导航栏，固定的广告，信息提醒，咨询联系按钮等&lt;ul&gt;
-&lt;li&gt;&lt;img src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task10fixed.png&quot; alt=&quot;fixed&quot;&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;position:relative&lt;/code&gt;：相对定位，相对于自己原来在文档流中的位置进行定位，不改变布局（在该元素原来位置留下空白）&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;position:absolute&lt;/code&gt;：绝对对定位，相对于与他最近的非static定位的祖先元素来定位，完全脱离文档流，其他文档流中的元素会忽略他的存在&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;3-absolute-relative-fixed-偏移的参考点分别是什么&quot;&gt;&lt;a href=&quot;#3-absolute-relative-fixed-偏移的参考点分别是什么&quot; class=&quot;headerlink&quot; title=&quot;3. absolute, relative, fixed 偏移的参考点分别是什么?&quot;&gt;&lt;/a&gt;&lt;strong&gt;3. &lt;code&gt;absolute&lt;/code&gt;, &lt;code&gt;relative&lt;/code&gt;, &lt;code&gt;fixed&lt;/code&gt; 偏移的参考点分别是什么?&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;absolute&lt;/code&gt;: 相对于与他最近的非static定位的祖先元素来定位，如果都没有的话就向上对；&lt;br&gt;&lt;code&gt;relative&lt;/code&gt;：相对于自己原来在文档流中的位置进行定位；&lt;br&gt;&lt;code&gt;fixed&lt;/code&gt;：相对于浏览器窗口；  &lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h4 id=&quot;4-z-index-有什么作用-如何使用&quot;&gt;&lt;a href=&quot;#4-z-index-有什么作用-如何使用&quot; class=&quot;headerlink&quot; title=&quot;4. z-index 有什么作用? 如何使用?&quot;&gt;&lt;/a&gt;&lt;strong&gt;4. &lt;code&gt;z-index&lt;/code&gt; 有什么作用? 如何使用?&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt;可以设置&lt;code&gt;定位元素&lt;/code&gt;显示层级，值越大越在外层。当没有指定z-index的时候， 所有元素都在会被渲染在默认层(0层)；&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h4 id=&quot;5-position-relative和负margin都可以使元素位置发生偏移-二者有什么区别&quot;&gt;&lt;a href=&quot;#5-position-relative和负margin都可以使元素位置发生偏移-二者有什么区别&quot; class=&quot;headerlink&quot; title=&quot;5. position:relative和负margin都可以使元素位置发生偏移?二者有什么区别&quot;&gt;&lt;/a&gt;&lt;strong&gt;5. &lt;code&gt;position:relative&lt;/code&gt;和负&lt;code&gt;margin&lt;/code&gt;都可以使元素位置发生偏移?二者有什么区别&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;position:relative&lt;/code&gt;使元素位置发生偏移不会对后来的元素产生影响，他的文档流占位还是之前的位置；显然使用&lt;code&gt;margin&lt;/code&gt;偏移有可能影响到其他元素的位置；&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h4 id=&quot;6-如何让一个固定宽高的元素在页面上垂直水平居中&quot;&gt;&lt;a href=&quot;#6-如何让一个固定宽高的元素在页面上垂直水平居中&quot; class=&quot;headerlink&quot; title=&quot;6. 如何让一个固定宽高的元素在页面上垂直水平居中?&quot;&gt;&lt;/a&gt;&lt;strong&gt;6. 如何让一个固定宽高的元素在页面上垂直水平居中?&lt;/strong&gt;&lt;/h4&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;  &amp;lt;style&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    body&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      background:gray;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    div&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      position:absolute;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      top:50%;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      right:50%;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      margin:-50px;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      width:100px;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      height:100px;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      background-color:yellow;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;lt;/style&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;lt;div&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;&lt;a href=&quot;http://js.jirengu.com/dupahagojo/1/edit&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&amp;gt;&amp;gt;效果演示&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id=&quot;7-浮动元素有什么特征？对其他浮动元素、普通元素、文字分别有什么影响&quot;&gt;&lt;a href=&quot;#7-浮动元素有什么特征？对其他浮动元素、普通元素、文字分别有什么影响&quot; class=&quot;headerlink&quot; title=&quot;7. 浮动元素有什么特征？对其他浮动元素、普通元素、文字分别有什么影响?&quot;&gt;&lt;/a&gt;&lt;strong&gt;7. 浮动元素有什么特征？对其他浮动元素、普通元素、文字分别有什么影响?&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;浮动的框可以向左向右移动，直到它的外边缘碰到包含框或另一个浮动框的边框为止；&lt;/li&gt;
-&lt;li&gt;对其他浮动元素会按照渲染顺序显示，对其他普通元素则会覆盖在表层，文字会环绕浮动元素；&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h4 id=&quot;8-清除浮动指什么-如何清除浮动&quot;&gt;&lt;a href=&quot;#8-清除浮动指什么-如何清除浮动&quot; class=&quot;headerlink&quot; title=&quot;8. 清除浮动指什么? 如何清除浮动?&quot;&gt;&lt;/a&gt;&lt;strong&gt;8. 清除浮动指什么? 如何清除浮动?&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt;元素浮动之后，周围的元素会重新排列，为了避免这种情况，需要清除浮动；&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;如何清除浮动：&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol&gt;
-&lt;li&gt;直接对受影响的元素使用&lt;code&gt;clear&lt;/code&gt;属性；&lt;/li&gt;
-&lt;li&gt;对父亲&lt;/li&gt;
-&lt;/ol&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;【代码】&quot;&gt;&lt;a href=&quot;#【代码】&quot; class=&quot;headerlink&quot; title=&quot;-【代码】&quot;&gt;&lt;/a&gt;-【代码】&lt;/h2&gt;&lt;blockquote&gt;
-&lt;h3 id=&quot;task-10-1&quot;&gt;&lt;a href=&quot;#task-10-1&quot; class=&quot;headerlink&quot; title=&quot;task-10-1&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task10/task-10-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;task-10-1&lt;/a&gt;&lt;/h3&gt;&lt;h3 id=&quot;task-10-2&quot;&gt;&lt;a href=&quot;#task-10-2&quot; class=&quot;headerlink&quot; title=&quot;task-10-2&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task10/task-10-2.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;task-10-2&lt;/a&gt;&lt;/h3&gt;&lt;/blockquote&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;【基础知识】&quot;&gt;&lt;a href=&quot;#【基础知识】&quot; class=&quot;headerlink&quot; title=&quot;-【基础知识】&quot;&gt;&lt;/a&gt;-【基础知识】&lt;/h2&gt;&lt;h4 id=&quot;1-文档流的概念指什么？有哪种方式可以让元素脱离文档流&quot;&gt;&lt;a href=&quot;#1-文档流的概念
-    
-    </summary>
-    
-      <category term="编程学习" scheme="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/"/>
-    
-      <category term="前端基础" scheme="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/"/>
-    
-    
-      <category term="CSS" scheme="http://licao404.com/tags/CSS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CSS Sprite/background</title>
-    <link href="http://licao404.com/2016/03/30/CSS_Sprite+background/"/>
-    <id>http://licao404.com/2016/03/30/CSS_Sprite+background/</id>
-    <published>2016-03-30T05:27:33.000Z</published>
-    <updated>2016-03-30T05:28:42.695Z</updated>
-    
-    <content type="html">&lt;h2 id=&quot;【知识点】&quot;&gt;&lt;a href=&quot;#【知识点】&quot; class=&quot;headerlink&quot; title=&quot;-【知识点】&quot;&gt;&lt;/a&gt;-【知识点】&lt;/h2&gt;&lt;h4 id=&quot;1-CSS-Sprite-雪碧图-指什么-有什么作用？&quot;&gt;&lt;a href=&quot;#1-CSS-Sprite-雪碧图-指什么-有什么作用？&quot; class=&quot;headerlink&quot; title=&quot;1. CSS Sprite(雪碧图)指什么? 有什么作用？&quot;&gt;&lt;/a&gt;&lt;strong&gt;1. CSS Sprite(雪碧图)指什么? 有什么作用？&lt;/strong&gt;&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;CSS Sprite&lt;/code&gt;又名&lt;code&gt;CSS精灵&lt;/code&gt;，一种将零星的小图片合并成一张大图的网络图像应用处理方式，再利用&lt;code&gt;CSS&lt;/code&gt;的&lt;code&gt;background-image&lt;/code&gt;,&lt;code&gt;background-repeat&lt;/code&gt;,&lt;code&gt;background-position&lt;/code&gt;进行精确定位所需的小图位置;&lt;/li&gt;
-&lt;li&gt;主要作用：&lt;ul&gt;
-&lt;li&gt;可以大量减少页面的http请求，提升页面性能，因为如果是每一张图片都去请求一次，浪费的网络资源是不可想象的；&lt;/li&gt;
-&lt;li&gt;减少图片的字节；&lt;/li&gt;
-&lt;li&gt;其他作用和弊端见&lt;a href=&quot;http://baike.baidu.com/link?url=WNMBLXrej-HoKJ4OspqtsJdTfgc5_jTRO6a3rcthEVyyKfv2M2jGG4lKlOw69NK1KTjHAPmJb4NttvAhzroB6q&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;度娘百科&lt;/a&gt;。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;2-img标签和CSS背景使用图片在使用场景上有何区别&quot;&gt;&lt;a href=&quot;#2-img标签和CSS背景使用图片在使用场景上有何区别&quot; class=&quot;headerlink&quot; title=&quot;2. img标签和CSS背景使用图片在使用场景上有何区别?&quot;&gt;&lt;/a&gt;&lt;strong&gt;2. img标签和CSS背景使用图片在使用场景上有何区别?&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;如果内容（对每个访问者）是恒定不变的，如icon，logo，等，则选择css背景图：&lt;br&gt;&lt;img src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task9%E8%83%8C%E6%99%AF%E5%9B%BE2.png&quot; alt=&quot;icon&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task9%E8%83%8C%E6%99%AF%E5%9B%BE1.png&quot; alt=&quot;logo&quot;&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;如果是变化的内容，比如电商网页上的商品广告（基本上直观理解的图片）都是img标签，还有头像等，他们都是外链到数据库的，可能发生改变：&lt;br&gt;&lt;img src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task9img.png&quot; alt=&quot;img1&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task9img2.png&quot; alt=&quot;img2&quot;&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h4 id=&quot;3-title-和-alt属性分别有什么作用&quot;&gt;&lt;a href=&quot;#3-title-和-alt属性分别有什么作用&quot; class=&quot;headerlink&quot; title=&quot;3. title 和 alt属性分别有什么作用?&quot;&gt;&lt;/a&gt;&lt;strong&gt;3. title 和 alt属性分别有什么作用?&lt;/strong&gt;&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;alt属性&lt;/code&gt;是在你的图片因为某种原因不能加载时在页面显示的提示信息(临时代替图片的作用)，它会直接输出在原本加载图片的地方；&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;title属性&lt;/code&gt;是在你鼠标悬停在该图片上时显示一个小提示，鼠标离开就没有了，HTML的绝大多数标签都支持&lt;code&gt;title属性&lt;/code&gt;，&lt;code&gt;title属性&lt;/code&gt;就是专门做提示信息的，比如：&lt;img src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task9title.png&quot; alt=&quot;title&quot;&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;4-background-url-abc-png-0-0-no-repeat-这句话是什么意思&quot;&gt;&lt;a href=&quot;#4-background-url-abc-png-0-0-no-repeat-这句话是什么意思&quot; class=&quot;headerlink&quot; title=&quot;4. background: url(abc.png) 0 0 no-repeat;这句话是什么意思&quot;&gt;&lt;/a&gt;&lt;strong&gt;4. &lt;code&gt;background: url(abc.png) 0 0 no-repeat;&lt;/code&gt;这句话是什么意思&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt;设置背景图片为&lt;code&gt;abc.png&lt;/code&gt;,要显示位置是水平0，垂直0，重复方式是不重复&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h4 id=&quot;5-background-size有什么作用-兼容性如何-常用的值是&quot;&gt;&lt;a href=&quot;#5-background-size有什么作用-兼容性如何-常用的值是&quot; class=&quot;headerlink&quot; title=&quot;5. background-size有什么作用? 兼容性如何? 常用的值是?&quot;&gt;&lt;/a&gt;&lt;strong&gt;5. background-size有什么作用? 兼容性如何? 常用的值是?&lt;/strong&gt;&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;background-size&lt;/code&gt;可以设置css背景图片的大小，以长度值和百分比显示；也可以根据背景原点位置&lt;code&gt;background-origin&lt;/code&gt;设置图片的覆盖范围。&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;在&lt;a href=&quot;http://caniuse.com/#search=background-size&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Caniuse&lt;/a&gt;上查到兼容性为：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;img src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task9background-size%E5%85%BC%E5%AE%B9%E6%80%A7.png&quot; alt=&quot;background-size兼容性&quot;&gt;&lt;/li&gt;
-&lt;li&gt;让&lt;code&gt;IE6,7,8&lt;/code&gt;兼容&lt;code&gt;background-size&lt;/code&gt;的方法：使用IE的滤镜&lt;figure class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;style&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;.background &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    background-image:url(&#39;http://7xr868.com1.z0.glb.clouddn.com/task6inline-block%E6%94%AF%E6%8C%81.png&#39;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    background-size: cover;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    src=&#39;http://7xr868.com1.z0.glb.clouddn.com/task6inline-block%E6%94%AF%E6%8C%81.png&#39;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    sizingMethod=&#39;scale&#39;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;/style&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;常用的值:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;auto&lt;/code&gt;：默认值，不改变背景图片的原始高度和宽度；&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;length&lt;/code&gt;：第一个值为设置图片宽度，第二个值为图片的高度；但是不管是用什么值，都不能为负值。假如只给定一个值，那么第二个自动的为 &lt;code&gt;auto&lt;/code&gt;；&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;percentage&lt;/code&gt;：以父元素的百分比来设置背景图像的宽度和高度。设置一个值，同上；&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;cover&lt;/code&gt;： 将图片等比例缩放来填满整个容器，加入容器不足以包含背景图片，则一些部分不会显示在容器中；&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;contain&lt;/code&gt;：按比例调整背景图片，使得其图片宽高比自适应整个元素容器的宽高比，因此假如指定的图片尺寸过大，而容器的整体宽高不能恰好包含背景图片的话，那么其容器某些区域可能会有空白。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;6-如何让一个div水平居中？如何让图片水平居中&quot;&gt;&lt;a href=&quot;#6-如何让一个div水平居中？如何让图片水平居中&quot; class=&quot;headerlink&quot; title=&quot;6. 如何让一个div水平居中？如何让图片水平居中?&quot;&gt;&lt;/a&gt;&lt;strong&gt;6. 如何让一个div水平居中？如何让图片水平居中?&lt;/strong&gt;&lt;/h4&gt;&lt;ol&gt;
-&lt;li&gt;设置div的左右&lt;code&gt;margin-left&lt;/code&gt;,&lt;code&gt;margin-right&lt;/code&gt;值为&lt;code&gt;auto&lt;/code&gt; &amp;gt;&amp;gt;&lt;a href=&quot;http://js.jirengu.com/laziqaqaki/3/edit&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;代码演示&lt;/a&gt;；&lt;br&gt;2.&lt;ul&gt;
-&lt;li&gt;给图片加一个父容器，设置容器样式&lt;code&gt;text-align:center&lt;/code&gt;&amp;gt;&amp;gt;&lt;a href=&quot;http://js.jirengu.com/yudajuveye/2/edit&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;代码演示&lt;/a&gt;；&lt;/li&gt;
-&lt;li&gt;将img用&lt;code&gt;display:block&lt;/code&gt;变为块级元素，然后设置&lt;code&gt;左右margin&lt;/code&gt;值为&lt;code&gt;auto&lt;/code&gt;，类似于1中设置&lt;code&gt;div&lt;/code&gt;水平居中&amp;gt;&amp;gt;&lt;a href=&quot;http://js.jirengu.com/vuyuliseni/1/edit&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;代码演示&lt;/a&gt;；&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h4 id=&quot;7-如何设置元素透明-兼容性？&quot;&gt;&lt;a href=&quot;#7-如何设置元素透明-兼容性？&quot; class=&quot;headerlink&quot; title=&quot;7. 如何设置元素透明? 兼容性？&quot;&gt;&lt;/a&gt;&lt;strong&gt;7. 如何设置元素透明? 兼容性？&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;opacity：number&lt;/code&gt;属性(CSS3属性)指定了一个元素的透明度,默认&lt;code&gt;number&lt;/code&gt;是1（不透明），0是完全透明，&lt;a href=&quot;https://developer.mozilla.org/zh-CN/docs/Web/CSS/opacity&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;（更多）&lt;/a&gt;。兼容性：&lt;img src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task9opacity%E5%85%BC%E5%AE%B9%E6%80%A7.png&quot; alt=&quot;opacity兼容性&quot;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;filter:alpha(opacity=number);&lt;/code&gt;是专门给IE设定的属性，&lt;code&gt;number&lt;/code&gt;取值的范围在&lt;code&gt;0-100&lt;/code&gt;之间；兼容性：（一般用在IE8及以下）&lt;img src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task9filter%E5%85%BC%E5%AE%B9%E6%80%A7.png&quot; alt=&quot;filter兼容性&quot;&gt;&lt;/li&gt;
-&lt;li&gt;一段常用代码设置元素透明度：&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;.transparent_class &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      filter:alpha(opacity=50);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      -moz-opacity:0.5;/*-moz-opacity是为了兼容一些老版本的Mozilla浏览器*/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      -khtml-opacity: 0.5;/*-khtml-opacity是为了兼容一些老版本的Safari浏览器*/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      opacity: 0.5;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;blockquote&gt;
-&lt;p&gt;4.&lt;a href=&quot;http://www.jb51.net/css/24765.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;更详细的实现方案&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h4 id=&quot;8-opacity-和-rgba都能设置透明，有什么区别&quot;&gt;&lt;a href=&quot;#8-opacity-和-rgba都能设置透明，有什么区别&quot; class=&quot;headerlink&quot; title=&quot;8. opacity 和 rgba都能设置透明，有什么区别?&quot;&gt;&lt;/a&gt;&lt;strong&gt;8. opacity 和 rgba都能设置透明，有什么区别?&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;opacity&lt;/code&gt;作用于&lt;code&gt;元素&lt;/code&gt;，以及元素内的所有&lt;code&gt;内容&lt;/code&gt;的透明度，而&lt;code&gt;rgba()&lt;/code&gt;只作用于元素的&lt;code&gt;颜色&lt;/code&gt;或其&lt;code&gt;背景色&lt;/code&gt;。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;【代码】&quot;&gt;&lt;a href=&quot;#【代码】&quot; class=&quot;headerlink&quot; title=&quot;-【代码】&quot;&gt;&lt;/a&gt;-【代码】&lt;/h2&gt;&lt;blockquote&gt;
-&lt;h3 id=&quot;task-9-1&quot;&gt;&lt;a href=&quot;#task-9-1&quot; class=&quot;headerlink&quot; title=&quot;task-9-1&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task9/task-9-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;task-9-1&lt;/a&gt;&lt;/h3&gt;&lt;h3 id=&quot;task-9-2&quot;&gt;&lt;a href=&quot;#task-9-2&quot; class=&quot;headerlink&quot; title=&quot;task-9-2&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task9/task-9-2.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;task-9-2&lt;/a&gt;&lt;/h3&gt;&lt;h3 id=&quot;task-9-3&quot;&gt;&lt;a href=&quot;#task-9-3&quot; class=&quot;headerlink&quot; title=&quot;task-9-3&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task9/task-9-3.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;task-9-3&lt;/a&gt;&lt;/h3&gt;&lt;/blockquote&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;【知识点】&quot;&gt;&lt;a href=&quot;#【知识点】&quot; class=&quot;headerlink&quot; title=&quot;-【知识点】&quot;&gt;&lt;/a&gt;-【知识点】&lt;/h2&gt;&lt;h4 id=&quot;1-CSS-Sprite-雪碧图-指什么-有什么作用？&quot;&gt;&lt;a href=&quot;#1-CSS-Sprite
-    
-    </summary>
-    
-      <category term="编程学习" scheme="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/"/>
-    
-      <category term="前端基础" scheme="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/"/>
-    
-    
-      <category term="CSS" scheme="http://licao404.com/tags/CSS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CSS选择器</title>
-    <link href="http://licao404.com/2016/03/30/CSS%E9%80%89%E6%8B%A9%E5%99%A8/"/>
-    <id>http://licao404.com/2016/03/30/CSS选择器/</id>
-    <published>2016-03-30T05:14:52.000Z</published>
-    <updated>2016-03-30T05:26:11.166Z</updated>
-    
-    <content type="html">&lt;h2 id=&quot;【基础知识】&quot;&gt;&lt;a href=&quot;#【基础知识】&quot; class=&quot;headerlink&quot; title=&quot;-【基础知识】&quot;&gt;&lt;/a&gt;-【基础知识】&lt;/h2&gt;&lt;h4 id=&quot;1-CSS选择器常见的有几种&quot;&gt;&lt;a href=&quot;#1-CSS选择器常见的有几种&quot; class=&quot;headerlink&quot; title=&quot;1. CSS选择器常见的有几种?&quot;&gt;&lt;/a&gt;&lt;strong&gt;1. CSS选择器常见的有几种?&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt;通配选择器(&lt;code&gt;*&lt;/code&gt;)、标签选择器(&lt;code&gt;element&lt;/code&gt;)、id选择器(&lt;code&gt;#id&lt;/code&gt;)、类选择器(&lt;code&gt;.class&lt;/code&gt;)、伪类选择器(&lt;code&gt;E:hover&lt;/code&gt;等)、属性选择器(&lt;code&gt;E[atter=value]&lt;/code&gt;等)、组合选择器(&lt;code&gt;E&amp;gt;F&lt;/code&gt;等)、伪元素选择器(&lt;code&gt;E::first-letter&lt;/code&gt;等)&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h4 id=&quot;2-选择器的优先级是怎样的&quot;&gt;&lt;a href=&quot;#2-选择器的优先级是怎样的&quot; class=&quot;headerlink&quot; title=&quot;2. 选择器的优先级是怎样的?&quot;&gt;&lt;/a&gt;&lt;strong&gt;2. 选择器的优先级是怎样的?&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt;一般而言，选择器越特殊，它的优先级越高。也就是选择器指向的越准确，它的优先级就越高。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;常见选择器优先级排序（从高到低）：&lt;ol&gt;
-&lt;li&gt;在属性后面使用 &lt;code&gt;!important&lt;/code&gt; 会覆盖页面内任何位置定义的元素样式；&lt;/li&gt;
-&lt;li&gt;作为style属性写在元素标签上的内联样式；&lt;/li&gt;
-&lt;li&gt;id选择器；&lt;/li&gt;
-&lt;li&gt;类选择器；&lt;/li&gt;
-&lt;li&gt;伪类选择器；&lt;/li&gt;
-&lt;li&gt;属性选择器；&lt;/li&gt;
-&lt;li&gt;标签选择器；&lt;/li&gt;
-&lt;li&gt;通配选择器；&lt;/li&gt;
-&lt;li&gt;浏览器自定义&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ul&gt;
-&lt;li&gt;CSS规则由多个选择器组成,通常我们用1表示标签名选择器的优先级，用10表示类选择 器的优先级，用100标示ID选择器的优先级。比如&lt;code&gt;.polaris span {color:red;}&lt;/code&gt;的选择器优先级是 10 + 1 也就是11；而 &lt;code&gt;.polaris&lt;/code&gt;的优先级是10；浏览器自然会显示红色的字。&lt;/li&gt;
-&lt;li&gt;如果两个选择器规权值就是一样,后面的覆盖前面的！如下&lt;code&gt;div&lt;/code&gt;文案的颜色为&lt;code&gt;#666&lt;/code&gt;  &lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;div&lt;/span&gt; &amp;#123;&lt;span class=&quot;attribute&quot;&gt;color&lt;/span&gt;: &lt;span class=&quot;number&quot;&gt;#333&lt;/span&gt;;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;....&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;div&lt;/span&gt; &amp;#123;&lt;span class=&quot;attribute&quot;&gt;color&lt;/span&gt;: &lt;span class=&quot;number&quot;&gt;#666&lt;/span&gt;;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;3-class-和-id-的使用场景&quot;&gt;&lt;a href=&quot;#3-class-和-id-的使用场景&quot; class=&quot;headerlink&quot; title=&quot;3. class 和 id 的使用场景?&quot;&gt;&lt;/a&gt;&lt;strong&gt;3. class 和 id 的使用场景?&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;在对页面排版进行结构化布局时（比如说通常一个页面都是由一个页眉，一个报头&lt;masthead&gt;，一个内容区域&lt;code&gt;content&lt;/code&gt;和一个页脚&lt;code&gt;footer&lt;/code&gt;等组成），一般使用id比较理想，因为一个id在一个文档中只能被使用一次。而这些元素在同一页面中 很少会出现大于一次的情况。&lt;/masthead&gt;&lt;/li&gt;
-&lt;li&gt;class更多的被应用到文字版块以及页面修饰等方面&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h4 id=&quot;4-使用CSS选择器时为什么要划定适当的命名空间？&quot;&gt;&lt;a href=&quot;#4-使用CSS选择器时为什么要划定适当的命名空间？&quot; class=&quot;headerlink&quot; title=&quot;4. 使用CSS选择器时为什么要划定适当的命名空间？&quot;&gt;&lt;/a&gt;&lt;strong&gt;4. 使用CSS选择器时为什么要划定适当的命名空间？&lt;/strong&gt;&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;使用适当的命名空间可以让选择器只对所选的命名空间有效，避免与其他元素冲突。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;5-以下选择器分别是什么意思&quot;&gt;&lt;a href=&quot;#5-以下选择器分别是什么意思&quot; class=&quot;headerlink&quot; title=&quot;5. 以下选择器分别是什么意思?&quot;&gt;&lt;/a&gt;&lt;strong&gt;5. 以下选择器分别是什么意思?&lt;/strong&gt;&lt;/h4&gt;&lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-id&quot;&gt;#header&lt;/span&gt;&amp;#123;        &lt;span class=&quot;comment&quot;&gt;/*定位id为header的元素*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-class&quot;&gt;.header&lt;/span&gt;&amp;#123;        &lt;span class=&quot;comment&quot;&gt;/*定位class为header的元素*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-class&quot;&gt;.header&lt;/span&gt; &lt;span class=&quot;selector-class&quot;&gt;.logo&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;               &lt;span class=&quot;comment&quot;&gt;/*定位class为header元素的后代中所有class为logo的元素*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-class&quot;&gt;.header&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.mobile&lt;/span&gt;&amp;#123; &lt;span class=&quot;comment&quot;&gt;/*同时定位class为header的元素和class为mobile的元素*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-class&quot;&gt;.header&lt;/span&gt; &lt;span class=&quot;selector-tag&quot;&gt;p&lt;/span&gt;, &lt;span class=&quot;selector-class&quot;&gt;.header&lt;/span&gt; &lt;span class=&quot;selector-tag&quot;&gt;h3&lt;/span&gt;&amp;#123;&lt;span class=&quot;comment&quot;&gt;/*同时定位class为header元素下所有的p元素和h3元素*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-id&quot;&gt;#header&lt;/span&gt; &lt;span class=&quot;selector-class&quot;&gt;.nav&lt;/span&gt;&amp;gt;&lt;span class=&quot;selector-tag&quot;&gt;li&lt;/span&gt;&amp;#123; &lt;span class=&quot;comment&quot;&gt;/*id为header的元素后代中class为nav元素的直接li元素*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-id&quot;&gt;#header&lt;/span&gt; &lt;span class=&quot;selector-tag&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;selector-pseudo&quot;&gt;:hover&lt;/span&gt;&amp;#123; &lt;span class=&quot;comment&quot;&gt;/*id为header元素的后代中所有a标签的hover状态*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h4 id=&quot;6-列出你知道的伪类选择器&quot;&gt;&lt;a href=&quot;#6-列出你知道的伪类选择器&quot; class=&quot;headerlink&quot; title=&quot;6. 列出你知道的伪类选择器&quot;&gt;&lt;/a&gt;&lt;strong&gt;6. 列出你知道的伪类选择器&lt;/strong&gt;&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;E:hover&lt;/code&gt;鼠标悬浮在上的元素&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;a:link&lt;/code&gt;鼠标未被点击的链接&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;E:active&lt;/code&gt;鼠标按住的元素&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;a:visited&lt;/code&gt;鼠标已点击的链接&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;E:focus&lt;/code&gt;获得焦点的&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;E:first-child&lt;/code&gt;E的父元素的第一个子元素&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;E:nth-child(n)&lt;/code&gt;E的父元素下第n个子元素&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;E:first-of-type&lt;/code&gt;E的父元素下使用同种标签的第一个元素&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;E:nth-of-type&lt;/code&gt;E的父元素下使用同种标签的第n个元素  &lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;7-first-child和-first-of-type的作用和区别&quot;&gt;&lt;a href=&quot;#7-first-child和-first-of-type的作用和区别&quot; class=&quot;headerlink&quot; title=&quot;7. :first-child和:first-of-type的作用和区别?&quot;&gt;&lt;/a&gt;&lt;strong&gt;7. &lt;code&gt;:first-child&lt;/code&gt;和&lt;code&gt;:first-of-type&lt;/code&gt;的作用和区别?&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;:first-child&lt;/code&gt;定位的是其父的第一个子元素；&lt;br&gt;&lt;code&gt;:first-of-type&lt;/code&gt;定位的是其父下同种标签的第一个子元素；&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;h3&amp;gt;我是h3&amp;lt;/h3&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;lt;p&amp;gt;我是p1&amp;lt;/p&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;lt;div class=&amp;quot;div1&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&amp;lt;p&amp;gt;我是p3&amp;lt;/p&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&amp;lt;p&amp;gt;我是p4&amp;lt;/p&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&amp;lt;p&amp;gt;我是p5&amp;lt;/p&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;p:first-child &amp;#123;border: 1px solid red;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;/*此时定位的只是p3而没有p1*/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;p:first-of-type &amp;#123;border: 1px solid red;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;/*此时定位的是p1，p3*/&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h4 id=&quot;8-运行如下代码，解析下输出样式的原因。&quot;&gt;&lt;a href=&quot;#8-运行如下代码，解析下输出样式的原因。&quot; class=&quot;headerlink&quot; title=&quot;8. 运行如下代码，解析下输出样式的原因。&quot;&gt;&lt;/a&gt;&lt;strong&gt;8. 运行如下代码，解析下输出样式的原因。&lt;/strong&gt;&lt;/h4&gt;&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;meta&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;charset&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;utf-8&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;title&lt;/span&gt;&amp;gt;&lt;/span&gt;first-child  vs first-of-child&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;title&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;style&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;css&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;/*选中.item1,该元素是它父亲的第一个孩子*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;selector-class&quot;&gt;.item1&lt;/span&gt;&lt;span class=&quot;selector-pseudo&quot;&gt;:first-of-type&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;attribute&quot;&gt;background&lt;/span&gt;: red;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;/*选中.item1,该元素是它父亲所有的 .item1孩子中的第一个*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;selector-class&quot;&gt;.item1&lt;/span&gt;&lt;span class=&quot;selector-pseudo&quot;&gt;:first-child&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;attribute&quot;&gt;color&lt;/span&gt;: blue;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;style&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;item1&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;item1&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;ct&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;item2&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;ct-item2&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;item1&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;ct-item1&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;item1&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;ct-itmm1&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;item2&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;     &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;item1&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;ct-item2-item1&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   &lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; &lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;.item1:first-child{color: blue;}&lt;/code&gt;定位的是class为item1元素的父元素的第一个子元素，所以&lt;code&gt;item1&lt;/code&gt;、&lt;br&gt;&lt;code&gt;ct-item2-item1&lt;/code&gt;有效,文本为蓝色;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;.item1:first-of-type{background: red;&lt;/code&gt; 定位clss为&lt;code&gt;item1&lt;/code&gt;且为父亲的第一个子元素，则只有&lt;code&gt;item1&lt;/code&gt;、&lt;br&gt;&lt;code&gt;ct-item2-item1&lt;/code&gt;有效，背景为红色&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h4 id=&quot;9-text-align-center的作用是什么，作用在什么元素上？能让什么元素水平居中&quot;&gt;&lt;a href=&quot;#9-text-align-center的作用是什么，作用在什么元素上？能让什么元素水平居中&quot; class=&quot;headerlink&quot; title=&quot;9. text-align: center的作用是什么，作用在什么元素上？能让什么元素水平居中&quot;&gt;&lt;/a&gt;&lt;strong&gt;9. &lt;code&gt;text-align: center&lt;/code&gt;的作用是什么，作用在什么元素上？能让什么元素水平居中&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;让元素水平居中&lt;/li&gt;
-&lt;li&gt;作用在块级元素上&lt;/li&gt;
-&lt;li&gt;让块级元素内的行内元素水平居中&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h4 id=&quot;10-如果遇到一个属性想知道兼容性，在哪查看&quot;&gt;&lt;a href=&quot;#10-如果遇到一个属性想知道兼容性，在哪查看&quot; class=&quot;headerlink&quot; title=&quot;10. 如果遇到一个属性想知道兼容性，在哪查看?&quot;&gt;&lt;/a&gt;&lt;strong&gt;10. 如果遇到一个属性想知道兼容性，在哪查看?&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt;可以在网站&lt;a href=&quot;http://caniuse.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Caniuse&lt;/a&gt;查询浏览器兼容性！&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;【代码】&quot;&gt;&lt;a href=&quot;#【代码】&quot; class=&quot;headerlink&quot; title=&quot;-【代码】&quot;&gt;&lt;/a&gt;-【代码】&lt;/h2&gt;&lt;blockquote&gt;
-&lt;h3 id=&quot;task-8-1&quot;&gt;&lt;a href=&quot;#task-8-1&quot; class=&quot;headerlink&quot; title=&quot;task-8-1&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/jirengu-inc/jrg-tehui2/blob/master/%E6%9D%8E%E6%93%8D/task8/task-8-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;task-8-1&lt;/a&gt;&lt;/h3&gt;&lt;h3 id=&quot;task-8-2&quot;&gt;&lt;a href=&quot;#task-8-2&quot; class=&quot;headerlink&quot; title=&quot;task-8-2&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/jirengu-inc/jrg-tehui2/blob/master/%E6%9D%8E%E6%93%8D/task8/task-8-2.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;task-8-2&lt;/a&gt;&lt;/h3&gt;&lt;/blockquote&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;【基础知识】&quot;&gt;&lt;a href=&quot;#【基础知识】&quot; class=&quot;headerlink&quot; title=&quot;-【基础知识】&quot;&gt;&lt;/a&gt;-【基础知识】&lt;/h2&gt;&lt;h4 id=&quot;1-CSS选择器常见的有几种&quot;&gt;&lt;a href=&quot;#1-CSS选择器常见的有几种&quot; class
-    
-    </summary>
-    
-      <category term="编程学习" scheme="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/"/>
-    
-      <category term="前端基础" scheme="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/"/>
-    
-    
-      <category term="CSS" scheme="http://licao404.com/tags/CSS/"/>
-    
-  </entry>
   
   <entry>
     <title>闭包、延时器</title>
@@ -1097,6 +615,515 @@
     
     
       <category term="JavaScript" scheme="http://licao404.com/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CSS浏览器兼容</title>
+    <link href="http://licao404.com/2016/03/01/CSS%E6%B5%8F%E8%A7%88%E5%99%A8%E5%85%BC%E5%AE%B9/"/>
+    <id>http://licao404.com/2016/03/01/CSS浏览器兼容/</id>
+    <published>2016-03-01T05:39:11.000Z</published>
+    <updated>2016-03-30T05:53:51.944Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;【知识点】&quot;&gt;&lt;a href=&quot;#【知识点】&quot; class=&quot;headerlink&quot; title=&quot;-【知识点】&quot;&gt;&lt;/a&gt;-【知识点】&lt;/h2&gt;&lt;h4 id=&quot;1-如何调试-IE-浏览器&quot;&gt;&lt;a href=&quot;#1-如何调试-IE-浏览器&quot; class=&quot;headerlink&quot; title=&quot;1. 如何调试 IE 浏览器?&quot;&gt;&lt;/a&gt;&lt;strong&gt;1. 如何调试 IE 浏览器?&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;1.通过高版本IE浏览器的开发者工具，可以仿真其之前版本IE浏览器的运行环境，基本上可以临时快速调试各版本IE浏览器：&lt;img src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task13IE%E5%BC%80%E5%8F%91%E8%80%85.png&quot; alt=&quot;IE调试01&quot;&gt;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;2.用虚拟机运行xp等系统，用原生ie6浏览器调试；&lt;br&gt;3.如果有条件，远程到一台有相应版本浏览器的机器（服务器）上，进行调试；&lt;br&gt;4.使用第三方调试工具（&lt;code&gt;IETester&lt;/code&gt;等）模拟各种版本浏览器，不过存在一些未知的问题，毕竟是模拟的；&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;2-什么是CSS-hack？在-CSS-和-HTML里如何写-hack？在-CSS-中-ie6、ie7的-hack-方式？&quot;&gt;&lt;a href=&quot;#2-什么是CSS-hack？在-CSS-和-HTML里如何写-hack？在-CSS-中-ie6、ie7的-hack-方式？&quot; class=&quot;headerlink&quot; title=&quot;2. 什么是CSS hack？在 CSS 和 HTML里如何写 hack？在 CSS 中 ie6、ie7的 hack 方式？&quot;&gt;&lt;/a&gt;&lt;strong&gt;2. 什么是&lt;code&gt;CSS hack&lt;/code&gt;？在 CSS 和 HTML里如何写 &lt;code&gt;hack&lt;/code&gt;？在 CSS 中 ie6、ie7的 &lt;code&gt;hack&lt;/code&gt; 方式？&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;由于不同浏览器和某浏览器的不同版本，特别是一些老浏览器，如IE6,7等，对CSS的支持、解析不一致，因此会导致页面的显示效果不一样，而&lt;code&gt;CSS hack&lt;/code&gt;是利用浏览器漏洞来让不同浏览器显示效果一致，我们把针对不同的浏览器/不同版本写相应的&lt;code&gt;CSS code&lt;/code&gt;的过程，叫做&lt;code&gt;CSS hack&lt;/code&gt;；&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;CSS hack&lt;/code&gt;基本上有4种方式：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;IE条件注释法（IE专有的hack方式，Microsoft官方推荐）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;只在IE下生效&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;&amp;lt;!--[if IE]&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;ie.css&quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;![endif]--&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;只在IE6下生效&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;&amp;lt;!--[if IE6]&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;ie6.css&quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;![endif]--&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;只在IE6以上版本生效&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;&amp;lt;!--[if gte IE]&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;ie.css&quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;![endif]--&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;非IE浏览器生效&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;&amp;lt;!--[if ！IE]&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;ie.css&quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;![endif]--&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;属性前缀法：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;_&lt;/code&gt;和&lt;code&gt;-&lt;/code&gt;只对&lt;code&gt;ie6&lt;/code&gt;有效；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;*&lt;/code&gt;对&lt;code&gt;ie6,7&lt;/code&gt;有效；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\9&lt;/code&gt;对&lt;code&gt;ie11&lt;/code&gt;以下所有ie有效；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\0&lt;/code&gt;对&lt;code&gt;ie8,9,10&lt;/code&gt;有效；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\9\0&lt;/code&gt;只对&lt;code&gt;ie9,10&lt;/code&gt;有效；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\0\9&lt;/code&gt;只对&lt;code&gt;ie8,9&lt;/code&gt;有效；&lt;/li&gt;
+&lt;li&gt;… …&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;选择器前缀法：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;* 前缀&lt;/code&gt;只对IE6有效；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;*+ 前缀&lt;/code&gt;只对IE7有效；&lt;/li&gt;
+&lt;li&gt;更多可以参考&lt;a href=&quot;http://browserhacks.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;browserhacks&lt;/a&gt;；&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;用&lt;code&gt;JavaScript&lt;/code&gt;判断&lt;code&gt;ie&lt;/code&gt;版本：&lt;/p&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// 是否小于等于ie8&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; isIE = &lt;span class=&quot;string&quot;&gt;&#39;\v&#39;&lt;/span&gt;==&lt;span class=&quot;string&quot;&gt;&#39;v&#39;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// 判断ie版本&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; ieVersion = (&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;) &lt;/span&gt;&amp;#123; &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;RegExp&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;MSIE     ([0-9]&amp;#123;1,&amp;#125;[\.0-9]&amp;#123;0,&amp;#125;)&quot;&lt;/span&gt;).exec(navigator.userAgent) != &lt;span class=&quot;literal&quot;&gt;null&lt;/span&gt;) &amp;#123; &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;parseFloat&lt;/span&gt;( &lt;span class=&quot;built_in&quot;&gt;RegExp&lt;/span&gt;.$&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt; ); &amp;#125; &lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt; &amp;#123; &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;; &amp;#125; &amp;#125;)();&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;3-列举几种-浏览器兼容问题&quot;&gt;&lt;a href=&quot;#3-列举几种-浏览器兼容问题&quot; class=&quot;headerlink&quot; title=&quot;3. 列举几种 浏览器兼容问题&quot;&gt;&lt;/a&gt;&lt;strong&gt;3. 列举几种 浏览器兼容问题&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;1.不同浏览器对标签默认的内外边距不一致，最常见的兼容性问题，解决方式：在&lt;code&gt;css&lt;/code&gt;开头用通配选择器将所有元素重置&lt;code&gt;*{margin:0;padding:0;}&lt;/code&gt;;&lt;br&gt;2.块属性标签float后，又有横行的margin情况下，在IE6显示margin比设置的大,常见的问题体现是ie6中最后一块被顶到下面一行，解决方法：在float的标签样式控制中加入 display:inline;将其转化为行内属性；&lt;br&gt;3.图片默认有间距，几个img标签放在一起的时候，有些浏览器会有默认的间距，加了问题一中提到的通配符也不起作用；解决方法：用&lt;code&gt;float&lt;/code&gt;为图片布局；&lt;br&gt;4…. …更多兼容性问题参考&lt;a href=&quot;http://blog.csdn.net/chuyuqing/article/details/37561313&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;chuyuqing的专栏&lt;/a&gt;，&lt;a href=&quot;http://wenku.baidu.com/link?url=ysYAKTQTyuudp9fU8sLvVr-VlGdJvCrHFWRpN8RcJSo0hxw-XnBJ_zhiHVudTy7Mq3AQSM6TEmCMDFaS4CNrS2NXGkokWmvU9gKGFaqxVYe&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;文库&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;4-针对兼容、多浏览器覆盖有什么看法？渐进增强和优雅降级是什么意思？&quot;&gt;&lt;a href=&quot;#4-针对兼容、多浏览器覆盖有什么看法？渐进增强和优雅降级是什么意思？&quot; class=&quot;headerlink&quot; title=&quot;4. 针对兼容、多浏览器覆盖有什么看法？渐进增强和优雅降级是什么意思？&quot;&gt;&lt;/a&gt;&lt;strong&gt;4. 针对兼容、多浏览器覆盖有什么看法？渐进增强和优雅降级是什么意思？&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;1.首先考虑产品的受众，设计师，是否需要兼容老版本的浏览器，比如说该产品用户大多不用IE浏览器，则不需要考虑兼容ie的老版本；&lt;br&gt;2.看你的&lt;code&gt;leader&lt;/code&gt;或者审阅产品的人在用什么浏览器,考虑兼容；&lt;br&gt;3.做到几乎全部的兼容覆盖并不现实，必须结合现有资源，用户实际需求，项目时间的综合考虑是否要做或做什么浏览器的兼容；&lt;br&gt;4.渐进增强：项目一开始就考虑低版本浏览器的兼容性，保证最基本的功能，再对高级浏览器进行效果改进。&lt;br&gt;5.优雅降级：一开始就构建完整的功能，完成后再进行低版本浏览器兼容；&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;5-reset-css和normalize-css分别是做什么的？为什么推荐使用-nomalize-css&quot;&gt;&lt;a href=&quot;#5-reset-css和normalize-css分别是做什么的？为什么推荐使用-nomalize-css&quot; class=&quot;headerlink&quot; title=&quot;5. reset.css和normalize.css分别是做什么的？为什么推荐使用 nomalize.css?&quot;&gt;&lt;/a&gt;&lt;strong&gt;5. &lt;code&gt;reset.css&lt;/code&gt;和&lt;code&gt;normalize.css&lt;/code&gt;分别是做什么的？为什么推荐使用 nomalize.css?&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;1.&lt;code&gt;reset.css&lt;/code&gt;是全局样式重置，html标签在不同浏览器的默认样式存在差异，&lt;code&gt;reset.css&lt;/code&gt;一开始就将浏览器的默认样式全部暴力覆盖掉；&lt;br&gt;2.&lt;code&gt;normalize.css&lt;/code&gt;保留浏览器的原来样式并且做到每个浏览显示一致；&lt;br&gt;3.&lt;code&gt;Normalize&lt;/code&gt;相对&lt;code&gt;平和&lt;/code&gt;，注重通用的方案，重置掉该重置的样式，保留有用的&lt;code&gt;user agent&lt;/code&gt;样式，同时进行一些 bug 的修复，这点是 reset 所缺乏的,所以通用性和可维护性高；&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;【操作】&quot;&gt;&lt;a href=&quot;#【操作】&quot; class=&quot;headerlink&quot; title=&quot;-【操作】&quot;&gt;&lt;/a&gt;-【操作】&lt;/h2&gt;&lt;blockquote&gt;
+&lt;h3 id=&quot;1-安装-VirtualBox-下载-安装虚拟机&quot;&gt;&lt;a href=&quot;#1-安装-VirtualBox-下载-安装虚拟机&quot; class=&quot;headerlink&quot; title=&quot;1.安装 VirtualBox , 下载 安装虚拟机&quot;&gt;&lt;/a&gt;1.安装 VirtualBox , 下载 安装虚拟机&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task13Win_XP.png&quot; alt=&quot;虚拟机&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;2-在-ie-6-7-8中展示-盒模型、inline-block、max-width的区别&quot;&gt;&lt;a href=&quot;#2-在-ie-6-7-8中展示-盒模型、inline-block、max-width的区别&quot; class=&quot;headerlink&quot; title=&quot;2.在 ie 6, 7, 8中展示 盒模型、inline-block、max-width的区别&quot;&gt;&lt;/a&gt;2.在 ie 6, 7, 8中展示 &lt;code&gt;盒模型&lt;/code&gt;、&lt;code&gt;inline-block&lt;/code&gt;、&lt;code&gt;max-width&lt;/code&gt;的区别&lt;/h3&gt;&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;测试代码：&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;style&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;type&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;text/css&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;css&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  *&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  	&lt;span class=&quot;attribute&quot;&gt;padding&lt;/span&gt;: &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  	&lt;span class=&quot;attribute&quot;&gt;margin&lt;/span&gt;: &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;selector-class&quot;&gt;.box&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;attribute&quot;&gt;display&lt;/span&gt;: inline-block;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;attribute&quot;&gt;height&lt;/span&gt;:&lt;span class=&quot;number&quot;&gt;100px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;attribute&quot;&gt;width&lt;/span&gt;:&lt;span class=&quot;number&quot;&gt;100px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;attribute&quot;&gt;border&lt;/span&gt;:&lt;span class=&quot;number&quot;&gt;20px&lt;/span&gt; solid red;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;attribute&quot;&gt;padding&lt;/span&gt;:&lt;span class=&quot;number&quot;&gt;30px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;attribute&quot;&gt;margin&lt;/span&gt;: &lt;span class=&quot;number&quot;&gt;40px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;selector-class&quot;&gt;.box2&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;attribute&quot;&gt;display&lt;/span&gt;: inline-block;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;attribute&quot;&gt;height&lt;/span&gt;:&lt;span class=&quot;number&quot;&gt;100px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;attribute&quot;&gt;width&lt;/span&gt;:&lt;span class=&quot;number&quot;&gt;100px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;attribute&quot;&gt;max-width&lt;/span&gt;: &lt;span class=&quot;number&quot;&gt;50px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;attribute&quot;&gt;border&lt;/span&gt;:&lt;span class=&quot;number&quot;&gt;20px&lt;/span&gt; solid blue;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;attribute&quot;&gt;padding&lt;/span&gt;:&lt;span class=&quot;number&quot;&gt;30px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;attribute&quot;&gt;margin&lt;/span&gt;: &lt;span class=&quot;number&quot;&gt;40px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;style&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;&amp;lt;!--****************************************************--&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;box&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;box2&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;1.在标准模式下的盒模型如下图所示，&lt;code&gt;盒子总宽度/高度=width/height+padding+border+margin&lt;/code&gt;;&lt;img src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task13ie8%E6%A0%87%E5%87%86%E5%92%8C%E6%A8%A1%E5%9E%8B.png&quot; alt=&quot;标准盒子模型&quot;&gt;&lt;br&gt;在&lt;code&gt;ie6,7&lt;/code&gt;怪异模式下,&lt;code&gt;盒子总宽度/高度=width/height + margin = 内容区宽度/高度 + padding + border + margin&lt;/code&gt;;&lt;br&gt;2.&lt;code&gt;inline-block&lt;/code&gt;只有ie8支持，&lt;code&gt;max-width&lt;/code&gt;ie7,8支持（存在bug具体看&lt;a href=&quot;http://caniuse.com/#search=max-width&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;caniuse&lt;/a&gt;）：&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;p&gt;IE8&lt;/p&gt;
+&lt;h2 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; title=&quot;&quot;&gt;&lt;/a&gt;&lt;img src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task13inline-block-ie8.png&quot; alt=&quot;ie8&quot;&gt;&lt;/h2&gt;&lt;p&gt;IE7&lt;/p&gt;
+&lt;h2 id=&quot;-1&quot;&gt;&lt;a href=&quot;#-1&quot; class=&quot;headerlink&quot; title=&quot;&quot;&gt;&lt;/a&gt;&lt;img src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task13inline-block-ie7.png&quot; alt=&quot;ie7&quot;&gt;&lt;/h2&gt;&lt;p&gt;IE6&lt;br&gt;&lt;img src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task13ie6.png&quot; alt=&quot;ie6&quot;&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;【知识点】&quot;&gt;&lt;a href=&quot;#【知识点】&quot; class=&quot;headerlink&quot; title=&quot;-【知识点】&quot;&gt;&lt;/a&gt;-【知识点】&lt;/h2&gt;&lt;h4 id=&quot;1-如何调试-IE-浏览器&quot;&gt;&lt;a href=&quot;#1-如何调试-IE-浏览器&quot; class=&quot;headerlink&quot; title=&quot;1. 如何调试 IE 浏览器?&quot;&gt;&lt;/a&gt;&lt;strong&gt;1. 如何调试 IE 浏览器?&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;1.通过高版本IE浏览器的开发者工具，可以仿真其之前版本IE浏览器的运行环境，基本上可以临时快速调试各版本IE浏览器：&lt;img src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task13IE%E5%BC%80%E5%8F%91%E8%80%85.png&quot; alt=&quot;IE调试01&quot;&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="编程学习" scheme="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="前端基础" scheme="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/"/>
+    
+    
+      <category term="CSS" scheme="http://licao404.com/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>圣杯布局+双飞翼布局</title>
+    <link href="http://licao404.com/2016/02/29/%E5%9C%A3%E6%9D%AF%E5%B8%83%E5%B1%80-%E5%8F%8C%E9%A3%9E%E7%BF%BC%E5%B8%83%E5%B1%80/"/>
+    <id>http://licao404.com/2016/02/29/圣杯布局-双飞翼布局/</id>
+    <published>2016-02-29T05:36:54.000Z</published>
+    <updated>2016-03-30T05:52:02.567Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;【基础知识】&quot;&gt;&lt;a href=&quot;#【基础知识】&quot; class=&quot;headerlink&quot; title=&quot;-【基础知识】&quot;&gt;&lt;/a&gt;-【基础知识】&lt;/h2&gt;&lt;h4 id=&quot;1-负边距在让元素产生偏移时和position-relative有什么区别&quot;&gt;&lt;a href=&quot;#1-负边距在让元素产生偏移时和position-relative有什么区别&quot; class=&quot;headerlink&quot; title=&quot;1. 负边距在让元素产生偏移时和position: relative有什么区别?&quot;&gt;&lt;/a&gt;&lt;strong&gt;1. 负边距在让元素产生偏移时和&lt;code&gt;position: relative&lt;/code&gt;有什么区别?&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;最大的区别是负margin让元素移动时改变了文档流，同时可能影响其他元素排列；而&lt;code&gt;position:relative&lt;/code&gt;并未让元素脱离文档流，只是让元素相对于本来的位置进行定位，对其他元素的排列不会造成影响。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h4 id=&quot;2-使用负-margin-形成三栏布局有什么条件&quot;&gt;&lt;a href=&quot;#2-使用负-margin-形成三栏布局有什么条件&quot; class=&quot;headerlink&quot; title=&quot;2. 使用负 margin 形成三栏布局有什么条件?&quot;&gt;&lt;/a&gt;&lt;strong&gt;2. 使用负 margin 形成三栏布局有什么条件?&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;1.&lt;code&gt;HTML&lt;/code&gt;代码中，中间主块要写在文档流的最前面让浏览器优先渲染，然后是左右边栏；&lt;br&gt;2.父容器内三个块必须都是浮动的;&lt;br&gt;3.且主块的宽度必须撑满父容器的宽度（&lt;code&gt;width:100%&lt;/code&gt;）&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;3-圣杯布局的原理是怎样的-简述实现圣杯布局的步骤？&quot;&gt;&lt;a href=&quot;#3-圣杯布局的原理是怎样的-简述实现圣杯布局的步骤？&quot; class=&quot;headerlink&quot; title=&quot;3. 圣杯布局的原理是怎样的? 简述实现圣杯布局的步骤？&quot;&gt;&lt;/a&gt;&lt;strong&gt;3. 圣杯布局的原理是怎样的? 简述实现圣杯布局的步骤？&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;1.三栏浮动&lt;code&gt;float:left&lt;/code&gt;,相对定位&lt;code&gt;position:relative&lt;/code&gt;;&lt;br&gt;2.主块设置&lt;code&gt;width:100%&lt;/code&gt;占满宽度；&lt;br&gt;3.左块使用&lt;code&gt;margin-left:-100%&lt;/code&gt;拉到最左边，右块使用&lt;code&gt;margin-left:npx&lt;/code&gt;，n为右块的宽度；&lt;br&gt;4.父容器设置左右padding宽度能容纳下左右块；&lt;br&gt;5.左块用相对定位拉到父容器在左边空出的位置，右块同理；&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;4-双飞翼布局的原理-实现步骤&quot;&gt;&lt;a href=&quot;#4-双飞翼布局的原理-实现步骤&quot; class=&quot;headerlink&quot; title=&quot;4. 双飞翼布局的原理? 实现步骤?&quot;&gt;&lt;/a&gt;&lt;strong&gt;4. 双飞翼布局的原理? 实现步骤?&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;1.三栏浮动&lt;code&gt;float:left&lt;/code&gt;,相对定位&lt;code&gt;position:relative&lt;/code&gt;;&lt;br&gt;2.主块设置&lt;code&gt;width:100%&lt;/code&gt;占满宽度；&lt;br&gt;3.左块使用&lt;code&gt;margin-left:-100%&lt;/code&gt;拉到最左边，右块使用&lt;code&gt;margin-left:npx&lt;/code&gt;，n为右块的宽度；&lt;br&gt;4.主块嵌套一个新块，设置该块左右&lt;code&gt;margin&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;【代码】&quot;&gt;&lt;a href=&quot;#【代码】&quot; class=&quot;headerlink&quot; title=&quot;-【代码】&quot;&gt;&lt;/a&gt;-【代码】&lt;/h2&gt;&lt;blockquote&gt;
+&lt;h3 id=&quot;task-12-1&quot;&gt;&lt;a href=&quot;#task-12-1&quot; class=&quot;headerlink&quot; title=&quot;task-12-1&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task12/task-12-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;task-12-1&lt;/a&gt;&lt;/h3&gt;&lt;h3 id=&quot;task-12-2&quot;&gt;&lt;a href=&quot;#task-12-2&quot; class=&quot;headerlink&quot; title=&quot;task-12-2&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task12/task-12-2.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;task-12-2&lt;/a&gt;&lt;/h3&gt;&lt;h3 id=&quot;task-12-3&quot;&gt;&lt;a href=&quot;#task-12-3&quot; class=&quot;headerlink&quot; title=&quot;task-12-3&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task12/task-12-3.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;task-12-3&lt;/a&gt;&lt;/h3&gt;&lt;h3 id=&quot;task-12-4&quot;&gt;&lt;a href=&quot;#task-12-4&quot; class=&quot;headerlink&quot; title=&quot;task-12-4&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task12/task-12-4.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;task-12-4&lt;/a&gt;&lt;/h3&gt;&lt;/blockquote&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;【基础知识】&quot;&gt;&lt;a href=&quot;#【基础知识】&quot; class=&quot;headerlink&quot; title=&quot;-【基础知识】&quot;&gt;&lt;/a&gt;-【基础知识】&lt;/h2&gt;&lt;h4 id=&quot;1-负边距在让元素产生偏移时和position-relative有什么区别&quot;&gt;&lt;a href=&quot;#1-负边距在让元素产生偏移时和position-relative有什么区别&quot; class=&quot;headerlink&quot; title=&quot;1. 负边距在让元素产生偏移时和position: relative有什么区别?&quot;&gt;&lt;/a&gt;&lt;strong&gt;1. 负边距在让元素产生偏移时和&lt;code&gt;position: relative&lt;/code&gt;有什么区别?&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;最大的区别是负margin让元素移动时改变了文档流，同时可能影响其他元素排列；而&lt;code&gt;position:relative&lt;/code&gt;并未让元素脱离文档流，只是让元素相对于本来的位置进行定位，对其他元素的排列不会造成影响。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="编程学习" scheme="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="前端基础" scheme="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/"/>
+    
+    
+      <category term="CSS" scheme="http://licao404.com/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>BFC</title>
+    <link href="http://licao404.com/2016/02/28/BFC/"/>
+    <id>http://licao404.com/2016/02/28/BFC/</id>
+    <published>2016-02-28T05:32:34.000Z</published>
+    <updated>2016-03-30T05:52:28.968Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;【基础知识】&quot;&gt;&lt;a href=&quot;#【基础知识】&quot; class=&quot;headerlink&quot; title=&quot;-【基础知识】&quot;&gt;&lt;/a&gt;-【基础知识】&lt;/h2&gt;&lt;h4 id=&quot;1-在什么场景下会出现外边距合并？如何合并？如何不让相邻元素外边距合并？&quot;&gt;&lt;a href=&quot;#1-在什么场景下会出现外边距合并？如何合并？如何不让相邻元素外边距合并？&quot; class=&quot;headerlink&quot; title=&quot;1. 在什么场景下会出现外边距合并？如何合并？如何不让相邻元素外边距合并？&quot;&gt;&lt;/a&gt;&lt;strong&gt;1. 在什么场景下会出现外边距合并？如何合并？如何不让相邻元素外边距合并？&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;相邻块盒子的垂直外边距合并只有他们是在同一BFC，且没有padding与border将外边距隔开才会发生；&lt;/li&gt;
+&lt;li&gt;垂直相邻元素，子元素和父元素会发生合并，合并后的外边距的高度等于两个发生合并的外边距的高度中的较大者。&lt;/li&gt;
+&lt;li&gt;创建另外一个BFC，让不想发生外边距合并的元素处于不同的BFC。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h4 id=&quot;2-去除inline-block内缝隙有哪几种常见方法&quot;&gt;&lt;a href=&quot;#2-去除inline-block内缝隙有哪几种常见方法&quot; class=&quot;headerlink&quot; title=&quot;2. 去除inline-block内缝隙有哪几种常见方法?&quot;&gt;&lt;/a&gt;&lt;strong&gt;2. 去除&lt;code&gt;inline-block&lt;/code&gt;内缝隙有哪几种常见方法?&lt;/strong&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;1.修改&lt;code&gt;li&lt;/code&gt;的代码书写格式：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;img src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task11%E5%8E%BB%E7%BC%9D%E9%9A%99li.gif&quot; alt=&quot;li书写1&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;img src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task11%E5%8E%BB%E7%BC%9D%E9%9A%99li2.gif&quot; alt=&quot;li书写2&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;2.用&lt;code&gt;负margin&lt;/code&gt;：&lt;ul&gt;
+&lt;li&gt;&lt;img src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task11%E5%8E%BB%E7%BC%9D%E9%9A%99%E8%B4%9Fmargin.gif&quot; alt=&quot;-margin&quot;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;3.用浮动并在父元素用&lt;code&gt;overflow:auto&lt;/code&gt;清除浮动：&lt;ul&gt;
+&lt;li&gt;&lt;img src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task11%E5%8E%BB%E7%BC%9D%E9%9A%99%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8.gif&quot; alt=&quot;float&quot;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;设置父元素的&lt;code&gt;font-size&lt;/code&gt;为&lt;code&gt;0&lt;/code&gt;,子元素再给一个&lt;code&gt;font-size&lt;/code&gt;:&lt;ul&gt;
+&lt;li&gt;&lt;img src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task11%E5%8E%BB%E7%BC%9D%E9%9A%99fontsize.gif&quot; alt=&quot;父font-size&quot;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;适配IE8以下加hack语句&lt;a href=&quot;http://js.jirengu.com/quvohojade/2/edit&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;code&gt;*display:inline&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;3-父容器使用overflow-auto-hidden撑开高度的原理是什么？&quot;&gt;&lt;a href=&quot;#3-父容器使用overflow-auto-hidden撑开高度的原理是什么？&quot; class=&quot;headerlink&quot; title=&quot;3. 父容器使用overflow: auto| hidden撑开高度的原理是什么？&quot;&gt;&lt;/a&gt;&lt;strong&gt;3. 父容器使用&lt;code&gt;overflow: auto| hidden&lt;/code&gt;撑开高度的原理是什么？&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;给父容器添加&lt;code&gt;overflow: auto| hidden&lt;/code&gt;样式即触发了BFC，这时如果父容器内只有浮动元素，则会撑开父容器高度。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;4-BFC是什么？如何形成BFC，有什么作用&quot;&gt;&lt;a href=&quot;#4-BFC是什么？如何形成BFC，有什么作用&quot; class=&quot;headerlink&quot; title=&quot;4. BFC是什么？如何形成BFC，有什么作用?&quot;&gt;&lt;/a&gt;&lt;strong&gt;4. BFC是什么？如何形成BFC，有什么作用?&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;定义：浮动元素和绝对定位元素，非块级盒子的块级容器（例如 inline-block, table-cells, 和 table-captions），以及overflow值不为“visiable”的块级盒子，都会为他们的内容创建新的BFC（块级格式上下文）。&lt;/li&gt;
+&lt;li&gt;如何形成：可以通过给父容器添加一个触发BFC的样式即可。例如&lt;code&gt;float:left&lt;/code&gt;,&lt;code&gt;position:absolute&lt;/code&gt;,&lt;code&gt;overflow:hidde&lt;/code&gt;,&lt;code&gt;display:inline-block&lt;/code&gt;等；（用来清除浮动可能带来一些副作用，一般使用&lt;code&gt;overflow:auto&lt;/code&gt;）&lt;/li&gt;
+&lt;li&gt;&lt;ul&gt;
+&lt;li&gt;用于&lt;code&gt;包含浮动&lt;/code&gt;。如果父容器内存在浮动元素，则父容器没有高度，它的浮动孩子将会脱离文档流，影响到其他元素的排列。这时可以创建新的BFC，撑开父容器的高度可以包含子元素；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;用于&lt;code&gt;防止边距合并&lt;/code&gt;，实质上外边距合并是由BFC导致的（&lt;a href=&quot;http://www.w3cplus.com/css/understanding-block-formatting-contexts-in-css.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;详细&lt;/a&gt;），毗邻块盒子的垂直外边距折叠只有他们是在同一BFC时才会发生，如果他们属于不同的BFC，他们之间的外边距将不会折叠。所以通过创建一个新的BFC我们可以防止外边距折叠；&lt;/li&gt;
+&lt;li&gt;用于&lt;code&gt;防止文字环绕&lt;/code&gt;；&lt;/li&gt;
+&lt;li&gt;用于&lt;code&gt;多列布局&lt;/code&gt;；当我们设计一个多列布局占满宽度时，最后一列被挤到下一行，在其中一个列的布局中建立了一个新的BFC，它将会在前一列填充完之后的后面占据所剩余的空间。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;5-浮动导致的父容器高度塌陷指什么？为什么会产生？有几种解决方法&quot;&gt;&lt;a href=&quot;#5-浮动导致的父容器高度塌陷指什么？为什么会产生？有几种解决方法&quot; class=&quot;headerlink&quot; title=&quot;5. 浮动导致的父容器高度塌陷指什么？为什么会产生？有几种解决方法&quot;&gt;&lt;/a&gt;&lt;strong&gt;5. 浮动导致的父容器高度塌陷指什么？为什么会产生？有几种解决方法&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;概念：没有设置父容器的高度或者设置了&lt;code&gt;auto&lt;/code&gt;，容器内只含有浮动元素，则他们的父容器会没有高度属性，之后的元素会“挤上来”，造成“高度塌陷”。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;解决：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;给父容器添加&lt;code&gt;overflow: auto| hidden&lt;/code&gt;等样式触发BFC，撑开父容器高度。&lt;/li&gt;
+&lt;li&gt;使用伪类&lt;code&gt;:after&lt;/code&gt;,父容器通过&lt;code&gt;:after&lt;/code&gt;来为其内容末尾添加一个内容为空的块框，利用这个块框来清除浮动（需要hack兼容IE），&lt;code&gt;常常用这种方法&lt;/code&gt;!&lt;/li&gt;
+&lt;li&gt;给父容器后添加一个新标签，用这个新标签来清除浮动撑开高度，兼容性好，但是无语义；&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;6-以下代码每一行的作用是什么？-为什么会产生作用？-和BFC撑开空间有什么区别？&quot;&gt;&lt;a href=&quot;#6-以下代码每一行的作用是什么？-为什么会产生作用？-和BFC撑开空间有什么区别？&quot; class=&quot;headerlink&quot; title=&quot;6. 以下代码每一行的作用是什么？ 为什么会产生作用？ 和BFC撑开空间有什么区别？&quot;&gt;&lt;/a&gt;&lt;strong&gt;6. 以下代码每一行的作用是什么？ 为什么会产生作用？ 和BFC撑开空间有什么区别？&lt;/strong&gt;&lt;/h4&gt;&lt;figure class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;  .clearfix:after&amp;#123;      /*添加`:after`伪类*/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    content: &#39;&#39;;        /*内容是空的*/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    display: block;     /*空的内容生成块框*/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    clear: both;    /*清除两边浮动*/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;.clearfix&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    *zoom: 1;   /*IE的hack语句，为了兼容IE6,7，触发IE的hasLayout特有属性，但不会影响页面的显示效果*/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;blockquote&gt;
+&lt;p&gt;作用：在容器内部最后一个元素创建了一个空的块框，而该块框两则清除了浮动，容器外的其他元素就无法向上挤占了；&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;区别：BFC是包含容器内的浮动元素，形成一个封闭的小宇宙，不受外界干扰挤占；而这种方法是通过添加空块来清除浮动，不让其他元素上来，二者的实现思路是完全不一样的；&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;【代码】&quot;&gt;&lt;a href=&quot;#【代码】&quot; class=&quot;headerlink&quot; title=&quot;-【代码】&quot;&gt;&lt;/a&gt;-【代码】&lt;/h2&gt;&lt;blockquote&gt;
+&lt;h3 id=&quot;task-11-1&quot;&gt;&lt;a href=&quot;#task-11-1&quot; class=&quot;headerlink&quot; title=&quot;task-11-1&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task11/task-11-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;task-11-1&lt;/a&gt;&lt;/h3&gt;&lt;h3 id=&quot;task-11-2&quot;&gt;&lt;a href=&quot;#task-11-2&quot; class=&quot;headerlink&quot; title=&quot;task-11-2&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task11/task-11-2.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;task-11-2&lt;/a&gt;&lt;/h3&gt;&lt;/blockquote&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;【基础知识】&quot;&gt;&lt;a href=&quot;#【基础知识】&quot; class=&quot;headerlink&quot; title=&quot;-【基础知识】&quot;&gt;&lt;/a&gt;-【基础知识】&lt;/h2&gt;&lt;h4 id=&quot;1-在什么场景下会出现外边距合并？如何合并？如何不让相邻元素外边距合并？&quot;&gt;&lt;a href=&quot;#1-在什么场景下会出现外边距合并？如何合并？如何不让相邻元素外边距合并？&quot; class=&quot;headerlink&quot; title=&quot;1. 在什么场景下会出现外边距合并？如何合并？如何不让相邻元素外边距合并？&quot;&gt;&lt;/a&gt;&lt;strong&gt;1. 在什么场景下会出现外边距合并？如何合并？如何不让相邻元素外边距合并？&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;相邻块盒子的垂直外边距合并只有他们是在同一BFC，且没有padding与border将外边距隔开才会发生；&lt;/li&gt;
+&lt;li&gt;垂直相邻元素，子元素和父元素会发生合并，合并后的外边距的高度等于两个发生合并的外边距的高度中的较大者。&lt;/li&gt;
+&lt;li&gt;创建另外一个BFC，让不想发生外边距合并的元素处于不同的BFC。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="编程学习" scheme="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="前端基础" scheme="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/"/>
+    
+    
+      <category term="CSS" scheme="http://licao404.com/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>定位+浮动</title>
+    <link href="http://licao404.com/2016/02/27/%E5%AE%9A%E4%BD%8D-%E6%B5%AE%E5%8A%A8/"/>
+    <id>http://licao404.com/2016/02/27/定位-浮动/</id>
+    <published>2016-02-27T05:29:46.000Z</published>
+    <updated>2016-03-30T05:52:40.444Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;【基础知识】&quot;&gt;&lt;a href=&quot;#【基础知识】&quot; class=&quot;headerlink&quot; title=&quot;-【基础知识】&quot;&gt;&lt;/a&gt;-【基础知识】&lt;/h2&gt;&lt;h4 id=&quot;1-文档流的概念指什么？有哪种方式可以让元素脱离文档流&quot;&gt;&lt;a href=&quot;#1-文档流的概念指什么？有哪种方式可以让元素脱离文档流&quot; class=&quot;headerlink&quot; title=&quot;1. 文档流的概念指什么？有哪种方式可以让元素脱离文档流?&quot;&gt;&lt;/a&gt;&lt;strong&gt;1. 文档流的概念指什么？有哪种方式可以让元素脱离文档流?&lt;/strong&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;文档流是将窗体自上而下分成一行行，每行按照自左向右的顺序排列元素，从头到尾按照文档的顺序，该在什么位置就在什么位置；网页中大部分对象默认是占用文档流，也有一些对象是不占文档流的，比如表单中隐藏域。&lt;/li&gt;
+&lt;li&gt;有3种方式可以让元素脱离文档流而存在：浮动（&lt;code&gt;float&lt;/code&gt;）、固定定位（&lt;code&gt;position:fixed&lt;/code&gt;）、绝对定位（&lt;code&gt;position:absolute&lt;/code&gt;）&lt;ul&gt;
+&lt;li&gt;浮动元素不占用任何正常文档流空间，而他的定位仍是基于正常文档流；&lt;/li&gt;
+&lt;li&gt;绝对定位是完全脱离文档流，在文档流中的其他元素将忽略该元素并且填补他原先的位置；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h4 id=&quot;2-有几种定位方式，分别是如何实现定位的，使用场景如何？&quot;&gt;&lt;a href=&quot;#2-有几种定位方式，分别是如何实现定位的，使用场景如何？&quot; class=&quot;headerlink&quot; title=&quot;2. 有几种定位方式，分别是如何实现定位的，使用场景如何？&quot;&gt;&lt;/a&gt;&lt;strong&gt;2. 有几种定位方式，分别是如何实现定位的，使用场景如何？&lt;/strong&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;position:static;&lt;/code&gt;：静态定位（缺省值）。元素出现在正常的文档流中，忽略&lt;code&gt;top,buttom,left,right,z-index&lt;/code&gt;声明；可以用于覆盖之前对position的定义；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;position:fixed&lt;/code&gt;：固定定位，让元素完全脱离文档流，固定在浏览器窗口中某一位置，位置不随页面移动而发生变化。用在一些不想移动的导航栏，固定的广告，信息提醒，咨询联系按钮等&lt;ul&gt;
+&lt;li&gt;&lt;img src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task10fixed.png&quot; alt=&quot;fixed&quot;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;position:relative&lt;/code&gt;：相对定位，相对于自己原来在文档流中的位置进行定位，不改变布局（在该元素原来位置留下空白）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;position:absolute&lt;/code&gt;：绝对对定位，相对于与他最近的非static定位的祖先元素来定位，完全脱离文档流，其他文档流中的元素会忽略他的存在&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;3-absolute-relative-fixed-偏移的参考点分别是什么&quot;&gt;&lt;a href=&quot;#3-absolute-relative-fixed-偏移的参考点分别是什么&quot; class=&quot;headerlink&quot; title=&quot;3. absolute, relative, fixed 偏移的参考点分别是什么?&quot;&gt;&lt;/a&gt;&lt;strong&gt;3. &lt;code&gt;absolute&lt;/code&gt;, &lt;code&gt;relative&lt;/code&gt;, &lt;code&gt;fixed&lt;/code&gt; 偏移的参考点分别是什么?&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;absolute&lt;/code&gt;: 相对于与他最近的非static定位的祖先元素来定位，如果都没有的话就向上对；&lt;br&gt;&lt;code&gt;relative&lt;/code&gt;：相对于自己原来在文档流中的位置进行定位；&lt;br&gt;&lt;code&gt;fixed&lt;/code&gt;：相对于浏览器窗口；  &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;4-z-index-有什么作用-如何使用&quot;&gt;&lt;a href=&quot;#4-z-index-有什么作用-如何使用&quot; class=&quot;headerlink&quot; title=&quot;4. z-index 有什么作用? 如何使用?&quot;&gt;&lt;/a&gt;&lt;strong&gt;4. &lt;code&gt;z-index&lt;/code&gt; 有什么作用? 如何使用?&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;可以设置&lt;code&gt;定位元素&lt;/code&gt;显示层级，值越大越在外层。当没有指定z-index的时候， 所有元素都在会被渲染在默认层(0层)；&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;5-position-relative和负margin都可以使元素位置发生偏移-二者有什么区别&quot;&gt;&lt;a href=&quot;#5-position-relative和负margin都可以使元素位置发生偏移-二者有什么区别&quot; class=&quot;headerlink&quot; title=&quot;5. position:relative和负margin都可以使元素位置发生偏移?二者有什么区别&quot;&gt;&lt;/a&gt;&lt;strong&gt;5. &lt;code&gt;position:relative&lt;/code&gt;和负&lt;code&gt;margin&lt;/code&gt;都可以使元素位置发生偏移?二者有什么区别&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;position:relative&lt;/code&gt;使元素位置发生偏移不会对后来的元素产生影响，他的文档流占位还是之前的位置；显然使用&lt;code&gt;margin&lt;/code&gt;偏移有可能影响到其他元素的位置；&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;6-如何让一个固定宽高的元素在页面上垂直水平居中&quot;&gt;&lt;a href=&quot;#6-如何让一个固定宽高的元素在页面上垂直水平居中&quot; class=&quot;headerlink&quot; title=&quot;6. 如何让一个固定宽高的元素在页面上垂直水平居中?&quot;&gt;&lt;/a&gt;&lt;strong&gt;6. 如何让一个固定宽高的元素在页面上垂直水平居中?&lt;/strong&gt;&lt;/h4&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;  &amp;lt;style&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    body&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      background:gray;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    div&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      position:absolute;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      top:50%;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      right:50%;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      margin:-50px;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      width:100px;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      height:100px;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      background-color:yellow;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;lt;/style&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;lt;div&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;a href=&quot;http://js.jirengu.com/dupahagojo/1/edit&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&amp;gt;&amp;gt;效果演示&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&quot;7-浮动元素有什么特征？对其他浮动元素、普通元素、文字分别有什么影响&quot;&gt;&lt;a href=&quot;#7-浮动元素有什么特征？对其他浮动元素、普通元素、文字分别有什么影响&quot; class=&quot;headerlink&quot; title=&quot;7. 浮动元素有什么特征？对其他浮动元素、普通元素、文字分别有什么影响?&quot;&gt;&lt;/a&gt;&lt;strong&gt;7. 浮动元素有什么特征？对其他浮动元素、普通元素、文字分别有什么影响?&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;浮动的框可以向左向右移动，直到它的外边缘碰到包含框或另一个浮动框的边框为止；&lt;/li&gt;
+&lt;li&gt;对其他浮动元素会按照渲染顺序显示，对其他普通元素则会覆盖在表层，文字会环绕浮动元素；&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;8-清除浮动指什么-如何清除浮动&quot;&gt;&lt;a href=&quot;#8-清除浮动指什么-如何清除浮动&quot; class=&quot;headerlink&quot; title=&quot;8. 清除浮动指什么? 如何清除浮动?&quot;&gt;&lt;/a&gt;&lt;strong&gt;8. 清除浮动指什么? 如何清除浮动?&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;元素浮动之后，周围的元素会重新排列，为了避免这种情况，需要清除浮动；&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;如何清除浮动：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;直接对受影响的元素使用&lt;code&gt;clear&lt;/code&gt;属性；&lt;/li&gt;
+&lt;li&gt;对父亲&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;【代码】&quot;&gt;&lt;a href=&quot;#【代码】&quot; class=&quot;headerlink&quot; title=&quot;-【代码】&quot;&gt;&lt;/a&gt;-【代码】&lt;/h2&gt;&lt;blockquote&gt;
+&lt;h3 id=&quot;task-10-1&quot;&gt;&lt;a href=&quot;#task-10-1&quot; class=&quot;headerlink&quot; title=&quot;task-10-1&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task10/task-10-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;task-10-1&lt;/a&gt;&lt;/h3&gt;&lt;h3 id=&quot;task-10-2&quot;&gt;&lt;a href=&quot;#task-10-2&quot; class=&quot;headerlink&quot; title=&quot;task-10-2&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task10/task-10-2.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;task-10-2&lt;/a&gt;&lt;/h3&gt;&lt;/blockquote&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;【基础知识】&quot;&gt;&lt;a href=&quot;#【基础知识】&quot; class=&quot;headerlink&quot; title=&quot;-【基础知识】&quot;&gt;&lt;/a&gt;-【基础知识】&lt;/h2&gt;&lt;h4 id=&quot;1-文档流的概念指什么？有哪种方式可以让元素脱离文档流&quot;&gt;&lt;a href=&quot;#1-文档流的概念指什么？有哪种方式可以让元素脱离文档流&quot; class=&quot;headerlink&quot; title=&quot;1. 文档流的概念指什么？有哪种方式可以让元素脱离文档流?&quot;&gt;&lt;/a&gt;&lt;strong&gt;1. 文档流的概念指什么？有哪种方式可以让元素脱离文档流?&lt;/strong&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;文档流是将窗体自上而下分成一行行，每行按照自左向右的顺序排列元素，从头到尾按照文档的顺序，该在什么位置就在什么位置；网页中大部分对象默认是占用文档流，也有一些对象是不占文档流的，比如表单中隐藏域。&lt;/li&gt;
+&lt;li&gt;有3种方式可以让元素脱离文档流而存在：浮动（&lt;code&gt;float&lt;/code&gt;）、固定定位（&lt;code&gt;position:fixed&lt;/code&gt;）、绝对定位（&lt;code&gt;position:absolute&lt;/code&gt;）&lt;ul&gt;
+&lt;li&gt;浮动元素不占用任何正常文档流空间，而他的定位仍是基于正常文档流；&lt;/li&gt;
+&lt;li&gt;绝对定位是完全脱离文档流，在文档流中的其他元素将忽略该元素并且填补他原先的位置；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="编程学习" scheme="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="前端基础" scheme="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/"/>
+    
+    
+      <category term="CSS" scheme="http://licao404.com/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CSS Sprite/background</title>
+    <link href="http://licao404.com/2016/02/26/CSS_Sprite+background/"/>
+    <id>http://licao404.com/2016/02/26/CSS_Sprite+background/</id>
+    <published>2016-02-26T05:27:33.000Z</published>
+    <updated>2016-03-30T05:52:57.549Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;【知识点】&quot;&gt;&lt;a href=&quot;#【知识点】&quot; class=&quot;headerlink&quot; title=&quot;-【知识点】&quot;&gt;&lt;/a&gt;-【知识点】&lt;/h2&gt;&lt;h4 id=&quot;1-CSS-Sprite-雪碧图-指什么-有什么作用？&quot;&gt;&lt;a href=&quot;#1-CSS-Sprite-雪碧图-指什么-有什么作用？&quot; class=&quot;headerlink&quot; title=&quot;1. CSS Sprite(雪碧图)指什么? 有什么作用？&quot;&gt;&lt;/a&gt;&lt;strong&gt;1. CSS Sprite(雪碧图)指什么? 有什么作用？&lt;/strong&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;CSS Sprite&lt;/code&gt;又名&lt;code&gt;CSS精灵&lt;/code&gt;，一种将零星的小图片合并成一张大图的网络图像应用处理方式，再利用&lt;code&gt;CSS&lt;/code&gt;的&lt;code&gt;background-image&lt;/code&gt;,&lt;code&gt;background-repeat&lt;/code&gt;,&lt;code&gt;background-position&lt;/code&gt;进行精确定位所需的小图位置;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;主要作用：&lt;ul&gt;
+&lt;li&gt;可以大量减少页面的http请求，提升页面性能，因为如果是每一张图片都去请求一次，浪费的网络资源是不可想象的；&lt;/li&gt;
+&lt;li&gt;减少图片的字节；&lt;/li&gt;
+&lt;li&gt;其他作用和弊端见&lt;a href=&quot;http://baike.baidu.com/link?url=WNMBLXrej-HoKJ4OspqtsJdTfgc5_jTRO6a3rcthEVyyKfv2M2jGG4lKlOw69NK1KTjHAPmJb4NttvAhzroB6q&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;度娘百科&lt;/a&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;2-img标签和CSS背景使用图片在使用场景上有何区别&quot;&gt;&lt;a href=&quot;#2-img标签和CSS背景使用图片在使用场景上有何区别&quot; class=&quot;headerlink&quot; title=&quot;2. img标签和CSS背景使用图片在使用场景上有何区别?&quot;&gt;&lt;/a&gt;&lt;strong&gt;2. img标签和CSS背景使用图片在使用场景上有何区别?&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;如果内容（对每个访问者）是恒定不变的，如icon，logo，等，则选择css背景图：&lt;br&gt;&lt;img src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task9%E8%83%8C%E6%99%AF%E5%9B%BE2.png&quot; alt=&quot;icon&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task9%E8%83%8C%E6%99%AF%E5%9B%BE1.png&quot; alt=&quot;logo&quot;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;如果是变化的内容，比如电商网页上的商品广告（基本上直观理解的图片）都是img标签，还有头像等，他们都是外链到数据库的，可能发生改变：&lt;br&gt;&lt;img src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task9img.png&quot; alt=&quot;img1&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task9img2.png&quot; alt=&quot;img2&quot;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;3-title-和-alt属性分别有什么作用&quot;&gt;&lt;a href=&quot;#3-title-和-alt属性分别有什么作用&quot; class=&quot;headerlink&quot; title=&quot;3. title 和 alt属性分别有什么作用?&quot;&gt;&lt;/a&gt;&lt;strong&gt;3. title 和 alt属性分别有什么作用?&lt;/strong&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;alt属性&lt;/code&gt;是在你的图片因为某种原因不能加载时在页面显示的提示信息(临时代替图片的作用)，它会直接输出在原本加载图片的地方；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;title属性&lt;/code&gt;是在你鼠标悬停在该图片上时显示一个小提示，鼠标离开就没有了，HTML的绝大多数标签都支持&lt;code&gt;title属性&lt;/code&gt;，&lt;code&gt;title属性&lt;/code&gt;就是专门做提示信息的，比如：&lt;img src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task9title.png&quot; alt=&quot;title&quot;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;4-background-url-abc-png-0-0-no-repeat-这句话是什么意思&quot;&gt;&lt;a href=&quot;#4-background-url-abc-png-0-0-no-repeat-这句话是什么意思&quot; class=&quot;headerlink&quot; title=&quot;4. background: url(abc.png) 0 0 no-repeat;这句话是什么意思&quot;&gt;&lt;/a&gt;&lt;strong&gt;4. &lt;code&gt;background: url(abc.png) 0 0 no-repeat;&lt;/code&gt;这句话是什么意思&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;设置背景图片为&lt;code&gt;abc.png&lt;/code&gt;,要显示位置是水平0，垂直0，重复方式是不重复&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;5-background-size有什么作用-兼容性如何-常用的值是&quot;&gt;&lt;a href=&quot;#5-background-size有什么作用-兼容性如何-常用的值是&quot; class=&quot;headerlink&quot; title=&quot;5. background-size有什么作用? 兼容性如何? 常用的值是?&quot;&gt;&lt;/a&gt;&lt;strong&gt;5. background-size有什么作用? 兼容性如何? 常用的值是?&lt;/strong&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;background-size&lt;/code&gt;可以设置css背景图片的大小，以长度值和百分比显示；也可以根据背景原点位置&lt;code&gt;background-origin&lt;/code&gt;设置图片的覆盖范围。&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;在&lt;a href=&quot;http://caniuse.com/#search=background-size&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Caniuse&lt;/a&gt;上查到兼容性为：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;img src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task9background-size%E5%85%BC%E5%AE%B9%E6%80%A7.png&quot; alt=&quot;background-size兼容性&quot;&gt;&lt;/li&gt;
+&lt;li&gt;让&lt;code&gt;IE6,7,8&lt;/code&gt;兼容&lt;code&gt;background-size&lt;/code&gt;的方法：使用IE的滤镜&lt;figure class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;style&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;.background &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    background-image:url(&#39;http://7xr868.com1.z0.glb.clouddn.com/task6inline-block%E6%94%AF%E6%8C%81.png&#39;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    background-size: cover;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    src=&#39;http://7xr868.com1.z0.glb.clouddn.com/task6inline-block%E6%94%AF%E6%8C%81.png&#39;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    sizingMethod=&#39;scale&#39;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;/style&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;常用的值:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;auto&lt;/code&gt;：默认值，不改变背景图片的原始高度和宽度；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;length&lt;/code&gt;：第一个值为设置图片宽度，第二个值为图片的高度；但是不管是用什么值，都不能为负值。假如只给定一个值，那么第二个自动的为 &lt;code&gt;auto&lt;/code&gt;；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;percentage&lt;/code&gt;：以父元素的百分比来设置背景图像的宽度和高度。设置一个值，同上；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cover&lt;/code&gt;： 将图片等比例缩放来填满整个容器，加入容器不足以包含背景图片，则一些部分不会显示在容器中；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;contain&lt;/code&gt;：按比例调整背景图片，使得其图片宽高比自适应整个元素容器的宽高比，因此假如指定的图片尺寸过大，而容器的整体宽高不能恰好包含背景图片的话，那么其容器某些区域可能会有空白。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;6-如何让一个div水平居中？如何让图片水平居中&quot;&gt;&lt;a href=&quot;#6-如何让一个div水平居中？如何让图片水平居中&quot; class=&quot;headerlink&quot; title=&quot;6. 如何让一个div水平居中？如何让图片水平居中?&quot;&gt;&lt;/a&gt;&lt;strong&gt;6. 如何让一个div水平居中？如何让图片水平居中?&lt;/strong&gt;&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;设置div的左右&lt;code&gt;margin-left&lt;/code&gt;,&lt;code&gt;margin-right&lt;/code&gt;值为&lt;code&gt;auto&lt;/code&gt; &amp;gt;&amp;gt;&lt;a href=&quot;http://js.jirengu.com/laziqaqaki/3/edit&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;代码演示&lt;/a&gt;；&lt;br&gt;2.&lt;ul&gt;
+&lt;li&gt;给图片加一个父容器，设置容器样式&lt;code&gt;text-align:center&lt;/code&gt;&amp;gt;&amp;gt;&lt;a href=&quot;http://js.jirengu.com/yudajuveye/2/edit&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;代码演示&lt;/a&gt;；&lt;/li&gt;
+&lt;li&gt;将img用&lt;code&gt;display:block&lt;/code&gt;变为块级元素，然后设置&lt;code&gt;左右margin&lt;/code&gt;值为&lt;code&gt;auto&lt;/code&gt;，类似于1中设置&lt;code&gt;div&lt;/code&gt;水平居中&amp;gt;&amp;gt;&lt;a href=&quot;http://js.jirengu.com/vuyuliseni/1/edit&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;代码演示&lt;/a&gt;；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&quot;7-如何设置元素透明-兼容性？&quot;&gt;&lt;a href=&quot;#7-如何设置元素透明-兼容性？&quot; class=&quot;headerlink&quot; title=&quot;7. 如何设置元素透明? 兼容性？&quot;&gt;&lt;/a&gt;&lt;strong&gt;7. 如何设置元素透明? 兼容性？&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;opacity：number&lt;/code&gt;属性(CSS3属性)指定了一个元素的透明度,默认&lt;code&gt;number&lt;/code&gt;是1（不透明），0是完全透明，&lt;a href=&quot;https://developer.mozilla.org/zh-CN/docs/Web/CSS/opacity&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;（更多）&lt;/a&gt;。兼容性：&lt;img src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task9opacity%E5%85%BC%E5%AE%B9%E6%80%A7.png&quot; alt=&quot;opacity兼容性&quot;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;filter:alpha(opacity=number);&lt;/code&gt;是专门给IE设定的属性，&lt;code&gt;number&lt;/code&gt;取值的范围在&lt;code&gt;0-100&lt;/code&gt;之间；兼容性：（一般用在IE8及以下）&lt;img src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task9filter%E5%85%BC%E5%AE%B9%E6%80%A7.png&quot; alt=&quot;filter兼容性&quot;&gt;&lt;/li&gt;
+&lt;li&gt;一段常用代码设置元素透明度：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;.transparent_class &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      filter:alpha(opacity=50);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      -moz-opacity:0.5;/*-moz-opacity是为了兼容一些老版本的Mozilla浏览器*/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      -khtml-opacity: 0.5;/*-khtml-opacity是为了兼容一些老版本的Safari浏览器*/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      opacity: 0.5;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;blockquote&gt;
+&lt;p&gt;4.&lt;a href=&quot;http://www.jb51.net/css/24765.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;更详细的实现方案&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;8-opacity-和-rgba都能设置透明，有什么区别&quot;&gt;&lt;a href=&quot;#8-opacity-和-rgba都能设置透明，有什么区别&quot; class=&quot;headerlink&quot; title=&quot;8. opacity 和 rgba都能设置透明，有什么区别?&quot;&gt;&lt;/a&gt;&lt;strong&gt;8. opacity 和 rgba都能设置透明，有什么区别?&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;opacity&lt;/code&gt;作用于&lt;code&gt;元素&lt;/code&gt;，以及元素内的所有&lt;code&gt;内容&lt;/code&gt;的透明度，而&lt;code&gt;rgba()&lt;/code&gt;只作用于元素的&lt;code&gt;颜色&lt;/code&gt;或其&lt;code&gt;背景色&lt;/code&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;【代码】&quot;&gt;&lt;a href=&quot;#【代码】&quot; class=&quot;headerlink&quot; title=&quot;-【代码】&quot;&gt;&lt;/a&gt;-【代码】&lt;/h2&gt;&lt;blockquote&gt;
+&lt;h3 id=&quot;task-9-1&quot;&gt;&lt;a href=&quot;#task-9-1&quot; class=&quot;headerlink&quot; title=&quot;task-9-1&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task9/task-9-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;task-9-1&lt;/a&gt;&lt;/h3&gt;&lt;h3 id=&quot;task-9-2&quot;&gt;&lt;a href=&quot;#task-9-2&quot; class=&quot;headerlink&quot; title=&quot;task-9-2&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task9/task-9-2.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;task-9-2&lt;/a&gt;&lt;/h3&gt;&lt;h3 id=&quot;task-9-3&quot;&gt;&lt;a href=&quot;#task-9-3&quot; class=&quot;headerlink&quot; title=&quot;task-9-3&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task9/task-9-3.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;task-9-3&lt;/a&gt;&lt;/h3&gt;&lt;/blockquote&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;【知识点】&quot;&gt;&lt;a href=&quot;#【知识点】&quot; class=&quot;headerlink&quot; title=&quot;-【知识点】&quot;&gt;&lt;/a&gt;-【知识点】&lt;/h2&gt;&lt;h4 id=&quot;1-CSS-Sprite-雪碧图-指什么-有什么作用？&quot;&gt;&lt;a href=&quot;#1-CSS-Sprite-雪碧图-指什么-有什么作用？&quot; class=&quot;headerlink&quot; title=&quot;1. CSS Sprite(雪碧图)指什么? 有什么作用？&quot;&gt;&lt;/a&gt;&lt;strong&gt;1. CSS Sprite(雪碧图)指什么? 有什么作用？&lt;/strong&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;CSS Sprite&lt;/code&gt;又名&lt;code&gt;CSS精灵&lt;/code&gt;，一种将零星的小图片合并成一张大图的网络图像应用处理方式，再利用&lt;code&gt;CSS&lt;/code&gt;的&lt;code&gt;background-image&lt;/code&gt;,&lt;code&gt;background-repeat&lt;/code&gt;,&lt;code&gt;background-position&lt;/code&gt;进行精确定位所需的小图位置;&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="编程学习" scheme="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="前端基础" scheme="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/"/>
+    
+    
+      <category term="CSS" scheme="http://licao404.com/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CSS选择器</title>
+    <link href="http://licao404.com/2016/02/25/CSS%E9%80%89%E6%8B%A9%E5%99%A8/"/>
+    <id>http://licao404.com/2016/02/25/CSS选择器/</id>
+    <published>2016-02-25T05:14:52.000Z</published>
+    <updated>2016-03-30T05:54:33.269Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;【基础知识】&quot;&gt;&lt;a href=&quot;#【基础知识】&quot; class=&quot;headerlink&quot; title=&quot;-【基础知识】&quot;&gt;&lt;/a&gt;-【基础知识】&lt;/h2&gt;&lt;h4 id=&quot;1-CSS选择器常见的有几种&quot;&gt;&lt;a href=&quot;#1-CSS选择器常见的有几种&quot; class=&quot;headerlink&quot; title=&quot;1. CSS选择器常见的有几种?&quot;&gt;&lt;/a&gt;&lt;strong&gt;1. CSS选择器常见的有几种?&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;通配选择器(&lt;code&gt;*&lt;/code&gt;)、标签选择器(&lt;code&gt;element&lt;/code&gt;)、id选择器(&lt;code&gt;#id&lt;/code&gt;)、类选择器(&lt;code&gt;.class&lt;/code&gt;)、伪类选择器(&lt;code&gt;E:hover&lt;/code&gt;等)、属性选择器(&lt;code&gt;E[atter=value]&lt;/code&gt;等)、组合选择器(&lt;code&gt;E&amp;gt;F&lt;/code&gt;等)、伪元素选择器(&lt;code&gt;E::first-letter&lt;/code&gt;等)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h4 id=&quot;2-选择器的优先级是怎样的&quot;&gt;&lt;a href=&quot;#2-选择器的优先级是怎样的&quot; class=&quot;headerlink&quot; title=&quot;2. 选择器的优先级是怎样的?&quot;&gt;&lt;/a&gt;&lt;strong&gt;2. 选择器的优先级是怎样的?&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;一般而言，选择器越特殊，它的优先级越高。也就是选择器指向的越准确，它的优先级就越高。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;常见选择器优先级排序（从高到低）：&lt;ol&gt;
+&lt;li&gt;在属性后面使用 &lt;code&gt;!important&lt;/code&gt; 会覆盖页面内任何位置定义的元素样式；&lt;/li&gt;
+&lt;li&gt;作为style属性写在元素标签上的内联样式；&lt;/li&gt;
+&lt;li&gt;id选择器；&lt;/li&gt;
+&lt;li&gt;类选择器；&lt;/li&gt;
+&lt;li&gt;伪类选择器；&lt;/li&gt;
+&lt;li&gt;属性选择器；&lt;/li&gt;
+&lt;li&gt;标签选择器；&lt;/li&gt;
+&lt;li&gt;通配选择器；&lt;/li&gt;
+&lt;li&gt;浏览器自定义&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;CSS规则由多个选择器组成,通常我们用1表示标签名选择器的优先级，用10表示类选择 器的优先级，用100标示ID选择器的优先级。比如&lt;code&gt;.polaris span {color:red;}&lt;/code&gt;的选择器优先级是 10 + 1 也就是11；而 &lt;code&gt;.polaris&lt;/code&gt;的优先级是10；浏览器自然会显示红色的字。&lt;/li&gt;
+&lt;li&gt;如果两个选择器规权值就是一样,后面的覆盖前面的！如下&lt;code&gt;div&lt;/code&gt;文案的颜色为&lt;code&gt;#666&lt;/code&gt;  &lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;div&lt;/span&gt; &amp;#123;&lt;span class=&quot;attribute&quot;&gt;color&lt;/span&gt;: &lt;span class=&quot;number&quot;&gt;#333&lt;/span&gt;;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;....&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;div&lt;/span&gt; &amp;#123;&lt;span class=&quot;attribute&quot;&gt;color&lt;/span&gt;: &lt;span class=&quot;number&quot;&gt;#666&lt;/span&gt;;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;3-class-和-id-的使用场景&quot;&gt;&lt;a href=&quot;#3-class-和-id-的使用场景&quot; class=&quot;headerlink&quot; title=&quot;3. class 和 id 的使用场景?&quot;&gt;&lt;/a&gt;&lt;strong&gt;3. class 和 id 的使用场景?&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;在对页面排版进行结构化布局时（比如说通常一个页面都是由一个页眉，一个报头&lt;masthead&gt;，一个内容区域&lt;code&gt;content&lt;/code&gt;和一个页脚&lt;code&gt;footer&lt;/code&gt;等组成），一般使用id比较理想，因为一个id在一个文档中只能被使用一次。而这些元素在同一页面中 很少会出现大于一次的情况。&lt;/masthead&gt;&lt;/li&gt;
+&lt;li&gt;class更多的被应用到文字版块以及页面修饰等方面&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;4-使用CSS选择器时为什么要划定适当的命名空间？&quot;&gt;&lt;a href=&quot;#4-使用CSS选择器时为什么要划定适当的命名空间？&quot; class=&quot;headerlink&quot; title=&quot;4. 使用CSS选择器时为什么要划定适当的命名空间？&quot;&gt;&lt;/a&gt;&lt;strong&gt;4. 使用CSS选择器时为什么要划定适当的命名空间？&lt;/strong&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;使用适当的命名空间可以让选择器只对所选的命名空间有效，避免与其他元素冲突。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;5-以下选择器分别是什么意思&quot;&gt;&lt;a href=&quot;#5-以下选择器分别是什么意思&quot; class=&quot;headerlink&quot; title=&quot;5. 以下选择器分别是什么意思?&quot;&gt;&lt;/a&gt;&lt;strong&gt;5. 以下选择器分别是什么意思?&lt;/strong&gt;&lt;/h4&gt;&lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-id&quot;&gt;#header&lt;/span&gt;&amp;#123;        &lt;span class=&quot;comment&quot;&gt;/*定位id为header的元素*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-class&quot;&gt;.header&lt;/span&gt;&amp;#123;        &lt;span class=&quot;comment&quot;&gt;/*定位class为header的元素*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-class&quot;&gt;.header&lt;/span&gt; &lt;span class=&quot;selector-class&quot;&gt;.logo&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;               &lt;span class=&quot;comment&quot;&gt;/*定位class为header元素的后代中所有class为logo的元素*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-class&quot;&gt;.header&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.mobile&lt;/span&gt;&amp;#123; &lt;span class=&quot;comment&quot;&gt;/*同时定位class为header的元素和class为mobile的元素*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-class&quot;&gt;.header&lt;/span&gt; &lt;span class=&quot;selector-tag&quot;&gt;p&lt;/span&gt;, &lt;span class=&quot;selector-class&quot;&gt;.header&lt;/span&gt; &lt;span class=&quot;selector-tag&quot;&gt;h3&lt;/span&gt;&amp;#123;&lt;span class=&quot;comment&quot;&gt;/*同时定位class为header元素下所有的p元素和h3元素*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-id&quot;&gt;#header&lt;/span&gt; &lt;span class=&quot;selector-class&quot;&gt;.nav&lt;/span&gt;&amp;gt;&lt;span class=&quot;selector-tag&quot;&gt;li&lt;/span&gt;&amp;#123; &lt;span class=&quot;comment&quot;&gt;/*id为header的元素后代中class为nav元素的直接li元素*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-id&quot;&gt;#header&lt;/span&gt; &lt;span class=&quot;selector-tag&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;selector-pseudo&quot;&gt;:hover&lt;/span&gt;&amp;#123; &lt;span class=&quot;comment&quot;&gt;/*id为header元素的后代中所有a标签的hover状态*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h4 id=&quot;6-列出你知道的伪类选择器&quot;&gt;&lt;a href=&quot;#6-列出你知道的伪类选择器&quot; class=&quot;headerlink&quot; title=&quot;6. 列出你知道的伪类选择器&quot;&gt;&lt;/a&gt;&lt;strong&gt;6. 列出你知道的伪类选择器&lt;/strong&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;E:hover&lt;/code&gt;鼠标悬浮在上的元素&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;a:link&lt;/code&gt;鼠标未被点击的链接&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;E:active&lt;/code&gt;鼠标按住的元素&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;a:visited&lt;/code&gt;鼠标已点击的链接&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;E:focus&lt;/code&gt;获得焦点的&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;E:first-child&lt;/code&gt;E的父元素的第一个子元素&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;E:nth-child(n)&lt;/code&gt;E的父元素下第n个子元素&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;E:first-of-type&lt;/code&gt;E的父元素下使用同种标签的第一个元素&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;E:nth-of-type&lt;/code&gt;E的父元素下使用同种标签的第n个元素  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;7-first-child和-first-of-type的作用和区别&quot;&gt;&lt;a href=&quot;#7-first-child和-first-of-type的作用和区别&quot; class=&quot;headerlink&quot; title=&quot;7. :first-child和:first-of-type的作用和区别?&quot;&gt;&lt;/a&gt;&lt;strong&gt;7. &lt;code&gt;:first-child&lt;/code&gt;和&lt;code&gt;:first-of-type&lt;/code&gt;的作用和区别?&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;:first-child&lt;/code&gt;定位的是其父的第一个子元素；&lt;br&gt;&lt;code&gt;:first-of-type&lt;/code&gt;定位的是其父下同种标签的第一个子元素；&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;h3&amp;gt;我是h3&amp;lt;/h3&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;lt;p&amp;gt;我是p1&amp;lt;/p&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;lt;div class=&amp;quot;div1&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&amp;lt;p&amp;gt;我是p3&amp;lt;/p&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&amp;lt;p&amp;gt;我是p4&amp;lt;/p&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&amp;lt;p&amp;gt;我是p5&amp;lt;/p&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;p:first-child &amp;#123;border: 1px solid red;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;/*此时定位的只是p3而没有p1*/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;p:first-of-type &amp;#123;border: 1px solid red;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;/*此时定位的是p1，p3*/&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h4 id=&quot;8-运行如下代码，解析下输出样式的原因。&quot;&gt;&lt;a href=&quot;#8-运行如下代码，解析下输出样式的原因。&quot; class=&quot;headerlink&quot; title=&quot;8. 运行如下代码，解析下输出样式的原因。&quot;&gt;&lt;/a&gt;&lt;strong&gt;8. 运行如下代码，解析下输出样式的原因。&lt;/strong&gt;&lt;/h4&gt;&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;meta&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;charset&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;utf-8&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;title&lt;/span&gt;&amp;gt;&lt;/span&gt;first-child  vs first-of-child&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;title&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;style&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;css&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;/*选中.item1,该元素是它父亲的第一个孩子*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;selector-class&quot;&gt;.item1&lt;/span&gt;&lt;span class=&quot;selector-pseudo&quot;&gt;:first-of-type&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;attribute&quot;&gt;background&lt;/span&gt;: red;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;/*选中.item1,该元素是它父亲所有的 .item1孩子中的第一个*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;selector-class&quot;&gt;.item1&lt;/span&gt;&lt;span class=&quot;selector-pseudo&quot;&gt;:first-child&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;attribute&quot;&gt;color&lt;/span&gt;: blue;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;style&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;item1&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;item1&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;ct&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;item2&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;ct-item2&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;item1&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;ct-item1&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;item1&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;ct-itmm1&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;item2&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;     &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;item1&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;ct-item2-item1&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   &lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; &lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;.item1:first-child{color: blue;}&lt;/code&gt;定位的是class为item1元素的父元素的第一个子元素，所以&lt;code&gt;item1&lt;/code&gt;、&lt;br&gt;&lt;code&gt;ct-item2-item1&lt;/code&gt;有效,文本为蓝色;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.item1:first-of-type{background: red;&lt;/code&gt; 定位clss为&lt;code&gt;item1&lt;/code&gt;且为父亲的第一个子元素，则只有&lt;code&gt;item1&lt;/code&gt;、&lt;br&gt;&lt;code&gt;ct-item2-item1&lt;/code&gt;有效，背景为红色&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;9-text-align-center的作用是什么，作用在什么元素上？能让什么元素水平居中&quot;&gt;&lt;a href=&quot;#9-text-align-center的作用是什么，作用在什么元素上？能让什么元素水平居中&quot; class=&quot;headerlink&quot; title=&quot;9. text-align: center的作用是什么，作用在什么元素上？能让什么元素水平居中&quot;&gt;&lt;/a&gt;&lt;strong&gt;9. &lt;code&gt;text-align: center&lt;/code&gt;的作用是什么，作用在什么元素上？能让什么元素水平居中&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;让元素水平居中&lt;/li&gt;
+&lt;li&gt;作用在块级元素上&lt;/li&gt;
+&lt;li&gt;让块级元素内的行内元素水平居中&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;10-如果遇到一个属性想知道兼容性，在哪查看&quot;&gt;&lt;a href=&quot;#10-如果遇到一个属性想知道兼容性，在哪查看&quot; class=&quot;headerlink&quot; title=&quot;10. 如果遇到一个属性想知道兼容性，在哪查看?&quot;&gt;&lt;/a&gt;&lt;strong&gt;10. 如果遇到一个属性想知道兼容性，在哪查看?&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;可以在网站&lt;a href=&quot;http://caniuse.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Caniuse&lt;/a&gt;查询浏览器兼容性！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;【代码】&quot;&gt;&lt;a href=&quot;#【代码】&quot; class=&quot;headerlink&quot; title=&quot;-【代码】&quot;&gt;&lt;/a&gt;-【代码】&lt;/h2&gt;&lt;blockquote&gt;
+&lt;h3 id=&quot;task-8-1&quot;&gt;&lt;a href=&quot;#task-8-1&quot; class=&quot;headerlink&quot; title=&quot;task-8-1&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/jirengu-inc/jrg-tehui2/blob/master/%E6%9D%8E%E6%93%8D/task8/task-8-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;task-8-1&lt;/a&gt;&lt;/h3&gt;&lt;h3 id=&quot;task-8-2&quot;&gt;&lt;a href=&quot;#task-8-2&quot; class=&quot;headerlink&quot; title=&quot;task-8-2&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/jirengu-inc/jrg-tehui2/blob/master/%E6%9D%8E%E6%93%8D/task8/task-8-2.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;task-8-2&lt;/a&gt;&lt;/h3&gt;&lt;/blockquote&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;【基础知识】&quot;&gt;&lt;a href=&quot;#【基础知识】&quot; class=&quot;headerlink&quot; title=&quot;-【基础知识】&quot;&gt;&lt;/a&gt;-【基础知识】&lt;/h2&gt;&lt;h4 id=&quot;1-CSS选择器常见的有几种&quot;&gt;&lt;a href=&quot;#1-CSS选择器常见的有几种&quot; class=&quot;headerlink&quot; title=&quot;1. CSS选择器常见的有几种?&quot;&gt;&lt;/a&gt;&lt;strong&gt;1. CSS选择器常见的有几种?&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;通配选择器(&lt;code&gt;*&lt;/code&gt;)、标签选择器(&lt;code&gt;element&lt;/code&gt;)、id选择器(&lt;code&gt;#id&lt;/code&gt;)、类选择器(&lt;code&gt;.class&lt;/code&gt;)、伪类选择器(&lt;code&gt;E:hover&lt;/code&gt;等)、属性选择器(&lt;code&gt;E[atter=value]&lt;/code&gt;等)、组合选择器(&lt;code&gt;E&amp;gt;F&lt;/code&gt;等)、伪元素选择器(&lt;code&gt;E::first-letter&lt;/code&gt;等)&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="编程学习" scheme="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="前端基础" scheme="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/"/>
+    
+    
+      <category term="CSS" scheme="http://licao404.com/tags/CSS/"/>
     
   </entry>
   

@@ -437,8 +437,8 @@
             
               
                 
-                <a class="post-title-link" href="/2016/03/30/CSS选择器/" itemprop="url">
-                  CSS选择器
+                <a class="post-title-link" href="/2016/03/19/Hexo常用命令笔记/" itemprop="url">
+                  Hexo常用命令收集
                 </a>
               
             
@@ -451,8 +451,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-30T13:14:52+08:00" content="2016-03-30">
-              2016-03-30
+            <time itemprop="dateCreated" datetime="2016-03-19T17:39:36+08:00" content="2016-03-19">
+              2016-03-19
             </time>
           </span>
 
@@ -465,20 +465,8 @@
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/编程学习/" itemprop="url" rel="index">
-                    <span itemprop="name">编程学习</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/编程学习/前端基础/" itemprop="url" rel="index">
-                    <span itemprop="name">前端基础</span>
+                  <a href="/categories/技巧分享/" itemprop="url" rel="index">
+                    <span itemprop="name">技巧分享</span>
                   </a>
                 </span>
 
@@ -493,8 +481,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/03/30/CSS选择器/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/30/CSS选择器/" itemprop="commentsCount"></span>
+                <a href="/2016/03/19/Hexo常用命令笔记/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/19/Hexo常用命令笔记/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -504,7 +492,7 @@
 
           
           
-             <span id="/2016/03/30/CSS选择器/" class="leancloud_visitors" data-flag-title="CSS选择器">
+             <span id="/2016/03/19/Hexo常用命令笔记/" class="leancloud_visitors" data-flag-title="Hexo常用命令收集">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -526,218 +514,9 @@
 
       
         
-          
-            <h2 id="【基础知识】"><a href="#【基础知识】" class="headerlink" title="-【基础知识】"></a>-【基础知识】</h2><h4 id="1-CSS选择器常见的有几种"><a href="#1-CSS选择器常见的有几种" class="headerlink" title="1. CSS选择器常见的有几种?"></a><strong>1. CSS选择器常见的有几种?</strong></h4><blockquote>
-<p>通配选择器(<code>*</code>)、标签选择器(<code>element</code>)、id选择器(<code>#id</code>)、类选择器(<code>.class</code>)、伪类选择器(<code>E:hover</code>等)、属性选择器(<code>E[atter=value]</code>等)、组合选择器(<code>E&gt;F</code>等)、伪元素选择器(<code>E::first-letter</code>等)</p>
-</blockquote>
-<h4 id="2-选择器的优先级是怎样的"><a href="#2-选择器的优先级是怎样的" class="headerlink" title="2. 选择器的优先级是怎样的?"></a><strong>2. 选择器的优先级是怎样的?</strong></h4><blockquote>
-<p>一般而言，选择器越特殊，它的优先级越高。也就是选择器指向的越准确，它的优先级就越高。</p>
-</blockquote>
-<ul>
-<li>常见选择器优先级排序（从高到低）：<ol>
-<li>在属性后面使用 <code>!important</code> 会覆盖页面内任何位置定义的元素样式；</li>
-<li>作为style属性写在元素标签上的内联样式；</li>
-<li>id选择器；</li>
-<li>类选择器；</li>
-<li>伪类选择器；</li>
-<li>属性选择器；</li>
-<li>标签选择器；</li>
-<li>通配选择器；</li>
-<li>浏览器自定义</li>
-</ol>
-</li>
-</ul>
-<ul>
-<li>CSS规则由多个选择器组成,通常我们用1表示标签名选择器的优先级，用10表示类选择 器的优先级，用100标示ID选择器的优先级。比如<code>.polaris span {color:red;}</code>的选择器优先级是 10 + 1 也就是11；而 <code>.polaris</code>的优先级是10；浏览器自然会显示红色的字。</li>
-<li>如果两个选择器规权值就是一样,后面的覆盖前面的！如下<code>div</code>文案的颜色为<code>#666</code>  <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;<span class="attribute">color</span>: <span class="number">#333</span>;&#125;</span><br><span class="line">....</span><br><span class="line"><span class="selector-tag">div</span> &#123;<span class="attribute">color</span>: <span class="number">#666</span>;&#125;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h4 id="3-class-和-id-的使用场景"><a href="#3-class-和-id-的使用场景" class="headerlink" title="3. class 和 id 的使用场景?"></a><strong>3. class 和 id 的使用场景?</strong></h4><blockquote>
-<ul>
-<li>在对页面排版进行结构化布局时（比如说通常一个页面都是由一个页眉，一个报头<masthead>，一个内容区域<code>content</code>和一个页脚<code>footer</code>等组成），一般使用id比较理想，因为一个id在一个文档中只能被使用一次。而这些元素在同一页面中 很少会出现大于一次的情况。</masthead></li>
-<li>class更多的被应用到文字版块以及页面修饰等方面</li>
-</ul>
-</blockquote>
-<h4 id="4-使用CSS选择器时为什么要划定适当的命名空间？"><a href="#4-使用CSS选择器时为什么要划定适当的命名空间？" class="headerlink" title="4. 使用CSS选择器时为什么要划定适当的命名空间？"></a><strong>4. 使用CSS选择器时为什么要划定适当的命名空间？</strong></h4><ul>
-<li>使用适当的命名空间可以让选择器只对所选的命名空间有效，避免与其他元素冲突。</li>
-</ul>
-<h4 id="5-以下选择器分别是什么意思"><a href="#5-以下选择器分别是什么意思" class="headerlink" title="5. 以下选择器分别是什么意思?"></a><strong>5. 以下选择器分别是什么意思?</strong></h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-id">#header</span>&#123;        <span class="comment">/*定位id为header的元素*/</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.header</span>&#123;        <span class="comment">/*定位class为header的元素*/</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.header</span> <span class="selector-class">.logo</span>&#123;</span><br><span class="line">&#125;               <span class="comment">/*定位class为header元素的后代中所有class为logo的元素*/</span></span><br><span class="line"><span class="selector-class">.header</span><span class="selector-class">.mobile</span>&#123; <span class="comment">/*同时定位class为header的元素和class为mobile的元素*/</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.header</span> <span class="selector-tag">p</span>, <span class="selector-class">.header</span> <span class="selector-tag">h3</span>&#123;<span class="comment">/*同时定位class为header元素下所有的p元素和h3元素*/</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-id">#header</span> <span class="selector-class">.nav</span>&gt;<span class="selector-tag">li</span>&#123; <span class="comment">/*id为header的元素后代中class为nav元素的直接li元素*/</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-id">#header</span> <span class="selector-tag">a</span><span class="selector-pseudo">:hover</span>&#123; <span class="comment">/*id为header元素的后代中所有a标签的hover状态*/</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="6-列出你知道的伪类选择器"><a href="#6-列出你知道的伪类选择器" class="headerlink" title="6. 列出你知道的伪类选择器"></a><strong>6. 列出你知道的伪类选择器</strong></h4><ul>
-<li><code>E:hover</code>鼠标悬浮在上的元素</li>
-<li><code>a:link</code>鼠标未被点击的链接</li>
-<li><code>E:active</code>鼠标按住的元素</li>
-<li><code>a:visited</code>鼠标已点击的链接</li>
-<li><code>E:focus</code>获得焦点的</li>
-<li><code>E:first-child</code>E的父元素的第一个子元素</li>
-<li><code>E:nth-child(n)</code>E的父元素下第n个子元素</li>
-<li><code>E:first-of-type</code>E的父元素下使用同种标签的第一个元素</li>
-<li><code>E:nth-of-type</code>E的父元素下使用同种标签的第n个元素  </li>
-</ul>
-<h4 id="7-first-child和-first-of-type的作用和区别"><a href="#7-first-child和-first-of-type的作用和区别" class="headerlink" title="7. :first-child和:first-of-type的作用和区别?"></a><strong>7. <code>:first-child</code>和<code>:first-of-type</code>的作用和区别?</strong></h4><blockquote>
-<p><code>:first-child</code>定位的是其父的第一个子元素；<br><code>:first-of-type</code>定位的是其父下同种标签的第一个子元素；<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;h3&gt;我是h3&lt;/h3&gt;</span><br><span class="line">	&lt;p&gt;我是p1&lt;/p&gt;</span><br><span class="line">	&lt;div class=&quot;div1&quot;&gt;</span><br><span class="line">		&lt;p&gt;我是p3&lt;/p&gt;</span><br><span class="line">		&lt;p&gt;我是p4&lt;/p&gt;</span><br><span class="line">		&lt;p&gt;我是p5&lt;/p&gt;</span><br><span class="line">	&lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure></p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">p:first-child &#123;border: 1px solid red;&#125;</span><br><span class="line">/*此时定位的只是p3而没有p1*/</span><br><span class="line">p:first-of-type &#123;border: 1px solid red;&#125;</span><br><span class="line">/*此时定位的是p1，p3*/</span><br></pre></td></tr></table></figure>
-<h4 id="8-运行如下代码，解析下输出样式的原因。"><a href="#8-运行如下代码，解析下输出样式的原因。" class="headerlink" title="8. 运行如下代码，解析下输出样式的原因。"></a><strong>8. 运行如下代码，解析下输出样式的原因。</strong></h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">title</span>&gt;</span>first-child  vs first-of-child<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="css"></span><br><span class="line">    <span class="comment">/*选中.item1,该元素是它父亲的第一个孩子*/</span></span><br><span class="line">    <span class="selector-class">.item1</span><span class="selector-pseudo">:first-of-type</span>&#123;</span><br><span class="line">      <span class="attribute">background</span>: red;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/*选中.item1,该元素是它父亲所有的 .item1孩子中的第一个*/</span></span><br><span class="line">    <span class="selector-class">.item1</span><span class="selector-pseudo">:first-child</span>&#123;</span><br><span class="line">      <span class="attribute">color</span>: blue;</span><br><span class="line">    &#125;</span><br><span class="line">  </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"> <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"item1"</span>&gt;</span>item1<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"ct"</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"item2"</span>&gt;</span>ct-item2<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"item1"</span>&gt;</span>ct-item1<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"item1"</span>&gt;</span>ct-itmm1<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"item2"</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"item1"</span>&gt;</span>ct-item2-item1<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<blockquote>
-<ul>
-<li><code>.item1:first-child{color: blue;}</code>定位的是class为item1元素的父元素的第一个子元素，所以<code>item1</code>、<br><code>ct-item2-item1</code>有效,文本为蓝色;</li>
-<li><code>.item1:first-of-type{background: red;</code> 定位clss为<code>item1</code>且为父亲的第一个子元素，则只有<code>item1</code>、<br><code>ct-item2-item1</code>有效，背景为红色</li>
-</ul>
-</blockquote>
-<h4 id="9-text-align-center的作用是什么，作用在什么元素上？能让什么元素水平居中"><a href="#9-text-align-center的作用是什么，作用在什么元素上？能让什么元素水平居中" class="headerlink" title="9. text-align: center的作用是什么，作用在什么元素上？能让什么元素水平居中"></a><strong>9. <code>text-align: center</code>的作用是什么，作用在什么元素上？能让什么元素水平居中</strong></h4><blockquote>
-<ul>
-<li>让元素水平居中</li>
-<li>作用在块级元素上</li>
-<li>让块级元素内的行内元素水平居中</li>
-</ul>
-</blockquote>
-<h4 id="10-如果遇到一个属性想知道兼容性，在哪查看"><a href="#10-如果遇到一个属性想知道兼容性，在哪查看" class="headerlink" title="10. 如果遇到一个属性想知道兼容性，在哪查看?"></a><strong>10. 如果遇到一个属性想知道兼容性，在哪查看?</strong></h4><blockquote>
-<p>可以在网站<a href="http://caniuse.com" target="_blank" rel="external">Caniuse</a>查询浏览器兼容性！</p>
-</blockquote>
-<hr>
-<h2 id="【代码】"><a href="#【代码】" class="headerlink" title="-【代码】"></a>-【代码】</h2><blockquote>
-<h3 id="task-8-1"><a href="#task-8-1" class="headerlink" title="task-8-1"></a><a href="https://github.com/jirengu-inc/jrg-tehui2/blob/master/%E6%9D%8E%E6%93%8D/task8/task-8-1.html" target="_blank" rel="external">task-8-1</a></h3><h3 id="task-8-2"><a href="#task-8-2" class="headerlink" title="task-8-2"></a><a href="https://github.com/jirengu-inc/jrg-tehui2/blob/master/%E6%9D%8E%E6%93%8D/task8/task-8-2.html" target="_blank" rel="external">task-8-2</a></h3></blockquote>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/03/28/闭包+延时器/" itemprop="url">
-                  闭包、延时器
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-28T23:33:27+08:00" content="2016-03-28">
-              2016-03-28
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/编程学习/" itemprop="url" rel="index">
-                    <span itemprop="name">编程学习</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/编程学习/前端基础/" itemprop="url" rel="index">
-                    <span itemprop="name">前端基础</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/03/28/闭包+延时器/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/28/闭包+延时器/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2016/03/28/闭包+延时器/" class="leancloud_visitors" data-flag-title="闭包、延时器">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="【知识点】"><a href="#【知识点】" class="headerlink" title="-【知识点】"></a>-【知识点】</h2><h3 id="1-F：什么是闭包-有什么作用？"><a href="#1-F：什么是闭包-有什么作用？" class="headerlink" title="1. -F：什么是闭包? 有什么作用？"></a><strong>1. -F：什么是闭包? 有什么作用？</strong></h3><h3 id="Q："><a href="#Q：" class="headerlink" title="-Q："></a><strong>-Q：</strong></h3><h4 id="闭包概念："><a href="#闭包概念：" class="headerlink" title="闭包概念："></a>闭包概念：</h4><ul>
-<li>简而言之，闭包就是有权访问另一个函数内部参数和变量的<code>函数</code>;</li>
-<li>只有函数中的<code>内部函数</code>才能一直访问该函数作用域中的局部变量，即使在其外部函数被返回了之后。那么这个内部函数可以理解为闭包（创建了闭包）；</li>
-<li>本质上，闭包就是沟通函数内部和函数外部的途径；</li>
-</ul>
+          <blockquote class="blockquote-center">此文收集常用Hexo命令，欢迎补充，持续更新…</blockquote>
           <div class="post-more-link text-center">
-            <a class="btn" href="/2016/03/28/闭包+延时器/#more" rel="contents">
+            <a class="btn" href="/2016/03/19/Hexo常用命令笔记/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -784,8 +563,8 @@
             
               
                 
-                <a class="post-title-link" href="/2016/03/28/为什么你应该（从现在开始就）写博客/" itemprop="url">
-                  为什么你应该（从现在开始就）写博客
+                <a class="post-title-link" href="/2016/03/19/JavaScript数组-字符串-数学函数/" itemprop="url">
+                  数组/字符串/数学函数
                 </a>
               
             
@@ -798,147 +577,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-28T01:02:53+08:00" content="2016-03-28">
-              2016-03-28
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/随想/" itemprop="url" rel="index">
-                    <span itemprop="name">随想</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/随想/那些鸡汤/" itemprop="url" rel="index">
-                    <span itemprop="name">那些鸡汤</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/03/28/为什么你应该（从现在开始就）写博客/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/28/为什么你应该（从现在开始就）写博客/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2016/03/28/为什么你应该（从现在开始就）写博客/" class="leancloud_visitors" data-flag-title="为什么你应该（从现在开始就）写博客">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h3 id="（一）为什么你应该写博客"><a href="#（一）为什么你应该写博客" class="headerlink" title="（一）为什么你应该写博客"></a>（一）为什么你应该写博客</h3><p>用一句话来说就是，写一个博客有很多好处，却没有任何明显的坏处。（阿灵顿的情况属于例外，而非常态，就像不能拿抽烟活到一百岁的英国老太太的个例来反驳抽烟对健康的极大损伤一样）</p>
-<p>让我说得更明确一点：用博客的形式来记录下你有价值的思考，会带来很多好处，却没有任何明显的坏处。Note：碎碎念不算思考、心情琐记不算思考、唠唠叨叨也不算思考、没话找话也不算思考，请以此类推。<br>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/03/28/为什么你应该（从现在开始就）写博客/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/03/26/Date类型+引用类型深拷贝/" itemprop="url">
-                  时间类型/引用类型深拷贝
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-26T20:05:19+08:00" content="2016-03-26">
-              2016-03-26
+            <time itemprop="dateCreated" datetime="2016-03-19T17:08:17+08:00" content="2016-03-19">
+              2016-03-19
             </time>
           </span>
 
@@ -979,8 +619,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/03/26/Date类型+引用类型深拷贝/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/26/Date类型+引用类型深拷贝/" itemprop="commentsCount"></span>
+                <a href="/2016/03/19/JavaScript数组-字符串-数学函数/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/19/JavaScript数组-字符串-数学函数/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -990,7 +630,7 @@
 
           
           
-             <span id="/2016/03/26/Date类型+引用类型深拷贝/" class="leancloud_visitors" data-flag-title="时间类型/引用类型深拷贝">
+             <span id="/2016/03/19/JavaScript数组-字符串-数学函数/" class="leancloud_visitors" data-flag-title="数组/字符串/数学函数">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -1012,12 +652,9 @@
 
       
         
-          <h1 id="【知识点】"><a href="#【知识点】" class="headerlink" title="-【知识点】"></a>-【知识点】</h1><h3 id="1-F：基础类型有哪些？复杂类型有哪些？有什么特征？"><a href="#1-F：基础类型有哪些？复杂类型有哪些？有什么特征？" class="headerlink" title="1. -F：基础类型有哪些？复杂类型有哪些？有什么特征？"></a><strong>1. -F：基础类型有哪些？复杂类型有哪些？有什么特征？</strong></h3><h3 id="Q："><a href="#Q：" class="headerlink" title="-Q："></a><strong>-Q：</strong></h3><ul>
-<li>基础类型：数值、字符串、布尔值、undefined、null；</li>
-<li>复杂类型：函数、对象、数组、正则、Date……  </li>
-</ul>
+          <h1 id="【知识点】"><a href="#【知识点】" class="headerlink" title="-【知识点】"></a>-【知识点】</h1><h3 id="1-F：数组方法里push、pop、shift、unshift、join、split分别是什么作用？"><a href="#1-F：数组方法里push、pop、shift、unshift、join、split分别是什么作用？" class="headerlink" title="1. -F：数组方法里push、pop、shift、unshift、join、split分别是什么作用？"></a><strong>1. -F：数组方法里<code>push</code>、<code>pop</code>、<code>shift</code>、<code>unshift</code>、<code>join</code>、<code>split</code>分别是什么作用？</strong></h3>
           <div class="post-more-link text-center">
-            <a class="btn" href="/2016/03/26/Date类型+引用类型深拷贝/#more" rel="contents">
+            <a class="btn" href="/2016/03/19/JavaScript数组-字符串-数学函数/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1064,8 +701,8 @@
             
               
                 
-                <a class="post-title-link" href="/2016/03/20/狠不趁早/" itemprop="url">
-                  狠不趁早
+                <a class="post-title-link" href="/2016/03/18/自实现C语言字符串相关函数/" itemprop="url">
+                  自实现C语言字符串相关函数
                 </a>
               
             
@@ -1078,8 +715,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-20T15:33:12+08:00" content="2016-03-20">
-              2016-03-20
+            <time itemprop="dateCreated" datetime="2016-03-18T09:14:45+08:00" content="2016-03-18">
+              2016-03-18
             </time>
           </span>
 
@@ -1092,8 +729,32 @@
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/随想/" itemprop="url" rel="index">
-                    <span itemprop="name">随想</span>
+                  <a href="/categories/编程学习/" itemprop="url" rel="index">
+                    <span itemprop="name">编程学习</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/编程学习/计算机基础/" itemprop="url" rel="index">
+                    <span itemprop="name">计算机基础</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/编程学习/计算机基础/Linux-C/" itemprop="url" rel="index">
+                    <span itemprop="name">Linux_C</span>
                   </a>
                 </span>
 
@@ -1108,8 +769,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/03/20/狠不趁早/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/20/狠不趁早/" itemprop="commentsCount"></span>
+                <a href="/2016/03/18/自实现C语言字符串相关函数/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/18/自实现C语言字符串相关函数/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -1119,7 +780,7 @@
 
           
           
-             <span id="/2016/03/20/狠不趁早/" class="leancloud_visitors" data-flag-title="狠不趁早">
+             <span id="/2016/03/18/自实现C语言字符串相关函数/" class="leancloud_visitors" data-flag-title="自实现C语言字符串相关函数">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -1141,14 +802,288 @@
 
       
         
-          
-            <p>人会下意识的去纵容自己的惰性，这惰性，不只于懒惰，也有沉迷！沉迷于本以为对的方向，懒得停下回头，丢了思考的能力，错过很多如花青春。</p>
-<hr>
-<img src="http://7xrvo9.com1.z0.glb.clouddn.com/0320%2F2015-09-27%2009.31.27%201.jpg" class="full-image" alt="alt">
-<hr>
-<p>然而我们总会醒来，时间逼迫我们重新去思索，审视，谋划我们那所剩不多的“后青春”时代，不负当下，不负时光。</p>
+          <h3 id="1-编写函数实现strlen-："><a href="#1-编写函数实现strlen-：" class="headerlink" title="1. 编写函数实现strlen()："></a>1. 编写函数实现<code>strlen()</code>：</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">strlen</span><span class="params">(<span class="keyword">const</span> <span class="keyword">char</span> <span class="built_in">string</span>[])</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> i=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span>(<span class="built_in">string</span>[i])</span><br><span class="line">        i++;</span><br><span class="line">    <span class="keyword">return</span> i;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span><br><span class="line"></span>&#123;   </span><br><span class="line">	<span class="keyword">char</span> str[<span class="number">100</span>];</span><br><span class="line"></span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"亲输入字符串："</span>);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%s"</span>,str);</span><br><span class="line"> </span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"字符串长度：%d\n"</span>,<span class="built_in">strlen</span>(str));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/03/18/自实现C语言字符串相关函数/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/03/16/理解JavaScript函数/" itemprop="url">
+                  理解JavaScript函数
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-03-16T21:51:40+08:00" content="2016-03-16">
+              2016-03-16
+            </time>
+          </span>
 
           
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/编程学习/" itemprop="url" rel="index">
+                    <span itemprop="name">编程学习</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/编程学习/前端基础/" itemprop="url" rel="index">
+                    <span itemprop="name">前端基础</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/03/16/理解JavaScript函数/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/16/理解JavaScript函数/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/03/16/理解JavaScript函数/" class="leancloud_visitors" data-flag-title="理解JavaScript函数">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="【知识点】"><a href="#【知识点】" class="headerlink" title="-【知识点】"></a>-【知识点】</h2><h3 id="1-F：函数声明和函数表达式有什么区别？"><a href="#1-F：函数声明和函数表达式有什么区别？" class="headerlink" title="1. -F：函数声明和函数表达式有什么区别？"></a><strong>1. -F：函数声明和函数表达式有什么区别？</strong></h3>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/03/16/理解JavaScript函数/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/03/16/JavaScript基本语法/" itemprop="url">
+                  JavaScript基本语法要点
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-03-16T10:56:36+08:00" content="2016-03-16">
+              2016-03-16
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/编程学习/" itemprop="url" rel="index">
+                    <span itemprop="name">编程学习</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/编程学习/前端基础/" itemprop="url" rel="index">
+                    <span itemprop="name">前端基础</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/03/16/JavaScript基本语法/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/16/JavaScript基本语法/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/03/16/JavaScript基本语法/" class="leancloud_visitors" data-flag-title="JavaScript基本语法要点">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column"  style="width: 50%;"><img src="http://7xrvo9.com1.z0.glb.clouddn.com/0316%2Fportfolio-1.jpg" alt=""></div><div class="group-picture-column"  style="width: 50%;"><img src="http://7xrvo9.com1.z0.glb.clouddn.com/0316%2Fportfolio-2.jpg" alt=""></div></div><div class="group-picture-row"><div class="group-picture-column"  style="width: 100%;"><img src="http://7xrvo9.com1.z0.glb.clouddn.com/0316%2Fportfolio-3.jpg" alt=""></div></div></div></div>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/03/16/JavaScript基本语法/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
