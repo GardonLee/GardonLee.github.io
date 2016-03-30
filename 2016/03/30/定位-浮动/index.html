@@ -43,7 +43,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="JavaScript," />
+  <meta name="keywords" content="CSS," />
 
 
 
@@ -61,20 +61,24 @@
 
 
 
-<meta name="description">
+<meta name="description" content="-【基础知识】1. 文档流的概念指什么？有哪种方式可以让元素脱离文档流?
+文档流是将窗体自上而下分成一行行，每行按照自左向右的顺序排列元素，从头到尾按照文档的顺序，该在什么位置就在什么位置；网页中大部分对象默认是占用文档流，也有一些对象是不占文档流的，比如表单中隐藏域。
+有3种方式可以让元素脱离文档流而存在：浮动（float）、固定定位（position:fixed）、绝对定位（position:">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JavaScript基本语法要点">
-<meta property="og:url" content="http://licao404.com/2016/03/16/JavaScript基本语法/index.html">
+<meta property="og:title" content="定位+浮动">
+<meta property="og:url" content="http://licao404.com/2016/03/30/定位-浮动/index.html">
 <meta property="og:site_name" content="蓝岚爱肉肉">
-<meta property="og:description">
-<meta property="og:image" content="http://7xrvo9.com1.z0.glb.clouddn.com/0316%2Fportfolio-1.jpg">
-<meta property="og:image" content="http://7xrvo9.com1.z0.glb.clouddn.com/0316%2Fportfolio-2.jpg">
-<meta property="og:image" content="http://7xrvo9.com1.z0.glb.clouddn.com/0316%2Fportfolio-3.jpg">
-<meta property="og:updated_time" content="2016-03-19T18:04:10.625Z">
+<meta property="og:description" content="-【基础知识】1. 文档流的概念指什么？有哪种方式可以让元素脱离文档流?
+文档流是将窗体自上而下分成一行行，每行按照自左向右的顺序排列元素，从头到尾按照文档的顺序，该在什么位置就在什么位置；网页中大部分对象默认是占用文档流，也有一些对象是不占文档流的，比如表单中隐藏域。
+有3种方式可以让元素脱离文档流而存在：浮动（float）、固定定位（position:fixed）、绝对定位（position:">
+<meta property="og:image" content="http://7xr868.com1.z0.glb.clouddn.com/task10fixed.png">
+<meta property="og:updated_time" content="2016-03-30T05:31:03.456Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JavaScript基本语法要点">
-<meta name="twitter:description">
-<meta name="twitter:image" content="http://7xrvo9.com1.z0.glb.clouddn.com/0316%2Fportfolio-1.jpg">
+<meta name="twitter:title" content="定位+浮动">
+<meta name="twitter:description" content="-【基础知识】1. 文档流的概念指什么？有哪种方式可以让元素脱离文档流?
+文档流是将窗体自上而下分成一行行，每行按照自左向右的顺序排列元素，从头到尾按照文档的顺序，该在什么位置就在什么位置；网页中大部分对象默认是占用文档流，也有一些对象是不占文档流的，比如表单中隐藏域。
+有3种方式可以让元素脱离文档流而存在：浮动（float）、固定定位（position:fixed）、绝对定位（position:">
+<meta name="twitter:image" content="http://7xr868.com1.z0.glb.clouddn.com/task10fixed.png">
 
 
 
@@ -92,7 +96,7 @@
   };
 </script>
 
-  <title> JavaScript基本语法要点 | 蓝岚爱肉肉 </title>
+  <title> 定位+浮动 | 蓝岚爱肉肉 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -439,7 +443,7 @@
             
             
               
-                JavaScript基本语法要点
+                定位+浮动
               
             
           </h1>
@@ -451,8 +455,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-16T10:56:36+08:00" content="2016-03-16">
-              2016-03-16
+            <time itemprop="dateCreated" datetime="2016-03-30T13:29:46+08:00" content="2016-03-30">
+              2016-03-30
             </time>
           </span>
 
@@ -493,8 +497,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/03/16/JavaScript基本语法/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/16/JavaScript基本语法/" itemprop="commentsCount"></span>
+                <a href="/2016/03/30/定位-浮动/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/30/定位-浮动/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -504,7 +508,7 @@
 
           
           
-             <span id="/2016/03/16/JavaScript基本语法/" class="leancloud_visitors" data-flag-title="JavaScript基本语法要点">
+             <span id="/2016/03/30/定位-浮动/" class="leancloud_visitors" data-flag-title="定位+浮动">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -525,67 +529,53 @@
       
 
       
-        <div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 50%;"><img src="http://7xrvo9.com1.z0.glb.clouddn.com/0316%2Fportfolio-1.jpg" alt=""></div><div class="group-picture-column" style="width: 50%;"><img src="http://7xrvo9.com1.z0.glb.clouddn.com/0316%2Fportfolio-2.jpg" alt=""></div></div><div class="group-picture-row"><div class="group-picture-column" style="width: 100%;"><img src="http://7xrvo9.com1.z0.glb.clouddn.com/0316%2Fportfolio-3.jpg" alt=""></div></div></div></div>
-<a id="more"></a>
-<h2 id="【基础知识点】"><a href="#【基础知识点】" class="headerlink" title="-【基础知识点】"></a>-【基础知识点】</h2><h4 id="1-CSS和JS在网页中的放置顺序是怎样的？"><a href="#1-CSS和JS在网页中的放置顺序是怎样的？" class="headerlink" title="1. CSS和JS在网页中的放置顺序是怎样的？"></a><strong>1. CSS和JS在网页中的放置顺序是怎样的？</strong></h4><blockquote>
-<p>一般而言<code>CSS</code>放在<code>&lt;head&gt;</code>头部而<code>JS</code>放在<code>&lt;body&gt;</code>底部。</p>
+        <h2 id="【基础知识】"><a href="#【基础知识】" class="headerlink" title="-【基础知识】"></a>-【基础知识】</h2><h4 id="1-文档流的概念指什么？有哪种方式可以让元素脱离文档流"><a href="#1-文档流的概念指什么？有哪种方式可以让元素脱离文档流" class="headerlink" title="1. 文档流的概念指什么？有哪种方式可以让元素脱离文档流?"></a><strong>1. 文档流的概念指什么？有哪种方式可以让元素脱离文档流?</strong></h4><ul>
+<li>文档流是将窗体自上而下分成一行行，每行按照自左向右的顺序排列元素，从头到尾按照文档的顺序，该在什么位置就在什么位置；网页中大部分对象默认是占用文档流，也有一些对象是不占文档流的，比如表单中隐藏域。</li>
+<li>有3种方式可以让元素脱离文档流而存在：浮动（<code>float</code>）、固定定位（<code>position:fixed</code>）、绝对定位（<code>position:absolute</code>）<ul>
+<li>浮动元素不占用任何正常文档流空间，而他的定位仍是基于正常文档流；</li>
+<li>绝对定位是完全脱离文档流，在文档流中的其他元素将忽略该元素并且填补他原先的位置；</li>
+</ul>
+</li>
+</ul>
+<h4 id="2-有几种定位方式，分别是如何实现定位的，使用场景如何？"><a href="#2-有几种定位方式，分别是如何实现定位的，使用场景如何？" class="headerlink" title="2. 有几种定位方式，分别是如何实现定位的，使用场景如何？"></a><strong>2. 有几种定位方式，分别是如何实现定位的，使用场景如何？</strong></h4><ul>
+<li><code>position:static;</code>：静态定位（缺省值）。元素出现在正常的文档流中，忽略<code>top,buttom,left,right,z-index</code>声明；可以用于覆盖之前对position的定义；</li>
+<li><code>position:fixed</code>：固定定位，让元素完全脱离文档流，固定在浏览器窗口中某一位置，位置不随页面移动而发生变化。用在一些不想移动的导航栏，固定的广告，信息提醒，咨询联系按钮等<ul>
+<li><img src="http://7xr868.com1.z0.glb.clouddn.com/task10fixed.png" alt="fixed"></li>
+</ul>
+</li>
+<li><code>position:relative</code>：相对定位，相对于自己原来在文档流中的位置进行定位，不改变布局（在该元素原来位置留下空白）</li>
+<li><code>position:absolute</code>：绝对对定位，相对于与他最近的非static定位的祖先元素来定位，完全脱离文档流，其他文档流中的元素会忽略他的存在</li>
+</ul>
+<h4 id="3-absolute-relative-fixed-偏移的参考点分别是什么"><a href="#3-absolute-relative-fixed-偏移的参考点分别是什么" class="headerlink" title="3. absolute, relative, fixed 偏移的参考点分别是什么?"></a><strong>3. <code>absolute</code>, <code>relative</code>, <code>fixed</code> 偏移的参考点分别是什么?</strong></h4><blockquote>
+<p><code>absolute</code>: 相对于与他最近的非static定位的祖先元素来定位，如果都没有的话就向上对；<br><code>relative</code>：相对于自己原来在文档流中的位置进行定位；<br><code>fixed</code>：相对于浏览器窗口；  </p>
 </blockquote>
-<h4 id="2-解释白屏和FOUC？"><a href="#2-解释白屏和FOUC？" class="headerlink" title="2. 解释白屏和FOUC？"></a><strong>2. 解释白屏和<code>FOUC</code>？</strong></h4><ul>
-<li><p><code>白屏</code>：</p>
-<ul>
-<li>当样式表放在页面底部时，一些浏览器（IE浏览器）会等待加载完html和css后才进行页面渲染，这样就造成页面内容不会逐步出现，而是有空白等待的时间；注意<code>@import</code>加载样式时即使放在<code>link</code>里也会造成白屏；</li>
-<li><code>JS</code>是阻塞加载，放在头部时会禁止并发加载，等js加载完成后再继续加载，也会造成白屏；</li>
-</ul>
-</li>
-<li><p><code>FOUC</code>（无样式内容闪烁）是因为另外一些浏览器每解析一个标签就渲染一步，如果样式表放在后面，会在最后加载完成css后再进行一次渲染，造成闪烁,<code>Firfox</code>是一直<code>Fouc</code>;</p>
-</li>
-</ul>
-<h4 id="3-async和defer的作用是什么？有什么区别？"><a href="#3-async和defer的作用是什么？有什么区别？" class="headerlink" title="3. async和defer的作用是什么？有什么区别？"></a><strong>3. async和defer的作用是什么？有什么区别？</strong></h4><ul>
-<li>作用：都是让<code>JS</code>的加载和后续文档元素的加载渲染并行执行（异步）；</li>
-<li>区别:<code>defer</code>只是异步加载而不会立即执行,等待页面后续内容全部加载完成后才执行；<code>async</code>则是加载<code>js</code>后立即执行;</li>
-</ul>
-<h4 id="4-简述网页的渲染机制？"><a href="#4-简述网页的渲染机制？" class="headerlink" title="4. 简述网页的渲染机制？"></a><strong>4. 简述网页的渲染机制？</strong></h4><ol>
-<li>浏览器根据用户输入的域名去获取对应的网页资源； </li>
-<li>解析<code>html</code>标签构建<code>DOM</code>树;</li>
-<li>解析<code>CSS</code> 标签构建<code>CSSOM</code>树;</li>
-<li>把<code>DOM</code>和<code>CSSOM</code>组合成为渲染树;</li>
-<li>精确计算每个DOM节点的位置（<code>layout</code>和<code>reflow</code>过程）；</li>
-<li>最后通过调用操作系统<code>Native GUI</code>的<code>API</code>绘制;</li>
-<li>更加详细深入借鉴<a href="http://www.zhihu.com/question/20117417" target="_blank" rel="external">知乎</a>；</li>
+<h4 id="4-z-index-有什么作用-如何使用"><a href="#4-z-index-有什么作用-如何使用" class="headerlink" title="4. z-index 有什么作用? 如何使用?"></a><strong>4. <code>z-index</code> 有什么作用? 如何使用?</strong></h4><blockquote>
+<p>可以设置<code>定位元素</code>显示层级，值越大越在外层。当没有指定z-index的时候， 所有元素都在会被渲染在默认层(0层)；</p>
+</blockquote>
+<h4 id="5-position-relative和负margin都可以使元素位置发生偏移-二者有什么区别"><a href="#5-position-relative和负margin都可以使元素位置发生偏移-二者有什么区别" class="headerlink" title="5. position:relative和负margin都可以使元素位置发生偏移?二者有什么区别"></a><strong>5. <code>position:relative</code>和负<code>margin</code>都可以使元素位置发生偏移?二者有什么区别</strong></h4><blockquote>
+<p><code>position:relative</code>使元素位置发生偏移不会对后来的元素产生影响，他的文档流占位还是之前的位置；显然使用<code>margin</code>偏移有可能影响到其他元素的位置；</p>
+</blockquote>
+<h4 id="6-如何让一个固定宽高的元素在页面上垂直水平居中"><a href="#6-如何让一个固定宽高的元素在页面上垂直水平居中" class="headerlink" title="6. 如何让一个固定宽高的元素在页面上垂直水平居中?"></a><strong>6. 如何让一个固定宽高的元素在页面上垂直水平居中?</strong></h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">  &lt;style&gt;</span><br><span class="line">    body&#123;</span><br><span class="line">      background:gray;</span><br><span class="line">    &#125;</span><br><span class="line">    div&#123;</span><br><span class="line">      position:absolute;</span><br><span class="line">      top:50%;</span><br><span class="line">      right:50%;</span><br><span class="line">      margin:-50px;</span><br><span class="line">      width:100px;</span><br><span class="line">      height:100px;</span><br><span class="line">      background-color:yellow;</span><br><span class="line">    &#125;</span><br><span class="line">  &lt;/style&gt;</span><br><span class="line"></span><br><span class="line">&lt;body&gt;</span><br><span class="line">  &lt;div&gt;&lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
+<p><a href="http://js.jirengu.com/dupahagojo/1/edit" target="_blank" rel="external">&gt;&gt;效果演示</a></p>
+<h4 id="7-浮动元素有什么特征？对其他浮动元素、普通元素、文字分别有什么影响"><a href="#7-浮动元素有什么特征？对其他浮动元素、普通元素、文字分别有什么影响" class="headerlink" title="7. 浮动元素有什么特征？对其他浮动元素、普通元素、文字分别有什么影响?"></a><strong>7. 浮动元素有什么特征？对其他浮动元素、普通元素、文字分别有什么影响?</strong></h4><blockquote>
+<ol>
+<li>浮动的框可以向左向右移动，直到它的外边缘碰到包含框或另一个浮动框的边框为止；</li>
+<li>对其他浮动元素会按照渲染顺序显示，对其他普通元素则会覆盖在表层，文字会环绕浮动元素；</li>
 </ol>
-<h4 id="5-JavaScript-定义了几种数据类型-哪些是简单类型-哪些是复杂类型"><a href="#5-JavaScript-定义了几种数据类型-哪些是简单类型-哪些是复杂类型" class="headerlink" title="5. JavaScript 定义了几种数据类型? 哪些是简单类型?哪些是复杂类型?"></a><strong>5. <code>JavaScript</code> 定义了几种数据类型? 哪些是简单类型?哪些是复杂类型?</strong></h4><blockquote>
-<p><code>JavaScript</code>定义了 6 种数据类型</p>
+</blockquote>
+<h4 id="8-清除浮动指什么-如何清除浮动"><a href="#8-清除浮动指什么-如何清除浮动" class="headerlink" title="8. 清除浮动指什么? 如何清除浮动?"></a><strong>8. 清除浮动指什么? 如何清除浮动?</strong></h4><blockquote>
+<p>元素浮动之后，周围的元素会重新排列，为了避免这种情况，需要清除浮动；</p>
 </blockquote>
 <ul>
-<li>简单类型<ul>
-<li><code>NULL</code>空数据类型</li>
-<li><code>Undefined</code>未定义的数据类型</li>
-<li><code>String</code>字符串类型：由0个或多个字符组成，被包含在引号里，字符包括字母，数字，标点符号和空格；</li>
-<li><code>Number</code>数值类型：支持整数，浮点数，负数，</li>
-<li><code>布尔值</code>：<code>true</code>/<code>false</code></li>
+<li>如何清除浮动：</li>
 </ul>
-</li>
-<li>复杂类型：<ul>
-<li><code>Object</code>对象</li>
-</ul>
-</li>
-</ul>
-<h4 id="6-NaN、undefined、null分别代表什么"><a href="#6-NaN、undefined、null分别代表什么" class="headerlink" title="6. NaN、undefined、null分别代表什么?"></a><strong>6. <code>NaN</code>、<code>undefined</code>、<code>null</code>分别代表什么?</strong></h4><ul>
-<li><code>NaN</code>:<code>NaN</code>属性顾名思义<code>not a number</code>，表示非数字值，并不是合法的数字；但是数据类型是<code>Number</code>;不等于任何值包括自己；</li>
-<li><code>undefined</code>：表示未定义的值；<code>typeof</code>一个没有值得变量会返回<code>undefined</code>;</li>
-<li><code>null</code>：空数据类型，表示一个空对象的引用，只有一个值的特殊类型;<code>typeof</code>检测<code>null</code>返回<code>object</code>;</li>
-</ul>
-<h4 id="7-typeof和instanceof的作用和区别"><a href="#7-typeof和instanceof的作用和区别" class="headerlink" title="7. typeof和instanceof的作用和区别?"></a><strong>7. <code>typeof</code>和<code>instanceof</code>的作用和区别?</strong></h4><ul>
-<li><code>typeof</code>可以用来检测<code>Function</code>，<code>Number</code>，<code>Undefined</code>，<code>String</code>等这几种基本类型，但对于数组和正则只能返回<code>object</code>;</li>
-<li><code>instanceof</code>用来判断某个对象的实例，返回布尔值</li>
-</ul>
+<ol>
+<li>直接对受影响的元素使用<code>clear</code>属性；</li>
+<li>对父亲</li>
+</ol>
 <hr>
-<h2 id="【基本语法演示】"><a href="#【基本语法演示】" class="headerlink" title="-【基本语法演示】"></a>-【基本语法演示】</h2><h4 id="1-完成如下代码判断一个变量是否是数字、字符串、布尔、函数"><a href="#1-完成如下代码判断一个变量是否是数字、字符串、布尔、函数" class="headerlink" title="1.完成如下代码判断一个变量是否是数字、字符串、布尔、函数"></a><strong>1.完成如下代码判断一个变量是否是数字、字符串、布尔、函数</strong></h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">isNumber</span>(<span class="params">el</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">typeof</span>(el)===<span class="string">"number"</span>) &#123;</span><br><span class="line">    	<span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">isString</span>(<span class="params">el</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">typeof</span>(el)===<span class="string">"string"</span>) &#123;</span><br><span class="line">    	<span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">isBoolean</span>(<span class="params">el</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">typeof</span>(el)===<span class="string">"boolean"</span>) &#123;</span><br><span class="line">    	<span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">isFunction</span>(<span class="params">el</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">typeof</span>(el)===<span class="string">"function"</span>) &#123;</span><br><span class="line">    	<span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> a = <span class="number">2</span>,</span><br><span class="line">    b = <span class="string">"jirengu"</span>,</span><br><span class="line">	c = <span class="literal">false</span>;</span><br><span class="line">	alert( isNumber(a) );  <span class="comment">//true</span></span><br><span class="line">	alert( isString(a) );  <span class="comment">//false</span></span><br><span class="line">	alert( isString(b) );  <span class="comment">//true</span></span><br><span class="line">	alert( isBoolean(c) ); <span class="comment">//true</span></span><br><span class="line">	alert( isFunction(a)); <span class="comment">//false</span></span><br><span class="line">	alert( isFunction( isNumber ) ); <span class="comment">//true</span></span><br></pre></td></tr></table></figure>
-<h4 id="2-以下代码的输出结果是"><a href="#2-以下代码的输出结果是" class="headerlink" title="2.以下代码的输出结果是?"></a><strong>2.以下代码的输出结果是?</strong></h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="number">1</span>+<span class="number">1</span>);			<span class="comment">//2</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">"2"</span>+<span class="string">"4"</span>);		<span class="comment">//24 两个字符串连接</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="number">2</span>+<span class="string">"4"</span>); 		<span class="comment">//24 2转换为字符</span></span><br><span class="line"><span class="built_in">console</span>.log(+<span class="keyword">new</span> <span class="built_in">Date</span>());	<span class="comment">//1458035114537</span></span><br><span class="line"><span class="built_in">console</span>.log(+<span class="string">"4"</span>);			<span class="comment">//4</span></span><br></pre></td></tr></table></figure>
-<h4 id="3-以下代码的输出结果是"><a href="#3-以下代码的输出结果是" class="headerlink" title="3.以下代码的输出结果是?"></a><strong>3.以下代码的输出结果是?</strong></h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">1</span>;</span><br><span class="line">a+++a;</span><br><span class="line"></span><br><span class="line"><span class="keyword">typeof</span> a+<span class="number">2</span>;<span class="comment">//number2</span></span><br></pre></td></tr></table></figure>
-<h4 id="4-遍历数组，把数组里的打印数组每一项的平方"><a href="#4-遍历数组，把数组里的打印数组每一项的平方" class="headerlink" title="4.遍历数组，把数组里的打印数组每一项的平方?"></a><strong>4.遍历数组，把数组里的打印数组每一项的平方?</strong></h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>]</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i&lt;arr.length;i++)&#123;</span><br><span class="line">	<span class="built_in">console</span>.log(arr[i]*arr[i]);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 输出 9, 16, 25</span></span><br></pre></td></tr></table></figure>
-<h4 id="5-遍历-JSON-打印里面的值"><a href="#5-遍历-JSON-打印里面的值" class="headerlink" title="5.遍历 JSON, 打印里面的值?"></a><strong>5.遍历 <code>JSON</code>, 打印里面的值?</strong></h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> obj = &#123;</span><br><span class="line">  name: <span class="string">'hunger'</span>,</span><br><span class="line">  sex: <span class="string">'male'</span>,</span><br><span class="line">  age: <span class="number">28</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> k <span class="keyword">in</span> obj)&#123;</span><br><span class="line">	<span class="built_in">console</span>.log(k+<span class="string">": "</span>+obj[k]);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 输出 name: hunger, sex: male, age:28</span></span><br></pre></td></tr></table></figure>
-<h4 id="6-下面代码的输出是-为什么"><a href="#6-下面代码的输出是-为什么" class="headerlink" title="6.下面代码的输出是? 为什么?"></a><strong>6.下面代码的输出是? 为什么?</strong></h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(a);<span class="comment">//Undefined,声明了变量并进行了变量提升，未有赋值</span></span><br><span class="line"><span class="keyword">var</span> a = <span class="number">1</span>;</span><br><span class="line"><span class="built_in">console</span>.log(a);<span class="comment">//1</span></span><br><span class="line"><span class="built_in">console</span>.log(b);<span class="comment">//报错，b没有被声明</span></span><br></pre></td></tr></table></figure>
+<h2 id="【代码】"><a href="#【代码】" class="headerlink" title="-【代码】"></a>-【代码】</h2><blockquote>
+<h3 id="task-10-1"><a href="#task-10-1" class="headerlink" title="task-10-1"></a><a href="https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task10/task-10-1.html" target="_blank" rel="external">task-10-1</a></h3><h3 id="task-10-2"><a href="#task-10-2" class="headerlink" title="task-10-2"></a><a href="https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task10/task-10-2.html" target="_blank" rel="external">task-10-2</a></h3></blockquote>
 
       
     </div>
@@ -600,7 +590,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/JavaScript/" rel="tag">#JavaScript</a>
+            <a href="/tags/CSS/" rel="tag">#CSS</a>
           
         </div>
       
@@ -609,12 +599,16 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/03/30/CSS_Sprite+background/" rel="next" title="CSS Sprite/background">
+                <i class="fa fa-chevron-left"></i> CSS Sprite/background
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/03/16/理解JavaScript函数/" rel="prev" title="理解JavaScript函数">
-                理解JavaScript函数 <i class="fa fa-chevron-right"></i>
+              <a href="/2016/03/30/BFC/" rel="prev" title="BFC">
+                BFC <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -630,10 +624,10 @@
 
     <div class="post-spread">
       
-        <div class="ds-share flat" data-thread-key="2016/03/16/JavaScript基本语法/"
-     data-title="JavaScript基本语法要点"
+        <div class="ds-share flat" data-thread-key="2016/03/30/定位-浮动/"
+     data-title="定位+浮动"
      data-content=""
-     data-url="http://licao404.com/2016/03/16/JavaScript基本语法/">
+     data-url="http://licao404.com/2016/03/30/定位-浮动/">
   <div class="ds-share-inline">
     <ul  class="ds-share-icons-16">
 
@@ -660,8 +654,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/03/16/JavaScript基本语法/"
-           data-title="JavaScript基本语法要点" data-url="http://licao404.com/2016/03/16/JavaScript基本语法/">
+      <div class="ds-thread" data-thread-key="2016/03/30/定位-浮动/"
+           data-title="定位+浮动" data-url="http://licao404.com/2016/03/30/定位-浮动/">
       </div>
     
   </div>
@@ -811,7 +805,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#【基础知识点】"><span class="nav-number">1.</span> <span class="nav-text">-【基础知识点】</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-CSS和JS在网页中的放置顺序是怎样的？"><span class="nav-number">1.0.1.</span> <span class="nav-text">1. CSS和JS在网页中的放置顺序是怎样的？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-解释白屏和FOUC？"><span class="nav-number">1.0.2.</span> <span class="nav-text">2. 解释白屏和FOUC？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-async和defer的作用是什么？有什么区别？"><span class="nav-number">1.0.3.</span> <span class="nav-text">3. async和defer的作用是什么？有什么区别？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-简述网页的渲染机制？"><span class="nav-number">1.0.4.</span> <span class="nav-text">4. 简述网页的渲染机制？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-JavaScript-定义了几种数据类型-哪些是简单类型-哪些是复杂类型"><span class="nav-number">1.0.5.</span> <span class="nav-text">5. JavaScript 定义了几种数据类型? 哪些是简单类型?哪些是复杂类型?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-NaN、undefined、null分别代表什么"><span class="nav-number">1.0.6.</span> <span class="nav-text">6. NaN、undefined、null分别代表什么?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7-typeof和instanceof的作用和区别"><span class="nav-number">1.0.7.</span> <span class="nav-text">7. typeof和instanceof的作用和区别?</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#【基本语法演示】"><span class="nav-number">2.</span> <span class="nav-text">-【基本语法演示】</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-完成如下代码判断一个变量是否是数字、字符串、布尔、函数"><span class="nav-number">2.0.1.</span> <span class="nav-text">1.完成如下代码判断一个变量是否是数字、字符串、布尔、函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-以下代码的输出结果是"><span class="nav-number">2.0.2.</span> <span class="nav-text">2.以下代码的输出结果是?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-以下代码的输出结果是"><span class="nav-number">2.0.3.</span> <span class="nav-text">3.以下代码的输出结果是?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-遍历数组，把数组里的打印数组每一项的平方"><span class="nav-number">2.0.4.</span> <span class="nav-text">4.遍历数组，把数组里的打印数组每一项的平方?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-遍历-JSON-打印里面的值"><span class="nav-number">2.0.5.</span> <span class="nav-text">5.遍历 JSON, 打印里面的值?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-下面代码的输出是-为什么"><span class="nav-number">2.0.6.</span> <span class="nav-text">6.下面代码的输出是? 为什么?</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#【基础知识】"><span class="nav-number">1.</span> <span class="nav-text">-【基础知识】</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-文档流的概念指什么？有哪种方式可以让元素脱离文档流"><span class="nav-number">1.0.1.</span> <span class="nav-text">1. 文档流的概念指什么？有哪种方式可以让元素脱离文档流?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-有几种定位方式，分别是如何实现定位的，使用场景如何？"><span class="nav-number">1.0.2.</span> <span class="nav-text">2. 有几种定位方式，分别是如何实现定位的，使用场景如何？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-absolute-relative-fixed-偏移的参考点分别是什么"><span class="nav-number">1.0.3.</span> <span class="nav-text">3. absolute, relative, fixed 偏移的参考点分别是什么?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-z-index-有什么作用-如何使用"><span class="nav-number">1.0.4.</span> <span class="nav-text">4. z-index 有什么作用? 如何使用?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-position-relative和负margin都可以使元素位置发生偏移-二者有什么区别"><span class="nav-number">1.0.5.</span> <span class="nav-text">5. position:relative和负margin都可以使元素位置发生偏移?二者有什么区别</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-如何让一个固定宽高的元素在页面上垂直水平居中"><span class="nav-number">1.0.6.</span> <span class="nav-text">6. 如何让一个固定宽高的元素在页面上垂直水平居中?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7-浮动元素有什么特征？对其他浮动元素、普通元素、文字分别有什么影响"><span class="nav-number">1.0.7.</span> <span class="nav-text">7. 浮动元素有什么特征？对其他浮动元素、普通元素、文字分别有什么影响?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#8-清除浮动指什么-如何清除浮动"><span class="nav-number">1.0.8.</span> <span class="nav-text">8. 清除浮动指什么? 如何清除浮动?</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#【代码】"><span class="nav-number">2.</span> <span class="nav-text">-【代码】</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#task-10-1"><span class="nav-number">2.1.</span> <span class="nav-text">task-10-1</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#task-10-2"><span class="nav-number">2.2.</span> <span class="nav-text">task-10-2</span></a></li></ol></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">

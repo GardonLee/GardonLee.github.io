@@ -43,7 +43,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="JavaScript," />
+  <meta name="keywords" content="CSS," />
 
 
 
@@ -61,20 +61,34 @@
 
 
 
-<meta name="description">
+<meta name="description" content="-【知识点】1. CSS Sprite(雪碧图)指什么? 有什么作用？
+CSS Sprite又名CSS精灵，一种将零星的小图片合并成一张大图的网络图像应用处理方式，再利用CSS的background-image,background-repeat,background-position进行精确定位所需的小图位置;
+主要作用：
+可以大量减少页面的http请求，提升页面性能，因为如果是每一张图片都去请">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JavaScript基本语法要点">
-<meta property="og:url" content="http://licao404.com/2016/03/16/JavaScript基本语法/index.html">
+<meta property="og:title" content="CSS Sprite/background">
+<meta property="og:url" content="http://licao404.com/2016/03/30/CSS_Sprite+background/index.html">
 <meta property="og:site_name" content="蓝岚爱肉肉">
-<meta property="og:description">
-<meta property="og:image" content="http://7xrvo9.com1.z0.glb.clouddn.com/0316%2Fportfolio-1.jpg">
-<meta property="og:image" content="http://7xrvo9.com1.z0.glb.clouddn.com/0316%2Fportfolio-2.jpg">
-<meta property="og:image" content="http://7xrvo9.com1.z0.glb.clouddn.com/0316%2Fportfolio-3.jpg">
-<meta property="og:updated_time" content="2016-03-19T18:04:10.625Z">
+<meta property="og:description" content="-【知识点】1. CSS Sprite(雪碧图)指什么? 有什么作用？
+CSS Sprite又名CSS精灵，一种将零星的小图片合并成一张大图的网络图像应用处理方式，再利用CSS的background-image,background-repeat,background-position进行精确定位所需的小图位置;
+主要作用：
+可以大量减少页面的http请求，提升页面性能，因为如果是每一张图片都去请">
+<meta property="og:image" content="http://7xr868.com1.z0.glb.clouddn.com/task9%E8%83%8C%E6%99%AF%E5%9B%BE2.png">
+<meta property="og:image" content="http://7xr868.com1.z0.glb.clouddn.com/task9%E8%83%8C%E6%99%AF%E5%9B%BE1.png">
+<meta property="og:image" content="http://7xr868.com1.z0.glb.clouddn.com/task9img.png">
+<meta property="og:image" content="http://7xr868.com1.z0.glb.clouddn.com/task9img2.png">
+<meta property="og:image" content="http://7xr868.com1.z0.glb.clouddn.com/task9title.png">
+<meta property="og:image" content="http://7xr868.com1.z0.glb.clouddn.com/task9background-size%E5%85%BC%E5%AE%B9%E6%80%A7.png">
+<meta property="og:image" content="http://7xr868.com1.z0.glb.clouddn.com/task9opacity%E5%85%BC%E5%AE%B9%E6%80%A7.png">
+<meta property="og:image" content="http://7xr868.com1.z0.glb.clouddn.com/task9filter%E5%85%BC%E5%AE%B9%E6%80%A7.png">
+<meta property="og:updated_time" content="2016-03-30T05:28:42.695Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JavaScript基本语法要点">
-<meta name="twitter:description">
-<meta name="twitter:image" content="http://7xrvo9.com1.z0.glb.clouddn.com/0316%2Fportfolio-1.jpg">
+<meta name="twitter:title" content="CSS Sprite/background">
+<meta name="twitter:description" content="-【知识点】1. CSS Sprite(雪碧图)指什么? 有什么作用？
+CSS Sprite又名CSS精灵，一种将零星的小图片合并成一张大图的网络图像应用处理方式，再利用CSS的background-image,background-repeat,background-position进行精确定位所需的小图位置;
+主要作用：
+可以大量减少页面的http请求，提升页面性能，因为如果是每一张图片都去请">
+<meta name="twitter:image" content="http://7xr868.com1.z0.glb.clouddn.com/task9%E8%83%8C%E6%99%AF%E5%9B%BE2.png">
 
 
 
@@ -92,7 +106,7 @@
   };
 </script>
 
-  <title> JavaScript基本语法要点 | 蓝岚爱肉肉 </title>
+  <title> CSS Sprite/background | 蓝岚爱肉肉 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -439,7 +453,7 @@
             
             
               
-                JavaScript基本语法要点
+                CSS Sprite/background
               
             
           </h1>
@@ -451,8 +465,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-16T10:56:36+08:00" content="2016-03-16">
-              2016-03-16
+            <time itemprop="dateCreated" datetime="2016-03-30T13:27:33+08:00" content="2016-03-30">
+              2016-03-30
             </time>
           </span>
 
@@ -493,8 +507,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/03/16/JavaScript基本语法/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/16/JavaScript基本语法/" itemprop="commentsCount"></span>
+                <a href="/2016/03/30/CSS_Sprite+background/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/30/CSS_Sprite+background/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -504,7 +518,7 @@
 
           
           
-             <span id="/2016/03/16/JavaScript基本语法/" class="leancloud_visitors" data-flag-title="JavaScript基本语法要点">
+             <span id="/2016/03/30/CSS_Sprite+background/" class="leancloud_visitors" data-flag-title="CSS Sprite/background">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -525,67 +539,76 @@
       
 
       
-        <div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 50%;"><img src="http://7xrvo9.com1.z0.glb.clouddn.com/0316%2Fportfolio-1.jpg" alt=""></div><div class="group-picture-column" style="width: 50%;"><img src="http://7xrvo9.com1.z0.glb.clouddn.com/0316%2Fportfolio-2.jpg" alt=""></div></div><div class="group-picture-row"><div class="group-picture-column" style="width: 100%;"><img src="http://7xrvo9.com1.z0.glb.clouddn.com/0316%2Fportfolio-3.jpg" alt=""></div></div></div></div>
-<a id="more"></a>
-<h2 id="【基础知识点】"><a href="#【基础知识点】" class="headerlink" title="-【基础知识点】"></a>-【基础知识点】</h2><h4 id="1-CSS和JS在网页中的放置顺序是怎样的？"><a href="#1-CSS和JS在网页中的放置顺序是怎样的？" class="headerlink" title="1. CSS和JS在网页中的放置顺序是怎样的？"></a><strong>1. CSS和JS在网页中的放置顺序是怎样的？</strong></h4><blockquote>
-<p>一般而言<code>CSS</code>放在<code>&lt;head&gt;</code>头部而<code>JS</code>放在<code>&lt;body&gt;</code>底部。</p>
-</blockquote>
-<h4 id="2-解释白屏和FOUC？"><a href="#2-解释白屏和FOUC？" class="headerlink" title="2. 解释白屏和FOUC？"></a><strong>2. 解释白屏和<code>FOUC</code>？</strong></h4><ul>
-<li><p><code>白屏</code>：</p>
+        <h2 id="【知识点】"><a href="#【知识点】" class="headerlink" title="-【知识点】"></a>-【知识点】</h2><h4 id="1-CSS-Sprite-雪碧图-指什么-有什么作用？"><a href="#1-CSS-Sprite-雪碧图-指什么-有什么作用？" class="headerlink" title="1. CSS Sprite(雪碧图)指什么? 有什么作用？"></a><strong>1. CSS Sprite(雪碧图)指什么? 有什么作用？</strong></h4><ul>
+<li><code>CSS Sprite</code>又名<code>CSS精灵</code>，一种将零星的小图片合并成一张大图的网络图像应用处理方式，再利用<code>CSS</code>的<code>background-image</code>,<code>background-repeat</code>,<code>background-position</code>进行精确定位所需的小图位置;</li>
+<li>主要作用：<ul>
+<li>可以大量减少页面的http请求，提升页面性能，因为如果是每一张图片都去请求一次，浪费的网络资源是不可想象的；</li>
+<li>减少图片的字节；</li>
+<li>其他作用和弊端见<a href="http://baike.baidu.com/link?url=WNMBLXrej-HoKJ4OspqtsJdTfgc5_jTRO6a3rcthEVyyKfv2M2jGG4lKlOw69NK1KTjHAPmJb4NttvAhzroB6q" target="_blank" rel="external">度娘百科</a>。</li>
+</ul>
+</li>
+</ul>
+<h4 id="2-img标签和CSS背景使用图片在使用场景上有何区别"><a href="#2-img标签和CSS背景使用图片在使用场景上有何区别" class="headerlink" title="2. img标签和CSS背景使用图片在使用场景上有何区别?"></a><strong>2. img标签和CSS背景使用图片在使用场景上有何区别?</strong></h4><blockquote>
 <ul>
-<li>当样式表放在页面底部时，一些浏览器（IE浏览器）会等待加载完html和css后才进行页面渲染，这样就造成页面内容不会逐步出现，而是有空白等待的时间；注意<code>@import</code>加载样式时即使放在<code>link</code>里也会造成白屏；</li>
-<li><code>JS</code>是阻塞加载，放在头部时会禁止并发加载，等js加载完成后再继续加载，也会造成白屏；</li>
+<li>如果内容（对每个访问者）是恒定不变的，如icon，logo，等，则选择css背景图：<br><img src="http://7xr868.com1.z0.glb.clouddn.com/task9%E8%83%8C%E6%99%AF%E5%9B%BE2.png" alt="icon"><br><img src="http://7xr868.com1.z0.glb.clouddn.com/task9%E8%83%8C%E6%99%AF%E5%9B%BE1.png" alt="logo"></li>
 </ul>
-</li>
-<li><p><code>FOUC</code>（无样式内容闪烁）是因为另外一些浏览器每解析一个标签就渲染一步，如果样式表放在后面，会在最后加载完成css后再进行一次渲染，造成闪烁,<code>Firfox</code>是一直<code>Fouc</code>;</p>
-</li>
-</ul>
-<h4 id="3-async和defer的作用是什么？有什么区别？"><a href="#3-async和defer的作用是什么？有什么区别？" class="headerlink" title="3. async和defer的作用是什么？有什么区别？"></a><strong>3. async和defer的作用是什么？有什么区别？</strong></h4><ul>
-<li>作用：都是让<code>JS</code>的加载和后续文档元素的加载渲染并行执行（异步）；</li>
-<li>区别:<code>defer</code>只是异步加载而不会立即执行,等待页面后续内容全部加载完成后才执行；<code>async</code>则是加载<code>js</code>后立即执行;</li>
-</ul>
-<h4 id="4-简述网页的渲染机制？"><a href="#4-简述网页的渲染机制？" class="headerlink" title="4. 简述网页的渲染机制？"></a><strong>4. 简述网页的渲染机制？</strong></h4><ol>
-<li>浏览器根据用户输入的域名去获取对应的网页资源； </li>
-<li>解析<code>html</code>标签构建<code>DOM</code>树;</li>
-<li>解析<code>CSS</code> 标签构建<code>CSSOM</code>树;</li>
-<li>把<code>DOM</code>和<code>CSSOM</code>组合成为渲染树;</li>
-<li>精确计算每个DOM节点的位置（<code>layout</code>和<code>reflow</code>过程）；</li>
-<li>最后通过调用操作系统<code>Native GUI</code>的<code>API</code>绘制;</li>
-<li>更加详细深入借鉴<a href="http://www.zhihu.com/question/20117417" target="_blank" rel="external">知乎</a>；</li>
-</ol>
-<h4 id="5-JavaScript-定义了几种数据类型-哪些是简单类型-哪些是复杂类型"><a href="#5-JavaScript-定义了几种数据类型-哪些是简单类型-哪些是复杂类型" class="headerlink" title="5. JavaScript 定义了几种数据类型? 哪些是简单类型?哪些是复杂类型?"></a><strong>5. <code>JavaScript</code> 定义了几种数据类型? 哪些是简单类型?哪些是复杂类型?</strong></h4><blockquote>
-<p><code>JavaScript</code>定义了 6 种数据类型</p>
 </blockquote>
-<ul>
-<li>简单类型<ul>
-<li><code>NULL</code>空数据类型</li>
-<li><code>Undefined</code>未定义的数据类型</li>
-<li><code>String</code>字符串类型：由0个或多个字符组成，被包含在引号里，字符包括字母，数字，标点符号和空格；</li>
-<li><code>Number</code>数值类型：支持整数，浮点数，负数，</li>
-<li><code>布尔值</code>：<code>true</code>/<code>false</code></li>
-</ul>
-</li>
-<li>复杂类型：<ul>
-<li><code>Object</code>对象</li>
-</ul>
-</li>
-</ul>
-<h4 id="6-NaN、undefined、null分别代表什么"><a href="#6-NaN、undefined、null分别代表什么" class="headerlink" title="6. NaN、undefined、null分别代表什么?"></a><strong>6. <code>NaN</code>、<code>undefined</code>、<code>null</code>分别代表什么?</strong></h4><ul>
-<li><code>NaN</code>:<code>NaN</code>属性顾名思义<code>not a number</code>，表示非数字值，并不是合法的数字；但是数据类型是<code>Number</code>;不等于任何值包括自己；</li>
-<li><code>undefined</code>：表示未定义的值；<code>typeof</code>一个没有值得变量会返回<code>undefined</code>;</li>
-<li><code>null</code>：空数据类型，表示一个空对象的引用，只有一个值的特殊类型;<code>typeof</code>检测<code>null</code>返回<code>object</code>;</li>
-</ul>
-<h4 id="7-typeof和instanceof的作用和区别"><a href="#7-typeof和instanceof的作用和区别" class="headerlink" title="7. typeof和instanceof的作用和区别?"></a><strong>7. <code>typeof</code>和<code>instanceof</code>的作用和区别?</strong></h4><ul>
-<li><code>typeof</code>可以用来检测<code>Function</code>，<code>Number</code>，<code>Undefined</code>，<code>String</code>等这几种基本类型，但对于数组和正则只能返回<code>object</code>;</li>
-<li><code>instanceof</code>用来判断某个对象的实例，返回布尔值</li>
-</ul>
 <hr>
-<h2 id="【基本语法演示】"><a href="#【基本语法演示】" class="headerlink" title="-【基本语法演示】"></a>-【基本语法演示】</h2><h4 id="1-完成如下代码判断一个变量是否是数字、字符串、布尔、函数"><a href="#1-完成如下代码判断一个变量是否是数字、字符串、布尔、函数" class="headerlink" title="1.完成如下代码判断一个变量是否是数字、字符串、布尔、函数"></a><strong>1.完成如下代码判断一个变量是否是数字、字符串、布尔、函数</strong></h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">isNumber</span>(<span class="params">el</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">typeof</span>(el)===<span class="string">"number"</span>) &#123;</span><br><span class="line">    	<span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">isString</span>(<span class="params">el</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">typeof</span>(el)===<span class="string">"string"</span>) &#123;</span><br><span class="line">    	<span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">isBoolean</span>(<span class="params">el</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">typeof</span>(el)===<span class="string">"boolean"</span>) &#123;</span><br><span class="line">    	<span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">isFunction</span>(<span class="params">el</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">typeof</span>(el)===<span class="string">"function"</span>) &#123;</span><br><span class="line">    	<span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> a = <span class="number">2</span>,</span><br><span class="line">    b = <span class="string">"jirengu"</span>,</span><br><span class="line">	c = <span class="literal">false</span>;</span><br><span class="line">	alert( isNumber(a) );  <span class="comment">//true</span></span><br><span class="line">	alert( isString(a) );  <span class="comment">//false</span></span><br><span class="line">	alert( isString(b) );  <span class="comment">//true</span></span><br><span class="line">	alert( isBoolean(c) ); <span class="comment">//true</span></span><br><span class="line">	alert( isFunction(a)); <span class="comment">//false</span></span><br><span class="line">	alert( isFunction( isNumber ) ); <span class="comment">//true</span></span><br></pre></td></tr></table></figure>
-<h4 id="2-以下代码的输出结果是"><a href="#2-以下代码的输出结果是" class="headerlink" title="2.以下代码的输出结果是?"></a><strong>2.以下代码的输出结果是?</strong></h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="number">1</span>+<span class="number">1</span>);			<span class="comment">//2</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">"2"</span>+<span class="string">"4"</span>);		<span class="comment">//24 两个字符串连接</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="number">2</span>+<span class="string">"4"</span>); 		<span class="comment">//24 2转换为字符</span></span><br><span class="line"><span class="built_in">console</span>.log(+<span class="keyword">new</span> <span class="built_in">Date</span>());	<span class="comment">//1458035114537</span></span><br><span class="line"><span class="built_in">console</span>.log(+<span class="string">"4"</span>);			<span class="comment">//4</span></span><br></pre></td></tr></table></figure>
-<h4 id="3-以下代码的输出结果是"><a href="#3-以下代码的输出结果是" class="headerlink" title="3.以下代码的输出结果是?"></a><strong>3.以下代码的输出结果是?</strong></h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">1</span>;</span><br><span class="line">a+++a;</span><br><span class="line"></span><br><span class="line"><span class="keyword">typeof</span> a+<span class="number">2</span>;<span class="comment">//number2</span></span><br></pre></td></tr></table></figure>
-<h4 id="4-遍历数组，把数组里的打印数组每一项的平方"><a href="#4-遍历数组，把数组里的打印数组每一项的平方" class="headerlink" title="4.遍历数组，把数组里的打印数组每一项的平方?"></a><strong>4.遍历数组，把数组里的打印数组每一项的平方?</strong></h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>]</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i&lt;arr.length;i++)&#123;</span><br><span class="line">	<span class="built_in">console</span>.log(arr[i]*arr[i]);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 输出 9, 16, 25</span></span><br></pre></td></tr></table></figure>
-<h4 id="5-遍历-JSON-打印里面的值"><a href="#5-遍历-JSON-打印里面的值" class="headerlink" title="5.遍历 JSON, 打印里面的值?"></a><strong>5.遍历 <code>JSON</code>, 打印里面的值?</strong></h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> obj = &#123;</span><br><span class="line">  name: <span class="string">'hunger'</span>,</span><br><span class="line">  sex: <span class="string">'male'</span>,</span><br><span class="line">  age: <span class="number">28</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> k <span class="keyword">in</span> obj)&#123;</span><br><span class="line">	<span class="built_in">console</span>.log(k+<span class="string">": "</span>+obj[k]);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 输出 name: hunger, sex: male, age:28</span></span><br></pre></td></tr></table></figure>
-<h4 id="6-下面代码的输出是-为什么"><a href="#6-下面代码的输出是-为什么" class="headerlink" title="6.下面代码的输出是? 为什么?"></a><strong>6.下面代码的输出是? 为什么?</strong></h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(a);<span class="comment">//Undefined,声明了变量并进行了变量提升，未有赋值</span></span><br><span class="line"><span class="keyword">var</span> a = <span class="number">1</span>;</span><br><span class="line"><span class="built_in">console</span>.log(a);<span class="comment">//1</span></span><br><span class="line"><span class="built_in">console</span>.log(b);<span class="comment">//报错，b没有被声明</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<ul>
+<li>如果是变化的内容，比如电商网页上的商品广告（基本上直观理解的图片）都是img标签，还有头像等，他们都是外链到数据库的，可能发生改变：<br><img src="http://7xr868.com1.z0.glb.clouddn.com/task9img.png" alt="img1"><br><img src="http://7xr868.com1.z0.glb.clouddn.com/task9img2.png" alt="img2"></li>
+</ul>
+</blockquote>
+<h4 id="3-title-和-alt属性分别有什么作用"><a href="#3-title-和-alt属性分别有什么作用" class="headerlink" title="3. title 和 alt属性分别有什么作用?"></a><strong>3. title 和 alt属性分别有什么作用?</strong></h4><ul>
+<li><code>alt属性</code>是在你的图片因为某种原因不能加载时在页面显示的提示信息(临时代替图片的作用)，它会直接输出在原本加载图片的地方；</li>
+<li><code>title属性</code>是在你鼠标悬停在该图片上时显示一个小提示，鼠标离开就没有了，HTML的绝大多数标签都支持<code>title属性</code>，<code>title属性</code>就是专门做提示信息的，比如：<img src="http://7xr868.com1.z0.glb.clouddn.com/task9title.png" alt="title"></li>
+</ul>
+<h4 id="4-background-url-abc-png-0-0-no-repeat-这句话是什么意思"><a href="#4-background-url-abc-png-0-0-no-repeat-这句话是什么意思" class="headerlink" title="4. background: url(abc.png) 0 0 no-repeat;这句话是什么意思"></a><strong>4. <code>background: url(abc.png) 0 0 no-repeat;</code>这句话是什么意思</strong></h4><blockquote>
+<p>设置背景图片为<code>abc.png</code>,要显示位置是水平0，垂直0，重复方式是不重复</p>
+</blockquote>
+<h4 id="5-background-size有什么作用-兼容性如何-常用的值是"><a href="#5-background-size有什么作用-兼容性如何-常用的值是" class="headerlink" title="5. background-size有什么作用? 兼容性如何? 常用的值是?"></a><strong>5. background-size有什么作用? 兼容性如何? 常用的值是?</strong></h4><ul>
+<li><code>background-size</code>可以设置css背景图片的大小，以长度值和百分比显示；也可以根据背景原点位置<code>background-origin</code>设置图片的覆盖范围。</li>
+<li><p>在<a href="http://caniuse.com/#search=background-size" target="_blank" rel="external">Caniuse</a>上查到兼容性为：</p>
+<ul>
+<li><img src="http://7xr868.com1.z0.glb.clouddn.com/task9background-size%E5%85%BC%E5%AE%B9%E6%80%A7.png" alt="background-size兼容性"></li>
+<li>让<code>IE6,7,8</code>兼容<code>background-size</code>的方法：使用IE的滤镜<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">.background &#123;</span><br><span class="line">    background-image:url('http://7xr868.com1.z0.glb.clouddn.com/task6inline-block%E6%94%AF%E6%8C%81.png');</span><br><span class="line">    background-size: cover;</span><br><span class="line">    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(</span><br><span class="line">    src='http://7xr868.com1.z0.glb.clouddn.com/task6inline-block%E6%94%AF%E6%8C%81.png',</span><br><span class="line">    sizingMethod='scale');</span><br><span class="line">&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>常用的值:</p>
+<ul>
+<li><code>auto</code>：默认值，不改变背景图片的原始高度和宽度；</li>
+<li><code>length</code>：第一个值为设置图片宽度，第二个值为图片的高度；但是不管是用什么值，都不能为负值。假如只给定一个值，那么第二个自动的为 <code>auto</code>；</li>
+<li><code>percentage</code>：以父元素的百分比来设置背景图像的宽度和高度。设置一个值，同上；</li>
+<li><code>cover</code>： 将图片等比例缩放来填满整个容器，加入容器不足以包含背景图片，则一些部分不会显示在容器中；</li>
+<li><code>contain</code>：按比例调整背景图片，使得其图片宽高比自适应整个元素容器的宽高比，因此假如指定的图片尺寸过大，而容器的整体宽高不能恰好包含背景图片的话，那么其容器某些区域可能会有空白。</li>
+</ul>
+</li>
+</ul>
+<h4 id="6-如何让一个div水平居中？如何让图片水平居中"><a href="#6-如何让一个div水平居中？如何让图片水平居中" class="headerlink" title="6. 如何让一个div水平居中？如何让图片水平居中?"></a><strong>6. 如何让一个div水平居中？如何让图片水平居中?</strong></h4><ol>
+<li>设置div的左右<code>margin-left</code>,<code>margin-right</code>值为<code>auto</code> &gt;&gt;<a href="http://js.jirengu.com/laziqaqaki/3/edit" target="_blank" rel="external">代码演示</a>；<br>2.<ul>
+<li>给图片加一个父容器，设置容器样式<code>text-align:center</code>&gt;&gt;<a href="http://js.jirengu.com/yudajuveye/2/edit" target="_blank" rel="external">代码演示</a>；</li>
+<li>将img用<code>display:block</code>变为块级元素，然后设置<code>左右margin</code>值为<code>auto</code>，类似于1中设置<code>div</code>水平居中&gt;&gt;<a href="http://js.jirengu.com/vuyuliseni/1/edit" target="_blank" rel="external">代码演示</a>；</li>
+</ul>
+</li>
+</ol>
+<h4 id="7-如何设置元素透明-兼容性？"><a href="#7-如何设置元素透明-兼容性？" class="headerlink" title="7. 如何设置元素透明? 兼容性？"></a><strong>7. 如何设置元素透明? 兼容性？</strong></h4><blockquote>
+<ol>
+<li><code>opacity：number</code>属性(CSS3属性)指定了一个元素的透明度,默认<code>number</code>是1（不透明），0是完全透明，<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/opacity" target="_blank" rel="external">（更多）</a>。兼容性：<img src="http://7xr868.com1.z0.glb.clouddn.com/task9opacity%E5%85%BC%E5%AE%B9%E6%80%A7.png" alt="opacity兼容性"></li>
+<li><code>filter:alpha(opacity=number);</code>是专门给IE设定的属性，<code>number</code>取值的范围在<code>0-100</code>之间；兼容性：（一般用在IE8及以下）<img src="http://7xr868.com1.z0.glb.clouddn.com/task9filter%E5%85%BC%E5%AE%B9%E6%80%A7.png" alt="filter兼容性"></li>
+<li>一段常用代码设置元素透明度：</li>
+</ol>
+</blockquote>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">.transparent_class &#123;</span><br><span class="line">      filter:alpha(opacity=50);</span><br><span class="line">      -moz-opacity:0.5;/*-moz-opacity是为了兼容一些老版本的Mozilla浏览器*/</span><br><span class="line">      -khtml-opacity: 0.5;/*-khtml-opacity是为了兼容一些老版本的Safari浏览器*/</span><br><span class="line">      opacity: 0.5;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>4.<a href="http://www.jb51.net/css/24765.html" target="_blank" rel="external">更详细的实现方案</a></p>
+</blockquote>
+<h4 id="8-opacity-和-rgba都能设置透明，有什么区别"><a href="#8-opacity-和-rgba都能设置透明，有什么区别" class="headerlink" title="8. opacity 和 rgba都能设置透明，有什么区别?"></a><strong>8. opacity 和 rgba都能设置透明，有什么区别?</strong></h4><blockquote>
+<p><code>opacity</code>作用于<code>元素</code>，以及元素内的所有<code>内容</code>的透明度，而<code>rgba()</code>只作用于元素的<code>颜色</code>或其<code>背景色</code>。</p>
+</blockquote>
+<hr>
+<h2 id="【代码】"><a href="#【代码】" class="headerlink" title="-【代码】"></a>-【代码】</h2><blockquote>
+<h3 id="task-9-1"><a href="#task-9-1" class="headerlink" title="task-9-1"></a><a href="https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task9/task-9-1.html" target="_blank" rel="external">task-9-1</a></h3><h3 id="task-9-2"><a href="#task-9-2" class="headerlink" title="task-9-2"></a><a href="https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task9/task-9-2.html" target="_blank" rel="external">task-9-2</a></h3><h3 id="task-9-3"><a href="#task-9-3" class="headerlink" title="task-9-3"></a><a href="https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task9/task-9-3.html" target="_blank" rel="external">task-9-3</a></h3></blockquote>
 
       
     </div>
@@ -600,7 +623,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/JavaScript/" rel="tag">#JavaScript</a>
+            <a href="/tags/CSS/" rel="tag">#CSS</a>
           
         </div>
       
@@ -609,12 +632,16 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/03/30/CSS选择器/" rel="next" title="CSS选择器">
+                <i class="fa fa-chevron-left"></i> CSS选择器
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/03/16/理解JavaScript函数/" rel="prev" title="理解JavaScript函数">
-                理解JavaScript函数 <i class="fa fa-chevron-right"></i>
+              <a href="/2016/03/30/定位-浮动/" rel="prev" title="定位+浮动">
+                定位+浮动 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -630,10 +657,10 @@
 
     <div class="post-spread">
       
-        <div class="ds-share flat" data-thread-key="2016/03/16/JavaScript基本语法/"
-     data-title="JavaScript基本语法要点"
+        <div class="ds-share flat" data-thread-key="2016/03/30/CSS_Sprite+background/"
+     data-title="CSS Sprite/background"
      data-content=""
-     data-url="http://licao404.com/2016/03/16/JavaScript基本语法/">
+     data-url="http://licao404.com/2016/03/30/CSS_Sprite+background/">
   <div class="ds-share-inline">
     <ul  class="ds-share-icons-16">
 
@@ -660,8 +687,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/03/16/JavaScript基本语法/"
-           data-title="JavaScript基本语法要点" data-url="http://licao404.com/2016/03/16/JavaScript基本语法/">
+      <div class="ds-thread" data-thread-key="2016/03/30/CSS_Sprite+background/"
+           data-title="CSS Sprite/background" data-url="http://licao404.com/2016/03/30/CSS_Sprite+background/">
       </div>
     
   </div>
@@ -811,7 +838,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#【基础知识点】"><span class="nav-number">1.</span> <span class="nav-text">-【基础知识点】</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-CSS和JS在网页中的放置顺序是怎样的？"><span class="nav-number">1.0.1.</span> <span class="nav-text">1. CSS和JS在网页中的放置顺序是怎样的？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-解释白屏和FOUC？"><span class="nav-number">1.0.2.</span> <span class="nav-text">2. 解释白屏和FOUC？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-async和defer的作用是什么？有什么区别？"><span class="nav-number">1.0.3.</span> <span class="nav-text">3. async和defer的作用是什么？有什么区别？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-简述网页的渲染机制？"><span class="nav-number">1.0.4.</span> <span class="nav-text">4. 简述网页的渲染机制？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-JavaScript-定义了几种数据类型-哪些是简单类型-哪些是复杂类型"><span class="nav-number">1.0.5.</span> <span class="nav-text">5. JavaScript 定义了几种数据类型? 哪些是简单类型?哪些是复杂类型?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-NaN、undefined、null分别代表什么"><span class="nav-number">1.0.6.</span> <span class="nav-text">6. NaN、undefined、null分别代表什么?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7-typeof和instanceof的作用和区别"><span class="nav-number">1.0.7.</span> <span class="nav-text">7. typeof和instanceof的作用和区别?</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#【基本语法演示】"><span class="nav-number">2.</span> <span class="nav-text">-【基本语法演示】</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-完成如下代码判断一个变量是否是数字、字符串、布尔、函数"><span class="nav-number">2.0.1.</span> <span class="nav-text">1.完成如下代码判断一个变量是否是数字、字符串、布尔、函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-以下代码的输出结果是"><span class="nav-number">2.0.2.</span> <span class="nav-text">2.以下代码的输出结果是?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-以下代码的输出结果是"><span class="nav-number">2.0.3.</span> <span class="nav-text">3.以下代码的输出结果是?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-遍历数组，把数组里的打印数组每一项的平方"><span class="nav-number">2.0.4.</span> <span class="nav-text">4.遍历数组，把数组里的打印数组每一项的平方?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-遍历-JSON-打印里面的值"><span class="nav-number">2.0.5.</span> <span class="nav-text">5.遍历 JSON, 打印里面的值?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-下面代码的输出是-为什么"><span class="nav-number">2.0.6.</span> <span class="nav-text">6.下面代码的输出是? 为什么?</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#【知识点】"><span class="nav-number">1.</span> <span class="nav-text">-【知识点】</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-CSS-Sprite-雪碧图-指什么-有什么作用？"><span class="nav-number">1.0.1.</span> <span class="nav-text">1. CSS Sprite(雪碧图)指什么? 有什么作用？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-img标签和CSS背景使用图片在使用场景上有何区别"><span class="nav-number">1.0.2.</span> <span class="nav-text">2. img标签和CSS背景使用图片在使用场景上有何区别?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-title-和-alt属性分别有什么作用"><span class="nav-number">1.0.3.</span> <span class="nav-text">3. title 和 alt属性分别有什么作用?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-background-url-abc-png-0-0-no-repeat-这句话是什么意思"><span class="nav-number">1.0.4.</span> <span class="nav-text">4. background: url(abc.png) 0 0 no-repeat;这句话是什么意思</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-background-size有什么作用-兼容性如何-常用的值是"><span class="nav-number">1.0.5.</span> <span class="nav-text">5. background-size有什么作用? 兼容性如何? 常用的值是?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-如何让一个div水平居中？如何让图片水平居中"><span class="nav-number">1.0.6.</span> <span class="nav-text">6. 如何让一个div水平居中？如何让图片水平居中?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7-如何设置元素透明-兼容性？"><span class="nav-number">1.0.7.</span> <span class="nav-text">7. 如何设置元素透明? 兼容性？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#8-opacity-和-rgba都能设置透明，有什么区别"><span class="nav-number">1.0.8.</span> <span class="nav-text">8. opacity 和 rgba都能设置透明，有什么区别?</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#【代码】"><span class="nav-number">2.</span> <span class="nav-text">-【代码】</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#task-9-1"><span class="nav-number">2.1.</span> <span class="nav-text">task-9-1</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#task-9-2"><span class="nav-number">2.2.</span> <span class="nav-text">task-9-2</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#task-9-3"><span class="nav-number">2.3.</span> <span class="nav-text">task-9-3</span></a></li></ol></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">

@@ -43,7 +43,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="JavaScript," />
+  <meta name="keywords" content="CSS," />
 
 
 
@@ -61,20 +61,43 @@
 
 
 
-<meta name="description">
+<meta name="description" content="-【基础知识】1. 在什么场景下会出现外边距合并？如何合并？如何不让相邻元素外边距合并？
+
+相邻块盒子的垂直外边距合并只有他们是在同一BFC，且没有padding与border将外边距隔开才会发生；
+垂直相邻元素，子元素和父元素会发生合并，合并后的外边距的高度等于两个发生合并的外边距的高度中的较大者。
+创建另外一个BFC，让不想发生外边距合并的元素处于不同的BFC。
+
+
+2. 去除inline-b">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JavaScript基本语法要点">
-<meta property="og:url" content="http://licao404.com/2016/03/16/JavaScript基本语法/index.html">
+<meta property="og:title" content="BFC">
+<meta property="og:url" content="http://licao404.com/2016/03/30/BFC/index.html">
 <meta property="og:site_name" content="蓝岚爱肉肉">
-<meta property="og:description">
-<meta property="og:image" content="http://7xrvo9.com1.z0.glb.clouddn.com/0316%2Fportfolio-1.jpg">
-<meta property="og:image" content="http://7xrvo9.com1.z0.glb.clouddn.com/0316%2Fportfolio-2.jpg">
-<meta property="og:image" content="http://7xrvo9.com1.z0.glb.clouddn.com/0316%2Fportfolio-3.jpg">
-<meta property="og:updated_time" content="2016-03-19T18:04:10.625Z">
+<meta property="og:description" content="-【基础知识】1. 在什么场景下会出现外边距合并？如何合并？如何不让相邻元素外边距合并？
+
+相邻块盒子的垂直外边距合并只有他们是在同一BFC，且没有padding与border将外边距隔开才会发生；
+垂直相邻元素，子元素和父元素会发生合并，合并后的外边距的高度等于两个发生合并的外边距的高度中的较大者。
+创建另外一个BFC，让不想发生外边距合并的元素处于不同的BFC。
+
+
+2. 去除inline-b">
+<meta property="og:image" content="http://7xr868.com1.z0.glb.clouddn.com/task11%E5%8E%BB%E7%BC%9D%E9%9A%99li.gif">
+<meta property="og:image" content="http://7xr868.com1.z0.glb.clouddn.com/task11%E5%8E%BB%E7%BC%9D%E9%9A%99li2.gif">
+<meta property="og:image" content="http://7xr868.com1.z0.glb.clouddn.com/task11%E5%8E%BB%E7%BC%9D%E9%9A%99%E8%B4%9Fmargin.gif">
+<meta property="og:image" content="http://7xr868.com1.z0.glb.clouddn.com/task11%E5%8E%BB%E7%BC%9D%E9%9A%99%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8.gif">
+<meta property="og:image" content="http://7xr868.com1.z0.glb.clouddn.com/task11%E5%8E%BB%E7%BC%9D%E9%9A%99fontsize.gif">
+<meta property="og:updated_time" content="2016-03-30T05:38:03.543Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JavaScript基本语法要点">
-<meta name="twitter:description">
-<meta name="twitter:image" content="http://7xrvo9.com1.z0.glb.clouddn.com/0316%2Fportfolio-1.jpg">
+<meta name="twitter:title" content="BFC">
+<meta name="twitter:description" content="-【基础知识】1. 在什么场景下会出现外边距合并？如何合并？如何不让相邻元素外边距合并？
+
+相邻块盒子的垂直外边距合并只有他们是在同一BFC，且没有padding与border将外边距隔开才会发生；
+垂直相邻元素，子元素和父元素会发生合并，合并后的外边距的高度等于两个发生合并的外边距的高度中的较大者。
+创建另外一个BFC，让不想发生外边距合并的元素处于不同的BFC。
+
+
+2. 去除inline-b">
+<meta name="twitter:image" content="http://7xr868.com1.z0.glb.clouddn.com/task11%E5%8E%BB%E7%BC%9D%E9%9A%99li.gif">
 
 
 
@@ -92,7 +115,7 @@
   };
 </script>
 
-  <title> JavaScript基本语法要点 | 蓝岚爱肉肉 </title>
+  <title> BFC | 蓝岚爱肉肉 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -439,7 +462,7 @@
             
             
               
-                JavaScript基本语法要点
+                BFC
               
             
           </h1>
@@ -451,8 +474,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-16T10:56:36+08:00" content="2016-03-16">
-              2016-03-16
+            <time itemprop="dateCreated" datetime="2016-03-30T13:32:34+08:00" content="2016-03-30">
+              2016-03-30
             </time>
           </span>
 
@@ -493,8 +516,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/03/16/JavaScript基本语法/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/16/JavaScript基本语法/" itemprop="commentsCount"></span>
+                <a href="/2016/03/30/BFC/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/30/BFC/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -504,7 +527,7 @@
 
           
           
-             <span id="/2016/03/16/JavaScript基本语法/" class="leancloud_visitors" data-flag-title="JavaScript基本语法要点">
+             <span id="/2016/03/30/BFC/" class="leancloud_visitors" data-flag-title="BFC">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -525,67 +548,81 @@
       
 
       
-        <div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 50%;"><img src="http://7xrvo9.com1.z0.glb.clouddn.com/0316%2Fportfolio-1.jpg" alt=""></div><div class="group-picture-column" style="width: 50%;"><img src="http://7xrvo9.com1.z0.glb.clouddn.com/0316%2Fportfolio-2.jpg" alt=""></div></div><div class="group-picture-row"><div class="group-picture-column" style="width: 100%;"><img src="http://7xrvo9.com1.z0.glb.clouddn.com/0316%2Fportfolio-3.jpg" alt=""></div></div></div></div>
-<a id="more"></a>
-<h2 id="【基础知识点】"><a href="#【基础知识点】" class="headerlink" title="-【基础知识点】"></a>-【基础知识点】</h2><h4 id="1-CSS和JS在网页中的放置顺序是怎样的？"><a href="#1-CSS和JS在网页中的放置顺序是怎样的？" class="headerlink" title="1. CSS和JS在网页中的放置顺序是怎样的？"></a><strong>1. CSS和JS在网页中的放置顺序是怎样的？</strong></h4><blockquote>
-<p>一般而言<code>CSS</code>放在<code>&lt;head&gt;</code>头部而<code>JS</code>放在<code>&lt;body&gt;</code>底部。</p>
-</blockquote>
-<h4 id="2-解释白屏和FOUC？"><a href="#2-解释白屏和FOUC？" class="headerlink" title="2. 解释白屏和FOUC？"></a><strong>2. 解释白屏和<code>FOUC</code>？</strong></h4><ul>
-<li><p><code>白屏</code>：</p>
-<ul>
-<li>当样式表放在页面底部时，一些浏览器（IE浏览器）会等待加载完html和css后才进行页面渲染，这样就造成页面内容不会逐步出现，而是有空白等待的时间；注意<code>@import</code>加载样式时即使放在<code>link</code>里也会造成白屏；</li>
-<li><code>JS</code>是阻塞加载，放在头部时会禁止并发加载，等js加载完成后再继续加载，也会造成白屏；</li>
-</ul>
-</li>
-<li><p><code>FOUC</code>（无样式内容闪烁）是因为另外一些浏览器每解析一个标签就渲染一步，如果样式表放在后面，会在最后加载完成css后再进行一次渲染，造成闪烁,<code>Firfox</code>是一直<code>Fouc</code>;</p>
-</li>
-</ul>
-<h4 id="3-async和defer的作用是什么？有什么区别？"><a href="#3-async和defer的作用是什么？有什么区别？" class="headerlink" title="3. async和defer的作用是什么？有什么区别？"></a><strong>3. async和defer的作用是什么？有什么区别？</strong></h4><ul>
-<li>作用：都是让<code>JS</code>的加载和后续文档元素的加载渲染并行执行（异步）；</li>
-<li>区别:<code>defer</code>只是异步加载而不会立即执行,等待页面后续内容全部加载完成后才执行；<code>async</code>则是加载<code>js</code>后立即执行;</li>
-</ul>
-<h4 id="4-简述网页的渲染机制？"><a href="#4-简述网页的渲染机制？" class="headerlink" title="4. 简述网页的渲染机制？"></a><strong>4. 简述网页的渲染机制？</strong></h4><ol>
-<li>浏览器根据用户输入的域名去获取对应的网页资源； </li>
-<li>解析<code>html</code>标签构建<code>DOM</code>树;</li>
-<li>解析<code>CSS</code> 标签构建<code>CSSOM</code>树;</li>
-<li>把<code>DOM</code>和<code>CSSOM</code>组合成为渲染树;</li>
-<li>精确计算每个DOM节点的位置（<code>layout</code>和<code>reflow</code>过程）；</li>
-<li>最后通过调用操作系统<code>Native GUI</code>的<code>API</code>绘制;</li>
-<li>更加详细深入借鉴<a href="http://www.zhihu.com/question/20117417" target="_blank" rel="external">知乎</a>；</li>
+        <h2 id="【基础知识】"><a href="#【基础知识】" class="headerlink" title="-【基础知识】"></a>-【基础知识】</h2><h4 id="1-在什么场景下会出现外边距合并？如何合并？如何不让相邻元素外边距合并？"><a href="#1-在什么场景下会出现外边距合并？如何合并？如何不让相邻元素外边距合并？" class="headerlink" title="1. 在什么场景下会出现外边距合并？如何合并？如何不让相邻元素外边距合并？"></a><strong>1. 在什么场景下会出现外边距合并？如何合并？如何不让相邻元素外边距合并？</strong></h4><blockquote>
+<ol>
+<li>相邻块盒子的垂直外边距合并只有他们是在同一BFC，且没有padding与border将外边距隔开才会发生；</li>
+<li>垂直相邻元素，子元素和父元素会发生合并，合并后的外边距的高度等于两个发生合并的外边距的高度中的较大者。</li>
+<li>创建另外一个BFC，让不想发生外边距合并的元素处于不同的BFC。</li>
 </ol>
-<h4 id="5-JavaScript-定义了几种数据类型-哪些是简单类型-哪些是复杂类型"><a href="#5-JavaScript-定义了几种数据类型-哪些是简单类型-哪些是复杂类型" class="headerlink" title="5. JavaScript 定义了几种数据类型? 哪些是简单类型?哪些是复杂类型?"></a><strong>5. <code>JavaScript</code> 定义了几种数据类型? 哪些是简单类型?哪些是复杂类型?</strong></h4><blockquote>
-<p><code>JavaScript</code>定义了 6 种数据类型</p>
 </blockquote>
+<h4 id="2-去除inline-block内缝隙有哪几种常见方法"><a href="#2-去除inline-block内缝隙有哪几种常见方法" class="headerlink" title="2. 去除inline-block内缝隙有哪几种常见方法?"></a><strong>2. 去除<code>inline-block</code>内缝隙有哪几种常见方法?</strong></h4><ul>
+<li><p>1.修改<code>li</code>的代码书写格式：</p>
 <ul>
-<li>简单类型<ul>
-<li><code>NULL</code>空数据类型</li>
-<li><code>Undefined</code>未定义的数据类型</li>
-<li><code>String</code>字符串类型：由0个或多个字符组成，被包含在引号里，字符包括字母，数字，标点符号和空格；</li>
-<li><code>Number</code>数值类型：支持整数，浮点数，负数，</li>
-<li><code>布尔值</code>：<code>true</code>/<code>false</code></li>
-</ul>
+<li><p><img src="http://7xr868.com1.z0.glb.clouddn.com/task11%E5%8E%BB%E7%BC%9D%E9%9A%99li.gif" alt="li书写1"></p>
 </li>
-<li>复杂类型：<ul>
-<li><code>Object</code>对象</li>
+<li><p><img src="http://7xr868.com1.z0.glb.clouddn.com/task11%E5%8E%BB%E7%BC%9D%E9%9A%99li2.gif" alt="li书写2"></p>
+</li>
 </ul>
 </li>
 </ul>
-<h4 id="6-NaN、undefined、null分别代表什么"><a href="#6-NaN、undefined、null分别代表什么" class="headerlink" title="6. NaN、undefined、null分别代表什么?"></a><strong>6. <code>NaN</code>、<code>undefined</code>、<code>null</code>分别代表什么?</strong></h4><ul>
-<li><code>NaN</code>:<code>NaN</code>属性顾名思义<code>not a number</code>，表示非数字值，并不是合法的数字；但是数据类型是<code>Number</code>;不等于任何值包括自己；</li>
-<li><code>undefined</code>：表示未定义的值；<code>typeof</code>一个没有值得变量会返回<code>undefined</code>;</li>
-<li><code>null</code>：空数据类型，表示一个空对象的引用，只有一个值的特殊类型;<code>typeof</code>检测<code>null</code>返回<code>object</code>;</li>
+<ul>
+<li>2.用<code>负margin</code>：<ul>
+<li><img src="http://7xr868.com1.z0.glb.clouddn.com/task11%E5%8E%BB%E7%BC%9D%E9%9A%99%E8%B4%9Fmargin.gif" alt="-margin"></li>
 </ul>
-<h4 id="7-typeof和instanceof的作用和区别"><a href="#7-typeof和instanceof的作用和区别" class="headerlink" title="7. typeof和instanceof的作用和区别?"></a><strong>7. <code>typeof</code>和<code>instanceof</code>的作用和区别?</strong></h4><ul>
-<li><code>typeof</code>可以用来检测<code>Function</code>，<code>Number</code>，<code>Undefined</code>，<code>String</code>等这几种基本类型，但对于数组和正则只能返回<code>object</code>;</li>
-<li><code>instanceof</code>用来判断某个对象的实例，返回布尔值</li>
+</li>
 </ul>
+<ul>
+<li>3.用浮动并在父元素用<code>overflow:auto</code>清除浮动：<ul>
+<li><img src="http://7xr868.com1.z0.glb.clouddn.com/task11%E5%8E%BB%E7%BC%9D%E9%9A%99%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8.gif" alt="float"></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>设置父元素的<code>font-size</code>为<code>0</code>,子元素再给一个<code>font-size</code>:<ul>
+<li><img src="http://7xr868.com1.z0.glb.clouddn.com/task11%E5%8E%BB%E7%BC%9D%E9%9A%99fontsize.gif" alt="父font-size"></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>适配IE8以下加hack语句<a href="http://js.jirengu.com/quvohojade/2/edit" target="_blank" rel="external"><code>*display:inline</code></a></li>
+</ul>
+<h4 id="3-父容器使用overflow-auto-hidden撑开高度的原理是什么？"><a href="#3-父容器使用overflow-auto-hidden撑开高度的原理是什么？" class="headerlink" title="3. 父容器使用overflow: auto| hidden撑开高度的原理是什么？"></a><strong>3. 父容器使用<code>overflow: auto| hidden</code>撑开高度的原理是什么？</strong></h4><blockquote>
+<p>给父容器添加<code>overflow: auto| hidden</code>样式即触发了BFC，这时如果父容器内只有浮动元素，则会撑开父容器高度。</p>
+</blockquote>
+<h4 id="4-BFC是什么？如何形成BFC，有什么作用"><a href="#4-BFC是什么？如何形成BFC，有什么作用" class="headerlink" title="4. BFC是什么？如何形成BFC，有什么作用?"></a><strong>4. BFC是什么？如何形成BFC，有什么作用?</strong></h4><blockquote>
+<ol>
+<li>定义：浮动元素和绝对定位元素，非块级盒子的块级容器（例如 inline-block, table-cells, 和 table-captions），以及overflow值不为“visiable”的块级盒子，都会为他们的内容创建新的BFC（块级格式上下文）。</li>
+<li>如何形成：可以通过给父容器添加一个触发BFC的样式即可。例如<code>float:left</code>,<code>position:absolute</code>,<code>overflow:hidde</code>,<code>display:inline-block</code>等；（用来清除浮动可能带来一些副作用，一般使用<code>overflow:auto</code>）</li>
+<li><ul>
+<li>用于<code>包含浮动</code>。如果父容器内存在浮动元素，则父容器没有高度，它的浮动孩子将会脱离文档流，影响到其他元素的排列。这时可以创建新的BFC，撑开父容器的高度可以包含子元素；</li>
+</ul>
+</li>
+</ol>
+<ul>
+<li>用于<code>防止边距合并</code>，实质上外边距合并是由BFC导致的（<a href="http://www.w3cplus.com/css/understanding-block-formatting-contexts-in-css.html" target="_blank" rel="external">详细</a>），毗邻块盒子的垂直外边距折叠只有他们是在同一BFC时才会发生，如果他们属于不同的BFC，他们之间的外边距将不会折叠。所以通过创建一个新的BFC我们可以防止外边距折叠；</li>
+<li>用于<code>防止文字环绕</code>；</li>
+<li>用于<code>多列布局</code>；当我们设计一个多列布局占满宽度时，最后一列被挤到下一行，在其中一个列的布局中建立了一个新的BFC，它将会在前一列填充完之后的后面占据所剩余的空间。</li>
+</ul>
+</blockquote>
+<h4 id="5-浮动导致的父容器高度塌陷指什么？为什么会产生？有几种解决方法"><a href="#5-浮动导致的父容器高度塌陷指什么？为什么会产生？有几种解决方法" class="headerlink" title="5. 浮动导致的父容器高度塌陷指什么？为什么会产生？有几种解决方法"></a><strong>5. 浮动导致的父容器高度塌陷指什么？为什么会产生？有几种解决方法</strong></h4><blockquote>
+<p>概念：没有设置父容器的高度或者设置了<code>auto</code>，容器内只含有浮动元素，则他们的父容器会没有高度属性，之后的元素会“挤上来”，造成“高度塌陷”。</p>
+<ul>
+<li>解决：</li>
+</ul>
+<ol>
+<li>给父容器添加<code>overflow: auto| hidden</code>等样式触发BFC，撑开父容器高度。</li>
+<li>使用伪类<code>:after</code>,父容器通过<code>:after</code>来为其内容末尾添加一个内容为空的块框，利用这个块框来清除浮动（需要hack兼容IE），<code>常常用这种方法</code>!</li>
+<li>给父容器后添加一个新标签，用这个新标签来清除浮动撑开高度，兼容性好，但是无语义；</li>
+</ol>
+</blockquote>
+<h4 id="6-以下代码每一行的作用是什么？-为什么会产生作用？-和BFC撑开空间有什么区别？"><a href="#6-以下代码每一行的作用是什么？-为什么会产生作用？-和BFC撑开空间有什么区别？" class="headerlink" title="6. 以下代码每一行的作用是什么？ 为什么会产生作用？ 和BFC撑开空间有什么区别？"></a><strong>6. 以下代码每一行的作用是什么？ 为什么会产生作用？ 和BFC撑开空间有什么区别？</strong></h4><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">  .clearfix:after&#123;      /*添加`:after`伪类*/</span><br><span class="line">    content: '';        /*内容是空的*/</span><br><span class="line">    display: block;     /*空的内容生成块框*/</span><br><span class="line">    clear: both;    /*清除两边浮动*/</span><br><span class="line">&#125;</span><br><span class="line">.clearfix&#123;</span><br><span class="line">    *zoom: 1;   /*IE的hack语句，为了兼容IE6,7，触发IE的hasLayout特有属性，但不会影响页面的显示效果*/</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>作用：在容器内部最后一个元素创建了一个空的块框，而该块框两则清除了浮动，容器外的其他元素就无法向上挤占了；</p>
+</blockquote>
+<p>区别：BFC是包含容器内的浮动元素，形成一个封闭的小宇宙，不受外界干扰挤占；而这种方法是通过添加空块来清除浮动，不让其他元素上来，二者的实现思路是完全不一样的；</p>
 <hr>
-<h2 id="【基本语法演示】"><a href="#【基本语法演示】" class="headerlink" title="-【基本语法演示】"></a>-【基本语法演示】</h2><h4 id="1-完成如下代码判断一个变量是否是数字、字符串、布尔、函数"><a href="#1-完成如下代码判断一个变量是否是数字、字符串、布尔、函数" class="headerlink" title="1.完成如下代码判断一个变量是否是数字、字符串、布尔、函数"></a><strong>1.完成如下代码判断一个变量是否是数字、字符串、布尔、函数</strong></h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">isNumber</span>(<span class="params">el</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">typeof</span>(el)===<span class="string">"number"</span>) &#123;</span><br><span class="line">    	<span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">isString</span>(<span class="params">el</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">typeof</span>(el)===<span class="string">"string"</span>) &#123;</span><br><span class="line">    	<span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">isBoolean</span>(<span class="params">el</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">typeof</span>(el)===<span class="string">"boolean"</span>) &#123;</span><br><span class="line">    	<span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">isFunction</span>(<span class="params">el</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">typeof</span>(el)===<span class="string">"function"</span>) &#123;</span><br><span class="line">    	<span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> a = <span class="number">2</span>,</span><br><span class="line">    b = <span class="string">"jirengu"</span>,</span><br><span class="line">	c = <span class="literal">false</span>;</span><br><span class="line">	alert( isNumber(a) );  <span class="comment">//true</span></span><br><span class="line">	alert( isString(a) );  <span class="comment">//false</span></span><br><span class="line">	alert( isString(b) );  <span class="comment">//true</span></span><br><span class="line">	alert( isBoolean(c) ); <span class="comment">//true</span></span><br><span class="line">	alert( isFunction(a)); <span class="comment">//false</span></span><br><span class="line">	alert( isFunction( isNumber ) ); <span class="comment">//true</span></span><br></pre></td></tr></table></figure>
-<h4 id="2-以下代码的输出结果是"><a href="#2-以下代码的输出结果是" class="headerlink" title="2.以下代码的输出结果是?"></a><strong>2.以下代码的输出结果是?</strong></h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="number">1</span>+<span class="number">1</span>);			<span class="comment">//2</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">"2"</span>+<span class="string">"4"</span>);		<span class="comment">//24 两个字符串连接</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="number">2</span>+<span class="string">"4"</span>); 		<span class="comment">//24 2转换为字符</span></span><br><span class="line"><span class="built_in">console</span>.log(+<span class="keyword">new</span> <span class="built_in">Date</span>());	<span class="comment">//1458035114537</span></span><br><span class="line"><span class="built_in">console</span>.log(+<span class="string">"4"</span>);			<span class="comment">//4</span></span><br></pre></td></tr></table></figure>
-<h4 id="3-以下代码的输出结果是"><a href="#3-以下代码的输出结果是" class="headerlink" title="3.以下代码的输出结果是?"></a><strong>3.以下代码的输出结果是?</strong></h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">1</span>;</span><br><span class="line">a+++a;</span><br><span class="line"></span><br><span class="line"><span class="keyword">typeof</span> a+<span class="number">2</span>;<span class="comment">//number2</span></span><br></pre></td></tr></table></figure>
-<h4 id="4-遍历数组，把数组里的打印数组每一项的平方"><a href="#4-遍历数组，把数组里的打印数组每一项的平方" class="headerlink" title="4.遍历数组，把数组里的打印数组每一项的平方?"></a><strong>4.遍历数组，把数组里的打印数组每一项的平方?</strong></h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>]</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i&lt;arr.length;i++)&#123;</span><br><span class="line">	<span class="built_in">console</span>.log(arr[i]*arr[i]);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 输出 9, 16, 25</span></span><br></pre></td></tr></table></figure>
-<h4 id="5-遍历-JSON-打印里面的值"><a href="#5-遍历-JSON-打印里面的值" class="headerlink" title="5.遍历 JSON, 打印里面的值?"></a><strong>5.遍历 <code>JSON</code>, 打印里面的值?</strong></h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> obj = &#123;</span><br><span class="line">  name: <span class="string">'hunger'</span>,</span><br><span class="line">  sex: <span class="string">'male'</span>,</span><br><span class="line">  age: <span class="number">28</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> k <span class="keyword">in</span> obj)&#123;</span><br><span class="line">	<span class="built_in">console</span>.log(k+<span class="string">": "</span>+obj[k]);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 输出 name: hunger, sex: male, age:28</span></span><br></pre></td></tr></table></figure>
-<h4 id="6-下面代码的输出是-为什么"><a href="#6-下面代码的输出是-为什么" class="headerlink" title="6.下面代码的输出是? 为什么?"></a><strong>6.下面代码的输出是? 为什么?</strong></h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(a);<span class="comment">//Undefined,声明了变量并进行了变量提升，未有赋值</span></span><br><span class="line"><span class="keyword">var</span> a = <span class="number">1</span>;</span><br><span class="line"><span class="built_in">console</span>.log(a);<span class="comment">//1</span></span><br><span class="line"><span class="built_in">console</span>.log(b);<span class="comment">//报错，b没有被声明</span></span><br></pre></td></tr></table></figure>
+<h2 id="【代码】"><a href="#【代码】" class="headerlink" title="-【代码】"></a>-【代码】</h2><blockquote>
+<h3 id="task-11-1"><a href="#task-11-1" class="headerlink" title="task-11-1"></a><a href="https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task11/task-11-1.html" target="_blank" rel="external">task-11-1</a></h3><h3 id="task-11-2"><a href="#task-11-2" class="headerlink" title="task-11-2"></a><a href="https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task11/task-11-2.html" target="_blank" rel="external">task-11-2</a></h3></blockquote>
 
       
     </div>
@@ -600,7 +637,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/JavaScript/" rel="tag">#JavaScript</a>
+            <a href="/tags/CSS/" rel="tag">#CSS</a>
           
         </div>
       
@@ -609,12 +646,16 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/03/30/定位-浮动/" rel="next" title="定位+浮动">
+                <i class="fa fa-chevron-left"></i> 定位+浮动
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/03/16/理解JavaScript函数/" rel="prev" title="理解JavaScript函数">
-                理解JavaScript函数 <i class="fa fa-chevron-right"></i>
+              <a href="/2016/03/30/圣杯布局-双飞翼布局/" rel="prev" title="圣杯布局+双飞翼布局">
+                圣杯布局+双飞翼布局 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -630,10 +671,10 @@
 
     <div class="post-spread">
       
-        <div class="ds-share flat" data-thread-key="2016/03/16/JavaScript基本语法/"
-     data-title="JavaScript基本语法要点"
+        <div class="ds-share flat" data-thread-key="2016/03/30/BFC/"
+     data-title="BFC"
      data-content=""
-     data-url="http://licao404.com/2016/03/16/JavaScript基本语法/">
+     data-url="http://licao404.com/2016/03/30/BFC/">
   <div class="ds-share-inline">
     <ul  class="ds-share-icons-16">
 
@@ -660,8 +701,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/03/16/JavaScript基本语法/"
-           data-title="JavaScript基本语法要点" data-url="http://licao404.com/2016/03/16/JavaScript基本语法/">
+      <div class="ds-thread" data-thread-key="2016/03/30/BFC/"
+           data-title="BFC" data-url="http://licao404.com/2016/03/30/BFC/">
       </div>
     
   </div>
@@ -811,7 +852,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#【基础知识点】"><span class="nav-number">1.</span> <span class="nav-text">-【基础知识点】</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-CSS和JS在网页中的放置顺序是怎样的？"><span class="nav-number">1.0.1.</span> <span class="nav-text">1. CSS和JS在网页中的放置顺序是怎样的？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-解释白屏和FOUC？"><span class="nav-number">1.0.2.</span> <span class="nav-text">2. 解释白屏和FOUC？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-async和defer的作用是什么？有什么区别？"><span class="nav-number">1.0.3.</span> <span class="nav-text">3. async和defer的作用是什么？有什么区别？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-简述网页的渲染机制？"><span class="nav-number">1.0.4.</span> <span class="nav-text">4. 简述网页的渲染机制？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-JavaScript-定义了几种数据类型-哪些是简单类型-哪些是复杂类型"><span class="nav-number">1.0.5.</span> <span class="nav-text">5. JavaScript 定义了几种数据类型? 哪些是简单类型?哪些是复杂类型?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-NaN、undefined、null分别代表什么"><span class="nav-number">1.0.6.</span> <span class="nav-text">6. NaN、undefined、null分别代表什么?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7-typeof和instanceof的作用和区别"><span class="nav-number">1.0.7.</span> <span class="nav-text">7. typeof和instanceof的作用和区别?</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#【基本语法演示】"><span class="nav-number">2.</span> <span class="nav-text">-【基本语法演示】</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-完成如下代码判断一个变量是否是数字、字符串、布尔、函数"><span class="nav-number">2.0.1.</span> <span class="nav-text">1.完成如下代码判断一个变量是否是数字、字符串、布尔、函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-以下代码的输出结果是"><span class="nav-number">2.0.2.</span> <span class="nav-text">2.以下代码的输出结果是?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-以下代码的输出结果是"><span class="nav-number">2.0.3.</span> <span class="nav-text">3.以下代码的输出结果是?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-遍历数组，把数组里的打印数组每一项的平方"><span class="nav-number">2.0.4.</span> <span class="nav-text">4.遍历数组，把数组里的打印数组每一项的平方?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-遍历-JSON-打印里面的值"><span class="nav-number">2.0.5.</span> <span class="nav-text">5.遍历 JSON, 打印里面的值?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-下面代码的输出是-为什么"><span class="nav-number">2.0.6.</span> <span class="nav-text">6.下面代码的输出是? 为什么?</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#【基础知识】"><span class="nav-number">1.</span> <span class="nav-text">-【基础知识】</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-在什么场景下会出现外边距合并？如何合并？如何不让相邻元素外边距合并？"><span class="nav-number">1.0.1.</span> <span class="nav-text">1. 在什么场景下会出现外边距合并？如何合并？如何不让相邻元素外边距合并？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-去除inline-block内缝隙有哪几种常见方法"><span class="nav-number">1.0.2.</span> <span class="nav-text">2. 去除inline-block内缝隙有哪几种常见方法?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-父容器使用overflow-auto-hidden撑开高度的原理是什么？"><span class="nav-number">1.0.3.</span> <span class="nav-text">3. 父容器使用overflow: auto| hidden撑开高度的原理是什么？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-BFC是什么？如何形成BFC，有什么作用"><span class="nav-number">1.0.4.</span> <span class="nav-text">4. BFC是什么？如何形成BFC，有什么作用?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-浮动导致的父容器高度塌陷指什么？为什么会产生？有几种解决方法"><span class="nav-number">1.0.5.</span> <span class="nav-text">5. 浮动导致的父容器高度塌陷指什么？为什么会产生？有几种解决方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-以下代码每一行的作用是什么？-为什么会产生作用？-和BFC撑开空间有什么区别？"><span class="nav-number">1.0.6.</span> <span class="nav-text">6. 以下代码每一行的作用是什么？ 为什么会产生作用？ 和BFC撑开空间有什么区别？</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#【代码】"><span class="nav-number">2.</span> <span class="nav-text">-【代码】</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#task-11-1"><span class="nav-number">2.1.</span> <span class="nav-text">task-11-1</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#task-11-2"><span class="nav-number">2.2.</span> <span class="nav-text">task-11-2</span></a></li></ol></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">

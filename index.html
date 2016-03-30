@@ -437,8 +437,8 @@
             
               
                 
-                <a class="post-title-link" href="/2016/03/28/闭包+延时器/" itemprop="url">
-                  闭包、延时器
+                <a class="post-title-link" href="/2016/03/30/CSS浏览器兼容/" itemprop="url">
+                  CSS浏览器兼容
                 </a>
               
             
@@ -451,8 +451,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-28T23:33:27+08:00" content="2016-03-28">
-              2016-03-28
+            <time itemprop="dateCreated" datetime="2016-03-30T13:39:11+08:00" content="2016-03-30">
+              2016-03-30
             </time>
           </span>
 
@@ -493,8 +493,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/03/28/闭包+延时器/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/28/闭包+延时器/" itemprop="commentsCount"></span>
+                <a href="/2016/03/30/CSS浏览器兼容/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/30/CSS浏览器兼容/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -504,7 +504,7 @@
 
           
           
-             <span id="/2016/03/28/闭包+延时器/" class="leancloud_visitors" data-flag-title="闭包、延时器">
+             <span id="/2016/03/30/CSS浏览器兼容/" class="leancloud_visitors" data-flag-title="CSS浏览器兼容">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -526,16 +526,70 @@
 
       
         
-          <h2 id="【知识点】"><a href="#【知识点】" class="headerlink" title="-【知识点】"></a>-【知识点】</h2><h3 id="1-F：什么是闭包-有什么作用？"><a href="#1-F：什么是闭包-有什么作用？" class="headerlink" title="1. -F：什么是闭包? 有什么作用？"></a><strong>1. -F：什么是闭包? 有什么作用？</strong></h3><h3 id="Q："><a href="#Q：" class="headerlink" title="-Q："></a><strong>-Q：</strong></h3><h4 id="闭包概念："><a href="#闭包概念：" class="headerlink" title="闭包概念："></a>闭包概念：</h4><ul>
-<li>简而言之，闭包就是有权访问另一个函数内部参数和变量的<code>函数</code>;</li>
-<li>只有函数中的<code>内部函数</code>才能一直访问该函数作用域中的局部变量，即使在其外部函数被返回了之后。那么这个内部函数可以理解为闭包（创建了闭包）；</li>
-<li>本质上，闭包就是沟通函数内部和函数外部的途径；</li>
+          
+            <h2 id="【知识点】"><a href="#【知识点】" class="headerlink" title="-【知识点】"></a>-【知识点】</h2><h4 id="1-如何调试-IE-浏览器"><a href="#1-如何调试-IE-浏览器" class="headerlink" title="1. 如何调试 IE 浏览器?"></a><strong>1. 如何调试 IE 浏览器?</strong></h4><blockquote>
+<p>1.通过高版本IE浏览器的开发者工具，可以仿真其之前版本IE浏览器的运行环境，基本上可以临时快速调试各版本IE浏览器：<img src="http://7xr868.com1.z0.glb.clouddn.com/task13IE%E5%BC%80%E5%8F%91%E8%80%85.png" alt="IE调试01"><br>2.用虚拟机运行xp等系统，用原生ie6浏览器调试；<br>3.如果有条件，远程到一台有相应版本浏览器的机器（服务器）上，进行调试；<br>4.使用第三方调试工具（<code>IETester</code>等）模拟各种版本浏览器，不过存在一些未知的问题，毕竟是模拟的；</p>
+</blockquote>
+<h4 id="2-什么是CSS-hack？在-CSS-和-HTML里如何写-hack？在-CSS-中-ie6、ie7的-hack-方式？"><a href="#2-什么是CSS-hack？在-CSS-和-HTML里如何写-hack？在-CSS-中-ie6、ie7的-hack-方式？" class="headerlink" title="2. 什么是CSS hack？在 CSS 和 HTML里如何写 hack？在 CSS 中 ie6、ie7的 hack 方式？"></a><strong>2. 什么是<code>CSS hack</code>？在 CSS 和 HTML里如何写 <code>hack</code>？在 CSS 中 ie6、ie7的 <code>hack</code> 方式？</strong></h4><blockquote>
+<p>由于不同浏览器和某浏览器的不同版本，特别是一些老浏览器，如IE6,7等，对CSS的支持、解析不一致，因此会导致页面的显示效果不一样，而<code>CSS hack</code>是利用浏览器漏洞来让不同浏览器显示效果一致，我们把针对不同的浏览器/不同版本写相应的<code>CSS code</code>的过程，叫做<code>CSS hack</code>；</p>
+</blockquote>
+<ul>
+<li><p><code>CSS hack</code>基本上有4种方式：</p>
+<ul>
+<li>IE条件注释法（IE专有的hack方式，Microsoft官方推荐）</li>
 </ul>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/03/28/闭包+延时器/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">只在IE下生效</span><br><span class="line"><span class="comment">&lt;!--[if IE]&gt;</span><br><span class="line">  &lt;link rel="stylesheet" type="text/css" href="ie.css"&gt;</span><br><span class="line">&lt;![endif]--&gt;</span></span><br><span class="line"></span><br><span class="line">只在IE6下生效</span><br><span class="line"><span class="comment">&lt;!--[if IE6]&gt;</span><br><span class="line">  &lt;link rel="stylesheet" type="text/css" href="ie6.css"&gt;</span><br><span class="line">&lt;![endif]--&gt;</span></span><br><span class="line"></span><br><span class="line">只在IE6以上版本生效</span><br><span class="line"><span class="comment">&lt;!--[if gte IE]&gt;</span><br><span class="line">  &lt;link rel="stylesheet" type="text/css" href="ie.css"&gt;</span><br><span class="line">&lt;![endif]--&gt;</span></span><br><span class="line"></span><br><span class="line">非IE浏览器生效</span><br><span class="line"><span class="comment">&lt;!--[if ！IE]&gt;</span><br><span class="line">  &lt;link rel="stylesheet" type="text/css" href="ie.css"&gt;</span><br><span class="line">&lt;![endif]--&gt;</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>属性前缀法：</p>
+<ol>
+<li><code>_</code>和<code>-</code>只对<code>ie6</code>有效；</li>
+<li><code>*</code>对<code>ie6,7</code>有效；</li>
+<li><code>\9</code>对<code>ie11</code>以下所有ie有效；</li>
+<li><code>\0</code>对<code>ie8,9,10</code>有效；</li>
+<li><code>\9\0</code>只对<code>ie9,10</code>有效；</li>
+<li><code>\0\9</code>只对<code>ie8,9</code>有效；</li>
+<li>… …</li>
+</ol>
+</li>
+<li><p>选择器前缀法：</p>
+<ol>
+<li><code>* 前缀</code>只对IE6有效；</li>
+<li><code>*+ 前缀</code>只对IE7有效；</li>
+<li>更多可以参考<a href="http://browserhacks.com/" target="_blank" rel="external">browserhacks</a>；</li>
+</ol>
+</li>
+<li><p>用<code>JavaScript</code>判断<code>ie</code>版本：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 是否小于等于ie8</span></span><br><span class="line">    <span class="keyword">var</span> isIE = <span class="string">'\v'</span>==<span class="string">'v'</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 判断ie版本</span></span><br><span class="line">    <span class="keyword">var</span> ieVersion = (<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123; <span class="keyword">if</span> (<span class="keyword">new</span> <span class="built_in">RegExp</span>(<span class="string">"MSIE     ([0-9]&#123;1,&#125;[\.0-9]&#123;0,&#125;)"</span>).exec(navigator.userAgent) != <span class="literal">null</span>) &#123; <span class="keyword">return</span> <span class="built_in">parseFloat</span>( <span class="built_in">RegExp</span>.$<span class="number">1</span> ); &#125; <span class="keyword">else</span> &#123; <span class="keyword">return</span> <span class="literal">false</span>; &#125; &#125;)();</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="3-列举几种-浏览器兼容问题"><a href="#3-列举几种-浏览器兼容问题" class="headerlink" title="3. 列举几种 浏览器兼容问题"></a><strong>3. 列举几种 浏览器兼容问题</strong></h4><blockquote>
+<p>1.不同浏览器对标签默认的内外边距不一致，最常见的兼容性问题，解决方式：在<code>css</code>开头用通配选择器将所有元素重置<code>*{margin:0;padding:0;}</code>;<br>2.块属性标签float后，又有横行的margin情况下，在IE6显示margin比设置的大,常见的问题体现是ie6中最后一块被顶到下面一行，解决方法：在float的标签样式控制中加入 display:inline;将其转化为行内属性；<br>3.图片默认有间距，几个img标签放在一起的时候，有些浏览器会有默认的间距，加了问题一中提到的通配符也不起作用；解决方法：用<code>float</code>为图片布局；<br>4…. …更多兼容性问题参考<a href="http://blog.csdn.net/chuyuqing/article/details/37561313" target="_blank" rel="external">chuyuqing的专栏</a>，<a href="http://wenku.baidu.com/link?url=ysYAKTQTyuudp9fU8sLvVr-VlGdJvCrHFWRpN8RcJSo0hxw-XnBJ_zhiHVudTy7Mq3AQSM6TEmCMDFaS4CNrS2NXGkokWmvU9gKGFaqxVYe" target="_blank" rel="external">文库</a></p>
+</blockquote>
+</li>
+</ul>
+<h4 id="4-针对兼容、多浏览器覆盖有什么看法？渐进增强和优雅降级是什么意思？"><a href="#4-针对兼容、多浏览器覆盖有什么看法？渐进增强和优雅降级是什么意思？" class="headerlink" title="4. 针对兼容、多浏览器覆盖有什么看法？渐进增强和优雅降级是什么意思？"></a><strong>4. 针对兼容、多浏览器覆盖有什么看法？渐进增强和优雅降级是什么意思？</strong></h4><blockquote>
+<p>1.首先考虑产品的受众，设计师，是否需要兼容老版本的浏览器，比如说该产品用户大多不用IE浏览器，则不需要考虑兼容ie的老版本；<br>2.看你的<code>leader</code>或者审阅产品的人在用什么浏览器,考虑兼容；<br>3.做到几乎全部的兼容覆盖并不现实，必须结合现有资源，用户实际需求，项目时间的综合考虑是否要做或做什么浏览器的兼容；<br>4.渐进增强：项目一开始就考虑低版本浏览器的兼容性，保证最基本的功能，再对高级浏览器进行效果改进。<br>5.优雅降级：一开始就构建完整的功能，完成后再进行低版本浏览器兼容；</p>
+</blockquote>
+<h4 id="5-reset-css和normalize-css分别是做什么的？为什么推荐使用-nomalize-css"><a href="#5-reset-css和normalize-css分别是做什么的？为什么推荐使用-nomalize-css" class="headerlink" title="5. reset.css和normalize.css分别是做什么的？为什么推荐使用 nomalize.css?"></a><strong>5. <code>reset.css</code>和<code>normalize.css</code>分别是做什么的？为什么推荐使用 nomalize.css?</strong></h4><blockquote>
+<p>1.<code>reset.css</code>是全局样式重置，html标签在不同浏览器的默认样式存在差异，<code>reset.css</code>一开始就将浏览器的默认样式全部暴力覆盖掉；<br>2.<code>normalize.css</code>保留浏览器的原来样式并且做到每个浏览显示一致；<br>3.<code>Normalize</code>相对<code>平和</code>，注重通用的方案，重置掉该重置的样式，保留有用的<code>user agent</code>样式，同时进行一些 bug 的修复，这点是 reset 所缺乏的,所以通用性和可维护性高；</p>
+</blockquote>
+<hr>
+<h2 id="【操作】"><a href="#【操作】" class="headerlink" title="-【操作】"></a>-【操作】</h2><blockquote>
+<h3 id="1-安装-VirtualBox-下载-安装虚拟机"><a href="#1-安装-VirtualBox-下载-安装虚拟机" class="headerlink" title="1.安装 VirtualBox , 下载 安装虚拟机"></a>1.安装 VirtualBox , 下载 安装虚拟机</h3><p><img src="http://7xr868.com1.z0.glb.clouddn.com/task13Win_XP.png" alt="虚拟机"></p>
+<h3 id="2-在-ie-6-7-8中展示-盒模型、inline-block、max-width的区别"><a href="#2-在-ie-6-7-8中展示-盒模型、inline-block、max-width的区别" class="headerlink" title="2.在 ie 6, 7, 8中展示 盒模型、inline-block、max-width的区别"></a>2.在 ie 6, 7, 8中展示 <code>盒模型</code>、<code>inline-block</code>、<code>max-width</code>的区别</h3></blockquote>
+<ul>
+<li>测试代码：<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span><span class="css"></span><br><span class="line">  *&#123;</span><br><span class="line">  	<span class="attribute">padding</span>: <span class="number">0</span>;</span><br><span class="line">  	<span class="attribute">margin</span>: <span class="number">0</span>;</span><br><span class="line">  &#125;</span><br><span class="line">    <span class="selector-class">.box</span>&#123;</span><br><span class="line">      <span class="attribute">display</span>: inline-block;</span><br><span class="line">      <span class="attribute">height</span>:<span class="number">100px</span>;</span><br><span class="line">      <span class="attribute">width</span>:<span class="number">100px</span>;</span><br><span class="line">      <span class="attribute">border</span>:<span class="number">20px</span> solid red;</span><br><span class="line">      <span class="attribute">padding</span>:<span class="number">30px</span>;</span><br><span class="line">      <span class="attribute">margin</span>: <span class="number">40px</span>;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="selector-class">.box2</span>&#123;</span><br><span class="line">      <span class="attribute">display</span>: inline-block;</span><br><span class="line">      <span class="attribute">height</span>:<span class="number">100px</span>;</span><br><span class="line">      <span class="attribute">width</span>:<span class="number">100px</span>;</span><br><span class="line">      <span class="attribute">max-width</span>: <span class="number">50px</span>;</span><br><span class="line">      <span class="attribute">border</span>:<span class="number">20px</span> solid blue;</span><br><span class="line">      <span class="attribute">padding</span>:<span class="number">30px</span>;</span><br><span class="line">      <span class="attribute">margin</span>: <span class="number">40px</span>;</span><br><span class="line">      &#125;</span><br><span class="line">  </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--****************************************************--&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box2"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<blockquote>
+<p>1.在标准模式下的盒模型如下图所示，<code>盒子总宽度/高度=width/height+padding+border+margin</code>;<img src="http://7xr868.com1.z0.glb.clouddn.com/task13ie8%E6%A0%87%E5%87%86%E5%92%8C%E6%A8%A1%E5%9E%8B.png" alt="标准盒子模型"><br>在<code>ie6,7</code>怪异模式下,<code>盒子总宽度/高度=width/height + margin = 内容区宽度/高度 + padding + border + margin</code>;<br>2.<code>inline-block</code>只有ie8支持，<code>max-width</code>ie7,8支持（存在bug具体看<a href="http://caniuse.com/#search=max-width" target="_blank" rel="external">caniuse</a>）：</p>
+</blockquote>
+<hr>
+<p>IE8</p>
+<h2 id=""><a href="#" class="headerlink" title=""></a><img src="http://7xr868.com1.z0.glb.clouddn.com/task13inline-block-ie8.png" alt="ie8"></h2><p>IE7</p>
+<h2 id="-1"><a href="#-1" class="headerlink" title=""></a><img src="http://7xr868.com1.z0.glb.clouddn.com/task13inline-block-ie7.png" alt="ie7"></h2><p>IE6<br><img src="http://7xr868.com1.z0.glb.clouddn.com/task13ie6.png" alt="ie6"></p>
+
+          
         
       
     </div>
@@ -579,8 +633,8 @@
             
               
                 
-                <a class="post-title-link" href="/2016/03/28/为什么你应该（从现在开始就）写博客/" itemprop="url">
-                  为什么你应该（从现在开始就）写博客
+                <a class="post-title-link" href="/2016/03/30/圣杯布局-双飞翼布局/" itemprop="url">
+                  圣杯布局+双飞翼布局
                 </a>
               
             
@@ -593,147 +647,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-28T01:02:53+08:00" content="2016-03-28">
-              2016-03-28
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/随想/" itemprop="url" rel="index">
-                    <span itemprop="name">随想</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/随想/那些鸡汤/" itemprop="url" rel="index">
-                    <span itemprop="name">那些鸡汤</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/03/28/为什么你应该（从现在开始就）写博客/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/28/为什么你应该（从现在开始就）写博客/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2016/03/28/为什么你应该（从现在开始就）写博客/" class="leancloud_visitors" data-flag-title="为什么你应该（从现在开始就）写博客">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h3 id="（一）为什么你应该写博客"><a href="#（一）为什么你应该写博客" class="headerlink" title="（一）为什么你应该写博客"></a>（一）为什么你应该写博客</h3><p>用一句话来说就是，写一个博客有很多好处，却没有任何明显的坏处。（阿灵顿的情况属于例外，而非常态，就像不能拿抽烟活到一百岁的英国老太太的个例来反驳抽烟对健康的极大损伤一样）</p>
-<p>让我说得更明确一点：用博客的形式来记录下你有价值的思考，会带来很多好处，却没有任何明显的坏处。Note：碎碎念不算思考、心情琐记不算思考、唠唠叨叨也不算思考、没话找话也不算思考，请以此类推。<br>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/03/28/为什么你应该（从现在开始就）写博客/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/03/26/Date类型+引用类型深拷贝/" itemprop="url">
-                  时间类型/引用类型深拷贝
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-26T20:05:19+08:00" content="2016-03-26">
-              2016-03-26
+            <time itemprop="dateCreated" datetime="2016-03-30T13:36:54+08:00" content="2016-03-30">
+              2016-03-30
             </time>
           </span>
 
@@ -774,8 +689,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/03/26/Date类型+引用类型深拷贝/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/26/Date类型+引用类型深拷贝/" itemprop="commentsCount"></span>
+                <a href="/2016/03/30/圣杯布局-双飞翼布局/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/30/圣杯布局-双飞翼布局/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -785,136 +700,7 @@
 
           
           
-             <span id="/2016/03/26/Date类型+引用类型深拷贝/" class="leancloud_visitors" data-flag-title="时间类型/引用类型深拷贝">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h1 id="【知识点】"><a href="#【知识点】" class="headerlink" title="-【知识点】"></a>-【知识点】</h1><h3 id="1-F：基础类型有哪些？复杂类型有哪些？有什么特征？"><a href="#1-F：基础类型有哪些？复杂类型有哪些？有什么特征？" class="headerlink" title="1. -F：基础类型有哪些？复杂类型有哪些？有什么特征？"></a><strong>1. -F：基础类型有哪些？复杂类型有哪些？有什么特征？</strong></h3><h3 id="Q："><a href="#Q：" class="headerlink" title="-Q："></a><strong>-Q：</strong></h3><ul>
-<li>基础类型：数值、字符串、布尔值、undefined、null；</li>
-<li>复杂类型：函数、对象、数组、正则、Date……  </li>
-</ul>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/03/26/Date类型+引用类型深拷贝/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/03/20/狠不趁早/" itemprop="url">
-                  狠不趁早
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-20T15:33:12+08:00" content="2016-03-20">
-              2016-03-20
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/随想/" itemprop="url" rel="index">
-                    <span itemprop="name">随想</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/03/20/狠不趁早/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/20/狠不趁早/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2016/03/20/狠不趁早/" class="leancloud_visitors" data-flag-title="狠不趁早">
+             <span id="/2016/03/30/圣杯布局-双飞翼布局/" class="leancloud_visitors" data-flag-title="圣杯布局+双飞翼布局">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -937,11 +723,21 @@
       
         
           
-            <p>人会下意识的去纵容自己的惰性，这惰性，不只于懒惰，也有沉迷！沉迷于本以为对的方向，懒得停下回头，丢了思考的能力，错过很多如花青春。</p>
+            <h2 id="【基础知识】"><a href="#【基础知识】" class="headerlink" title="-【基础知识】"></a>-【基础知识】</h2><h4 id="1-负边距在让元素产生偏移时和position-relative有什么区别"><a href="#1-负边距在让元素产生偏移时和position-relative有什么区别" class="headerlink" title="1. 负边距在让元素产生偏移时和position: relative有什么区别?"></a><strong>1. 负边距在让元素产生偏移时和<code>position: relative</code>有什么区别?</strong></h4><blockquote>
+<p>最大的区别是负margin让元素移动时改变了文档流，同时可能影响其他元素排列；而<code>position:relative</code>并未让元素脱离文档流，只是让元素相对于本来的位置进行定位，对其他元素的排列不会造成影响。</p>
+</blockquote>
+<h4 id="2-使用负-margin-形成三栏布局有什么条件"><a href="#2-使用负-margin-形成三栏布局有什么条件" class="headerlink" title="2. 使用负 margin 形成三栏布局有什么条件?"></a><strong>2. 使用负 margin 形成三栏布局有什么条件?</strong></h4><blockquote>
+<p>1.<code>HTML</code>代码中，中间主块要写在文档流的最前面让浏览器优先渲染，然后是左右边栏；<br>2.父容器内三个块必须都是浮动的;<br>3.且主块的宽度必须撑满父容器的宽度（<code>width:100%</code>）</p>
+</blockquote>
+<h4 id="3-圣杯布局的原理是怎样的-简述实现圣杯布局的步骤？"><a href="#3-圣杯布局的原理是怎样的-简述实现圣杯布局的步骤？" class="headerlink" title="3. 圣杯布局的原理是怎样的? 简述实现圣杯布局的步骤？"></a><strong>3. 圣杯布局的原理是怎样的? 简述实现圣杯布局的步骤？</strong></h4><blockquote>
+<p>1.三栏浮动<code>float:left</code>,相对定位<code>position:relative</code>;<br>2.主块设置<code>width:100%</code>占满宽度；<br>3.左块使用<code>margin-left:-100%</code>拉到最左边，右块使用<code>margin-left:npx</code>，n为右块的宽度；<br>4.父容器设置左右padding宽度能容纳下左右块；<br>5.左块用相对定位拉到父容器在左边空出的位置，右块同理；</p>
+</blockquote>
+<h4 id="4-双飞翼布局的原理-实现步骤"><a href="#4-双飞翼布局的原理-实现步骤" class="headerlink" title="4. 双飞翼布局的原理? 实现步骤?"></a><strong>4. 双飞翼布局的原理? 实现步骤?</strong></h4><blockquote>
+<p>1.三栏浮动<code>float:left</code>,相对定位<code>position:relative</code>;<br>2.主块设置<code>width:100%</code>占满宽度；<br>3.左块使用<code>margin-left:-100%</code>拉到最左边，右块使用<code>margin-left:npx</code>，n为右块的宽度；<br>4.主块嵌套一个新块，设置该块左右<code>margin</code></p>
+</blockquote>
 <hr>
-<img src="http://7xrvo9.com1.z0.glb.clouddn.com/0320%2F2015-09-27%2009.31.27%201.jpg" class="full-image" alt="alt">
-<hr>
-<p>然而我们总会醒来，时间逼迫我们重新去思索，审视，谋划我们那所剩不多的“后青春”时代，不负当下，不负时光。</p>
+<h2 id="【代码】"><a href="#【代码】" class="headerlink" title="-【代码】"></a>-【代码】</h2><blockquote>
+<h3 id="task-12-1"><a href="#task-12-1" class="headerlink" title="task-12-1"></a><a href="https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task12/task-12-1.html" target="_blank" rel="external">task-12-1</a></h3><h3 id="task-12-2"><a href="#task-12-2" class="headerlink" title="task-12-2"></a><a href="https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task12/task-12-2.html" target="_blank" rel="external">task-12-2</a></h3><h3 id="task-12-3"><a href="#task-12-3" class="headerlink" title="task-12-3"></a><a href="https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task12/task-12-3.html" target="_blank" rel="external">task-12-3</a></h3><h3 id="task-12-4"><a href="#task-12-4" class="headerlink" title="task-12-4"></a><a href="https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task12/task-12-4.html" target="_blank" rel="external">task-12-4</a></h3></blockquote>
 
           
         
@@ -987,8 +783,8 @@
             
               
                 
-                <a class="post-title-link" href="/2016/03/20/鲜花烂漫时/" itemprop="url">
-                  鲜花烂漫时
+                <a class="post-title-link" href="/2016/03/30/BFC/" itemprop="url">
+                  BFC
                 </a>
               
             
@@ -1001,8 +797,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-20T00:00:08+08:00" content="2016-03-20">
-              2016-03-20
+            <time itemprop="dateCreated" datetime="2016-03-30T13:32:34+08:00" content="2016-03-30">
+              2016-03-30
             </time>
           </span>
 
@@ -1015,8 +811,8 @@
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/随想/" itemprop="url" rel="index">
-                    <span itemprop="name">随想</span>
+                  <a href="/categories/编程学习/" itemprop="url" rel="index">
+                    <span itemprop="name">编程学习</span>
                   </a>
                 </span>
 
@@ -1027,8 +823,8 @@
 
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/随想/摄影/" itemprop="url" rel="index">
-                    <span itemprop="name">摄影</span>
+                  <a href="/categories/编程学习/前端基础/" itemprop="url" rel="index">
+                    <span itemprop="name">前端基础</span>
                   </a>
                 </span>
 
@@ -1043,8 +839,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/03/20/鲜花烂漫时/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/20/鲜花烂漫时/" itemprop="commentsCount"></span>
+                <a href="/2016/03/30/BFC/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/30/BFC/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -1054,7 +850,7 @@
 
           
           
-             <span id="/2016/03/20/鲜花烂漫时/" class="leancloud_visitors" data-flag-title="鲜花烂漫时">
+             <span id="/2016/03/30/BFC/" class="leancloud_visitors" data-flag-title="BFC">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -1077,7 +873,468 @@
       
         
           
-            <div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 100%;"><img src="http://7xrvo9.com1.z0.glb.clouddn.com/0320%2F2016-03-20%2012.19.57%201.jpg" alt=""></div></div><div class="group-picture-row"><div class="group-picture-column" style="width: 50%;"><img src="http://7xrvo9.com1.z0.glb.clouddn.com/0320%2F2016-03-20%2012.24.13%201.jpg" alt=""></div><div class="group-picture-column" style="width: 50%;"><img src="http://7xrvo9.com1.z0.glb.clouddn.com/0320%2F2016-03-20%2012.28.55%201.jpg" alt=""></div></div></div></div>
+            <h2 id="【基础知识】"><a href="#【基础知识】" class="headerlink" title="-【基础知识】"></a>-【基础知识】</h2><h4 id="1-在什么场景下会出现外边距合并？如何合并？如何不让相邻元素外边距合并？"><a href="#1-在什么场景下会出现外边距合并？如何合并？如何不让相邻元素外边距合并？" class="headerlink" title="1. 在什么场景下会出现外边距合并？如何合并？如何不让相邻元素外边距合并？"></a><strong>1. 在什么场景下会出现外边距合并？如何合并？如何不让相邻元素外边距合并？</strong></h4><blockquote>
+<ol>
+<li>相邻块盒子的垂直外边距合并只有他们是在同一BFC，且没有padding与border将外边距隔开才会发生；</li>
+<li>垂直相邻元素，子元素和父元素会发生合并，合并后的外边距的高度等于两个发生合并的外边距的高度中的较大者。</li>
+<li>创建另外一个BFC，让不想发生外边距合并的元素处于不同的BFC。</li>
+</ol>
+</blockquote>
+<h4 id="2-去除inline-block内缝隙有哪几种常见方法"><a href="#2-去除inline-block内缝隙有哪几种常见方法" class="headerlink" title="2. 去除inline-block内缝隙有哪几种常见方法?"></a><strong>2. 去除<code>inline-block</code>内缝隙有哪几种常见方法?</strong></h4><ul>
+<li><p>1.修改<code>li</code>的代码书写格式：</p>
+<ul>
+<li><p><img src="http://7xr868.com1.z0.glb.clouddn.com/task11%E5%8E%BB%E7%BC%9D%E9%9A%99li.gif" alt="li书写1"></p>
+</li>
+<li><p><img src="http://7xr868.com1.z0.glb.clouddn.com/task11%E5%8E%BB%E7%BC%9D%E9%9A%99li2.gif" alt="li书写2"></p>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>2.用<code>负margin</code>：<ul>
+<li><img src="http://7xr868.com1.z0.glb.clouddn.com/task11%E5%8E%BB%E7%BC%9D%E9%9A%99%E8%B4%9Fmargin.gif" alt="-margin"></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>3.用浮动并在父元素用<code>overflow:auto</code>清除浮动：<ul>
+<li><img src="http://7xr868.com1.z0.glb.clouddn.com/task11%E5%8E%BB%E7%BC%9D%E9%9A%99%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8.gif" alt="float"></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>设置父元素的<code>font-size</code>为<code>0</code>,子元素再给一个<code>font-size</code>:<ul>
+<li><img src="http://7xr868.com1.z0.glb.clouddn.com/task11%E5%8E%BB%E7%BC%9D%E9%9A%99fontsize.gif" alt="父font-size"></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>适配IE8以下加hack语句<a href="http://js.jirengu.com/quvohojade/2/edit" target="_blank" rel="external"><code>*display:inline</code></a></li>
+</ul>
+<h4 id="3-父容器使用overflow-auto-hidden撑开高度的原理是什么？"><a href="#3-父容器使用overflow-auto-hidden撑开高度的原理是什么？" class="headerlink" title="3. 父容器使用overflow: auto| hidden撑开高度的原理是什么？"></a><strong>3. 父容器使用<code>overflow: auto| hidden</code>撑开高度的原理是什么？</strong></h4><blockquote>
+<p>给父容器添加<code>overflow: auto| hidden</code>样式即触发了BFC，这时如果父容器内只有浮动元素，则会撑开父容器高度。</p>
+</blockquote>
+<h4 id="4-BFC是什么？如何形成BFC，有什么作用"><a href="#4-BFC是什么？如何形成BFC，有什么作用" class="headerlink" title="4. BFC是什么？如何形成BFC，有什么作用?"></a><strong>4. BFC是什么？如何形成BFC，有什么作用?</strong></h4><blockquote>
+<ol>
+<li>定义：浮动元素和绝对定位元素，非块级盒子的块级容器（例如 inline-block, table-cells, 和 table-captions），以及overflow值不为“visiable”的块级盒子，都会为他们的内容创建新的BFC（块级格式上下文）。</li>
+<li>如何形成：可以通过给父容器添加一个触发BFC的样式即可。例如<code>float:left</code>,<code>position:absolute</code>,<code>overflow:hidde</code>,<code>display:inline-block</code>等；（用来清除浮动可能带来一些副作用，一般使用<code>overflow:auto</code>）</li>
+<li><ul>
+<li>用于<code>包含浮动</code>。如果父容器内存在浮动元素，则父容器没有高度，它的浮动孩子将会脱离文档流，影响到其他元素的排列。这时可以创建新的BFC，撑开父容器的高度可以包含子元素；</li>
+</ul>
+</li>
+</ol>
+<ul>
+<li>用于<code>防止边距合并</code>，实质上外边距合并是由BFC导致的（<a href="http://www.w3cplus.com/css/understanding-block-formatting-contexts-in-css.html" target="_blank" rel="external">详细</a>），毗邻块盒子的垂直外边距折叠只有他们是在同一BFC时才会发生，如果他们属于不同的BFC，他们之间的外边距将不会折叠。所以通过创建一个新的BFC我们可以防止外边距折叠；</li>
+<li>用于<code>防止文字环绕</code>；</li>
+<li>用于<code>多列布局</code>；当我们设计一个多列布局占满宽度时，最后一列被挤到下一行，在其中一个列的布局中建立了一个新的BFC，它将会在前一列填充完之后的后面占据所剩余的空间。</li>
+</ul>
+</blockquote>
+<h4 id="5-浮动导致的父容器高度塌陷指什么？为什么会产生？有几种解决方法"><a href="#5-浮动导致的父容器高度塌陷指什么？为什么会产生？有几种解决方法" class="headerlink" title="5. 浮动导致的父容器高度塌陷指什么？为什么会产生？有几种解决方法"></a><strong>5. 浮动导致的父容器高度塌陷指什么？为什么会产生？有几种解决方法</strong></h4><blockquote>
+<p>概念：没有设置父容器的高度或者设置了<code>auto</code>，容器内只含有浮动元素，则他们的父容器会没有高度属性，之后的元素会“挤上来”，造成“高度塌陷”。</p>
+<ul>
+<li>解决：</li>
+</ul>
+<ol>
+<li>给父容器添加<code>overflow: auto| hidden</code>等样式触发BFC，撑开父容器高度。</li>
+<li>使用伪类<code>:after</code>,父容器通过<code>:after</code>来为其内容末尾添加一个内容为空的块框，利用这个块框来清除浮动（需要hack兼容IE），<code>常常用这种方法</code>!</li>
+<li>给父容器后添加一个新标签，用这个新标签来清除浮动撑开高度，兼容性好，但是无语义；</li>
+</ol>
+</blockquote>
+<h4 id="6-以下代码每一行的作用是什么？-为什么会产生作用？-和BFC撑开空间有什么区别？"><a href="#6-以下代码每一行的作用是什么？-为什么会产生作用？-和BFC撑开空间有什么区别？" class="headerlink" title="6. 以下代码每一行的作用是什么？ 为什么会产生作用？ 和BFC撑开空间有什么区别？"></a><strong>6. 以下代码每一行的作用是什么？ 为什么会产生作用？ 和BFC撑开空间有什么区别？</strong></h4><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">  .clearfix:after&#123;      /*添加`:after`伪类*/</span><br><span class="line">    content: '';        /*内容是空的*/</span><br><span class="line">    display: block;     /*空的内容生成块框*/</span><br><span class="line">    clear: both;    /*清除两边浮动*/</span><br><span class="line">&#125;</span><br><span class="line">.clearfix&#123;</span><br><span class="line">    *zoom: 1;   /*IE的hack语句，为了兼容IE6,7，触发IE的hasLayout特有属性，但不会影响页面的显示效果*/</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>作用：在容器内部最后一个元素创建了一个空的块框，而该块框两则清除了浮动，容器外的其他元素就无法向上挤占了；</p>
+</blockquote>
+<p>区别：BFC是包含容器内的浮动元素，形成一个封闭的小宇宙，不受外界干扰挤占；而这种方法是通过添加空块来清除浮动，不让其他元素上来，二者的实现思路是完全不一样的；</p>
+<hr>
+<h2 id="【代码】"><a href="#【代码】" class="headerlink" title="-【代码】"></a>-【代码】</h2><blockquote>
+<h3 id="task-11-1"><a href="#task-11-1" class="headerlink" title="task-11-1"></a><a href="https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task11/task-11-1.html" target="_blank" rel="external">task-11-1</a></h3><h3 id="task-11-2"><a href="#task-11-2" class="headerlink" title="task-11-2"></a><a href="https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task11/task-11-2.html" target="_blank" rel="external">task-11-2</a></h3></blockquote>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/03/30/定位-浮动/" itemprop="url">
+                  定位+浮动
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-03-30T13:29:46+08:00" content="2016-03-30">
+              2016-03-30
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/编程学习/" itemprop="url" rel="index">
+                    <span itemprop="name">编程学习</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/编程学习/前端基础/" itemprop="url" rel="index">
+                    <span itemprop="name">前端基础</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/03/30/定位-浮动/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/30/定位-浮动/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/03/30/定位-浮动/" class="leancloud_visitors" data-flag-title="定位+浮动">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="【基础知识】"><a href="#【基础知识】" class="headerlink" title="-【基础知识】"></a>-【基础知识】</h2><h4 id="1-文档流的概念指什么？有哪种方式可以让元素脱离文档流"><a href="#1-文档流的概念指什么？有哪种方式可以让元素脱离文档流" class="headerlink" title="1. 文档流的概念指什么？有哪种方式可以让元素脱离文档流?"></a><strong>1. 文档流的概念指什么？有哪种方式可以让元素脱离文档流?</strong></h4><ul>
+<li>文档流是将窗体自上而下分成一行行，每行按照自左向右的顺序排列元素，从头到尾按照文档的顺序，该在什么位置就在什么位置；网页中大部分对象默认是占用文档流，也有一些对象是不占文档流的，比如表单中隐藏域。</li>
+<li>有3种方式可以让元素脱离文档流而存在：浮动（<code>float</code>）、固定定位（<code>position:fixed</code>）、绝对定位（<code>position:absolute</code>）<ul>
+<li>浮动元素不占用任何正常文档流空间，而他的定位仍是基于正常文档流；</li>
+<li>绝对定位是完全脱离文档流，在文档流中的其他元素将忽略该元素并且填补他原先的位置；</li>
+</ul>
+</li>
+</ul>
+<h4 id="2-有几种定位方式，分别是如何实现定位的，使用场景如何？"><a href="#2-有几种定位方式，分别是如何实现定位的，使用场景如何？" class="headerlink" title="2. 有几种定位方式，分别是如何实现定位的，使用场景如何？"></a><strong>2. 有几种定位方式，分别是如何实现定位的，使用场景如何？</strong></h4><ul>
+<li><code>position:static;</code>：静态定位（缺省值）。元素出现在正常的文档流中，忽略<code>top,buttom,left,right,z-index</code>声明；可以用于覆盖之前对position的定义；</li>
+<li><code>position:fixed</code>：固定定位，让元素完全脱离文档流，固定在浏览器窗口中某一位置，位置不随页面移动而发生变化。用在一些不想移动的导航栏，固定的广告，信息提醒，咨询联系按钮等<ul>
+<li><img src="http://7xr868.com1.z0.glb.clouddn.com/task10fixed.png" alt="fixed"></li>
+</ul>
+</li>
+<li><code>position:relative</code>：相对定位，相对于自己原来在文档流中的位置进行定位，不改变布局（在该元素原来位置留下空白）</li>
+<li><code>position:absolute</code>：绝对对定位，相对于与他最近的非static定位的祖先元素来定位，完全脱离文档流，其他文档流中的元素会忽略他的存在</li>
+</ul>
+<h4 id="3-absolute-relative-fixed-偏移的参考点分别是什么"><a href="#3-absolute-relative-fixed-偏移的参考点分别是什么" class="headerlink" title="3. absolute, relative, fixed 偏移的参考点分别是什么?"></a><strong>3. <code>absolute</code>, <code>relative</code>, <code>fixed</code> 偏移的参考点分别是什么?</strong></h4><blockquote>
+<p><code>absolute</code>: 相对于与他最近的非static定位的祖先元素来定位，如果都没有的话就向上对；<br><code>relative</code>：相对于自己原来在文档流中的位置进行定位；<br><code>fixed</code>：相对于浏览器窗口；  </p>
+</blockquote>
+<h4 id="4-z-index-有什么作用-如何使用"><a href="#4-z-index-有什么作用-如何使用" class="headerlink" title="4. z-index 有什么作用? 如何使用?"></a><strong>4. <code>z-index</code> 有什么作用? 如何使用?</strong></h4><blockquote>
+<p>可以设置<code>定位元素</code>显示层级，值越大越在外层。当没有指定z-index的时候， 所有元素都在会被渲染在默认层(0层)；</p>
+</blockquote>
+<h4 id="5-position-relative和负margin都可以使元素位置发生偏移-二者有什么区别"><a href="#5-position-relative和负margin都可以使元素位置发生偏移-二者有什么区别" class="headerlink" title="5. position:relative和负margin都可以使元素位置发生偏移?二者有什么区别"></a><strong>5. <code>position:relative</code>和负<code>margin</code>都可以使元素位置发生偏移?二者有什么区别</strong></h4><blockquote>
+<p><code>position:relative</code>使元素位置发生偏移不会对后来的元素产生影响，他的文档流占位还是之前的位置；显然使用<code>margin</code>偏移有可能影响到其他元素的位置；</p>
+</blockquote>
+<h4 id="6-如何让一个固定宽高的元素在页面上垂直水平居中"><a href="#6-如何让一个固定宽高的元素在页面上垂直水平居中" class="headerlink" title="6. 如何让一个固定宽高的元素在页面上垂直水平居中?"></a><strong>6. 如何让一个固定宽高的元素在页面上垂直水平居中?</strong></h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">  &lt;style&gt;</span><br><span class="line">    body&#123;</span><br><span class="line">      background:gray;</span><br><span class="line">    &#125;</span><br><span class="line">    div&#123;</span><br><span class="line">      position:absolute;</span><br><span class="line">      top:50%;</span><br><span class="line">      right:50%;</span><br><span class="line">      margin:-50px;</span><br><span class="line">      width:100px;</span><br><span class="line">      height:100px;</span><br><span class="line">      background-color:yellow;</span><br><span class="line">    &#125;</span><br><span class="line">  &lt;/style&gt;</span><br><span class="line"></span><br><span class="line">&lt;body&gt;</span><br><span class="line">  &lt;div&gt;&lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
+<p><a href="http://js.jirengu.com/dupahagojo/1/edit" target="_blank" rel="external">&gt;&gt;效果演示</a></p>
+<h4 id="7-浮动元素有什么特征？对其他浮动元素、普通元素、文字分别有什么影响"><a href="#7-浮动元素有什么特征？对其他浮动元素、普通元素、文字分别有什么影响" class="headerlink" title="7. 浮动元素有什么特征？对其他浮动元素、普通元素、文字分别有什么影响?"></a><strong>7. 浮动元素有什么特征？对其他浮动元素、普通元素、文字分别有什么影响?</strong></h4><blockquote>
+<ol>
+<li>浮动的框可以向左向右移动，直到它的外边缘碰到包含框或另一个浮动框的边框为止；</li>
+<li>对其他浮动元素会按照渲染顺序显示，对其他普通元素则会覆盖在表层，文字会环绕浮动元素；</li>
+</ol>
+</blockquote>
+<h4 id="8-清除浮动指什么-如何清除浮动"><a href="#8-清除浮动指什么-如何清除浮动" class="headerlink" title="8. 清除浮动指什么? 如何清除浮动?"></a><strong>8. 清除浮动指什么? 如何清除浮动?</strong></h4><blockquote>
+<p>元素浮动之后，周围的元素会重新排列，为了避免这种情况，需要清除浮动；</p>
+</blockquote>
+<ul>
+<li>如何清除浮动：</li>
+</ul>
+<ol>
+<li>直接对受影响的元素使用<code>clear</code>属性；</li>
+<li>对父亲</li>
+</ol>
+<hr>
+<h2 id="【代码】"><a href="#【代码】" class="headerlink" title="-【代码】"></a>-【代码】</h2><blockquote>
+<h3 id="task-10-1"><a href="#task-10-1" class="headerlink" title="task-10-1"></a><a href="https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task10/task-10-1.html" target="_blank" rel="external">task-10-1</a></h3><h3 id="task-10-2"><a href="#task-10-2" class="headerlink" title="task-10-2"></a><a href="https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task10/task-10-2.html" target="_blank" rel="external">task-10-2</a></h3></blockquote>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/03/30/CSS_Sprite+background/" itemprop="url">
+                  CSS Sprite/background
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-03-30T13:27:33+08:00" content="2016-03-30">
+              2016-03-30
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/编程学习/" itemprop="url" rel="index">
+                    <span itemprop="name">编程学习</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/编程学习/前端基础/" itemprop="url" rel="index">
+                    <span itemprop="name">前端基础</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/03/30/CSS_Sprite+background/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/30/CSS_Sprite+background/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/03/30/CSS_Sprite+background/" class="leancloud_visitors" data-flag-title="CSS Sprite/background">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="【知识点】"><a href="#【知识点】" class="headerlink" title="-【知识点】"></a>-【知识点】</h2><h4 id="1-CSS-Sprite-雪碧图-指什么-有什么作用？"><a href="#1-CSS-Sprite-雪碧图-指什么-有什么作用？" class="headerlink" title="1. CSS Sprite(雪碧图)指什么? 有什么作用？"></a><strong>1. CSS Sprite(雪碧图)指什么? 有什么作用？</strong></h4><ul>
+<li><code>CSS Sprite</code>又名<code>CSS精灵</code>，一种将零星的小图片合并成一张大图的网络图像应用处理方式，再利用<code>CSS</code>的<code>background-image</code>,<code>background-repeat</code>,<code>background-position</code>进行精确定位所需的小图位置;</li>
+<li>主要作用：<ul>
+<li>可以大量减少页面的http请求，提升页面性能，因为如果是每一张图片都去请求一次，浪费的网络资源是不可想象的；</li>
+<li>减少图片的字节；</li>
+<li>其他作用和弊端见<a href="http://baike.baidu.com/link?url=WNMBLXrej-HoKJ4OspqtsJdTfgc5_jTRO6a3rcthEVyyKfv2M2jGG4lKlOw69NK1KTjHAPmJb4NttvAhzroB6q" target="_blank" rel="external">度娘百科</a>。</li>
+</ul>
+</li>
+</ul>
+<h4 id="2-img标签和CSS背景使用图片在使用场景上有何区别"><a href="#2-img标签和CSS背景使用图片在使用场景上有何区别" class="headerlink" title="2. img标签和CSS背景使用图片在使用场景上有何区别?"></a><strong>2. img标签和CSS背景使用图片在使用场景上有何区别?</strong></h4><blockquote>
+<ul>
+<li>如果内容（对每个访问者）是恒定不变的，如icon，logo，等，则选择css背景图：<br><img src="http://7xr868.com1.z0.glb.clouddn.com/task9%E8%83%8C%E6%99%AF%E5%9B%BE2.png" alt="icon"><br><img src="http://7xr868.com1.z0.glb.clouddn.com/task9%E8%83%8C%E6%99%AF%E5%9B%BE1.png" alt="logo"></li>
+</ul>
+</blockquote>
+<hr>
+<blockquote>
+<ul>
+<li>如果是变化的内容，比如电商网页上的商品广告（基本上直观理解的图片）都是img标签，还有头像等，他们都是外链到数据库的，可能发生改变：<br><img src="http://7xr868.com1.z0.glb.clouddn.com/task9img.png" alt="img1"><br><img src="http://7xr868.com1.z0.glb.clouddn.com/task9img2.png" alt="img2"></li>
+</ul>
+</blockquote>
+<h4 id="3-title-和-alt属性分别有什么作用"><a href="#3-title-和-alt属性分别有什么作用" class="headerlink" title="3. title 和 alt属性分别有什么作用?"></a><strong>3. title 和 alt属性分别有什么作用?</strong></h4><ul>
+<li><code>alt属性</code>是在你的图片因为某种原因不能加载时在页面显示的提示信息(临时代替图片的作用)，它会直接输出在原本加载图片的地方；</li>
+<li><code>title属性</code>是在你鼠标悬停在该图片上时显示一个小提示，鼠标离开就没有了，HTML的绝大多数标签都支持<code>title属性</code>，<code>title属性</code>就是专门做提示信息的，比如：<img src="http://7xr868.com1.z0.glb.clouddn.com/task9title.png" alt="title"></li>
+</ul>
+<h4 id="4-background-url-abc-png-0-0-no-repeat-这句话是什么意思"><a href="#4-background-url-abc-png-0-0-no-repeat-这句话是什么意思" class="headerlink" title="4. background: url(abc.png) 0 0 no-repeat;这句话是什么意思"></a><strong>4. <code>background: url(abc.png) 0 0 no-repeat;</code>这句话是什么意思</strong></h4><blockquote>
+<p>设置背景图片为<code>abc.png</code>,要显示位置是水平0，垂直0，重复方式是不重复</p>
+</blockquote>
+<h4 id="5-background-size有什么作用-兼容性如何-常用的值是"><a href="#5-background-size有什么作用-兼容性如何-常用的值是" class="headerlink" title="5. background-size有什么作用? 兼容性如何? 常用的值是?"></a><strong>5. background-size有什么作用? 兼容性如何? 常用的值是?</strong></h4><ul>
+<li><code>background-size</code>可以设置css背景图片的大小，以长度值和百分比显示；也可以根据背景原点位置<code>background-origin</code>设置图片的覆盖范围。</li>
+<li><p>在<a href="http://caniuse.com/#search=background-size" target="_blank" rel="external">Caniuse</a>上查到兼容性为：</p>
+<ul>
+<li><img src="http://7xr868.com1.z0.glb.clouddn.com/task9background-size%E5%85%BC%E5%AE%B9%E6%80%A7.png" alt="background-size兼容性"></li>
+<li>让<code>IE6,7,8</code>兼容<code>background-size</code>的方法：使用IE的滤镜<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">.background &#123;</span><br><span class="line">    background-image:url('http://7xr868.com1.z0.glb.clouddn.com/task6inline-block%E6%94%AF%E6%8C%81.png');</span><br><span class="line">    background-size: cover;</span><br><span class="line">    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(</span><br><span class="line">    src='http://7xr868.com1.z0.glb.clouddn.com/task6inline-block%E6%94%AF%E6%8C%81.png',</span><br><span class="line">    sizingMethod='scale');</span><br><span class="line">&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>常用的值:</p>
+<ul>
+<li><code>auto</code>：默认值，不改变背景图片的原始高度和宽度；</li>
+<li><code>length</code>：第一个值为设置图片宽度，第二个值为图片的高度；但是不管是用什么值，都不能为负值。假如只给定一个值，那么第二个自动的为 <code>auto</code>；</li>
+<li><code>percentage</code>：以父元素的百分比来设置背景图像的宽度和高度。设置一个值，同上；</li>
+<li><code>cover</code>： 将图片等比例缩放来填满整个容器，加入容器不足以包含背景图片，则一些部分不会显示在容器中；</li>
+<li><code>contain</code>：按比例调整背景图片，使得其图片宽高比自适应整个元素容器的宽高比，因此假如指定的图片尺寸过大，而容器的整体宽高不能恰好包含背景图片的话，那么其容器某些区域可能会有空白。</li>
+</ul>
+</li>
+</ul>
+<h4 id="6-如何让一个div水平居中？如何让图片水平居中"><a href="#6-如何让一个div水平居中？如何让图片水平居中" class="headerlink" title="6. 如何让一个div水平居中？如何让图片水平居中?"></a><strong>6. 如何让一个div水平居中？如何让图片水平居中?</strong></h4><ol>
+<li>设置div的左右<code>margin-left</code>,<code>margin-right</code>值为<code>auto</code> &gt;&gt;<a href="http://js.jirengu.com/laziqaqaki/3/edit" target="_blank" rel="external">代码演示</a>；<br>2.<ul>
+<li>给图片加一个父容器，设置容器样式<code>text-align:center</code>&gt;&gt;<a href="http://js.jirengu.com/yudajuveye/2/edit" target="_blank" rel="external">代码演示</a>；</li>
+<li>将img用<code>display:block</code>变为块级元素，然后设置<code>左右margin</code>值为<code>auto</code>，类似于1中设置<code>div</code>水平居中&gt;&gt;<a href="http://js.jirengu.com/vuyuliseni/1/edit" target="_blank" rel="external">代码演示</a>；</li>
+</ul>
+</li>
+</ol>
+<h4 id="7-如何设置元素透明-兼容性？"><a href="#7-如何设置元素透明-兼容性？" class="headerlink" title="7. 如何设置元素透明? 兼容性？"></a><strong>7. 如何设置元素透明? 兼容性？</strong></h4><blockquote>
+<ol>
+<li><code>opacity：number</code>属性(CSS3属性)指定了一个元素的透明度,默认<code>number</code>是1（不透明），0是完全透明，<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/opacity" target="_blank" rel="external">（更多）</a>。兼容性：<img src="http://7xr868.com1.z0.glb.clouddn.com/task9opacity%E5%85%BC%E5%AE%B9%E6%80%A7.png" alt="opacity兼容性"></li>
+<li><code>filter:alpha(opacity=number);</code>是专门给IE设定的属性，<code>number</code>取值的范围在<code>0-100</code>之间；兼容性：（一般用在IE8及以下）<img src="http://7xr868.com1.z0.glb.clouddn.com/task9filter%E5%85%BC%E5%AE%B9%E6%80%A7.png" alt="filter兼容性"></li>
+<li>一段常用代码设置元素透明度：</li>
+</ol>
+</blockquote>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">.transparent_class &#123;</span><br><span class="line">      filter:alpha(opacity=50);</span><br><span class="line">      -moz-opacity:0.5;/*-moz-opacity是为了兼容一些老版本的Mozilla浏览器*/</span><br><span class="line">      -khtml-opacity: 0.5;/*-khtml-opacity是为了兼容一些老版本的Safari浏览器*/</span><br><span class="line">      opacity: 0.5;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>4.<a href="http://www.jb51.net/css/24765.html" target="_blank" rel="external">更详细的实现方案</a></p>
+</blockquote>
+<h4 id="8-opacity-和-rgba都能设置透明，有什么区别"><a href="#8-opacity-和-rgba都能设置透明，有什么区别" class="headerlink" title="8. opacity 和 rgba都能设置透明，有什么区别?"></a><strong>8. opacity 和 rgba都能设置透明，有什么区别?</strong></h4><blockquote>
+<p><code>opacity</code>作用于<code>元素</code>，以及元素内的所有<code>内容</code>的透明度，而<code>rgba()</code>只作用于元素的<code>颜色</code>或其<code>背景色</code>。</p>
+</blockquote>
+<hr>
+<h2 id="【代码】"><a href="#【代码】" class="headerlink" title="-【代码】"></a>-【代码】</h2><blockquote>
+<h3 id="task-9-1"><a href="#task-9-1" class="headerlink" title="task-9-1"></a><a href="https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task9/task-9-1.html" target="_blank" rel="external">task-9-1</a></h3><h3 id="task-9-2"><a href="#task-9-2" class="headerlink" title="task-9-2"></a><a href="https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task9/task-9-2.html" target="_blank" rel="external">task-9-2</a></h3><h3 id="task-9-3"><a href="#task-9-3" class="headerlink" title="task-9-3"></a><a href="https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task9/task-9-3.html" target="_blank" rel="external">task-9-3</a></h3></blockquote>
 
           
         
@@ -1106,7 +1363,7 @@
 
   
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -1147,7 +1404,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">10</span>
+              <span class="site-state-item-count">16</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -1164,7 +1421,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-count">8</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
