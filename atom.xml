@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://licao404.com/"/>
-  <updated>2016-03-30T02:49:12.955Z</updated>
+  <updated>2016-03-30T04:16:34.162Z</updated>
   <id>http://licao404.com/</id>
   
   <author>
@@ -16,11 +16,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>闭包</title>
-    <link href="http://licao404.com/2016/03/28/%E9%97%AD%E5%8C%85/"/>
-    <id>http://licao404.com/2016/03/28/闭包/</id>
+    <title>闭包、延时器</title>
+    <link href="http://licao404.com/2016/03/28/%E9%97%AD%E5%8C%85+%E5%BB%B6%E6%97%B6%E5%99%A8/"/>
+    <id>http://licao404.com/2016/03/28/闭包+延时器/</id>
     <published>2016-03-28T15:33:27.000Z</published>
-    <updated>2016-03-30T02:49:12.955Z</updated>
+    <updated>2016-03-30T04:16:34.162Z</updated>
     
     <content type="html">&lt;h2 id=&quot;【知识点】&quot;&gt;&lt;a href=&quot;#【知识点】&quot; class=&quot;headerlink&quot; title=&quot;-【知识点】&quot;&gt;&lt;/a&gt;-【知识点】&lt;/h2&gt;&lt;h3 id=&quot;1-F：什么是闭包-有什么作用？&quot;&gt;&lt;a href=&quot;#1-F：什么是闭包-有什么作用？&quot; class=&quot;headerlink&quot; title=&quot;1. -F：什么是闭包? 有什么作用？&quot;&gt;&lt;/a&gt;&lt;strong&gt;1. -F：什么是闭包? 有什么作用？&lt;/strong&gt;&lt;/h3&gt;&lt;h3 id=&quot;Q：&quot;&gt;&lt;a href=&quot;#Q：&quot; class=&quot;headerlink&quot; title=&quot;-Q：&quot;&gt;&lt;/a&gt;&lt;strong&gt;-Q：&lt;/strong&gt;&lt;/h3&gt;&lt;h4 id=&quot;闭包概念：&quot;&gt;&lt;a href=&quot;#闭包概念：&quot; class=&quot;headerlink&quot; title=&quot;闭包概念：&quot;&gt;&lt;/a&gt;闭包概念：&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;简而言之，闭包就是有权访问另一个函数内部参数和变量的&lt;code&gt;函数&lt;/code&gt;;&lt;/li&gt;
@@ -142,18 +142,18 @@
       <category term="那些鸡汤" scheme="http://licao404.com/categories/%E9%9A%8F%E6%83%B3/%E9%82%A3%E4%BA%9B%E9%B8%A1%E6%B1%A4/"/>
     
     
-      <category term="杂谈" scheme="http://licao404.com/tags/%E6%9D%82%E8%B0%88/"/>
-    
       <category term="心语" scheme="http://licao404.com/tags/%E5%BF%83%E8%AF%AD/"/>
+    
+      <category term="杂谈" scheme="http://licao404.com/tags/%E6%9D%82%E8%B0%88/"/>
     
   </entry>
   
   <entry>
-    <title>时间对象/引用类型</title>
-    <link href="http://licao404.com/2016/03/26/%E6%97%B6%E9%97%B4%E5%AF%B9%E8%B1%A1-%E5%BC%95%E7%94%A8%E7%B1%BB%E5%9E%8B/"/>
-    <id>http://licao404.com/2016/03/26/时间对象-引用类型/</id>
+    <title>时间类型/引用类型深拷贝</title>
+    <link href="http://licao404.com/2016/03/26/Date%E7%B1%BB%E5%9E%8B+%E5%BC%95%E7%94%A8%E7%B1%BB%E5%9E%8B%E6%B7%B1%E6%8B%B7%E8%B4%9D/"/>
+    <id>http://licao404.com/2016/03/26/Date类型+引用类型深拷贝/</id>
     <published>2016-03-26T12:05:19.000Z</published>
-    <updated>2016-03-30T02:48:58.845Z</updated>
+    <updated>2016-03-30T04:10:49.582Z</updated>
     
     <content type="html">&lt;h1 id=&quot;【知识点】&quot;&gt;&lt;a href=&quot;#【知识点】&quot; class=&quot;headerlink&quot; title=&quot;-【知识点】&quot;&gt;&lt;/a&gt;-【知识点】&lt;/h1&gt;&lt;h3 id=&quot;1-F：基础类型有哪些？复杂类型有哪些？有什么特征？&quot;&gt;&lt;a href=&quot;#1-F：基础类型有哪些？复杂类型有哪些？有什么特征？&quot; class=&quot;headerlink&quot; title=&quot;1. -F：基础类型有哪些？复杂类型有哪些？有什么特征？&quot;&gt;&lt;/a&gt;&lt;strong&gt;1. -F：基础类型有哪些？复杂类型有哪些？有什么特征？&lt;/strong&gt;&lt;/h3&gt;&lt;h3 id=&quot;Q：&quot;&gt;&lt;a href=&quot;#Q：&quot; class=&quot;headerlink&quot; title=&quot;-Q：&quot;&gt;&lt;/a&gt;&lt;strong&gt;-Q：&lt;/strong&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;基础类型：数值、字符串、布尔值、undefined、null；&lt;/li&gt;
@@ -225,9 +225,9 @@
       <category term="随想" scheme="http://licao404.com/categories/%E9%9A%8F%E6%83%B3/"/>
     
     
-      <category term="杂谈" scheme="http://licao404.com/tags/%E6%9D%82%E8%B0%88/"/>
-    
       <category term="心语" scheme="http://licao404.com/tags/%E5%BF%83%E8%AF%AD/"/>
+    
+      <category term="杂谈" scheme="http://licao404.com/tags/%E6%9D%82%E8%B0%88/"/>
     
   </entry>
   
