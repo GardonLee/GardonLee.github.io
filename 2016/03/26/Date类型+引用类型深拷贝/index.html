@@ -718,32 +718,36 @@
               <span class="links-of-author-item">
                 <a href="https://github.com/gardonlee" target="_blank">
                   
-                    <i class="fa fa-github"></i> GitHub
+                    <i class="fa fa-github"></i>
                   
+                  GitHub
                 </a>
               </span>
             
               <span class="links-of-author-item">
                 <a href="http://weibo.com/2806327437/profile?topnav=1&wvr=6" target="_blank">
                   
-                    <i class="fa fa-weibo"></i> Weibo
+                    <i class="fa fa-weibo"></i>
                   
+                  Weibo
                 </a>
               </span>
             
               <span class="links-of-author-item">
                 <a href="https://www.zhihu.com/people/lan-lan-58" target="_blank">
                   
-                    <i class="fa fa-globe"></i> Zhihu
+                    <i class="fa fa-globe"></i>
                   
+                  Zhihu
                 </a>
               </span>
             
               <span class="links-of-author-item">
                 <a href="Mailto:15720600373@163.com" target="_blank">
                   
-                    <i class="fa fa-envelope-o"></i> Email
+                    <i class="fa fa-envelope-o"></i>
                   
+                  Email
                 </a>
               </span>
             
@@ -775,9 +779,6 @@
 
       
         <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc-indicator-top post-toc-indicator">
-            <i class="fa fa-angle-double-up"></i>
-          </div>
           <div class="post-toc">
             
               
@@ -785,9 +786,6 @@
             
               <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#【知识点】"><span class="nav-number">1.</span> <span class="nav-text">-【知识点】</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-F：基础类型有哪些？复杂类型有哪些？有什么特征？"><span class="nav-number">1.0.1.</span> <span class="nav-text">1. -F：基础类型有哪些？复杂类型有哪些？有什么特征？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Q："><span class="nav-number">1.0.2.</span> <span class="nav-text">-Q：</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#【练习】"><span class="nav-number">2.</span> <span class="nav-text">-【练习】</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-写一个函数getIntv，获取从当前时间到指定日期的间隔时间"><span class="nav-number">2.0.1.</span> <span class="nav-text">1.写一个函数getIntv，获取从当前时间到指定日期的间隔时间</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-把数字日期改成中文日期"><span class="nav-number">2.0.2.</span> <span class="nav-text">2.把数字日期改成中文日期</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-写一个函数获取n天前的日期"><span class="nav-number">2.0.3.</span> <span class="nav-text">3.写一个函数获取n天前的日期</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-完善如下代码，如："><span class="nav-number">2.0.4.</span> <span class="nav-text">4.完善如下代码，如：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-楼梯有200级，每次走1级或是2级，从底走到顶一共有多少种走法？用代码（递归）实现"><span class="nav-number">2.0.5.</span> <span class="nav-text">5.楼梯有200级，每次走1级或是2级，从底走到顶一共有多少种走法？用代码（递归）实现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-写一个json对象深拷贝的方法，json对象可以多层嵌套，值可以是字符串、数字、布尔、json对象中的任意项"><span class="nav-number">2.0.6.</span> <span class="nav-text">6.写一个json对象深拷贝的方法，json对象可以多层嵌套，值可以是字符串、数字、布尔、json对象中的任意项</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-写一个数组深拷贝的方法，数组里的值可以是字符串、数字、布尔、数组中的任意项目"><span class="nav-number">2.0.7.</span> <span class="nav-text">7.写一个数组深拷贝的方法，数组里的值可以是字符串、数字、布尔、数组中的任意项目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-写一个深拷贝的方法，拷贝对象以及内部嵌套的值可以是字符串、数字、布尔、数组、json对象中的任意项"><span class="nav-number">2.0.8.</span> <span class="nav-text">8.写一个深拷贝的方法，拷贝对象以及内部嵌套的值可以是字符串、数字、布尔、数组、json对象中的任意项</span></a></li></ol></li></ol></li></ol></div>
             
-          </div>
-          <div class="post-toc-indicator-bottom post-toc-indicator">
-            <i class="fa fa-angle-double-down"></i>
           </div>
         </section>
       
@@ -898,165 +896,9 @@
 
 
   
-  
-<script type="text/javascript" src="/js/src/scrollspy.js?v=0.5.0"></script>
-
-<script type="text/javascript" id="sidebar.toc.highlight">
-  $(document).ready(function () {
-    var tocSelector = '.post-toc';
-    var $tocSelector = $(tocSelector);
-    var activeCurrentSelector = '.active-current';
-
-    $tocSelector
-      .on('activate.bs.scrollspy', function () {
-        var $currentActiveElement = $(tocSelector + ' .active').last();
-
-        removeCurrentActiveClass();
-        $currentActiveElement.addClass('active-current');
-
-        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
-      })
-      .on('clear.bs.scrollspy', function () {
-        removeCurrentActiveClass();
-      });
-
-    function removeCurrentActiveClass () {
-      $(tocSelector + ' ' + activeCurrentSelector)
-        .removeClass(activeCurrentSelector.substring(1));
-    }
-
-    function processTOC () {
-      getTOCMaxHeight();
-      toggleTOCOverflowIndicators();
-    }
-
-    function getTOCMaxHeight () {
-      var height = $('.sidebar').height() -
-                   $tocSelector.position().top -
-                   $('.post-toc-indicator-bottom').height();
-
-      $tocSelector.css('height', height);
-
-      return height;
-    }
-
-    function toggleTOCOverflowIndicators () {
-      tocOverflowIndicator(
-        '.post-toc-indicator-top',
-        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
-      );
-
-      tocOverflowIndicator(
-        '.post-toc-indicator-bottom',
-        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
-      )
-    }
-
-    $(document).on('sidebar.motion.complete', function () {
-      processTOC();
-    });
-
-    $('body').scrollspy({ target: tocSelector });
-    $(window).on('resize', function () {
-      if ( $('.sidebar').hasClass('sidebar-active') ) {
-        processTOC();
-      }
-    });
-
-    onScroll($tocSelector);
-
-    function onScroll (element) {
-      element.on('mousewheel DOMMouseScroll', function (event) {
-          var oe = event.originalEvent;
-          var delta = oe.wheelDelta || -oe.detail;
-
-          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
-          event.preventDefault();
-
-          toggleTOCOverflowIndicators();
-      });
-    }
-
-    function tocOverflowIndicator (indicator, action) {
-      var $indicator = $(indicator);
-      var opacity = action === 'show' ? 1 : 0;
-      $indicator.velocity ?
-        $indicator.velocity('stop').velocity({
-          opacity: opacity
-        }, { duration: 100 }) :
-        $indicator.stop().animate({
-          opacity: opacity
-        }, 100);
-    }
-
-  });
-</script>
-
-<script type="text/javascript" id="sidebar.nav">
-  $(document).ready(function () {
-    var html = $('html');
-    var TAB_ANIMATE_DURATION = 200;
-    var hasVelocity = $.isFunction(html.velocity);
-
-    $('.sidebar-nav li').on('click', function () {
-      var item = $(this);
-      var activeTabClassName = 'sidebar-nav-active';
-      var activePanelClassName = 'sidebar-panel-active';
-      if (item.hasClass(activeTabClassName)) {
-        return;
-      }
-
-      var currentTarget = $('.' + activePanelClassName);
-      var target = $('.' + item.data('target'));
-
-      hasVelocity ?
-        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
-          target
-            .velocity('stop')
-            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
-            .addClass(activePanelClassName);
-        }) :
-        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
-          currentTarget.hide();
-          target
-            .stop()
-            .css({'opacity': 0, 'display': 'block'})
-            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
-              currentTarget.removeClass(activePanelClassName);
-              target.addClass(activePanelClassName);
-            });
-        });
-
-      item.siblings().removeClass(activeTabClassName);
-      item.addClass(activeTabClassName);
-    });
-
-    $('.post-toc a').on('click', function (e) {
-      e.preventDefault();
-      var targetSelector = NexT.utils.escapeSelector(this.getAttribute('href'));
-      var offset = $(targetSelector).offset().top;
-      hasVelocity ?
-        html.velocity('stop').velocity('scroll', {
-          offset: offset  + 'px',
-          mobileHA: false
-        }) :
-        $('html, body').stop().animate({
-          scrollTop: offset
-        }, 500);
-    });
-
-    // Expand sidebar on post detail page by default, when post has a toc.
-    NexT.motion.middleWares.sidebar = function () {
-      var $tocContent = $('.post-toc-content');
-
-      if (CONFIG.sidebar.display === 'post' || CONFIG.sidebar.display === 'always') {
-        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
-          NexT.utils.displaySidebar();
-        }
-      }
-    };
-  });
-</script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=0.5.0"></script>
+<script type="text/javascript" src="/vendors/jquery-scrollintoview/jquery.scrollintoview.min.js?v=0.5.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=0.5.0"></script>
 
 
 
