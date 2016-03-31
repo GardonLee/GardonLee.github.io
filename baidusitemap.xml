@@ -3,6 +3,52 @@
 
     
   <url>
+    <loc>http://licao404.com/2016/03/31/RegExp%E7%B1%BB%E5%9E%8B/</loc>
+    <lastmod>2016-03-31T02:08:11.205Z</lastmod>
+    <data>
+        <display>
+        <title>RegExp类型</title>
+        <pubTime>2016-03-31T02:02:14.000Z</pubTime>
+        
+        <tag>JavaScript </tag>
+         
+         
+           
+             
+              <breadCrumb title="编程学习" url="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/"/>
+          
+             
+              <breadCrumb title="前端基础" url="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://licao404.com/2016/03/28/%E9%97%AD%E5%8C%85+%E5%BB%B6%E6%97%B6%E5%99%A8/</loc>
+    <lastmod>2016-03-31T01:07:51.067Z</lastmod>
+    <data>
+        <display>
+        <title>闭包/延时器</title>
+        <pubTime>2016-03-28T15:33:27.000Z</pubTime>
+        
+        <tag>JavaScript </tag>
+         
+         
+           
+             
+              <breadCrumb title="编程学习" url="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/"/>
+          
+             
+              <breadCrumb title="前端基础" url="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://licao404.com/2016/02/25/CSS%E9%80%89%E6%8B%A9%E5%99%A8/</loc>
     <lastmod>2016-03-30T05:54:33.269Z</lastmod>
     <data>
@@ -126,29 +172,6 @@
         <pubTime>2016-02-29T05:36:54.000Z</pubTime>
         
         <tag>CSS </tag>
-         
-         
-           
-             
-              <breadCrumb title="编程学习" url="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/"/>
-          
-             
-              <breadCrumb title="前端基础" url="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://licao404.com/2016/03/28/%E9%97%AD%E5%8C%85+%E5%BB%B6%E6%97%B6%E5%99%A8/</loc>
-    <lastmod>2016-03-30T04:16:34.162Z</lastmod>
-    <data>
-        <display>
-        <title>闭包、延时器</title>
-        <pubTime>2016-03-28T15:33:27.000Z</pubTime>
-        
-        <tag>JavaScript </tag>
          
          
            

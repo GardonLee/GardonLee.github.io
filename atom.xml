@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://licao404.com/"/>
-  <updated>2016-03-30T04:16:34.162Z</updated>
+  <updated>2016-03-31T02:08:11.205Z</updated>
   <id>http://licao404.com/</id>
   
   <author>
@@ -16,11 +16,37 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>闭包、延时器</title>
+    <title>RegExp类型</title>
+    <link href="http://licao404.com/2016/03/31/RegExp%E7%B1%BB%E5%9E%8B/"/>
+    <id>http://licao404.com/2016/03/31/RegExp类型/</id>
+    <published>2016-03-31T02:02:14.000Z</published>
+    <updated>2016-03-31T02:08:11.205Z</updated>
+    
+    <content type="html">&lt;blockquote class=&quot;blockquote-center&quot;&gt;ECMAScript通过RegExp来支持正则表达式，正则表达式是一种描述文本内容的模式，有点像字符串的模板。常常用作按照“给定模式”匹配文本的工具&lt;/blockquote&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt;ECMAScript通过RegExp来支持正则表达式，正则表达式是一种描述文本内容的模式，有点像字符串的模板。常常用作按照“给定模式”匹配文本的工具&lt;/blockquote&gt;
+
+    
+    </summary>
+    
+      <category term="编程学习" scheme="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="前端基础" scheme="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/"/>
+    
+    
+      <category term="JavaScript" scheme="http://licao404.com/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>闭包/延时器</title>
     <link href="http://licao404.com/2016/03/28/%E9%97%AD%E5%8C%85+%E5%BB%B6%E6%97%B6%E5%99%A8/"/>
     <id>http://licao404.com/2016/03/28/闭包+延时器/</id>
     <published>2016-03-28T15:33:27.000Z</published>
-    <updated>2016-03-30T04:16:34.162Z</updated>
+    <updated>2016-03-31T01:07:51.067Z</updated>
     
     <content type="html">&lt;h2 id=&quot;【知识点】&quot;&gt;&lt;a href=&quot;#【知识点】&quot; class=&quot;headerlink&quot; title=&quot;-【知识点】&quot;&gt;&lt;/a&gt;-【知识点】&lt;/h2&gt;&lt;h3 id=&quot;1-F：什么是闭包-有什么作用？&quot;&gt;&lt;a href=&quot;#1-F：什么是闭包-有什么作用？&quot; class=&quot;headerlink&quot; title=&quot;1. -F：什么是闭包? 有什么作用？&quot;&gt;&lt;/a&gt;&lt;strong&gt;1. -F：什么是闭包? 有什么作用？&lt;/strong&gt;&lt;/h3&gt;&lt;h3 id=&quot;Q：&quot;&gt;&lt;a href=&quot;#Q：&quot; class=&quot;headerlink&quot; title=&quot;-Q：&quot;&gt;&lt;/a&gt;&lt;strong&gt;-Q：&lt;/strong&gt;&lt;/h3&gt;&lt;h4 id=&quot;闭包概念：&quot;&gt;&lt;a href=&quot;#闭包概念：&quot; class=&quot;headerlink&quot; title=&quot;闭包概念：&quot;&gt;&lt;/a&gt;闭包概念：&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;简而言之，闭包就是有权访问另一个函数内部参数和变量的&lt;code&gt;函数&lt;/code&gt;;&lt;/li&gt;
