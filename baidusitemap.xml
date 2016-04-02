@@ -3,6 +3,29 @@
 
     
   <url>
+    <loc>http://licao404.com/2016/03/31/RegExp%E7%B1%BB%E5%9E%8B/</loc>
+    <lastmod>2016-04-02T01:36:02.018Z</lastmod>
+    <data>
+        <display>
+        <title>RegExp类型</title>
+        <pubTime>2016-03-31T02:02:14.000Z</pubTime>
+        
+        <tag>JavaScript </tag>
+         
+         
+           
+             
+              <breadCrumb title="编程学习" url="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/"/>
+          
+             
+              <breadCrumb title="前端基础" url="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://licao404.com/2016/03/16/JavaScript%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</loc>
     <lastmod>2016-04-01T10:36:16.318Z</lastmod>
     <data>
@@ -126,29 +149,6 @@
         <display>
         <title>闭包/延时器</title>
         <pubTime>2016-03-28T15:33:27.000Z</pubTime>
-        
-        <tag>JavaScript </tag>
-         
-         
-           
-             
-              <breadCrumb title="编程学习" url="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/"/>
-          
-             
-              <breadCrumb title="前端基础" url="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://licao404.com/2016/03/31/RegExp%E7%B1%BB%E5%9E%8B/</loc>
-    <lastmod>2016-04-01T09:14:28.044Z</lastmod>
-    <data>
-        <display>
-        <title>RegExp类型</title>
-        <pubTime>2016-03-31T02:02:14.000Z</pubTime>
         
         <tag>JavaScript </tag>
          
