@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://licao404.com/"/>
-  <updated>2016-04-02T14:19:20.107Z</updated>
+  <updated>2016-04-02T14:29:48.927Z</updated>
   <id>http://licao404.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://licao404.com/2016/03/31/RegExp%E7%B1%BB%E5%9E%8B/"/>
     <id>http://licao404.com/2016/03/31/RegExp类型/</id>
     <published>2016-03-31T02:02:14.000Z</published>
-    <updated>2016-04-02T14:19:20.107Z</updated>
+    <updated>2016-04-02T14:29:48.927Z</updated>
     
     <content type="html">&lt;blockquote class=&quot;blockquote-center&quot;&gt;ECMAScript通过RegExp来支持正则表达式，正则表达式是一种描述文本内容（字符串结构）的模式，有点像字符串的模板。常常用作按照“给定模式”匹配文本的工具&lt;/blockquote&gt;
 
