@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://licao404.com/"/>
-  <updated>2016-04-03T05:36:44.867Z</updated>
+  <updated>2016-04-03T05:39:26.655Z</updated>
   <id>http://licao404.com/</id>
   
   <author>
@@ -20,14 +20,14 @@
     <link href="http://licao404.com/2016/04/03/DOM-%E4%BA%8B%E4%BB%B6/"/>
     <id>http://licao404.com/2016/04/03/DOM-事件/</id>
     <published>2016-04-03T05:13:41.000Z</published>
-    <updated>2016-04-03T05:36:44.867Z</updated>
+    <updated>2016-04-03T05:39:26.655Z</updated>
     
-    <content type="html">&lt;blockquote class=&quot;blockquote-center&quot;&gt;DOM（文档对象模型）是针对HTML、XML和SVG文档的API（编程接口）。DOM将前述的结构化文档解析成一个层次化的节点树（DOM Tree）。所有的节点和树状结构都有规范的API，这样我们就可以通过编程语言操作（增删改查）这些文档。严格地说，DOM不属于JavaScript，但是操作DOM是JavaScript最常见的任务，而JavaScript也是最常用于DOM操作的语言。所以，DOM往往放在JavaScript里面介绍。下文是利用JavaScript对DOM标准的实现。&lt;/blockquote&gt;
+    <content type="html">&lt;p&gt;&lt;blockquote class=&quot;blockquote-center&quot;&gt;DOM（文档对象模型）是针对HTML、XML和SVG文档的API（编程接口）。DOM将前述的结构化文档解析成一个层次化的节点树（DOM Tree）。所有的节点和树状结构都有规范的API，这样我们就可以通过编程语言操作（增删改查）这些文档。严格地说，DOM不属于JavaScript，但是操作DOM是JavaScript最常见的任务，而JavaScript也是最常用于DOM操作的语言。所以，DOM往往放在JavaScript里面介绍。下文是利用JavaScript对DOM标准的实现。&lt;/blockquote&gt;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 </content>
     
     <summary type="html">
     
-      &lt;blockquote class=&quot;blockquote-center&quot;&gt;DOM（文档对象模型）是针对HTML、XML和SVG文档的API（编程接口）。DOM将前述的结构化文档解析成一个层次化的节点树（DOM Tree）。所有的节点和树状结构都有规范的API，这样我们就可以通过
+      &lt;p&gt;&lt;blockquote class = &quot;blockquote-center&quot;&gt;DOM（文档对象模型）是针对HTML、XML和SVG文档的API（编程接口）。DOM将前述的结构化文档解析成一个层次化的节点树（DOM Tree）。所有的节点和树状结构都有规范的API，这样我们就可以通过编程语言操作（增删改查）这些文档。严格地说，DOM不属于JavaScript，但是操作DOM是JavaScript最常见的任务，而JavaScript也是最常用于DOM操作的语言。所以，DOM往往放在JavaScript里面介绍。下文是利用JavaScript对DOM标准的实现。&lt;/blockquote&gt;&lt;br&gt;
     
     </summary>
     
