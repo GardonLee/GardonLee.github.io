@@ -1,16 +1,16 @@
 ## 我的个人博客 — [蓝岚爱肉肉](http://licao404.com/)
 ### [licao404.com](http://licao404.com/)
----
 
->- 域名：
+
+- 域名：
  - [licao404.com](http://licao404.com/)
  - [licao404.coding.io](http://licao404.coding.io/)
 
 
->- 托管在 `GitHub` 和 `Coding` 上，国内访客建议优先访问[licao404.coding.io](http://licao404.coding.io/)，速度更快！
+- 托管在 `GitHub` 和 `Coding` 上，国内访客建议优先访问[licao404.coding.io](http://licao404.coding.io/)，速度更快！
 
 
->- 使用快速、简洁且高效的博客框架[Hexo](https://hexo.io/zh-cn/)搭建，感谢他的作者——来自台湾的[Tommy Chen](https://github.com/tommy351)，可以造访这位大神的[博客](https://zespia.tw/)；
+- 使用快速、简洁且高效的博客框架[Hexo](https://hexo.io/zh-cn/)搭建，感谢他的作者——来自台湾的[Tommy Chen](https://github.com/tommy351)，可以造访这位大神的[博客](https://zespia.tw/)；
 
 
->- 使用简洁素雅的[NexT](http://theme-next.iissnan.com/)主题进行美化，具体可参见[GitHub](https://github.com/iissnan/hexo-theme-next)上的项目；
+- 使用简洁素雅的[NexT](http://theme-next.iissnan.com/)主题进行美化，具体可参见[GitHub](https://github.com/iissnan/hexo-theme-next)上的项目；
