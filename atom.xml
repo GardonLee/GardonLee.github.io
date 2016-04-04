@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://licao404.com/"/>
-  <updated>2016-04-03T16:59:16.693Z</updated>
+  <updated>2016-04-03T17:04:21.897Z</updated>
   <id>http://licao404.com/</id>
   
   <author>
@@ -20,9 +20,12 @@
     <link href="http://licao404.com/2016/04/04/%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%85%A8CSS%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99%E5%A4%A7%E5%85%A8/"/>
     <id>http://licao404.com/2016/04/04/史上最全CSS学习资料大全/</id>
     <published>2016-04-03T16:15:45.000Z</published>
-    <updated>2016-04-03T16:59:16.693Z</updated>
+    <updated>2016-04-03T17:04:21.897Z</updated>
     
-    <content type="html">&lt;h2 id=&quot;基础篇&quot;&gt;&lt;a href=&quot;#基础篇&quot; class=&quot;headerlink&quot; title=&quot;基础篇&quot;&gt;&lt;/a&gt;基础篇&lt;/h2&gt;&lt;ul&gt;
+    <content type="html">&lt;blockquote&gt;
+&lt;p&gt;本文转载自慕课网，原文&lt;a href=&quot;http://www.imooc.com/article/3450&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;戳此&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;基础篇&quot;&gt;&lt;a href=&quot;#基础篇&quot; class=&quot;headerlink&quot; title=&quot;基础篇&quot;&gt;&lt;/a&gt;基础篇&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://www.imooc.com/article/1437&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;CSS 最核心的几个概念&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://www.imooc.com/article/1186&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;CSS 简写指南&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://www.imooc.com/article/2001&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;CSS样式基础&lt;/a&gt;&lt;/li&gt;
@@ -36,6 +39,7 @@
 &lt;li&gt;&lt;a href=&quot;http://www.imooc.com/article/2031&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;CSS元素分类&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://www.imooc.com/article/2799&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;浅谈CSS伪类分类&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;h2 id=&quot;进阶篇&quot;&gt;&lt;a href=&quot;#进阶篇&quot; class=&quot;headerlink&quot; title=&quot;进阶篇&quot;&gt;&lt;/a&gt;进阶篇&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://www.imooc.com/article/2442&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;CSS 专业技巧收集&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://www.imooc.com/article/1845&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;CSS小技巧&lt;/a&gt;&lt;/li&gt;
@@ -73,12 +77,28 @@
 &lt;li&gt;&lt;a href=&quot;http://www.imooc.com/learn/12&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;形形色色的下拉菜单&lt;/a&gt;:&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://www.imooc.com/learn/6&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;导航条菜单的制作&lt;/a&gt;:&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&quot;gt-本文转载自慕课网，原文戳此&quot;&gt;&lt;a href=&quot;#gt-本文转载自慕课网，原文戳此&quot; class=&quot;headerlink&quot; title=&quot;&amp;gt;本文转载自慕课网，原文戳此&quot;&gt;&lt;/a&gt;&amp;gt;本文转载自慕课网，原文&lt;a href=&quot;http://www.imooc.com/article/3450&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;戳此&lt;/a&gt;&lt;/h2&gt;</content>
+&lt;hr&gt;
+</content>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;基础篇&quot;&gt;&lt;a href=&quot;#基础篇&quot; class=&quot;headerlink&quot; title=&quot;基础篇&quot;&gt;&lt;/a&gt;基础篇&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.imooc.com/article/1437&quot; target=&quot;_blank&quot; 
+      &lt;blockquote&gt;
+&lt;p&gt;本文转载自慕课网，原文&lt;a href=&quot;http://www.imooc.com/article/3450&quot;&gt;戳此&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;基础篇&quot;&gt;&lt;a href=&quot;#基础篇&quot; class=&quot;headerlink&quot; title=&quot;基础篇&quot;&gt;&lt;/a&gt;基础篇&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.imooc.com/article/1437&quot;&gt;CSS 最核心的几个概念&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.imooc.com/article/1186&quot;&gt;CSS 简写指南&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.imooc.com/article/2001&quot;&gt;CSS样式基础&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.imooc.com/article/2067&quot;&gt;CSS样式设置&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.imooc.com/article/2058&quot;&gt;CSS布局模型&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.imooc.com/article/2010&quot;&gt;CSS文字排版&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.imooc.com/article/2475&quot;&gt;你不得不知道的CSS 字体那些事儿&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.imooc.com/article/2064&quot;&gt;CSS中的颜色值和长度值&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.imooc.com/article/2004&quot;&gt;CSS选择器分类&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.imooc.com/article/2787&quot;&gt;30个你必须记住的CSS选择符&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.imooc.com/article/2031&quot;&gt;CSS元素分类&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.imooc.com/article/2799&quot;&gt;浅谈CSS伪类分类&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
     
     </summary>
     
