@@ -67,7 +67,7 @@
 <meta property="og:url" content="http://licao404.com/2016/04/03/DOM-事件/index.html">
 <meta property="og:site_name" content="蓝岚爱肉肉">
 <meta property="og:description" content="DOM（文档对象模型）是针对HTML、XML和SVG文档的API（编程接口）。DOM将前述的结构化文档解析成一个层次化的节点树（DOM Tree）。所有的节点和树状结构都有规范的API，这样我们就可以通过编程语言操作（增删改查）这些文档。严格地说，DOM不属于JavaScript，但是操作DOM是JavaScript最常见的任务，而JavaScript也是最常用于DOM操作的语言。所以，DOM往往">
-<meta property="og:updated_time" content="2016-04-04T16:51:44.865Z">
+<meta property="og:updated_time" content="2016-04-04T17:00:44.683Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="DOM,事件">
 <meta name="twitter:description" content="DOM（文档对象模型）是针对HTML、XML和SVG文档的API（编程接口）。DOM将前述的结构化文档解析成一个层次化的节点树（DOM Tree）。所有的节点和树状结构都有规范的API，这样我们就可以通过编程语言操作（增删改查）这些文档。严格地说，DOM不属于JavaScript，但是操作DOM是JavaScript最常见的任务，而JavaScript也是最常用于DOM操作的语言。所以，DOM往往">
@@ -563,10 +563,14 @@
 <li><code>querySelectorAll()</code>：返回匹配指定的<code>CSS选择器</code>的所有节点，返回的是<code>NodeList类型</code>的对象。NodeList对象不是动态集合，所以元素节点的变化无法实时反映在返回结果中。</li>
 </ol>
 <h4 id="4-如何创建一个元素？如何给元素设置属性？"><a href="#4-如何创建一个元素？如何给元素设置属性？" class="headerlink" title="4. 如何创建一个元素？如何给元素设置属性？"></a><strong>4. 如何创建一个元素？如何给元素设置属性？</strong></h4><ul>
-<li>使用<code>createElement()</code>方法来创建一个<code>HTML</code>元素节点，例如创建一个<code>img</code>元素：<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> img = <span class="built_in">document</span>.createElement(<span class="string">'img'</span>);</span><br></pre></td></tr></table></figure>
+<li><p>使用<code>createElement()</code>方法来创建一个<code>HTML</code>元素节点，例如创建一个<code>img</code>元素：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> img = <span class="built_in">document</span>.createElement(<span class="string">'img'</span>);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使用<code>setAttribute()</code>方法来设置元素属性</p>
 </li>
 </ul>
-<h4 id="5-元素的添加、删除？？"><a href="#5-元素的添加、删除？？" class="headerlink" title="5. 元素的添加、删除？？"></a><strong>5. 元素的添加、删除？？</strong></h4><h4 id="6-DOM0-事件和DOM2级在事件监听使用方式上有什么区别？"><a href="#6-DOM0-事件和DOM2级在事件监听使用方式上有什么区别？" class="headerlink" title="6. DOM0 事件和DOM2级在事件监听使用方式上有什么区别？"></a><strong>6. DOM0 事件和DOM2级在事件监听使用方式上有什么区别？</strong></h4><h4 id="7-attachEvent与addEventListener的区别？"><a href="#7-attachEvent与addEventListener的区别？" class="headerlink" title="7. attachEvent与addEventListener的区别？"></a><strong>7. attachEvent与addEventListener的区别？</strong></h4><h4 id="8-解释IE事件冒泡和DOM2事件传播机制？"><a href="#8-解释IE事件冒泡和DOM2事件传播机制？" class="headerlink" title="8. 解释IE事件冒泡和DOM2事件传播机制？"></a><strong>8. 解释IE事件冒泡和DOM2事件传播机制？</strong></h4><h4 id="9-如何阻止事件冒泡？-如何阻止默认事件？"><a href="#9-如何阻止事件冒泡？-如何阻止默认事件？" class="headerlink" title="9. 如何阻止事件冒泡？ 如何阻止默认事件？"></a><strong>9. 如何阻止事件冒泡？ 如何阻止默认事件？</strong></h4>
+<h4 id="5-元素的添加、删除？？"><a href="#5-元素的添加、删除？？" class="headerlink" title="5. 元素的添加、删除？？"></a><strong>5. 元素的添加、删除？？</strong></h4><h4 id="6-DOM0-事件和DOM2级在事件监听使用方式上有什么区别？"><a href="#6-DOM0-事件和DOM2级在事件监听使用方式上有什么区别？" class="headerlink" title="6. DOM0 事件和DOM2级在事件监听使用方式上有什么区别？"></a><strong>6. DOM0 事件和DOM2级在事件监听使用方式上有什么区别？</strong></h4><h4 id="7-attachEvent与addEventListener的区别？"><a href="#7-attachEvent与addEventListener的区别？" class="headerlink" title="7. attachEvent与addEventListener的区别？"></a><strong>7. attachEvent与addEventListener的区别？</strong></h4><h4 id="8-解释IE事件冒泡和DOM2事件传播机制？"><a href="#8-解释IE事件冒泡和DOM2事件传播机制？" class="headerlink" title="8. 解释IE事件冒泡和DOM2事件传播机制？"></a><strong>8. 解释IE事件冒泡和DOM2事件传播机制？</strong></h4><h4 id="9-如何阻止事件冒泡？-如何阻止默认事件？"><a href="#9-如何阻止事件冒泡？-如何阻止默认事件？" class="headerlink" title="9. 如何阻止事件冒泡？ 如何阻止默认事件？"></a><strong>9. 如何阻止事件冒泡？ 如何阻止默认事件？</strong></h4><hr>
+
       
     </div>
 
