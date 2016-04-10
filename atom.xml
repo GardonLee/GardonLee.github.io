@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://licao404.com/"/>
-  <updated>2016-04-10T09:09:16.983Z</updated>
+  <updated>2016-04-10T10:17:52.328Z</updated>
   <id>http://licao404.com/</id>
   
   <author>
@@ -20,15 +20,46 @@
     <link href="http://licao404.com/2016/04/10/%E4%BD%BF%E7%94%A8XAMPP%E6%90%AD%E5%BB%BA%E6%9C%AC%E5%9C%B0Web%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     <id>http://licao404.com/2016/04/10/使用XAMPP搭建本地Web服务器/</id>
     <published>2016-04-10T08:29:58.000Z</published>
-    <updated>2016-04-10T09:09:16.983Z</updated>
+    <updated>2016-04-10T10:17:52.328Z</updated>
     
-    <content type="html">&lt;blockquote class=&quot;blockquote-center&quot;&gt;Web服务器的搭建，例如&lt;a href=&quot;http://baike.baidu.com/link?url=MroN_mSBbcJL21A0lYqZlh5FNT3Hukj2ZfurTNf0gxr904iT7hc7zrVaLUC8UuXLTT8ABpm16ilURuOMOMwma9b2R011L2tqMeugghpPt9W&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Apache&lt;/a&gt;，对初学者来说并不是简单事，如果还想添加PHP、MySQL等，就更难了。如果我们借助一些集成软件包，一切操作都简单了。而本文使用的XAMPP，是一个易于安装且包含 MySQL、PHP 和 Perl 的 Apache 发行版，其他类似软件还有&lt;a href=&quot;http://www.wampserver.com/en/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;wamp&lt;/a&gt;等&lt;/blockquote&gt;
+    <content type="html">&lt;blockquote class=&quot;blockquote-center&quot;&gt;Web服务器的搭建，例如&lt;a href=&quot;http://baike.baidu.com/link?url=MroN_mSBbcJL21A0lYqZlh5FNT3Hukj2ZfurTNf0gxr904iT7hc7zrVaLUC8UuXLTT8ABpm16ilURuOMOMwma9b2R011L2tqMeugghpPt9W&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Apache&lt;/a&gt;，对初学者来说并不是简单事，如果还想添加PHP、MySQL等，就更难了。如果我们借助一些集成软件包，一切操作都简单了。而本文使用的XAMPP，就是这样一个易于安装且包含 MySQL、PHP 和 Perl 的 Apache 发行版，其他类似软件还有&lt;a href=&quot;http://www.wampserver.com/en/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;wamp&lt;/a&gt;等&lt;/blockquote&gt;
 
-&lt;h3 id=&quot;安装及配置&quot;&gt;&lt;a href=&quot;#安装及配置&quot; class=&quot;headerlink&quot; title=&quot;安装及配置&quot;&gt;&lt;/a&gt;安装及配置&lt;/h3&gt;</content>
+&lt;h3 id=&quot;安装及配置&quot;&gt;&lt;a href=&quot;#安装及配置&quot; class=&quot;headerlink&quot; title=&quot;安装及配置&quot;&gt;&lt;/a&gt;安装及配置&lt;/h3&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;XAMPP是全平台的，直接在&lt;a href=&quot;https://www.apachefriends.org/zh_cn/index.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;官网&lt;/a&gt;下载系统对应的版本：&lt;a href=&quot;https://www.apachefriends.org/xampp-files/5.6.19/xampp-win32-5.6.19-0-VC11-installer.exe&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;XAMPP for Windows&lt;/a&gt;  |  &lt;a href=&quot;https://www.apachefriends.org/xampp-files/5.6.19/xampp-linux-x64-5.6.19-0-installer.run&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;XAMPP for Linux&lt;/a&gt;  |  &lt;a href=&quot;https://www.apachefriends.org/xampp-files/5.6.19/xampp-osx-5.6.19-0-installer.dmg&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;XAMPP for OS X&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;安装XAMPP，不要安装到C盘，安装过程就不详细展开，不了解的可自行搜索。建议至少安装Apache、MySQL、PHP、以及phpMyAdmin；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;新建一个文件夹来存放网站代码，比如我在D盘下新建&lt;code&gt;myWeb&lt;/code&gt;文件夹；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;安装完成后，打开安装目录下的&lt;code&gt;apache&lt;/code&gt;文件夹下的&lt;code&gt;conf&lt;/code&gt;文件夹下的&lt;code&gt;httpd.conf&lt;/code&gt;文件（记事本或其他文本编辑器）。修改&lt;br&gt;&lt;code&gt;DocumentRoot&lt;/code&gt;目录（该目录就是网站代码的路径），大概在240行附近，将其改为刚刚新建的文件夹的路径，例如：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;DocumentRoot &amp;quot;D:/myWeb&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;Directory &amp;quot;D:/myWeb&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;在&lt;code&gt;C:\Windows\System32\drivers\etc&lt;/code&gt;目录下修改&lt;code&gt;host&lt;/code&gt;，加入&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;127.0.0.1 www.licao-train.com&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;这一步的目的是让你后面在浏览器输入&lt;code&gt;www.licao-train.com&lt;/code&gt;域名能定位到你的代码目录（这里是&lt;code&gt;myWeb&lt;/code&gt;目录），当然域名可以替换。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;测试&quot;&gt;&lt;a href=&quot;#测试&quot; class=&quot;headerlink&quot; title=&quot;测试&quot;&gt;&lt;/a&gt;测试&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;在存放网站代码文件夹里(这里是myWeb文件夹)新建一个php文件&lt;code&gt;hello.php&lt;/code&gt;，打开文件编写php代码：&lt;/p&gt;
+&lt;figure class=&quot;highlight php&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;&amp;lt;?php&lt;/span&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;hello php&quot;&lt;/span&gt;; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    phpinfo(); &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;保存退出，打开XAMPP，启动Apache和MySQL（start）；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;在浏览器地址栏输入&lt;code&gt;http://localhost/index.php&lt;/code&gt;或者&lt;code&gt;http://www.licao-train.com/hello.php&lt;/code&gt;，看是否可以访问刚刚新建的&lt;code&gt;php&lt;/code&gt;文件：&lt;br&gt;&lt;img src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task23/XAMPP%E9%85%8D%E7%BD%AE%E5%B1%95%E7%A4%BA.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;到这里，你的Apache服务器+PHP基本上已经搭建好了。遇到不可测的问题可以在下面回复，我们一起学习。&lt;/p&gt;
+&lt;hr&gt;
+</content>
     
     <summary type="html">
     
-      &lt;blockquote class=&quot;blockquote-center&quot;&gt;Web服务器的搭建，例如&lt;a href=&quot;http://baike.baidu.com/link?url=MroN_mSBbcJL21A0lYqZlh5FNT3Hukj2ZfurTNf0gxr904iT7
+      &lt;blockquote class = &quot;blockquote-center&quot;&gt;Web服务器的搭建，例如&lt;a href=&quot;http://baike.baidu.com/link?url=MroN_mSBbcJL21A0lYqZlh5FNT3Hukj2ZfurTNf0gxr904iT7hc7zrVaLUC8UuXLTT8ABpm16ilURuOMOMwma9b2R011L2tqMeugghpPt9W&quot;&gt;Apache&lt;/a&gt;，对初学者来说并不是简单事，如果还想添加PHP、MySQL等，就更难了。如果我们借助一些集成软件包，一切操作都简单了。而本文使用的XAMPP，就是这样一个易于安装且包含 MySQL、PHP 和 Perl 的 Apache 发行版，其他类似软件还有&lt;a href=&quot;http://www.wampserver.com/en/&quot;&gt;wamp&lt;/a&gt;等&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;安装及配置&quot;&gt;&lt;a href=&quot;#安装及配置&quot; class=&quot;headerlink&quot; title=&quot;安装及配置&quot;&gt;&lt;/a&gt;安装及配置&lt;/h3&gt;
     
     </summary>
     
