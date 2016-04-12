@@ -106,7 +106,7 @@ AJAX 是什么？有什么作用？AJAX（Asynchronous Javascript And XML）即�
 <meta property="og:description" content="【知识点】
 AJAX 是什么？有什么作用？AJAX（Asynchronous Javascript And XML）即异步的JavaScript和XML，是一种创建交互式网页应用的网页开发技术，所以并不是一门编程语言（小白多少年以为它诸如JavaScript，jQuery一类(@_@;),身份终于得到正名）。
 通过在后台与服务器进行少量的数据交换，AJAX可以使网页实现异步更新，这意味着可以在不">
-<meta property="og:updated_time" content="2016-04-12T05:26:08.267Z">
+<meta property="og:updated_time" content="2016-04-12T07:05:29.700Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="AJAX-从入门到放弃">
 <meta name="twitter:description" content="【知识点】
@@ -572,17 +572,38 @@ AJAX 是什么？有什么作用？AJAX（Asynchronous Javascript And XML）即�
 <p>创建了XMLHttpRequest对象后，我们需要给对象的 <strong>onreadystatechange</strong> 属性绑定事件监听函数，告诉服务器接收到请求然后应该去干什么：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">xmlhttp.onreadystatechange = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="comment">//Something you want to do ...</span></span><br><span class="line">    <span class="built_in">console</span>.log(xmlhttp.status);</span><br><span class="line">    <span class="keyword">if</span> (xmlhttp.readyState == <span class="number">4</span> &amp;&amp; xmlhttp.status == <span class="number">200</span>) &#123;</span><br><span class="line">        <span class="comment">//do something</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(xmlhtt.status === <span class="number">404</span>)&#123;</span><br><span class="line">        <span class="comment">//do something</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
 <p>然后发送请求，有两个重要方法 <strong>open()</strong> 和 <strong>send()</strong> ：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xmlhttp.open(<span class="string">"GET"</span>,<span class="string">"example.php"</span>,<span class="literal">true</span>)</span><br></pre></td></tr></table></figure></p>
 <blockquote>
-<p><code>open()</code>方法内的3个参数：<br><strong>1).</strong> <code>method</code>规定HTTP请求的方式，一般是<code>GET</code>或者<code>POST</code>（按照HTTP规范,该参数要大写;否则,某些浏览器(如Firefox)可能无法处理请求。HTTP有<a href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html" target="_blank" rel="external">9种请求方式</a><br><strong>2).</strong> 请求页面的<code>url</code>，注意不能<strong>跨域请求</strong>,否则会有<code>permission denied</code>错误；<br><strong>3).</strong> <code>asunc</code>:设置为 <strong>true</strong> 异步模式，JavaScript函数将继续执行,而不等待服务器响应.这就是”AJAX”中的”A”；设置为 <strong>false</strong> 同步模式，只能等待服务器响应而无法继续进行其他；</p>
+<p><code>open()</code>方法内的3个参数：<br><strong><code>1).</code></strong> <code>method</code>规定HTTP请求的方式，一般是<code>GET</code>或者<code>POST</code>（按照HTTP规范,该参数要大写;否则,某些浏览器(如Firefox)可能无法处理请求。HTTP有<a href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html" target="_blank" rel="external">9种请求方式</a><br><strong><code>2).</code></strong> 请求页面的<code>url</code>，注意不能<strong>跨域请求</strong>,否则会有<code>permission denied</code>错误；<br><strong><code>3).</code></strong> <code>asunc</code>:设置为 <strong>true</strong> 异步模式，JavaScript函数将继续执行,而不等待服务器响应.这就是”AJAX”中的”A”；设置为 <strong>false</strong> 同步模式，只能等待服务器响应而无法继续进行其他；</p>
 </blockquote>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">xmlhttp.send();</span><br><span class="line">xmlhttp.send(string);</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>如果采用了<code>GET</code>方式，直接<code>send()</code>后进行其他操作;如果采用了<code>POST</code>方式，<code>send()</code>方法的参数可以使任何想发给服务器的数据，规定必须是字符串的形式；</p>
 </blockquote>
-<h4 id="前后端开发联调需要注意哪些事情？后端接口完成前如何-mock-数据？"><a href="#前后端开发联调需要注意哪些事情？后端接口完成前如何-mock-数据？" class="headerlink" title="前后端开发联调需要注意哪些事情？后端接口完成前如何 mock 数据？"></a><strong>前后端开发联调需要注意哪些事情？后端接口完成前如何 mock 数据？</strong></h4><h4 id="点击按钮，使用-AJAX-获取数据，如何在数据到来之前防止重复点击"><a href="#点击按钮，使用-AJAX-获取数据，如何在数据到来之前防止重复点击" class="headerlink" title="点击按钮，使用 AJAX 获取数据，如何在数据到来之前防止重复点击?"></a><strong>点击按钮，使用 AJAX 获取数据，如何在数据到来之前防止重复点击?</strong></h4><hr>
+<p><strong>readyState</strong> ：</p>
+<ul>
+<li>0 ：请求未初始化</li>
+<li>1 ：服务器连接已建立</li>
+<li>2 ：请求已接收</li>
+<li>3 ：请求处理中</li>
+<li>4 ：请求完成，响应就绪</li>
+</ul>
+<p><strong>status</strong> ：</p>
+<ul>
+<li>202 ： “OK”</li>
+<li>404 ： 未找到资源</li>
+</ul>
+<h4 id="前后端开发联调需要注意哪些事情？后端接口完成前如何-mock-数据？"><a href="#前后端开发联调需要注意哪些事情？后端接口完成前如何-mock-数据？" class="headerlink" title="前后端开发联调需要注意哪些事情？后端接口完成前如何 mock 数据？"></a><strong>前后端开发联调需要注意哪些事情？后端接口完成前如何 mock 数据？</strong></h4><p><strong>前后端纯接口开发模式</strong><br><strong><code>1).</code></strong> 在开发之前规定好接口文档，并指明由谁来撰写和维护；<br><strong><code>2).</code></strong> 如果接口的信息改动需要互相确认改动信息；<br><strong><code>3).</code></strong> 确定接口数据传输类型，JSON、XML or JSONP；<br><strong><code>4).</code></strong> 定义数据管理和归属权，是属于前端管理还是后端管理；<br><strong><code>5).</code></strong> 确定数据传输方式，前后端之间是否有中间层；</p>
+<h4 id="点击按钮，使用-AJAX-获取数据，如何在数据到来之前防止重复点击"><a href="#点击按钮，使用-AJAX-获取数据，如何在数据到来之前防止重复点击" class="headerlink" title="点击按钮，使用 AJAX 获取数据，如何在数据到来之前防止重复点击?"></a><strong>点击按钮，使用 AJAX 获取数据，如何在数据到来之前防止重复点击?</strong></h4><hr>
 <blockquote>
 <h3 id="【练习】"><a href="#【练习】" class="headerlink" title="【练习】"></a>【练习】</h3></blockquote>
 <h4 id="封装一个-AJAX-函数，能通过如下方式调用"><a href="#封装一个-AJAX-函数，能通过如下方式调用" class="headerlink" title="封装一个 AJAX 函数，能通过如下方式调用"></a><strong>封装一个 AJAX 函数，能通过如下方式调用</strong></h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">ajax</span>(<span class="params">opts</span>)</span>&#123;</span><br><span class="line">    <span class="comment">// todo ...</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">document</span>.querySelector(<span class="string">'#btn'</span>).addEventListener(<span class="string">'click'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    ajax(&#123;</span><br><span class="line">        url: <span class="string">'getData.php'</span>,   <span class="comment">//接口地址</span></span><br><span class="line">        type: <span class="string">'get'</span>,               <span class="comment">// 类型， post 或者 get,</span></span><br><span class="line">        data: &#123;</span><br><span class="line">            username: <span class="string">'xiaoming'</span>,</span><br><span class="line">            password: <span class="string">'abcd1234'</span></span><br><span class="line">        &#125;,</span><br><span class="line">        success: <span class="function"><span class="keyword">function</span>(<span class="params">ret</span>)</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(ret);       <span class="comment">// &#123;status: 0&#125;</span></span><br><span class="line">        &#125;,</span><br><span class="line">        error: <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">           <span class="built_in">console</span>.log(<span class="string">'出错了'</span>)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 <h4 id="实现如下”加载更多”的功能"><a href="#实现如下”加载更多”的功能" class="headerlink" title="实现如下”加载更多”的功能"></a><strong>实现如下”加载更多”的功能</strong></h4><h4 id="实现注册表单验证功能"><a href="#实现注册表单验证功能" class="headerlink" title="实现注册表单验证功能"></a><strong>实现注册表单验证功能</strong></h4><hr>
+<blockquote>
+<p>参考:</p>
+<ul>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/AJAX/Getting_Started" target="_blank" rel="external">MDN | AJAX入门</a></li>
+</ul>
+</blockquote>
+<hr>
 
       
     </div>
