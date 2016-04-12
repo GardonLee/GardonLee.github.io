@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://licao404.com/"/>
-  <updated>2016-04-12T07:05:29.700Z</updated>
+  <updated>2016-04-12T07:21:44.889Z</updated>
   <id>http://licao404.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://licao404.com/2016/04/12/Ajax%E6%B5%85%E5%85%A5%E9%97%A8/"/>
     <id>http://licao404.com/2016/04/12/Ajax浅入门/</id>
     <published>2016-04-11T16:47:32.000Z</published>
-    <updated>2016-04-12T07:05:29.700Z</updated>
+    <updated>2016-04-12T07:21:44.889Z</updated>
     
     <content type="html">&lt;blockquote&gt;
 &lt;h3 id=&quot;【知识点】&quot;&gt;&lt;a href=&quot;#【知识点】&quot; class=&quot;headerlink&quot; title=&quot;【知识点】&quot;&gt;&lt;/a&gt;【知识点】&lt;/h3&gt;&lt;/blockquote&gt;
@@ -50,7 +50,7 @@
 &lt;li&gt;202 ： “OK”&lt;/li&gt;
 &lt;li&gt;404 ： 未找到资源&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&quot;前后端开发联调需要注意哪些事情？后端接口完成前如何-mock-数据？&quot;&gt;&lt;a href=&quot;#前后端开发联调需要注意哪些事情？后端接口完成前如何-mock-数据？&quot; class=&quot;headerlink&quot; title=&quot;前后端开发联调需要注意哪些事情？后端接口完成前如何 mock 数据？&quot;&gt;&lt;/a&gt;&lt;strong&gt;前后端开发联调需要注意哪些事情？后端接口完成前如何 mock 数据？&lt;/strong&gt;&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;前后端纯接口开发模式&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;&lt;code&gt;1).&lt;/code&gt;&lt;/strong&gt; 在开发之前规定好接口文档，并指明由谁来撰写和维护；&lt;br&gt;&lt;strong&gt;&lt;code&gt;2).&lt;/code&gt;&lt;/strong&gt; 如果接口的信息改动需要互相确认改动信息；&lt;br&gt;&lt;strong&gt;&lt;code&gt;3).&lt;/code&gt;&lt;/strong&gt; 确定接口数据传输类型，JSON、XML or JSONP；&lt;br&gt;&lt;strong&gt;&lt;code&gt;4).&lt;/code&gt;&lt;/strong&gt; 定义数据管理和归属权，是属于前端管理还是后端管理；&lt;br&gt;&lt;strong&gt;&lt;code&gt;5).&lt;/code&gt;&lt;/strong&gt; 确定数据传输方式，前后端之间是否有中间层；&lt;/p&gt;
+&lt;h4 id=&quot;前后端开发联调需要注意哪些事情？后端接口完成前如何-mock-数据？&quot;&gt;&lt;a href=&quot;#前后端开发联调需要注意哪些事情？后端接口完成前如何-mock-数据？&quot; class=&quot;headerlink&quot; title=&quot;前后端开发联调需要注意哪些事情？后端接口完成前如何 mock 数据？&quot;&gt;&lt;/a&gt;&lt;strong&gt;前后端开发联调需要注意哪些事情？后端接口完成前如何 mock 数据？&lt;/strong&gt;&lt;/h4&gt;&lt;p&gt;前后端纯接口开发模式：&lt;br&gt;&lt;strong&gt;&lt;code&gt;1).&lt;/code&gt;&lt;/strong&gt; 在开发之前规定好接口文档，并指明由谁来撰写和维护；&lt;br&gt;&lt;strong&gt;&lt;code&gt;2).&lt;/code&gt;&lt;/strong&gt; 如果接口的信息改动需要互相确认改动信息；&lt;br&gt;&lt;strong&gt;&lt;code&gt;3).&lt;/code&gt;&lt;/strong&gt; 确定接口数据传输类型，JSON、XML or JSONP；&lt;br&gt;&lt;strong&gt;&lt;code&gt;4).&lt;/code&gt;&lt;/strong&gt; 定义数据管理和归属权，是属于前端管理还是后端管理；&lt;br&gt;&lt;strong&gt;&lt;code&gt;5).&lt;/code&gt;&lt;/strong&gt; 确定数据传输方式，前后端之间是否有中间层；&lt;/p&gt;
 &lt;h4 id=&quot;点击按钮，使用-AJAX-获取数据，如何在数据到来之前防止重复点击&quot;&gt;&lt;a href=&quot;#点击按钮，使用-AJAX-获取数据，如何在数据到来之前防止重复点击&quot; class=&quot;headerlink&quot; title=&quot;点击按钮，使用 AJAX 获取数据，如何在数据到来之前防止重复点击?&quot;&gt;&lt;/a&gt;&lt;strong&gt;点击按钮，使用 AJAX 获取数据，如何在数据到来之前防止重复点击?&lt;/strong&gt;&lt;/h4&gt;&lt;hr&gt;
 &lt;blockquote&gt;
 &lt;h3 id=&quot;【练习】&quot;&gt;&lt;a href=&quot;#【练习】&quot; class=&quot;headerlink&quot; title=&quot;【练习】&quot;&gt;&lt;/a&gt;【练习】&lt;/h3&gt;&lt;/blockquote&gt;
