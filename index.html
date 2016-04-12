@@ -473,7 +473,7 @@
               
                 
                 <a class="post-title-link" href="/2016/04/12/Ajax浅入门/" itemprop="url">
-                  Ajax浅入门
+                  AJAX-从入门到放弃
                 </a>
               
             
@@ -539,7 +539,7 @@
 
           
           
-             <span id="/2016/04/12/Ajax浅入门/" class="leancloud_visitors" data-flag-title="Ajax浅入门">
+             <span id="/2016/04/12/Ajax浅入门/" class="leancloud_visitors" data-flag-title="AJAX-从入门到放弃">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -564,7 +564,12 @@
         
           <blockquote>
 <h3 id="【知识点】"><a href="#【知识点】" class="headerlink" title="【知识点】"></a>【知识点】</h3></blockquote>
-<h4 id="Ajax-是什么？有什么作用？"><a href="#Ajax-是什么？有什么作用？" class="headerlink" title="Ajax 是什么？有什么作用？"></a><strong>Ajax 是什么？有什么作用？</strong></h4>
+<h4 id="AJAX-是什么？有什么作用？"><a href="#AJAX-是什么？有什么作用？" class="headerlink" title="AJAX 是什么？有什么作用？"></a><strong>AJAX 是什么？有什么作用？</strong></h4><p>AJAX（<strong>Asynchronous Javascript And XML</strong>）即异步的JavaScript和XML，是一种创建交互式网页应用的网页开发技术，所以并不是一门编程语言（小白多少年以为它诸如JavaScript，jQuery一类<code>(@_@;)</code>,身份终于得到正名）。</p>
+<p>通过在后台与服务器进行少量的数据交换，AJAX可以使网页实现异步更新，这意味着可以在不重新加载（刷新）整个网页的情况下，对网页某部分进行更新。</p>
+<p>AJAX的核心、基础是JavaScript的 <strong>XMLHttpRequest</strong> 对象（<code>IE7+、Firefox、Chrome、Safari and Opera</code>），这个对象为向服务器发送请求和解析服务器响应提供了流畅的<strong>接口</strong>，XmlHttpRequest可以使用JavaScript向服务器提出请求并处理响应，而不阻塞用户。通过以下代码创建一个XMLHttpRequest对象：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> xmlhttp = <span class="keyword">new</span> XMLHttpRequest();</span><br></pre></td></tr></table></figure></p>
+<p>老版本IE浏览器（IE5，6）使用<code>ActiveX</code>对象：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> xmlhttp = <span class="keyword">new</span> ActiveXObject();</span><br></pre></td></tr></table></figure></p>
+<p>尝试写一个浏览器兼容的创建XHR对象的函数：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">creatXHR</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> xmlhttp;</span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">window</span>.XMLHttpRequest) &#123;</span><br><span class="line">        <span class="comment">//IE7+、Firefox、Chrome、Safari and Opera</span></span><br><span class="line">        xmlhttp = <span class="keyword">new</span> XMLHttpRequest();</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="comment">//IE5，6</span></span><br><span class="line">        xmlhttp = <span class="keyword">new</span> ActiveXObject(<span class="string">"Microsoft.XMLHTTP"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> xmlhttp;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>创建了XMLHttpRequest对象后，我们需要给对象的 <strong>onreadystatechange</strong> 属性绑定事件监听函数，告诉服务器接收到请求然后应该去干什么：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">xmlhttp.onreadystatechange = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="comment">//Something you want to do ...</span></span><br><span class="line">    <span class="built_in">console</span>.log(xmlhttp.status);</span><br><span class="line">    <span class="keyword">if</span> (xmlhttp.readyState == <span class="number">4</span> &amp;&amp; xmlhttp.status == <span class="number">200</span>) &#123;</span><br><span class="line">        <span class="comment">//do something</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(xmlhtt.status === <span class="number">404</span>)&#123;</span><br><span class="line">        <span class="comment">//do something</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
           <div class="post-more-link text-center">
             <a class="btn" href="/2016/04/12/Ajax浅入门/#more" rel="contents">
               阅读全文 &raquo;
@@ -1280,7 +1285,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">15</span>
+                <span class="site-state-item-count">16</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
