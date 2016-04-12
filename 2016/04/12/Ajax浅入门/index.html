@@ -106,7 +106,7 @@ AJAX 是什么？有什么作用？AJAX（Asynchronous Javascript And XML）即�
 <meta property="og:description" content="【知识点】
 AJAX 是什么？有什么作用？AJAX（Asynchronous Javascript And XML）即异步的JavaScript和XML，是一种创建交互式网页应用的网页开发技术，所以并不是一门编程语言（小白多少年以为它诸如JavaScript，jQuery一类(@_@;),身份终于得到正名）。
 通过在后台与服务器进行少量的数据交换，AJAX可以使网页实现异步更新，这意味着可以在不">
-<meta property="og:updated_time" content="2016-04-12T07:21:44.889Z">
+<meta property="og:updated_time" content="2016-04-12T13:49:42.872Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="AJAX-从入门到放弃">
 <meta name="twitter:description" content="【知识点】
@@ -566,7 +566,7 @@ AJAX 是什么？有什么作用？AJAX（Asynchronous Javascript And XML）即�
         <blockquote>
 <h3 id="【知识点】"><a href="#【知识点】" class="headerlink" title="【知识点】"></a>【知识点】</h3></blockquote>
 <h4 id="AJAX-是什么？有什么作用？"><a href="#AJAX-是什么？有什么作用？" class="headerlink" title="AJAX 是什么？有什么作用？"></a><strong>AJAX 是什么？有什么作用？</strong></h4><p>AJAX（<strong>Asynchronous Javascript And XML</strong>）即异步的JavaScript和XML，是一种创建交互式网页应用的网页开发技术，所以并不是一门编程语言（小白多少年以为它诸如JavaScript，jQuery一类<code>(@_@;)</code>,身份终于得到正名）。</p>
-<p>通过在后台与服务器进行少量的数据交换，AJAX可以使网页实现异步更新，这意味着可以在不重新加载（刷新）整个网页的情况下，对网页某部分进行更新。<br><a id="more"></a><br>AJAX的核心、基础是JavaScript的 <strong>XMLHttpRequest</strong> 对象（<code>IE7+、Firefox、Chrome、Safari and Opera</code>），这个对象为向服务器发送请求和解析服务器响应提供了流畅的<strong>接口</strong>，XmlHttpRequest可以使用JavaScript向服务器提出请求并处理响应，而不阻塞用户。通过以下代码创建一个XMLHttpRequest对象：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> xmlhttp = <span class="keyword">new</span> XMLHttpRequest();</span><br></pre></td></tr></table></figure></p>
+<p>通过在后台与服务器进行少量的数据交换，AJAX可以使网页实现异步更新，这意味着可以在不重新加载（刷新）整个网页的情况下，对网页某部分进行更新。<br><a id="more"></a><br>AJAX的核心、基础是JavaScript的 <strong>XMLHttpRequest</strong> 对象（<code>IE7+、Firefox、Chrome、Safari and Opera</code>），这个对象为向服务器发送请求和解析服务器响应提供了流畅的接口，XmlHttpRequest可以使用JavaScript向服务器提出请求并处理响应，而不阻塞用户。通过以下代码创建一个XMLHttpRequest对象：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> xmlhttp = <span class="keyword">new</span> XMLHttpRequest();</span><br></pre></td></tr></table></figure></p>
 <p>老版本IE浏览器（IE5，6）使用<code>ActiveX</code>对象：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> xmlhttp = <span class="keyword">new</span> ActiveXObject();</span><br></pre></td></tr></table></figure></p>
 <p>尝试写一个浏览器兼容的创建XHR对象的函数：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">creatXHR</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> xmlhttp;</span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">window</span>.XMLHttpRequest) &#123;</span><br><span class="line">        <span class="comment">//IE7+、Firefox、Chrome、Safari and Opera</span></span><br><span class="line">        xmlhttp = <span class="keyword">new</span> XMLHttpRequest();</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="comment">//IE5，6</span></span><br><span class="line">        xmlhttp = <span class="keyword">new</span> ActiveXObject(<span class="string">"Microsoft.XMLHTTP"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> xmlhttp;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>创建了XMLHttpRequest对象后，我们需要给对象的 <strong>onreadystatechange</strong> 属性绑定事件监听函数，告诉服务器接收到请求然后应该去干什么：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">xmlhttp.onreadystatechange = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="comment">//Something you want to do ...</span></span><br><span class="line">    <span class="built_in">console</span>.log(xmlhttp.status);</span><br><span class="line">    <span class="keyword">if</span> (xmlhttp.readyState == <span class="number">4</span> &amp;&amp; xmlhttp.status == <span class="number">200</span>) &#123;</span><br><span class="line">        <span class="comment">//do something</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(xmlhtt.status === <span class="number">404</span>)&#123;</span><br><span class="line">        <span class="comment">//do something</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
@@ -592,6 +592,7 @@ AJAX 是什么？有什么作用？AJAX（Asynchronous Javascript And XML）即�
 <li>404 ： 未找到资源</li>
 </ul>
 <h4 id="前后端开发联调需要注意哪些事情？后端接口完成前如何-mock-数据？"><a href="#前后端开发联调需要注意哪些事情？后端接口完成前如何-mock-数据？" class="headerlink" title="前后端开发联调需要注意哪些事情？后端接口完成前如何 mock 数据？"></a><strong>前后端开发联调需要注意哪些事情？后端接口完成前如何 mock 数据？</strong></h4><p>前后端纯接口开发模式：<br><strong><code>1).</code></strong> 在开发之前规定好接口文档，并指明由谁来撰写和维护；<br><strong><code>2).</code></strong> 如果接口的信息改动需要互相确认改动信息；<br><strong><code>3).</code></strong> 确定接口数据传输类型，JSON、XML or JSONP；<br><strong><code>4).</code></strong> 定义数据管理和归属权，是属于前端管理还是后端管理；<br><strong><code>5).</code></strong> 确定数据传输方式，前后端之间是否有中间层；</p>
+<p>后端接口完成前如何 mock 数据：<br><strong><code>1).</code></strong> 自己制作模拟数据，但这种方式工作量比较大，而且需要收集分类要求的数据，如果<code>API</code>变更，之前的所有数据也需要及时更新。但这样的好处是能够快速的完成前端任务；<br><strong><code>2).</code></strong> 使用模拟数据生成器：<a href="http://mockjs.com/" target="_blank" rel="external">Mock.js</a>；</p>
 <h4 id="点击按钮，使用-AJAX-获取数据，如何在数据到来之前防止重复点击"><a href="#点击按钮，使用-AJAX-获取数据，如何在数据到来之前防止重复点击" class="headerlink" title="点击按钮，使用 AJAX 获取数据，如何在数据到来之前防止重复点击?"></a><strong>点击按钮，使用 AJAX 获取数据，如何在数据到来之前防止重复点击?</strong></h4><hr>
 <blockquote>
 <h3 id="【练习】"><a href="#【练习】" class="headerlink" title="【练习】"></a>【练习】</h3></blockquote>
@@ -599,10 +600,10 @@ AJAX 是什么？有什么作用？AJAX（Asynchronous Javascript And XML）即�
 <h4 id="实现如下”加载更多”的功能"><a href="#实现如下”加载更多”的功能" class="headerlink" title="实现如下”加载更多”的功能"></a><strong>实现如下”加载更多”的功能</strong></h4><h4 id="实现注册表单验证功能"><a href="#实现注册表单验证功能" class="headerlink" title="实现注册表单验证功能"></a><strong>实现注册表单验证功能</strong></h4><hr>
 <blockquote>
 <p>参考:</p>
+</blockquote>
 <ul>
 <li><a href="https://developer.mozilla.org/zh-CN/docs/AJAX/Getting_Started" target="_blank" rel="external">MDN | AJAX入门</a></li>
 </ul>
-</blockquote>
 <hr>
 
       
