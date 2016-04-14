@@ -1137,9 +1137,11 @@
     <link href="http://licao404.com/2016/03/01/CSS%E6%B5%8F%E8%A7%88%E5%99%A8%E5%85%BC%E5%AE%B9/"/>
     <id>http://licao404.com/2016/03/01/CSS浏览器兼容/</id>
     <published>2016-03-01T05:39:11.000Z</published>
-    <updated>2016-04-02T14:28:32.190Z</updated>
+    <updated>2016-04-14T03:02:35.319Z</updated>
     
-    <content type="html">&lt;h2 id=&quot;【知识点】&quot;&gt;&lt;a href=&quot;#【知识点】&quot; class=&quot;headerlink&quot; title=&quot;-【知识点】&quot;&gt;&lt;/a&gt;-【知识点】&lt;/h2&gt;&lt;h4 id=&quot;1-如何调试-IE-浏览器&quot;&gt;&lt;a href=&quot;#1-如何调试-IE-浏览器&quot; class=&quot;headerlink&quot; title=&quot;1. 如何调试 IE 浏览器?&quot;&gt;&lt;/a&gt;&lt;strong&gt;1. 如何调试 IE 浏览器?&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
+    <content type="html">&lt;blockquote&gt;
+&lt;h3 id=&quot;【知识点】&quot;&gt;&lt;a href=&quot;#【知识点】&quot; class=&quot;headerlink&quot; title=&quot;【知识点】&quot;&gt;&lt;/a&gt;【知识点】&lt;/h3&gt;&lt;/blockquote&gt;
+&lt;h4 id=&quot;1-如何调试-IE-浏览器&quot;&gt;&lt;a href=&quot;#1-如何调试-IE-浏览器&quot; class=&quot;headerlink&quot; title=&quot;1. 如何调试 IE 浏览器?&quot;&gt;&lt;/a&gt;&lt;strong&gt;1. 如何调试 IE 浏览器?&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
 &lt;p&gt;1.通过高版本IE浏览器的开发者工具，可以仿真其之前版本IE浏览器的运行环境，基本上可以临时快速调试各版本IE浏览器：&lt;img src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task13IE%E5%BC%80%E5%8F%91%E8%80%85.png&quot; alt=&quot;IE调试01&quot;&gt;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;2.用虚拟机运行xp等系统，用原生ie6浏览器调试；&lt;br&gt;3.如果有条件，远程到一台有相应版本浏览器的机器（服务器）上，进行调试；&lt;br&gt;4.使用第三方调试工具（&lt;code&gt;IETester&lt;/code&gt;等）模拟各种版本浏览器，不过存在一些未知的问题，毕竟是模拟的；&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h4 id=&quot;2-什么是CSS-hack？在-CSS-和-HTML里如何写-hack？在-CSS-中-ie6、ie7的-hack-方式？&quot;&gt;&lt;a href=&quot;#2-什么是CSS-hack？在-CSS-和-HTML里如何写-hack？在-CSS-中-ie6、ie7的-hack-方式？&quot; class=&quot;headerlink&quot; title=&quot;2. 什么是CSS hack？在 CSS 和 HTML里如何写 hack？在 CSS 中 ie6、ie7的 hack 方式？&quot;&gt;&lt;/a&gt;&lt;strong&gt;2. 什么是&lt;code&gt;CSS hack&lt;/code&gt;？在 CSS 和 HTML里如何写 &lt;code&gt;hack&lt;/code&gt;？在 CSS 中 ie6、ie7的 &lt;code&gt;hack&lt;/code&gt; 方式？&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
@@ -1186,16 +1188,16 @@
 &lt;p&gt;1.&lt;code&gt;reset.css&lt;/code&gt;是全局样式重置，html标签在不同浏览器的默认样式存在差异，&lt;code&gt;reset.css&lt;/code&gt;一开始就将浏览器的默认样式全部暴力覆盖掉；&lt;br&gt;2.&lt;code&gt;normalize.css&lt;/code&gt;保留浏览器的原来样式并且做到每个浏览显示一致；&lt;br&gt;3.&lt;code&gt;Normalize&lt;/code&gt;相对&lt;code&gt;平和&lt;/code&gt;，注重通用的方案，重置掉该重置的样式，保留有用的&lt;code&gt;user agent&lt;/code&gt;样式，同时进行一些 bug 的修复，这点是 reset 所缺乏的,所以通用性和可维护性高；&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
-&lt;h2 id=&quot;【操作】&quot;&gt;&lt;a href=&quot;#【操作】&quot; class=&quot;headerlink&quot; title=&quot;-【操作】&quot;&gt;&lt;/a&gt;-【操作】&lt;/h2&gt;&lt;blockquote&gt;
-&lt;h3 id=&quot;1-安装-VirtualBox-下载-安装虚拟机&quot;&gt;&lt;a href=&quot;#1-安装-VirtualBox-下载-安装虚拟机&quot; class=&quot;headerlink&quot; title=&quot;1.安装 VirtualBox , 下载 安装虚拟机&quot;&gt;&lt;/a&gt;1.安装 VirtualBox , 下载 安装虚拟机&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task13Win_XP.png&quot; alt=&quot;虚拟机&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;2-在-ie-6-7-8中展示-盒模型、inline-block、max-width的区别&quot;&gt;&lt;a href=&quot;#2-在-ie-6-7-8中展示-盒模型、inline-block、max-width的区别&quot; class=&quot;headerlink&quot; title=&quot;2.在 ie 6, 7, 8中展示 盒模型、inline-block、max-width的区别&quot;&gt;&lt;/a&gt;2.在 ie 6, 7, 8中展示 &lt;code&gt;盒模型&lt;/code&gt;、&lt;code&gt;inline-block&lt;/code&gt;、&lt;code&gt;max-width&lt;/code&gt;的区别&lt;/h3&gt;&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;h3 id=&quot;【操作】&quot;&gt;&lt;a href=&quot;#【操作】&quot; class=&quot;headerlink&quot; title=&quot;【操作】&quot;&gt;&lt;/a&gt;【操作】&lt;/h3&gt;&lt;/blockquote&gt;
+&lt;h4 id=&quot;1-安装-VirtualBox-下载-安装虚拟机&quot;&gt;&lt;a href=&quot;#1-安装-VirtualBox-下载-安装虚拟机&quot; class=&quot;headerlink&quot; title=&quot;1.安装 VirtualBox , 下载 安装虚拟机&quot;&gt;&lt;/a&gt;1.安装 VirtualBox , 下载 安装虚拟机&lt;/h4&gt;&lt;p&gt;&lt;img src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task13Win_XP.png&quot; alt=&quot;虚拟机&quot;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h4 id=&quot;2-在-ie-6-7-8中展示-盒模型、inline-block、max-width的区别&quot;&gt;&lt;a href=&quot;#2-在-ie-6-7-8中展示-盒模型、inline-block、max-width的区别&quot; class=&quot;headerlink&quot; title=&quot;2.在 ie 6, 7, 8中展示 盒模型、inline-block、max-width的区别&quot;&gt;&lt;/a&gt;2.在 ie 6, 7, 8中展示 &lt;code&gt;盒模型&lt;/code&gt;、&lt;code&gt;inline-block&lt;/code&gt;、&lt;code&gt;max-width&lt;/code&gt;的区别&lt;/h4&gt;&lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;测试代码：&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;style&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;type&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;text/css&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;css&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  *&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  	&lt;span class=&quot;attribute&quot;&gt;padding&lt;/span&gt;: &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  	&lt;span class=&quot;attribute&quot;&gt;margin&lt;/span&gt;: &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;selector-class&quot;&gt;.box&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;attribute&quot;&gt;display&lt;/span&gt;: inline-block;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;attribute&quot;&gt;height&lt;/span&gt;:&lt;span class=&quot;number&quot;&gt;100px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;attribute&quot;&gt;width&lt;/span&gt;:&lt;span class=&quot;number&quot;&gt;100px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;attribute&quot;&gt;border&lt;/span&gt;:&lt;span class=&quot;number&quot;&gt;20px&lt;/span&gt; solid red;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;attribute&quot;&gt;padding&lt;/span&gt;:&lt;span class=&quot;number&quot;&gt;30px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;attribute&quot;&gt;margin&lt;/span&gt;: &lt;span class=&quot;number&quot;&gt;40px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;selector-class&quot;&gt;.box2&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;attribute&quot;&gt;display&lt;/span&gt;: inline-block;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;attribute&quot;&gt;height&lt;/span&gt;:&lt;span class=&quot;number&quot;&gt;100px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;attribute&quot;&gt;width&lt;/span&gt;:&lt;span class=&quot;number&quot;&gt;100px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;attribute&quot;&gt;max-width&lt;/span&gt;: &lt;span class=&quot;number&quot;&gt;50px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;attribute&quot;&gt;border&lt;/span&gt;:&lt;span class=&quot;number&quot;&gt;20px&lt;/span&gt; solid blue;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;attribute&quot;&gt;padding&lt;/span&gt;:&lt;span class=&quot;number&quot;&gt;30px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;attribute&quot;&gt;margin&lt;/span&gt;: &lt;span class=&quot;number&quot;&gt;40px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;style&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;&amp;lt;!--****************************************************--&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;box&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;box2&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;blockquote&gt;
 &lt;p&gt;1.在标准模式下的盒模型如下图所示，&lt;code&gt;盒子总宽度/高度=width/height+padding+border+margin&lt;/code&gt;;&lt;img src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task13ie8%E6%A0%87%E5%87%86%E5%92%8C%E6%A8%A1%E5%9E%8B.png&quot; alt=&quot;标准盒子模型&quot;&gt;&lt;br&gt;在&lt;code&gt;ie6,7&lt;/code&gt;怪异模式下,&lt;code&gt;盒子总宽度/高度=width/height + margin = 内容区宽度/高度 + padding + border + margin&lt;/code&gt;;&lt;br&gt;2.&lt;code&gt;inline-block&lt;/code&gt;只有ie8支持，&lt;code&gt;max-width&lt;/code&gt;ie7,8支持（存在bug具体看&lt;a href=&quot;http://caniuse.com/#search=max-width&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;caniuse&lt;/a&gt;）：&lt;/p&gt;
-&lt;/blockquote&gt;
 &lt;hr&gt;
 &lt;p&gt;IE8&lt;/p&gt;
 &lt;h2 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; title=&quot;&quot;&gt;&lt;/a&gt;&lt;img src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task13inline-block-ie8.png&quot; alt=&quot;ie8&quot;&gt;&lt;/h2&gt;&lt;p&gt;IE7&lt;/p&gt;
@@ -1205,7 +1207,9 @@
     
     <summary type="html">
     
-      &lt;h2 id=&quot;【知识点】&quot;&gt;&lt;a href=&quot;#【知识点】&quot; class=&quot;headerlink&quot; title=&quot;-【知识点】&quot;&gt;&lt;/a&gt;-【知识点】&lt;/h2&gt;&lt;h4 id=&quot;1-如何调试-IE-浏览器&quot;&gt;&lt;a href=&quot;#1-如何调试-IE-浏览器&quot; class=&quot;headerlink&quot; title=&quot;1. 如何调试 IE 浏览器?&quot;&gt;&lt;/a&gt;&lt;strong&gt;1. 如何调试 IE 浏览器?&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
+      &lt;blockquote&gt;
+&lt;h3 id=&quot;【知识点】&quot;&gt;&lt;a href=&quot;#【知识点】&quot; class=&quot;headerlink&quot; title=&quot;【知识点】&quot;&gt;&lt;/a&gt;【知识点】&lt;/h3&gt;&lt;/blockquote&gt;
+&lt;h4 id=&quot;1-如何调试-IE-浏览器&quot;&gt;&lt;a href=&quot;#1-如何调试-IE-浏览器&quot; class=&quot;headerlink&quot; title=&quot;1. 如何调试 IE 浏览器?&quot;&gt;&lt;/a&gt;&lt;strong&gt;1. 如何调试 IE 浏览器?&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
 &lt;p&gt;1.通过高版本IE浏览器的开发者工具，可以仿真其之前版本IE浏览器的运行环境，基本上可以临时快速调试各版本IE浏览器：&lt;img src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task13IE%E5%BC%80%E5%8F%91%E8%80%85.png&quot; alt=&quot;IE调试01&quot;&gt;&lt;br&gt;
     
     </summary>
@@ -1224,9 +1228,11 @@
     <link href="http://licao404.com/2016/02/29/%E5%9C%A3%E6%9D%AF%E5%B8%83%E5%B1%80-%E5%8F%8C%E9%A3%9E%E7%BF%BC%E5%B8%83%E5%B1%80/"/>
     <id>http://licao404.com/2016/02/29/圣杯布局-双飞翼布局/</id>
     <published>2016-02-29T05:36:54.000Z</published>
-    <updated>2016-04-02T14:25:32.040Z</updated>
+    <updated>2016-04-14T02:58:50.027Z</updated>
     
-    <content type="html">&lt;h2 id=&quot;【基础知识】&quot;&gt;&lt;a href=&quot;#【基础知识】&quot; class=&quot;headerlink&quot; title=&quot;-【基础知识】&quot;&gt;&lt;/a&gt;-【基础知识】&lt;/h2&gt;&lt;h4 id=&quot;1-负边距在让元素产生偏移时和position-relative有什么区别&quot;&gt;&lt;a href=&quot;#1-负边距在让元素产生偏移时和position-relative有什么区别&quot; class=&quot;headerlink&quot; title=&quot;1. 负边距在让元素产生偏移时和position: relative有什么区别?&quot;&gt;&lt;/a&gt;&lt;strong&gt;1. 负边距在让元素产生偏移时和&lt;code&gt;position: relative&lt;/code&gt;有什么区别?&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
+    <content type="html">&lt;blockquote&gt;
+&lt;h3 id=&quot;【基础知识】&quot;&gt;&lt;a href=&quot;#【基础知识】&quot; class=&quot;headerlink&quot; title=&quot;【基础知识】&quot;&gt;&lt;/a&gt;【基础知识】&lt;/h3&gt;&lt;/blockquote&gt;
+&lt;h4 id=&quot;1-负边距在让元素产生偏移时和position-relative有什么区别&quot;&gt;&lt;a href=&quot;#1-负边距在让元素产生偏移时和position-relative有什么区别&quot; class=&quot;headerlink&quot; title=&quot;1. 负边距在让元素产生偏移时和position: relative有什么区别?&quot;&gt;&lt;/a&gt;&lt;strong&gt;1. 负边距在让元素产生偏移时和&lt;code&gt;position: relative&lt;/code&gt;有什么区别?&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
 &lt;p&gt;最大的区别是负margin让元素移动时改变了文档流，同时可能影响其他元素排列；而&lt;code&gt;position:relative&lt;/code&gt;并未让元素脱离文档流，只是让元素相对于本来的位置进行定位，对其他元素的排列不会造成影响。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
@@ -1240,14 +1246,16 @@
 &lt;p&gt;1.三栏浮动&lt;code&gt;float:left&lt;/code&gt;,相对定位&lt;code&gt;position:relative&lt;/code&gt;;&lt;br&gt;2.主块设置&lt;code&gt;width:100%&lt;/code&gt;占满宽度；&lt;br&gt;3.左块使用&lt;code&gt;margin-left:-100%&lt;/code&gt;拉到最左边，右块使用&lt;code&gt;margin-left:npx&lt;/code&gt;，n为右块的宽度；&lt;br&gt;4.主块嵌套一个新块，设置该块左右&lt;code&gt;margin&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
-&lt;h2 id=&quot;【代码】&quot;&gt;&lt;a href=&quot;#【代码】&quot; class=&quot;headerlink&quot; title=&quot;-【代码】&quot;&gt;&lt;/a&gt;-【代码】&lt;/h2&gt;&lt;blockquote&gt;
-&lt;h3 id=&quot;task-12-1&quot;&gt;&lt;a href=&quot;#task-12-1&quot; class=&quot;headerlink&quot; title=&quot;task-12-1&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task12/task-12-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;task-12-1&lt;/a&gt;&lt;/h3&gt;&lt;h3 id=&quot;task-12-2&quot;&gt;&lt;a href=&quot;#task-12-2&quot; class=&quot;headerlink&quot; title=&quot;task-12-2&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task12/task-12-2.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;task-12-2&lt;/a&gt;&lt;/h3&gt;&lt;h3 id=&quot;task-12-3&quot;&gt;&lt;a href=&quot;#task-12-3&quot; class=&quot;headerlink&quot; title=&quot;task-12-3&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task12/task-12-3.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;task-12-3&lt;/a&gt;&lt;/h3&gt;&lt;h3 id=&quot;task-12-4&quot;&gt;&lt;a href=&quot;#task-12-4&quot; class=&quot;headerlink&quot; title=&quot;task-12-4&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task12/task-12-4.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;task-12-4&lt;/a&gt;&lt;/h3&gt;&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;h3 id=&quot;【代码】&quot;&gt;&lt;a href=&quot;#【代码】&quot; class=&quot;headerlink&quot; title=&quot;【代码】&quot;&gt;&lt;/a&gt;【代码】&lt;/h3&gt;&lt;h4 id=&quot;task-12-1&quot;&gt;&lt;a href=&quot;#task-12-1&quot; class=&quot;headerlink&quot; title=&quot;task-12-1&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task12/task-12-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;task-12-1&lt;/a&gt;&lt;/h4&gt;&lt;h4 id=&quot;task-12-2&quot;&gt;&lt;a href=&quot;#task-12-2&quot; class=&quot;headerlink&quot; title=&quot;task-12-2&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task12/task-12-2.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;task-12-2&lt;/a&gt;&lt;/h4&gt;&lt;h4 id=&quot;task-12-3&quot;&gt;&lt;a href=&quot;#task-12-3&quot; class=&quot;headerlink&quot; title=&quot;task-12-3&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task12/task-12-3.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;task-12-3&lt;/a&gt;&lt;/h4&gt;&lt;h4 id=&quot;task-12-4&quot;&gt;&lt;a href=&quot;#task-12-4&quot; class=&quot;headerlink&quot; title=&quot;task-12-4&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task12/task-12-4.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;task-12-4&lt;/a&gt;&lt;/h4&gt;&lt;/blockquote&gt;
 &lt;hr&gt;
 </content>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;【基础知识】&quot;&gt;&lt;a href=&quot;#【基础知识】&quot; class=&quot;headerlink&quot; title=&quot;-【基础知识】&quot;&gt;&lt;/a&gt;-【基础知识】&lt;/h2&gt;&lt;h4 id=&quot;1-负边距在让元素产生偏移时和position-relative有什么区别&quot;&gt;&lt;a href=&quot;#1-负边距在让元素产生偏移时和position-relative有什么区别&quot; class=&quot;headerlink&quot; title=&quot;1. 负边距在让元素产生偏移时和position: relative有什么区别?&quot;&gt;&lt;/a&gt;&lt;strong&gt;1. 负边距在让元素产生偏移时和&lt;code&gt;position: relative&lt;/code&gt;有什么区别?&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
+      &lt;blockquote&gt;
+&lt;h3 id=&quot;【基础知识】&quot;&gt;&lt;a href=&quot;#【基础知识】&quot; class=&quot;headerlink&quot; title=&quot;【基础知识】&quot;&gt;&lt;/a&gt;【基础知识】&lt;/h3&gt;&lt;/blockquote&gt;
+&lt;h4 id=&quot;1-负边距在让元素产生偏移时和position-relative有什么区别&quot;&gt;&lt;a href=&quot;#1-负边距在让元素产生偏移时和position-relative有什么区别&quot; class=&quot;headerlink&quot; title=&quot;1. 负边距在让元素产生偏移时和position: relative有什么区别?&quot;&gt;&lt;/a&gt;&lt;strong&gt;1. 负边距在让元素产生偏移时和&lt;code&gt;position: relative&lt;/code&gt;有什么区别?&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
 &lt;p&gt;最大的区别是负margin让元素移动时改变了文档流，同时可能影响其他元素排列；而&lt;code&gt;position:relative&lt;/code&gt;并未让元素脱离文档流，只是让元素相对于本来的位置进行定位，对其他元素的排列不会造成影响。&lt;/p&gt;
 &lt;/blockquote&gt;
     
@@ -1267,9 +1275,11 @@
     <link href="http://licao404.com/2016/02/28/BFC/"/>
     <id>http://licao404.com/2016/02/28/BFC/</id>
     <published>2016-02-28T05:32:34.000Z</published>
-    <updated>2016-04-02T14:27:14.314Z</updated>
+    <updated>2016-04-14T02:58:07.357Z</updated>
     
-    <content type="html">&lt;h2 id=&quot;【基础知识】&quot;&gt;&lt;a href=&quot;#【基础知识】&quot; class=&quot;headerlink&quot; title=&quot;-【基础知识】&quot;&gt;&lt;/a&gt;-【基础知识】&lt;/h2&gt;&lt;h4 id=&quot;1-在什么场景下会出现外边距合并？如何合并？如何不让相邻元素外边距合并？&quot;&gt;&lt;a href=&quot;#1-在什么场景下会出现外边距合并？如何合并？如何不让相邻元素外边距合并？&quot; class=&quot;headerlink&quot; title=&quot;1. 在什么场景下会出现外边距合并？如何合并？如何不让相邻元素外边距合并？&quot;&gt;&lt;/a&gt;&lt;strong&gt;1. 在什么场景下会出现外边距合并？如何合并？如何不让相邻元素外边距合并？&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
+    <content type="html">&lt;blockquote&gt;
+&lt;h3 id=&quot;【基础知识】&quot;&gt;&lt;a href=&quot;#【基础知识】&quot; class=&quot;headerlink&quot; title=&quot;【基础知识】&quot;&gt;&lt;/a&gt;【基础知识】&lt;/h3&gt;&lt;/blockquote&gt;
+&lt;h4 id=&quot;1-在什么场景下会出现外边距合并？如何合并？如何不让相邻元素外边距合并？&quot;&gt;&lt;a href=&quot;#1-在什么场景下会出现外边距合并？如何合并？如何不让相邻元素外边距合并？&quot; class=&quot;headerlink&quot; title=&quot;1. 在什么场景下会出现外边距合并？如何合并？如何不让相邻元素外边距合并？&quot;&gt;&lt;/a&gt;&lt;strong&gt;1. 在什么场景下会出现外边距合并？如何合并？如何不让相邻元素外边距合并？&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
 &lt;ol&gt;
 &lt;li&gt;相邻块盒子的垂直外边距合并只有他们是在同一BFC，且没有padding与border将外边距隔开才会发生；&lt;/li&gt;
 &lt;li&gt;垂直相邻元素，子元素和父元素会发生合并，合并后的外边距的高度等于两个发生合并的外边距的高度中的较大者。&lt;/li&gt;
@@ -1343,14 +1353,16 @@
 &lt;/blockquote&gt;
 &lt;p&gt;区别：BFC是包含容器内的浮动元素，形成一个封闭的小宇宙，不受外界干扰挤占；而这种方法是通过添加空块来清除浮动，不让其他元素上来，二者的实现思路是完全不一样的；&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&quot;【代码】&quot;&gt;&lt;a href=&quot;#【代码】&quot; class=&quot;headerlink&quot; title=&quot;-【代码】&quot;&gt;&lt;/a&gt;-【代码】&lt;/h2&gt;&lt;blockquote&gt;
-&lt;h3 id=&quot;task-11-1&quot;&gt;&lt;a href=&quot;#task-11-1&quot; class=&quot;headerlink&quot; title=&quot;task-11-1&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task11/task-11-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;task-11-1&lt;/a&gt;&lt;/h3&gt;&lt;h3 id=&quot;task-11-2&quot;&gt;&lt;a href=&quot;#task-11-2&quot; class=&quot;headerlink&quot; title=&quot;task-11-2&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task11/task-11-2.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;task-11-2&lt;/a&gt;&lt;/h3&gt;&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;h3 id=&quot;【代码】&quot;&gt;&lt;a href=&quot;#【代码】&quot; class=&quot;headerlink&quot; title=&quot;【代码】&quot;&gt;&lt;/a&gt;【代码】&lt;/h3&gt;&lt;h4 id=&quot;task-11-1&quot;&gt;&lt;a href=&quot;#task-11-1&quot; class=&quot;headerlink&quot; title=&quot;task-11-1&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task11/task-11-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;task-11-1&lt;/a&gt;&lt;/h4&gt;&lt;h4 id=&quot;task-11-2&quot;&gt;&lt;a href=&quot;#task-11-2&quot; class=&quot;headerlink&quot; title=&quot;task-11-2&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task11/task-11-2.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;task-11-2&lt;/a&gt;&lt;/h4&gt;&lt;/blockquote&gt;
 &lt;hr&gt;
 </content>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;【基础知识】&quot;&gt;&lt;a href=&quot;#【基础知识】&quot; class=&quot;headerlink&quot; title=&quot;-【基础知识】&quot;&gt;&lt;/a&gt;-【基础知识】&lt;/h2&gt;&lt;h4 id=&quot;1-在什么场景下会出现外边距合并？如何合并？如何不让相邻元素外边距合并？&quot;&gt;&lt;a href=&quot;#1-在什么场景下会出现外边距合并？如何合并？如何不让相邻元素外边距合并？&quot; class=&quot;headerlink&quot; title=&quot;1. 在什么场景下会出现外边距合并？如何合并？如何不让相邻元素外边距合并？&quot;&gt;&lt;/a&gt;&lt;strong&gt;1. 在什么场景下会出现外边距合并？如何合并？如何不让相邻元素外边距合并？&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
+      &lt;blockquote&gt;
+&lt;h3 id=&quot;【基础知识】&quot;&gt;&lt;a href=&quot;#【基础知识】&quot; class=&quot;headerlink&quot; title=&quot;【基础知识】&quot;&gt;&lt;/a&gt;【基础知识】&lt;/h3&gt;&lt;/blockquote&gt;
+&lt;h4 id=&quot;1-在什么场景下会出现外边距合并？如何合并？如何不让相邻元素外边距合并？&quot;&gt;&lt;a href=&quot;#1-在什么场景下会出现外边距合并？如何合并？如何不让相邻元素外边距合并？&quot; class=&quot;headerlink&quot; title=&quot;1. 在什么场景下会出现外边距合并？如何合并？如何不让相邻元素外边距合并？&quot;&gt;&lt;/a&gt;&lt;strong&gt;1. 在什么场景下会出现外边距合并？如何合并？如何不让相邻元素外边距合并？&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
 &lt;ol&gt;
 &lt;li&gt;相邻块盒子的垂直外边距合并只有他们是在同一BFC，且没有padding与border将外边距隔开才会发生；&lt;/li&gt;
 &lt;li&gt;垂直相邻元素，子元素和父元素会发生合并，合并后的外边距的高度等于两个发生合并的外边距的高度中的较大者。&lt;/li&gt;
@@ -1374,9 +1386,11 @@
     <link href="http://licao404.com/2016/02/27/%E5%AE%9A%E4%BD%8D-%E6%B5%AE%E5%8A%A8/"/>
     <id>http://licao404.com/2016/02/27/定位-浮动/</id>
     <published>2016-02-27T05:29:46.000Z</published>
-    <updated>2016-04-02T14:25:06.031Z</updated>
+    <updated>2016-04-14T02:56:46.416Z</updated>
     
-    <content type="html">&lt;h2 id=&quot;【基础知识】&quot;&gt;&lt;a href=&quot;#【基础知识】&quot; class=&quot;headerlink&quot; title=&quot;-【基础知识】&quot;&gt;&lt;/a&gt;-【基础知识】&lt;/h2&gt;&lt;h4 id=&quot;1-文档流的概念指什么？有哪种方式可以让元素脱离文档流&quot;&gt;&lt;a href=&quot;#1-文档流的概念指什么？有哪种方式可以让元素脱离文档流&quot; class=&quot;headerlink&quot; title=&quot;1. 文档流的概念指什么？有哪种方式可以让元素脱离文档流?&quot;&gt;&lt;/a&gt;&lt;strong&gt;1. 文档流的概念指什么？有哪种方式可以让元素脱离文档流?&lt;/strong&gt;&lt;/h4&gt;&lt;ul&gt;
+    <content type="html">&lt;blockquote&gt;
+&lt;h3 id=&quot;【基础知识】&quot;&gt;&lt;a href=&quot;#【基础知识】&quot; class=&quot;headerlink&quot; title=&quot;【基础知识】&quot;&gt;&lt;/a&gt;【基础知识】&lt;/h3&gt;&lt;/blockquote&gt;
+&lt;h4 id=&quot;1-文档流的概念指什么？有哪种方式可以让元素脱离文档流&quot;&gt;&lt;a href=&quot;#1-文档流的概念指什么？有哪种方式可以让元素脱离文档流&quot; class=&quot;headerlink&quot; title=&quot;1. 文档流的概念指什么？有哪种方式可以让元素脱离文档流?&quot;&gt;&lt;/a&gt;&lt;strong&gt;1. 文档流的概念指什么？有哪种方式可以让元素脱离文档流?&lt;/strong&gt;&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;文档流是将窗体自上而下分成一行行，每行按照自左向右的顺序排列元素，从头到尾按照文档的顺序，该在什么位置就在什么位置；网页中大部分对象默认是占用文档流，也有一些对象是不占文档流的，比如表单中隐藏域。&lt;/li&gt;
 &lt;li&gt;有3种方式可以让元素脱离文档流而存在：浮动（&lt;code&gt;float&lt;/code&gt;）、固定定位（&lt;code&gt;position:fixed&lt;/code&gt;）、绝对定位（&lt;code&gt;position:absolute&lt;/code&gt;）&lt;ul&gt;
 &lt;li&gt;浮动元素不占用任何正常文档流空间，而他的定位仍是基于正常文档流；&lt;/li&gt;
@@ -1422,14 +1436,16 @@
 &lt;li&gt;对父亲&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
-&lt;h2 id=&quot;【代码】&quot;&gt;&lt;a href=&quot;#【代码】&quot; class=&quot;headerlink&quot; title=&quot;-【代码】&quot;&gt;&lt;/a&gt;-【代码】&lt;/h2&gt;&lt;blockquote&gt;
-&lt;h3 id=&quot;task-10-1&quot;&gt;&lt;a href=&quot;#task-10-1&quot; class=&quot;headerlink&quot; title=&quot;task-10-1&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task10/task-10-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;task-10-1&lt;/a&gt;&lt;/h3&gt;&lt;h3 id=&quot;task-10-2&quot;&gt;&lt;a href=&quot;#task-10-2&quot; class=&quot;headerlink&quot; title=&quot;task-10-2&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task10/task-10-2.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;task-10-2&lt;/a&gt;&lt;/h3&gt;&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;h3 id=&quot;【代码】&quot;&gt;&lt;a href=&quot;#【代码】&quot; class=&quot;headerlink&quot; title=&quot;【代码】&quot;&gt;&lt;/a&gt;【代码】&lt;/h3&gt;&lt;h4 id=&quot;task-10-1&quot;&gt;&lt;a href=&quot;#task-10-1&quot; class=&quot;headerlink&quot; title=&quot;task-10-1&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task10/task-10-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;task-10-1&lt;/a&gt;&lt;/h4&gt;&lt;h4 id=&quot;task-10-2&quot;&gt;&lt;a href=&quot;#task-10-2&quot; class=&quot;headerlink&quot; title=&quot;task-10-2&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task10/task-10-2.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;task-10-2&lt;/a&gt;&lt;/h4&gt;&lt;/blockquote&gt;
 &lt;hr&gt;
 </content>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;【基础知识】&quot;&gt;&lt;a href=&quot;#【基础知识】&quot; class=&quot;headerlink&quot; title=&quot;-【基础知识】&quot;&gt;&lt;/a&gt;-【基础知识】&lt;/h2&gt;&lt;h4 id=&quot;1-文档流的概念指什么？有哪种方式可以让元素脱离文档流&quot;&gt;&lt;a href=&quot;#1-文档流的概念指什么？有哪种方式可以让元素脱离文档流&quot; class=&quot;headerlink&quot; title=&quot;1. 文档流的概念指什么？有哪种方式可以让元素脱离文档流?&quot;&gt;&lt;/a&gt;&lt;strong&gt;1. 文档流的概念指什么？有哪种方式可以让元素脱离文档流?&lt;/strong&gt;&lt;/h4&gt;&lt;ul&gt;
+      &lt;blockquote&gt;
+&lt;h3 id=&quot;【基础知识】&quot;&gt;&lt;a href=&quot;#【基础知识】&quot; class=&quot;headerlink&quot; title=&quot;【基础知识】&quot;&gt;&lt;/a&gt;【基础知识】&lt;/h3&gt;&lt;/blockquote&gt;
+&lt;h4 id=&quot;1-文档流的概念指什么？有哪种方式可以让元素脱离文档流&quot;&gt;&lt;a href=&quot;#1-文档流的概念指什么？有哪种方式可以让元素脱离文档流&quot; class=&quot;headerlink&quot; title=&quot;1. 文档流的概念指什么？有哪种方式可以让元素脱离文档流?&quot;&gt;&lt;/a&gt;&lt;strong&gt;1. 文档流的概念指什么？有哪种方式可以让元素脱离文档流?&lt;/strong&gt;&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;文档流是将窗体自上而下分成一行行，每行按照自左向右的顺序排列元素，从头到尾按照文档的顺序，该在什么位置就在什么位置；网页中大部分对象默认是占用文档流，也有一些对象是不占文档流的，比如表单中隐藏域。&lt;/li&gt;
 &lt;li&gt;有3种方式可以让元素脱离文档流而存在：浮动（&lt;code&gt;float&lt;/code&gt;）、固定定位（&lt;code&gt;position:fixed&lt;/code&gt;）、绝对定位（&lt;code&gt;position:absolute&lt;/code&gt;）&lt;ul&gt;
 &lt;li&gt;浮动元素不占用任何正常文档流空间，而他的定位仍是基于正常文档流；&lt;/li&gt;
@@ -1454,9 +1470,11 @@
     <link href="http://licao404.com/2016/02/26/CSS_Sprite+background/"/>
     <id>http://licao404.com/2016/02/26/CSS_Sprite+background/</id>
     <published>2016-02-26T05:27:33.000Z</published>
-    <updated>2016-04-02T14:28:07.624Z</updated>
+    <updated>2016-04-14T02:55:33.085Z</updated>
     
-    <content type="html">&lt;h2 id=&quot;【知识点】&quot;&gt;&lt;a href=&quot;#【知识点】&quot; class=&quot;headerlink&quot; title=&quot;-【知识点】&quot;&gt;&lt;/a&gt;-【知识点】&lt;/h2&gt;&lt;h4 id=&quot;1-CSS-Sprite-雪碧图-指什么-有什么作用？&quot;&gt;&lt;a href=&quot;#1-CSS-Sprite-雪碧图-指什么-有什么作用？&quot; class=&quot;headerlink&quot; title=&quot;1. CSS Sprite(雪碧图)指什么? 有什么作用？&quot;&gt;&lt;/a&gt;&lt;strong&gt;1. CSS Sprite(雪碧图)指什么? 有什么作用？&lt;/strong&gt;&lt;/h4&gt;&lt;ul&gt;
+    <content type="html">&lt;blockquote&gt;
+&lt;h3 id=&quot;【知识点】&quot;&gt;&lt;a href=&quot;#【知识点】&quot; class=&quot;headerlink&quot; title=&quot;【知识点】&quot;&gt;&lt;/a&gt;【知识点】&lt;/h3&gt;&lt;/blockquote&gt;
+&lt;h4 id=&quot;1-CSS-Sprite-雪碧图-指什么-有什么作用？&quot;&gt;&lt;a href=&quot;#1-CSS-Sprite-雪碧图-指什么-有什么作用？&quot; class=&quot;headerlink&quot; title=&quot;1. CSS Sprite(雪碧图)指什么? 有什么作用？&quot;&gt;&lt;/a&gt;&lt;strong&gt;1. CSS Sprite(雪碧图)指什么? 有什么作用？&lt;/strong&gt;&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;CSS Sprite&lt;/code&gt;又名&lt;code&gt;CSS精灵&lt;/code&gt;，一种将零星的小图片合并成一张大图的网络图像应用处理方式，再利用&lt;code&gt;CSS&lt;/code&gt;的&lt;code&gt;background-image&lt;/code&gt;,&lt;code&gt;background-repeat&lt;/code&gt;,&lt;code&gt;background-position&lt;/code&gt;进行精确定位所需的小图位置;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
@@ -1527,14 +1545,16 @@
 &lt;p&gt;&lt;code&gt;opacity&lt;/code&gt;作用于&lt;code&gt;元素&lt;/code&gt;，以及元素内的所有&lt;code&gt;内容&lt;/code&gt;的透明度，而&lt;code&gt;rgba()&lt;/code&gt;只作用于元素的&lt;code&gt;颜色&lt;/code&gt;或其&lt;code&gt;背景色&lt;/code&gt;。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
-&lt;h2 id=&quot;【代码】&quot;&gt;&lt;a href=&quot;#【代码】&quot; class=&quot;headerlink&quot; title=&quot;-【代码】&quot;&gt;&lt;/a&gt;-【代码】&lt;/h2&gt;&lt;blockquote&gt;
-&lt;h3 id=&quot;task-9-1&quot;&gt;&lt;a href=&quot;#task-9-1&quot; class=&quot;headerlink&quot; title=&quot;task-9-1&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task9/task-9-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;task-9-1&lt;/a&gt;&lt;/h3&gt;&lt;h3 id=&quot;task-9-2&quot;&gt;&lt;a href=&quot;#task-9-2&quot; class=&quot;headerlink&quot; title=&quot;task-9-2&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task9/task-9-2.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;task-9-2&lt;/a&gt;&lt;/h3&gt;&lt;h3 id=&quot;task-9-3&quot;&gt;&lt;a href=&quot;#task-9-3&quot; class=&quot;headerlink&quot; title=&quot;task-9-3&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task9/task-9-3.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;task-9-3&lt;/a&gt;&lt;/h3&gt;&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;h3 id=&quot;【代码】&quot;&gt;&lt;a href=&quot;#【代码】&quot; class=&quot;headerlink&quot; title=&quot;【代码】&quot;&gt;&lt;/a&gt;【代码】&lt;/h3&gt;&lt;h4 id=&quot;task-9-1&quot;&gt;&lt;a href=&quot;#task-9-1&quot; class=&quot;headerlink&quot; title=&quot;task-9-1&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task9/task-9-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;task-9-1&lt;/a&gt;&lt;/h4&gt;&lt;h4 id=&quot;task-9-2&quot;&gt;&lt;a href=&quot;#task-9-2&quot; class=&quot;headerlink&quot; title=&quot;task-9-2&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task9/task-9-2.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;task-9-2&lt;/a&gt;&lt;/h4&gt;&lt;h4 id=&quot;task-9-3&quot;&gt;&lt;a href=&quot;#task-9-3&quot; class=&quot;headerlink&quot; title=&quot;task-9-3&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task9/task-9-3.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;task-9-3&lt;/a&gt;&lt;/h4&gt;&lt;/blockquote&gt;
 &lt;hr&gt;
 </content>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;【知识点】&quot;&gt;&lt;a href=&quot;#【知识点】&quot; class=&quot;headerlink&quot; title=&quot;-【知识点】&quot;&gt;&lt;/a&gt;-【知识点】&lt;/h2&gt;&lt;h4 id=&quot;1-CSS-Sprite-雪碧图-指什么-有什么作用？&quot;&gt;&lt;a href=&quot;#1-CSS-Sprite-雪碧图-指什么-有什么作用？&quot; class=&quot;headerlink&quot; title=&quot;1. CSS Sprite(雪碧图)指什么? 有什么作用？&quot;&gt;&lt;/a&gt;&lt;strong&gt;1. CSS Sprite(雪碧图)指什么? 有什么作用？&lt;/strong&gt;&lt;/h4&gt;&lt;ul&gt;
+      &lt;blockquote&gt;
+&lt;h3 id=&quot;【知识点】&quot;&gt;&lt;a href=&quot;#【知识点】&quot; class=&quot;headerlink&quot; title=&quot;【知识点】&quot;&gt;&lt;/a&gt;【知识点】&lt;/h3&gt;&lt;/blockquote&gt;
+&lt;h4 id=&quot;1-CSS-Sprite-雪碧图-指什么-有什么作用？&quot;&gt;&lt;a href=&quot;#1-CSS-Sprite-雪碧图-指什么-有什么作用？&quot; class=&quot;headerlink&quot; title=&quot;1. CSS Sprite(雪碧图)指什么? 有什么作用？&quot;&gt;&lt;/a&gt;&lt;strong&gt;1. CSS Sprite(雪碧图)指什么? 有什么作用？&lt;/strong&gt;&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;CSS Sprite&lt;/code&gt;又名&lt;code&gt;CSS精灵&lt;/code&gt;，一种将零星的小图片合并成一张大图的网络图像应用处理方式，再利用&lt;code&gt;CSS&lt;/code&gt;的&lt;code&gt;background-image&lt;/code&gt;,&lt;code&gt;background-repeat&lt;/code&gt;,&lt;code&gt;background-position&lt;/code&gt;进行精确定位所需的小图位置;&lt;/li&gt;
 &lt;/ul&gt;
     
