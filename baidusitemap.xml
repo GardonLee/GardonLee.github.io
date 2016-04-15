@@ -2,6 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     
+  <url>
+    <loc>http://licao404.com/2016/03/16/%E7%90%86%E8%A7%A3JavaScript%E5%87%BD%E6%95%B0/</loc>
+    <lastmod>2016-04-15T12:26:29.542Z</lastmod>
+    <data>
+        <display>
+        <title>理解JavaScript函数</title>
+        <pubTime>2016-03-16T13:51:40.000Z</pubTime>
+        
+        <tag>JavaScript </tag>
+         
+         
+           
+             
+              <breadCrumb title="编程学习" url="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/"/>
+          
+             
+              <breadCrumb title="前端基础" url="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
     
   <url>
     <loc>http://licao404.com/2016/03/01/CSS%E6%B5%8F%E8%A7%88%E5%99%A8%E5%85%BC%E5%AE%B9/</loc>
@@ -418,29 +441,6 @@
         <display>
         <title>闭包/延时器</title>
         <pubTime>2016-03-28T15:33:27.000Z</pubTime>
-        
-        <tag>JavaScript </tag>
-         
-         
-           
-             
-              <breadCrumb title="编程学习" url="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/"/>
-          
-             
-              <breadCrumb title="前端基础" url="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://licao404.com/2016/03/16/%E7%90%86%E8%A7%A3JavaScript%E5%87%BD%E6%95%B0/</loc>
-    <lastmod>2016-04-02T14:22:18.820Z</lastmod>
-    <data>
-        <display>
-        <title>理解JavaScript函数</title>
-        <pubTime>2016-03-16T13:51:40.000Z</pubTime>
         
         <tag>JavaScript </tag>
          
