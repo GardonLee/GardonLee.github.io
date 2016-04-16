@@ -562,24 +562,14 @@
 
       
         
-          
-            <blockquote>
+          <blockquote>
 <h3 id="【知识点】"><a href="#【知识点】" class="headerlink" title="【知识点】"></a>【知识点】</h3></blockquote>
-<h4 id="1-说说库和框架的区别？"><a href="#1-说说库和框架的区别？" class="headerlink" title="1. 说说库和框架的区别？"></a><strong>1. 说说库和框架的区别？</strong></h4><h4 id="2-jQuery-能做什么？"><a href="#2-jQuery-能做什么？" class="headerlink" title="2. jQuery 能做什么？"></a><strong>2. jQuery 能做什么？</strong></h4><h4 id="3-jQuery-对象和-DOM-原生对象有什么区别？如何转化？"><a href="#3-jQuery-对象和-DOM-原生对象有什么区别？如何转化？" class="headerlink" title="3. jQuery 对象和 DOM 原生对象有什么区别？如何转化？"></a><strong>3. jQuery 对象和 DOM 原生对象有什么区别？如何转化？</strong></h4><h4 id="4-jQuery中如何绑定事件？bind、unbind、delegate、live、on、off都有什么作用？推荐使用哪种？使用on绑定事件使用事件代理的写法？"><a href="#4-jQuery中如何绑定事件？bind、unbind、delegate、live、on、off都有什么作用？推荐使用哪种？使用on绑定事件使用事件代理的写法？" class="headerlink" title="4. jQuery中如何绑定事件？bind、unbind、delegate、live、on、off都有什么作用？推荐使用哪种？使用on绑定事件使用事件代理的写法？"></a><strong>4. jQuery中如何绑定事件？<code>bind</code>、<code>unbind</code>、<code>delegate</code>、<code>live</code>、<code>on</code>、<code>off</code>都有什么作用？推荐使用哪种？使用<code>on</code>绑定事件使用事件代理的写法？</strong></h4><h4 id="5-jQuery-如何展示-隐藏元素？"><a href="#5-jQuery-如何展示-隐藏元素？" class="headerlink" title="5. jQuery 如何展示/隐藏元素？"></a><strong>5. jQuery 如何展示/隐藏元素？</strong></h4><h4 id="6-jQuery-动画如何使用？"><a href="#6-jQuery-动画如何使用？" class="headerlink" title="6. jQuery 动画如何使用？"></a><strong>6. jQuery 动画如何使用？</strong></h4><h4 id="7-如何设置和获取元素内部-HTML-内容？如何设置和获取元素内部文本？"><a href="#7-如何设置和获取元素内部-HTML-内容？如何设置和获取元素内部文本？" class="headerlink" title="7. 如何设置和获取元素内部 HTML 内容？如何设置和获取元素内部文本？"></a><strong>7. 如何设置和获取元素内部 HTML 内容？如何设置和获取元素内部文本？</strong></h4><h4 id="8-如何设置和获取表单用户输入或者选择的内容？如何设置和获取元素属性？"><a href="#8-如何设置和获取表单用户输入或者选择的内容？如何设置和获取元素属性？" class="headerlink" title="8. 如何设置和获取表单用户输入或者选择的内容？如何设置和获取元素属性？"></a><strong>8. 如何设置和获取表单用户输入或者选择的内容？如何设置和获取元素属性？</strong></h4><hr>
-<blockquote>
-<h3 id="【练习】"><a href="#【练习】" class="headerlink" title="【练习】"></a>【练习】</h3></blockquote>
-<h4 id="1-使用-jQuery实现如下效果"><a href="#1-使用-jQuery实现如下效果" class="headerlink" title="1. 使用 jQuery实现如下效果"></a><strong>1. 使用 jQuery实现如下效果</strong></h4><p><img src="http://7xnk1s.com2.z0.glb.qiniucdn.com/8-1.gif" alt=""></p>
-<h4 id="2-使用-jQuery实现如下效果"><a href="#2-使用-jQuery实现如下效果" class="headerlink" title="2. 使用 jQuery实现如下效果"></a><strong>2. 使用 jQuery实现如下效果</strong></h4><p><img src="http://7xnk1s.com2.z0.glb.qiniucdn.com/8-2.gif" alt=""></p>
-<blockquote>
-<p>问题： 点奢侈品2的时候页面跳到了顶部，可能是什么原因？如何解决</p>
-</blockquote>
-<h4 id="3-使用-jQuery实现如下效果"><a href="#3-使用-jQuery实现如下效果" class="headerlink" title="3. 使用 jQuery实现如下效果"></a><strong>3. 使用 jQuery实现如下效果</strong></h4><p><img src="http://7xnk1s.com2.z0.glb.qiniucdn.com/8-3-1.gif" alt=""></p>
-<blockquote>
-<p>提示<br>1.使用代理<br>2.当点击按钮时使用如下数据<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> products = [</span><br><span class="line">    &#123;</span><br><span class="line">        img: <span class="string">'http://img10.360buyimg.com/N3/jfs/t2242/92/1446546284/374195/9196ac66/56af0958N1a723458.jpg'</span>,</span><br><span class="line">        name: <span class="string">'珂兰 黄金手 猴哥款'</span>,</span><br><span class="line">        price: <span class="string">'￥405.00'</span></span><br><span class="line">    &#125;,&#123;</span><br><span class="line">        img: <span class="string">'http://img10.360buyimg.com/N3/jfs/t2242/92/1446546284/374195/9196ac66/56af0958N1a723458.jpg'</span>,</span><br><span class="line">        name: <span class="string">'珂兰 黄金转运珠 猴哥款'</span>,</span><br><span class="line">        price: <span class="string">'￥100.00'</span></span><br><span class="line">    &#125;,&#123;</span><br><span class="line">        img: <span class="string">'http://img10.360buyimg.com/N3/jfs/t2242/92/1446546284/374195/9196ac66/56af0958N1a723458.jpg'</span>,</span><br><span class="line">        name: <span class="string">'珂兰 黄金手链 3D猴哥款'</span>,</span><br><span class="line">        price: <span class="string">'￥45.00'</span></span><br><span class="line">    &#125;</span><br><span class="line">];</span><br></pre></td></tr></table></figure></p>
-</blockquote>
-<hr>
-
-          
+<h4 id="1-说说库和框架的区别？"><a href="#1-说说库和框架的区别？" class="headerlink" title="1. 说说库和框架的区别？"></a><strong>1. 说说库和框架的区别？</strong></h4><h4 id="2-jQuery-能做什么？"><a href="#2-jQuery-能做什么？" class="headerlink" title="2. jQuery 能做什么？"></a><strong>2. jQuery 能做什么？</strong></h4>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/04/16/jQuery-DOM-事件/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
