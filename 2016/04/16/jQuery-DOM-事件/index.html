@@ -97,22 +97,29 @@
 
 
 <meta name="description" content="【知识点】
-1. 说说库和框架的区别？2. jQuery 能做什么？">
+1. 说说库和框架的区别？
+库 是把一些可以复用的方法集中进行封装到一个library，提供API，我们通过这些API就可以调用这些已经封装好的方法，将代码写得更少/巧/强壮，以便简单快捷完成任务，提高生产力！比如 jQuery 就是更加接近一个库，要什么可以从中拿；
+框架 也算是库的一种，不过更加强调提供一种解决方案，给你搭好架子，代码怎样组织，所以不单单是具体的方法或函数，而是注">
 <meta property="og:type" content="article">
 <meta property="og:title" content="jQuery DOM & 事件">
 <meta property="og:url" content="http://licao404.com/2016/04/16/jQuery-DOM-事件/index.html">
 <meta property="og:site_name" content="蓝岚爱肉肉">
 <meta property="og:description" content="【知识点】
-1. 说说库和框架的区别？2. jQuery 能做什么？">
+1. 说说库和框架的区别？
+库 是把一些可以复用的方法集中进行封装到一个library，提供API，我们通过这些API就可以调用这些已经封装好的方法，将代码写得更少/巧/强壮，以便简单快捷完成任务，提高生产力！比如 jQuery 就是更加接近一个库，要什么可以从中拿；
+框架 也算是库的一种，不过更加强调提供一种解决方案，给你搭好架子，代码怎样组织，所以不单单是具体的方法或函数，而是注">
+<meta property="og:image" content="http://7xr868.com1.z0.glb.clouddn.com/task25/animate.gif">
 <meta property="og:image" content="http://7xnk1s.com2.z0.glb.qiniucdn.com/8-1.gif">
 <meta property="og:image" content="http://7xnk1s.com2.z0.glb.qiniucdn.com/8-2.gif">
 <meta property="og:image" content="http://7xnk1s.com2.z0.glb.qiniucdn.com/8-3-1.gif">
-<meta property="og:updated_time" content="2016-04-16T02:22:02.311Z">
+<meta property="og:updated_time" content="2016-04-16T11:30:14.594Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="jQuery DOM & 事件">
 <meta name="twitter:description" content="【知识点】
-1. 说说库和框架的区别？2. jQuery 能做什么？">
-<meta name="twitter:image" content="http://7xnk1s.com2.z0.glb.qiniucdn.com/8-1.gif">
+1. 说说库和框架的区别？
+库 是把一些可以复用的方法集中进行封装到一个library，提供API，我们通过这些API就可以调用这些已经封装好的方法，将代码写得更少/巧/强壮，以便简单快捷完成任务，提高生产力！比如 jQuery 就是更加接近一个库，要什么可以从中拿；
+框架 也算是库的一种，不过更加强调提供一种解决方案，给你搭好架子，代码怎样组织，所以不单单是具体的方法或函数，而是注">
+<meta name="twitter:image" content="http://7xr868.com1.z0.glb.clouddn.com/task25/animate.gif">
 
 
 
@@ -566,8 +573,60 @@
       
         <blockquote>
 <h3 id="【知识点】"><a href="#【知识点】" class="headerlink" title="【知识点】"></a>【知识点】</h3></blockquote>
-<h4 id="1-说说库和框架的区别？"><a href="#1-说说库和框架的区别？" class="headerlink" title="1. 说说库和框架的区别？"></a><strong>1. 说说库和框架的区别？</strong></h4><h4 id="2-jQuery-能做什么？"><a href="#2-jQuery-能做什么？" class="headerlink" title="2. jQuery 能做什么？"></a><strong>2. jQuery 能做什么？</strong></h4><a id="more"></a>
-<h4 id="3-jQuery-对象和-DOM-原生对象有什么区别？如何转化？"><a href="#3-jQuery-对象和-DOM-原生对象有什么区别？如何转化？" class="headerlink" title="3. jQuery 对象和 DOM 原生对象有什么区别？如何转化？"></a><strong>3. jQuery 对象和 DOM 原生对象有什么区别？如何转化？</strong></h4><h4 id="4-jQuery中如何绑定事件？bind、unbind、delegate、live、on、off都有什么作用？推荐使用哪种？使用on绑定事件使用事件代理的写法？"><a href="#4-jQuery中如何绑定事件？bind、unbind、delegate、live、on、off都有什么作用？推荐使用哪种？使用on绑定事件使用事件代理的写法？" class="headerlink" title="4. jQuery中如何绑定事件？bind、unbind、delegate、live、on、off都有什么作用？推荐使用哪种？使用on绑定事件使用事件代理的写法？"></a><strong>4. jQuery中如何绑定事件？<code>bind</code>、<code>unbind</code>、<code>delegate</code>、<code>live</code>、<code>on</code>、<code>off</code>都有什么作用？推荐使用哪种？使用<code>on</code>绑定事件使用事件代理的写法？</strong></h4><h4 id="5-jQuery-如何展示-隐藏元素？"><a href="#5-jQuery-如何展示-隐藏元素？" class="headerlink" title="5. jQuery 如何展示/隐藏元素？"></a><strong>5. jQuery 如何展示/隐藏元素？</strong></h4><h4 id="6-jQuery-动画如何使用？"><a href="#6-jQuery-动画如何使用？" class="headerlink" title="6. jQuery 动画如何使用？"></a><strong>6. jQuery 动画如何使用？</strong></h4><h4 id="7-如何设置和获取元素内部-HTML-内容？如何设置和获取元素内部文本？"><a href="#7-如何设置和获取元素内部-HTML-内容？如何设置和获取元素内部文本？" class="headerlink" title="7. 如何设置和获取元素内部 HTML 内容？如何设置和获取元素内部文本？"></a><strong>7. 如何设置和获取元素内部 HTML 内容？如何设置和获取元素内部文本？</strong></h4><h4 id="8-如何设置和获取表单用户输入或者选择的内容？如何设置和获取元素属性？"><a href="#8-如何设置和获取表单用户输入或者选择的内容？如何设置和获取元素属性？" class="headerlink" title="8. 如何设置和获取表单用户输入或者选择的内容？如何设置和获取元素属性？"></a><strong>8. 如何设置和获取表单用户输入或者选择的内容？如何设置和获取元素属性？</strong></h4><hr>
+<h4 id="1-说说库和框架的区别？"><a href="#1-说说库和框架的区别？" class="headerlink" title="1. 说说库和框架的区别？"></a><strong>1. 说说库和框架的区别？</strong></h4><ul>
+<li><strong>库</strong> 是把一些可以复用的方法集中进行封装到一个<code>library</code>，提供<code>API</code>，我们通过这些<code>API</code>就可以调用这些已经封装好的方法，将代码写得更少/巧/强壮，以便简单快捷完成任务，提高生产力！比如 <code>jQuery</code> 就是更加接近一个库，要什么可以从中拿；</li>
+<li><strong>框架</strong> 也算是库的一种，不过更加强调提供一种解决方案，给你搭好架子，代码怎样组织，所以不单单是具体的方法或函数，而是注重从细节到整体的宏观思路。<code>AngularJS</code> 就算是一个框架，因为它提供了一整套的解决方案；</li>
+</ul>
+<blockquote>
+<p>对于小型应用来说，因为业务逻辑简单，代码总量不会太大，组织不会是太大的问题，所以用类库就够了；而面对中/大型项目，特别是需要多人共同参与的项目，选择一个合适的框架有助于写出规范的，易于理解的，易于回复的，低耦合的……等等的代码，在此基础上再使用各种类库来增加具体代码的健壮性与功能性则更好。</p>
+</blockquote>
+<a id="more"></a>
+<h4 id="2-jQuery-能做什么？"><a href="#2-jQuery-能做什么？" class="headerlink" title="2. jQuery 能做什么？"></a><strong>2. jQuery 能做什么？</strong></h4><p>一言以蔽之，jQuery就是让我们能更加畅快舒爽地编写JavaScript，不必去编写蛋疼费时的原生JavaScript！它轻量，快速，功能丰富。</p>
+<ul>
+<li>可以简单快捷完成诸如JavaScript中的HTML元素选取和操作，CSS操作，HTML <code>DOM</code>遍历和操作，事件处理，特效，动画和<code>AJAX</code>交互。</li>
+<li>jQuery提供<code>API</code>让开发者编写插件。其模块化的使用方式使开发者可以很轻松的开发出功能强大的静态或动态网页。</li>
+</ul>
+<h4 id="3-jQuery-对象和-DOM-原生对象有什么区别？如何转化？"><a href="#3-jQuery-对象和-DOM-原生对象有什么区别？如何转化？" class="headerlink" title="3. jQuery 对象和 DOM 原生对象有什么区别？如何转化？"></a><strong>3. jQuery 对象和 DOM 原生对象有什么区别？如何转化？</strong></h4><ul>
+<li>DOM对象是通过原生JavaScript获得的对象，jQuery对象是通过jQuery选择器获得对象；</li>
+<li>jQuery对象只能使用jQuery自己的属性和方法，DOM对象只能使用DOM的属性和方法，</li>
+</ul>
+<blockquote>
+<p>jQuery对象转DOM对象</p>
+</blockquote>
+<p>我们可以通过类数组下标的获取方式或者get方法获取指定下标的<code>DOM</code>对象:<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"ct"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"item"</span>&gt;</span>item1<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"item"</span>&gt;</span>item2<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"item"</span>&gt;</span>item3<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>jQuery 对象是类数组对象，所以可通过数组下标获取数组中的DOM对象：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">'.item'</span>)[<span class="number">2</span>];<span class="comment">//&lt;div class="item"&gt;item3&lt;/div&gt;</span></span><br><span class="line">$(<span class="string">'.item'</span>).eq(<span class="number">2</span>)[<span class="number">0</span>];<span class="comment">//&lt;div class="item"&gt;item3&lt;/div&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>通过jQuery的<code>.get()</code>方法获得的直接是DOM对象：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">'.item'</span>).get(<span class="number">2</span>);<span class="comment">//&lt;div class="item"&gt;item3&lt;/div&gt;</span></span><br></pre></td></tr></table></figure></p>
+<blockquote>
+<p>DOM对象转 jQuery 对象</p>
+</blockquote>
+<p>使用 <code>$()</code> 将DOM对象包裹起来就是jQuery对象：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> ct = <span class="built_in">document</span>.getElementById(<span class="string">'ct'</span>);<span class="comment">//DOM对象</span></span><br><span class="line"><span class="keyword">var</span> $ct = $(ct);<span class="comment">//$(DOM对象)转化为了jQuery对象$ct</span></span><br></pre></td></tr></table></figure></p>
+<h4 id="4-jQuery中如何绑定事件？bind、unbind、delegate、live、on、off都有什么作用？推荐使用哪种？使用on绑定事件使用事件代理的写法？"><a href="#4-jQuery中如何绑定事件？bind、unbind、delegate、live、on、off都有什么作用？推荐使用哪种？使用on绑定事件使用事件代理的写法？" class="headerlink" title="4. jQuery中如何绑定事件？bind、unbind、delegate、live、on、off都有什么作用？推荐使用哪种？使用on绑定事件使用事件代理的写法？"></a><strong>4. jQuery中如何绑定事件？<code>bind</code>、<code>unbind</code>、<code>delegate</code>、<code>live</code>、<code>on</code>、<code>off</code>都有什么作用？推荐使用哪种？使用<code>on</code>绑定事件使用事件代理的写法？</strong></h4><p>jQuery中有很多绑定事件的方法<code>.bind()</code>,<code>.live()</code>,<code>.delegate()</code>,<code>.on()</code>,下面看看他们的区别：</p>
+<ul>
+<li><p><code>.bind()</code>：对于早期jQuery版本（1.7以前），<code>.bind()</code>方法用于直接将事件绑定在选中的元素上，所以<code>.bind()</code>在绑定事件的时候被选的元素必须存在；使用一次<code>.bind()</code>选择器匹配的元素会附加一个事件处理函数，而以后再添加的元素则不会有。为此需要再使用一次 <code>.bind()</code> 才行；</p>
+</li>
+<li><p><code>.unbind</code>：<code>.bind()</code>的反向操作，从每一个匹配的元素中删除绑定的事件。<br>如果没有参数，则删除所有绑定的事件，<code>.bind(typpe)</code>删除指定类型事件；</p>
+</li>
+<li><p><code>.live()</code>：（1.9版本已废弃,不建议使用，老版本建议使用<code>.delegate()</code>）默认使用了事件代理（绑定在祖先元素上的事件处理程序可以对后代上触发事件作出回应），没有将事件直接绑定在该元素上，而是绑定在<code>document</code>元素上（DOM树的根节点），</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"clickme"</span>&gt;</span>Click here<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span><br><span class="line">$(<span class="string">'.clickme'</span>).live(<span class="string">'click'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">      alert(<span class="string">"Live handler called."</span>); <span class="comment">//事件冒泡`document`元素上，查看事件类型是否是click、</span></span><br><span class="line">      <span class="comment">//目标元素和选择器.clickme否匹配，</span></span><br><span class="line">      <span class="comment">//是则执行绑定的事件处理函数；</span></span><br><span class="line">&#125;);</span><br><span class="line"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>.delegate()</code>：对于早期jQuery版本（1.7以前），<code>.delegate</code>是使用事件代理最有效的方式,</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"background-color:red"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>这是一个段落。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">button</span>&gt;</span>请点击这里<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span><br><span class="line">$(<span class="string">'div'</span>).delegate(<span class="string">'button'</span>,<span class="string">'click'</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    $(<span class="string">'p'</span>).slideToggle();<span class="comment">//将事件绑定到$('div')上，事件冒泡到$('div')上</span></span><br><span class="line">&#125;)<span class="comment">//查看是不是click事件，目标元素是不是button，如果都满足，就执行函数</span></span><br><span class="line"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>.on()</code>：（1.7版本后<code>.on()</code>取代了<code>.bind()</code>,<code>.live()</code>,<code>.delegate()</code>，提供绑定事件处理的所有功能，<strong>强烈推荐</strong>）<br>事件代理</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"body"</span>).on(<span class="string">"click"</span>, <span class="string">"p"</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    alert( $(<span class="keyword">this</span>).text() );<span class="comment">//当点击段落时，显示该段落中的文本</span></span><br><span class="line">&#125;);javascript</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>.off()</code>：移除用<code>.on()</code>绑定的事件处理程序。</p>
+</li>
+</ul>
+<h4 id="5-jQuery-如何展示-隐藏元素？"><a href="#5-jQuery-如何展示-隐藏元素？" class="headerlink" title="5. jQuery 如何展示/隐藏元素？"></a><strong>5. jQuery 如何展示/隐藏元素？</strong></h4><ul>
+<li><p><strong>.hide( speed, [callback] )</strong>：隐藏显示的元素，<br><code>speed</code>：表示速度的参数，可选（<code>slow</code>,<code>fast</code>,<code>normal</code>）或者毫秒数;<br><code>[callback]</code>:在动画完成时执行的函数，每个元素执行一次。<br>不设置参数就立即执行，没有动画；</p>
+</li>
+<li><p><strong>.show(speed,callback)</strong>：显示隐藏的元素；</p>
+</li>
+</ul>
+<h4 id="6-jQuery-动画如何使用？"><a href="#6-jQuery-动画如何使用？" class="headerlink" title="6. jQuery 动画如何使用？"></a><strong>6. jQuery 动画如何使用？</strong></h4><p><strong>.animate(params,[speed],[callback])</strong> 函数用来创建自定义动画，这个函数的关键在于指定动画形式及结果样式属性对象。这个对象中每个属性都表示一个可以变化的样式属性（如“height”、“top”或“opacity”）。注意：所有指定的属性必须用骆驼形式，比如用marginLeft代替margin-left.<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span><br><span class="line">    .box&#123;</span><br><span class="line">        width: 50px;</span><br><span class="line">        height:50px;</span><br><span class="line">        background-color: red;</span><br><span class="line">    &#125;</span><br><span class="line">    .btn&#123;</span><br><span class="line">      margin-bottom:10px;</span><br><span class="line">    &#125;</span><br><span class="line"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">button</span> <span class="attr">class</span>=<span class="string">"btn"</span>&gt;</span>Click<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span><br><span class="line">  $(<span class="string">'.btn'</span>).on(<span class="string">'click'</span>,<span class="function"><span class="keyword">function</span> <span class="title">repeat</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    $(<span class="string">'.box'</span>).animate(&#123;</span><br><span class="line">      width:<span class="string">"100px"</span>,</span><br><span class="line">      height:<span class="string">"100px"</span>,</span><br><span class="line">      opacity:<span class="number">0.5</span></span><br><span class="line">    &#125;,<span class="number">1000</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">      $(<span class="keyword">this</span>).animate(&#123;</span><br><span class="line">        width:<span class="string">"50px"</span>,</span><br><span class="line">        height:<span class="string">"50px"</span>,</span><br><span class="line">        opacity:<span class="number">1</span>,</span><br><span class="line">        color</span><br><span class="line">      &#125;,<span class="number">1000</span>,repeat());</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;);</span><br><span class="line"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>效果：<br><img src="http://7xr868.com1.z0.glb.clouddn.com/task25/animate.gif" alt=""></p>
+<h4 id="7-如何设置和获取元素内部-HTML-内容？如何设置和获取元素内部文本？"><a href="#7-如何设置和获取元素内部-HTML-内容？如何设置和获取元素内部文本？" class="headerlink" title="7. 如何设置和获取元素内部 HTML 内容？如何设置和获取元素内部文本？"></a><strong>7. 如何设置和获取元素内部 HTML 内容？如何设置和获取元素内部文本？</strong></h4><h4 id="8-如何设置和获取表单用户输入或者选择的内容？如何设置和获取元素属性？"><a href="#8-如何设置和获取表单用户输入或者选择的内容？如何设置和获取元素属性？" class="headerlink" title="8. 如何设置和获取表单用户输入或者选择的内容？如何设置和获取元素属性？"></a><strong>8. 如何设置和获取表单用户输入或者选择的内容？如何设置和获取元素属性？</strong></h4><hr>
 <blockquote>
 <h3 id="【练习】"><a href="#【练习】" class="headerlink" title="【练习】"></a>【练习】</h3></blockquote>
 <h4 id="1-使用-jQuery实现如下效果"><a href="#1-使用-jQuery实现如下效果" class="headerlink" title="1. 使用 jQuery实现如下效果"></a><strong>1. 使用 jQuery实现如下效果</strong></h4><p><img src="http://7xnk1s.com2.z0.glb.qiniucdn.com/8-1.gif" alt=""></p>
