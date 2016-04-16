@@ -78,7 +78,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="李操,南京,前端,前端开发,学习,JavaScript,html,衡阳,CSS" />
+  <meta name="keywords" content="JavaScript,jQuery," />
 
 
 
@@ -96,15 +96,23 @@
 
 
 
-<meta name="description" content="求知若饥 | 虚心似谷">
-<meta property="og:type" content="website">
-<meta property="og:title" content="蓝岚爱肉肉">
-<meta property="og:url" content="http://licao404.com/categories/技巧分享/index.html">
+<meta name="description" content="【知识点】
+1. 说说库和框架的区别？2. jQuery 能做什么？3. jQuery 对象和 DOM 原生对象有什么区别？如何转化？4. jQuery中如何绑定事件？bind、unbind、delegate、live、on、off都有什么作用？推荐使用哪种？使用on绑定事件使用事件代理的写法？5. jQuery 如何展示/隐藏元素？6. jQuery 动画如何使用？7. 如何设置和获取元素内部">
+<meta property="og:type" content="article">
+<meta property="og:title" content="jQuery DOM & 事件">
+<meta property="og:url" content="http://licao404.com/2016/04/16/jQuery-DOM-事件/index.html">
 <meta property="og:site_name" content="蓝岚爱肉肉">
-<meta property="og:description" content="求知若饥 | 虚心似谷">
+<meta property="og:description" content="【知识点】
+1. 说说库和框架的区别？2. jQuery 能做什么？3. jQuery 对象和 DOM 原生对象有什么区别？如何转化？4. jQuery中如何绑定事件？bind、unbind、delegate、live、on、off都有什么作用？推荐使用哪种？使用on绑定事件使用事件代理的写法？5. jQuery 如何展示/隐藏元素？6. jQuery 动画如何使用？7. 如何设置和获取元素内部">
+<meta property="og:image" content="http://7xnk1s.com2.z0.glb.qiniucdn.com/8-1.gif">
+<meta property="og:image" content="http://7xnk1s.com2.z0.glb.qiniucdn.com/8-2.gif">
+<meta property="og:image" content="http://7xnk1s.com2.z0.glb.qiniucdn.com/8-3-1.gif">
+<meta property="og:updated_time" content="2016-04-16T02:12:05.615Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="蓝岚爱肉肉">
-<meta name="twitter:description" content="求知若饥 | 虚心似谷">
+<meta name="twitter:title" content="jQuery DOM & 事件">
+<meta name="twitter:description" content="【知识点】
+1. 说说库和框架的区别？2. jQuery 能做什么？3. jQuery 对象和 DOM 原生对象有什么区别？如何转化？4. jQuery中如何绑定事件？bind、unbind、delegate、live、on、off都有什么作用？推荐使用哪种？使用on绑定事件使用事件代理的写法？5. jQuery 如何展示/隐藏元素？6. jQuery 动画如何使用？7. 如何设置和获取元素内部">
+<meta name="twitter:image" content="http://7xnk1s.com2.z0.glb.qiniucdn.com/8-1.gif">
 
 
 
@@ -122,7 +130,7 @@
   };
 </script>
 
-  <title> 分类: 技巧分享 | 蓝岚爱肉肉 </title>
+  <title> jQuery DOM & 事件 | 蓝岚爱肉肉 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -159,7 +167,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -448,47 +456,212 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <div class="collection-title">
-      <h2 >
-        技巧分享
-        <small>分类</small>
-      </h2>
-    </div>
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
 
     
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                jQuery DOM & 事件
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-04-16T09:51:23+08:00" content="2016-04-16">
+              2016-04-16
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/编程学习/" itemprop="url" rel="index">
+                    <span itemprop="name">编程学习</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/编程学习/前端基础/" itemprop="url" rel="index">
+                    <span itemprop="name">前端基础</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/04/16/jQuery-DOM-事件/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/04/16/jQuery-DOM-事件/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/04/16/jQuery-DOM-事件/" class="leancloud_visitors" data-flag-title="jQuery DOM & 事件">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
       
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+      
+        <blockquote>
+<h3 id="【知识点】"><a href="#【知识点】" class="headerlink" title="【知识点】"></a>【知识点】</h3></blockquote>
+<h4 id="1-说说库和框架的区别？"><a href="#1-说说库和框架的区别？" class="headerlink" title="1. 说说库和框架的区别？"></a><strong>1. 说说库和框架的区别？</strong></h4><h4 id="2-jQuery-能做什么？"><a href="#2-jQuery-能做什么？" class="headerlink" title="2. jQuery 能做什么？"></a><strong>2. jQuery 能做什么？</strong></h4><h4 id="3-jQuery-对象和-DOM-原生对象有什么区别？如何转化？"><a href="#3-jQuery-对象和-DOM-原生对象有什么区别？如何转化？" class="headerlink" title="3. jQuery 对象和 DOM 原生对象有什么区别？如何转化？"></a><strong>3. jQuery 对象和 DOM 原生对象有什么区别？如何转化？</strong></h4><h4 id="4-jQuery中如何绑定事件？bind、unbind、delegate、live、on、off都有什么作用？推荐使用哪种？使用on绑定事件使用事件代理的写法？"><a href="#4-jQuery中如何绑定事件？bind、unbind、delegate、live、on、off都有什么作用？推荐使用哪种？使用on绑定事件使用事件代理的写法？" class="headerlink" title="4. jQuery中如何绑定事件？bind、unbind、delegate、live、on、off都有什么作用？推荐使用哪种？使用on绑定事件使用事件代理的写法？"></a><strong>4. jQuery中如何绑定事件？<code>bind</code>、<code>unbind</code>、<code>delegate</code>、<code>live</code>、<code>on</code>、<code>off</code>都有什么作用？推荐使用哪种？使用<code>on</code>绑定事件使用事件代理的写法？</strong></h4><h4 id="5-jQuery-如何展示-隐藏元素？"><a href="#5-jQuery-如何展示-隐藏元素？" class="headerlink" title="5. jQuery 如何展示/隐藏元素？"></a><strong>5. jQuery 如何展示/隐藏元素？</strong></h4><h4 id="6-jQuery-动画如何使用？"><a href="#6-jQuery-动画如何使用？" class="headerlink" title="6. jQuery 动画如何使用？"></a><strong>6. jQuery 动画如何使用？</strong></h4><h4 id="7-如何设置和获取元素内部-HTML-内容？如何设置和获取元素内部文本？"><a href="#7-如何设置和获取元素内部-HTML-内容？如何设置和获取元素内部文本？" class="headerlink" title="7. 如何设置和获取元素内部 HTML 内容？如何设置和获取元素内部文本？"></a><strong>7. 如何设置和获取元素内部 HTML 内容？如何设置和获取元素内部文本？</strong></h4><h4 id="8-如何设置和获取表单用户输入或者选择的内容？如何设置和获取元素属性？"><a href="#8-如何设置和获取表单用户输入或者选择的内容？如何设置和获取元素属性？" class="headerlink" title="8. 如何设置和获取表单用户输入或者选择的内容？如何设置和获取元素属性？"></a><strong>8. 如何设置和获取表单用户输入或者选择的内容？如何设置和获取元素属性？</strong></h4><hr>
+<blockquote>
+<h3 id="【练习】"><a href="#【练习】" class="headerlink" title="【练习】"></a>【练习】</h3></blockquote>
+<h4 id="1-使用-jQuery实现如下效果"><a href="#1-使用-jQuery实现如下效果" class="headerlink" title="1. 使用 jQuery实现如下效果"></a><strong>1. 使用 jQuery实现如下效果</strong></h4><p><img src="http://7xnk1s.com2.z0.glb.qiniucdn.com/8-1.gif" alt=""></p>
+<h4 id="2-使用-jQuery实现如下效果"><a href="#2-使用-jQuery实现如下效果" class="headerlink" title="2. 使用 jQuery实现如下效果"></a><strong>2. 使用 jQuery实现如下效果</strong></h4><p><img src="http://7xnk1s.com2.z0.glb.qiniucdn.com/8-2.gif" alt=""></p>
+<blockquote>
+<p>问题： 点奢侈品2的时候页面跳到了顶部，可能是什么原因？如何解决</p>
+</blockquote>
+<h4 id="3-使用-jQuery实现如下效果"><a href="#3-使用-jQuery实现如下效果" class="headerlink" title="3. 使用 jQuery实现如下效果"></a><strong>3. 使用 jQuery实现如下效果</strong></h4><p><img src="http://7xnk1s.com2.z0.glb.qiniucdn.com/8-3-1.gif" alt=""></p>
+<blockquote>
+<p>提示<br>1.使用代理<br>2.当点击按钮时使用如下数据<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> products = [</span><br><span class="line">    &#123;</span><br><span class="line">        img: <span class="string">'http://img10.360buyimg.com/N3/jfs/t2242/92/1446546284/374195/9196ac66/56af0958N1a723458.jpg'</span>,</span><br><span class="line">        name: <span class="string">'珂兰 黄金手 猴哥款'</span>,</span><br><span class="line">        price: <span class="string">'￥405.00'</span></span><br><span class="line">    &#125;,&#123;</span><br><span class="line">        img: <span class="string">'http://img10.360buyimg.com/N3/jfs/t2242/92/1446546284/374195/9196ac66/56af0958N1a723458.jpg'</span>,</span><br><span class="line">        name: <span class="string">'珂兰 黄金转运珠 猴哥款'</span>,</span><br><span class="line">        price: <span class="string">'￥100.00'</span></span><br><span class="line">    &#125;,&#123;</span><br><span class="line">        img: <span class="string">'http://img10.360buyimg.com/N3/jfs/t2242/92/1446546284/374195/9196ac66/56af0958N1a723458.jpg'</span>,</span><br><span class="line">        name: <span class="string">'珂兰 黄金手链 3D猴哥款'</span>,</span><br><span class="line">        price: <span class="string">'￥45.00'</span></span><br><span class="line">    &#125;</span><br><span class="line">];</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<hr>
 
-      <h1 class="post-title">
+      
+    </div>
+    
+    <div>
+      
         
-            <a class="post-title-link" href="/2016/03/19/Hexo常用命令笔记/" itemprop="url">
-              
-                <span itemprop="name">Hexo常用命令收集</span>
-              
-            </a>
-        
-      </h1>
+<div id="wechat_subscriber" style="display: block； padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="http://7xrvo9.com1.z0.glb.clouddn.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E5%8D%9A%E5%AE%A2%E5%BE%AE%E4%BF%A1%E8%AE%A2%E9%98%85%E5%8F%B7.jpg" alt="蓝岚 wechat" style="width: 200px; max-width: 100%;"/>
+    <div>欢迎您扫一扫上面的微信公众号，订阅我的博客！</div>
+</div>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-03-19T17:39:36+08:00"
-              content="2016-03-19" >
-          03-19
-        </time>
+      
+    </div>
+
+    <div>
+      
+        
+<div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center">
+  <div>如果您喜欢，请随意打赏。您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton", disable="enable", onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}", style="cursor: pointer; border: 0; outline: 0; border-radius: 100%; padding: 0; margin: 0; letter-spacing: normal; text-transform: none; text-indent: 0px; text-shadow: none">
+    <span onmouseover="this.style.color='rgb(236,96,0)';this.style.background='rgb(204,204,204)'" onMouseOut="this.style.color='#fff';this.style.background='rgb(236,96,0)'" style="display: inline-block; width: 70px; height: 70px; border-radius: 100%; line-height: 81px; color: #fff; font: 400 35px/75px 'microsofty'; background: rgb(236,96,0)">赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="http://7xrvo9.com1.z0.glb.clouddn.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E5%BE%AE%E4%BF%A1%E6%89%93%E8%B5%8F%E9%9A%8F%E6%84%8F.png" alt="蓝岚 WeChat Pay" style="width: 200px; max-width: 100%; display: inline-block"/>
+        <p>微信打赏</p>
       </div>
+    
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="http://7xrvo9.com1.z0.glb.clouddn.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%94%AF%E4%BB%98%E5%AE%9D%E6%89%93%E8%B5%8F%E9%9A%8F%E6%84%8F.jpg" alt="蓝岚 Alipay" style="width: 200px; max-width: 100%; display: inline-block"/>
+        <p>支付宝打赏</p>
+      </div>
+    
+  </div>
+</div>
 
-    </header>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/JavaScript/" rel="tag">#JavaScript</a>
+          
+            <a href="/tags/jQuery/" rel="tag">#jQuery</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/04/12/Ajax浅入门/" rel="next" title="AJAX-从入门到放弃">
+                <i class="fa fa-chevron-left"></i> AJAX-从入门到放弃
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </article>
 
 
-    
-  </section>
 
-  
-
+    <div class="post-spread">
+      
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type = "text/javascript" src = "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56ffc85abe3ee8ee" async = "async" ></script>
+      
+    </div>
+  </div>
 
 
           </div>
@@ -496,6 +669,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/04/16/jQuery-DOM-事件/"
+           data-title="jQuery DOM & 事件" data-url="http://licao404.com/2016/04/16/jQuery-DOM-事件/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -515,8 +696,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="http://7xr868.com1.z0.glb.clouddn.com/me.jpg"
@@ -635,6 +825,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#【知识点】"><span class="nav-number">1.</span> <span class="nav-text">【知识点】</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-说说库和框架的区别？"><span class="nav-number">1.1.</span> <span class="nav-text">1. 说说库和框架的区别？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-jQuery-能做什么？"><span class="nav-number">1.2.</span> <span class="nav-text">2. jQuery 能做什么？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-jQuery-对象和-DOM-原生对象有什么区别？如何转化？"><span class="nav-number">1.3.</span> <span class="nav-text">3. jQuery 对象和 DOM 原生对象有什么区别？如何转化？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-jQuery中如何绑定事件？bind、unbind、delegate、live、on、off都有什么作用？推荐使用哪种？使用on绑定事件使用事件代理的写法？"><span class="nav-number">1.4.</span> <span class="nav-text">4. jQuery中如何绑定事件？bind、unbind、delegate、live、on、off都有什么作用？推荐使用哪种？使用on绑定事件使用事件代理的写法？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-jQuery-如何展示-隐藏元素？"><span class="nav-number">1.5.</span> <span class="nav-text">5. jQuery 如何展示/隐藏元素？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-jQuery-动画如何使用？"><span class="nav-number">1.6.</span> <span class="nav-text">6. jQuery 动画如何使用？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7-如何设置和获取元素内部-HTML-内容？如何设置和获取元素内部文本？"><span class="nav-number">1.7.</span> <span class="nav-text">7. 如何设置和获取元素内部 HTML 内容？如何设置和获取元素内部文本？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#8-如何设置和获取表单用户输入或者选择的内容？如何设置和获取元素属性？"><span class="nav-number">1.8.</span> <span class="nav-text">8. 如何设置和获取表单用户输入或者选择的内容？如何设置和获取元素属性？</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#【练习】"><span class="nav-number">2.</span> <span class="nav-text">【练习】</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-使用-jQuery实现如下效果"><span class="nav-number">2.1.</span> <span class="nav-text">1. 使用 jQuery实现如下效果</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-使用-jQuery实现如下效果"><span class="nav-number">2.2.</span> <span class="nav-text">2. 使用 jQuery实现如下效果</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-使用-jQuery实现如下效果"><span class="nav-number">2.3.</span> <span class="nav-text">3. 使用 jQuery实现如下效果</span></a></li></ol></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -772,6 +973,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
