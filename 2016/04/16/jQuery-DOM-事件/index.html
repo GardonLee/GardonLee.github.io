@@ -112,7 +112,7 @@
 <meta property="og:image" content="http://7xnk1s.com2.z0.glb.qiniucdn.com/8-1.gif">
 <meta property="og:image" content="http://7xnk1s.com2.z0.glb.qiniucdn.com/8-2.gif">
 <meta property="og:image" content="http://7xnk1s.com2.z0.glb.qiniucdn.com/8-3-1.gif">
-<meta property="og:updated_time" content="2016-04-18T08:05:46.030Z">
+<meta property="og:updated_time" content="2016-04-18T16:51:50.641Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="jQuery DOM & 事件">
 <meta name="twitter:description" content="【知识点】
@@ -577,10 +577,10 @@
 <li><strong>库</strong> 是把一些可以复用的方法集中进行封装到一个<code>library</code>，提供<code>API</code>，我们通过这些<code>API</code>就可以调用这些已经封装好的方法，将代码写得更少/巧/强壮，以便简单快捷完成任务，提高生产力！比如 <code>jQuery</code> 就是更加接近一个库，要什么可以从中拿；</li>
 <li><strong>框架</strong> 也算是库的一种，不过更加强调提供一种解决方案，给你搭好架子，代码怎样组织，所以不单单是具体的方法或函数，而是注重从细节到整体的宏观思路。<code>AngularJS</code> 就算是一个框架，因为它提供了一整套的解决方案；</li>
 </ul>
+<a id="more"></a>
 <blockquote>
 <p>对于小型应用来说，因为业务逻辑简单，代码总量不会太大，组织不会是太大的问题，所以用类库就够了；而面对中/大型项目，特别是需要多人共同参与的项目，选择一个合适的框架有助于写出规范的，易于理解的，易于回复的，低耦合的……等等的代码，在此基础上再使用各种类库来增加具体代码的健壮性与功能性则更好。</p>
 </blockquote>
-<a id="more"></a>
 <h4 id="2-jQuery-能做什么？"><a href="#2-jQuery-能做什么？" class="headerlink" title="2. jQuery 能做什么？"></a><strong>2. jQuery 能做什么？</strong></h4><p>一言以蔽之，jQuery就是让我们能更加畅快舒爽地编写JavaScript，不必去编写蛋疼费时的原生JavaScript！它轻量，快速，功能丰富。</p>
 <ul>
 <li>可以简单快捷完成诸如JavaScript中的HTML元素选取和操作，CSS操作，HTML <code>DOM</code>遍历和操作，事件处理，特效，动画和<code>AJAX</code>交互。</li>
@@ -624,7 +624,7 @@
 <li><p><strong>.show(speed,callback)</strong>：显示隐藏的元素；</p>
 </li>
 </ul>
-<h4 id="6-jQuery-动画如何使用？"><a href="#6-jQuery-动画如何使用？" class="headerlink" title="6. jQuery 动画如何使用？"></a><strong>6. jQuery 动画如何使用？</strong></h4><p><strong>.animate(params,[speed],[callback])</strong> 函数用来创建自定义动画，这个函数的关键在于指定动画形式及结果样式属性对象。这个对象中每个属性都表示一个可以变化的样式属性（如“height”、“top”或“opacity”）。注意：所有指定的属性必须用骆驼形式，比如用marginLeft代替margin-left.<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="css"></span><br><span class="line">    <span class="selector-class">.box</span>&#123;</span><br><span class="line">        <span class="attribute">width</span>: <span class="number">50px</span>;</span><br><span class="line">        <span class="attribute">height</span>:<span class="number">50px</span>;</span><br><span class="line">        <span class="attribute">background-color</span>: red;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="selector-class">.btn</span>&#123;</span><br><span class="line">      <span class="attribute">margin-bottom</span>:<span class="number">10px</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">button</span> <span class="attr">class</span>=<span class="string">"btn"</span>&gt;</span>Click<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span><br><span class="line">  $(<span class="string">'.btn'</span>).on(<span class="string">'click'</span>,<span class="function"><span class="keyword">function</span> <span class="title">repeat</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    $(<span class="string">'.box'</span>).animate(&#123;</span><br><span class="line">      width:<span class="string">"100px"</span>,</span><br><span class="line">      height:<span class="string">"100px"</span>,</span><br><span class="line">      opacity:<span class="number">0.5</span></span><br><span class="line">    &#125;,<span class="number">1000</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">      $(<span class="keyword">this</span>).animate(&#123;</span><br><span class="line">        width:<span class="string">"50px"</span>,</span><br><span class="line">        height:<span class="string">"50px"</span>,</span><br><span class="line">        opacity:<span class="number">1</span></span><br><span class="line">      &#125;,<span class="number">1000</span>,repeat());</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;);</span><br><span class="line"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h4 id="6-jQuery-动画如何使用？"><a href="#6-jQuery-动画如何使用？" class="headerlink" title="6. jQuery 动画如何使用？"></a><strong>6. jQuery 动画如何使用？</strong></h4><p><strong>.animate(params,[speed],[callback])</strong> 函数用来创建自定义动画，这个函数的关键在于指定动画形式及结果样式属性对象。这个对象中每个属性都表示一个可以变化的样式属性（如“height”、“top”或“opacity”）。注意：所有指定的属性必须用骆驼形式，比如用marginLeft代替margin-left.<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span><br><span class="line">    .box&#123;</span><br><span class="line">        width: 50px;</span><br><span class="line">        height:50px;</span><br><span class="line">        background-color: red;</span><br><span class="line">    &#125;</span><br><span class="line">    .btn&#123;</span><br><span class="line">      margin-bottom:10px;</span><br><span class="line">    &#125;</span><br><span class="line"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">button</span> <span class="attr">class</span>=<span class="string">"btn"</span>&gt;</span>Click<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span><br><span class="line">  $(<span class="string">'.btn'</span>).on(<span class="string">'click'</span>,<span class="function"><span class="keyword">function</span> <span class="title">repeat</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    $(<span class="string">'.box'</span>).animate(&#123;</span><br><span class="line">      width:<span class="string">"100px"</span>,</span><br><span class="line">      height:<span class="string">"100px"</span>,</span><br><span class="line">      opacity:<span class="number">0.5</span></span><br><span class="line">    &#125;,<span class="number">1000</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">      $(<span class="keyword">this</span>).animate(&#123;</span><br><span class="line">        width:<span class="string">"50px"</span>,</span><br><span class="line">        height:<span class="string">"50px"</span>,</span><br><span class="line">        opacity:<span class="number">1</span></span><br><span class="line">      &#125;,<span class="number">1000</span>,repeat());</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;);</span><br><span class="line"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
 <p>效果：<br><img src="http://7xr868.com1.z0.glb.clouddn.com/task25/animate%28%29.gif" alt=""></p>
 <h4 id="7-如何设置和获取元素内部-HTML-内容？如何设置和获取元素内部文本？"><a href="#7-如何设置和获取元素内部-HTML-内容？如何设置和获取元素内部文本？" class="headerlink" title="7. 如何设置和获取元素内部 HTML 内容？如何设置和获取元素内部文本？"></a><strong>7. 如何设置和获取元素内部 HTML 内容？如何设置和获取元素内部文本？</strong></h4><ul>
 <li><p><strong><code>$(selector).html()</code></strong>用于获取<strong>第一个</strong>匹配元素的内容，。这个函数不能用于XML文档，但可以用于XHTML文档。如果选择器匹配多个元素，那么只有第一个匹配元素的 HTML 内容会被获取；</p>
@@ -751,6 +751,10 @@
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/2016/04/19/学习-ECharts（一）：初窥/" rel="prev" title="学习 ECharts（一）：初窥">
+                学习 ECharts（一）：初窥 <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -824,7 +828,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">22</span>
+              <span class="site-state-item-count">23</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -832,7 +836,7 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">9</span>
+                <span class="site-state-item-count">10</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -841,7 +845,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">16</span>
+                <span class="site-state-item-count">20</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
