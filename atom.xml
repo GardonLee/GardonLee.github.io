@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://licao404.com/"/>
-  <updated>2016-04-18T02:47:20.665Z</updated>
+  <updated>2016-04-18T08:05:46.030Z</updated>
   <id>http://licao404.com/</id>
   
   <author>
@@ -14,706 +14,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title></title>
-    <link href="http://licao404.com/2016/04/18/jQuery-DOM-%E4%BA%8B%E4%BB%B6_160418104720/"/>
-    <id>http://licao404.com/2016/04/18/jQuery-DOM-事件_160418104720/</id>
-    <published>2016-04-18T02:47:20.659Z</published>
-    <updated>2016-04-18T02:47:20.665Z</updated>
-    
-    <content type="html">&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;meta charset=&quot;utf-8&quot;&gt;
-    &lt;title&gt;jQuery-DOM-事件.md—E:\Hexo Blog\gardonlee.github.io\source\_posts&lt;/title&gt;
-    &lt;style type=&quot;text/css&quot;&gt;
-    html{font-family: sans-serif;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%}body{margin: 0}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display: block}audio,canvas,progress,video{display: inline-block;vertical-align: baseline}audio:not([controls]){display: none;height: 0}[hidden],template{display: none}a{background: transparent}a:active,a:hover{outline: 0}abbr[title]{border-bottom: 1px dotted}b,strong{font-weight: bold}dfn{font-style: italic}h1{font-size: 2em;margin: 0.67em 0}mark{background: #ff0;color: #000}small{font-size: 80%}sub,sup{font-size: 75%;line-height: 0;position: relative;vertical-align: baseline}sup{top: -0.5em}sub{bottom: -0.25em}img{border: 0}svg:not(:root){overflow: hidden}figure{margin: 1em 40px}hr{box-sizing: content-box;height: 0}pre{overflow: auto}code,kbd,pre,samp{font-family: monospace, monospace;font-size: 1em}button,input,optgroup,select,textarea{color: inherit;font: inherit;margin: 0}button{overflow: visible}button,select{text-transform: none}button,html input[type=&quot;button&quot;],input[type=&quot;reset&quot;],input[type=&quot;submit&quot;]{-webkit-appearance: button;cursor: pointer}button[disabled],html input[disabled]{cursor: default}button::-moz-focus-inner,input::-moz-focus-inner{border: 0;padding: 0}input{line-height: normal}input[type=&quot;checkbox&quot;],input[type=&quot;radio&quot;]{box-sizing: border-box;padding: 0}input[type=&quot;number&quot;]::-webkit-inner-spin-button,input[type=&quot;number&quot;]::-webkit-outer-spin-button{height: auto}input[type=&quot;search&quot;]{-webkit-appearance: textfield;box-sizing: content-box}input[type=&quot;search&quot;]::-webkit-search-cancel-button,input[type=&quot;search&quot;]::-webkit-search-decoration{-webkit-appearance: none}fieldset{border: 1px solid #c0c0c0;margin: 0 2px;padding: 0.35em 0.625em 0.75em}legend{border: 0;padding: 0}textarea{overflow: auto}optgroup{font-weight: bold}table{border-collapse: collapse;border-spacing: 0}td,th{padding: 0}*{box-sizing: border-box}input,select,textarea,button{font: 13px/1.4 Helvetica, arial, freesans, clean, sans-serif, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;}body{min-width: 1020px;font: 13px/1.4 Helvetica, arial, freesans, clean, sans-serif, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;;color: #333;background-color: #fff}a{color: #4183c4;text-decoration: none}a:hover,a:active{text-decoration: underline}hr,.rule{height: 0;margin: 15px 0;overflow: hidden;background: transparent;border: 0;border-bottom: 1px solid #ddd}hr:before,.rule:before{display: table;content: &quot;&quot;}hr:after,.rule:after{display: table;clear: both;content: &quot;&quot;}h1,h2,h3,h4,h5,h6{margin-top: 15px;margin-bottom: 15px;line-height: 1.1}h1{font-size: 30px}h2{font-size: 21px}h3{font-size: 16px}h4{font-size: 14px}h5{font-size: 12px}h6{font-size: 11px}small{font-size: 90%}blockquote{margin: 0}.lead{margin-bottom: 30px;font-size: 20px;font-weight: 300;color: #555}.text-muted{color: #999}.text-danger{color: #bd2c00}.text-emphasized{font-weight: bold;color: #333}ul,ol{padding: 0;margin-top: 0;margin-bottom: 0}ol ol,ul ol{list-style-type: lower-roman}ul ul ol,ul ol ol,ol ul ol,ol ol ol{list-style-type: lower-alpha}dd{margin-left: 0}tt,code{font-family: Consolas, &quot;Liberation Mono&quot;, Menlo, Courier, monospace;font-size: 12px}pre{margin-top: 0;margin-bottom: 0;font: 12px Consolas, &quot;Liberation Mono&quot;, Menlo, Courier, monospace}#realtime .status{overflow: visible;position: absolute;top: -5px;left: 0;background: url(&quot;/public/images/github-status.png&quot;);width: 26px;height: 26px;display: block;margin: 0 5px 0 0}#realtime .up{background-position: 0 0}#realtime .problem{background-position: 0 -53px}#realtime .down{background-position: 0 -26px}.container{max-width: 920px;margin: 0 auto 20px auto}#header{background: #FAFAFA;background: -moz-linear-gradient(#FAFAFA, #EAEAEA);background: -webkit-linear-gradient(#FAFAFA, #EAEAEA);-ms-filter: &quot;progid:DXImageTransform.Microsoft.gradient(startColorstr=&#39;#fafafa&#39;, endColorstr=&#39;#eaeaea&#39;)&quot;;border-bottom: 1px solid #CACACA;box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4),0 0 10px rgba(0, 0, 0, 0.1)}#markup{padding: 3px}#markup article{padding-top: 30px}.markdown-body{overflow: hidden;font-family: &quot;Helvetica Neue&quot;, Helvetica, &quot;Segoe UI&quot;, Arial, freesans, sans-serif;font-size: 16px;line-height: 1.6;word-wrap: break-word}.markdown-body&gt;*:first-child{margin-top: 0 !important}.markdown-body&gt;*:last-child{margin-bottom: 0 !important}.markdown-body .absent{color: #c00}.markdown-body .anchor{position: absolute;top: 0;left: 0;display: block;padding-right: 6px;padding-left: 30px;margin-left: -30px}.markdown-body .anchor:focus{outline: none}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{position: relative;margin-top: 1em;margin-bottom: 16px;font-weight: bold;line-height: 1.4}.markdown-body h1 .octicon-link,.markdown-body h2 .octicon-link,.markdown-body h3 .octicon-link,.markdown-body h4 .octicon-link,.markdown-body h5 .octicon-link,.markdown-body h6 .octicon-link{display: none;color: #000;vertical-align: middle}.markdown-body h1:hover .anchor,.markdown-body h2:hover .anchor,.markdown-body h3:hover .anchor,.markdown-body h4:hover .anchor,.markdown-body h5:hover .anchor,.markdown-body h6:hover .anchor{padding-left: 8px;margin-left: -30px;text-decoration: none}.markdown-body h1:hover .anchor .octicon-link,.markdown-body h2:hover .anchor .octicon-link,.markdown-body h3:hover .anchor .octicon-link,.markdown-body h4:hover .anchor .octicon-link,.markdown-body h5:hover .anchor .octicon-link,.markdown-body h6:hover .anchor .octicon-link{display: inline-block}.markdown-body h1 tt,.markdown-body h1 code,.markdown-body h2 tt,.markdown-body h2 code,.markdown-body h3 tt,.markdown-body h3 code,.markdown-body h4 tt,.markdown-body h4 code,.markdown-body h5 tt,.markdown-body h5 code,.markdown-body h6 tt,.markdown-body h6 code{font-size: inherit}.markdown-body h1{padding-bottom: 0.3em;font-size: 2.25em;line-height: 1.2;border-bottom: 1px solid #eee}.markdown-body h1 .anchor{line-height: 1}.markdown-body h2{padding-bottom: 0.3em;font-size: 1.75em;line-height: 1.225;border-bottom: 1px solid #eee}.markdown-body h2 .anchor{line-height: 1}.markdown-body h3{font-size: 1.5em;line-height: 1.43}.markdown-body h3 .anchor{line-height: 1.2}.markdown-body h4{font-size: 1.25em}.markdown-body h4 .anchor{line-height: 1.2}.markdown-body h5{font-size: 1em}.markdown-body h5 .anchor{line-height: 1.1}.markdown-body h6{font-size: 1em;color: #777}.markdown-body h6 .anchor{line-height: 1.1}.markdown-body p,.markdown-body blockquote,.markdown-body ul,.markdown-body ol,.markdown-body dl,.markdown-body table,.markdown-body pre{margin-top: 0;margin-bottom: 16px}.markdown-body hr{height: 4px;padding: 0;margin: 16px 0;background-color: #e7e7e7;border: 0 none}.markdown-body ul,.markdown-body ol{padding-left: 2em}.markdown-body ul.no-list,.markdown-body ol.no-list{padding: 0;list-style-type: none}.markdown-body ul ul,.markdown-body ul ol,.markdown-body ol ol,.markdown-body ol ul{margin-top: 0;margin-bottom: 0}.markdown-body li&gt;p{margin-top: 16px}.markdown-body dl{padding: 0}.markdown-body dl dt{padding: 0;margin-top: 16px;font-size: 1em;font-style: italic;font-weight: bold}.markdown-body dl dd{padding: 0 16px;margin-bottom: 16px}.markdown-body blockquote{padding: 0 15px;color: #777;border-left: 4px solid #ddd}.markdown-body blockquote&gt;:first-child{margin-top: 0}.markdown-body blockquote&gt;:last-child{margin-bottom: 0}.markdown-body table{display: block;width: 100%;overflow: auto;word-break: normal;word-break: keep-all}.markdown-body table th{font-weight: bold}.markdown-body table th,.markdown-body table td{padding: 6px 13px;border: 1px solid #ddd}.markdown-body table tr{background-color: #fff;border-top: 1px solid #ccc}.markdown-body table tr:nth-child(2n){background-color: #f8f8f8}.markdown-body img{max-width: 100%;box-sizing: border-box}.markdown-body span.frame{display: block;overflow: hidden}.markdown-body span.frame&gt;span{display: block;float: left;width: auto;padding: 7px;margin: 13px 0 0;overflow: hidden;border: 1px solid #ddd}.markdown-body span.frame span img{display: block;float: left}.markdown-body span.frame span span{display: block;padding: 5px 0 0;clear: both;color: #333}.markdown-body span.align-center{display: block;overflow: hidden;clear: both}.markdown-body span.align-center&gt;span{display: block;margin: 13px auto 0;overflow: hidden;text-align: center}.markdown-body span.align-center span img{margin: 0 auto;text-align: center}.markdown-body span.align-right{display: block;overflow: hidden;clear: both}.markdown-body span.align-right&gt;span{display: block;margin: 13px 0 0;overflow: hidden;text-align: right}.markdown-body span.align-right span img{margin: 0;text-align: right}.markdown-body span.float-left{display: block;float: left;margin-right: 13px;overflow: hidden}.markdown-body span.float-left span{margin: 13px 0 0}.markdown-body span.float-right{display: block;float: right;margin-left: 13px;overflow: hidden}.markdown-body span.float-right&gt;span{display: block;margin: 13px auto 0;overflow: hidden;text-align: right}.markdown-body code,.markdown-body tt{padding: 0;padding-top: 0.2em;padding-bottom: 0.2em;margin: 0;font-size: 85%;background-color: rgba(0,0,0,0.04);border-radius: 3px}.markdown-body code:before,.markdown-body code:after,.markdown-body tt:before,.markdown-body tt:after{letter-spacing: -0.2em;content: &quot;\00a0&quot;}.markdown-body code br,.markdown-body tt br{display: none}.markdown-body del code{text-decoration: inherit}.markdown-body pre&gt;code{padding: 0;margin: 0;font-size: 100%;word-break: normal;white-space: pre;background: transparent;border: 0}.markdown-body .highlight{margin-bottom: 16px}.markdown-body .highlight pre,.markdown-body pre{padding: 16px;overflow: auto;font-size: 85%;line-height: 1.45;background-color: #f7f7f7;border-radius: 3px}.markdown-body .highlight pre{margin-bottom: 0;word-break: normal}.markdown-body pre{word-wrap: normal}.markdown-body pre code,.markdown-body pre tt{display: inline;max-width: initial;padding: 0;margin: 0;overflow: initial;line-height: inherit;word-wrap: normal;background-color: transparent;border: 0}.markdown-body pre code:before,.markdown-body pre code:after,.markdown-body pre tt:before,.markdown-body pre tt:after{content: normal}.markdown-body kbd{display: inline-block;padding: 3px 5px;font-size: 11px;line-height: 10px;color: #555;vertical-align: middle;background-color: #fcfcfc;border: solid 1px #ccc;border-bottom-color: #bbb;border-radius: 3px;box-shadow: inset 0 -1px 0 #bbb}.codehilite{background: #ffffff}.codehilite .c{color: #999988;font-style: italic}.codehilite .err{color: #a61717;background-color: #e3d2d2}.codehilite .k{color: #000000;font-weight: bold}.codehilite .o{color: #000000;font-weight: bold}.codehilite .cm{color: #999988;font-style: italic}.codehilite .cp{color: #999999;font-weight: bold}.codehilite .c1{color: #999988;font-style: italic}.codehilite .cs{color: #999999;font-weight: bold;font-style: italic}.codehilite .gd{color: #000000;background-color: #ffdddd}.codehilite .gd .x{color: #000000;background-color: #ffaaaa}.codehilite .ge{color: #000000;font-style: italic}.codehilite .gr{color: #aa0000}.codehilite .gh{color: #999999}.codehilite .gi{color: #000000;background-color: #ddffdd}.codehilite .gi .x{color: #000000;background-color: #aaffaa}.codehilite .go{color: #888888}.codehilite .gp{color: #555555}.codehilite .gs{font-weight: bold}.codehilite .gu{color: #aaaaaa}.codehilite .gt{color: #aa0000}.codehilite .kc{color: #000000;font-weight: bold}.codehilite .kd{color: #000000;font-weight: bold}.codehilite .kp{color: #000000;font-weight: bold}.codehilite .kr{color: #000000;font-weight: bold}.codehilite .kt{color: #445588;font-weight: bold}.codehilite .m{color: #009999}.codehilite .s{color: #d14}.codehilite .na{color: #008080}.codehilite .nb{color: #0086B3}.codehilite .nc{color: #445588;font-weight: bold}.codehilite .no{color: #008080}.codehilite .ni{color: #800080}.codehilite .ne{color: #990000;font-weight: bold}.codehilite .nf{color: #990000;font-weight: bold}.codehilite .nn{color: #555555}.codehilite .nt{color: #000080}.codehilite .nv{color: #008080}.codehilite .ow{color: #000000;font-weight: bold}.codehilite .w{color: #bbbbbb}.codehilite .mf{color: #009999}.codehilite .mh{color: #009999}.codehilite .mi{color: #009999}.codehilite .mo{color: #009999}.codehilite .sb{color: #d14}.codehilite .sc{color: #d14}.codehilite .sd{color: #d14}.codehilite .s2{color: #d14}.codehilite .se{color: #d14}.codehilite .sh{color: #d14}.codehilite .si{color: #d14}.codehilite .sx{color: #d14}.codehilite .sr{color: #009926}.codehilite .s1{color: #d14}.codehilite .ss{color: #990073}.codehilite .bp{color: #999999}.codehilite .vc{color: #008080}.codehilite .vg{color: #008080}.codehilite .vi{color: #008080}.codehilite .il{color: #009999}
-    &lt;/style&gt;
-    &lt;style type=&quot;text/css&quot;&gt;
-      .markdown-body hr{background:url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC&quot;)}
-    &lt;/style&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;div class=&quot;container&quot;&gt;
-      &lt;div id=&quot;markup&quot;&gt;
-        &lt;article id=&quot;content&quot; class=&quot;markdown-body&quot;&gt;
-          &lt;blockquote&gt;
-&lt;h3&gt;【知识点】&lt;/h3&gt;
-&lt;/blockquote&gt;
-&lt;h4&gt;&lt;strong&gt;1. 说说库和框架的区别？&lt;/strong&gt;&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;库&lt;/strong&gt; 是把一些可以复用的方法集中进行封装到一个&lt;code&gt;library&lt;/code&gt;，提供&lt;code&gt;API&lt;/code&gt;，我们通过这些&lt;code&gt;API&lt;/code&gt;就可以调用这些已经封装好的方法，将代码写得更少/巧/强壮，以便简单快捷完成任务，提高生产力！比如 &lt;code&gt;jQuery&lt;/code&gt; 就是更加接近一个库，要什么可以从中拿；&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;框架&lt;/strong&gt; 也算是库的一种，不过更加强调提供一种解决方案，给你搭好架子，代码怎样组织，所以不单单是具体的方法或函数，而是注重从细节到整体的宏观思路。&lt;code&gt;AngularJS&lt;/code&gt; 就算是一个框架，因为它提供了一整套的解决方案；&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;对于小型应用来说，因为业务逻辑简单，代码总量不会太大，组织不会是太大的问题，所以用类库就够了；而面对中/大型项目，特别是需要多人共同参与的项目，选择一个合适的框架有助于写出规范的，易于理解的，易于回复的，低耦合的……等等的代码，在此基础上再使用各种类库来增加具体代码的健壮性与功能性则更好。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-
-&lt;h4&gt;&lt;strong&gt;2. jQuery 能做什么？&lt;/strong&gt;&lt;/h4&gt;
-&lt;p&gt;一言以蔽之，jQuery就是让我们能更加畅快舒爽地编写JavaScript，不必去编写蛋疼费时的原生JavaScript！它轻量，快速，功能丰富。
-- 可以简单快捷完成诸如JavaScript中的HTML元素选取和操作，CSS操作，HTML &lt;code&gt;DOM&lt;/code&gt;遍历和操作，事件处理，特效，动画和&lt;code&gt;AJAX&lt;/code&gt;交互。
-- jQuery提供&lt;code&gt;API&lt;/code&gt;让开发者编写插件。其模块化的使用方式使开发者可以很轻松的开发出功能强大的静态或动态网页。&lt;/p&gt;
-&lt;h4&gt;&lt;strong&gt;3. jQuery 对象和 DOM 原生对象有什么区别？如何转化？&lt;/strong&gt;&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;DOM对象是通过原生JavaScript获得的对象，jQuery对象是通过jQuery选择器获得对象；&lt;/li&gt;
-&lt;li&gt;jQuery对象只能使用jQuery自己的属性和方法，DOM对象只能使用DOM的属性和方法，&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;jQuery对象转DOM对象&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;我们可以通过类数组下标的获取方式或者get方法获取指定下标的&lt;code&gt;DOM&lt;/code&gt;对象:&lt;/p&gt;
-&lt;div class=&quot;codehilite&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;ct&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;item&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;item1&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;item&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;item2&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;item&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;item3&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;jQuery 对象是类数组对象，所以可通过数组下标获取数组中的DOM对象：&lt;/p&gt;
-&lt;div class=&quot;codehilite&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;.item&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//&amp;lt;div class=&amp;quot;item&amp;quot;&amp;gt;item3&amp;lt;/div&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;.item&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;eq&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//&amp;lt;div class=&amp;quot;item&amp;quot;&amp;gt;item3&amp;lt;/div&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;通过jQuery的&lt;code&gt;.get()&lt;/code&gt;方法获得的直接是DOM对象：&lt;/p&gt;
-&lt;div class=&quot;codehilite&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;.item&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//&amp;lt;div class=&amp;quot;item&amp;quot;&amp;gt;item3&amp;lt;/div&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;DOM对象转 jQuery 对象&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;使用 &lt;code&gt;$()&lt;/code&gt; 将DOM对象包裹起来就是jQuery对象：&lt;/p&gt;
-&lt;div class=&quot;codehilite&quot;&gt;&lt;pre&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ct&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getElementById&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;ct&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//DOM对象&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$ct&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ct&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//$(DOM对象)转化为了jQuery对象$ct&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;h4&gt;&lt;strong&gt;4. jQuery中如何绑定事件？&lt;code&gt;bind&lt;/code&gt;、&lt;code&gt;unbind&lt;/code&gt;、&lt;code&gt;delegate&lt;/code&gt;、&lt;code&gt;live&lt;/code&gt;、&lt;code&gt;on&lt;/code&gt;、&lt;code&gt;off&lt;/code&gt;都有什么作用？推荐使用哪种？使用&lt;code&gt;on&lt;/code&gt;绑定事件使用事件代理的写法？&lt;/strong&gt;&lt;/h4&gt;
-&lt;p&gt;jQuery中有很多绑定事件的方法&lt;code&gt;.bind()&lt;/code&gt;,&lt;code&gt;.live()&lt;/code&gt;,&lt;code&gt;.delegate()&lt;/code&gt;,&lt;code&gt;.on()&lt;/code&gt;,下面看看他们的区别：
-- &lt;code&gt;.bind()&lt;/code&gt;：对于早期jQuery版本（1.7以前），&lt;code&gt;.bind()&lt;/code&gt;方法用于直接将事件绑定在选中的元素上，所以&lt;code&gt;.bind()&lt;/code&gt;在绑定事件的时候被选的元素必须存在；使用一次&lt;code&gt;.bind()&lt;/code&gt;选择器匹配的元素会附加一个事件处理函数，而以后再添加的元素则不会有。为此需要再使用一次 &lt;code&gt;.bind()&lt;/code&gt; 才行；&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;.unbind&lt;/code&gt;：&lt;code&gt;.bind()&lt;/code&gt;的反向操作，从每一个匹配的元素中删除绑定的事件。
-如果没有参数，则删除所有绑定的事件，&lt;code&gt;.bind(typpe)&lt;/code&gt;删除指定类型事件；&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;.live()&lt;/code&gt;：（1.9版本已废弃,不建议使用，老版本建议使用&lt;code&gt;.delegate()&lt;/code&gt;）默认使用了事件代理（绑定在祖先元素上的事件处理程序可以对后代上触发事件作出回应），没有将事件直接绑定在该元素上，而是绑定在&lt;code&gt;document&lt;/code&gt;元素上（DOM树的根节点），&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;codehilite&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;clickme&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Click here&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
-
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;script&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;.clickme&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;live&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;click&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;Live handler called.&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//事件冒泡`document`元素上，查看事件类型是否是click、&lt;/span&gt;
-      &lt;span class=&quot;c1&quot;&gt;//目标元素和选择器.clickme否匹配，&lt;/span&gt;
-      &lt;span class=&quot;c1&quot;&gt;//是则执行绑定的事件处理函数；&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;.delegate()&lt;/code&gt;：对于早期jQuery版本（1.7以前），&lt;code&gt;.delegate&lt;/code&gt;是使用事件代理最有效的方式,&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;codehilite&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;background-color:red&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;这是一个段落。&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;button&amp;gt;&lt;/span&gt;请点击这里&lt;span class=&quot;nt&quot;&gt;&amp;lt;/button&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;script&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;div&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;delegate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;button&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;click&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;p&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;slideToggle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//将事件绑定到$(&amp;#39;div&amp;#39;)上，事件冒泡到$(&amp;#39;div&amp;#39;)上&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//查看是不是click事件，目标元素是不是button，如果都满足，就执行函数&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;.on()&lt;/code&gt;：（1.7版本后&lt;code&gt;.on()&lt;/code&gt;取代了&lt;code&gt;.bind()&lt;/code&gt;,&lt;code&gt;.live()&lt;/code&gt;,&lt;code&gt;.delegate()&lt;/code&gt;，提供绑定事件处理的所有功能，&lt;strong&gt;强烈推荐&lt;/strong&gt;）
-事件代理&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;codehilite&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;body&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;click&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;p&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//当点击段落时，显示该段落中的文本&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;javascript&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;.off()&lt;/code&gt;：移除用&lt;code&gt;.on()&lt;/code&gt;绑定的事件处理程序。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4&gt;&lt;strong&gt;5. jQuery 如何展示/隐藏元素？&lt;/strong&gt;&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;.hide( speed, [callback] )&lt;/strong&gt;：隐藏显示的元素，
-&lt;code&gt;speed&lt;/code&gt;：表示速度的参数，可选（&lt;code&gt;slow&lt;/code&gt;,&lt;code&gt;fast&lt;/code&gt;,&lt;code&gt;normal&lt;/code&gt;）或者毫秒数;
-&lt;code&gt;[callback]&lt;/code&gt;:在动画完成时执行的函数，每个元素执行一次。
-不设置参数就立即执行，没有动画；&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;.show(speed,callback)&lt;/strong&gt;：显示隐藏的元素；&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4&gt;&lt;strong&gt;6. jQuery 动画如何使用？&lt;/strong&gt;&lt;/h4&gt;
-&lt;p&gt;&lt;strong&gt;.animate(params,[speed],[callback])&lt;/strong&gt; 函数用来创建自定义动画，这个函数的关键在于指定动画形式及结果样式属性对象。这个对象中每个属性都表示一个可以变化的样式属性（如“height”、“top”或“opacity”）。注意：所有指定的属性必须用骆驼形式，比如用marginLeft代替margin-left.&lt;/p&gt;
-&lt;div class=&quot;codehilite&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;style&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nc&quot;&gt;.box&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;50px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;50px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;background-color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;red&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;nc&quot;&gt;.btn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;margin-bottom&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;10px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/style&amp;gt;&lt;/span&gt;
-
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;button&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;btn&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Click&lt;span class=&quot;nt&quot;&gt;&amp;lt;/button&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;box&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
-
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;script&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;.btn&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;click&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;repeat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;.box&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;animate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
-      &lt;span class=&quot;nx&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;100px&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-      &lt;span class=&quot;nx&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;100px&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-      &lt;span class=&quot;nx&quot;&gt;opacity&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.5&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
-      &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;animate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;50px&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;50px&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;opacity&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
-      &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;repeat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;());&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;效果：
-&lt;img alt=&quot;&quot; src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task25/animate%28%29.gif&quot;&gt;&lt;/p&gt;
-&lt;h4&gt;&lt;strong&gt;7. 如何设置和获取元素内部 HTML 内容？如何设置和获取元素内部文本？&lt;/strong&gt;&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;code&gt;$(selector).html()&lt;/code&gt;&lt;/strong&gt;用于获取&lt;strong&gt;第一个&lt;/strong&gt;匹配元素的内容，。这个函数不能用于XML文档，但可以用于XHTML文档。如果选择器匹配多个元素，那么只有第一个匹配元素的 HTML 内容会被获取；&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;code&gt;$(selector).html( htmlString )&lt;/code&gt;&lt;/strong&gt;用于设定每一个匹配元素的html内容;也可以通过函数来设置html内容：&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;codehilite&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;div.demo-container&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;emph&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;lt;em&amp;gt;&amp;#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;p&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39; paragraphs!&amp;lt;/em&amp;gt;&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;lt;p&amp;gt;All new content for &amp;#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;emph&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;lt;/p&amp;gt;&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt; 
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;code&gt;$(selector).text()&lt;/code&gt;&lt;/strong&gt;取得所有匹配元素的文本内容。这个方法对HTML和XML文档都有效。注意：&lt;code&gt;.text()&lt;/code&gt; 方法不能使用在 &lt;code&gt;input&lt;/code&gt; 元素或&lt;code&gt;scripts&lt;/code&gt;元素上。 &lt;code&gt;input&lt;/code&gt; 或 &lt;code&gt;textarea&lt;/code&gt; 需要使用 &lt;strong&gt;&lt;code&gt;.val()&lt;/code&gt;&lt;/strong&gt; 方法获取或设置文本值。得到&lt;code&gt;scripts&lt;/code&gt;元素的值，使用&lt;code&gt;.html()&lt;/code&gt;方法&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;code&gt;$(selecor).text( textString )&lt;/code&gt;&lt;/strong&gt;用于设置每一个匹配元素的文本内容；也可以通过函数来设置：&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;codehilite&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;p&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;这个 p 元素的 index 是：&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;h4&gt;&lt;strong&gt;8. 如何设置和获取表单用户输入或者选择的内容？如何设置和获取元素属性？&lt;/strong&gt;&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;code&gt;$(selector).val()&lt;/code&gt;&lt;/strong&gt;获取匹配元素的当前（输入/选择）值，如果多选，将返回一个数组，其包含所选的值。例如：如果是&lt;code&gt;select&lt;/code&gt;元素， 当没有选择项被选中，它返回&lt;code&gt;null&lt;/code&gt;;如果&lt;code&gt;select&lt;/code&gt;元素有&lt;code&gt;multiple&lt;/code&gt;（多选）属性，并且至少一个选择项被选中，&lt;code&gt;.val()&lt;/code&gt;方法返回一个数组，这个数组包含每个选中选择项的值；&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;code&gt;$(selector).val(value)&lt;/code&gt;&lt;/strong&gt;设置匹配元素输入或选择的值；也可以通过函数设定文本框的值；&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;例如将文本框输入变为大写：&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;div class=&quot;codehilite&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;ipt&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;text&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;ipt&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
-
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;script&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;.ipt&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;keyup&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
-      &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;val&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;val&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;toUpperCase&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;());&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;code&gt;.attr(name|properties|key,value|fn)&lt;/code&gt;&lt;/strong&gt;获取匹配的元素集合中的&lt;strong&gt;第一个&lt;/strong&gt;元素的属性的值  或 设置每一个匹配元素的一个或多个属性。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;codehilite&quot;&gt;&lt;pre&gt;&lt;span class=&quot;c1&quot;&gt;//  设置一个属性&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;#img1&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;attr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;alt&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;rain&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;//设置多个属性&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;#img1&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;attr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;alt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;rain&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;cloud&amp;#39;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;//设置函数返回&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;img&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;attr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;title&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;src&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;hr&gt;
-&lt;blockquote&gt;
-&lt;h3&gt;【练习】&lt;/h3&gt;
-&lt;/blockquote&gt;
-&lt;h4&gt;&lt;strong&gt;1. 使用 jQuery实现如下效果&lt;/strong&gt;&lt;/h4&gt;
-&lt;p&gt;&lt;img alt=&quot;&quot; src=&quot;http://7xnk1s.com2.z0.glb.qiniucdn.com/8-1.gif&quot;&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://febox.applinzi.com/task25/task25-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;效果点我&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://js.jirengu.com/vor/8/edit?html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;瞅瞅代码&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h4&gt;&lt;strong&gt;2. 使用 jQuery实现如下效果&lt;/strong&gt;&lt;/h4&gt;
-&lt;p&gt;&lt;img alt=&quot;&quot; src=&quot;http://7xnk1s.com2.z0.glb.qiniucdn.com/8-2.gif&quot;&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;问题：&lt;/strong&gt; 点奢侈品2的时候页面跳到了顶部，可能是什么原因？如何解决&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://febox.applinzi.com/task25/task25-2.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;效果点我&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://js.jirengu.com/ced/1/edit?html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;瞅瞅代码&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h4&gt;&lt;strong&gt;3. 使用 jQuery实现如下效果&lt;/strong&gt;&lt;/h4&gt;
-&lt;p&gt;&lt;img alt=&quot;&quot; src=&quot;http://7xnk1s.com2.z0.glb.qiniucdn.com/8-3-1.gif&quot;&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;提示&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;1.使用代理
-2.当点击按钮时使用如下数据&lt;/p&gt;
-&lt;div class=&quot;codehilite&quot;&gt;&lt;pre&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;products&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;img&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;http://img10.360buyimg.com/N3/jfs/t2242/92/1446546284/374195/9196ac66/56af0958N1a723458.jpg&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;珂兰 黄金手 猴哥款&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;price&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;￥405.00&amp;#39;&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;},{&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;img&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;http://img10.360buyimg.com/N3/jfs/t2242/92/1446546284/374195/9196ac66/56af0958N1a723458.jpg&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;珂兰 黄金转运珠 猴哥款&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;price&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;￥100.00&amp;#39;&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;},{&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;img&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;http://img10.360buyimg.com/N3/jfs/t2242/92/1446546284/374195/9196ac66/56af0958N1a723458.jpg&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;珂兰 黄金手链 3D猴哥款&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;price&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;￥45.00&amp;#39;&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;hr&gt;
-&lt;blockquote&gt;
-&lt;p&gt;参考：&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://jquery.cuishifeng.cn/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;jQuery API 1.12 中文文档&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.css88.com/jqapi-1.9/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;jQuery API 中文文档&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-        &lt;/article&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;meta charset=&quot;utf-8&quot;&gt;
-    &lt;title&gt;jQuery-DOM-事件.md—E:\Hexo Blog\gardonlee.github.io\source\_posts&lt;/title&gt;
-    &lt;style type=&quot;text/css&quot;&gt;
-    html{font-family: sans-serif;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%}body{margin: 0}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display: block}audio,canvas,progress,video{display: inline-block;vertical-align: baseline}audio:not([controls]){display: none;height: 0}[hidden],template{display: none}a{background: transparent}a:active,a:hover{outline: 0}abbr[title]{border-bottom: 1px dotted}b,strong{font-weight: bold}dfn{font-style: italic}h1{font-size: 2em;margin: 0.67em 0}mark{background: #ff0;color: #000}small{font-size: 80%}sub,sup{font-size: 75%;line-height: 0;position: relative;vertical-align: baseline}sup{top: -0.5em}sub{bottom: -0.25em}img{border: 0}svg:not(:root){overflow: hidden}figure{margin: 1em 40px}hr{box-sizing: content-box;height: 0}pre{overflow: auto}code,kbd,pre,samp{font-family: monospace, monospace;font-size: 1em}button,input,optgroup,select,textarea{color: inherit;font: inherit;margin: 0}button{overflow: visible}button,select{text-transform: none}button,html input[type=&quot;button&quot;],input[type=&quot;reset&quot;],input[type=&quot;submit&quot;]{-webkit-appearance: button;cursor: pointer}button[disabled],html input[disabled]{cursor: default}button::-moz-focus-inner,input::-moz-focus-inner{border: 0;padding: 0}input{line-height: normal}input[type=&quot;checkbox&quot;],input[type=&quot;radio&quot;]{box-sizing: border-box;padding: 0}input[type=&quot;number&quot;]::-webkit-inner-spin-button,input[type=&quot;number&quot;]::-webkit-outer-spin-button{height: auto}input[type=&quot;search&quot;]{-webkit-appearance: textfield;box-sizing: content-box}input[type=&quot;search&quot;]::-webkit-search-cancel-button,input[type=&quot;search&quot;]::-webkit-search-decoration{-webkit-appearance: none}fieldset{border: 1px solid #c0c0c0;margin: 0 2px;padding: 0.35em 0.625em 0.75em}legend{border: 0;padding: 0}textarea{overflow: auto}optgroup{font-weight: bold}table{border-collapse: collapse;border-spacing: 0}td,th{padding: 0}*{box-sizing: border-box}input,select,textarea,button{font: 13px/1.4 Helvetica, arial, freesans, clean, sans-serif, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;}body{min-width: 1020px;font: 13px/1.4 Helvetica, arial, freesans, clean, sans-serif, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;;color: #333;background-color: #fff}a{color: #4183c4;text-decoration: none}a:hover,a:active{text-decoration: underline}hr,.rule{height: 0;margin: 15px 0;overflow: hidden;background: transparent;border: 0;border-bottom: 1px solid #ddd}hr:before,.rule:before{display: table;content: &quot;&quot;}hr:after,.rule:after{display: table;clear: both;content: &quot;&quot;}h1,h2,h3,h4,h5,h6{margin-top: 15px;margin-bottom: 15px;line-height: 1.1}h1{font-size: 30px}h2{font-size: 21px}h3{font-size: 16px}h4{font-size: 14px}h5{font-size: 12px}h6{font-size: 11px}small{font-size: 90%}blockquote{margin: 0}.lead{margin-bottom: 30px;font-size: 20px;font-weight: 300;color: #555}.text-muted{color: #999}.text-danger{color: #bd2c00}.text-emphasized{font-weight: bold;color: #333}ul,ol{padding: 0;margin-top: 0;margin-bottom: 0}ol ol,ul ol{list-style-type: lower-roman}ul ul ol,ul ol ol,ol ul ol,ol ol ol{list-style-type: lower-alpha}dd{margin-left: 0}tt,code{font-family: Consolas, &quot;Liberation Mono&quot;, Menlo, Courier, monospace;font-size: 12px}pre{margin-top: 0;margin-bottom: 0;font: 12px Consolas, &quot;Liberation Mono&quot;, Menlo, Courier, monospace}#realtime .status{overflow: visible;position: absolute;top: -5px;left: 0;background: url(&quot;/public/images/github-status.png&quot;);width: 26px;height: 26px;display: block;margin: 0 5px 0 0}#realtime .up{background-position: 0 0}#realtime .problem{background-position: 0 -53px}#realtime .down{background-position: 0 -26px}.container{max-width: 920px;margin: 0 auto 20px auto}#header{background: #FAFAFA;background: -moz-linear-gradient(#FAFAFA, #EAEAEA);background: -webkit-linear-gradient(#FAFAFA, #EAEAEA);-ms-filter: &quot;progid:DXImageTransform.Microsoft.gradient(startColorstr=&#39;#fafafa&#39;, endColorstr=&#39;#eaeaea&#39;)&quot;;border-bottom: 1px solid #CACACA;box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4),0 0 10px rgba(0, 0, 0, 0.1)}#markup{padding: 3px}#markup article{padding-top: 30px}.markdown-body{overflow: hidden;font-family: &quot;Helvetica Neue&quot;, Helvetica, &quot;Segoe UI&quot;, Arial, freesans, sans-serif;font-size: 16px;line-height: 1.6;word-wrap: break-word}.markdown-body&gt;*:first-child{margin-top: 0 !important}.markdown-body&gt;*:last-child{margin-bottom: 0 !important}.markdown-body .absent{color: #c00}.markdown-body .anchor{position: absolute;top: 0;left: 0;display: block;padding-right: 6px;padding-left: 30px;margin-left: -30px}.markdown-body .anchor:focus{outline: none}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{position: relative;margin-top: 1em;margin-bottom: 16px;font-weight: bold;line-height: 1.4}.markdown-body h1 .octicon-link,.markdown-body h2 .octicon-link,.markdown-body h3 .octicon-link,.markdown-body h4 .octicon-link,.markdown-body h5 .octicon-link,.markdown-body h6 .octicon-link{display: none;color: #000;vertical-align: middle}.markdown-body h1:hover .anchor,.markdown-body h2:hover .anchor,.markdown-body h3:hover .anchor,.markdown-body h4:hover .anchor,.markdown-body h5:hover .anchor,.markdown-body h6:hover .anchor{padding-left: 8px;margin-left: -30px;text-decoration: none}.markdown-body h1:hover .anchor .octicon-link,.markdown-body h2:hover .anchor .octicon-link,.markdown-body h3:hover .anchor .octicon-link,.markdown-body h4:hover .anchor .octicon-link,.markdown-body h5:hover .anchor .octicon-link,.markdown-body h6:hover .anchor .octicon-link{display: inline-block}.markdown-body h1 tt,.markdown-body h1 code,.markdown-body h2 tt,.markdown-body h2 code,.markdown-body h3 tt,.markdown-body h3 code,.markdown-body h4 tt,.markdown-body h4 code,.markdown-body h5 tt,.markdown-body h5 code,.markdown-body h6 tt,.markdown-body h6 code{font-size: inherit}.markdown-body h1{padding-bottom: 0.3em;font-size: 2.25em;line-height: 1.2;border-bottom: 1px solid #eee}.markdown-body h1 .anchor{line-height: 1}.markdown-body h2{padding-bottom: 0.3em;font-size: 1.75em;line-height: 1.225;border-bottom: 1px solid #eee}.markdown-body h2 .anchor{line-height: 1}.markdown-body h3{font-size: 1.5em;line-height: 1.43}.markdown-body h3 .anchor{line-height: 1.2}.markdown-body h4{font-size: 1.25em}.markdown-body h4 .anchor{line-height: 1.2}.markdown-body h5{font-size: 1em}.markdown-body h5 .anchor{line-height: 1.1}.markdown-body h6{font-size: 1em;color: #777}.markdown-body h6 .anchor{line-height: 1.1}.markdown-body p,.markdown-body blockquote,.markdown-body ul,.markdown-body ol,.markdown-body dl,.markdown-body table,.markdown-body pre{margin-top: 0;margin-bottom: 16px}.markdown-body hr{height: 4px;padding: 0;margin: 16px 0;background-color: #e7e7e7;border: 0 none}.markdown-body ul,.markdown-body ol{padding-left: 2em}.markdown-body ul.no-list,.markdown-body ol.no-list{padding: 0;list-style-type: none}.markdown-body ul ul,.markdown-body ul ol,.markdown-body ol ol,.markdown-body ol ul{margin-top: 0;margin-bottom: 0}.markdown-body li&gt;p{margin-top: 16px}.markdown-body dl{padding: 0}.markdown-body dl dt{padding: 0;margin-top: 16px;font-size: 1em;font-style: italic;font-weight: bold}.markdown-body dl dd{padding: 0 16px;margin-bottom: 16px}.markdown-body blockquote{padding: 0 15px;color: #777;border-left: 4px solid #ddd}.markdown-body blockquote&gt;:first-child{margin-top: 0}.markdown-body blockquote&gt;:last-child{margin-bottom: 0}.markdown-body table{display: block;width: 100%;overflow: auto;word-break: normal;word-break: keep-all}.markdown-body table th{font-weight: bold}.markdown-body table th,.markdown-body table td{padding: 6px 13px;border: 1px solid #ddd}.markdown-body table tr{background-color: #fff;border-top: 1px solid #ccc}.markdown-body table tr:nth-child(2n){background-color: #f8f8f8}.markdown-body img{max-width: 100%;box-sizing: border-box}.markdown-body span.frame{display: block;overflow: hidden}.markdown-body span.frame&gt;span{display: block;float: left;width: auto;padding: 7px;margin: 13px 0 0;overflow: hidden;border: 1px solid #ddd}.markdown-body span.frame span img{display: block;float: left}.markdown-body span.frame span span{display: block;padding: 5px 0 0;clear: both;color: #333}.markdown-body span.align-center{display: block;overflow: hidden;clear: both}.markdown-body span.align-center&gt;span{display: block;margin: 13px auto 0;overflow: hidden;text-align: center}.markdown-body span.align-center span img{margin: 0 auto;text-align: center}.markdown-body span.align-right{display: block;overflow: hidden;clear: both}.markdown-body span.align-right&gt;span{display: block;margin: 13px 0 0;overflow: hidden;text-align: right}.markdown-body span.align-right span img{margin: 0;text-align: right}.markdown-body span.float-left{display: block;float: left;margin-right: 13px;overflow: hidden}.markdown-body span.float-left span{margin: 13px 0 0}.markdown-body span.float-right{display: block;float: right;margin-left: 13px;overflow: hidden}.markdown-body span.float-right&gt;span{display: block;margin: 13px auto 0;overflow: hidden;text-align: right}.markdown-body code,.markdown-body tt{padding: 0;padding-top: 0.2em;padding-bottom: 0.2em;margin: 0;font-size: 85%;background-color: rgba(0,0,0,0.04);border-radius: 3px}.markdown-body code:before,.markdown-body code:after,.markdown-body tt:before,.markdown-body tt:after{letter-spacing: -0.2em;content: &quot;\00a0&quot;}.markdown-body code br,.markdown-body tt br{display: none}.markdown-body del code{text-decoration: inherit}.markdown-body pre&gt;code{padding: 0;margin: 0;font-size: 100%;word-break: normal;white-space: pre;background: transparent;border: 0}.markdown-body .highlight{margin-bottom: 16px}.markdown-body .highlight pre,.markdown-body pre{padding: 16px;overflow: auto;font-size: 85%;line-height: 1.45;background-color: #f7f7f7;border-radius: 3px}.markdown-body .highlight pre{margin-bottom: 0;word-break: normal}.markdown-body pre{word-wrap: normal}.markdown-body pre code,.markdown-body pre tt{display: inline;max-width: initial;padding: 0;margin: 0;overflow: initial;line-height: inherit;word-wrap: normal;background-color: transparent;border: 0}.markdown-body pre code:before,.markdown-body pre code:after,.markdown-body pre tt:before,.markdown-body pre tt:after{content: normal}.markdown-body kbd{display: inline-block;padding: 3px 5px;font-size: 11px;line-height: 10px;color: #555;vertical-align: middle;background-color: #fcfcfc;border: solid 1px #ccc;border-bottom-color: #bbb;border-radius: 3px;box-shadow: inset 0 -1px 0 #bbb}.codehilite{background: #ffffff}.codehilite .c{color: #999988;font-style: italic}.codehilite .err{color: #a61717;background-color: #e3d2d2}.codehilite .k{color: #000000;font-weight: bold}.codehilite .o{color: #000000;font-weight: bold}.codehilite .cm{color: #999988;font-style: italic}.codehilite .cp{color: #999999;font-weight: bold}.codehilite .c1{color: #999988;font-style: italic}.codehilite .cs{color: #999999;font-weight: bold;font-style: italic}.codehilite .gd{color: #000000;background-color: #ffdddd}.codehilite .gd .x{color: #000000;background-color: #ffaaaa}.codehilite .ge{color: #000000;font-style: italic}.codehilite .gr{color: #aa0000}.codehilite .gh{color: #999999}.codehilite .gi{color: #000000;background-color: #ddffdd}.codehilite .gi .x{color: #000000;background-color: #aaffaa}.codehilite .go{color: #888888}.codehilite .gp{color: #555555}.codehilite .gs{font-weight: bold}.codehilite .gu{color: #aaaaaa}.codehilite .gt{color: #aa0000}.codehilite .kc{color: #000000;font-weight: bold}.codehilite .kd{color: #000000;font-weight: bold}.codehilite .kp{color: #000000;font-weight: bold}.codehilite .kr{color: #000000;font-weight: bold}.codehilite .kt{color: #445588;font-weight: bold}.codehilite .m{color: #009999}.codehilite .s{color: #d14}.codehilite .na{color: #008080}.codehilite .nb{color: #0086B3}.codehilite .nc{color: #445588;font-weight: bold}.codehilite .no{color: #008080}.codehilite .ni{color: #800080}.codehilite .ne{color: #990000;font-weight: bold}.codehilite .nf{color: #990000;font-weight: bold}.codehilite .nn{color: #555555}.codehilite .nt{color: #000080}.codehilite .nv{color: #008080}.codehilite .ow{color: #000000;font-weight: bold}.codehilite .w{color: #bbbbbb}.codehilite .mf{color: #009999}.codehilite .mh{color: #009999}.codehilite .mi{color: #009999}.codehilite .mo{color: #009999}.codehilite .sb{color: #d14}.codehilite .sc{color: #d14}.codehilite .sd{color: #d14}.codehilite .s2{color: #d14}.codehilite .se{color: #d14}.codehilite .sh{color: #d14}.codehilite .si{color: #d14}.codehilite .sx{color: #d14}.codehilite .sr{color: #009926}.codehilite .s1{color: #d14}.codehilite .ss{color: #990073}.codehilite .bp{color: #999999}.codehilite .vc{color: #008080}.codehilite .vg{color: #008080}.codehilite .vi{color: #008080}.codehilite .il{color: #009999}
-    &lt;/style&gt;
-    &lt;style type=&quot;text/css&quot;&gt;
-      .markdown-body hr{background:url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC&quot;)}
-    &lt;/style&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;div class=&quot;container&quot;&gt;
-      &lt;div id=&quot;markup&quot;&gt;
-        &lt;article id=&quot;content&quot; class=&quot;markdown-body&quot;&gt;
-          &lt;blockquote&gt;
-&lt;h3&gt;【知识点】&lt;/h3&gt;
-&lt;/blockquote&gt;
-&lt;h4&gt;&lt;strong&gt;1. 说说库和框架的区别？&lt;/strong&gt;&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;库&lt;/strong&gt; 是把一些可以复用的方法集中进行封装到一个&lt;code&gt;library&lt;/code&gt;，提供&lt;code&gt;API&lt;/code&gt;，我们通过这些&lt;code&gt;API&lt;/code&gt;就可以调用这些已经封装好的方法，将代码写得更少/巧/强壮，以便简单快捷完成任务，提高生产力！比如 &lt;code&gt;jQuery&lt;/code&gt; 就是更加接近一个库，要什么可以从中拿；&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;框架&lt;/strong&gt; 也算是库的一种，不过更加强调提供一种解决方案，给你搭好架子，代码怎样组织，所以不单单是具体的方法或函数，而是注重从细节到整体的宏观思路。&lt;code&gt;AngularJS&lt;/code&gt; 就算是一个框架，因为它提供了一整套的解决方案；&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;对于小型应用来说，因为业务逻辑简单，代码总量不会太大，组织不会是太大的问题，所以用类库就够了；而面对中/大型项目，特别是需要多人共同参与的项目，选择一个合适的框架有助于写出规范的，易于理解的，易于回复的，低耦合的……等等的代码，在此基础上再使用各种类库来增加具体代码的健壮性与功能性则更好。&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="http://licao404.com/2016/04/18/jQuery-DOM-%E4%BA%8B%E4%BB%B6_160418104647/"/>
-    <id>http://licao404.com/2016/04/18/jQuery-DOM-事件_160418104647/</id>
-    <published>2016-04-18T02:46:47.989Z</published>
-    <updated>2016-04-18T02:46:47.994Z</updated>
-    
-    <content type="html">&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;meta charset=&quot;utf-8&quot;&gt;
-    &lt;title&gt;jQuery-DOM-事件.md—E:\Hexo Blog\gardonlee.github.io\source\_posts&lt;/title&gt;
-    &lt;style type=&quot;text/css&quot;&gt;
-    html{font-family: sans-serif;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%}body{margin: 0}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display: block}audio,canvas,progress,video{display: inline-block;vertical-align: baseline}audio:not([controls]){display: none;height: 0}[hidden],template{display: none}a{background: transparent}a:active,a:hover{outline: 0}abbr[title]{border-bottom: 1px dotted}b,strong{font-weight: bold}dfn{font-style: italic}h1{font-size: 2em;margin: 0.67em 0}mark{background: #ff0;color: #000}small{font-size: 80%}sub,sup{font-size: 75%;line-height: 0;position: relative;vertical-align: baseline}sup{top: -0.5em}sub{bottom: -0.25em}img{border: 0}svg:not(:root){overflow: hidden}figure{margin: 1em 40px}hr{box-sizing: content-box;height: 0}pre{overflow: auto}code,kbd,pre,samp{font-family: monospace, monospace;font-size: 1em}button,input,optgroup,select,textarea{color: inherit;font: inherit;margin: 0}button{overflow: visible}button,select{text-transform: none}button,html input[type=&quot;button&quot;],input[type=&quot;reset&quot;],input[type=&quot;submit&quot;]{-webkit-appearance: button;cursor: pointer}button[disabled],html input[disabled]{cursor: default}button::-moz-focus-inner,input::-moz-focus-inner{border: 0;padding: 0}input{line-height: normal}input[type=&quot;checkbox&quot;],input[type=&quot;radio&quot;]{box-sizing: border-box;padding: 0}input[type=&quot;number&quot;]::-webkit-inner-spin-button,input[type=&quot;number&quot;]::-webkit-outer-spin-button{height: auto}input[type=&quot;search&quot;]{-webkit-appearance: textfield;box-sizing: content-box}input[type=&quot;search&quot;]::-webkit-search-cancel-button,input[type=&quot;search&quot;]::-webkit-search-decoration{-webkit-appearance: none}fieldset{border: 1px solid #c0c0c0;margin: 0 2px;padding: 0.35em 0.625em 0.75em}legend{border: 0;padding: 0}textarea{overflow: auto}optgroup{font-weight: bold}table{border-collapse: collapse;border-spacing: 0}td,th{padding: 0}*{box-sizing: border-box}input,select,textarea,button{font: 13px/1.4 Helvetica, arial, freesans, clean, sans-serif, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;}body{min-width: 1020px;font: 13px/1.4 Helvetica, arial, freesans, clean, sans-serif, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;;color: #333;background-color: #fff}a{color: #4183c4;text-decoration: none}a:hover,a:active{text-decoration: underline}hr,.rule{height: 0;margin: 15px 0;overflow: hidden;background: transparent;border: 0;border-bottom: 1px solid #ddd}hr:before,.rule:before{display: table;content: &quot;&quot;}hr:after,.rule:after{display: table;clear: both;content: &quot;&quot;}h1,h2,h3,h4,h5,h6{margin-top: 15px;margin-bottom: 15px;line-height: 1.1}h1{font-size: 30px}h2{font-size: 21px}h3{font-size: 16px}h4{font-size: 14px}h5{font-size: 12px}h6{font-size: 11px}small{font-size: 90%}blockquote{margin: 0}.lead{margin-bottom: 30px;font-size: 20px;font-weight: 300;color: #555}.text-muted{color: #999}.text-danger{color: #bd2c00}.text-emphasized{font-weight: bold;color: #333}ul,ol{padding: 0;margin-top: 0;margin-bottom: 0}ol ol,ul ol{list-style-type: lower-roman}ul ul ol,ul ol ol,ol ul ol,ol ol ol{list-style-type: lower-alpha}dd{margin-left: 0}tt,code{font-family: Consolas, &quot;Liberation Mono&quot;, Menlo, Courier, monospace;font-size: 12px}pre{margin-top: 0;margin-bottom: 0;font: 12px Consolas, &quot;Liberation Mono&quot;, Menlo, Courier, monospace}#realtime .status{overflow: visible;position: absolute;top: -5px;left: 0;background: url(&quot;/public/images/github-status.png&quot;);width: 26px;height: 26px;display: block;margin: 0 5px 0 0}#realtime .up{background-position: 0 0}#realtime .problem{background-position: 0 -53px}#realtime .down{background-position: 0 -26px}.container{max-width: 920px;margin: 0 auto 20px auto}#header{background: #FAFAFA;background: -moz-linear-gradient(#FAFAFA, #EAEAEA);background: -webkit-linear-gradient(#FAFAFA, #EAEAEA);-ms-filter: &quot;progid:DXImageTransform.Microsoft.gradient(startColorstr=&#39;#fafafa&#39;, endColorstr=&#39;#eaeaea&#39;)&quot;;border-bottom: 1px solid #CACACA;box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4),0 0 10px rgba(0, 0, 0, 0.1)}#markup{padding: 3px}#markup article{padding-top: 30px}.markdown-body{overflow: hidden;font-family: &quot;Helvetica Neue&quot;, Helvetica, &quot;Segoe UI&quot;, Arial, freesans, sans-serif;font-size: 16px;line-height: 1.6;word-wrap: break-word}.markdown-body&gt;*:first-child{margin-top: 0 !important}.markdown-body&gt;*:last-child{margin-bottom: 0 !important}.markdown-body .absent{color: #c00}.markdown-body .anchor{position: absolute;top: 0;left: 0;display: block;padding-right: 6px;padding-left: 30px;margin-left: -30px}.markdown-body .anchor:focus{outline: none}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{position: relative;margin-top: 1em;margin-bottom: 16px;font-weight: bold;line-height: 1.4}.markdown-body h1 .octicon-link,.markdown-body h2 .octicon-link,.markdown-body h3 .octicon-link,.markdown-body h4 .octicon-link,.markdown-body h5 .octicon-link,.markdown-body h6 .octicon-link{display: none;color: #000;vertical-align: middle}.markdown-body h1:hover .anchor,.markdown-body h2:hover .anchor,.markdown-body h3:hover .anchor,.markdown-body h4:hover .anchor,.markdown-body h5:hover .anchor,.markdown-body h6:hover .anchor{padding-left: 8px;margin-left: -30px;text-decoration: none}.markdown-body h1:hover .anchor .octicon-link,.markdown-body h2:hover .anchor .octicon-link,.markdown-body h3:hover .anchor .octicon-link,.markdown-body h4:hover .anchor .octicon-link,.markdown-body h5:hover .anchor .octicon-link,.markdown-body h6:hover .anchor .octicon-link{display: inline-block}.markdown-body h1 tt,.markdown-body h1 code,.markdown-body h2 tt,.markdown-body h2 code,.markdown-body h3 tt,.markdown-body h3 code,.markdown-body h4 tt,.markdown-body h4 code,.markdown-body h5 tt,.markdown-body h5 code,.markdown-body h6 tt,.markdown-body h6 code{font-size: inherit}.markdown-body h1{padding-bottom: 0.3em;font-size: 2.25em;line-height: 1.2;border-bottom: 1px solid #eee}.markdown-body h1 .anchor{line-height: 1}.markdown-body h2{padding-bottom: 0.3em;font-size: 1.75em;line-height: 1.225;border-bottom: 1px solid #eee}.markdown-body h2 .anchor{line-height: 1}.markdown-body h3{font-size: 1.5em;line-height: 1.43}.markdown-body h3 .anchor{line-height: 1.2}.markdown-body h4{font-size: 1.25em}.markdown-body h4 .anchor{line-height: 1.2}.markdown-body h5{font-size: 1em}.markdown-body h5 .anchor{line-height: 1.1}.markdown-body h6{font-size: 1em;color: #777}.markdown-body h6 .anchor{line-height: 1.1}.markdown-body p,.markdown-body blockquote,.markdown-body ul,.markdown-body ol,.markdown-body dl,.markdown-body table,.markdown-body pre{margin-top: 0;margin-bottom: 16px}.markdown-body hr{height: 4px;padding: 0;margin: 16px 0;background-color: #e7e7e7;border: 0 none}.markdown-body ul,.markdown-body ol{padding-left: 2em}.markdown-body ul.no-list,.markdown-body ol.no-list{padding: 0;list-style-type: none}.markdown-body ul ul,.markdown-body ul ol,.markdown-body ol ol,.markdown-body ol ul{margin-top: 0;margin-bottom: 0}.markdown-body li&gt;p{margin-top: 16px}.markdown-body dl{padding: 0}.markdown-body dl dt{padding: 0;margin-top: 16px;font-size: 1em;font-style: italic;font-weight: bold}.markdown-body dl dd{padding: 0 16px;margin-bottom: 16px}.markdown-body blockquote{padding: 0 15px;color: #777;border-left: 4px solid #ddd}.markdown-body blockquote&gt;:first-child{margin-top: 0}.markdown-body blockquote&gt;:last-child{margin-bottom: 0}.markdown-body table{display: block;width: 100%;overflow: auto;word-break: normal;word-break: keep-all}.markdown-body table th{font-weight: bold}.markdown-body table th,.markdown-body table td{padding: 6px 13px;border: 1px solid #ddd}.markdown-body table tr{background-color: #fff;border-top: 1px solid #ccc}.markdown-body table tr:nth-child(2n){background-color: #f8f8f8}.markdown-body img{max-width: 100%;box-sizing: border-box}.markdown-body span.frame{display: block;overflow: hidden}.markdown-body span.frame&gt;span{display: block;float: left;width: auto;padding: 7px;margin: 13px 0 0;overflow: hidden;border: 1px solid #ddd}.markdown-body span.frame span img{display: block;float: left}.markdown-body span.frame span span{display: block;padding: 5px 0 0;clear: both;color: #333}.markdown-body span.align-center{display: block;overflow: hidden;clear: both}.markdown-body span.align-center&gt;span{display: block;margin: 13px auto 0;overflow: hidden;text-align: center}.markdown-body span.align-center span img{margin: 0 auto;text-align: center}.markdown-body span.align-right{display: block;overflow: hidden;clear: both}.markdown-body span.align-right&gt;span{display: block;margin: 13px 0 0;overflow: hidden;text-align: right}.markdown-body span.align-right span img{margin: 0;text-align: right}.markdown-body span.float-left{display: block;float: left;margin-right: 13px;overflow: hidden}.markdown-body span.float-left span{margin: 13px 0 0}.markdown-body span.float-right{display: block;float: right;margin-left: 13px;overflow: hidden}.markdown-body span.float-right&gt;span{display: block;margin: 13px auto 0;overflow: hidden;text-align: right}.markdown-body code,.markdown-body tt{padding: 0;padding-top: 0.2em;padding-bottom: 0.2em;margin: 0;font-size: 85%;background-color: rgba(0,0,0,0.04);border-radius: 3px}.markdown-body code:before,.markdown-body code:after,.markdown-body tt:before,.markdown-body tt:after{letter-spacing: -0.2em;content: &quot;\00a0&quot;}.markdown-body code br,.markdown-body tt br{display: none}.markdown-body del code{text-decoration: inherit}.markdown-body pre&gt;code{padding: 0;margin: 0;font-size: 100%;word-break: normal;white-space: pre;background: transparent;border: 0}.markdown-body .highlight{margin-bottom: 16px}.markdown-body .highlight pre,.markdown-body pre{padding: 16px;overflow: auto;font-size: 85%;line-height: 1.45;background-color: #f7f7f7;border-radius: 3px}.markdown-body .highlight pre{margin-bottom: 0;word-break: normal}.markdown-body pre{word-wrap: normal}.markdown-body pre code,.markdown-body pre tt{display: inline;max-width: initial;padding: 0;margin: 0;overflow: initial;line-height: inherit;word-wrap: normal;background-color: transparent;border: 0}.markdown-body pre code:before,.markdown-body pre code:after,.markdown-body pre tt:before,.markdown-body pre tt:after{content: normal}.markdown-body kbd{display: inline-block;padding: 3px 5px;font-size: 11px;line-height: 10px;color: #555;vertical-align: middle;background-color: #fcfcfc;border: solid 1px #ccc;border-bottom-color: #bbb;border-radius: 3px;box-shadow: inset 0 -1px 0 #bbb}.codehilite{background: #ffffff}.codehilite .c{color: #999988;font-style: italic}.codehilite .err{color: #a61717;background-color: #e3d2d2}.codehilite .k{color: #000000;font-weight: bold}.codehilite .o{color: #000000;font-weight: bold}.codehilite .cm{color: #999988;font-style: italic}.codehilite .cp{color: #999999;font-weight: bold}.codehilite .c1{color: #999988;font-style: italic}.codehilite .cs{color: #999999;font-weight: bold;font-style: italic}.codehilite .gd{color: #000000;background-color: #ffdddd}.codehilite .gd .x{color: #000000;background-color: #ffaaaa}.codehilite .ge{color: #000000;font-style: italic}.codehilite .gr{color: #aa0000}.codehilite .gh{color: #999999}.codehilite .gi{color: #000000;background-color: #ddffdd}.codehilite .gi .x{color: #000000;background-color: #aaffaa}.codehilite .go{color: #888888}.codehilite .gp{color: #555555}.codehilite .gs{font-weight: bold}.codehilite .gu{color: #aaaaaa}.codehilite .gt{color: #aa0000}.codehilite .kc{color: #000000;font-weight: bold}.codehilite .kd{color: #000000;font-weight: bold}.codehilite .kp{color: #000000;font-weight: bold}.codehilite .kr{color: #000000;font-weight: bold}.codehilite .kt{color: #445588;font-weight: bold}.codehilite .m{color: #009999}.codehilite .s{color: #d14}.codehilite .na{color: #008080}.codehilite .nb{color: #0086B3}.codehilite .nc{color: #445588;font-weight: bold}.codehilite .no{color: #008080}.codehilite .ni{color: #800080}.codehilite .ne{color: #990000;font-weight: bold}.codehilite .nf{color: #990000;font-weight: bold}.codehilite .nn{color: #555555}.codehilite .nt{color: #000080}.codehilite .nv{color: #008080}.codehilite .ow{color: #000000;font-weight: bold}.codehilite .w{color: #bbbbbb}.codehilite .mf{color: #009999}.codehilite .mh{color: #009999}.codehilite .mi{color: #009999}.codehilite .mo{color: #009999}.codehilite .sb{color: #d14}.codehilite .sc{color: #d14}.codehilite .sd{color: #d14}.codehilite .s2{color: #d14}.codehilite .se{color: #d14}.codehilite .sh{color: #d14}.codehilite .si{color: #d14}.codehilite .sx{color: #d14}.codehilite .sr{color: #009926}.codehilite .s1{color: #d14}.codehilite .ss{color: #990073}.codehilite .bp{color: #999999}.codehilite .vc{color: #008080}.codehilite .vg{color: #008080}.codehilite .vi{color: #008080}.codehilite .il{color: #009999}
-    &lt;/style&gt;
-    &lt;style type=&quot;text/css&quot;&gt;
-      .markdown-body hr{background:url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC&quot;)}
-    &lt;/style&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;div class=&quot;container&quot;&gt;
-      &lt;div id=&quot;markup&quot;&gt;
-        &lt;article id=&quot;content&quot; class=&quot;markdown-body&quot;&gt;
-          &lt;blockquote&gt;
-&lt;h3&gt;【知识点】&lt;/h3&gt;
-&lt;/blockquote&gt;
-&lt;h4&gt;&lt;strong&gt;1. 说说库和框架的区别？&lt;/strong&gt;&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;库&lt;/strong&gt; 是把一些可以复用的方法集中进行封装到一个&lt;code&gt;library&lt;/code&gt;，提供&lt;code&gt;API&lt;/code&gt;，我们通过这些&lt;code&gt;API&lt;/code&gt;就可以调用这些已经封装好的方法，将代码写得更少/巧/强壮，以便简单快捷完成任务，提高生产力！比如 &lt;code&gt;jQuery&lt;/code&gt; 就是更加接近一个库，要什么可以从中拿；&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;框架&lt;/strong&gt; 也算是库的一种，不过更加强调提供一种解决方案，给你搭好架子，代码怎样组织，所以不单单是具体的方法或函数，而是注重从细节到整体的宏观思路。&lt;code&gt;AngularJS&lt;/code&gt; 就算是一个框架，因为它提供了一整套的解决方案；&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;对于小型应用来说，因为业务逻辑简单，代码总量不会太大，组织不会是太大的问题，所以用类库就够了；而面对中/大型项目，特别是需要多人共同参与的项目，选择一个合适的框架有助于写出规范的，易于理解的，易于回复的，低耦合的……等等的代码，在此基础上再使用各种类库来增加具体代码的健壮性与功能性则更好。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-
-&lt;h4&gt;&lt;strong&gt;2. jQuery 能做什么？&lt;/strong&gt;&lt;/h4&gt;
-&lt;p&gt;一言以蔽之，jQuery就是让我们能更加畅快舒爽地编写JavaScript，不必去编写蛋疼费时的原生JavaScript！它轻量，快速，功能丰富。
-- 可以简单快捷完成诸如JavaScript中的HTML元素选取和操作，CSS操作，HTML &lt;code&gt;DOM&lt;/code&gt;遍历和操作，事件处理，特效，动画和&lt;code&gt;AJAX&lt;/code&gt;交互。
-- jQuery提供&lt;code&gt;API&lt;/code&gt;让开发者编写插件。其模块化的使用方式使开发者可以很轻松的开发出功能强大的静态或动态网页。&lt;/p&gt;
-&lt;h4&gt;&lt;strong&gt;3. jQuery 对象和 DOM 原生对象有什么区别？如何转化？&lt;/strong&gt;&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;DOM对象是通过原生JavaScript获得的对象，jQuery对象是通过jQuery选择器获得对象；&lt;/li&gt;
-&lt;li&gt;jQuery对象只能使用jQuery自己的属性和方法，DOM对象只能使用DOM的属性和方法，&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;jQuery对象转DOM对象&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;我们可以通过类数组下标的获取方式或者get方法获取指定下标的&lt;code&gt;DOM&lt;/code&gt;对象:&lt;/p&gt;
-&lt;div class=&quot;codehilite&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;ct&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;item&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;item1&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;item&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;item2&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;item&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;item3&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;jQuery 对象是类数组对象，所以可通过数组下标获取数组中的DOM对象：&lt;/p&gt;
-&lt;div class=&quot;codehilite&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;.item&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//&amp;lt;div class=&amp;quot;item&amp;quot;&amp;gt;item3&amp;lt;/div&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;.item&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;eq&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//&amp;lt;div class=&amp;quot;item&amp;quot;&amp;gt;item3&amp;lt;/div&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;通过jQuery的&lt;code&gt;.get()&lt;/code&gt;方法获得的直接是DOM对象：&lt;/p&gt;
-&lt;div class=&quot;codehilite&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;.item&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//&amp;lt;div class=&amp;quot;item&amp;quot;&amp;gt;item3&amp;lt;/div&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;DOM对象转 jQuery 对象&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;使用 &lt;code&gt;$()&lt;/code&gt; 将DOM对象包裹起来就是jQuery对象：&lt;/p&gt;
-&lt;div class=&quot;codehilite&quot;&gt;&lt;pre&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ct&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getElementById&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;ct&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//DOM对象&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$ct&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ct&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//$(DOM对象)转化为了jQuery对象$ct&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;h4&gt;&lt;strong&gt;4. jQuery中如何绑定事件？&lt;code&gt;bind&lt;/code&gt;、&lt;code&gt;unbind&lt;/code&gt;、&lt;code&gt;delegate&lt;/code&gt;、&lt;code&gt;live&lt;/code&gt;、&lt;code&gt;on&lt;/code&gt;、&lt;code&gt;off&lt;/code&gt;都有什么作用？推荐使用哪种？使用&lt;code&gt;on&lt;/code&gt;绑定事件使用事件代理的写法？&lt;/strong&gt;&lt;/h4&gt;
-&lt;p&gt;jQuery中有很多绑定事件的方法&lt;code&gt;.bind()&lt;/code&gt;,&lt;code&gt;.live()&lt;/code&gt;,&lt;code&gt;.delegate()&lt;/code&gt;,&lt;code&gt;.on()&lt;/code&gt;,下面看看他们的区别：
-- &lt;code&gt;.bind()&lt;/code&gt;：对于早期jQuery版本（1.7以前），&lt;code&gt;.bind()&lt;/code&gt;方法用于直接将事件绑定在选中的元素上，所以&lt;code&gt;.bind()&lt;/code&gt;在绑定事件的时候被选的元素必须存在；使用一次&lt;code&gt;.bind()&lt;/code&gt;选择器匹配的元素会附加一个事件处理函数，而以后再添加的元素则不会有。为此需要再使用一次 &lt;code&gt;.bind()&lt;/code&gt; 才行；&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;.unbind&lt;/code&gt;：&lt;code&gt;.bind()&lt;/code&gt;的反向操作，从每一个匹配的元素中删除绑定的事件。
-如果没有参数，则删除所有绑定的事件，&lt;code&gt;.bind(typpe)&lt;/code&gt;删除指定类型事件；&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;.live()&lt;/code&gt;：（1.9版本已废弃,不建议使用，老版本建议使用&lt;code&gt;.delegate()&lt;/code&gt;）默认使用了事件代理（绑定在祖先元素上的事件处理程序可以对后代上触发事件作出回应），没有将事件直接绑定在该元素上，而是绑定在&lt;code&gt;document&lt;/code&gt;元素上（DOM树的根节点），&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;codehilite&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;clickme&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Click here&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
-
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;script&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;.clickme&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;live&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;click&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;Live handler called.&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//事件冒泡`document`元素上，查看事件类型是否是click、&lt;/span&gt;
-      &lt;span class=&quot;c1&quot;&gt;//目标元素和选择器.clickme否匹配，&lt;/span&gt;
-      &lt;span class=&quot;c1&quot;&gt;//是则执行绑定的事件处理函数；&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;.delegate()&lt;/code&gt;：对于早期jQuery版本（1.7以前），&lt;code&gt;.delegate&lt;/code&gt;是使用事件代理最有效的方式,&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;codehilite&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;background-color:red&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;这是一个段落。&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;button&amp;gt;&lt;/span&gt;请点击这里&lt;span class=&quot;nt&quot;&gt;&amp;lt;/button&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;script&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;div&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;delegate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;button&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;click&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;p&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;slideToggle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//将事件绑定到$(&amp;#39;div&amp;#39;)上，事件冒泡到$(&amp;#39;div&amp;#39;)上&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//查看是不是click事件，目标元素是不是button，如果都满足，就执行函数&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;.on()&lt;/code&gt;：（1.7版本后&lt;code&gt;.on()&lt;/code&gt;取代了&lt;code&gt;.bind()&lt;/code&gt;,&lt;code&gt;.live()&lt;/code&gt;,&lt;code&gt;.delegate()&lt;/code&gt;，提供绑定事件处理的所有功能，&lt;strong&gt;强烈推荐&lt;/strong&gt;）
-事件代理&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;codehilite&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;body&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;click&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;p&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//当点击段落时，显示该段落中的文本&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;javascript&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;.off()&lt;/code&gt;：移除用&lt;code&gt;.on()&lt;/code&gt;绑定的事件处理程序。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4&gt;&lt;strong&gt;5. jQuery 如何展示/隐藏元素？&lt;/strong&gt;&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;.hide( speed, [callback] )&lt;/strong&gt;：隐藏显示的元素，
-&lt;code&gt;speed&lt;/code&gt;：表示速度的参数，可选（&lt;code&gt;slow&lt;/code&gt;,&lt;code&gt;fast&lt;/code&gt;,&lt;code&gt;normal&lt;/code&gt;）或者毫秒数;
-&lt;code&gt;[callback]&lt;/code&gt;:在动画完成时执行的函数，每个元素执行一次。
-不设置参数就立即执行，没有动画；&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;.show(speed,callback)&lt;/strong&gt;：显示隐藏的元素；&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4&gt;&lt;strong&gt;6. jQuery 动画如何使用？&lt;/strong&gt;&lt;/h4&gt;
-&lt;p&gt;&lt;strong&gt;.animate(params,[speed],[callback])&lt;/strong&gt; 函数用来创建自定义动画，这个函数的关键在于指定动画形式及结果样式属性对象。这个对象中每个属性都表示一个可以变化的样式属性（如“height”、“top”或“opacity”）。注意：所有指定的属性必须用骆驼形式，比如用marginLeft代替margin-left.&lt;/p&gt;
-&lt;div class=&quot;codehilite&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;style&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nc&quot;&gt;.box&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;50px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;50px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;background-color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;red&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;nc&quot;&gt;.btn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;margin-bottom&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;10px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/style&amp;gt;&lt;/span&gt;
-
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;button&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;btn&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Click&lt;span class=&quot;nt&quot;&gt;&amp;lt;/button&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;box&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
-
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;script&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;.btn&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;click&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;repeat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;.box&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;animate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
-      &lt;span class=&quot;nx&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;100px&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-      &lt;span class=&quot;nx&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;100px&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-      &lt;span class=&quot;nx&quot;&gt;opacity&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.5&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
-      &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;animate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;50px&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;50px&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;opacity&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
-      &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;repeat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;());&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;效果：
-&lt;img alt=&quot;&quot; src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task25/animate%28%29.gif&quot;&gt;&lt;/p&gt;
-&lt;h4&gt;&lt;strong&gt;7. 如何设置和获取元素内部 HTML 内容？如何设置和获取元素内部文本？&lt;/strong&gt;&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;code&gt;$(selector).html()&lt;/code&gt;&lt;/strong&gt;用于获取&lt;strong&gt;第一个&lt;/strong&gt;匹配元素的内容，。这个函数不能用于XML文档，但可以用于XHTML文档。如果选择器匹配多个元素，那么只有第一个匹配元素的 HTML 内容会被获取；&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;code&gt;$(selector).html( htmlString )&lt;/code&gt;&lt;/strong&gt;用于设定每一个匹配元素的html内容;也可以通过函数来设置html内容：&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;codehilite&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;div.demo-container&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;emph&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;lt;em&amp;gt;&amp;#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;p&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39; paragraphs!&amp;lt;/em&amp;gt;&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;lt;p&amp;gt;All new content for &amp;#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;emph&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;lt;/p&amp;gt;&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt; 
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;code&gt;$(selector).text()&lt;/code&gt;&lt;/strong&gt;取得所有匹配元素的文本内容。这个方法对HTML和XML文档都有效。注意：&lt;code&gt;.text()&lt;/code&gt; 方法不能使用在 &lt;code&gt;input&lt;/code&gt; 元素或&lt;code&gt;scripts&lt;/code&gt;元素上。 &lt;code&gt;input&lt;/code&gt; 或 &lt;code&gt;textarea&lt;/code&gt; 需要使用 &lt;strong&gt;&lt;code&gt;.val()&lt;/code&gt;&lt;/strong&gt; 方法获取或设置文本值。得到&lt;code&gt;scripts&lt;/code&gt;元素的值，使用&lt;code&gt;.html()&lt;/code&gt;方法&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;code&gt;$(selecor).text( textString )&lt;/code&gt;&lt;/strong&gt;用于设置每一个匹配元素的文本内容；也可以通过函数来设置：&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;codehilite&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;p&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;这个 p 元素的 index 是：&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;h4&gt;&lt;strong&gt;8. 如何设置和获取表单用户输入或者选择的内容？如何设置和获取元素属性？&lt;/strong&gt;&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;code&gt;$(selector).val()&lt;/code&gt;&lt;/strong&gt;获取匹配元素的当前（输入/选择）值，如果多选，将返回一个数组，其包含所选的值。例如：如果是&lt;code&gt;select&lt;/code&gt;元素， 当没有选择项被选中，它返回&lt;code&gt;null&lt;/code&gt;;如果&lt;code&gt;select&lt;/code&gt;元素有&lt;code&gt;multiple&lt;/code&gt;（多选）属性，并且至少一个选择项被选中，&lt;code&gt;.val()&lt;/code&gt;方法返回一个数组，这个数组包含每个选中选择项的值；&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;code&gt;$(selector).val(value)&lt;/code&gt;&lt;/strong&gt;设置匹配元素输入或选择的值；也可以通过函数设定文本框的值；&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;例如将文本框输入变为大写：&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;div class=&quot;codehilite&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;ipt&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;text&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;ipt&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
-
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;script&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;.ipt&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;keyup&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
-      &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;val&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;val&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;toUpperCase&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;());&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;code&gt;.attr(name|properties|key,value|fn)&lt;/code&gt;&lt;/strong&gt;获取匹配的元素集合中的&lt;strong&gt;第一个&lt;/strong&gt;元素的属性的值  或 设置每一个匹配元素的一个或多个属性。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;codehilite&quot;&gt;&lt;pre&gt;&lt;span class=&quot;c1&quot;&gt;//  设置一个属性&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;#img1&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;attr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;alt&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;rain&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;//设置多个属性&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;#img1&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;attr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;alt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;rain&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;cloud&amp;#39;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;//设置函数返回&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;img&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;attr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;title&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;src&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;hr&gt;
-&lt;blockquote&gt;
-&lt;h3&gt;【练习】&lt;/h3&gt;
-&lt;/blockquote&gt;
-&lt;h4&gt;&lt;strong&gt;1. 使用 jQuery实现如下效果&lt;/strong&gt;&lt;/h4&gt;
-&lt;p&gt;&lt;img alt=&quot;&quot; src=&quot;http://7xnk1s.com2.z0.glb.qiniucdn.com/8-1.gif&quot;&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://febox.applinzi.com/task25/task25-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;效果点我&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://js.jirengu.com/vor/8/edit?html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;瞅瞅代码&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h4&gt;&lt;strong&gt;2. 使用 jQuery实现如下效果&lt;/strong&gt;&lt;/h4&gt;
-&lt;p&gt;&lt;img alt=&quot;&quot; src=&quot;http://7xnk1s.com2.z0.glb.qiniucdn.com/8-2.gif&quot;&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;问题：&lt;/strong&gt; 点奢侈品2的时候页面跳到了顶部，可能是什么原因？如何解决&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://febox.applinzi.com/task25/task25-2.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;效果点我&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://js.jirengu.com/ced/1/edit?html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;瞅瞅代码&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h4&gt;&lt;strong&gt;3. 使用 jQuery实现如下效果&lt;/strong&gt;&lt;/h4&gt;
-&lt;p&gt;&lt;img alt=&quot;&quot; src=&quot;http://7xnk1s.com2.z0.glb.qiniucdn.com/8-3-1.gif&quot;&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;提示&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;1.使用代理
-2.当点击按钮时使用如下数据&lt;/p&gt;
-&lt;div class=&quot;codehilite&quot;&gt;&lt;pre&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;products&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;img&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;http://img10.360buyimg.com/N3/jfs/t2242/92/1446546284/374195/9196ac66/56af0958N1a723458.jpg&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;珂兰 黄金手 猴哥款&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;price&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;￥405.00&amp;#39;&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;},{&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;img&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;http://img10.360buyimg.com/N3/jfs/t2242/92/1446546284/374195/9196ac66/56af0958N1a723458.jpg&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;珂兰 黄金转运珠 猴哥款&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;price&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;￥100.00&amp;#39;&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;},{&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;img&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;http://img10.360buyimg.com/N3/jfs/t2242/92/1446546284/374195/9196ac66/56af0958N1a723458.jpg&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;珂兰 黄金手链 3D猴哥款&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;price&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;￥45.00&amp;#39;&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;hr&gt;
-&lt;blockquote&gt;
-&lt;p&gt;参考：&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://jquery.cuishifeng.cn/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;jQuery API 1.12 中文文档&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.css88.com/jqapi-1.9/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;jQuery API 中文文档&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-        &lt;/article&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;meta charset=&quot;utf-8&quot;&gt;
-    &lt;title&gt;jQuery-DOM-事件.md—E:\Hexo Blog\gardonlee.github.io\source\_posts&lt;/title&gt;
-    &lt;style type=&quot;text/css&quot;&gt;
-    html{font-family: sans-serif;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%}body{margin: 0}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display: block}audio,canvas,progress,video{display: inline-block;vertical-align: baseline}audio:not([controls]){display: none;height: 0}[hidden],template{display: none}a{background: transparent}a:active,a:hover{outline: 0}abbr[title]{border-bottom: 1px dotted}b,strong{font-weight: bold}dfn{font-style: italic}h1{font-size: 2em;margin: 0.67em 0}mark{background: #ff0;color: #000}small{font-size: 80%}sub,sup{font-size: 75%;line-height: 0;position: relative;vertical-align: baseline}sup{top: -0.5em}sub{bottom: -0.25em}img{border: 0}svg:not(:root){overflow: hidden}figure{margin: 1em 40px}hr{box-sizing: content-box;height: 0}pre{overflow: auto}code,kbd,pre,samp{font-family: monospace, monospace;font-size: 1em}button,input,optgroup,select,textarea{color: inherit;font: inherit;margin: 0}button{overflow: visible}button,select{text-transform: none}button,html input[type=&quot;button&quot;],input[type=&quot;reset&quot;],input[type=&quot;submit&quot;]{-webkit-appearance: button;cursor: pointer}button[disabled],html input[disabled]{cursor: default}button::-moz-focus-inner,input::-moz-focus-inner{border: 0;padding: 0}input{line-height: normal}input[type=&quot;checkbox&quot;],input[type=&quot;radio&quot;]{box-sizing: border-box;padding: 0}input[type=&quot;number&quot;]::-webkit-inner-spin-button,input[type=&quot;number&quot;]::-webkit-outer-spin-button{height: auto}input[type=&quot;search&quot;]{-webkit-appearance: textfield;box-sizing: content-box}input[type=&quot;search&quot;]::-webkit-search-cancel-button,input[type=&quot;search&quot;]::-webkit-search-decoration{-webkit-appearance: none}fieldset{border: 1px solid #c0c0c0;margin: 0 2px;padding: 0.35em 0.625em 0.75em}legend{border: 0;padding: 0}textarea{overflow: auto}optgroup{font-weight: bold}table{border-collapse: collapse;border-spacing: 0}td,th{padding: 0}*{box-sizing: border-box}input,select,textarea,button{font: 13px/1.4 Helvetica, arial, freesans, clean, sans-serif, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;}body{min-width: 1020px;font: 13px/1.4 Helvetica, arial, freesans, clean, sans-serif, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;;color: #333;background-color: #fff}a{color: #4183c4;text-decoration: none}a:hover,a:active{text-decoration: underline}hr,.rule{height: 0;margin: 15px 0;overflow: hidden;background: transparent;border: 0;border-bottom: 1px solid #ddd}hr:before,.rule:before{display: table;content: &quot;&quot;}hr:after,.rule:after{display: table;clear: both;content: &quot;&quot;}h1,h2,h3,h4,h5,h6{margin-top: 15px;margin-bottom: 15px;line-height: 1.1}h1{font-size: 30px}h2{font-size: 21px}h3{font-size: 16px}h4{font-size: 14px}h5{font-size: 12px}h6{font-size: 11px}small{font-size: 90%}blockquote{margin: 0}.lead{margin-bottom: 30px;font-size: 20px;font-weight: 300;color: #555}.text-muted{color: #999}.text-danger{color: #bd2c00}.text-emphasized{font-weight: bold;color: #333}ul,ol{padding: 0;margin-top: 0;margin-bottom: 0}ol ol,ul ol{list-style-type: lower-roman}ul ul ol,ul ol ol,ol ul ol,ol ol ol{list-style-type: lower-alpha}dd{margin-left: 0}tt,code{font-family: Consolas, &quot;Liberation Mono&quot;, Menlo, Courier, monospace;font-size: 12px}pre{margin-top: 0;margin-bottom: 0;font: 12px Consolas, &quot;Liberation Mono&quot;, Menlo, Courier, monospace}#realtime .status{overflow: visible;position: absolute;top: -5px;left: 0;background: url(&quot;/public/images/github-status.png&quot;);width: 26px;height: 26px;display: block;margin: 0 5px 0 0}#realtime .up{background-position: 0 0}#realtime .problem{background-position: 0 -53px}#realtime .down{background-position: 0 -26px}.container{max-width: 920px;margin: 0 auto 20px auto}#header{background: #FAFAFA;background: -moz-linear-gradient(#FAFAFA, #EAEAEA);background: -webkit-linear-gradient(#FAFAFA, #EAEAEA);-ms-filter: &quot;progid:DXImageTransform.Microsoft.gradient(startColorstr=&#39;#fafafa&#39;, endColorstr=&#39;#eaeaea&#39;)&quot;;border-bottom: 1px solid #CACACA;box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4),0 0 10px rgba(0, 0, 0, 0.1)}#markup{padding: 3px}#markup article{padding-top: 30px}.markdown-body{overflow: hidden;font-family: &quot;Helvetica Neue&quot;, Helvetica, &quot;Segoe UI&quot;, Arial, freesans, sans-serif;font-size: 16px;line-height: 1.6;word-wrap: break-word}.markdown-body&gt;*:first-child{margin-top: 0 !important}.markdown-body&gt;*:last-child{margin-bottom: 0 !important}.markdown-body .absent{color: #c00}.markdown-body .anchor{position: absolute;top: 0;left: 0;display: block;padding-right: 6px;padding-left: 30px;margin-left: -30px}.markdown-body .anchor:focus{outline: none}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{position: relative;margin-top: 1em;margin-bottom: 16px;font-weight: bold;line-height: 1.4}.markdown-body h1 .octicon-link,.markdown-body h2 .octicon-link,.markdown-body h3 .octicon-link,.markdown-body h4 .octicon-link,.markdown-body h5 .octicon-link,.markdown-body h6 .octicon-link{display: none;color: #000;vertical-align: middle}.markdown-body h1:hover .anchor,.markdown-body h2:hover .anchor,.markdown-body h3:hover .anchor,.markdown-body h4:hover .anchor,.markdown-body h5:hover .anchor,.markdown-body h6:hover .anchor{padding-left: 8px;margin-left: -30px;text-decoration: none}.markdown-body h1:hover .anchor .octicon-link,.markdown-body h2:hover .anchor .octicon-link,.markdown-body h3:hover .anchor .octicon-link,.markdown-body h4:hover .anchor .octicon-link,.markdown-body h5:hover .anchor .octicon-link,.markdown-body h6:hover .anchor .octicon-link{display: inline-block}.markdown-body h1 tt,.markdown-body h1 code,.markdown-body h2 tt,.markdown-body h2 code,.markdown-body h3 tt,.markdown-body h3 code,.markdown-body h4 tt,.markdown-body h4 code,.markdown-body h5 tt,.markdown-body h5 code,.markdown-body h6 tt,.markdown-body h6 code{font-size: inherit}.markdown-body h1{padding-bottom: 0.3em;font-size: 2.25em;line-height: 1.2;border-bottom: 1px solid #eee}.markdown-body h1 .anchor{line-height: 1}.markdown-body h2{padding-bottom: 0.3em;font-size: 1.75em;line-height: 1.225;border-bottom: 1px solid #eee}.markdown-body h2 .anchor{line-height: 1}.markdown-body h3{font-size: 1.5em;line-height: 1.43}.markdown-body h3 .anchor{line-height: 1.2}.markdown-body h4{font-size: 1.25em}.markdown-body h4 .anchor{line-height: 1.2}.markdown-body h5{font-size: 1em}.markdown-body h5 .anchor{line-height: 1.1}.markdown-body h6{font-size: 1em;color: #777}.markdown-body h6 .anchor{line-height: 1.1}.markdown-body p,.markdown-body blockquote,.markdown-body ul,.markdown-body ol,.markdown-body dl,.markdown-body table,.markdown-body pre{margin-top: 0;margin-bottom: 16px}.markdown-body hr{height: 4px;padding: 0;margin: 16px 0;background-color: #e7e7e7;border: 0 none}.markdown-body ul,.markdown-body ol{padding-left: 2em}.markdown-body ul.no-list,.markdown-body ol.no-list{padding: 0;list-style-type: none}.markdown-body ul ul,.markdown-body ul ol,.markdown-body ol ol,.markdown-body ol ul{margin-top: 0;margin-bottom: 0}.markdown-body li&gt;p{margin-top: 16px}.markdown-body dl{padding: 0}.markdown-body dl dt{padding: 0;margin-top: 16px;font-size: 1em;font-style: italic;font-weight: bold}.markdown-body dl dd{padding: 0 16px;margin-bottom: 16px}.markdown-body blockquote{padding: 0 15px;color: #777;border-left: 4px solid #ddd}.markdown-body blockquote&gt;:first-child{margin-top: 0}.markdown-body blockquote&gt;:last-child{margin-bottom: 0}.markdown-body table{display: block;width: 100%;overflow: auto;word-break: normal;word-break: keep-all}.markdown-body table th{font-weight: bold}.markdown-body table th,.markdown-body table td{padding: 6px 13px;border: 1px solid #ddd}.markdown-body table tr{background-color: #fff;border-top: 1px solid #ccc}.markdown-body table tr:nth-child(2n){background-color: #f8f8f8}.markdown-body img{max-width: 100%;box-sizing: border-box}.markdown-body span.frame{display: block;overflow: hidden}.markdown-body span.frame&gt;span{display: block;float: left;width: auto;padding: 7px;margin: 13px 0 0;overflow: hidden;border: 1px solid #ddd}.markdown-body span.frame span img{display: block;float: left}.markdown-body span.frame span span{display: block;padding: 5px 0 0;clear: both;color: #333}.markdown-body span.align-center{display: block;overflow: hidden;clear: both}.markdown-body span.align-center&gt;span{display: block;margin: 13px auto 0;overflow: hidden;text-align: center}.markdown-body span.align-center span img{margin: 0 auto;text-align: center}.markdown-body span.align-right{display: block;overflow: hidden;clear: both}.markdown-body span.align-right&gt;span{display: block;margin: 13px 0 0;overflow: hidden;text-align: right}.markdown-body span.align-right span img{margin: 0;text-align: right}.markdown-body span.float-left{display: block;float: left;margin-right: 13px;overflow: hidden}.markdown-body span.float-left span{margin: 13px 0 0}.markdown-body span.float-right{display: block;float: right;margin-left: 13px;overflow: hidden}.markdown-body span.float-right&gt;span{display: block;margin: 13px auto 0;overflow: hidden;text-align: right}.markdown-body code,.markdown-body tt{padding: 0;padding-top: 0.2em;padding-bottom: 0.2em;margin: 0;font-size: 85%;background-color: rgba(0,0,0,0.04);border-radius: 3px}.markdown-body code:before,.markdown-body code:after,.markdown-body tt:before,.markdown-body tt:after{letter-spacing: -0.2em;content: &quot;\00a0&quot;}.markdown-body code br,.markdown-body tt br{display: none}.markdown-body del code{text-decoration: inherit}.markdown-body pre&gt;code{padding: 0;margin: 0;font-size: 100%;word-break: normal;white-space: pre;background: transparent;border: 0}.markdown-body .highlight{margin-bottom: 16px}.markdown-body .highlight pre,.markdown-body pre{padding: 16px;overflow: auto;font-size: 85%;line-height: 1.45;background-color: #f7f7f7;border-radius: 3px}.markdown-body .highlight pre{margin-bottom: 0;word-break: normal}.markdown-body pre{word-wrap: normal}.markdown-body pre code,.markdown-body pre tt{display: inline;max-width: initial;padding: 0;margin: 0;overflow: initial;line-height: inherit;word-wrap: normal;background-color: transparent;border: 0}.markdown-body pre code:before,.markdown-body pre code:after,.markdown-body pre tt:before,.markdown-body pre tt:after{content: normal}.markdown-body kbd{display: inline-block;padding: 3px 5px;font-size: 11px;line-height: 10px;color: #555;vertical-align: middle;background-color: #fcfcfc;border: solid 1px #ccc;border-bottom-color: #bbb;border-radius: 3px;box-shadow: inset 0 -1px 0 #bbb}.codehilite{background: #ffffff}.codehilite .c{color: #999988;font-style: italic}.codehilite .err{color: #a61717;background-color: #e3d2d2}.codehilite .k{color: #000000;font-weight: bold}.codehilite .o{color: #000000;font-weight: bold}.codehilite .cm{color: #999988;font-style: italic}.codehilite .cp{color: #999999;font-weight: bold}.codehilite .c1{color: #999988;font-style: italic}.codehilite .cs{color: #999999;font-weight: bold;font-style: italic}.codehilite .gd{color: #000000;background-color: #ffdddd}.codehilite .gd .x{color: #000000;background-color: #ffaaaa}.codehilite .ge{color: #000000;font-style: italic}.codehilite .gr{color: #aa0000}.codehilite .gh{color: #999999}.codehilite .gi{color: #000000;background-color: #ddffdd}.codehilite .gi .x{color: #000000;background-color: #aaffaa}.codehilite .go{color: #888888}.codehilite .gp{color: #555555}.codehilite .gs{font-weight: bold}.codehilite .gu{color: #aaaaaa}.codehilite .gt{color: #aa0000}.codehilite .kc{color: #000000;font-weight: bold}.codehilite .kd{color: #000000;font-weight: bold}.codehilite .kp{color: #000000;font-weight: bold}.codehilite .kr{color: #000000;font-weight: bold}.codehilite .kt{color: #445588;font-weight: bold}.codehilite .m{color: #009999}.codehilite .s{color: #d14}.codehilite .na{color: #008080}.codehilite .nb{color: #0086B3}.codehilite .nc{color: #445588;font-weight: bold}.codehilite .no{color: #008080}.codehilite .ni{color: #800080}.codehilite .ne{color: #990000;font-weight: bold}.codehilite .nf{color: #990000;font-weight: bold}.codehilite .nn{color: #555555}.codehilite .nt{color: #000080}.codehilite .nv{color: #008080}.codehilite .ow{color: #000000;font-weight: bold}.codehilite .w{color: #bbbbbb}.codehilite .mf{color: #009999}.codehilite .mh{color: #009999}.codehilite .mi{color: #009999}.codehilite .mo{color: #009999}.codehilite .sb{color: #d14}.codehilite .sc{color: #d14}.codehilite .sd{color: #d14}.codehilite .s2{color: #d14}.codehilite .se{color: #d14}.codehilite .sh{color: #d14}.codehilite .si{color: #d14}.codehilite .sx{color: #d14}.codehilite .sr{color: #009926}.codehilite .s1{color: #d14}.codehilite .ss{color: #990073}.codehilite .bp{color: #999999}.codehilite .vc{color: #008080}.codehilite .vg{color: #008080}.codehilite .vi{color: #008080}.codehilite .il{color: #009999}
-    &lt;/style&gt;
-    &lt;style type=&quot;text/css&quot;&gt;
-      .markdown-body hr{background:url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC&quot;)}
-    &lt;/style&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;div class=&quot;container&quot;&gt;
-      &lt;div id=&quot;markup&quot;&gt;
-        &lt;article id=&quot;content&quot; class=&quot;markdown-body&quot;&gt;
-          &lt;blockquote&gt;
-&lt;h3&gt;【知识点】&lt;/h3&gt;
-&lt;/blockquote&gt;
-&lt;h4&gt;&lt;strong&gt;1. 说说库和框架的区别？&lt;/strong&gt;&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;库&lt;/strong&gt; 是把一些可以复用的方法集中进行封装到一个&lt;code&gt;library&lt;/code&gt;，提供&lt;code&gt;API&lt;/code&gt;，我们通过这些&lt;code&gt;API&lt;/code&gt;就可以调用这些已经封装好的方法，将代码写得更少/巧/强壮，以便简单快捷完成任务，提高生产力！比如 &lt;code&gt;jQuery&lt;/code&gt; 就是更加接近一个库，要什么可以从中拿；&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;框架&lt;/strong&gt; 也算是库的一种，不过更加强调提供一种解决方案，给你搭好架子，代码怎样组织，所以不单单是具体的方法或函数，而是注重从细节到整体的宏观思路。&lt;code&gt;AngularJS&lt;/code&gt; 就算是一个框架，因为它提供了一整套的解决方案；&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;对于小型应用来说，因为业务逻辑简单，代码总量不会太大，组织不会是太大的问题，所以用类库就够了；而面对中/大型项目，特别是需要多人共同参与的项目，选择一个合适的框架有助于写出规范的，易于理解的，易于回复的，低耦合的……等等的代码，在此基础上再使用各种类库来增加具体代码的健壮性与功能性则更好。&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>jQuery DOM &amp; 事件</title>
@@ -2107,6 +1407,201 @@
 &lt;h4 id=&quot;1-负边距在让元素产生偏移时和position-relative有什么区别&quot;&gt;&lt;a href=&quot;#1-负边距在让元素产生偏移时和position-relative有什么区别&quot; class=&quot;headerlink&quot; title=&quot;1. 负边距在让元素产生偏移时和position: relative有什么区别?&quot;&gt;&lt;/a&gt;&lt;strong&gt;1. 负边距在让元素产生偏移时和&lt;code&gt;position: relative&lt;/code&gt;有什么区别?&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
 &lt;p&gt;最大的区别是负margin让元素移动时改变了文档流，同时可能影响其他元素排列；而&lt;code&gt;position:relative&lt;/code&gt;并未让元素脱离文档流，只是让元素相对于本来的位置进行定位，对其他元素的排列不会造成影响。&lt;/p&gt;
 &lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="编程学习" scheme="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="前端基础" scheme="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/"/>
+    
+    
+      <category term="CSS" scheme="http://licao404.com/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>BFC</title>
+    <link href="http://licao404.com/2016/02/28/BFC/"/>
+    <id>http://licao404.com/2016/02/28/BFC/</id>
+    <published>2016-02-28T05:32:34.000Z</published>
+    <updated>2016-04-14T02:58:07.357Z</updated>
+    
+    <content type="html">&lt;blockquote&gt;
+&lt;h3 id=&quot;【基础知识】&quot;&gt;&lt;a href=&quot;#【基础知识】&quot; class=&quot;headerlink&quot; title=&quot;【基础知识】&quot;&gt;&lt;/a&gt;【基础知识】&lt;/h3&gt;&lt;/blockquote&gt;
+&lt;h4 id=&quot;1-在什么场景下会出现外边距合并？如何合并？如何不让相邻元素外边距合并？&quot;&gt;&lt;a href=&quot;#1-在什么场景下会出现外边距合并？如何合并？如何不让相邻元素外边距合并？&quot; class=&quot;headerlink&quot; title=&quot;1. 在什么场景下会出现外边距合并？如何合并？如何不让相邻元素外边距合并？&quot;&gt;&lt;/a&gt;&lt;strong&gt;1. 在什么场景下会出现外边距合并？如何合并？如何不让相邻元素外边距合并？&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;相邻块盒子的垂直外边距合并只有他们是在同一BFC，且没有padding与border将外边距隔开才会发生；&lt;/li&gt;
+&lt;li&gt;垂直相邻元素，子元素和父元素会发生合并，合并后的外边距的高度等于两个发生合并的外边距的高度中的较大者。&lt;/li&gt;
+&lt;li&gt;创建另外一个BFC，让不想发生外边距合并的元素处于不同的BFC。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h4 id=&quot;2-去除inline-block内缝隙有哪几种常见方法&quot;&gt;&lt;a href=&quot;#2-去除inline-block内缝隙有哪几种常见方法&quot; class=&quot;headerlink&quot; title=&quot;2. 去除inline-block内缝隙有哪几种常见方法?&quot;&gt;&lt;/a&gt;&lt;strong&gt;2. 去除&lt;code&gt;inline-block&lt;/code&gt;内缝隙有哪几种常见方法?&lt;/strong&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;1.修改&lt;code&gt;li&lt;/code&gt;的代码书写格式：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;img src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task11%E5%8E%BB%E7%BC%9D%E9%9A%99li.gif&quot; alt=&quot;li书写1&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;img src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task11%E5%8E%BB%E7%BC%9D%E9%9A%99li2.gif&quot; alt=&quot;li书写2&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;2.用&lt;code&gt;负margin&lt;/code&gt;：&lt;ul&gt;
+&lt;li&gt;&lt;img src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task11%E5%8E%BB%E7%BC%9D%E9%9A%99%E8%B4%9Fmargin.gif&quot; alt=&quot;-margin&quot;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;3.用浮动并在父元素用&lt;code&gt;overflow:auto&lt;/code&gt;清除浮动：&lt;ul&gt;
+&lt;li&gt;&lt;img src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task11%E5%8E%BB%E7%BC%9D%E9%9A%99%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8.gif&quot; alt=&quot;float&quot;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;设置父元素的&lt;code&gt;font-size&lt;/code&gt;为&lt;code&gt;0&lt;/code&gt;,子元素再给一个&lt;code&gt;font-size&lt;/code&gt;:&lt;ul&gt;
+&lt;li&gt;&lt;img src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task11%E5%8E%BB%E7%BC%9D%E9%9A%99fontsize.gif&quot; alt=&quot;父font-size&quot;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;适配IE8以下加hack语句&lt;a href=&quot;http://js.jirengu.com/quvohojade/2/edit&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;code&gt;*display:inline&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;3-父容器使用overflow-auto-hidden撑开高度的原理是什么？&quot;&gt;&lt;a href=&quot;#3-父容器使用overflow-auto-hidden撑开高度的原理是什么？&quot; class=&quot;headerlink&quot; title=&quot;3. 父容器使用overflow: auto| hidden撑开高度的原理是什么？&quot;&gt;&lt;/a&gt;&lt;strong&gt;3. 父容器使用&lt;code&gt;overflow: auto| hidden&lt;/code&gt;撑开高度的原理是什么？&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;给父容器添加&lt;code&gt;overflow: auto| hidden&lt;/code&gt;样式即触发了BFC，这时如果父容器内只有浮动元素，则会撑开父容器高度。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;4-BFC是什么？如何形成BFC，有什么作用&quot;&gt;&lt;a href=&quot;#4-BFC是什么？如何形成BFC，有什么作用&quot; class=&quot;headerlink&quot; title=&quot;4. BFC是什么？如何形成BFC，有什么作用?&quot;&gt;&lt;/a&gt;&lt;strong&gt;4. BFC是什么？如何形成BFC，有什么作用?&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;定义：浮动元素和绝对定位元素，非块级盒子的块级容器（例如 inline-block, table-cells, 和 table-captions），以及overflow值不为“visiable”的块级盒子，都会为他们的内容创建新的BFC（块级格式上下文）。&lt;/li&gt;
+&lt;li&gt;如何形成：可以通过给父容器添加一个触发BFC的样式即可。例如&lt;code&gt;float:left&lt;/code&gt;,&lt;code&gt;position:absolute&lt;/code&gt;,&lt;code&gt;overflow:hidde&lt;/code&gt;,&lt;code&gt;display:inline-block&lt;/code&gt;等；（用来清除浮动可能带来一些副作用，一般使用&lt;code&gt;overflow:auto&lt;/code&gt;）&lt;/li&gt;
+&lt;li&gt;&lt;ul&gt;
+&lt;li&gt;用于&lt;code&gt;包含浮动&lt;/code&gt;。如果父容器内存在浮动元素，则父容器没有高度，它的浮动孩子将会脱离文档流，影响到其他元素的排列。这时可以创建新的BFC，撑开父容器的高度可以包含子元素；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;用于&lt;code&gt;防止边距合并&lt;/code&gt;，实质上外边距合并是由BFC导致的（&lt;a href=&quot;http://www.w3cplus.com/css/understanding-block-formatting-contexts-in-css.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;详细&lt;/a&gt;），毗邻块盒子的垂直外边距折叠只有他们是在同一BFC时才会发生，如果他们属于不同的BFC，他们之间的外边距将不会折叠。所以通过创建一个新的BFC我们可以防止外边距折叠；&lt;/li&gt;
+&lt;li&gt;用于&lt;code&gt;防止文字环绕&lt;/code&gt;；&lt;/li&gt;
+&lt;li&gt;用于&lt;code&gt;多列布局&lt;/code&gt;；当我们设计一个多列布局占满宽度时，最后一列被挤到下一行，在其中一个列的布局中建立了一个新的BFC，它将会在前一列填充完之后的后面占据所剩余的空间。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;5-浮动导致的父容器高度塌陷指什么？为什么会产生？有几种解决方法&quot;&gt;&lt;a href=&quot;#5-浮动导致的父容器高度塌陷指什么？为什么会产生？有几种解决方法&quot; class=&quot;headerlink&quot; title=&quot;5. 浮动导致的父容器高度塌陷指什么？为什么会产生？有几种解决方法&quot;&gt;&lt;/a&gt;&lt;strong&gt;5. 浮动导致的父容器高度塌陷指什么？为什么会产生？有几种解决方法&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;概念：没有设置父容器的高度或者设置了&lt;code&gt;auto&lt;/code&gt;，容器内只含有浮动元素，则他们的父容器会没有高度属性，之后的元素会“挤上来”，造成“高度塌陷”。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;解决：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;给父容器添加&lt;code&gt;overflow: auto| hidden&lt;/code&gt;等样式触发BFC，撑开父容器高度。&lt;/li&gt;
+&lt;li&gt;使用伪类&lt;code&gt;:after&lt;/code&gt;,父容器通过&lt;code&gt;:after&lt;/code&gt;来为其内容末尾添加一个内容为空的块框，利用这个块框来清除浮动（需要hack兼容IE），&lt;code&gt;常常用这种方法&lt;/code&gt;!&lt;/li&gt;
+&lt;li&gt;给父容器后添加一个新标签，用这个新标签来清除浮动撑开高度，兼容性好，但是无语义；&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;6-以下代码每一行的作用是什么？-为什么会产生作用？-和BFC撑开空间有什么区别？&quot;&gt;&lt;a href=&quot;#6-以下代码每一行的作用是什么？-为什么会产生作用？-和BFC撑开空间有什么区别？&quot; class=&quot;headerlink&quot; title=&quot;6. 以下代码每一行的作用是什么？ 为什么会产生作用？ 和BFC撑开空间有什么区别？&quot;&gt;&lt;/a&gt;&lt;strong&gt;6. 以下代码每一行的作用是什么？ 为什么会产生作用？ 和BFC撑开空间有什么区别？&lt;/strong&gt;&lt;/h4&gt;&lt;figure class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;  .clearfix:after&amp;#123;      /*添加`:after`伪类*/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    content: &#39;&#39;;        /*内容是空的*/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    display: block;     /*空的内容生成块框*/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    clear: both;    /*清除两边浮动*/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;.clearfix&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    *zoom: 1;   /*IE的hack语句，为了兼容IE6,7，触发IE的hasLayout特有属性，但不会影响页面的显示效果*/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;blockquote&gt;
+&lt;p&gt;作用：在容器内部最后一个元素创建了一个空的块框，而该块框两则清除了浮动，容器外的其他元素就无法向上挤占了；&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;区别：BFC是包含容器内的浮动元素，形成一个封闭的小宇宙，不受外界干扰挤占；而这种方法是通过添加空块来清除浮动，不让其他元素上来，二者的实现思路是完全不一样的；&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;h3 id=&quot;【代码】&quot;&gt;&lt;a href=&quot;#【代码】&quot; class=&quot;headerlink&quot; title=&quot;【代码】&quot;&gt;&lt;/a&gt;【代码】&lt;/h3&gt;&lt;h4 id=&quot;task-11-1&quot;&gt;&lt;a href=&quot;#task-11-1&quot; class=&quot;headerlink&quot; title=&quot;task-11-1&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task11/task-11-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;task-11-1&lt;/a&gt;&lt;/h4&gt;&lt;h4 id=&quot;task-11-2&quot;&gt;&lt;a href=&quot;#task-11-2&quot; class=&quot;headerlink&quot; title=&quot;task-11-2&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task11/task-11-2.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;task-11-2&lt;/a&gt;&lt;/h4&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;h3 id=&quot;【基础知识】&quot;&gt;&lt;a href=&quot;#【基础知识】&quot; class=&quot;headerlink&quot; title=&quot;【基础知识】&quot;&gt;&lt;/a&gt;【基础知识】&lt;/h3&gt;&lt;/blockquote&gt;
+&lt;h4 id=&quot;1-在什么场景下会出现外边距合并？如何合并？如何不让相邻元素外边距合并？&quot;&gt;&lt;a href=&quot;#1-在什么场景下会出现外边距合并？如何合并？如何不让相邻元素外边距合并？&quot; class=&quot;headerlink&quot; title=&quot;1. 在什么场景下会出现外边距合并？如何合并？如何不让相邻元素外边距合并？&quot;&gt;&lt;/a&gt;&lt;strong&gt;1. 在什么场景下会出现外边距合并？如何合并？如何不让相邻元素外边距合并？&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;相邻块盒子的垂直外边距合并只有他们是在同一BFC，且没有padding与border将外边距隔开才会发生；&lt;/li&gt;
+&lt;li&gt;垂直相邻元素，子元素和父元素会发生合并，合并后的外边距的高度等于两个发生合并的外边距的高度中的较大者。&lt;/li&gt;
+&lt;li&gt;创建另外一个BFC，让不想发生外边距合并的元素处于不同的BFC。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="编程学习" scheme="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="前端基础" scheme="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/"/>
+    
+    
+      <category term="CSS" scheme="http://licao404.com/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>定位+浮动</title>
+    <link href="http://licao404.com/2016/02/27/%E5%AE%9A%E4%BD%8D-%E6%B5%AE%E5%8A%A8/"/>
+    <id>http://licao404.com/2016/02/27/定位-浮动/</id>
+    <published>2016-02-27T05:29:46.000Z</published>
+    <updated>2016-04-14T02:56:46.416Z</updated>
+    
+    <content type="html">&lt;blockquote&gt;
+&lt;h3 id=&quot;【基础知识】&quot;&gt;&lt;a href=&quot;#【基础知识】&quot; class=&quot;headerlink&quot; title=&quot;【基础知识】&quot;&gt;&lt;/a&gt;【基础知识】&lt;/h3&gt;&lt;/blockquote&gt;
+&lt;h4 id=&quot;1-文档流的概念指什么？有哪种方式可以让元素脱离文档流&quot;&gt;&lt;a href=&quot;#1-文档流的概念指什么？有哪种方式可以让元素脱离文档流&quot; class=&quot;headerlink&quot; title=&quot;1. 文档流的概念指什么？有哪种方式可以让元素脱离文档流?&quot;&gt;&lt;/a&gt;&lt;strong&gt;1. 文档流的概念指什么？有哪种方式可以让元素脱离文档流?&lt;/strong&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;文档流是将窗体自上而下分成一行行，每行按照自左向右的顺序排列元素，从头到尾按照文档的顺序，该在什么位置就在什么位置；网页中大部分对象默认是占用文档流，也有一些对象是不占文档流的，比如表单中隐藏域。&lt;/li&gt;
+&lt;li&gt;有3种方式可以让元素脱离文档流而存在：浮动（&lt;code&gt;float&lt;/code&gt;）、固定定位（&lt;code&gt;position:fixed&lt;/code&gt;）、绝对定位（&lt;code&gt;position:absolute&lt;/code&gt;）&lt;ul&gt;
+&lt;li&gt;浮动元素不占用任何正常文档流空间，而他的定位仍是基于正常文档流；&lt;/li&gt;
+&lt;li&gt;绝对定位是完全脱离文档流，在文档流中的其他元素将忽略该元素并且填补他原先的位置；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h4 id=&quot;2-有几种定位方式，分别是如何实现定位的，使用场景如何？&quot;&gt;&lt;a href=&quot;#2-有几种定位方式，分别是如何实现定位的，使用场景如何？&quot; class=&quot;headerlink&quot; title=&quot;2. 有几种定位方式，分别是如何实现定位的，使用场景如何？&quot;&gt;&lt;/a&gt;&lt;strong&gt;2. 有几种定位方式，分别是如何实现定位的，使用场景如何？&lt;/strong&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;position:static;&lt;/code&gt;：静态定位（缺省值）。元素出现在正常的文档流中，忽略&lt;code&gt;top,buttom,left,right,z-index&lt;/code&gt;声明；可以用于覆盖之前对position的定义；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;position:fixed&lt;/code&gt;：固定定位，让元素完全脱离文档流，固定在浏览器窗口中某一位置，位置不随页面移动而发生变化。用在一些不想移动的导航栏，固定的广告，信息提醒，咨询联系按钮等&lt;ul&gt;
+&lt;li&gt;&lt;img src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task10fixed.png&quot; alt=&quot;fixed&quot;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;position:relative&lt;/code&gt;：相对定位，相对于自己原来在文档流中的位置进行定位，不改变布局（在该元素原来位置留下空白）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;position:absolute&lt;/code&gt;：绝对对定位，相对于与他最近的非static定位的祖先元素来定位，完全脱离文档流，其他文档流中的元素会忽略他的存在&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;3-absolute-relative-fixed-偏移的参考点分别是什么&quot;&gt;&lt;a href=&quot;#3-absolute-relative-fixed-偏移的参考点分别是什么&quot; class=&quot;headerlink&quot; title=&quot;3. absolute, relative, fixed 偏移的参考点分别是什么?&quot;&gt;&lt;/a&gt;&lt;strong&gt;3. &lt;code&gt;absolute&lt;/code&gt;, &lt;code&gt;relative&lt;/code&gt;, &lt;code&gt;fixed&lt;/code&gt; 偏移的参考点分别是什么?&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;absolute&lt;/code&gt;: 相对于与他最近的非static定位的祖先元素来定位，如果都没有的话就向上对；&lt;br&gt;&lt;code&gt;relative&lt;/code&gt;：相对于自己原来在文档流中的位置进行定位；&lt;br&gt;&lt;code&gt;fixed&lt;/code&gt;：相对于浏览器窗口；  &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;4-z-index-有什么作用-如何使用&quot;&gt;&lt;a href=&quot;#4-z-index-有什么作用-如何使用&quot; class=&quot;headerlink&quot; title=&quot;4. z-index 有什么作用? 如何使用?&quot;&gt;&lt;/a&gt;&lt;strong&gt;4. &lt;code&gt;z-index&lt;/code&gt; 有什么作用? 如何使用?&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;可以设置&lt;code&gt;定位元素&lt;/code&gt;显示层级，值越大越在外层。当没有指定z-index的时候， 所有元素都在会被渲染在默认层(0层)；&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;5-position-relative和负margin都可以使元素位置发生偏移-二者有什么区别&quot;&gt;&lt;a href=&quot;#5-position-relative和负margin都可以使元素位置发生偏移-二者有什么区别&quot; class=&quot;headerlink&quot; title=&quot;5. position:relative和负margin都可以使元素位置发生偏移?二者有什么区别&quot;&gt;&lt;/a&gt;&lt;strong&gt;5. &lt;code&gt;position:relative&lt;/code&gt;和负&lt;code&gt;margin&lt;/code&gt;都可以使元素位置发生偏移?二者有什么区别&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;position:relative&lt;/code&gt;使元素位置发生偏移不会对后来的元素产生影响，他的文档流占位还是之前的位置；显然使用&lt;code&gt;margin&lt;/code&gt;偏移有可能影响到其他元素的位置；&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;6-如何让一个固定宽高的元素在页面上垂直水平居中&quot;&gt;&lt;a href=&quot;#6-如何让一个固定宽高的元素在页面上垂直水平居中&quot; class=&quot;headerlink&quot; title=&quot;6. 如何让一个固定宽高的元素在页面上垂直水平居中?&quot;&gt;&lt;/a&gt;&lt;strong&gt;6. 如何让一个固定宽高的元素在页面上垂直水平居中?&lt;/strong&gt;&lt;/h4&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;  &amp;lt;style&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    body&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      background:gray;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    div&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      position:absolute;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      top:50%;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      right:50%;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      margin:-50px;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      width:100px;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      height:100px;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      background-color:yellow;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;lt;/style&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;lt;div&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;a href=&quot;http://js.jirengu.com/dupahagojo/1/edit&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&amp;gt;&amp;gt;效果演示&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&quot;7-浮动元素有什么特征？对其他浮动元素、普通元素、文字分别有什么影响&quot;&gt;&lt;a href=&quot;#7-浮动元素有什么特征？对其他浮动元素、普通元素、文字分别有什么影响&quot; class=&quot;headerlink&quot; title=&quot;7. 浮动元素有什么特征？对其他浮动元素、普通元素、文字分别有什么影响?&quot;&gt;&lt;/a&gt;&lt;strong&gt;7. 浮动元素有什么特征？对其他浮动元素、普通元素、文字分别有什么影响?&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;浮动的框可以向左向右移动，直到它的外边缘碰到包含框或另一个浮动框的边框为止；&lt;/li&gt;
+&lt;li&gt;对其他浮动元素会按照渲染顺序显示，对其他普通元素则会覆盖在表层，文字会环绕浮动元素；&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;8-清除浮动指什么-如何清除浮动&quot;&gt;&lt;a href=&quot;#8-清除浮动指什么-如何清除浮动&quot; class=&quot;headerlink&quot; title=&quot;8. 清除浮动指什么? 如何清除浮动?&quot;&gt;&lt;/a&gt;&lt;strong&gt;8. 清除浮动指什么? 如何清除浮动?&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;元素浮动之后，周围的元素会重新排列，为了避免这种情况，需要清除浮动；&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;如何清除浮动：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;直接对受影响的元素使用&lt;code&gt;clear&lt;/code&gt;属性；&lt;/li&gt;
+&lt;li&gt;对父亲&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;h3 id=&quot;【代码】&quot;&gt;&lt;a href=&quot;#【代码】&quot; class=&quot;headerlink&quot; title=&quot;【代码】&quot;&gt;&lt;/a&gt;【代码】&lt;/h3&gt;&lt;h4 id=&quot;task-10-1&quot;&gt;&lt;a href=&quot;#task-10-1&quot; class=&quot;headerlink&quot; title=&quot;task-10-1&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task10/task-10-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;task-10-1&lt;/a&gt;&lt;/h4&gt;&lt;h4 id=&quot;task-10-2&quot;&gt;&lt;a href=&quot;#task-10-2&quot; class=&quot;headerlink&quot; title=&quot;task-10-2&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task10/task-10-2.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;task-10-2&lt;/a&gt;&lt;/h4&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;h3 id=&quot;【基础知识】&quot;&gt;&lt;a href=&quot;#【基础知识】&quot; class=&quot;headerlink&quot; title=&quot;【基础知识】&quot;&gt;&lt;/a&gt;【基础知识】&lt;/h3&gt;&lt;/blockquote&gt;
+&lt;h4 id=&quot;1-文档流的概念指什么？有哪种方式可以让元素脱离文档流&quot;&gt;&lt;a href=&quot;#1-文档流的概念指什么？有哪种方式可以让元素脱离文档流&quot; class=&quot;headerlink&quot; title=&quot;1. 文档流的概念指什么？有哪种方式可以让元素脱离文档流?&quot;&gt;&lt;/a&gt;&lt;strong&gt;1. 文档流的概念指什么？有哪种方式可以让元素脱离文档流?&lt;/strong&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;文档流是将窗体自上而下分成一行行，每行按照自左向右的顺序排列元素，从头到尾按照文档的顺序，该在什么位置就在什么位置；网页中大部分对象默认是占用文档流，也有一些对象是不占文档流的，比如表单中隐藏域。&lt;/li&gt;
+&lt;li&gt;有3种方式可以让元素脱离文档流而存在：浮动（&lt;code&gt;float&lt;/code&gt;）、固定定位（&lt;code&gt;position:fixed&lt;/code&gt;）、绝对定位（&lt;code&gt;position:absolute&lt;/code&gt;）&lt;ul&gt;
+&lt;li&gt;浮动元素不占用任何正常文档流空间，而他的定位仍是基于正常文档流；&lt;/li&gt;
+&lt;li&gt;绝对定位是完全脱离文档流，在文档流中的其他元素将忽略该元素并且填补他原先的位置；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
     
     </summary>
     
