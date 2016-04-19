@@ -96,18 +96,31 @@
 
 
 
-<meta name="description" content="ECharts，一个纯 Javascript 的图表库，可以流畅的运行在 PC 和移动设备上，兼容当前绝大部分浏览器（IE8/9/10/11，Chrome，Firefox，Safari等），底层依赖轻量级的 Canvas 类库 ZRender，提供直观，生动，可交互，可高度个性化定制的数据可视化图表。">
+<meta name="description" content="//step3：基于准备好的dom，初始化echarts实例
+    var myChart = echarts.init(document.getElementById(&apos;wrap&apos;));
+    //step4：指定图表的配置项和数据
+    var option = {
+        title: {
+            text: &apos;开始学习ECharts&apos;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="学习 ECharts（一）：初窥">
 <meta property="og:url" content="http://licao404.com/2016/04/19/学习-ECharts（一）：初窥/index.html">
 <meta property="og:site_name" content="蓝岚爱肉肉">
-<meta property="og:description" content="ECharts，一个纯 Javascript 的图表库，可以流畅的运行在 PC 和移动设备上，兼容当前绝大部分浏览器（IE8/9/10/11，Chrome，Firefox，Safari等），底层依赖轻量级的 Canvas 类库 ZRender，提供直观，生动，可交互，可高度个性化定制的数据可视化图表。">
-<meta property="og:image" content="http://7xrvo9.com1.z0.glb.clouddn.com/20160419/demo1.gif">
-<meta property="og:updated_time" content="2016-04-18T16:54:44.616Z">
+<meta property="og:description" content="//step3：基于准备好的dom，初始化echarts实例
+    var myChart = echarts.init(document.getElementById(&apos;wrap&apos;));
+    //step4：指定图表的配置项和数据
+    var option = {
+        title: {
+            text: &apos;开始学习ECharts&apos;">
+<meta property="og:updated_time" content="2016-04-19T01:45:22.429Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="学习 ECharts（一）：初窥">
-<meta name="twitter:description" content="ECharts，一个纯 Javascript 的图表库，可以流畅的运行在 PC 和移动设备上，兼容当前绝大部分浏览器（IE8/9/10/11，Chrome，Firefox，Safari等），底层依赖轻量级的 Canvas 类库 ZRender，提供直观，生动，可交互，可高度个性化定制的数据可视化图表。">
-<meta name="twitter:image" content="http://7xrvo9.com1.z0.glb.clouddn.com/20160419/demo1.gif">
+<meta name="twitter:description" content="//step3：基于准备好的dom，初始化echarts实例
+    var myChart = echarts.init(document.getElementById(&apos;wrap&apos;));
+    //step4：指定图表的配置项和数据
+    var option = {
+        title: {
+            text: &apos;开始学习ECharts&apos;">
 
 
 
@@ -545,25 +558,42 @@
 
       
       
-        <div class="post-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-          
-          
-            <div class="post-gallery-row">
-              <a class="post-gallery-img fancybox"
-                 href="http://7xrvo9.com1.z0.glb.clouddn.com/20160419/demo1.gif" rel="gallery_cin68ukff000038eivyfp0qev"
-                 itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
-                <img src="http://7xrvo9.com1.z0.glb.clouddn.com/20160419/demo1.gif" itemprop="contentUrl"/>
-              </a>
-            
-          
-
-          
-          </div>
-        </div>
-      
 
       
-        <blockquote class="blockquote-center">ECharts，一个纯 Javascript 的图表库，可以流畅的运行在 PC 和移动设备上，兼容当前绝大部分浏览器（IE8/9/10/11，Chrome，Firefox，Safari等），底层依赖轻量级的 Canvas 类库 <a href="https://github.com/ecomfe/zrender" target="_blank" rel="external">ZRender</a>，提供直观，生动，可交互，可高度个性化定制的数据可视化图表。</blockquote>
+        <p><div id="wrap" style="width: 600px;height: 400px;"></div><!--step2：先为echarts准备有宽高的容器--></p>
+<script src="http://7xrvo9.com1.z0.glb.clouddn.com/Echarts%E5%AE%8C%E6%95%B4%E7%89%88/echarts.min.js"></script><!--step1：引入 ECharts-->
+<script type="text/javascript">
+    //step3：基于准备好的dom，初始化echarts实例
+    var myChart = echarts.init(document.getElementById('wrap'));
+    //step4：指定图表的配置项和数据
+    var option = {
+        title: {
+            text: '开始学习ECharts'
+        },
+        tooltip: {},
+        legend: {
+            data: ['决定因素']
+        },
+        xAxis: {
+            data: ["天赋","努力","兴趣","交流","心态","好学"]
+        },
+        yAxis: {
+            // data: ['点数']
+        },
+        backgroundColor: '#fff',
+        series: [{
+            name: '决定因素',
+            type: 'bar',
+            data: [5, 20, 36, 10, 10, 20]
+        }]
+
+    }; 
+
+    //step5: 使用刚指定的配置项和数据显示图表。
+    myChart.setOption(option);
+</script>
+
+<blockquote class="blockquote-center">ECharts，一个纯 Javascript 的图表库，可以流畅的运行在 PC 和移动设备上，兼容当前绝大部分浏览器（IE8/9/10/11，Chrome，Firefox，Safari等），底层依赖轻量级的 Canvas 类库 <a href="https://github.com/ecomfe/zrender" target="_blank" rel="external">ZRender</a>，提供直观，生动，可交互，可高度个性化定制的数据可视化图表。</blockquote>
 
 <a id="more"></a>
 <hr>
