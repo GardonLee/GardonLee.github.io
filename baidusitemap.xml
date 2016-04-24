@@ -3,6 +3,86 @@
 
     
   <url>
+    <loc>http://licao404.com/2016/04/04/%E3%80%902016%E5%B9%B4%E7%89%B9%E5%88%AB%E7%A6%8F%E5%88%A9%E3%80%91%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%85%A8CSS%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99%E5%A4%A7%E5%85%A8/</loc>
+    <lastmod>2016-04-24T04:31:33.738Z</lastmod>
+    <data>
+        <display>
+        <title>史上最全CSS学习资料大全</title>
+        <pubTime>2016-04-03T16:15:45.000Z</pubTime>
+        
+        <tag>CSS </tag>
+         
+        <tag>转载 </tag>
+         
+        <tag>干货 </tag>
+         
+         
+           
+             
+              <breadCrumb title="编程学习" url="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/"/>
+          
+             
+              <breadCrumb title="前端基础" url="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://licao404.com/2016/04/19/%E5%AD%A6%E4%B9%A0-ECharts%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E5%88%9D%E7%AA%A5/</loc>
+    <lastmod>2016-04-24T04:28:41.245Z</lastmod>
+    <data>
+        <display>
+        <title>学习 ECharts（一）：初窥</title>
+        <pubTime>2016-04-18T16:12:50.000Z</pubTime>
+        
+        <tag>库 </tag>
+         
+        <tag>图表库 </tag>
+         
+        <tag>ECharts </tag>
+         
+        <tag>可视化 </tag>
+         
+         
+           
+             
+              <breadCrumb title="数据可视化" url="http://licao404.com/categories/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://licao404.com/2016/04/24/jQuery%E5%AE%9E%E7%8E%B0%E5%87%A0%E7%A7%8D%E8%BD%AE%E6%92%AD/</loc>
+    <lastmod>2016-04-24T04:26:30.240Z</lastmod>
+    <data>
+        <display>
+        <title>jQuery实现几种轮播</title>
+        <pubTime>2016-04-24T02:34:23.000Z</pubTime>
+        
+        <tag>JavaScript </tag>
+         
+        <tag>jQuery </tag>
+         
+        <tag>效果 </tag>
+         
+         
+           
+             
+              <breadCrumb title="编程学习" url="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/"/>
+          
+             
+              <breadCrumb title="前端基础" url="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://licao404.com/2016/04/19/jQuery%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95-Ajax/</loc>
     <lastmod>2016-04-21T04:08:03.871Z</lastmod>
     <data>
@@ -23,32 +103,6 @@
           
              
               <breadCrumb title="前端基础" url="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://licao404.com/2016/04/19/%E5%AD%A6%E4%B9%A0-ECharts%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E5%88%9D%E7%AA%A5/</loc>
-    <lastmod>2016-04-19T07:11:56.516Z</lastmod>
-    <data>
-        <display>
-        <title>学习 ECharts（一）：初窥</title>
-        <pubTime>2016-04-18T16:12:50.000Z</pubTime>
-        
-        <tag>库 </tag>
-         
-        <tag>图表库 </tag>
-         
-        <tag>ECharts </tag>
-         
-        <tag>可视化 </tag>
-         
-         
-           
-             
-              <breadCrumb title="数据可视化" url="http://licao404.com/categories/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/"/>
           
         </display>
     </data>
@@ -323,11 +377,11 @@
         <title>使用XAMPP搭建本地Apache服务器</title>
         <pubTime>2016-04-10T08:29:58.000Z</pubTime>
         
+        <tag>前后端 </tag>
+         
         <tag>php </tag>
          
         <tag>Web服务器 </tag>
-         
-        <tag>前后端 </tag>
          
         <tag>Apache </tag>
          
@@ -338,33 +392,6 @@
           
              
               <breadCrumb title="后端基础" url="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/%E5%90%8E%E7%AB%AF%E5%9F%BA%E7%A1%80/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://licao404.com/2016/04/04/%E3%80%902016%E5%B9%B4%E7%89%B9%E5%88%AB%E7%A6%8F%E5%88%A9%E3%80%91%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%85%A8CSS%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99%E5%A4%A7%E5%85%A8/</loc>
-    <lastmod>2016-04-04T02:26:49.084Z</lastmod>
-    <data>
-        <display>
-        <title>史上最全CSS学习资料大全</title>
-        <pubTime>2016-04-03T16:15:45.000Z</pubTime>
-        
-        <tag>CSS </tag>
-         
-        <tag>转载 </tag>
-         
-        <tag>干货 </tag>
-         
-         
-           
-             
-              <breadCrumb title="编程学习" url="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/"/>
-          
-             
-              <breadCrumb title="前端基础" url="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/"/>
           
         </display>
     </data>
