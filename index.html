@@ -472,6 +472,151 @@
             
               
                 
+                <a class="post-title-link" href="/2016/04/25/jQuery懒加载/" itemprop="url">
+                  jQuery懒加载
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-04-25T19:49:41+08:00" content="2016-04-25">
+              2016-04-25
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/编程学习/" itemprop="url" rel="index">
+                    <span itemprop="name">编程学习</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/编程学习/前端基础/" itemprop="url" rel="index">
+                    <span itemprop="name">前端基础</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/04/25/jQuery懒加载/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/04/25/jQuery懒加载/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/04/25/jQuery懒加载/" class="leancloud_visitors" data-flag-title="jQuery懒加载">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <blockquote>
+<h3 id="【原理准备】"><a href="#【原理准备】" class="headerlink" title="【原理准备】"></a>【原理准备】</h3></blockquote>
+<h4 id="1-如何判断一个元素是否出现在窗口可视范围（浏览器的上边缘和下边缘之间，肉眼可视）。写一个函数-isVisible-实现"><a href="#1-如何判断一个元素是否出现在窗口可视范围（浏览器的上边缘和下边缘之间，肉眼可视）。写一个函数-isVisible-实现" class="headerlink" title="1. 如何判断一个元素是否出现在窗口可视范围（浏览器的上边缘和下边缘之间，肉眼可视）。写一个函数      isVisible 实现"></a><strong>1. 如何判断一个元素是否出现在窗口可视范围（浏览器的上边缘和下边缘之间，肉眼可视）。写一个函数      <code>isVisible</code> 实现</strong></h4><p><img src="http://7xr868.com1.z0.glb.clouddn.com/task29/isVisible.png" alt=""><br>依照我们画的思路图，给出描述程序：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//判断元素是否出现在浏览器窗口可视范围</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">isVisiable</span> (<span class="params">$node</span>) </span>&#123;</span><br><span class="line">	 <span class="keyword">var</span> scrollT = $(<span class="built_in">window</span>).scrollTop(),<span class="comment">//获取页面顶部到窗口顶部的滚动距离</span></span><br><span class="line">	 	 windowH = $(<span class="built_in">window</span>).height(),<span class="comment">//获取浏览器窗口高度</span></span><br><span class="line">	 	 offsetT = $node.offset().top;<span class="comment">//获取该元素距页面顶部的距离</span></span><br><span class="line"></span><br><span class="line">	 <span class="keyword">if</span> (scrollT+windowH &gt; offsetT) &#123;</span><br><span class="line">	 	<span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">	 &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">	 	<span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">	 &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/04/25/jQuery懒加载/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+    
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/04/24/jQuery实现几种轮播/" itemprop="url">
                   jQuery实现几种轮播
                 </a>
@@ -1019,157 +1164,11 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/04/12/Ajax浅入门/" itemprop="url">
-                  AJAX-从入门到放弃
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-04-12T00:47:32+08:00" content="2016-04-12">
-              2016-04-12
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/编程学习/" itemprop="url" rel="index">
-                    <span itemprop="name">编程学习</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/编程学习/前端基础/" itemprop="url" rel="index">
-                    <span itemprop="name">前端基础</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/04/12/Ajax浅入门/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/04/12/Ajax浅入门/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2016/04/12/Ajax浅入门/" class="leancloud_visitors" data-flag-title="AJAX-从入门到放弃">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <blockquote>
-<h3 id="【知识点】"><a href="#【知识点】" class="headerlink" title="【知识点】"></a>【知识点】</h3></blockquote>
-<h4 id="AJAX-是什么？有什么作用？"><a href="#AJAX-是什么？有什么作用？" class="headerlink" title="AJAX 是什么？有什么作用？"></a><strong>AJAX 是什么？有什么作用？</strong></h4><p>AJAX（<strong>Asynchronous Javascript And XML</strong>）即异步的JavaScript和XML，是一种创建交互式网页应用的网页开发技术，所以并不是一门编程语言（小白多少年以为它诸如JavaScript，jQuery一类<code>(@_@;)</code>,身份终于得到正名）。</p>
-<p>通过在后台与服务器进行少量的数据交换，AJAX可以使网页实现异步更新，这意味着可以在不重新加载（刷新）整个网页的情况下，对网页某部分进行更新。<br>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/04/12/Ajax浅入门/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-    
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -1210,7 +1209,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">25</span>
+              <span class="site-state-item-count">26</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
