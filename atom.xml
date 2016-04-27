@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://licao404.com/"/>
-  <updated>2016-04-26T13:41:30.746Z</updated>
+  <updated>2016-04-27T17:08:57.507Z</updated>
   <id>http://licao404.com/</id>
   
   <author>
@@ -14,6 +14,56 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>瀑布流布局</title>
+    <link href="http://licao404.com/2016/04/28/%E7%80%91%E5%B8%83%E6%B5%81%E5%B8%83%E5%B1%80/"/>
+    <id>http://licao404.com/2016/04/28/瀑布流布局/</id>
+    <published>2016-04-27T16:04:14.000Z</published>
+    <updated>2016-04-27T17:08:57.507Z</updated>
+    
+    <content type="html">&lt;blockquote class=&quot;blockquote-center&quot;&gt;瀑布流布局在国内外一些网站上基本都能看到，来看几个使用了瀑布流布局的网站： &lt;a href=&quot;https://www.pinterest.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Pinterest&lt;/a&gt; (可能是最早使用这种布局的网站)、&lt;a href=&quot;http://www.pixillion.com/our-work/film/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Pixillion&lt;/a&gt;、&lt;a href=&quot;https://gimmebar.com/user/cameron&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Gimme Bar&lt;/a&gt; 。炫酷吗，虽然已有很多瀑布流插件，但是自己动手丰衣足食，弄懂原理是关键。本文将解析瀑布流布局的原理，并自己用 jQuery 实现，当然也可以用原生 JavaScript 。&lt;/blockquote&gt;
+
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;blockquote&gt;
+&lt;h3 id=&quot;【原理准备】&quot;&gt;&lt;a href=&quot;#【原理准备】&quot; class=&quot;headerlink&quot; title=&quot;【原理准备】&quot;&gt;&lt;/a&gt;【原理准备】&lt;/h3&gt;&lt;/blockquote&gt;
+&lt;h4 id=&quot;瀑布流布局的原理是什么&quot;&gt;&lt;a href=&quot;#瀑布流布局的原理是什么&quot; class=&quot;headerlink&quot; title=&quot;瀑布流布局的原理是什么?&quot;&gt;&lt;/a&gt;&lt;strong&gt;瀑布流布局的原理是什么?&lt;/strong&gt;&lt;/h4&gt;&lt;p&gt;首先我们针对的是等宽不等高的元素进行布局，例如承载图片的 &lt;code&gt;item&lt;/code&gt; 等；由于元素高度是不等的，布局的大体思想就是让每个元素找到最短的队，然后排队。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;首先得知道排几队，通过浏览器窗口宽度除以元素宽度即可，当然注意浏览器的宽度是可变的哦（我们可以通过 &lt;code&gt;resize&lt;/code&gt; 实时监听浏览器窗口）；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;知道了排几队，接着我们需要知道每一队的长度，当然这个值随着每一个元素的加入是改变的，那就通过一个数组来存储吧，数组长度就是有几队，数组每一项的值存队的长度；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;然后我们来看最关键的点：&lt;strong&gt;挑最短的队排！&lt;/strong&gt; 具体可以遍历数组获得最短的队是哪一队，这队多长？&lt;br&gt;找到了队伍咱就排吧，别忘了把自己的高度算进你这队的总长度呀！&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;h3 id=&quot;【具体实现】&quot;&gt;&lt;a href=&quot;#【具体实现】&quot; class=&quot;headerlink&quot; title=&quot;【具体实现】&quot;&gt;&lt;/a&gt;【具体实现】&lt;/h3&gt;&lt;/blockquote&gt;
+&lt;p&gt;原理虽然简单，来个 &lt;code&gt;demo&lt;/code&gt; 看看怎样用代码描述：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://febox.applinzi.com/task30/task30.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;效果预览&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/jirengu-inc/jrg-tehui2/blob/master/homework/%E6%9D%8E%E6%93%8D/task30/task30.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;实现代码&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;blockquote class = &quot;blockquote-center&quot;&gt;瀑布流布局在国内外一些网站上基本都能看到，来看几个使用了瀑布流布局的网站： &lt;a href=&quot;https://www.pinterest.com/&quot;&gt;Pinterest&lt;/a&gt; (可能是最早使用这种布局的网站)、&lt;a href=&quot;http://www.pixillion.com/our-work/film/&quot;&gt;Pixillion&lt;/a&gt;、&lt;a href=&quot;https://gimmebar.com/user/cameron&quot;&gt;Gimme Bar&lt;/a&gt; 。炫酷吗，虽然已有很多瀑布流插件，但是自己动手丰衣足食，弄懂原理是关键。本文将解析瀑布流布局的原理，并自己用 jQuery 实现，当然也可以用原生 JavaScript 。&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="编程学习" scheme="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="前端基础" scheme="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/"/>
+    
+    
+      <category term="JavaScript" scheme="http://licao404.com/tags/JavaScript/"/>
+    
+      <category term="jQuery" scheme="http://licao404.com/tags/jQuery/"/>
+    
+      <category term="效果" scheme="http://licao404.com/tags/%E6%95%88%E6%9E%9C/"/>
+    
+  </entry>
   
   <entry>
     <title>jQuery懒加载</title>
@@ -1965,96 +2015,6 @@
       &lt;blockquote&gt;
 &lt;h3 id=&quot;【知识点】&quot;&gt;&lt;a href=&quot;#【知识点】&quot; class=&quot;headerlink&quot; title=&quot;【知识点】&quot;&gt;&lt;/a&gt;【知识点】&lt;/h3&gt;&lt;/blockquote&gt;
 &lt;h4 id=&quot;1-函数声明和函数表达式有什么区别？&quot;&gt;&lt;a href=&quot;#1-函数声明和函数表达式有什么区别？&quot; class=&quot;headerlink&quot; title=&quot;1. 函数声明和函数表达式有什么区别？&quot;&gt;&lt;/a&gt;&lt;strong&gt;1. 函数声明和函数表达式有什么区别？&lt;/strong&gt;&lt;/h4&gt;
-    
-    </summary>
-    
-      <category term="编程学习" scheme="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/"/>
-    
-      <category term="前端基础" scheme="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/"/>
-    
-    
-      <category term="JavaScript" scheme="http://licao404.com/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JavaScript基本语法要点</title>
-    <link href="http://licao404.com/2016/03/16/JavaScript%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/"/>
-    <id>http://licao404.com/2016/03/16/JavaScript基本语法/</id>
-    <published>2016-03-16T02:56:36.000Z</published>
-    <updated>2016-04-02T14:29:40.250Z</updated>
-    
-    <content type="html">&lt;div class=&quot;group-picture&quot;&gt;&lt;div class=&quot;group-picture-container&quot;&gt;&lt;div class=&quot;group-picture-row&quot;&gt;&lt;div class=&quot;group-picture-column&quot; style=&quot;width: 50%;&quot;&gt;&lt;img src=&quot;http://7xrvo9.com1.z0.glb.clouddn.com/0316%2Fportfolio-1.jpg&quot; alt=&quot;&quot;&gt;&lt;/div&gt;&lt;div class=&quot;group-picture-column&quot; style=&quot;width: 50%;&quot;&gt;&lt;img src=&quot;http://7xrvo9.com1.z0.glb.clouddn.com/0316%2Fportfolio-2.jpg&quot; alt=&quot;&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;group-picture-row&quot;&gt;&lt;div class=&quot;group-picture-column&quot; style=&quot;width: 100%;&quot;&gt;&lt;img src=&quot;http://7xrvo9.com1.z0.glb.clouddn.com/0316%2Fportfolio-3.jpg&quot; alt=&quot;&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;blockquote&gt;
-&lt;h3 id=&quot;【基础知识点】&quot;&gt;&lt;a href=&quot;#【基础知识点】&quot; class=&quot;headerlink&quot; title=&quot;【基础知识点】&quot;&gt;&lt;/a&gt;【基础知识点】&lt;/h3&gt;&lt;/blockquote&gt;
-&lt;h4 id=&quot;1-CSS和JS在网页中的放置顺序是怎样的？&quot;&gt;&lt;a href=&quot;#1-CSS和JS在网页中的放置顺序是怎样的？&quot; class=&quot;headerlink&quot; title=&quot;1. CSS和JS在网页中的放置顺序是怎样的？&quot;&gt;&lt;/a&gt;&lt;strong&gt;1. CSS和JS在网页中的放置顺序是怎样的？&lt;/strong&gt;&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;一般而言&lt;code&gt;CSS&lt;/code&gt;放在&lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt;头部而&lt;code&gt;JS&lt;/code&gt;放在&lt;code&gt;&amp;lt;body&amp;gt;&lt;/code&gt;底部。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;2-解释白屏和FOUC？&quot;&gt;&lt;a href=&quot;#2-解释白屏和FOUC？&quot; class=&quot;headerlink&quot; title=&quot;2. 解释白屏和FOUC？&quot;&gt;&lt;/a&gt;&lt;strong&gt;2. 解释白屏和&lt;code&gt;FOUC&lt;/code&gt;？&lt;/strong&gt;&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;白屏&lt;/code&gt;：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;当样式表放在页面底部时，一些浏览器（IE浏览器）会等待加载完html和css后才进行页面渲染，这样就造成页面内容不会逐步出现，而是有空白等待的时间；注意&lt;code&gt;@import&lt;/code&gt;加载样式时即使放在&lt;code&gt;link&lt;/code&gt;里也会造成白屏；&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;JS&lt;/code&gt;是阻塞加载，放在头部时会禁止并发加载，等js加载完成后再继续加载，也会造成白屏；&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;FOUC&lt;/code&gt;（无样式内容闪烁）是因为另外一些浏览器每解析一个标签就渲染一步，如果样式表放在后面，会在最后加载完成css后再进行一次渲染，造成闪烁,&lt;code&gt;Firfox&lt;/code&gt;是一直&lt;code&gt;Fouc&lt;/code&gt;;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;3-async和defer的作用是什么？有什么区别？&quot;&gt;&lt;a href=&quot;#3-async和defer的作用是什么？有什么区别？&quot; class=&quot;headerlink&quot; title=&quot;3. async和defer的作用是什么？有什么区别？&quot;&gt;&lt;/a&gt;&lt;strong&gt;3. async和defer的作用是什么？有什么区别？&lt;/strong&gt;&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;作用：都是让&lt;code&gt;JS&lt;/code&gt;的加载和后续文档元素的加载渲染并行执行（异步）；&lt;/li&gt;
-&lt;li&gt;区别:&lt;code&gt;defer&lt;/code&gt;只是异步加载而不会立即执行,等待页面后续内容全部加载完成后才执行；&lt;code&gt;async&lt;/code&gt;则是加载&lt;code&gt;js&lt;/code&gt;后立即执行;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;4-简述网页的渲染机制？&quot;&gt;&lt;a href=&quot;#4-简述网页的渲染机制？&quot; class=&quot;headerlink&quot; title=&quot;4. 简述网页的渲染机制？&quot;&gt;&lt;/a&gt;&lt;strong&gt;4. 简述网页的渲染机制？&lt;/strong&gt;&lt;/h4&gt;&lt;ol&gt;
-&lt;li&gt;浏览器根据用户输入的域名去获取对应的网页资源；&lt;/li&gt;
-&lt;li&gt;解析&lt;code&gt;html&lt;/code&gt;标签构建&lt;code&gt;DOM&lt;/code&gt;树;&lt;/li&gt;
-&lt;li&gt;解析&lt;code&gt;CSS&lt;/code&gt; 标签构建&lt;code&gt;CSSOM&lt;/code&gt;树;&lt;/li&gt;
-&lt;li&gt;把&lt;code&gt;DOM&lt;/code&gt;和&lt;code&gt;CSSOM&lt;/code&gt;组合成为渲染树;&lt;/li&gt;
-&lt;li&gt;精确计算每个DOM节点的位置（&lt;code&gt;layout&lt;/code&gt;和&lt;code&gt;reflow&lt;/code&gt;过程）；&lt;/li&gt;
-&lt;li&gt;最后通过调用操作系统&lt;code&gt;Native GUI&lt;/code&gt;的&lt;code&gt;API&lt;/code&gt;绘制;&lt;/li&gt;
-&lt;li&gt;更加详细深入借鉴&lt;a href=&quot;http://www.zhihu.com/question/20117417&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;知乎&lt;/a&gt;；&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h4 id=&quot;5-JavaScript-定义了几种数据类型-哪些是简单类型-哪些是复杂类型&quot;&gt;&lt;a href=&quot;#5-JavaScript-定义了几种数据类型-哪些是简单类型-哪些是复杂类型&quot; class=&quot;headerlink&quot; title=&quot;5. JavaScript 定义了几种数据类型? 哪些是简单类型?哪些是复杂类型?&quot;&gt;&lt;/a&gt;&lt;strong&gt;5. &lt;code&gt;JavaScript&lt;/code&gt; 定义了几种数据类型? 哪些是简单类型?哪些是复杂类型?&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;JavaScript&lt;/code&gt;定义了 6 种数据类型&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;简单类型&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;NULL&lt;/code&gt;空数据类型&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Undefined&lt;/code&gt;未定义的数据类型&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;String&lt;/code&gt;字符串类型：由0个或多个字符组成，被包含在引号里，字符包括字母，数字，标点符号和空格；&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Number&lt;/code&gt;数值类型：支持整数，浮点数，负数，&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;布尔值&lt;/code&gt;：&lt;code&gt;true&lt;/code&gt;/&lt;code&gt;false&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;复杂类型：&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;Object&lt;/code&gt;对象&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;6-NaN、undefined、null分别代表什么&quot;&gt;&lt;a href=&quot;#6-NaN、undefined、null分别代表什么&quot; class=&quot;headerlink&quot; title=&quot;6. NaN、undefined、null分别代表什么?&quot;&gt;&lt;/a&gt;&lt;strong&gt;6. &lt;code&gt;NaN&lt;/code&gt;、&lt;code&gt;undefined&lt;/code&gt;、&lt;code&gt;null&lt;/code&gt;分别代表什么?&lt;/strong&gt;&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;NaN&lt;/code&gt;:&lt;code&gt;NaN&lt;/code&gt;属性顾名思义&lt;code&gt;not a number&lt;/code&gt;，表示非数字值，并不是合法的数字；但是数据类型是&lt;code&gt;Number&lt;/code&gt;;不等于任何值包括自己；&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;undefined&lt;/code&gt;：表示未定义的值；&lt;code&gt;typeof&lt;/code&gt;一个没有值得变量会返回&lt;code&gt;undefined&lt;/code&gt;;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;null&lt;/code&gt;：空数据类型，表示一个空对象的引用，只有一个值的特殊类型;&lt;code&gt;typeof&lt;/code&gt;检测&lt;code&gt;null&lt;/code&gt;返回&lt;code&gt;object&lt;/code&gt;;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;7-typeof和instanceof的作用和区别&quot;&gt;&lt;a href=&quot;#7-typeof和instanceof的作用和区别&quot; class=&quot;headerlink&quot; title=&quot;7. typeof和instanceof的作用和区别?&quot;&gt;&lt;/a&gt;&lt;strong&gt;7. &lt;code&gt;typeof&lt;/code&gt;和&lt;code&gt;instanceof&lt;/code&gt;的作用和区别?&lt;/strong&gt;&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;typeof&lt;/code&gt;可以用来检测&lt;code&gt;Function&lt;/code&gt;，&lt;code&gt;Number&lt;/code&gt;，&lt;code&gt;Undefined&lt;/code&gt;，&lt;code&gt;String&lt;/code&gt;等这几种基本类型，但对于数组和正则只能返回&lt;code&gt;object&lt;/code&gt;;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;instanceof&lt;/code&gt;用来判断某个对象的实例，返回布尔值&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;blockquote&gt;
-&lt;h3 id=&quot;【基本语法演示】&quot;&gt;&lt;a href=&quot;#【基本语法演示】&quot; class=&quot;headerlink&quot; title=&quot;【基本语法演示】&quot;&gt;&lt;/a&gt;【基本语法演示】&lt;/h3&gt;&lt;/blockquote&gt;
-&lt;h4 id=&quot;1-完成如下代码判断一个变量是否是数字、字符串、布尔、函数&quot;&gt;&lt;a href=&quot;#1-完成如下代码判断一个变量是否是数字、字符串、布尔、函数&quot; class=&quot;headerlink&quot; title=&quot;1.完成如下代码判断一个变量是否是数字、字符串、布尔、函数&quot;&gt;&lt;/a&gt;&lt;strong&gt;1.完成如下代码判断一个变量是否是数字、字符串、布尔、函数&lt;/strong&gt;&lt;/h4&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;isNumber&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;el&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;typeof&lt;/span&gt;(el)===&lt;span class=&quot;string&quot;&gt;&quot;number&quot;&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    	&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;isString&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;el&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;typeof&lt;/span&gt;(el)===&lt;span class=&quot;string&quot;&gt;&quot;string&quot;&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    	&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;isBoolean&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;el&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;typeof&lt;/span&gt;(el)===&lt;span class=&quot;string&quot;&gt;&quot;boolean&quot;&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    	&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;isFunction&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;el&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;typeof&lt;/span&gt;(el)===&lt;span class=&quot;string&quot;&gt;&quot;function&quot;&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    	&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; a = &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    b = &lt;span class=&quot;string&quot;&gt;&quot;jirengu&quot;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	c = &lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	alert( isNumber(a) );  &lt;span class=&quot;comment&quot;&gt;//true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	alert( isString(a) );  &lt;span class=&quot;comment&quot;&gt;//false&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	alert( isString(b) );  &lt;span class=&quot;comment&quot;&gt;//true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	alert( isBoolean(c) ); &lt;span class=&quot;comment&quot;&gt;//true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	alert( isFunction(a)); &lt;span class=&quot;comment&quot;&gt;//false&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	alert( isFunction( isNumber ) ); &lt;span class=&quot;comment&quot;&gt;//true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h4 id=&quot;2-以下代码的输出结果是&quot;&gt;&lt;a href=&quot;#2-以下代码的输出结果是&quot; class=&quot;headerlink&quot; title=&quot;2.以下代码的输出结果是?&quot;&gt;&lt;/a&gt;&lt;strong&gt;2.以下代码的输出结果是?&lt;/strong&gt;&lt;/h4&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;+&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;);			&lt;span class=&quot;comment&quot;&gt;//2&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(&lt;span class=&quot;string&quot;&gt;&quot;2&quot;&lt;/span&gt;+&lt;span class=&quot;string&quot;&gt;&quot;4&quot;&lt;/span&gt;);		&lt;span class=&quot;comment&quot;&gt;//24 两个字符串连接&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;+&lt;span class=&quot;string&quot;&gt;&quot;4&quot;&lt;/span&gt;); 		&lt;span class=&quot;comment&quot;&gt;//24 2转换为字符&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(+&lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;Date&lt;/span&gt;());	&lt;span class=&quot;comment&quot;&gt;//1458035114537&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(+&lt;span class=&quot;string&quot;&gt;&quot;4&quot;&lt;/span&gt;);			&lt;span class=&quot;comment&quot;&gt;//4&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h4 id=&quot;3-以下代码的输出结果是&quot;&gt;&lt;a href=&quot;#3-以下代码的输出结果是&quot; class=&quot;headerlink&quot; title=&quot;3.以下代码的输出结果是?&quot;&gt;&lt;/a&gt;&lt;strong&gt;3.以下代码的输出结果是?&lt;/strong&gt;&lt;/h4&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; a = &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;a+++a;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;typeof&lt;/span&gt; a+&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;;&lt;span class=&quot;comment&quot;&gt;//number2&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h4 id=&quot;4-遍历数组，把数组里的打印数组每一项的平方&quot;&gt;&lt;a href=&quot;#4-遍历数组，把数组里的打印数组每一项的平方&quot; class=&quot;headerlink&quot; title=&quot;4.遍历数组，把数组里的打印数组每一项的平方?&quot;&gt;&lt;/a&gt;&lt;strong&gt;4.遍历数组，把数组里的打印数组每一项的平方?&lt;/strong&gt;&lt;/h4&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; arr = [&lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;4&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;5&lt;/span&gt;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt;(&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; i=&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;i&amp;lt;arr.length;i++)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(arr[i]*arr[i]);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// 输出 9, 16, 25&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h4 id=&quot;5-遍历-JSON-打印里面的值&quot;&gt;&lt;a href=&quot;#5-遍历-JSON-打印里面的值&quot; class=&quot;headerlink&quot; title=&quot;5.遍历 JSON, 打印里面的值?&quot;&gt;&lt;/a&gt;&lt;strong&gt;5.遍历 &lt;code&gt;JSON&lt;/code&gt;, 打印里面的值?&lt;/strong&gt;&lt;/h4&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; obj = &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  name: &lt;span class=&quot;string&quot;&gt;&#39;hunger&#39;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  sex: &lt;span class=&quot;string&quot;&gt;&#39;male&#39;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  age: &lt;span class=&quot;number&quot;&gt;28&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt;(&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; k &lt;span class=&quot;keyword&quot;&gt;in&lt;/span&gt; obj)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(k+&lt;span class=&quot;string&quot;&gt;&quot;: &quot;&lt;/span&gt;+obj[k]);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// 输出 name: hunger, sex: male, age:28&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h4 id=&quot;6-下面代码的输出是-为什么&quot;&gt;&lt;a href=&quot;#6-下面代码的输出是-为什么&quot; class=&quot;headerlink&quot; title=&quot;6.下面代码的输出是? 为什么?&quot;&gt;&lt;/a&gt;&lt;strong&gt;6.下面代码的输出是? 为什么?&lt;/strong&gt;&lt;/h4&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(a);&lt;span class=&quot;comment&quot;&gt;//Undefined,声明了变量并进行了变量提升，未有赋值&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; a = &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(a);&lt;span class=&quot;comment&quot;&gt;//1&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(b);&lt;span class=&quot;comment&quot;&gt;//报错，b没有被声明&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;hr&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;div class=&quot;group-picture&quot;&gt;&lt;div class=&quot;group-picture-container&quot;&gt;&lt;div class=&quot;group-picture-row&quot;&gt;&lt;div class=&quot;group-picture-column&quot;  style=&quot;width: 50%;&quot;&gt;&lt;img src=&quot;http://7xrvo9.com1.z0.glb.clouddn.com/0316%2Fportfolio-1.jpg&quot; alt=&quot;&quot;&gt;&lt;/div&gt;&lt;div class=&quot;group-picture-column&quot;  style=&quot;width: 50%;&quot;&gt;&lt;img src=&quot;http://7xrvo9.com1.z0.glb.clouddn.com/0316%2Fportfolio-2.jpg&quot; alt=&quot;&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;group-picture-row&quot;&gt;&lt;div class=&quot;group-picture-column&quot;  style=&quot;width: 100%;&quot;&gt;&lt;img src=&quot;http://7xrvo9.com1.z0.glb.clouddn.com/0316%2Fportfolio-3.jpg&quot; alt=&quot;&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
     
     </summary>
     
