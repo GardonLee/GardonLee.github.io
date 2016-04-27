@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://licao404.com/"/>
-  <updated>2016-04-27T17:08:57.507Z</updated>
+  <updated>2016-04-27T17:20:30.123Z</updated>
   <id>http://licao404.com/</id>
   
   <author>
@@ -20,11 +20,12 @@
     <link href="http://licao404.com/2016/04/28/%E7%80%91%E5%B8%83%E6%B5%81%E5%B8%83%E5%B1%80/"/>
     <id>http://licao404.com/2016/04/28/瀑布流布局/</id>
     <published>2016-04-27T16:04:14.000Z</published>
-    <updated>2016-04-27T17:08:57.507Z</updated>
+    <updated>2016-04-27T17:20:30.123Z</updated>
     
-    <content type="html">&lt;blockquote class=&quot;blockquote-center&quot;&gt;瀑布流布局在国内外一些网站上基本都能看到，来看几个使用了瀑布流布局的网站： &lt;a href=&quot;https://www.pinterest.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Pinterest&lt;/a&gt; (可能是最早使用这种布局的网站)、&lt;a href=&quot;http://www.pixillion.com/our-work/film/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Pixillion&lt;/a&gt;、&lt;a href=&quot;https://gimmebar.com/user/cameron&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Gimme Bar&lt;/a&gt; 。炫酷吗，虽然已有很多瀑布流插件，但是自己动手丰衣足食，弄懂原理是关键。本文将解析瀑布流布局的原理，并自己用 jQuery 实现，当然也可以用原生 JavaScript 。&lt;/blockquote&gt;
+    <content type="html">&lt;blockquote class=&quot;blockquote-center&quot;&gt;瀑布流布局在国内外一些网站上基本都能看到，来看几个使用了瀑布流布局的网站： &lt;a href=&quot;https://www.pinterest.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Pinterest&lt;/a&gt; (可能是最早使用这种布局的网站)、&lt;a href=&quot;http://www.pixillion.com/our-work/film/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Pixillion&lt;/a&gt;、&lt;a href=&quot;https://gimmebar.com/user/cameron&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Gimme Bar&lt;/a&gt; 。炫酷吗，瀑布流布局的实现方式有很多种，也有各自的代表网站，并且已有很多瀑布流插件，但是自己动手丰衣足食，弄懂原理是关键。本文将解析瀑布流布局的原理，并自己用 jQuery 实现，当然也可以用原生 JavaScript 。&lt;/blockquote&gt;
 
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;hr&gt;
 &lt;blockquote&gt;
 &lt;h3 id=&quot;【原理准备】&quot;&gt;&lt;a href=&quot;#【原理准备】&quot; class=&quot;headerlink&quot; title=&quot;【原理准备】&quot;&gt;&lt;/a&gt;【原理准备】&lt;/h3&gt;&lt;/blockquote&gt;
 &lt;h4 id=&quot;瀑布流布局的原理是什么&quot;&gt;&lt;a href=&quot;#瀑布流布局的原理是什么&quot; class=&quot;headerlink&quot; title=&quot;瀑布流布局的原理是什么?&quot;&gt;&lt;/a&gt;&lt;strong&gt;瀑布流布局的原理是什么?&lt;/strong&gt;&lt;/h4&gt;&lt;p&gt;首先我们针对的是等宽不等高的元素进行布局，例如承载图片的 &lt;code&gt;item&lt;/code&gt; 等；由于元素高度是不等的，布局的大体思想就是让每个元素找到最短的队，然后排队。&lt;/p&gt;
@@ -48,7 +49,7 @@
     
     <summary type="html">
     
-      &lt;blockquote class = &quot;blockquote-center&quot;&gt;瀑布流布局在国内外一些网站上基本都能看到，来看几个使用了瀑布流布局的网站： &lt;a href=&quot;https://www.pinterest.com/&quot;&gt;Pinterest&lt;/a&gt; (可能是最早使用这种布局的网站)、&lt;a href=&quot;http://www.pixillion.com/our-work/film/&quot;&gt;Pixillion&lt;/a&gt;、&lt;a href=&quot;https://gimmebar.com/user/cameron&quot;&gt;Gimme Bar&lt;/a&gt; 。炫酷吗，虽然已有很多瀑布流插件，但是自己动手丰衣足食，弄懂原理是关键。本文将解析瀑布流布局的原理，并自己用 jQuery 实现，当然也可以用原生 JavaScript 。&lt;/blockquote&gt;
+      &lt;blockquote class = &quot;blockquote-center&quot;&gt;瀑布流布局在国内外一些网站上基本都能看到，来看几个使用了瀑布流布局的网站： &lt;a href=&quot;https://www.pinterest.com/&quot;&gt;Pinterest&lt;/a&gt; (可能是最早使用这种布局的网站)、&lt;a href=&quot;http://www.pixillion.com/our-work/film/&quot;&gt;Pixillion&lt;/a&gt;、&lt;a href=&quot;https://gimmebar.com/user/cameron&quot;&gt;Gimme Bar&lt;/a&gt; 。炫酷吗，瀑布流布局的实现方式有很多种，也有各自的代表网站，并且已有很多瀑布流插件，但是自己动手丰衣足食，弄懂原理是关键。本文将解析瀑布流布局的原理，并自己用 jQuery 实现，当然也可以用原生 JavaScript 。&lt;/blockquote&gt;
     
     </summary>
     

@@ -96,17 +96,17 @@
 
 
 
-<meta name="description" content="瀑布流布局在国内外一些网站上基本都能看到，来看几个使用了瀑布流布局的网站： Pinterest (可能是最早使用这种布局的网站)、Pixillion、Gimme Bar 。炫酷吗，虽然已有很多瀑布流插件，但是自己动手丰衣足食，弄懂原理是关键。本文将解析瀑布流布局的原理，并自己用 jQuery 实现，当然也可以用原生 JavaScript 。">
+<meta name="description" content="瀑布流布局在国内外一些网站上基本都能看到，来看几个使用了瀑布流布局的网站： Pinterest (可能是最早使用这种布局的网站)、Pixillion、Gimme Bar 。炫酷吗，瀑布流布局的实现方式有很多种，也有各自的代表网站，并且已有很多瀑布流插件，但是自己动手丰衣足食，弄懂原理是关键。本文将解析瀑布流布局的原理，并自己用 jQuery 实现，当然也可以用原生 JavaScript 。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="瀑布流布局">
 <meta property="og:url" content="http://licao404.com/2016/04/28/瀑布流布局/index.html">
 <meta property="og:site_name" content="蓝岚爱肉肉">
-<meta property="og:description" content="瀑布流布局在国内外一些网站上基本都能看到，来看几个使用了瀑布流布局的网站： Pinterest (可能是最早使用这种布局的网站)、Pixillion、Gimme Bar 。炫酷吗，虽然已有很多瀑布流插件，但是自己动手丰衣足食，弄懂原理是关键。本文将解析瀑布流布局的原理，并自己用 jQuery 实现，当然也可以用原生 JavaScript 。">
+<meta property="og:description" content="瀑布流布局在国内外一些网站上基本都能看到，来看几个使用了瀑布流布局的网站： Pinterest (可能是最早使用这种布局的网站)、Pixillion、Gimme Bar 。炫酷吗，瀑布流布局的实现方式有很多种，也有各自的代表网站，并且已有很多瀑布流插件，但是自己动手丰衣足食，弄懂原理是关键。本文将解析瀑布流布局的原理，并自己用 jQuery 实现，当然也可以用原生 JavaScript 。">
 <meta property="og:image" content="http://7xrvo9.com1.z0.glb.clouddn.com/0427/%E7%80%91%E5%B8%83%E6%B5%81%E5%B8%83%E5%B1%80%E6%A0%B7%E5%BC%8F.png">
-<meta property="og:updated_time" content="2016-04-27T17:08:57.507Z">
+<meta property="og:updated_time" content="2016-04-27T17:20:30.123Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="瀑布流布局">
-<meta name="twitter:description" content="瀑布流布局在国内外一些网站上基本都能看到，来看几个使用了瀑布流布局的网站： Pinterest (可能是最早使用这种布局的网站)、Pixillion、Gimme Bar 。炫酷吗，虽然已有很多瀑布流插件，但是自己动手丰衣足食，弄懂原理是关键。本文将解析瀑布流布局的原理，并自己用 jQuery 实现，当然也可以用原生 JavaScript 。">
+<meta name="twitter:description" content="瀑布流布局在国内外一些网站上基本都能看到，来看几个使用了瀑布流布局的网站： Pinterest (可能是最早使用这种布局的网站)、Pixillion、Gimme Bar 。炫酷吗，瀑布流布局的实现方式有很多种，也有各自的代表网站，并且已有很多瀑布流插件，但是自己动手丰衣足食，弄懂原理是关键。本文将解析瀑布流布局的原理，并自己用 jQuery 实现，当然也可以用原生 JavaScript 。">
 <meta name="twitter:image" content="http://7xrvo9.com1.z0.glb.clouddn.com/0427/%E7%80%91%E5%B8%83%E6%B5%81%E5%B8%83%E5%B1%80%E6%A0%B7%E5%BC%8F.png">
 
 
@@ -575,9 +575,10 @@
       
 
       
-        <blockquote class="blockquote-center">瀑布流布局在国内外一些网站上基本都能看到，来看几个使用了瀑布流布局的网站： <a href="https://www.pinterest.com/" target="_blank" rel="external">Pinterest</a> (可能是最早使用这种布局的网站)、<a href="http://www.pixillion.com/our-work/film/" target="_blank" rel="external">Pixillion</a>、<a href="https://gimmebar.com/user/cameron" target="_blank" rel="external">Gimme Bar</a> 。炫酷吗，虽然已有很多瀑布流插件，但是自己动手丰衣足食，弄懂原理是关键。本文将解析瀑布流布局的原理，并自己用 jQuery 实现，当然也可以用原生 JavaScript 。</blockquote>
+        <blockquote class="blockquote-center">瀑布流布局在国内外一些网站上基本都能看到，来看几个使用了瀑布流布局的网站： <a href="https://www.pinterest.com/" target="_blank" rel="external">Pinterest</a> (可能是最早使用这种布局的网站)、<a href="http://www.pixillion.com/our-work/film/" target="_blank" rel="external">Pixillion</a>、<a href="https://gimmebar.com/user/cameron" target="_blank" rel="external">Gimme Bar</a> 。炫酷吗，瀑布流布局的实现方式有很多种，也有各自的代表网站，并且已有很多瀑布流插件，但是自己动手丰衣足食，弄懂原理是关键。本文将解析瀑布流布局的原理，并自己用 jQuery 实现，当然也可以用原生 JavaScript 。</blockquote>
 
 <a id="more"></a>
+<hr>
 <blockquote>
 <h3 id="【原理准备】"><a href="#【原理准备】" class="headerlink" title="【原理准备】"></a>【原理准备】</h3></blockquote>
 <h4 id="瀑布流布局的原理是什么"><a href="#瀑布流布局的原理是什么" class="headerlink" title="瀑布流布局的原理是什么?"></a><strong>瀑布流布局的原理是什么?</strong></h4><p>首先我们针对的是等宽不等高的元素进行布局，例如承载图片的 <code>item</code> 等；由于元素高度是不等的，布局的大体思想就是让每个元素找到最短的队，然后排队。</p>
