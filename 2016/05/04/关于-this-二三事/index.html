@@ -78,7 +78,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="前后端,Web服务器,php,Apache," />
+  <meta name="keywords" content="JavaScript," />
 
 
 
@@ -96,24 +96,25 @@
 
 
 
-<meta name="description" content="Web服务器的搭建，例如Apache，对初学者来说并不是简单事，如果还想添加PHP、MySQL等，就更难了。如果我们借助一些集成软件包，一切操作都简单了。而本文使用的XAMPP，就是这样一个易于安装且包含 MySQL、PHP 和 Perl 的 Apache 发行版，其他类似软件还有wamp等
-
-安装及配置">
+<meta name="description" content="【知识点】
+ apply、call 有什么作用，什么区别？
+call 和 apply 都是 Function.prototype 的方法，即每个 Function 对象的实例（function定义的每个方法）都有这两个方法。
+二者的作用完全一样，都是用来动态改变某个函数运行时上下文（重新定义函数的执行环境），也就是函数内部 this 的指向。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="使用XAMPP搭建本地Apache服务器">
-<meta property="og:url" content="http://licao404.com/2016/04/10/使用XAMPP搭建本地Web服务器/index.html">
+<meta property="og:title" content="关于 "this" 二三事">
+<meta property="og:url" content="http://licao404.com/2016/05/04/关于-this-二三事/index.html">
 <meta property="og:site_name" content="蓝岚爱肉肉">
-<meta property="og:description" content="Web服务器的搭建，例如Apache，对初学者来说并不是简单事，如果还想添加PHP、MySQL等，就更难了。如果我们借助一些集成软件包，一切操作都简单了。而本文使用的XAMPP，就是这样一个易于安装且包含 MySQL、PHP 和 Perl 的 Apache 发行版，其他类似软件还有wamp等
-
-安装及配置">
-<meta property="og:image" content="http://7xrvo9.com1.z0.glb.clouddn.com/2016.04.10/XAMPP.jpg">
-<meta property="og:updated_time" content="2016-04-24T04:33:32.451Z">
+<meta property="og:description" content="【知识点】
+ apply、call 有什么作用，什么区别？
+call 和 apply 都是 Function.prototype 的方法，即每个 Function 对象的实例（function定义的每个方法）都有这两个方法。
+二者的作用完全一样，都是用来动态改变某个函数运行时上下文（重新定义函数的执行环境），也就是函数内部 this 的指向。">
+<meta property="og:updated_time" content="2016-05-06T00:42:50.613Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="使用XAMPP搭建本地Apache服务器">
-<meta name="twitter:description" content="Web服务器的搭建，例如Apache，对初学者来说并不是简单事，如果还想添加PHP、MySQL等，就更难了。如果我们借助一些集成软件包，一切操作都简单了。而本文使用的XAMPP，就是这样一个易于安装且包含 MySQL、PHP 和 Perl 的 Apache 发行版，其他类似软件还有wamp等
-
-安装及配置">
-<meta name="twitter:image" content="http://7xrvo9.com1.z0.glb.clouddn.com/2016.04.10/XAMPP.jpg">
+<meta name="twitter:title" content="关于 "this" 二三事">
+<meta name="twitter:description" content="【知识点】
+ apply、call 有什么作用，什么区别？
+call 和 apply 都是 Function.prototype 的方法，即每个 Function 对象的实例（function定义的每个方法）都有这两个方法。
+二者的作用完全一样，都是用来动态改变某个函数运行时上下文（重新定义函数的执行环境），也就是函数内部 this 的指向。">
 
 
 
@@ -131,7 +132,7 @@
   };
 </script>
 
-  <title> 使用XAMPP搭建本地Apache服务器 | 蓝岚爱肉肉 </title>
+  <title> 关于 "this" 二三事 | 蓝岚爱肉肉 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -478,7 +479,7 @@
             
             
               
-                使用XAMPP搭建本地Apache服务器
+                关于 "this" 二三事
               
             
           </h1>
@@ -490,8 +491,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-04-10T16:29:58+08:00" content="2016-04-10">
-              2016-04-10
+            <time itemprop="dateCreated" datetime="2016-05-04T19:30:55+08:00" content="2016-05-04">
+              2016-05-04
             </time>
           </span>
 
@@ -516,8 +517,8 @@
 
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/编程学习/后端基础/" itemprop="url" rel="index">
-                    <span itemprop="name">后端基础</span>
+                  <a href="/categories/编程学习/前端基础/" itemprop="url" rel="index">
+                    <span itemprop="name">前端基础</span>
                   </a>
                 </span>
 
@@ -532,8 +533,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/04/10/使用XAMPP搭建本地Web服务器/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/04/10/使用XAMPP搭建本地Web服务器/" itemprop="commentsCount"></span>
+                <a href="/2016/05/04/关于-this-二三事/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/04/关于-this-二三事/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -543,7 +544,7 @@
 
           
           
-             <span id="/2016/04/10/使用XAMPP搭建本地Web服务器/" class="leancloud_visitors" data-flag-title="使用XAMPP搭建本地Apache服务器">
+             <span id="/2016/05/04/关于-this-二三事/" class="leancloud_visitors" data-flag-title="关于 "this" 二三事">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -563,41 +564,62 @@
 
       
       
-        <div class="post-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-          
-          
-            <div class="post-gallery-row">
-              <a class="post-gallery-img fancybox"
-                 href="http://7xrvo9.com1.z0.glb.clouddn.com/2016.04.10/XAMPP.jpg" rel="gallery_cinsscocx00248oeintpfh1z0"
-                 itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
-                <img src="http://7xrvo9.com1.z0.glb.clouddn.com/2016.04.10/XAMPP.jpg" itemprop="contentUrl"/>
-              </a>
-            
-          
-
-          
-          </div>
-        </div>
-      
 
       
-        <blockquote class="blockquote-center">Web服务器的搭建，例如<a href="http://baike.baidu.com/link?url=MroN_mSBbcJL21A0lYqZlh5FNT3Hukj2ZfurTNf0gxr904iT7hc7zrVaLUC8UuXLTT8ABpm16ilURuOMOMwma9b2R011L2tqMeugghpPt9W" target="_blank" rel="external">Apache</a>，对初学者来说并不是简单事，如果还想添加PHP、MySQL等，就更难了。如果我们借助一些集成软件包，一切操作都简单了。而本文使用的XAMPP，就是这样一个易于安装且包含 MySQL、PHP 和 Perl 的 Apache 发行版，其他类似软件还有<a href="http://www.wampserver.com/en/" target="_blank" rel="external">wamp</a>等</blockquote>
-
-<h3 id="安装及配置"><a href="#安装及配置" class="headerlink" title="安装及配置"></a>安装及配置</h3><a id="more"></a>
-<p><strong>1）</strong>.XAMPP是全平台的，直接在<a href="https://www.apachefriends.org/zh_cn/index.html" target="_blank" rel="external">官网</a>下载系统对应的版本：<a href="https://www.apachefriends.org/xampp-files/5.6.19/xampp-win32-5.6.19-0-VC11-installer.exe" target="_blank" rel="external">XAMPP for Windows</a>  |  <a href="https://www.apachefriends.org/xampp-files/5.6.19/xampp-linux-x64-5.6.19-0-installer.run" target="_blank" rel="external">XAMPP for Linux</a>  |  <a href="https://www.apachefriends.org/xampp-files/5.6.19/xampp-osx-5.6.19-0-installer.dmg" target="_blank" rel="external">XAMPP for OS X</a></p>
-<p><strong>2）</strong>.安装XAMPP，不要安装到C盘，安装过程就不详细展开，不了解的可自行搜索。建议至少安装Apache、MySQL、PHP、以及phpMyAdmin；</p>
-<p><strong>3）</strong>.新建一个文件夹来存放网站代码，比如我在D盘下新建<code>myWeb</code>文件夹；</p>
-<p><strong>4）</strong>.安装完成后，打开安装目录下的<code>apache</code>文件夹下的<code>conf</code>文件夹下的<code>httpd.conf</code>文件（记事本或其他文本编辑器）。修改<br><code>DocumentRoot</code>目录（该目录就是网站代码的路径），大概在240行附近，将其改为刚刚新建的文件夹的路径，例如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">DocumentRoot &quot;D:/myWeb&quot;</span><br><span class="line">&lt;Directory &quot;D:/myWeb&quot;&gt;</span><br></pre></td></tr></table></figure></p>
-<p><strong>5）</strong>.在<code>C:\Windows\System32\drivers\etc</code>目录下修改<code>host</code>，加入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">127.0.0.1 www.licao-train.com</span><br></pre></td></tr></table></figure></p>
-<blockquote>
-<p>这一步的目的是让你后面在浏览器输入<code>www.licao-train.com</code>域名能定位到你的代码目录（这里是<code>myWeb</code>目录），当然域名可以替换。</p>
+        <blockquote>
+<h3 id="【知识点】"><a href="#【知识点】" class="headerlink" title="【知识点】"></a>【知识点】</h3></blockquote>
+<h4 id="apply、call-有什么作用，什么区别？"><a href="#apply、call-有什么作用，什么区别？" class="headerlink" title=" apply、call 有什么作用，什么区别？"></a><strong> apply、call 有什么作用，什么区别？</strong></h4><ul>
+<li><code>call</code> 和 <code>apply</code> 都是 <code>Function.prototype</code> 的方法，即每个 <code>Function</code> 对象的实例（function定义的每个方法）都有这两个方法。<blockquote>
+<p>二者的作用完全一样，都是用来<strong>动态改变某个函数运行时上下文</strong>（重新定义函数的执行环境），也就是函数内部 <code>this</code> 的指向。</p>
 </blockquote>
-<h3 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h3><p><strong>1）</strong>.在存放网站代码文件夹里(这里是myWeb文件夹)新建一个php文件<code>hello.php</code>，打开文件编写php代码：<br><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span> </span><br><span class="line">    <span class="keyword">echo</span> <span class="string">"hello php"</span>; </span><br><span class="line">    phpinfo(); </span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure></p>
-<p><strong>2）</strong>.保存退出，打开XAMPP，启动Apache和MySQL（start）；</p>
-<p><strong>3）</strong>.在浏览器地址栏输入<code>http://localhost/index.php</code>或者<code>http://www.licao-train.com/hello.php</code>，看是否可以访问刚刚新建的<code>php</code>文件：<br><img src="http://7xr868.com1.z0.glb.clouddn.com/task23/XAMPP%E9%85%8D%E7%BD%AE%E5%B1%95%E7%A4%BA.png" alt=""></p>
-<p>到这里，你的Apache服务器+PHP基本上已经搭建好了。遇到不可测的问题可以在下面回复，我们一起学习。</p>
+</li>
+</ul>
+<a id="more"></a>
+<ul>
+<li><p><code>call</code> 和 <code>apply</code> 的区别仅仅是在参数定义的方式不太一样,具体表现为：</p>
+<blockquote>
+<p><code>call</code> 和 <code>apply</code> 方法的第一个参数都是要传入给当前对象的对象，或者是 <code>this</code> ;后面的参数都是传递给当前对象的参数，<code>call</code> 需要把参数按照顺序放进去，而 <code>apply</code> 则是把参数放在数组里;</p>
+</blockquote>
+</li>
+<li><p>如下面的一个小例子，体现了这两个函数的共同作用：改变函数内部 <code>this</code> 的指向。又可以看到细微差别，变量传入方式的不同。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> animal = &#123;</span><br><span class="line">	name: <span class="string">'tiger'</span>,</span><br><span class="line">	food: <span class="string">'meat'</span>,</span><br><span class="line">	fn: <span class="function"><span class="keyword">function</span> (<span class="params">name,food</span>) </span>&#123;</span><br><span class="line">		 <span class="keyword">this</span>.name = name; </span><br><span class="line">		 <span class="keyword">this</span>.food = food;</span><br><span class="line">		 <span class="built_in">console</span>.log(<span class="keyword">this</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">fn.call(animal,<span class="string">'sheep'</span>,<span class="string">'grass'</span>); <span class="comment">//Object &#123;name: "sheep", food: "grass"&#125;</span></span><br><span class="line">fn.apply(animal,[<span class="string">'panda'</span>,<span class="string">'bamboo'</span>]); <span class="comment">//Object &#123;name: "panda", food: "bamboo"&#125;</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
 <hr>
-
+<blockquote>
+<h3 id="【练习】"><a href="#【练习】" class="headerlink" title="【练习】"></a>【练习】</h3></blockquote>
+<h4 id="1-以下代码输出什么"><a href="#1-以下代码输出什么" class="headerlink" title="1. 以下代码输出什么?"></a><strong>1. 以下代码输出什么?</strong></h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> john = &#123; </span><br><span class="line">  firstName: <span class="string">"John"</span> </span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">func</span>(<span class="params"></span>) </span>&#123; </span><br><span class="line">  alert(<span class="keyword">this</span>.firstName + <span class="string">": hi!"</span>)</span><br><span class="line">&#125;</span><br><span class="line">john.sayHi = func</span><br><span class="line">john.sayHi() <span class="comment">//alert出 John:hi!</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>输出：<code>John:hi!</code></li>
+<li>解析：<code>john.sayHi()</code> 这样写就是对象 <code>john</code> 调用了函数 <code>func()</code>（或者说将函数 <code>func()</code> 绑定在对象 <code>john</code> 上）。函数 <code>func()</code> 内部的 <code>this</code> 指向的就是对象 <code>john</code>。</li>
+</ul>
+<h4 id="2-下面代码输出什么，为什么"><a href="#2-下面代码输出什么，为什么" class="headerlink" title="2. 下面代码输出什么，为什么"></a><strong>2. 下面代码输出什么，为什么</strong></h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">func() </span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">func</span>(<span class="params"></span>) </span>&#123; </span><br><span class="line">  alert(<span class="keyword">this</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>输出：<code>Winsow</code>对象</li>
+<li>解析：直接 <code>func()</code> 这样写就是 <code>Winsow</code> 对象调用了函数 <code>func()</code>（或者说此时函数 <code>func()</code> 的执行环境是在全局环境下）。函数 <code>func()</code> 内部的 <code>this</code> 指向的就是对象 <code>Winsow</code>。</li>
+</ul>
+<h4 id="3-以下代码输出什么"><a href="#3-以下代码输出什么" class="headerlink" title="3. 以下代码输出什么?"></a><strong>3. 以下代码输出什么?</strong></h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fn0</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">fn</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="keyword">this</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    fn();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">fn0();</span><br></pre></td></tr></table></figure>
+<ul>
+<li>输出：<code>Winsow</code> 对象</li>
+<li>解析：追本溯源还是 <code>Winsow</code> 对象调用了 <code>fn()</code>;</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">document</span>.addEventListener(<span class="string">'click'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="keyword">this</span>);</span><br><span class="line">    setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="keyword">this</span>);</span><br><span class="line">    &#125;, <span class="number">200</span>);</span><br><span class="line">&#125;, <span class="literal">false</span>);</span><br></pre></td></tr></table></figure>
+<ul>
+<li>输出：<code>document</code> 文档对象 , <code>Winsow</code> 对象</li>
+<li>解析：因为clik事件绑定在 document 上，<code>this</code> 指向 document 文档对象;延时器的执行环境都是全局的，<code>this</code> 指向 window</li>
+</ul>
+<h4 id="4-下面代码输出什么，为什么"><a href="#4-下面代码输出什么，为什么" class="headerlink" title="4. 下面代码输出什么，为什么"></a><strong>4. 下面代码输出什么，为什么</strong></h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">obj = &#123;</span><br><span class="line">  go: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123; alert(<span class="keyword">this</span>) &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">obj.go(); <span class="comment">//输出 obj 对象，obj 对象调用了函数 go();</span></span><br><span class="line"></span><br><span class="line">(obj.go)(); <span class="comment">//输出 obj 对象，立即执行函数写法，还是 obj 对象调用了函数 go();</span></span><br><span class="line"></span><br><span class="line">(a = obj.go)(); <span class="comment">//输出 Window 对象，a 是一个全局变量，函数赋值给一个全局变量，a() 执行时依赖的就是全局环境;</span></span><br><span class="line"></span><br><span class="line">(<span class="number">0</span> || obj.go)(); <span class="comment">//输出 Window 对象，(0 || obj.go) 就是 (obj.go)，所以(obj.go)()，调用它的仍然是全局对象;</span></span><br></pre></td></tr></table></figure>
+<h4 id="5-下面代码输出什么，为什么"><a href="#5-下面代码输出什么，为什么" class="headerlink" title="5. 下面代码输出什么，为什么"></a><strong>5. 下面代码输出什么，为什么</strong></h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> john = &#123; </span><br><span class="line">  firstName: <span class="string">"John"</span> </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">func</span>(<span class="params"></span>) </span>&#123; </span><br><span class="line">  alert( <span class="keyword">this</span>.firstName )</span><br><span class="line">&#125;</span><br><span class="line">func.call(john)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>输出：<code>John</code> </li>
+<li>解析：<code>call</code> 函数的用法：只有一个参数，指定 <code>func()</code> 函数内部 <code>this</code> 指向 <code>john</code> 对象.</li>
+</ul>
+<h4 id="6-下面代码输出什么，为什么"><a href="#6-下面代码输出什么，为什么" class="headerlink" title="6. 下面代码输出什么，为什么"></a><strong>6. 下面代码输出什么，为什么</strong></h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> john = &#123; </span><br><span class="line">  firstName: <span class="string">"John"</span>,</span><br><span class="line">  surname: <span class="string">"Smith"</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">func</span>(<span class="params">a, b</span>) </span>&#123; </span><br><span class="line">  alert( <span class="keyword">this</span>[a] + <span class="string">' '</span> + <span class="keyword">this</span>[b] )</span><br><span class="line">&#125;</span><br><span class="line">func.call(john, <span class="string">'firstName'</span>, <span class="string">'surname'</span>)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>输出：<code>John Smith</code> </li>
+<li>解析：<code>call</code> 函数的用法：第一个参数指定 <code>func()</code> 函数内部 <code>this</code> 指向 <code>john</code> 对象,后面的参数按顺序传入。</li>
+</ul>
+<h4 id="7-以下代码有什么问题，如何修改"><a href="#7-以下代码有什么问题，如何修改" class="headerlink" title="7. 以下代码有什么问题，如何修改"></a><strong>7. 以下代码有什么问题，如何修改</strong></h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> <span class="built_in">module</span>= &#123;</span><br><span class="line">  <span class="keyword">var</span> self = <span class="keyword">this</span>;  <span class="comment">//4. 这里先保存 this 的值，使其指向对象 module</span></span><br><span class="line">  bind: <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    $btn.on(<span class="string">'click'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">      <span class="built_in">console</span>.log(<span class="keyword">this</span>) <span class="comment">//1. this指向的是 $btn ,因为 $btn 绑定了事件处理函数</span></span><br><span class="line">      <span class="keyword">this</span>.showMsg(); <span class="comment">//2. 因为 this 指向的是 $btn, $btn上怎么会有showMsg()呢，显然只有 module 上有</span></span><br><span class="line">      <span class="comment">//3. 所以这里需要在之前保存下this值，改为</span></span><br><span class="line">      self.showMsg();</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;,</span><br><span class="line">  </span><br><span class="line">  showMsg: <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'饥人谷'</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -643,13 +665,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/前后端/" rel="tag">#前后端</a>
-          
-            <a href="/tags/Web服务器/" rel="tag">#Web服务器</a>
-          
-            <a href="/tags/php/" rel="tag">#php</a>
-          
-            <a href="/tags/Apache/" rel="tag">#Apache</a>
+            <a href="/tags/JavaScript/" rel="tag">#JavaScript</a>
           
         </div>
       
@@ -658,17 +674,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/04/04/【2016年特别福利】史上最全CSS学习资料大全/" rel="next" title="史上最全CSS学习资料大全">
-                <i class="fa fa-chevron-left"></i> 史上最全CSS学习资料大全
+              <a href="/2016/04/28/同源策略-跨域请求/" rel="next" title="同源策略&跨域请求">
+                <i class="fa fa-chevron-left"></i> 同源策略&跨域请求
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/04/12/Ajax浅入门/" rel="prev" title="AJAX-从入门到放弃">
-                AJAX-从入门到放弃 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -697,8 +709,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/04/10/使用XAMPP搭建本地Web服务器/"
-           data-title="使用XAMPP搭建本地Apache服务器" data-url="http://licao404.com/2016/04/10/使用XAMPP搭建本地Web服务器/">
+      <div class="ds-thread" data-thread-key="2016/05/04/关于-this-二三事/"
+           data-title="关于 "this" 二三事" data-url="http://licao404.com/2016/05/04/关于-this-二三事/">
       </div>
     
   </div>
@@ -858,7 +870,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装及配置"><span class="nav-number">1.</span> <span class="nav-text">安装及配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#测试"><span class="nav-number">2.</span> <span class="nav-text">测试</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#【知识点】"><span class="nav-number">1.</span> <span class="nav-text">【知识点】</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#apply、call-有什么作用，什么区别？"><span class="nav-number">1.1.</span> <span class="nav-text"> apply、call 有什么作用，什么区别？</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#【练习】"><span class="nav-number">2.</span> <span class="nav-text">【练习】</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-以下代码输出什么"><span class="nav-number">2.1.</span> <span class="nav-text">1. 以下代码输出什么?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-下面代码输出什么，为什么"><span class="nav-number">2.2.</span> <span class="nav-text">2. 下面代码输出什么，为什么</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-以下代码输出什么"><span class="nav-number">2.3.</span> <span class="nav-text">3. 以下代码输出什么?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-下面代码输出什么，为什么"><span class="nav-number">2.4.</span> <span class="nav-text">4. 下面代码输出什么，为什么</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-下面代码输出什么，为什么"><span class="nav-number">2.5.</span> <span class="nav-text">5. 下面代码输出什么，为什么</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-下面代码输出什么，为什么"><span class="nav-number">2.6.</span> <span class="nav-text">6. 下面代码输出什么，为什么</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7-以下代码有什么问题，如何修改"><span class="nav-number">2.7.</span> <span class="nav-text">7. 以下代码有什么问题，如何修改</span></a></li></ol></li></ol></div>
             
           </div>
         </section>
