@@ -78,7 +78,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Web服务器,跨域,JSONP," />
+  <meta name="keywords" content="Web服务器,浏览器,跨域,CORS,JSONP," />
 
 
 
@@ -107,7 +107,7 @@
 1. 什么是同源策略？同源策略是浏览器最核心也是最基本的安全的功能。所谓同源，指的是协议、域名、端口号都相同，不同源的客户脚本（JavaScript）在没有明确授权的情况下，只能读写本域下的资源，不能读写对方的资源；
 2. 什么是跨域？跨域有几种实现形式？跨域是指突破JavaScript同源策略的限制，a.com 域名下的 js 可以操作 b.com 或者 child.a.com 下">
 <meta property="og:image" content="http://7xr868.com1.z0.glb.clouddn.com/task31/%E5%90%8C%E6%BA%90%E7%AD%96%E7%95%A5%E9%AA%8C%E8%AF%81.png">
-<meta property="og:updated_time" content="2016-05-01T05:24:15.682Z">
+<meta property="og:updated_time" content="2016-05-07T03:42:26.894Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="同源策略&跨域请求">
 <meta name="twitter:description" content="【知识点】
@@ -523,6 +523,18 @@
 
                 
                 
+                  ， 
+                
+
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/编程学习/前端基础/计算机网络/" itemprop="url" rel="index">
+                    <span itemprop="name">计算机网络</span>
+                  </a>
+                </span>
+
+                
+                
 
               
             </span>
@@ -627,7 +639,7 @@
 <blockquote>
 <p>编辑 <code>http://a.com/index.html</code></p>
 </blockquote>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">'http://libs.baidu.com/jquery/2.0.0/jquery.min.js'</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="javascript"></span><br><span class="line">$.ajax(&#123;</span><br><span class="line">	url: <span class="string">'http://b.com/a.php'</span>,</span><br><span class="line">	dataType: <span class="string">'jsonp'</span>,</span><br><span class="line">	success: <span class="function"><span class="keyword">function</span> (<span class="params">ret</span>) </span>&#123;</span><br><span class="line">		 <span class="built_in">console</span>.log(<span class="string">"I'm "</span> + ret.name + <span class="string">",and I'm "</span> + ret.age + <span class="string">" years old."</span>); </span><br><span class="line">	&#125;,	</span><br><span class="line">	error: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">		 alert(<span class="string">"Something error"</span>); </span><br><span class="line">	&#125;</span><br><span class="line">&#125;);</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">'http://libs.baidu.com/jquery/2.0.0/jquery.min.js'</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="javascript"></span><br><span class="line">$.ajax(&#123;</span><br><span class="line">	url: <span class="string">'http://b.com/a.php'</span>,</span><br><span class="line">	dataType: <span class="string">'jsonp'</span>,</span><br><span class="line">	success: <span class="function"><span class="keyword">function</span> (<span class="params">ret</span>) </span>&#123;</span><br><span class="line">		 <span class="built_in">console</span>.log(<span class="string">"I'm "</span> + ret.name + <span class="string">",and I'm "</span> + ret.age + <span class="string">" years old."</span>);</span><br><span class="line">	&#125;,</span><br><span class="line">	error: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">		 alert(<span class="string">"Something error"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;);</span></span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>编辑 <code>http://b.com/a.php</code></p>
 </blockquote>
@@ -643,7 +655,7 @@
 <blockquote>
 <p>编辑 <code>http://a.com/index.html</code></p>
 </blockquote>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">'http://libs.baidu.com/jquery/2.0.0/jquery.min.js'</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="javascript"></span><br><span class="line">$.ajax(&#123;</span><br><span class="line">	url: <span class="string">'http://b.com/a.php'</span>,</span><br><span class="line">	<span class="comment">// dataType: 'jsonp',</span></span><br><span class="line">	success: <span class="function"><span class="keyword">function</span> (<span class="params">ret</span>) </span>&#123;</span><br><span class="line">		 <span class="built_in">console</span>.log(<span class="string">"I'm "</span> + ret.name + <span class="string">",and I'm "</span> + ret.age + <span class="string">" years old."</span>); </span><br><span class="line">	&#125;,	</span><br><span class="line">	error: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">		 alert(<span class="string">"Something error"</span>); </span><br><span class="line">	&#125;</span><br><span class="line">&#125;);</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">'http://libs.baidu.com/jquery/2.0.0/jquery.min.js'</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="javascript"></span><br><span class="line">$.ajax(&#123;</span><br><span class="line">	url: <span class="string">'http://b.com/a.php'</span>,</span><br><span class="line">	<span class="comment">// dataType: 'jsonp',</span></span><br><span class="line">	success: <span class="function"><span class="keyword">function</span> (<span class="params">ret</span>) </span>&#123;</span><br><span class="line">		 <span class="built_in">console</span>.log(<span class="string">"I'm "</span> + ret.name + <span class="string">",and I'm "</span> + ret.age + <span class="string">" years old."</span>);</span><br><span class="line">	&#125;,</span><br><span class="line">	error: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">		 alert(<span class="string">"Something error"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;);</span></span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>编辑 <code>http://b.com/a.php</code></p>
 </blockquote>
@@ -701,7 +713,11 @@
           
             <a href="/tags/Web服务器/" rel="tag">#Web服务器</a>
           
+            <a href="/tags/浏览器/" rel="tag">#浏览器</a>
+          
             <a href="/tags/跨域/" rel="tag">#跨域</a>
+          
+            <a href="/tags/CORS/" rel="tag">#CORS</a>
           
             <a href="/tags/JSONP/" rel="tag">#JSONP</a>
           
@@ -797,7 +813,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">29</span>
+              <span class="site-state-item-count">30</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -805,7 +821,7 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">10</span>
+                <span class="site-state-item-count">13</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -814,7 +830,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">23</span>
+                <span class="site-state-item-count">27</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
