@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://licao404.com/"/>
-  <updated>2016-05-07T04:14:40.690Z</updated>
+  <updated>2016-05-09T18:05:28.633Z</updated>
   <id>http://licao404.com/</id>
   
   <author>
@@ -16,17 +16,265 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>了解 HTTP</title>
+    <link href="http://licao404.com/2016/05/07/%E4%BA%86%E8%A7%A3-HTTP/"/>
+    <id>http://licao404.com/2016/05/07/了解-HTTP/</id>
+    <published>2016-05-07T07:03:37.000Z</published>
+    <updated>2016-05-09T18:05:28.633Z</updated>
+    
+    <content type="html">&lt;blockquote&gt;
+&lt;h4 id=&quot;OSI-七层模型指什么？&quot;&gt;&lt;a href=&quot;#OSI-七层模型指什么？&quot; class=&quot;headerlink&quot; title=&quot;OSI 七层模型指什么？&quot;&gt;&lt;/a&gt;&lt;strong&gt;OSI 七层模型指什么？&lt;/strong&gt;&lt;/h4&gt;&lt;/blockquote&gt;
+&lt;p&gt;OSI（Open System Interconnection）七层模型是国际标准化组织（ISO）制定的一个用于计算机或通信系统间互联的标准体系，它是一个七层的、抽象的模型，不仅包括一系列抽象的术语或概念，也包括具体的协议。&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;应用层&lt;/strong&gt; (Application)：，OSI 参考模型中的最高层；网络服务与最终用户的一个接口。各种应用程序协议，HTTP,FTP,TFTP,SMTP,SNMP,DNS,POP3;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;表示层&lt;/strong&gt;（Presentation Layer）：OSI 参考模型中的第六层；数据的表示、安全、压缩。在表示层，数据将按照网络能理解的方案进行格式化，这种格式化也因所使用网络的类型不同而不同；表示层管理数据的解密与加密，如系统口令的处理；除此之外，表示层协议还对图片和文件格式信息进行解码和编码。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;会话层&lt;/strong&gt;（Session Layer）：OSI 参考模型中的第五层；负责在网络中的两节点之间建立、维持和终止通信。 会话层的功能包括：建立通信链接，保持会话过程通信链接的畅通，同步两个节点之间的对话，决定通信是否被中断以及通信中断时决定从何处重新发送。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;传输层&lt;/strong&gt;（Transport）：OSI 参考模型的第四层；定义传输数据的协议端口号，以及流控和差错效验。协议有：&lt;code&gt;TCP&lt;/code&gt; 、&lt;code&gt;UDP&lt;/code&gt;，数据包一旦离开网卡即进入网络传输层；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;网络层&lt;/strong&gt;（Network）：OSI 参考模型的第三层；进行逻辑地址寻址，实现不同网络之间的路径选择。协议有：&lt;code&gt;ICMP&lt;/code&gt; 、&lt;code&gt;IGMP&lt;/code&gt; 、&lt;code&gt;IP（IPV4 IPV6）&lt;/code&gt; 、 &lt;code&gt;ARP&lt;/code&gt; 、&lt;code&gt;RARP&lt;/code&gt;；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;数据链路层&lt;/strong&gt; (Link) ：OSI 参考模型的第二层；建立逻辑连接、进行硬件地址寻址、差错校验等功能。（由底层网络定义协议）&lt;br&gt;将比特组合成字节进而组合成帧，用MAC地址访问介质，错误发现但不能纠正；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;物理层&lt;/strong&gt;（Physical Layer）：OSI 参考模型的最低层；该层包括物理连网媒介，如电缆连线连接器。物理层的协议产生并检测电压以便发送和接收携带数据的信号。用户要传递信息就要利用一些物理媒体，如双绞线、同轴电缆等，但具体的物理媒体并不在OSI的7层之内，有人把物理媒体当做第0层，物理层的任务就是为它的上一层提供一个物理连接，以及它们的机械、电气、功能和规程特性。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;h4 id=&quot;HTTP-的工作原理是什么？&quot;&gt;&lt;a href=&quot;#HTTP-的工作原理是什么？&quot; class=&quot;headerlink&quot; title=&quot;HTTP 的工作原理是什么？&quot;&gt;&lt;/a&gt;&lt;strong&gt;HTTP 的工作原理是什么？&lt;/strong&gt;&lt;/h4&gt;&lt;/blockquote&gt;
+&lt;p&gt;HTTP协议（超文本传输协议）定义了Web客户端如何从Web服务器请求Web页面，以及服务器如何将Web页面传送给客户端。HTTP协议采用了请求/响应模型。客户端向服务器端发送一个请求报文（包含请求方法、URL、协议版本、请求头部和请求数据）。服务器端以一个状态作为响应（包括协议的版本、成功或错误代码、服务器信息、响应头和响应数据）。断开连接。HTTP是一种无状态协议。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h4 id=&quot;URI-的格式是什么？常见的协议有哪些？&quot;&gt;&lt;a href=&quot;#URI-的格式是什么？常见的协议有哪些？&quot; class=&quot;headerlink&quot; title=&quot;URI 的格式是什么？常见的协议有哪些？&quot;&gt;&lt;/a&gt;&lt;strong&gt;URI 的格式是什么？常见的协议有哪些？&lt;/strong&gt;&lt;/h4&gt;&lt;/blockquote&gt;
+&lt;p&gt;URI（统一资源标识符）格式：&lt;strong&gt;&lt;code&gt;&amp;lt;scheme&amp;gt;://&amp;lt;user&amp;gt;:&amp;lt;password&amp;gt;@&amp;lt;host&amp;gt;:&amp;lt;port&amp;gt;/&amp;lt;path&amp;gt;;&amp;lt;params&amp;gt;?&amp;lt;query&amp;gt;#&amp;lt;hash&amp;gt;&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;&lt;code&gt;&amp;lt;scheme&amp;gt;&lt;/code&gt;&lt;/strong&gt; : 协议名，可能为 &lt;code&gt;HTTP&lt;/code&gt;(默认端口80)、&lt;code&gt;HTTPS&lt;/code&gt;(默认端口443)、&lt;code&gt;FTP&lt;/code&gt;(默认端口21)、&lt;code&gt;SSH&lt;/code&gt;(默认端口22)、&lt;code&gt;SMTP&lt;/code&gt;(默认端口25)、&lt;code&gt;IMAP&lt;/code&gt;(默认端口143)等；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;&lt;code&gt;&amp;lt;user&amp;gt;&lt;/code&gt;&lt;/strong&gt; : 用户名，HTTP 协议中不常见，SSH 协议一般是必须的；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;&lt;code&gt;&amp;lt;password&amp;gt;&lt;/code&gt;&lt;/strong&gt; : 密码，现在一般不会用明文的方式将密码写在 URI 上；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;&lt;code&gt;&amp;lt;host&amp;gt;&lt;/code&gt;&lt;/strong&gt; : 主机地址，域名或者 IP ，用于确定要连接的对象的地址；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;&lt;code&gt;&amp;lt;port&amp;gt;&lt;/code&gt;&lt;/strong&gt; : 端口号，用来区分主机上的进程，以便精确定位要连接的服务；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;&lt;code&gt;&amp;lt;path&amp;gt;&lt;/code&gt;&lt;/strong&gt; : 资源路径，用来确认资源存放的位置；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;&lt;code&gt;&amp;lt;params&amp;gt;&lt;/code&gt;&lt;/strong&gt; : 参数，以键值对的形式提供，以 &lt;code&gt;;&lt;/code&gt; 分隔开。在例如 ftp 协议中可用于规定文件是以二进制形式还是文本形式传输。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;&lt;code&gt;&amp;lt;query&amp;gt;&lt;/code&gt;&lt;/strong&gt; : 查询字符串，&lt;code&gt;GET&lt;/code&gt;请求传递参数；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;&lt;code&gt;&amp;lt;hash&amp;gt;&lt;/code&gt;&lt;/strong&gt; : 片段，定位文档位置；&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;h4 id=&quot;HTTP-协议有几种和服务器交互的方法&quot;&gt;&lt;a href=&quot;#HTTP-协议有几种和服务器交互的方法&quot; class=&quot;headerlink&quot; title=&quot;HTTP 协议有几种和服务器交互的方法&quot;&gt;&lt;/a&gt;&lt;strong&gt;HTTP 协议有几种和服务器交互的方法&lt;/strong&gt;&lt;/h4&gt;&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;GET&lt;/strong&gt; : 请求服务器资源；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;POST&lt;/strong&gt; : 向服务器发送数据，比如发送表单数据；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;HEAD&lt;/strong&gt; : 请求服务器资源，但是服务器的响应中没有资源的body，只有资源的基本信息。可以用来获取资源元信息，通过状态吗查看资源是否存在，以及测试资源是否被修改；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;TRACE&lt;/strong&gt; : 远程诊断服务器；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;PUT&lt;/strong&gt; : 向服务器写入资源。让服务器用请求的主体部分创建一个请求 URL 命名的文档，如果存在就替换。出于安全原因，并不是所有的服务器都实现这个方法；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;DELETE&lt;/strong&gt; : 删除服务器上的请求的资源。出于安全原因，服务器可能会不支持这个方法；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;OPTIONS&lt;/strong&gt; : 询问服务器可以执行哪些方法；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;CONNECT&lt;/strong&gt; : 用于代理进行传输，如使用SSL；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;……&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;h4 id=&quot;状态码-200，301，-304，403-404-500，503-分别代表什么意思&quot;&gt;&lt;a href=&quot;#状态码-200，301，-304，403-404-500，503-分别代表什么意思&quot; class=&quot;headerlink&quot; title=&quot;状态码 200，301， 304，403, 404, 500，503 分别代表什么意思&quot;&gt;&lt;/a&gt;&lt;strong&gt;状态码 200，301， 304，403, 404, 500，503 分别代表什么意思&lt;/strong&gt;&lt;/h4&gt;&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;200 : OK&lt;/strong&gt;  这是我们最想看到的状态码。服务器已经成功处理客户端发来的请求。由于和服务器交互方法的不同，返回的信息有所不同：使用 GET 方法时，对应请求资源的实体会随着状态码一起作为响应返回；而使用 HEAD 方法时，在响应中只返回首部，不会返回实体的主体部分；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;301 : Moved Permanently&lt;/strong&gt;  永久性重定向。请求的资源已被分配新的URI，以后应使用资源现在所指的URI；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;304 : Not Modified&lt;/strong&gt;  如果客户端发送了一个带条件的 GET 请求且该请求已被允许，而文档的内容（自上次访问以来或者根据请求的条件）并没有改变，则服务器应当返回这个状态码。304响应禁止包含消息体，因此始终以消息头后的第一个空行结尾;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;403 : Forbidden&lt;/strong&gt; 服务器已经理解请求，但是拒绝执行它。这个请求不应该被重复提交,如果这不是一个 HEAD 请求，而且服务器希望能够讲清楚为何请求不能被执行，那么就应该在实体内描述拒绝的原因。当然服务器也可以返回一个404响应，假如它不希望让客户端获得任何信息;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;404 : Not Found&lt;/strong&gt; 请求失败，请求所希望得到的资源未被在服务器上发现。404这个状态码被广泛应用于当服务器不想揭示到底为何请求被拒绝或者没有其他适合的响应可用的情况下。出现这个错误的最有可能的原因是服务器端没有这个页面。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;500 : Internal Server Error&lt;/strong&gt; 服务器遇到了一个未曾预料的状况，导致了它无法完成对请求的处理。一般来说，这个问题都会在服务器端的源代码出现错误时出现。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;503 : Service Unavailable&lt;/strong&gt; 由于临时的服务器维护或者 &lt;strong&gt;过载&lt;/strong&gt;，服务器当前无法处理请求。这个状况是临时的，并且将在一段时间以后恢复。如果能够预计延迟时间，那么响应中可以包含一个 Retry-After 头用以标明这个延迟时间。如果没有给出这个 Retry-After 信息，那么客户端应当以处理500响应的方式处理它。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;h4 id=&quot;报文有哪几部分组成？&quot;&gt;&lt;a href=&quot;#报文有哪几部分组成？&quot; class=&quot;headerlink&quot; title=&quot;报文有哪几部分组成？&quot;&gt;&lt;/a&gt;&lt;strong&gt;报文有哪几部分组成？&lt;/strong&gt;&lt;/h4&gt;&lt;/blockquote&gt;
+&lt;p&gt;HTTP 报文是在 HTTP 应用程序之间发送的数据块。这些数据块以一些文本形式的 &lt;strong&gt;元信息&lt;/strong&gt; 开头，描述报文的内容及含义，后面跟着可选的数据部分。&lt;br&gt;HTTP 报文由三部分组成：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;起始行（start line）：对报文进行描述；&lt;/li&gt;
+&lt;li&gt;首部 （header）：包含属性；&lt;/li&gt;
+&lt;li&gt;主体（body）：包含可选的数据；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;h4 id=&quot;请求头的格式和作用是什么？给个范例截图说明&quot;&gt;&lt;a href=&quot;#请求头的格式和作用是什么？给个范例截图说明&quot; class=&quot;headerlink&quot; title=&quot;请求头的格式和作用是什么？给个范例截图说明&quot;&gt;&lt;/a&gt;&lt;strong&gt;请求头的格式和作用是什么？给个范例截图说明&lt;/strong&gt;&lt;/h4&gt;&lt;/blockquote&gt;
+&lt;p&gt;随便打开一个网页，在开发者工具的 &lt;code&gt;NetWork&lt;/code&gt; 中查看 &lt;code&gt;Request Headers&lt;/code&gt; ，格式如下：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task34/RequestHeaders.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;其中包含 &lt;strong&gt;请求方法&lt;/strong&gt; 、 &lt;strong&gt;请求URI地址&lt;/strong&gt;、 &lt;strong&gt;协议版本&lt;/strong&gt;，很明显截图中的请求方法为 &lt;code&gt;GET&lt;/code&gt;，请求地址为 &lt;code&gt;/categories&lt;/code&gt;，协议及其版本为 &lt;code&gt;HTTP/1.1&lt;/code&gt;;&lt;/p&gt;
+&lt;p&gt;查看 &lt;code&gt;Response Headers&lt;/code&gt;，格式如下：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task34/ResponseHeaders.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;其中包含 &lt;strong&gt;协议版本&lt;/strong&gt; 、 &lt;strong&gt;状态码&lt;/strong&gt;、 &lt;strong&gt;原因短语&lt;/strong&gt;，很明显截图中的协议及其版本为 &lt;code&gt;HTTP/1.1&lt;/code&gt;，状态码 &lt;code&gt;301&lt;/code&gt;，原因短语是 &lt;code&gt;Moved Permanently&lt;/code&gt;；&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h4 id=&quot;首部的格式和作用是什么？给个范例截图说明&quot;&gt;&lt;a href=&quot;#首部的格式和作用是什么？给个范例截图说明&quot; class=&quot;headerlink&quot; title=&quot;首部的格式和作用是什么？给个范例截图说明&quot;&gt;&lt;/a&gt;&lt;strong&gt;首部的格式和作用是什么？给个范例截图说明&lt;/strong&gt;&lt;/h4&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;HTTP首部字段是构成HTTP报文的要素之一。在客户端与服务器端以HTTP协议进行通信时，无论是请求还是响应都会使用首部字段，它能起到传递额外更多信息的作用。使用首部字段是为了给服务器和浏览器提供报文主体大小、所使用的语言、认证信息等内容。——《图解HTTP》&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;HTTP 首部基本可以分为四类：通用首部、请求首部、响应首部、实体首部。&lt;br&gt;HTTP 首部格式是由首部字段名和首部字段值组成，中间用冒号‘:’分隔，例如 &lt;strong&gt;Content-Type: text/html&lt;/strong&gt;,字段值可有多个，例如 &lt;strong&gt;Keep-Alive: timeout=15, max=100&lt;/strong&gt; 。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;通用首部：客户端和服务器端都能使用&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Cache-Control 控制缓存行为&lt;/li&gt;
+&lt;li&gt;Connection 逐跳首部、连接的管理&lt;/li&gt;
+&lt;li&gt;Date 日期，报文创建时间&lt;/li&gt;
+&lt;li&gt;……&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;请求首部：从客户端往服务器端发送请求报文中所使用的字段，用于补充请求的附加信息、客户端信息和对响应内容相关的优先级等信息&lt;br&gt;&lt;img src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task34/%E8%AF%B7%E6%B1%82%E9%A6%96%E9%83%A8%E5%AD%97%E6%AE%B5.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;例如上图中:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Accept     告诉服务器能够发送那些媒体类型&lt;/li&gt;
+&lt;li&gt;Accept-Encoding 告诉服务器能够发送那些编码&lt;/li&gt;
+&lt;li&gt;Accept-Language 告诉服务器能够发送那些语言&lt;/li&gt;
+&lt;li&gt;Cookie     客户端字符串&lt;/li&gt;
+&lt;li&gt;Host 接收请求的服务器的主机名和端口号&lt;/li&gt;
+&lt;li&gt;Referer 提供了包含当前请求URI的文档的URL，告诉服务器自己来源&lt;/li&gt;
+&lt;li&gt;…..（这里不再列出所有）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;响应首部：由服务器端向客户端返回响应报文中所使用的字段，用于补充响应的附加信息、服务器信息以及对客户端的附加要求等信息。&lt;br&gt;&lt;img src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task34/%E5%93%8D%E5%BA%94%E9%A6%96%E9%83%A8%E5%AD%97%E6%AE%B5.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;例如上图中:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Content-Encoding 主体编码格式&lt;/li&gt;
+&lt;li&gt;Content-Type 主体的MIME&lt;/li&gt;
+&lt;li&gt;ETag 主体的实体标记&lt;/li&gt;
+&lt;li&gt;Last-Modified 实体最后一次修改时间&lt;/li&gt;
+&lt;li&gt;Server 服务器应用软件名称和版本&lt;/li&gt;
+&lt;li&gt;…..（这里不再列出所有）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;实体首部：针对请求报文和响应报文使用的字段。补充了资源内容，更新时间等和实体相关的信息。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;h4 id=&quot;主体的作用是什么？给个范例&quot;&gt;&lt;a href=&quot;#主体的作用是什么？给个范例&quot; class=&quot;headerlink&quot; title=&quot;主体的作用是什么？给个范例&quot;&gt;&lt;/a&gt;&lt;strong&gt;主体的作用是什么？给个范例&lt;/strong&gt;&lt;/h4&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task34/%E4%B8%BB%E4%BD%93.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;用于包含所请求的数据内容；&lt;/li&gt;
+&lt;li&gt;包含着返回的 HTML 文件的内容，即全部文本。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;h4 id=&quot;简述浏览器缓存是如何控制的&quot;&gt;&lt;a href=&quot;#简述浏览器缓存是如何控制的&quot; class=&quot;headerlink&quot; title=&quot;简述浏览器缓存是如何控制的&quot;&gt;&lt;/a&gt;&lt;strong&gt;简述浏览器缓存是如何控制的&lt;/strong&gt;&lt;/h4&gt;&lt;/blockquote&gt;
+&lt;p&gt;缓存有服务器端缓存和客户端缓存（一般指浏览器缓存），这里介绍浏览器缓存机制：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;HTML Meta&lt;/strong&gt; 标签控制缓存:浏览器缓存机制，其实主要就是 HTTP 协议定义的缓存机制（如：&lt;code&gt;Expires&lt;/code&gt;； &lt;code&gt;Cache-control&lt;/code&gt;等）。但是也有非 HTTP协议定义的缓存机制，如使用 HTML Meta 标签，Web开发者可以在HTML页面的 &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; 节点中加入 &lt;code&gt;&amp;lt;meta&amp;gt;&lt;/code&gt; 标签&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;meta&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;http-equiv&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;Pragam&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;content&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;no-cache&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;上述代码的作用是告诉浏览器当前页面不被缓存，每次访问都需要去服务器拉取。使用上很简单，但只有部分浏览器可以支持，而且所有缓存代理服务器都不支持，因为代理不解析HTML内容本身。而广泛应用的还是 HTTP头信息 来控制缓存。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;HTTP 响应首部字段 &lt;strong&gt;Expires&lt;/strong&gt;，指明缓存的具体过期日期，来控制资源何时过期。在过期时间以内，若再次发起请求，通常浏览器都不会与服务器进行任何通信，而是直接使用本地副本。不过 Expires 是 HTTP 1.0 的东西，现在默认浏览器均默认使用HTTP 1.1，所以它的作用基本忽略。Expires 的一个缺点就是，返回的到期时间是服务器端的时间，这样存在一个问题，如果客户端的时间与服务器的时间相差很大（比如时钟不同步，或者跨时区），那么误差就很大，所以在HTTP 1.1版开始，使用Cache-Control: max-age=秒替代。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Cache-Control&lt;/strong&gt; HTTP 1.1 协议新增的指令，每个资源都可以通过设定 Cache-Control 来建立缓存策略。通常，可为它指定一个   &lt;code&gt;max-age&lt;/code&gt; ，表示缓存的最长时间，单位为秒。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;no-cache，不缓存。&lt;/li&gt;
+&lt;li&gt;public，可以缓存。&lt;/li&gt;
+&lt;li&gt;no-store，请求和响应的信息都不应该被存储在对方的磁盘系统中。&lt;/li&gt;
+&lt;li&gt;must-revalidate，对于客户机的每次请求，代理服务器必须向服务器验证缓存是否过时。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;控制文件是否有修改 &lt;strong&gt;Last-Modified&lt;/strong&gt;/&lt;strong&gt;E-Tag&lt;/strong&gt; Last-Modified 表示被请求资源在服务器端的上次修改时间，而 ETag 则是一个唯一文件标识符，每次文件修改后都会生成一个新的 ETag。服务器通过向浏览器发送这两个字段，来告知浏览器其获得的资源的版本。由于 Last-Modified 和 ETag 的作用是相同的（均为向服务器验证资源是否最新），因此只使用一个即可。通常认为 Last-Modified 更好（它和 Expires 不同，由服务器生成，不依赖浏览器端时间）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;……&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;h4 id=&quot;下图各个参数是什么意思&quot;&gt;&lt;a href=&quot;#下图各个参数是什么意思&quot; class=&quot;headerlink&quot; title=&quot;下图各个参数是什么意思&quot;&gt;&lt;/a&gt;&lt;strong&gt;下图各个参数是什么意思&lt;/strong&gt;&lt;/h4&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xpvnv.com2.z0.glb.qiniucdn.com/257149f7-1e11-4262-9b15-159389db83c6&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;1.&lt;strong&gt;General&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Reques URL : 请求资源所在的位置（资源的URL）；&lt;/li&gt;
+&lt;li&gt;Request Method : 请求用的是 PUT 方法；&lt;/li&gt;
+&lt;li&gt;Status Code : 状态码和原因短语是 200 OK，资源请求成功；&lt;/li&gt;
+&lt;li&gt;Remote Address：远程地址。资源所在 IP 地址。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;2.&lt;strong&gt;Response Headers&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Connection：指定连接方式，持久连接；&lt;/li&gt;
+&lt;li&gt;Content-Length：主体部分的大小，单位是字节；&lt;/li&gt;
+&lt;li&gt;Content-Type：主体内对象的媒体类型，是 json 文件；&lt;/li&gt;
+&lt;li&gt;Date：报文创建的日期时间（GMT时间）；&lt;/li&gt;
+&lt;li&gt;Server：服务器软件版本信息；&lt;/li&gt;
+&lt;li&gt;X-Powered-By：开发资源的技术；是 Express;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;3.&lt;strong&gt;Request Headers&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Accept：能够处理的媒体类型及其相对优先级。&lt;code&gt;*/*&lt;/code&gt; 可以处理与请求相符的任意媒体类型;&lt;/li&gt;
+&lt;li&gt;Accept-Encoding：用户代理支持的内容编码及内容编码的优先级顺序。接受gzip、deflate 和 sdch 格式;&lt;/li&gt;
+&lt;li&gt;Accept-Language：用户代理能够处理的自然语言集。接受中文;&lt;/li&gt;
+&lt;li&gt;Cookie：之前从服务器获得的 Cookie 信息。&lt;/li&gt;
+&lt;li&gt;Host：资源所在的主机;&lt;/li&gt;
+&lt;li&gt;Origin：资源所在的源。包括主机，协议和端口号;&lt;/li&gt;
+&lt;li&gt;Referer：服务器请求的原始资源的 URI；&lt;/li&gt;
+&lt;li&gt;User-Agent：发出请求的客户端（浏览器）信息和用户代理名称；&lt;/li&gt;
+&lt;li&gt;X-Requested-With：用何种方式请求。这里使用的是 ajax；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;h4 id=&quot;OSI-七层模型指什么？&quot;&gt;&lt;a href=&quot;#OSI-七层模型指什么？&quot; class=&quot;headerlink&quot; title=&quot;OSI 七层模型指什么？&quot;&gt;&lt;/a&gt;&lt;strong&gt;OSI 七层模型指什么？&lt;/strong&gt;&lt;/h4&gt;&lt;/blockquote&gt;
+&lt;p&gt;OSI（Open System Interconnection）七层模型是国际标准化组织（ISO）制定的一个用于计算机或通信系统间互联的标准体系，它是一个七层的、抽象的模型，不仅包括一系列抽象的术语或概念，也包括具体的协议。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="计算机基础" scheme="http://licao404.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/"/>
+    
+      <category term="计算机网络" scheme="http://licao404.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    
+      <category term="前后端" scheme="http://licao404.com/tags/%E5%89%8D%E5%90%8E%E7%AB%AF/"/>
+    
+      <category term="Web服务器" scheme="http://licao404.com/tags/Web%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+      <category term="HTTP" scheme="http://licao404.com/tags/HTTP/"/>
+    
+      <category term="TCP/IP" scheme="http://licao404.com/tags/TCP-IP/"/>
+    
+  </entry>
+  
+  <entry>
     <title>从 URI 到页面呈现</title>
     <link href="http://licao404.com/2016/05/07/%E4%BB%8EURI%E5%88%B0%E9%A1%B5%E9%9D%A2%E5%91%88%E7%8E%B0/"/>
     <id>http://licao404.com/2016/05/07/从URI到页面呈现/</id>
     <published>2016-05-07T03:35:26.000Z</published>
-    <updated>2016-05-07T04:14:40.690Z</updated>
+    <updated>2016-05-08T12:18:29.431Z</updated>
     
     <content type="html">&lt;blockquote class=&quot;blockquote-center&quot;&gt;前面提及过怎么用一些软件套件在&lt;a href=&quot;./2016/04/10/使用XAMPP搭建本地Web服务器/&quot;&gt;本地简单搭建 Web 服务器&lt;/a&gt;，具体可以参照我的这篇文章 &amp;gt;&amp;gt; &lt;a href=&quot;./2016/04/10/使用XAMPP搭建本地Web服务器/&quot;&gt;《使用XAMPP搭建本地Web服务器》&lt;/a&gt; ，这次我们理一理从从浏览器输入URL到Web页面呈现在我们眼前，它背后发生了什么？这次我们只是简单说说其过程，它涉及了很多计算机网络知识，&lt;a href=&quot;http://baike.baidu.com/link?url=v-ZiUCzKEFsKfexauR5g8UA9H7D6ZsX_bD9jtGIUWOA3CafdHGK-p7EMwUHBeTuF92VEnVXh6A2o9yaAMJNywTBZQYuusmr7gPBMw0K91P95WgfPYswXuUJ_DeTe8DK9tBTE5WdUlKtKj8q78VOOwMROvTECRNRBxrCGuypphyy&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;HTTP 协议&lt;/a&gt;等，可以留待后续学习深究。&lt;/blockquote&gt;
 
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;blockquote&gt;
-&lt;h4 id=&quot;简单描述下web-服务器、PHP、数据库、浏览器是如何实现动态网站的&quot;&gt;&lt;a href=&quot;#简单描述下web-服务器、PHP、数据库、浏览器是如何实现动态网站的&quot; class=&quot;headerlink&quot; title=&quot;简单描述下web 服务器、PHP、数据库、浏览器是如何实现动态网站的?&quot;&gt;&lt;/a&gt;&lt;strong&gt;简单描述下web 服务器、PHP、数据库、浏览器是如何实现动态网站的?&lt;/strong&gt;&lt;/h4&gt;&lt;/blockquote&gt;
+&lt;p&gt;categories:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;计算机基础&lt;/li&gt;
+&lt;li&gt;计算机网络&lt;br&gt;tags:&lt;/li&gt;
+&lt;li&gt;php&lt;/li&gt;
+&lt;li&gt;Web服务器&lt;/li&gt;
+&lt;li&gt;Apache&lt;/li&gt;
+&lt;li&gt;HTTP&lt;/li&gt;
+&lt;li&gt;TCP/IP&lt;/li&gt;
+&lt;li&gt;前后端&lt;/li&gt;
+&lt;/ul&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;客户端（浏览器）根据用户输入的&lt;code&gt;URL&lt;/code&gt;，寻找&lt;code&gt;DNS&lt;/code&gt;服务器将其解析为对应的Web服务器的&lt;code&gt;IP&lt;/code&gt;地址，返回给浏览器；&lt;/p&gt;
 &lt;/li&gt;
@@ -103,17 +351,17 @@
       <category term="计算机网络" scheme="http://licao404.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
     
     
-      <category term="php" scheme="http://licao404.com/tags/php/"/>
-    
-      <category term="Web服务器" scheme="http://licao404.com/tags/Web%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-    
       <category term="前后端" scheme="http://licao404.com/tags/%E5%89%8D%E5%90%8E%E7%AB%AF/"/>
     
-      <category term="Apache" scheme="http://licao404.com/tags/Apache/"/>
+      <category term="Web服务器" scheme="http://licao404.com/tags/Web%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
       <category term="HTTP" scheme="http://licao404.com/tags/HTTP/"/>
     
       <category term="TCP/IP" scheme="http://licao404.com/tags/TCP-IP/"/>
+    
+      <category term="php" scheme="http://licao404.com/tags/php/"/>
+    
+      <category term="Apache" scheme="http://licao404.com/tags/Apache/"/>
     
   </entry>
   
@@ -1440,11 +1688,11 @@
       <category term="计算机网络" scheme="http://licao404.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
     
     
-      <category term="php" scheme="http://licao404.com/tags/php/"/>
+      <category term="前后端" scheme="http://licao404.com/tags/%E5%89%8D%E5%90%8E%E7%AB%AF/"/>
     
       <category term="Web服务器" scheme="http://licao404.com/tags/Web%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
-      <category term="前后端" scheme="http://licao404.com/tags/%E5%89%8D%E5%90%8E%E7%AB%AF/"/>
+      <category term="php" scheme="http://licao404.com/tags/php/"/>
     
       <category term="Apache" scheme="http://licao404.com/tags/Apache/"/>
     
@@ -2049,80 +2297,6 @@
       <category term="看看" scheme="http://licao404.com/tags/%E7%9C%8B%E7%9C%8B/"/>
     
       <category term="随手拍" scheme="http://licao404.com/tags/%E9%9A%8F%E6%89%8B%E6%8B%8D/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo常用命令收集</title>
-    <link href="http://licao404.com/2016/03/19/Hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E7%AC%94%E8%AE%B0/"/>
-    <id>http://licao404.com/2016/03/19/Hexo常用命令笔记/</id>
-    <published>2016-03-19T09:39:36.000Z</published>
-    <updated>2016-04-02T14:29:28.631Z</updated>
-    
-    <content type="html">&lt;blockquote class=&quot;blockquote-center&quot;&gt;此文收集常用Hexo命令，欢迎补充，持续更新…&lt;/blockquote&gt;
-
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h2 id=&quot;Hexo准备&quot;&gt;&lt;a href=&quot;#Hexo准备&quot; class=&quot;headerlink&quot; title=&quot;Hexo准备&quot;&gt;&lt;/a&gt;Hexo准备&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;npm install hexo -g&lt;/code&gt; #安装&lt;br&gt;&lt;code&gt;npm update hexo -g&lt;/code&gt; #升级&lt;br&gt;&lt;code&gt;hexo init&lt;/code&gt; #初始化  &lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;简写形式&quot;&gt;&lt;a href=&quot;#简写形式&quot; class=&quot;headerlink&quot; title=&quot;简写形式&quot;&gt;&lt;/a&gt;简写形式&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;hexo n &amp;quot;我的博客&amp;quot;&lt;/code&gt; == &lt;code&gt;hexo new &amp;quot;我的博客&amp;quot;&lt;/code&gt; #新建文章&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;hexo p&lt;/code&gt; == &lt;code&gt;hexo publish&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;hexo g&lt;/code&gt; == &lt;code&gt;hexo generate&lt;/code&gt;#生成&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;hexo s&lt;/code&gt; == &lt;code&gt;hexo server&lt;/code&gt; #启动服务预览&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;hexo d&lt;/code&gt; == &lt;code&gt;hexo deploy&lt;/code&gt;#部署&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;服务器相关&quot;&gt;&lt;a href=&quot;#服务器相关&quot; class=&quot;headerlink&quot; title=&quot;服务器相关&quot;&gt;&lt;/a&gt;服务器相关&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;hexo clean&lt;/code&gt; #清除缓存 网页正常情况下可以忽略此条命令&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;hexo g&lt;/code&gt; #生成静态网页&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;hexo server&lt;/code&gt; #Hexo 会监视文件变动并自动更新，您无须重启服务器。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;hexo server -s&lt;/code&gt; #静态模式&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;hexo server -p&lt;/code&gt; 5000 #更改端口&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;hexo server -i 192.168.1.1&lt;/code&gt; #自定义 IP&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;监视文件变动&quot;&gt;&lt;a href=&quot;#监视文件变动&quot; class=&quot;headerlink&quot; title=&quot;监视文件变动&quot;&gt;&lt;/a&gt;监视文件变动&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;hexo generate&lt;/code&gt; #使用 Hexo 生成静态文件快速而且简单&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;hexo generate --watch&lt;/code&gt; #监视文件变动&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;完成后部署&quot;&gt;&lt;a href=&quot;#完成后部署&quot; class=&quot;headerlink&quot; title=&quot;完成后部署&quot;&gt;&lt;/a&gt;完成后部署&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;以下两条命令作用相同：&lt;br&gt; &lt;code&gt;hexo generate --deploy&lt;/code&gt;&lt;br&gt;   &lt;code&gt;hexo deploy --generate&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;常用复合命令：&lt;br&gt; &lt;code&gt;hexo deploy -g&lt;/code&gt;&lt;br&gt; &lt;code&gt;hexo server -g&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;存为草稿&quot;&gt;&lt;a href=&quot;#存为草稿&quot; class=&quot;headerlink&quot; title=&quot;存为草稿&quot;&gt;&lt;/a&gt;存为草稿&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;hexo publish [layout] &amp;lt;title&amp;gt;&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;文章模板&quot;&gt;&lt;a href=&quot;#文章模板&quot; class=&quot;headerlink&quot; title=&quot;文章模板&quot;&gt;&lt;/a&gt;文章模板&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;hexo n &amp;quot;postName&amp;quot;&lt;/code&gt; #新建文章&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;hexo n page &amp;quot;pageName&amp;quot;&lt;/code&gt; #新建页面&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;hexo g&lt;/code&gt; #生成静态页面至public目录&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;hexo s&lt;/code&gt; #开启预览访问端口（默认端口4000，’ctrl + c’关闭server）&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;hexo d&lt;/code&gt; #将.deploy目录部署到GitHub&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;hexo new [layout] &amp;lt;title&amp;gt;&lt;/code&gt; #新建布局名为layout的文章&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;hexo new photo &amp;quot;My Gallery&amp;quot;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;hexo new &amp;quot;Hello World&amp;quot; --lang tw&lt;/code&gt; #设置文章显示语言&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;设置文章摘要&quot;&gt;&lt;a href=&quot;#设置文章摘要&quot; class=&quot;headerlink&quot; title=&quot;设置文章摘要&quot;&gt;&lt;/a&gt;设置文章摘要&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;以上是文章摘要&lt;br&gt;&lt;code&gt;&amp;lt;!--more--&amp;gt;&lt;/code&gt;&lt;br&gt;以下是余下全文&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;blockquote&gt;
-&lt;p&gt;参考原文&lt;a href=&quot;http://segmentfault.com/a/1190000002632530?utm_source=tuicool&amp;amp;utm_medium=referral&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://segmentfault.com/a/1190000002632530&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;blockquote class=&quot;blockquote-center&quot;&gt;此文收集常用Hexo命令，欢迎补充，持续更新…&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="技巧分享" scheme="http://licao404.com/categories/%E6%8A%80%E5%B7%A7%E5%88%86%E4%BA%AB/"/>
-    
-    
-      <category term="Hexo" scheme="http://licao404.com/tags/Hexo/"/>
     
   </entry>
   
