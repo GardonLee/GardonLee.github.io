@@ -490,6 +490,182 @@
             
               
                 
+                <a class="post-title-link" href="/2016/05/10/OOP-For-JavaScript/" itemprop="url">
+                  OOP For JavaScript
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-05-10T22:08:53+08:00" content="2016-05-10">
+              2016-05-10
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/编程学习/" itemprop="url" rel="index">
+                    <span itemprop="name">编程学习</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/编程学习/前端基础/" itemprop="url" rel="index">
+                    <span itemprop="name">前端基础</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/05/10/OOP-For-JavaScript/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/10/OOP-For-JavaScript/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/05/10/OOP-For-JavaScript/" class="leancloud_visitors" data-flag-title="OOP For JavaScript">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <blockquote>
+<h3 id="【知识点】"><a href="#【知识点】" class="headerlink" title="【知识点】"></a>【知识点】</h3></blockquote>
+<h4 id="1-OOP-指什么？有哪些特性"><a href="#1-OOP-指什么？有哪些特性" class="headerlink" title="1. OOP 指什么？有哪些特性 "></a><strong>1. OOP 指什么？有哪些特性 </strong></h4><p>OOP （Object Oriented Programming）是面向对象编程，是一种计算机编程架构。面向对象语言（C++，Java等）有一个标志，都有类的概念，通过类可以创建多个具有相同属性和方法的对象（类的实例化）。OOP 达到了软件工程的三个主要目标：重用性、灵活性和扩展性。为了实现整体运算，每个对象都能够接收信息、处理数据和向其它对象发送信息。</p>
+<p>OOP的特征：</p>
+<ul>
+<li><p><strong>封装</strong>：确保组件（数据和功能一起在运行着的计算机程序中形成的单元）不会以不可预期的方式改变其它组件的内部状态；只有在那些提供了内部状态改变方法的组件中，才可以访问其内部状态。每类组件都提供了一个与其它组件联系的接口，并规定了其它组件进行调用的方法。</p>
+</li>
+<li><p><strong>抽象</strong>：程序有能力忽略正在处理中信息的某些方面，即对信息主要方面关注的能力。</p>
+</li>
+<li><p><strong>多态</strong>：组件的引用和类集会涉及到其它许多不同类型的组件，而且引用组件所产生的结果依据实际调用的类型。</p>
+</li>
+<li><p><strong>继承</strong>：允许在现存的组件基础上创建子类组件，这统一并增强了多态性和封装性。典型地来说就是用类来对组件进行分组，而且还可以定义新类为现存的类的扩展，这样就可以将类组织成树形或网状结构，这体现了动作的通用性。</p>
+</li>
+</ul>
+<h4 id="2-如何通过构造函数的方式创建一个拥有属性和方法的对象"><a href="#2-如何通过构造函数的方式创建一个拥有属性和方法的对象" class="headerlink" title="2. 如何通过构造函数的方式创建一个拥有属性和方法的对象?"></a><strong>2. 如何通过构造函数的方式创建一个拥有属性和方法的对象?</strong></h4><p>创建自定义的构造函数，从而定义自定义对象类型的属性和方法，例如下面的构造函数模式：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Student</span>(<span class="params">name,age,score</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.name = name;</span><br><span class="line">    <span class="keyword">this</span>.age = age;</span><br><span class="line">    <span class="keyword">this</span>.score = score;</span><br><span class="line">    <span class="keyword">this</span>.alertScore = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        alert(<span class="keyword">this</span>.name + <span class="string">':'</span> + <span class="keyword">this</span>.score);</span><br><span class="line">    &#125;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>创建一个 <code>Student</code> 的实例，需要使用 <strong>new</strong> 操作符：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> xiaomin = <span class="keyword">new</span> Student(<span class="string">"xiaomin"</span>,<span class="number">20</span>,<span class="number">80</span>);</span><br><span class="line"><span class="keyword">var</span> gardon = <span class="keyword">new</span> Student(<span class="string">"gardon"</span>,<span class="number">22</span>,<span class="number">75</span>);</span><br></pre></td></tr></table></figure></p>
+<p>用 <code>new</code> 调用构造函数实际上经过了4中步骤：</p>
+<ul>
+<li>创建一个新对象；</li>
+<li>将构造函数的作用域赋给新对象(this指向这个新对象)；</li>
+<li>执行构造函数中的代码，将属性和方法添加到这个对象上；</li>
+<li>返回新对象</li>
+</ul>
+<h4 id="3-prototype-是什么？有什么特性"><a href="#3-prototype-是什么？有什么特性" class="headerlink" title="3. prototype 是什么？有什么特性"></a><strong>3. prototype 是什么？有什么特性</strong></h4><p>JavaScript中创建的每一个函数都有一个 <strong>prototype（原型）</strong> 属性，这个属性是一个指针，指向一个原型对象，这个对象拥有一系列属性和方法且能被所有特定类型的实例共享。换而言之 <code>prototype</code> 就是上题中通过调用构造函数创建的那个对象实例(<code>xiaomin</code>)的原型对象。<br>特性：让特定对象的所有实例共享 <code>prototype</code> (原型对象)包含的属性和方法。不用在构造函数中定义对象实例的信息，而是可以将这些信息直接添加到 <code>prototype</code> 中,如上题中：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Student</span>(<span class="params"></span>)</span>&#123;&#125;;</span><br><span class="line">Student.prototype.name = <span class="string">"John"</span>;</span><br><span class="line">Student.prototype.age = <span class="number">18</span>;</span><br><span class="line">Student.prototype.score = <span class="number">90</span>;</span><br><span class="line">Student.prototype.alertScore = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    alert(<span class="keyword">this</span>.name + <span class="string">':'</span> + <span class="keyword">this</span>.score);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> xiaomin = <span class="keyword">new</span> Student();<span class="comment">//alert John:90</span></span><br><span class="line"><span class="built_in">console</span>.log(xiaomin.age);<span class="comment">//console.log 18</span></span><br><span class="line"><span class="keyword">var</span> gardon = <span class="keyword">new</span> Student();</span><br><span class="line">gardon.alertScore();</span><br><span class="line"><span class="built_in">console</span>.log(xiaomin.alertScore === gardon.alertScore);<span class="comment">//true</span></span><br></pre></td></tr></table></figure></p>
+<h4 id="3-画出如下代码的原型图"><a href="#3-画出如下代码的原型图" class="headerlink" title="3. 画出如下代码的原型图"></a><strong>3. 画出如下代码的原型图</strong></h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">People</span> (<span class="params">name</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">this</span>.name = name;</span><br><span class="line">  <span class="keyword">this</span>.sayName = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'my name is:'</span> + <span class="keyword">this</span>.name);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">People.prototype.walk = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="keyword">this</span>.name + <span class="string">' is walking'</span>);  </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> p1 = <span class="keyword">new</span> People(<span class="string">'饥人谷'</span>);</span><br><span class="line"><span class="keyword">var</span> p2 = <span class="keyword">new</span> People(<span class="string">'前端'</span>);</span><br></pre></td></tr></table></figure>
+<h4 id="3-以下代码中的变量-name-有什么区别"><a href="#3-以下代码中的变量-name-有什么区别" class="headerlink" title="3. 以下代码中的变量 name 有什么区别"></a><strong>3. 以下代码中的变量 name 有什么区别</strong></h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">People</span> (<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">var</span> name = <span class="string">"饥人谷"</span></span><br><span class="line">  <span class="keyword">this</span>.name = <span class="string">"我"</span>;</span><br><span class="line">&#125;</span><br><span class="line">People.name = <span class="string">"jscode"</span>;</span><br><span class="line"></span><br><span class="line">People.prototype.name = <span class="string">"学前端"</span>;</span><br></pre></td></tr></table></figure>
+<hr>
+<blockquote>
+<h3 id="【练习】"><a href="#【练习】" class="headerlink" title="【练习】"></a>【练习】</h3></blockquote>
+<h4 id="1-创建一个-Car-对象，拥有属性name、color、status；拥有方法run，stop，getStatus"><a href="#1-创建一个-Car-对象，拥有属性name、color、status；拥有方法run，stop，getStatus" class="headerlink" title="1. 创建一个 Car 对象，拥有属性name、color、status；拥有方法run，stop，getStatus"></a><strong>1. 创建一个 Car 对象，拥有属性name、color、status；拥有方法run，stop，getStatus</strong></h4><h4 id="2-创建一个-GoTop-对象，当-new-一个-GotTop-对象则会在页面上创建一个回到顶部的元素，点击页面滚动到顶部。拥有以下属性和方法"><a href="#2-创建一个-GoTop-对象，当-new-一个-GotTop-对象则会在页面上创建一个回到顶部的元素，点击页面滚动到顶部。拥有以下属性和方法" class="headerlink" title="2. 创建一个 GoTop 对象，当 new 一个 GotTop 对象则会在页面上创建一个回到顶部的元素，点击页面滚动到顶部。拥有以下属性和方法"></a><strong>2. 创建一个 GoTop 对象，当 new 一个 GotTop 对象则会在页面上创建一个回到顶部的元素，点击页面滚动到顶部。拥有以下属性和方法</strong></h4><ul>
+<li>ct 属性，GoTop 对应的 DOM 元素的容器</li>
+<li>target属性， GoTop 对应的 DOM 元素</li>
+<li>bindEvent 方法， 用于绑定事件</li>
+<li>createNode 方法， 用于在容器内创建节点</li>
+</ul>
+<h4 id="3-使用构造函数创建对象的方式完成轮播功能-demo-，使用如下调用方式"><a href="#3-使用构造函数创建对象的方式完成轮播功能-demo-，使用如下调用方式" class="headerlink" title="3. 使用构造函数创建对象的方式完成轮播功能( demo )，使用如下调用方式"></a><strong>3. 使用构造函数创建对象的方式完成轮播功能( demo )，使用如下调用方式</strong></h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Carousel</span>(<span class="params">$node</span>)</span>&#123;</span><br><span class="line"><span class="comment">//todo...</span></span><br><span class="line">&#125;</span><br><span class="line">Carousel.prototype = &#123;</span><br><span class="line"><span class="comment">//todo ..</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> $node1 = $(<span class="string">'.ct'</span>).eq(<span class="number">0</span>);</span><br><span class="line"><span class="keyword">var</span> $node2 = $(<span class="string">'.ct'</span>).eq(<span class="number">1</span>);</span><br><span class="line"><span class="keyword">var</span> carousel1 = <span class="keyword">new</span> Carousel($node1);</span><br><span class="line"><span class="keyword">var</span> carousel2 = <span class="keyword">new</span> Carousel($node2);</span><br></pre></td></tr></table></figure>
+<h4 id="4-使使用构造函数创建对象的方式实现-Tab-切换功能"><a href="#4-使使用构造函数创建对象的方式实现-Tab-切换功能" class="headerlink" title="4. 使使用构造函数创建对象的方式实现 Tab 切换功能"></a><strong>4. 使使用构造函数创建对象的方式实现 Tab 切换功能</strong></h4>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/05/07/了解-HTTP/" itemprop="url">
                   了解 HTTP
                 </a>
@@ -1065,165 +1241,6 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/04/28/瀑布流布局/" itemprop="url">
-                  瀑布流布局
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-04-28T00:04:14+08:00" content="2016-04-28">
-              2016-04-28
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/编程学习/" itemprop="url" rel="index">
-                    <span itemprop="name">编程学习</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/编程学习/前端基础/" itemprop="url" rel="index">
-                    <span itemprop="name">前端基础</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/04/28/瀑布流布局/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/04/28/瀑布流布局/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2016/04/28/瀑布流布局/" class="leancloud_visitors" data-flag-title="瀑布流布局">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-        <div class="post-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-          
-          
-            <div class="post-gallery-row">
-              <a class="post-gallery-img fancybox"
-                 href="http://7xrvo9.com1.z0.glb.clouddn.com/0427/%E7%80%91%E5%B8%83%E6%B5%81%E5%B8%83%E5%B1%80%E6%A0%B7%E5%BC%8F.png" rel="gallery_cinzuxqhz001v70eirtg9acw8"
-                 itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
-                <img src="http://7xrvo9.com1.z0.glb.clouddn.com/0427/%E7%80%91%E5%B8%83%E6%B5%81%E5%B8%83%E5%B1%80%E6%A0%B7%E5%BC%8F.png" itemprop="contentUrl"/>
-              </a>
-            
-          
-
-          
-          </div>
-        </div>
-      
-
-      
-        
-          <blockquote class = "blockquote-center">瀑布流布局在国内外一些网站上基本都能看到，来看几个使用了瀑布流布局的网站： <a href="https://www.pinterest.com/">Pinterest</a> (可能是最早使用这种布局的网站)、<a href="http://www.pixillion.com/our-work/film/">Pixillion</a>、<a href="https://gimmebar.com/user/cameron">Gimme Bar</a> 。炫酷吗，瀑布流布局的实现方式有很多种，也有各自的代表网站，并且已有很多瀑布流插件，但是自己动手丰衣足食，弄懂原理是关键。本文将解析瀑布流布局的原理，并自己用 jQuery 实现，当然也可以用原生 JavaScript 。</blockquote>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/04/28/瀑布流布局/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1269,7 +1286,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">31</span>
+              <span class="site-state-item-count">32</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -1286,7 +1303,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">27</span>
+                <span class="site-state-item-count">28</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

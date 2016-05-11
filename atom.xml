@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://licao404.com/"/>
-  <updated>2016-05-09T18:05:28.633Z</updated>
+  <updated>2016-05-11T05:34:15.756Z</updated>
   <id>http://licao404.com/</id>
   
   <author>
@@ -14,6 +14,70 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>OOP For JavaScript</title>
+    <link href="http://licao404.com/2016/05/10/OOP-For-JavaScript/"/>
+    <id>http://licao404.com/2016/05/10/OOP-For-JavaScript/</id>
+    <published>2016-05-10T14:08:53.000Z</published>
+    <updated>2016-05-11T05:34:15.756Z</updated>
+    
+    <content type="html">&lt;blockquote&gt;
+&lt;h3 id=&quot;【知识点】&quot;&gt;&lt;a href=&quot;#【知识点】&quot; class=&quot;headerlink&quot; title=&quot;【知识点】&quot;&gt;&lt;/a&gt;【知识点】&lt;/h3&gt;&lt;/blockquote&gt;
+&lt;h4 id=&quot;1-OOP-指什么？有哪些特性&quot;&gt;&lt;a href=&quot;#1-OOP-指什么？有哪些特性&quot; class=&quot;headerlink&quot; title=&quot;1. OOP 指什么？有哪些特性 &quot;&gt;&lt;/a&gt;&lt;strong&gt;1. OOP 指什么？有哪些特性 &lt;/strong&gt;&lt;/h4&gt;&lt;p&gt;OOP （Object Oriented Programming）是面向对象编程，是一种计算机编程架构。面向对象语言（C++，Java等）有一个标志，都有类的概念，通过类可以创建多个具有相同属性和方法的对象（类的实例化）。OOP 达到了软件工程的三个主要目标：重用性、灵活性和扩展性。为了实现整体运算，每个对象都能够接收信息、处理数据和向其它对象发送信息。&lt;/p&gt;
+&lt;p&gt;OOP的特征：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;封装&lt;/strong&gt;：确保组件（数据和功能一起在运行着的计算机程序中形成的单元）不会以不可预期的方式改变其它组件的内部状态；只有在那些提供了内部状态改变方法的组件中，才可以访问其内部状态。每类组件都提供了一个与其它组件联系的接口，并规定了其它组件进行调用的方法。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;抽象&lt;/strong&gt;：程序有能力忽略正在处理中信息的某些方面，即对信息主要方面关注的能力。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;多态&lt;/strong&gt;：组件的引用和类集会涉及到其它许多不同类型的组件，而且引用组件所产生的结果依据实际调用的类型。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;继承&lt;/strong&gt;：允许在现存的组件基础上创建子类组件，这统一并增强了多态性和封装性。典型地来说就是用类来对组件进行分组，而且还可以定义新类为现存的类的扩展，这样就可以将类组织成树形或网状结构，这体现了动作的通用性。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;2-如何通过构造函数的方式创建一个拥有属性和方法的对象&quot;&gt;&lt;a href=&quot;#2-如何通过构造函数的方式创建一个拥有属性和方法的对象&quot; class=&quot;headerlink&quot; title=&quot;2. 如何通过构造函数的方式创建一个拥有属性和方法的对象?&quot;&gt;&lt;/a&gt;&lt;strong&gt;2. 如何通过构造函数的方式创建一个拥有属性和方法的对象?&lt;/strong&gt;&lt;/h4&gt;&lt;p&gt;创建自定义的构造函数，从而定义自定义对象类型的属性和方法，例如下面的构造函数模式：&lt;br&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Student&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;name,age,score&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;this&lt;/span&gt;.name = name;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;this&lt;/span&gt;.age = age;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;this&lt;/span&gt;.score = score;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;this&lt;/span&gt;.alertScore = &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        alert(&lt;span class=&quot;keyword&quot;&gt;this&lt;/span&gt;.name + &lt;span class=&quot;string&quot;&gt;&#39;:&#39;&lt;/span&gt; + &lt;span class=&quot;keyword&quot;&gt;this&lt;/span&gt;.score);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;创建一个 &lt;code&gt;Student&lt;/code&gt; 的实例，需要使用 &lt;strong&gt;new&lt;/strong&gt; 操作符：&lt;br&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; xiaomin = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; Student(&lt;span class=&quot;string&quot;&gt;&quot;xiaomin&quot;&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;20&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;80&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; gardon = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; Student(&lt;span class=&quot;string&quot;&gt;&quot;gardon&quot;&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;22&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;75&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;用 &lt;code&gt;new&lt;/code&gt; 调用构造函数实际上经过了4中步骤：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;创建一个新对象；&lt;/li&gt;
+&lt;li&gt;将构造函数的作用域赋给新对象(this指向这个新对象)；&lt;/li&gt;
+&lt;li&gt;执行构造函数中的代码，将属性和方法添加到这个对象上；&lt;/li&gt;
+&lt;li&gt;返回新对象&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;3-prototype-是什么？有什么特性&quot;&gt;&lt;a href=&quot;#3-prototype-是什么？有什么特性&quot; class=&quot;headerlink&quot; title=&quot;3. prototype 是什么？有什么特性&quot;&gt;&lt;/a&gt;&lt;strong&gt;3. prototype 是什么？有什么特性&lt;/strong&gt;&lt;/h4&gt;&lt;p&gt;JavaScript中创建的每一个函数都有一个 &lt;strong&gt;prototype（原型）&lt;/strong&gt; 属性，这个属性是一个指针，指向一个原型对象，这个对象拥有一系列属性和方法且能被所有特定类型的实例共享。换而言之 &lt;code&gt;prototype&lt;/code&gt; 就是上题中通过调用构造函数创建的那个对象实例(&lt;code&gt;xiaomin&lt;/code&gt;)的原型对象。&lt;br&gt;特性：让特定对象的所有实例共享 &lt;code&gt;prototype&lt;/code&gt; (原型对象)包含的属性和方法。不用在构造函数中定义对象实例的信息，而是可以将这些信息直接添加到 &lt;code&gt;prototype&lt;/code&gt; 中,如上题中：&lt;br&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Student&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;)&lt;/span&gt;&amp;#123;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Student.prototype.name = &lt;span class=&quot;string&quot;&gt;&quot;John&quot;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Student.prototype.age = &lt;span class=&quot;number&quot;&gt;18&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Student.prototype.score = &lt;span class=&quot;number&quot;&gt;90&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Student.prototype.alertScore = &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    alert(&lt;span class=&quot;keyword&quot;&gt;this&lt;/span&gt;.name + &lt;span class=&quot;string&quot;&gt;&#39;:&#39;&lt;/span&gt; + &lt;span class=&quot;keyword&quot;&gt;this&lt;/span&gt;.score);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; xiaomin = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; Student();&lt;span class=&quot;comment&quot;&gt;//alert John:90&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(xiaomin.age);&lt;span class=&quot;comment&quot;&gt;//console.log 18&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; gardon = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; Student();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;gardon.alertScore();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(xiaomin.alertScore === gardon.alertScore);&lt;span class=&quot;comment&quot;&gt;//true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h4 id=&quot;3-画出如下代码的原型图&quot;&gt;&lt;a href=&quot;#3-画出如下代码的原型图&quot; class=&quot;headerlink&quot; title=&quot;3. 画出如下代码的原型图&quot;&gt;&lt;/a&gt;&lt;strong&gt;3. 画出如下代码的原型图&lt;/strong&gt;&lt;/h4&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;People&lt;/span&gt; (&lt;span class=&quot;params&quot;&gt;name&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;keyword&quot;&gt;this&lt;/span&gt;.name = name;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;keyword&quot;&gt;this&lt;/span&gt;.sayName = &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(&lt;span class=&quot;string&quot;&gt;&#39;my name is:&#39;&lt;/span&gt; + &lt;span class=&quot;keyword&quot;&gt;this&lt;/span&gt;.name);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;People.prototype.walk = &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(&lt;span class=&quot;keyword&quot;&gt;this&lt;/span&gt;.name + &lt;span class=&quot;string&quot;&gt;&#39; is walking&#39;&lt;/span&gt;);  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; p1 = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; People(&lt;span class=&quot;string&quot;&gt;&#39;饥人谷&#39;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; p2 = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; People(&lt;span class=&quot;string&quot;&gt;&#39;前端&#39;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h4 id=&quot;3-以下代码中的变量-name-有什么区别&quot;&gt;&lt;a href=&quot;#3-以下代码中的变量-name-有什么区别&quot; class=&quot;headerlink&quot; title=&quot;3. 以下代码中的变量 name 有什么区别&quot;&gt;&lt;/a&gt;&lt;strong&gt;3. 以下代码中的变量 name 有什么区别&lt;/strong&gt;&lt;/h4&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;People&lt;/span&gt; (&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; name = &lt;span class=&quot;string&quot;&gt;&quot;饥人谷&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;keyword&quot;&gt;this&lt;/span&gt;.name = &lt;span class=&quot;string&quot;&gt;&quot;我&quot;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;People.name = &lt;span class=&quot;string&quot;&gt;&quot;jscode&quot;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;People.prototype.name = &lt;span class=&quot;string&quot;&gt;&quot;学前端&quot;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;h3 id=&quot;【练习】&quot;&gt;&lt;a href=&quot;#【练习】&quot; class=&quot;headerlink&quot; title=&quot;【练习】&quot;&gt;&lt;/a&gt;【练习】&lt;/h3&gt;&lt;/blockquote&gt;
+&lt;h4 id=&quot;1-创建一个-Car-对象，拥有属性name、color、status；拥有方法run，stop，getStatus&quot;&gt;&lt;a href=&quot;#1-创建一个-Car-对象，拥有属性name、color、status；拥有方法run，stop，getStatus&quot; class=&quot;headerlink&quot; title=&quot;1. 创建一个 Car 对象，拥有属性name、color、status；拥有方法run，stop，getStatus&quot;&gt;&lt;/a&gt;&lt;strong&gt;1. 创建一个 Car 对象，拥有属性name、color、status；拥有方法run，stop，getStatus&lt;/strong&gt;&lt;/h4&gt;&lt;h4 id=&quot;2-创建一个-GoTop-对象，当-new-一个-GotTop-对象则会在页面上创建一个回到顶部的元素，点击页面滚动到顶部。拥有以下属性和方法&quot;&gt;&lt;a href=&quot;#2-创建一个-GoTop-对象，当-new-一个-GotTop-对象则会在页面上创建一个回到顶部的元素，点击页面滚动到顶部。拥有以下属性和方法&quot; class=&quot;headerlink&quot; title=&quot;2. 创建一个 GoTop 对象，当 new 一个 GotTop 对象则会在页面上创建一个回到顶部的元素，点击页面滚动到顶部。拥有以下属性和方法&quot;&gt;&lt;/a&gt;&lt;strong&gt;2. 创建一个 GoTop 对象，当 new 一个 GotTop 对象则会在页面上创建一个回到顶部的元素，点击页面滚动到顶部。拥有以下属性和方法&lt;/strong&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;ct 属性，GoTop 对应的 DOM 元素的容器&lt;/li&gt;
+&lt;li&gt;target属性， GoTop 对应的 DOM 元素&lt;/li&gt;
+&lt;li&gt;bindEvent 方法， 用于绑定事件&lt;/li&gt;
+&lt;li&gt;createNode 方法， 用于在容器内创建节点&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;3-使用构造函数创建对象的方式完成轮播功能-demo-，使用如下调用方式&quot;&gt;&lt;a href=&quot;#3-使用构造函数创建对象的方式完成轮播功能-demo-，使用如下调用方式&quot; class=&quot;headerlink&quot; title=&quot;3. 使用构造函数创建对象的方式完成轮播功能( demo )，使用如下调用方式&quot;&gt;&lt;/a&gt;&lt;strong&gt;3. 使用构造函数创建对象的方式完成轮播功能( demo )，使用如下调用方式&lt;/strong&gt;&lt;/h4&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Carousel&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;$node&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//todo...&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Carousel.prototype = &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//todo ..&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; $node1 = $(&lt;span class=&quot;string&quot;&gt;&#39;.ct&#39;&lt;/span&gt;).eq(&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; $node2 = $(&lt;span class=&quot;string&quot;&gt;&#39;.ct&#39;&lt;/span&gt;).eq(&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; carousel1 = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; Carousel($node1);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; carousel2 = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; Carousel($node2);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h4 id=&quot;4-使使用构造函数创建对象的方式实现-Tab-切换功能&quot;&gt;&lt;a href=&quot;#4-使使用构造函数创建对象的方式实现-Tab-切换功能&quot; class=&quot;headerlink&quot; title=&quot;4. 使使用构造函数创建对象的方式实现 Tab 切换功能&quot;&gt;&lt;/a&gt;&lt;strong&gt;4. 使使用构造函数创建对象的方式实现 Tab 切换功能&lt;/strong&gt;&lt;/h4&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;h3 id=&quot;【知识点】&quot;&gt;&lt;a href=&quot;#【知识点】&quot; class=&quot;headerlink&quot; title=&quot;【知识点】&quot;&gt;&lt;/a&gt;【知识点】&lt;/h3&gt;&lt;/blockquote&gt;
+&lt;h4 id=&quot;1-OOP-指什么？有哪些特性&quot;&gt;&lt;a href=&quot;
+    
+    </summary>
+    
+      <category term="编程学习" scheme="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="前端基础" scheme="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/"/>
+    
+    
+      <category term="JavaScript" scheme="http://licao404.com/tags/JavaScript/"/>
+    
+      <category term="OOP" scheme="http://licao404.com/tags/OOP/"/>
+    
+  </entry>
   
   <entry>
     <title>了解 HTTP</title>
@@ -353,13 +417,13 @@
     
       <category term="前后端" scheme="http://licao404.com/tags/%E5%89%8D%E5%90%8E%E7%AB%AF/"/>
     
+      <category term="php" scheme="http://licao404.com/tags/php/"/>
+    
       <category term="Web服务器" scheme="http://licao404.com/tags/Web%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
       <category term="HTTP" scheme="http://licao404.com/tags/HTTP/"/>
     
       <category term="TCP/IP" scheme="http://licao404.com/tags/TCP-IP/"/>
-    
-      <category term="php" scheme="http://licao404.com/tags/php/"/>
     
       <category term="Apache" scheme="http://licao404.com/tags/Apache/"/>
     
@@ -1690,9 +1754,9 @@
     
       <category term="前后端" scheme="http://licao404.com/tags/%E5%89%8D%E5%90%8E%E7%AB%AF/"/>
     
-      <category term="Web服务器" scheme="http://licao404.com/tags/Web%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-    
       <category term="php" scheme="http://licao404.com/tags/php/"/>
+    
+      <category term="Web服务器" scheme="http://licao404.com/tags/Web%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
       <category term="Apache" scheme="http://licao404.com/tags/Apache/"/>
     
@@ -2267,36 +2331,6 @@
       <category term="杂谈" scheme="http://licao404.com/tags/%E6%9D%82%E8%B0%88/"/>
     
       <category term="心语" scheme="http://licao404.com/tags/%E5%BF%83%E8%AF%AD/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>鲜花烂漫时</title>
-    <link href="http://licao404.com/2016/03/20/%E9%B2%9C%E8%8A%B1%E7%83%82%E6%BC%AB%E6%97%B6/"/>
-    <id>http://licao404.com/2016/03/20/鲜花烂漫时/</id>
-    <published>2016-03-19T16:00:08.000Z</published>
-    <updated>2016-04-02T14:25:41.245Z</updated>
-    
-    <content type="html">&lt;div class=&quot;group-picture&quot;&gt;&lt;div class=&quot;group-picture-container&quot;&gt;&lt;div class=&quot;group-picture-row&quot;&gt;&lt;div class=&quot;group-picture-column&quot; style=&quot;width: 100%;&quot;&gt;&lt;img src=&quot;http://7xrvo9.com1.z0.glb.clouddn.com/0320%2F2016-03-20%2012.19.57%201.jpg&quot; alt=&quot;&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;group-picture-row&quot;&gt;&lt;div class=&quot;group-picture-column&quot; style=&quot;width: 50%;&quot;&gt;&lt;img src=&quot;http://7xrvo9.com1.z0.glb.clouddn.com/0320%2F2016-03-20%2012.24.13%201.jpg&quot; alt=&quot;&quot;&gt;&lt;/div&gt;&lt;div class=&quot;group-picture-column&quot; style=&quot;width: 50%;&quot;&gt;&lt;img src=&quot;http://7xrvo9.com1.z0.glb.clouddn.com/0320%2F2016-03-20%2012.28.55%201.jpg&quot; alt=&quot;&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;hr&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;div class=&quot;group-picture&quot;&gt;&lt;div class=&quot;group-picture-container&quot;&gt;&lt;div class=&quot;group-picture-row&quot;&gt;&lt;div class=&quot;group-picture-column&quot; style=&quot;widt
-    
-    </summary>
-    
-      <category term="随想" scheme="http://licao404.com/categories/%E9%9A%8F%E6%83%B3/"/>
-    
-      <category term="摄影" scheme="http://licao404.com/categories/%E9%9A%8F%E6%83%B3/%E6%91%84%E5%BD%B1/"/>
-    
-    
-      <category term="杂谈" scheme="http://licao404.com/tags/%E6%9D%82%E8%B0%88/"/>
-    
-      <category term="看看" scheme="http://licao404.com/tags/%E7%9C%8B%E7%9C%8B/"/>
-    
-      <category term="随手拍" scheme="http://licao404.com/tags/%E9%9A%8F%E6%89%8B%E6%8B%8D/"/>
     
   </entry>
   
