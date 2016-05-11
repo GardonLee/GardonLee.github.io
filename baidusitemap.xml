@@ -3,6 +3,31 @@
 
     
   <url>
+    <loc>http://licao404.com/2016/05/10/OOP-For-JavaScript/</loc>
+    <lastmod>2016-05-11T10:38:42.874Z</lastmod>
+    <data>
+        <display>
+        <title>OOP For JavaScript</title>
+        <pubTime>2016-05-10T14:08:53.000Z</pubTime>
+        
+        <tag>JavaScript </tag>
+         
+        <tag>OOP </tag>
+         
+         
+           
+             
+              <breadCrumb title="编程学习" url="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/"/>
+          
+             
+              <breadCrumb title="前端基础" url="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://licao404.com/2016/05/07/%E4%BA%86%E8%A7%A3-HTTP/</loc>
     <lastmod>2016-05-09T18:05:28.633Z</lastmod>
     <data>
@@ -41,13 +66,13 @@
         
         <tag>前后端 </tag>
          
+        <tag>php </tag>
+         
         <tag>Web服务器 </tag>
          
         <tag>HTTP </tag>
          
         <tag>TCP/IP </tag>
-         
-        <tag>php </tag>
          
         <tag>Apache </tag>
          
@@ -74,9 +99,9 @@
         
         <tag>前后端 </tag>
          
-        <tag>Web服务器 </tag>
-         
         <tag>php </tag>
+         
+        <tag>Web服务器 </tag>
          
         <tag>Apache </tag>
          
