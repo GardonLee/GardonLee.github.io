@@ -3,6 +3,66 @@
 
     
   <url>
+    <loc>http://licao404.com/2016/05/12/%E3%80%90%E8%BD%AC%E3%80%91%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E4%B8%AD%E7%9A%84%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81/</loc>
+    <lastmod>2016-05-12T01:30:30.733Z</lastmod>
+    <data>
+        <display>
+        <title>【转】前端开发中的字符编码</title>
+        <pubTime>2016-05-12T00:28:36.000Z</pubTime>
+        
+        <tag>转载 </tag>
+         
+        <tag>干货 </tag>
+         
+        <tag>字符编码 </tag>
+         
+         
+           
+             
+              <breadCrumb title="编程学习" url="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/"/>
+          
+             
+              <breadCrumb title="前端高级" url="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/%E5%89%8D%E7%AB%AF%E9%AB%98%E7%BA%A7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://licao404.com/2016/05/07/%E4%BB%8EURI%E5%88%B0%E9%A1%B5%E9%9D%A2%E5%91%88%E7%8E%B0/</loc>
+    <lastmod>2016-05-12T01:20:54.579Z</lastmod>
+    <data>
+        <display>
+        <title>从 URI 到页面呈现</title>
+        <pubTime>2016-05-07T03:35:26.000Z</pubTime>
+        
+        <tag>前后端 </tag>
+         
+        <tag>php </tag>
+         
+        <tag>Web服务器 </tag>
+         
+        <tag>Apache </tag>
+         
+        <tag>HTTP </tag>
+         
+        <tag>TCP/IP </tag>
+         
+         
+           
+             
+              <breadCrumb title="计算机基础" url="http://licao404.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/"/>
+          
+             
+              <breadCrumb title="计算机网络" url="http://licao404.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://licao404.com/2016/05/10/OOP-For-JavaScript/</loc>
     <lastmod>2016-05-11T14:58:11.300Z</lastmod>
     <data>
@@ -42,39 +102,6 @@
         <tag>HTTP </tag>
          
         <tag>TCP/IP </tag>
-         
-         
-           
-             
-              <breadCrumb title="计算机基础" url="http://licao404.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/"/>
-          
-             
-              <breadCrumb title="计算机网络" url="http://licao404.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://licao404.com/2016/05/07/%E4%BB%8EURI%E5%88%B0%E9%A1%B5%E9%9D%A2%E5%91%88%E7%8E%B0/</loc>
-    <lastmod>2016-05-08T12:18:29.431Z</lastmod>
-    <data>
-        <display>
-        <title>从 URI 到页面呈现</title>
-        <pubTime>2016-05-07T03:35:26.000Z</pubTime>
-        
-        <tag>前后端 </tag>
-         
-        <tag>php </tag>
-         
-        <tag>Web服务器 </tag>
-         
-        <tag>HTTP </tag>
-         
-        <tag>TCP/IP </tag>
-         
-        <tag>Apache </tag>
          
          
            
