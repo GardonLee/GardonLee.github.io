@@ -3,6 +3,35 @@
 
     
   <url>
+    <loc>http://licao404.com/2016/05/07/%E4%BA%86%E8%A7%A3-HTTP/</loc>
+    <lastmod>2016-05-13T06:58:44.102Z</lastmod>
+    <data>
+        <display>
+        <title>了解 HTTP</title>
+        <pubTime>2016-05-07T07:03:37.000Z</pubTime>
+        
+        <tag>前后端 </tag>
+         
+        <tag>Web服务器 </tag>
+         
+        <tag>HTTP </tag>
+         
+        <tag>TCP/IP </tag>
+         
+         
+           
+             
+              <breadCrumb title="计算机基础" url="http://licao404.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/"/>
+          
+             
+              <breadCrumb title="计算机网络" url="http://licao404.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://licao404.com/2016/05/12/%E5%8E%9F%E5%9E%8B%E9%93%BE/</loc>
     <lastmod>2016-05-13T00:57:10.554Z</lastmod>
     <data>
@@ -94,35 +123,6 @@
         <tag>Web服务器 </tag>
          
         <tag>Apache </tag>
-         
-        <tag>HTTP </tag>
-         
-        <tag>TCP/IP </tag>
-         
-         
-           
-             
-              <breadCrumb title="计算机基础" url="http://licao404.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/"/>
-          
-             
-              <breadCrumb title="计算机网络" url="http://licao404.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://licao404.com/2016/05/07/%E4%BA%86%E8%A7%A3-HTTP/</loc>
-    <lastmod>2016-05-09T18:05:28.633Z</lastmod>
-    <data>
-        <display>
-        <title>了解 HTTP</title>
-        <pubTime>2016-05-07T07:03:37.000Z</pubTime>
-        
-        <tag>前后端 </tag>
-         
-        <tag>Web服务器 </tag>
          
         <tag>HTTP </tag>
          
