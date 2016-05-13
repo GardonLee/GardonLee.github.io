@@ -106,17 +106,17 @@
 
 
 
-<meta name="description" content="1. 有如下代码，解释Person、 prototype、proto、p、constructor之间的关联。12345678function Person(name)&amp;#123;    this.name = name;&amp;#125;Person.prototype.sayName = function()&amp;#123;    console.log(&apos;My name is :&apos; + this.nam">
+<meta name="description" content="1. 解释Person、 prototype、proto、p、constructor之间的关联。12345678function Person(name)&amp;#123;    this.name = name;&amp;#125;Person.prototype.sayName = function()&amp;#123;    console.log(&apos;My name is :&apos; + this.name);&amp;#1">
 <meta property="og:type" content="article">
 <meta property="og:title" content="说清楚JavaScript的原型链">
 <meta property="og:url" content="http://licao404.com/2016/05/12/原型链/index.html">
 <meta property="og:site_name" content="蓝岚爱肉肉">
-<meta property="og:description" content="1. 有如下代码，解释Person、 prototype、proto、p、constructor之间的关联。12345678function Person(name)&amp;#123;    this.name = name;&amp;#125;Person.prototype.sayName = function()&amp;#123;    console.log(&apos;My name is :&apos; + this.nam">
+<meta property="og:description" content="1. 解释Person、 prototype、proto、p、constructor之间的关联。12345678function Person(name)&amp;#123;    this.name = name;&amp;#125;Person.prototype.sayName = function()&amp;#123;    console.log(&apos;My name is :&apos; + this.name);&amp;#1">
 <meta property="og:image" content="http://7xr868.com1.z0.glb.clouddn.com/task36/Person%E5%8E%9F%E5%9E%8B%E5%9B%BE.png">
-<meta property="og:updated_time" content="2016-05-12T09:56:44.382Z">
+<meta property="og:updated_time" content="2016-05-13T00:56:17.156Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="说清楚JavaScript的原型链">
-<meta name="twitter:description" content="1. 有如下代码，解释Person、 prototype、proto、p、constructor之间的关联。12345678function Person(name)&amp;#123;    this.name = name;&amp;#125;Person.prototype.sayName = function()&amp;#123;    console.log(&apos;My name is :&apos; + this.nam">
+<meta name="twitter:description" content="1. 解释Person、 prototype、proto、p、constructor之间的关联。12345678function Person(name)&amp;#123;    this.name = name;&amp;#125;Person.prototype.sayName = function()&amp;#123;    console.log(&apos;My name is :&apos; + this.name);&amp;#1">
 <meta name="twitter:image" content="http://7xr868.com1.z0.glb.clouddn.com/task36/Person%E5%8E%9F%E5%9E%8B%E5%9B%BE.png">
 
 
@@ -577,7 +577,7 @@
       
 
       
-        <h4 id="1-有如下代码，解释Person、-prototype、proto、p、constructor之间的关联。"><a href="#1-有如下代码，解释Person、-prototype、proto、p、constructor之间的关联。" class="headerlink" title="1. 有如下代码，解释Person、 prototype、proto、p、constructor之间的关联。"></a><strong>1. 有如下代码，解释Person、 prototype、<strong>proto</strong>、p、constructor之间的关联。</strong></h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">name</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.name = name;</span><br><span class="line">&#125;</span><br><span class="line">Person.prototype.sayName = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'My name is :'</span> + <span class="keyword">this</span>.name);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> p = <span class="keyword">new</span> Person(<span class="string">"Gardon"</span>)</span><br><span class="line">p.sayName();</span><br></pre></td></tr></table></figure>
+        <h4 id="1-解释Person、-prototype、proto、p、constructor之间的关联。"><a href="#1-解释Person、-prototype、proto、p、constructor之间的关联。" class="headerlink" title="1. 解释Person、 prototype、proto、p、constructor之间的关联。"></a><strong>1. 解释Person、 prototype、<strong>proto</strong>、p、constructor之间的关联。</strong></h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">name</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.name = name;</span><br><span class="line">&#125;</span><br><span class="line">Person.prototype.sayName = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'My name is :'</span> + <span class="keyword">this</span>.name);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> p = <span class="keyword">new</span> Person(<span class="string">"Gardon"</span>)</span><br><span class="line">p.sayName();</span><br></pre></td></tr></table></figure>
 <a id="more"></a>
 <ul>
 <li>这里首先创建了一个构造函数 <code>Person</code>，每个函数都有一个 <strong>prototype</strong> 属性，指向它的原型对象；</li>
@@ -852,7 +852,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-有如下代码，解释Person、-prototype、proto、p、constructor之间的关联。"><span class="nav-number">1.</span> <span class="nav-text">1. 有如下代码，解释Person、 prototype、proto、p、constructor之间的关联。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-上例中，对对象-p-可以这样调用-p-toString-。toString是哪里来的-画出原型图-并解释什么是原型链。"><span class="nav-number">2.</span> <span class="nav-text">2. 上例中，对对象 p 可以这样调用 p.toString()。toString是哪里来的? 画出原型图? 并解释什么是原型链。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-对-String-做扩展，实现如下方式获取字符串中频率最高的字符"><span class="nav-number">3.</span> <span class="nav-text">3. 对 String 做扩展，实现如下方式获取字符串中频率最高的字符</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-instanceOf-有什么作用？内部逻辑是如何实现的？"><span class="nav-number">4.</span> <span class="nav-text">4. instanceOf 有什么作用？内部逻辑是如何实现的？</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-解释Person、-prototype、proto、p、constructor之间的关联。"><span class="nav-number">1.</span> <span class="nav-text">1. 解释Person、 prototype、proto、p、constructor之间的关联。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-上例中，对对象-p-可以这样调用-p-toString-。toString是哪里来的-画出原型图-并解释什么是原型链。"><span class="nav-number">2.</span> <span class="nav-text">2. 上例中，对对象 p 可以这样调用 p.toString()。toString是哪里来的? 画出原型图? 并解释什么是原型链。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-对-String-做扩展，实现如下方式获取字符串中频率最高的字符"><span class="nav-number">3.</span> <span class="nav-text">3. 对 String 做扩展，实现如下方式获取字符串中频率最高的字符</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-instanceOf-有什么作用？内部逻辑是如何实现的？"><span class="nav-number">4.</span> <span class="nav-text">4. instanceOf 有什么作用？内部逻辑是如何实现的？</span></a></li></ol></div>
             
           </div>
         </section>
