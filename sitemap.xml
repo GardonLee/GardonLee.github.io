@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://licao404.com/watch.json</loc>
+    
+    <lastmod>2016-05-13T00:47:31.413Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://licao404.com/start.js</loc>
     
     <lastmod>2016-05-13T00:45:14.483Z</lastmod>
