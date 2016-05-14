@@ -83,9 +83,9 @@
 
 
 
-<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
   <meta name="keywords" content="JavaScript," />
@@ -99,7 +99,7 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
 
 
 
@@ -113,7 +113,7 @@
 <meta property="og:site_name" content="蓝岚爱肉肉">
 <meta property="og:description" content="还记得这张原型图么（没见过 or 忘了的请戳《OOP For JavaScript》和《说清楚JavaScript的原型链》这两篇博文）？深入学习了JavaScript原型和原型链的的概念和原理后，我们内心会隐隐有种道不明的感觉，如果你学习过其他面向对象语言，你会不自觉发现这是种多么熟悉的感觉啊——这不就像是继承么？此文就将内心的感觉整理出来，作为JavaScript语言的一个核心概念来学习。">
 <meta property="og:image" content="http://7xr868.com1.z0.glb.clouddn.com/task36/Person%E5%8E%9F%E5%9E%8B%E5%9B%BE.png">
-<meta property="og:updated_time" content="2016-05-14T15:49:36.524Z">
+<meta property="og:updated_time" content="2016-05-14T16:15:01.476Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="原型链后续之JavaScript的继承">
 <meta name="twitter:description" content="还记得这张原型图么（没见过 or 忘了的请戳《OOP For JavaScript》和《说清楚JavaScript的原型链》这两篇博文）？深入学习了JavaScript原型和原型链的的概念和原理后，我们内心会隐隐有种道不明的感觉，如果你学习过其他面向对象语言，你会不自觉发现这是种多么熟悉的感觉啊——这不就像是继承么？此文就将内心的感觉整理出来，作为JavaScript语言的一个核心概念来学习。">
@@ -121,9 +121,10 @@
 
 
 
-<script type="text/javascript" id="hexo.configuration">
+<script type="text/javascript" id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
+    root: '/',
     scheme: 'Pisces',
     sidebar: {"position":"left","display":"post"},
     fancybox: true,
@@ -131,6 +132,13 @@
     duoshuo: {
       userId: 6261706695056033000,
       author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     }
   };
 </script>
@@ -434,26 +442,18 @@
   
     <div class="site-search">
       
-  
-  <div class="algolia-popup popup">
-    <div class="algolia-search">
-      <div class="algolia-search-input-icon">
-        <i class="fa fa-search"></i>
-      </div>
-      <div class="algolia-search-input" id="algolia-search-input"></div>
-    </div>
+  <form class="site-search-form">
+  <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
+</form>
 
-    <div class="algolia-results">
-      <div id="algolia-stats"></div>
-      <div id="algolia-hits"></div>
-      <div id="algolia-pagination"></div>
-    </div>
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
 
-    <span class="popup-btn-close">
-      <i class="fa fa-times-circle"></i>
-    </span>
-  </div>
-
+  _st('install', '7PcwcK-5yqhMrUDyc-y-','2.0.0');
+</script>
 
 
 
@@ -472,7 +472,6 @@
   <div id="posts" class="posts-expand">
     
 
-  
   
 
   
@@ -593,10 +592,10 @@
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Human</span>(<span class="params">name,age</span>)</span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.name = name,</span><br><span class="line">        <span class="keyword">this</span>.age = age,</span><br><span class="line">        <span class="keyword">this</span>.selfIntro = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="string">"I'm "</span> + name);</span><br><span class="line">    &#125;;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> people1 = <span class="keyword">new</span> Human(<span class="string">"Gardon"</span>,<span class="number">20</span>);</span><br><span class="line"><span class="keyword">var</span> people2 = <span class="keyword">new</span> Human(<span class="string">"John"</span>,<span class="number">18</span>);</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>原型模式</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">creatHuman</span>(<span class="params"></span>)</span>&#123;&#125;;</span><br><span class="line">creatHuman.prototype.name = <span class="string">"Gardon"</span>,</span><br><span class="line">creatHuman.prototype.age = <span class="number">20</span>,</span><br><span class="line">creatHuman.prototype.selfIntro = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">"I'm "</span> + <span class="keyword">this</span>.name);</span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">var</span> people1 = <span class="keyword">new</span> creatHuman();</span><br><span class="line"><span class="keyword">var</span> people2 = <span class="keyword">new</span> creatHuman();</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Human</span>(<span class="params"></span>)</span>&#123;&#125;;</span><br><span class="line">Human.prototype.name = <span class="string">"Gardon"</span>,</span><br><span class="line">Human.prototype.age = <span class="number">20</span>,</span><br><span class="line">Human.prototype.selfIntro = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">"I'm "</span> + <span class="keyword">this</span>.name);</span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">var</span> people1 = <span class="keyword">new</span> Human();</span><br><span class="line"><span class="keyword">var</span> people2 = <span class="keyword">new</span> Human();</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>构造函数模式与原型模式结合 ， 目前JavaScript中使用最广泛，认同度最高的一种创建自定义类型的方法：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">creatHuman</span>(<span class="params">name,age</span>)</span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.name = name,</span><br><span class="line">        <span class="keyword">this</span>.age = age</span><br><span class="line">&#125;</span><br><span class="line">creatHuman.prototype.selfIntro = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">"I'm "</span> + <span class="keyword">this</span>.name);</span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">var</span> people1 = <span class="keyword">new</span> creatHuman(<span class="string">"Gardon"</span>,<span class="number">20</span>);</span><br><span class="line"><span class="keyword">var</span> people2 = <span class="keyword">new</span> creatHuman(<span class="string">"John"</span>,<span class="number">18</span>);</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Human</span>(<span class="params">name,age</span>)</span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.name = name,</span><br><span class="line">        <span class="keyword">this</span>.age = age</span><br><span class="line">&#125;</span><br><span class="line">Human.prototype.selfIntro = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">"I'm "</span> + <span class="keyword">this</span>.name);</span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">var</span> people1 = <span class="keyword">new</span> Human(<span class="string">"Gardon"</span>,<span class="number">20</span>);</span><br><span class="line"><span class="keyword">var</span> people2 = <span class="keyword">new</span> Human(<span class="string">"John"</span>,<span class="number">18</span>);</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>……</p>
 </li>
@@ -610,7 +609,7 @@
 </li>
 </ul>
 <h4 id="Object-create-有什么作用？兼容性如何？如何使用？"><a href="#Object-create-有什么作用？兼容性如何？如何使用？" class="headerlink" title="Object.create 有什么作用？兼容性如何？如何使用？"></a><strong>Object.create 有什么作用？兼容性如何？如何使用？</strong></h4><p>ECMAScript5 通过新增<code>Object.create()</code> 方法创建一个拥有指定原型和若干个指定属性的对象，规范了原型式继承；<br>这个方法接受两个参数，第一个是用作新对象原型的对象、第二个是一个为新对象定义额外属性的对象，是个可选值；</p>
-<p>好吧，这样解释确实有点晦涩，来个栗子加个原型图说明下：</p>
+<p>好吧，这样解释确实有点晦涩，继续来个 <code>Human</code> 的栗子加个原型图说明下：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Human</span>(<span class="params">name,age</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.name = name;</span><br><span class="line">    <span class="keyword">this</span>.age = age;</span><br><span class="line">&#125;</span><br><span class="line">Human.prototype.selfIntro = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">"I'm "</span> + <span class="keyword">this</span>.name);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">GreatMan</span>(<span class="params">trait</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.trait = trait;</span><br><span class="line">    Human.call(<span class="keyword">this</span>);<span class="comment">//重新定义Human函数的运行上下文为当前GreatMan的上下文</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <hr>
 
       
@@ -655,11 +654,12 @@
       
     </div>
 
+
     <footer class="post-footer">
       
         <div class="post-tags">
           
-            <a href="/tags/JavaScript/" rel="tag">#JavaScript</a>
+            <a href="/tags/JavaScript/" rel="tag"># JavaScript</a>
           
         </div>
       
@@ -673,6 +673,8 @@
               </a>
             
           </div>
+
+          <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
@@ -860,12 +862,15 @@
       
         <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
           <div class="post-toc">
+
             
               
             
+
             
               <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#继承有什么作用"><span class="nav-number">1.</span> <span class="nav-text">继承有什么作用? </span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#有几种常见创建对象的方式-举例说明"><span class="nav-number">2.</span> <span class="nav-text">有几种常见创建对象的方式? 举例说明?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#下面两种写法有什么区别"><span class="nav-number">3.</span> <span class="nav-text">下面两种写法有什么区别?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Object-create-有什么作用？兼容性如何？如何使用？"><span class="nav-number">4.</span> <span class="nav-text">Object.create 有什么作用？兼容性如何？如何使用？</span></a></li></ol></div>
             
+
           </div>
         </section>
       
@@ -988,32 +993,32 @@
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
-
-
-
-  
-  
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
 
 
 
   
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
 
 
 
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
 
 
 
@@ -1040,9 +1045,10 @@
     
       
       <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
-      <script src="/js/src/hook-duoshuo.js"></script>
+      <script src="/js/src/hook-duoshuo.js?v=5.1.0"></script>
     
   
+
 
 
 
@@ -1156,116 +1162,6 @@
 
   
   
-
-  
-  
-  <link rel="stylesheet" href="">
-
-  
-  <script type="text/html" id="algolia-hit-template">
-    <a href="/{{ path }}" class="algolia-hit-item-link">
-      {{{ _highlightResult.title.value }}}
-    </a>
-  </script>
-  <script type="text/html" id="algolia-stats-template">
-    {{ nbHits }} results found in {{ processingTimeMS }}ms by
-    <span class="algolia-powered">
-      <img src="/images/algolia_logo.svg" alt="Algolia" />
-    </span>
-    <hr />
-  </script>
-  <script type="text/html" id="algolia-no-results-template">
-    <div id="no-results-message">
-      <p>We didn't find any results for the search <em>"{{query}}"</em>.</p>
-    </div>
-  </script>
-  
-
-  
-  
-  <script src="/vendors/algolia-instant-search/instantsearch.min.js"></script>
-
-  <script>
-    $(document).ready(function () {
-      var search = instantsearch({
-        appId: '',
-        apiKey: '',
-        indexName: '',
-        searchFunction: function (helper) {
-          if ( $('#algolia-search-input').find('input').val() !== '' ) {
-            helper.search();
-          }
-        }
-      });
-
-      // Registering Widgets
-      [
-        instantsearch.widgets.searchBox({
-          container: '#algolia-search-input',
-          placeholder: 'Search for Posts'
-        }),
-
-        instantsearch.widgets.hits({
-          container: '#algolia-hits',
-          hitsPerPage: 10,
-          templates: {
-            item: getTemplate('hit'),
-            empty: getTemplate('no-results')
-          },
-          cssClasses: {
-            item: 'algolia-hit-item'
-          }
-        }),
-
-        instantsearch.widgets.stats({
-          container: '#algolia-stats',
-          templates: {
-            body: getTemplate('stats')
-          }
-        }),
-
-        instantsearch.widgets.pagination({
-          container: '#algolia-pagination',
-          scrollTo: false,
-          showFirstLast: false,
-          labels: {
-            first: '<i class="fa fa-angle-double-left"></i>',
-            last: '<i class="fa fa-angle-double-right"></i>',
-            previous: '<i class="fa fa-angle-left"></i>',
-            next: '<i class="fa fa-angle-right"></i>'
-          },
-          cssClasses: {
-            root: 'pagination',
-            item: 'pagination-item',
-            link: 'page-number',
-            active: 'current',
-            disabled: 'disabled-item'
-          }
-        })
-      ].forEach(search.addWidget, search);
-
-      search.start();
-
-      function getTemplate(name) {
-        return document.querySelector('#algolia-' + name + '-template').innerHTML;
-      }
-
-      $('.popup-trigger').on('click', function(e) {
-        e.stopPropagation();
-        $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
-        $('.popup').toggle();
-        $('#algolia-search-input').find('input').focus();
-      });
-
-      $('.popup-btn-close').click(function(){
-        $('.popup').hide();
-        $(".popoverlay").remove();
-        $('body').css('overflow', '');
-      });
-
-    });
-  </script>
-
 
 
 </body>

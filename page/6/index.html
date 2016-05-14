@@ -83,9 +83,9 @@
 
 
 
-<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
   <meta name="keywords" content="李操,南京,前端,前端开发,学习,JavaScript,html,衡阳,CSS" />
@@ -99,7 +99,7 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
 
 
 
@@ -118,9 +118,10 @@
 
 
 
-<script type="text/javascript" id="hexo.configuration">
+<script type="text/javascript" id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
+    root: '/',
     scheme: 'Pisces',
     sidebar: {"position":"left","display":"post"},
     fancybox: true,
@@ -128,6 +129,13 @@
     duoshuo: {
       userId: 6261706695056033000,
       author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     }
   };
 </script>
@@ -433,26 +441,18 @@
   
     <div class="site-search">
       
-  
-  <div class="algolia-popup popup">
-    <div class="algolia-search">
-      <div class="algolia-search-input-icon">
-        <i class="fa fa-search"></i>
-      </div>
-      <div class="algolia-search-input" id="algolia-search-input"></div>
-    </div>
+  <form class="site-search-form">
+  <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
+</form>
 
-    <div class="algolia-results">
-      <div id="algolia-stats"></div>
-      <div id="algolia-hits"></div>
-      <div id="algolia-pagination"></div>
-    </div>
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
 
-    <span class="popup-btn-close">
-      <i class="fa fa-times-circle"></i>
-    </span>
-  </div>
-
+  _st('install', '7PcwcK-5yqhMrUDyc-y-','2.0.0');
+</script>
 
 
 
@@ -471,7 +471,6 @@
     
       
 
-  
   
 
   
@@ -600,6 +599,7 @@
       
     </div>
 
+
     <footer class="post-footer">
       
 
@@ -616,7 +616,6 @@
     
       
 
-  
   
 
   
@@ -755,6 +754,7 @@
       
     </div>
 
+
     <footer class="post-footer">
       
 
@@ -771,7 +771,6 @@
     
       
 
-  
   
 
   
@@ -900,6 +899,7 @@
       
     </div>
 
+
     <footer class="post-footer">
       
 
@@ -916,7 +916,6 @@
     
       
 
-  
   
 
   
@@ -1043,6 +1042,7 @@
       
     </div>
 
+
     <footer class="post-footer">
       
 
@@ -1059,7 +1059,6 @@
     
       
 
-  
   
 
   
@@ -1188,6 +1187,7 @@
     <div>
       
     </div>
+
 
     <footer class="post-footer">
       
@@ -1476,28 +1476,28 @@
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
-
-
-
-  
-  
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
 
 
 
   
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.0"></script>
+
+
+
+  
 
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
 
 
 
@@ -1524,9 +1524,10 @@
     
       
       <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
-      <script src="/js/src/hook-duoshuo.js"></script>
+      <script src="/js/src/hook-duoshuo.js?v=5.1.0"></script>
     
   
+
 
 
 
@@ -1640,116 +1641,6 @@
 
   
   
-
-  
-  
-  <link rel="stylesheet" href="">
-
-  
-  <script type="text/html" id="algolia-hit-template">
-    <a href="/{{ path }}" class="algolia-hit-item-link">
-      {{{ _highlightResult.title.value }}}
-    </a>
-  </script>
-  <script type="text/html" id="algolia-stats-template">
-    {{ nbHits }} results found in {{ processingTimeMS }}ms by
-    <span class="algolia-powered">
-      <img src="/images/algolia_logo.svg" alt="Algolia" />
-    </span>
-    <hr />
-  </script>
-  <script type="text/html" id="algolia-no-results-template">
-    <div id="no-results-message">
-      <p>We didn't find any results for the search <em>"{{query}}"</em>.</p>
-    </div>
-  </script>
-  
-
-  
-  
-  <script src="/vendors/algolia-instant-search/instantsearch.min.js"></script>
-
-  <script>
-    $(document).ready(function () {
-      var search = instantsearch({
-        appId: '',
-        apiKey: '',
-        indexName: '',
-        searchFunction: function (helper) {
-          if ( $('#algolia-search-input').find('input').val() !== '' ) {
-            helper.search();
-          }
-        }
-      });
-
-      // Registering Widgets
-      [
-        instantsearch.widgets.searchBox({
-          container: '#algolia-search-input',
-          placeholder: 'Search for Posts'
-        }),
-
-        instantsearch.widgets.hits({
-          container: '#algolia-hits',
-          hitsPerPage: 10,
-          templates: {
-            item: getTemplate('hit'),
-            empty: getTemplate('no-results')
-          },
-          cssClasses: {
-            item: 'algolia-hit-item'
-          }
-        }),
-
-        instantsearch.widgets.stats({
-          container: '#algolia-stats',
-          templates: {
-            body: getTemplate('stats')
-          }
-        }),
-
-        instantsearch.widgets.pagination({
-          container: '#algolia-pagination',
-          scrollTo: false,
-          showFirstLast: false,
-          labels: {
-            first: '<i class="fa fa-angle-double-left"></i>',
-            last: '<i class="fa fa-angle-double-right"></i>',
-            previous: '<i class="fa fa-angle-left"></i>',
-            next: '<i class="fa fa-angle-right"></i>'
-          },
-          cssClasses: {
-            root: 'pagination',
-            item: 'pagination-item',
-            link: 'page-number',
-            active: 'current',
-            disabled: 'disabled-item'
-          }
-        })
-      ].forEach(search.addWidget, search);
-
-      search.start();
-
-      function getTemplate(name) {
-        return document.querySelector('#algolia-' + name + '-template').innerHTML;
-      }
-
-      $('.popup-trigger').on('click', function(e) {
-        e.stopPropagation();
-        $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
-        $('.popup').toggle();
-        $('#algolia-search-input').find('input').focus();
-      });
-
-      $('.popup-btn-close').click(function(){
-        $('.popup').hide();
-        $(".popoverlay").remove();
-        $('body').css('overflow', '');
-      });
-
-    });
-  </script>
-
 
 
 </body>

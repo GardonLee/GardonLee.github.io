@@ -83,9 +83,9 @@
 
 
 
-<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
   <meta name="keywords" content="CSS," />
@@ -99,7 +99,7 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
 
 
 
@@ -134,9 +134,10 @@ CSS Sprite又名CSS精灵，一种将零星的小图片合并成一张大图的�
 
 
 
-<script type="text/javascript" id="hexo.configuration">
+<script type="text/javascript" id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
+    root: '/',
     scheme: 'Pisces',
     sidebar: {"position":"left","display":"post"},
     fancybox: true,
@@ -144,6 +145,13 @@ CSS Sprite又名CSS精灵，一种将零星的小图片合并成一张大图的�
     duoshuo: {
       userId: 6261706695056033000,
       author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     }
   };
 </script>
@@ -447,26 +455,18 @@ CSS Sprite又名CSS精灵，一种将零星的小图片合并成一张大图的�
   
     <div class="site-search">
       
-  
-  <div class="algolia-popup popup">
-    <div class="algolia-search">
-      <div class="algolia-search-input-icon">
-        <i class="fa fa-search"></i>
-      </div>
-      <div class="algolia-search-input" id="algolia-search-input"></div>
-    </div>
+  <form class="site-search-form">
+  <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
+</form>
 
-    <div class="algolia-results">
-      <div id="algolia-stats"></div>
-      <div id="algolia-hits"></div>
-      <div id="algolia-pagination"></div>
-    </div>
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
 
-    <span class="popup-btn-close">
-      <i class="fa fa-times-circle"></i>
-    </span>
-  </div>
-
+  _st('install', '7PcwcK-5yqhMrUDyc-y-','2.0.0');
+</script>
 
 
 
@@ -485,7 +485,6 @@ CSS Sprite又名CSS精灵，一种将零星的小图片合并成一张大图的�
   <div id="posts" class="posts-expand">
     
 
-  
   
 
   
@@ -709,11 +708,12 @@ CSS Sprite又名CSS精灵，一种将零星的小图片合并成一张大图的�
       
     </div>
 
+
     <footer class="post-footer">
       
         <div class="post-tags">
           
-            <a href="/tags/CSS/" rel="tag">#CSS</a>
+            <a href="/tags/CSS/" rel="tag"># CSS</a>
           
         </div>
       
@@ -727,6 +727,8 @@ CSS Sprite又名CSS精灵，一种将零星的小图片合并成一张大图的�
               </a>
             
           </div>
+
+          <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
@@ -918,12 +920,15 @@ CSS Sprite又名CSS精灵，一种将零星的小图片合并成一张大图的�
       
         <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
           <div class="post-toc">
+
             
               
             
+
             
               <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#【知识点】"><span class="nav-number">1.</span> <span class="nav-text">【知识点】</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-CSS-Sprite-雪碧图-指什么-有什么作用？"><span class="nav-number">1.1.</span> <span class="nav-text">1. CSS Sprite(雪碧图)指什么? 有什么作用？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-img标签和CSS背景使用图片在使用场景上有何区别"><span class="nav-number">1.2.</span> <span class="nav-text">2. img标签和CSS背景使用图片在使用场景上有何区别?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-title-和-alt属性分别有什么作用"><span class="nav-number">1.3.</span> <span class="nav-text">3. title 和 alt属性分别有什么作用?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-background-url-abc-png-0-0-no-repeat-这句话是什么意思"><span class="nav-number">1.4.</span> <span class="nav-text">4. background: url(abc.png) 0 0 no-repeat;这句话是什么意思</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-background-size有什么作用-兼容性如何-常用的值是"><span class="nav-number">1.5.</span> <span class="nav-text">5. background-size有什么作用? 兼容性如何? 常用的值是?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-如何让一个div水平居中？如何让图片水平居中"><span class="nav-number">1.6.</span> <span class="nav-text">6. 如何让一个div水平居中？如何让图片水平居中?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7-如何设置元素透明-兼容性？"><span class="nav-number">1.7.</span> <span class="nav-text">7. 如何设置元素透明? 兼容性？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#8-opacity-和-rgba都能设置透明，有什么区别"><span class="nav-number">1.8.</span> <span class="nav-text">8. opacity 和 rgba都能设置透明，有什么区别?</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#【代码】"><span class="nav-number">2.</span> <span class="nav-text">【代码】</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#task-9-1"><span class="nav-number">2.1.</span> <span class="nav-text">task-9-1</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#task-9-2"><span class="nav-number">2.2.</span> <span class="nav-text">task-9-2</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#task-9-3"><span class="nav-number">2.3.</span> <span class="nav-text">task-9-3</span></a></li></ol></li></ol></div>
             
+
           </div>
         </section>
       
@@ -1046,32 +1051,32 @@ CSS Sprite又名CSS精灵，一种将零星的小图片合并成一张大图的�
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
-
-
-
-  
-  
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
 
 
 
   
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
 
 
 
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
 
 
 
@@ -1098,9 +1103,10 @@ CSS Sprite又名CSS精灵，一种将零星的小图片合并成一张大图的�
     
       
       <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
-      <script src="/js/src/hook-duoshuo.js"></script>
+      <script src="/js/src/hook-duoshuo.js?v=5.1.0"></script>
     
   
+
 
 
 
@@ -1214,116 +1220,6 @@ CSS Sprite又名CSS精灵，一种将零星的小图片合并成一张大图的�
 
   
   
-
-  
-  
-  <link rel="stylesheet" href="">
-
-  
-  <script type="text/html" id="algolia-hit-template">
-    <a href="/{{ path }}" class="algolia-hit-item-link">
-      {{{ _highlightResult.title.value }}}
-    </a>
-  </script>
-  <script type="text/html" id="algolia-stats-template">
-    {{ nbHits }} results found in {{ processingTimeMS }}ms by
-    <span class="algolia-powered">
-      <img src="/images/algolia_logo.svg" alt="Algolia" />
-    </span>
-    <hr />
-  </script>
-  <script type="text/html" id="algolia-no-results-template">
-    <div id="no-results-message">
-      <p>We didn't find any results for the search <em>"{{query}}"</em>.</p>
-    </div>
-  </script>
-  
-
-  
-  
-  <script src="/vendors/algolia-instant-search/instantsearch.min.js"></script>
-
-  <script>
-    $(document).ready(function () {
-      var search = instantsearch({
-        appId: '',
-        apiKey: '',
-        indexName: '',
-        searchFunction: function (helper) {
-          if ( $('#algolia-search-input').find('input').val() !== '' ) {
-            helper.search();
-          }
-        }
-      });
-
-      // Registering Widgets
-      [
-        instantsearch.widgets.searchBox({
-          container: '#algolia-search-input',
-          placeholder: 'Search for Posts'
-        }),
-
-        instantsearch.widgets.hits({
-          container: '#algolia-hits',
-          hitsPerPage: 10,
-          templates: {
-            item: getTemplate('hit'),
-            empty: getTemplate('no-results')
-          },
-          cssClasses: {
-            item: 'algolia-hit-item'
-          }
-        }),
-
-        instantsearch.widgets.stats({
-          container: '#algolia-stats',
-          templates: {
-            body: getTemplate('stats')
-          }
-        }),
-
-        instantsearch.widgets.pagination({
-          container: '#algolia-pagination',
-          scrollTo: false,
-          showFirstLast: false,
-          labels: {
-            first: '<i class="fa fa-angle-double-left"></i>',
-            last: '<i class="fa fa-angle-double-right"></i>',
-            previous: '<i class="fa fa-angle-left"></i>',
-            next: '<i class="fa fa-angle-right"></i>'
-          },
-          cssClasses: {
-            root: 'pagination',
-            item: 'pagination-item',
-            link: 'page-number',
-            active: 'current',
-            disabled: 'disabled-item'
-          }
-        })
-      ].forEach(search.addWidget, search);
-
-      search.start();
-
-      function getTemplate(name) {
-        return document.querySelector('#algolia-' + name + '-template').innerHTML;
-      }
-
-      $('.popup-trigger').on('click', function(e) {
-        e.stopPropagation();
-        $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
-        $('.popup').toggle();
-        $('#algolia-search-input').find('input').focus();
-      });
-
-      $('.popup-btn-close').click(function(){
-        $('.popup').hide();
-        $(".popoverlay").remove();
-        $('body').css('overflow', '');
-      });
-
-    });
-  </script>
-
 
 
 </body>

@@ -83,9 +83,9 @@
 
 
 
-<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
   <meta name="keywords" content="Web服务器,前后端,HTTP,TCP/IP," />
@@ -99,7 +99,7 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
 
 
 
@@ -130,9 +130,10 @@ OSI（Open System Interconnection）七层模型是国际标准化组织（ISO�
 
 
 
-<script type="text/javascript" id="hexo.configuration">
+<script type="text/javascript" id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
+    root: '/',
     scheme: 'Pisces',
     sidebar: {"position":"left","display":"post"},
     fancybox: true,
@@ -140,6 +141,13 @@ OSI（Open System Interconnection）七层模型是国际标准化组织（ISO�
     duoshuo: {
       userId: 6261706695056033000,
       author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     }
   };
 </script>
@@ -443,26 +451,18 @@ OSI（Open System Interconnection）七层模型是国际标准化组织（ISO�
   
     <div class="site-search">
       
-  
-  <div class="algolia-popup popup">
-    <div class="algolia-search">
-      <div class="algolia-search-input-icon">
-        <i class="fa fa-search"></i>
-      </div>
-      <div class="algolia-search-input" id="algolia-search-input"></div>
-    </div>
+  <form class="site-search-form">
+  <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
+</form>
 
-    <div class="algolia-results">
-      <div id="algolia-stats"></div>
-      <div id="algolia-hits"></div>
-      <div id="algolia-pagination"></div>
-    </div>
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
 
-    <span class="popup-btn-close">
-      <i class="fa fa-times-circle"></i>
-    </span>
-  </div>
-
+  _st('install', '7PcwcK-5yqhMrUDyc-y-','2.0.0');
+</script>
 
 
 
@@ -481,7 +481,6 @@ OSI（Open System Interconnection）七层模型是国际标准化组织（ISO�
   <div id="posts" class="posts-expand">
     
 
-  
   
 
   
@@ -837,17 +836,18 @@ OSI（Open System Interconnection）七层模型是国际标准化组织（ISO�
       
     </div>
 
+
     <footer class="post-footer">
       
         <div class="post-tags">
           
-            <a href="/tags/Web服务器/" rel="tag">#Web服务器</a>
+            <a href="/tags/Web服务器/" rel="tag"># Web服务器</a>
           
-            <a href="/tags/前后端/" rel="tag">#前后端</a>
+            <a href="/tags/前后端/" rel="tag"># 前后端</a>
           
-            <a href="/tags/HTTP/" rel="tag">#HTTP</a>
+            <a href="/tags/HTTP/" rel="tag"># HTTP</a>
           
-            <a href="/tags/TCP-IP/" rel="tag">#TCP/IP</a>
+            <a href="/tags/TCP-IP/" rel="tag"># TCP/IP</a>
           
         </div>
       
@@ -861,6 +861,8 @@ OSI（Open System Interconnection）七层模型是国际标准化组织（ISO�
               </a>
             
           </div>
+
+          <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
@@ -1052,12 +1054,15 @@ OSI（Open System Interconnection）七层模型是国际标准化组织（ISO�
       
         <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
           <div class="post-toc">
+
             
               
             
+
             
               <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#OSI-七层模型指什么？"><span class="nav-number">1.</span> <span class="nav-text">OSI 七层模型指什么？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#HTTP-的工作原理是什么？"><span class="nav-number">2.</span> <span class="nav-text">HTTP 的工作原理是什么？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#URI-的格式是什么？常见的协议有哪些？"><span class="nav-number">3.</span> <span class="nav-text">URI 的格式是什么？常见的协议有哪些？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#HTTP-协议有几种和服务器交互的方法"><span class="nav-number">4.</span> <span class="nav-text">HTTP 协议有几种和服务器交互的方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#状态码-200，301，-304，403-404-500，503-分别代表什么意思"><span class="nav-number">5.</span> <span class="nav-text">状态码 200，301， 304，403, 404, 500，503 分别代表什么意思</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#报文有哪几部分组成？"><span class="nav-number">6.</span> <span class="nav-text">报文有哪几部分组成？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#请求头的格式和作用是什么？给个范例截图说明"><span class="nav-number">7.</span> <span class="nav-text">请求头的格式和作用是什么？给个范例截图说明</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#首部的格式和作用是什么？给个范例截图说明"><span class="nav-number">8.</span> <span class="nav-text">首部的格式和作用是什么？给个范例截图说明</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#主体的作用是什么？给个范例"><span class="nav-number">9.</span> <span class="nav-text">主体的作用是什么？给个范例</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#简述浏览器缓存是如何控制的"><span class="nav-number">10.</span> <span class="nav-text">简述浏览器缓存是如何控制的</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#下图各个参数是什么意思"><span class="nav-number">11.</span> <span class="nav-text">下图各个参数是什么意思</span></a></li></ol></div>
             
+
           </div>
         </section>
       
@@ -1180,32 +1185,32 @@ OSI（Open System Interconnection）七层模型是国际标准化组织（ISO�
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
-
-
-
-  
-  
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
 
 
 
   
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
 
 
 
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
 
 
 
@@ -1232,9 +1237,10 @@ OSI（Open System Interconnection）七层模型是国际标准化组织（ISO�
     
       
       <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
-      <script src="/js/src/hook-duoshuo.js"></script>
+      <script src="/js/src/hook-duoshuo.js?v=5.1.0"></script>
     
   
+
 
 
 
@@ -1348,116 +1354,6 @@ OSI（Open System Interconnection）七层模型是国际标准化组织（ISO�
 
   
   
-
-  
-  
-  <link rel="stylesheet" href="">
-
-  
-  <script type="text/html" id="algolia-hit-template">
-    <a href="/{{ path }}" class="algolia-hit-item-link">
-      {{{ _highlightResult.title.value }}}
-    </a>
-  </script>
-  <script type="text/html" id="algolia-stats-template">
-    {{ nbHits }} results found in {{ processingTimeMS }}ms by
-    <span class="algolia-powered">
-      <img src="/images/algolia_logo.svg" alt="Algolia" />
-    </span>
-    <hr />
-  </script>
-  <script type="text/html" id="algolia-no-results-template">
-    <div id="no-results-message">
-      <p>We didn't find any results for the search <em>"{{query}}"</em>.</p>
-    </div>
-  </script>
-  
-
-  
-  
-  <script src="/vendors/algolia-instant-search/instantsearch.min.js"></script>
-
-  <script>
-    $(document).ready(function () {
-      var search = instantsearch({
-        appId: '',
-        apiKey: '',
-        indexName: '',
-        searchFunction: function (helper) {
-          if ( $('#algolia-search-input').find('input').val() !== '' ) {
-            helper.search();
-          }
-        }
-      });
-
-      // Registering Widgets
-      [
-        instantsearch.widgets.searchBox({
-          container: '#algolia-search-input',
-          placeholder: 'Search for Posts'
-        }),
-
-        instantsearch.widgets.hits({
-          container: '#algolia-hits',
-          hitsPerPage: 10,
-          templates: {
-            item: getTemplate('hit'),
-            empty: getTemplate('no-results')
-          },
-          cssClasses: {
-            item: 'algolia-hit-item'
-          }
-        }),
-
-        instantsearch.widgets.stats({
-          container: '#algolia-stats',
-          templates: {
-            body: getTemplate('stats')
-          }
-        }),
-
-        instantsearch.widgets.pagination({
-          container: '#algolia-pagination',
-          scrollTo: false,
-          showFirstLast: false,
-          labels: {
-            first: '<i class="fa fa-angle-double-left"></i>',
-            last: '<i class="fa fa-angle-double-right"></i>',
-            previous: '<i class="fa fa-angle-left"></i>',
-            next: '<i class="fa fa-angle-right"></i>'
-          },
-          cssClasses: {
-            root: 'pagination',
-            item: 'pagination-item',
-            link: 'page-number',
-            active: 'current',
-            disabled: 'disabled-item'
-          }
-        })
-      ].forEach(search.addWidget, search);
-
-      search.start();
-
-      function getTemplate(name) {
-        return document.querySelector('#algolia-' + name + '-template').innerHTML;
-      }
-
-      $('.popup-trigger').on('click', function(e) {
-        e.stopPropagation();
-        $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
-        $('.popup').toggle();
-        $('#algolia-search-input').find('input').focus();
-      });
-
-      $('.popup-btn-close').click(function(){
-        $('.popup').hide();
-        $(".popoverlay").remove();
-        $('body').css('overflow', '');
-      });
-
-    });
-  </script>
-
 
 
 </body>
