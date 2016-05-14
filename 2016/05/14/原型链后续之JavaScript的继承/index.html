@@ -88,7 +88,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="李操,南京,前端,前端开发,学习,JavaScript,html,衡阳,CSS" />
+  <meta name="keywords" content="JavaScript," />
 
 
 
@@ -106,15 +106,18 @@
 
 
 
-<meta name="description" content="求知若饥 | 虚心似谷">
-<meta property="og:type" content="website">
-<meta property="og:title" content="蓝岚爱肉肉">
-<meta property="og:url" content="http://licao404.com/tags/随手拍/index.html">
+<meta name="description" content="深入学习了JavaScript原型和原型链的的概念和原理后，我们内心会隐隐有种道不明的感觉，如果你学习过其他面向对象语言，你会不自觉发现这是种多么熟悉的感觉啊，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="原型链后续之JavaScript的继承">
+<meta property="og:url" content="http://licao404.com/2016/05/14/原型链后续之JavaScript的继承/index.html">
 <meta property="og:site_name" content="蓝岚爱肉肉">
-<meta property="og:description" content="求知若饥 | 虚心似谷">
+<meta property="og:description" content="深入学习了JavaScript原型和原型链的的概念和原理后，我们内心会隐隐有种道不明的感觉，如果你学习过其他面向对象语言，你会不自觉发现这是种多么熟悉的感觉啊，">
+<meta property="og:image" content="http://7xr868.com1.z0.glb.clouddn.com/task36/Person%E5%8E%9F%E5%9E%8B%E5%9B%BE.png">
+<meta property="og:updated_time" content="2016-05-14T04:24:54.053Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="蓝岚爱肉肉">
-<meta name="twitter:description" content="求知若饥 | 虚心似谷">
+<meta name="twitter:title" content="原型链后续之JavaScript的继承">
+<meta name="twitter:description" content="深入学习了JavaScript原型和原型链的的概念和原理后，我们内心会隐隐有种道不明的感觉，如果你学习过其他面向对象语言，你会不自觉发现这是种多么熟悉的感觉啊，">
+<meta name="twitter:image" content="http://7xr868.com1.z0.glb.clouddn.com/task36/Person%E5%8E%9F%E5%9E%8B%E5%9B%BE.png">
 
 
 
@@ -132,7 +135,7 @@
   };
 </script>
 
-  <title> 标签: 随手拍 | 蓝岚爱肉肉 </title>
+  <title> 原型链后续之JavaScript的继承 | 蓝岚爱肉肉 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -169,7 +172,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -466,46 +469,200 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-collapse">
-    <div class="collection-title">
-      <h2 >
-        随手拍
-        <small>标签</small>
-      </h2>
-    </div>
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
 
     
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                原型链后续之JavaScript的继承
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-05-14T12:15:51+08:00" content="2016-05-14">
+              2016-05-14
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/编程学习/" itemprop="url" rel="index">
+                    <span itemprop="name">编程学习</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/编程学习/前端基础/" itemprop="url" rel="index">
+                    <span itemprop="name">前端基础</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/05/14/原型链后续之JavaScript的继承/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/14/原型链后续之JavaScript的继承/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/05/14/原型链后续之JavaScript的继承/" class="leancloud_visitors" data-flag-title="原型链后续之JavaScript的继承">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
       
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+      
+        <p><img src="http://7xr868.com1.z0.glb.clouddn.com/task36/Person%E5%8E%9F%E5%9E%8B%E5%9B%BE.png" alt=""></p>
+<blockquote>
+<p>深入学习了JavaScript原型和原型链的的概念和原理后，我们内心会隐隐有种道不明的感觉，如果你学习过其他面向对象语言，你会不自觉发现这是种多么熟悉的感觉啊，</p>
+</blockquote>
 
-      <h1 class="post-title">
+      
+    </div>
+
+    <div>
+      
         
-            <a class="post-title-link" href="/2016/03/20/鲜花烂漫时/" itemprop="url">
-              
-                <span itemprop="name">鲜花烂漫时</span>
-              
-            </a>
+<div id="wechat_subscriber" style="display: block； padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="http://7xrvo9.com1.z0.glb.clouddn.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E5%8D%9A%E5%AE%A2%E5%BE%AE%E4%BF%A1%E8%AE%A2%E9%98%85%E5%8F%B7.jpg" alt="蓝岚 wechat" style="width: 200px; max-width: 100%;"/>
+    <div>欢迎您扫一扫上面的微信公众号，订阅我的博客！</div>
+</div>
+
+      
+    </div>
+
+    <div>
+      
         
-      </h1>
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>如果您喜欢，请随意打赏。您的支持将鼓励我继续创作！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="http://7xrvo9.com1.z0.glb.clouddn.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E5%BE%AE%E4%BF%A1%E6%89%93%E8%B5%8F%E9%9A%8F%E6%84%8F.png" alt="蓝岚 WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="http://7xrvo9.com1.z0.glb.clouddn.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%94%AF%E4%BB%98%E5%AE%9D%E6%89%93%E8%B5%8F%E9%9A%8F%E6%84%8F.jpg" alt="蓝岚 Alipay"/>
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-03-20T00:00:08+08:00"
-              content="2016-03-20" >
-          03-20
-        </time>
-      </div>
 
-    </header>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/JavaScript/" rel="tag">#JavaScript</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/05/12/原型链/" rel="next" title="说清楚JavaScript的原型链">
+                <i class="fa fa-chevron-left"></i> 说清楚JavaScript的原型链
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </article>
 
 
-    
-  </div>
 
-  
+    <div class="post-spread">
+      
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type = "text/javascript" src = "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56ffc85abe3ee8ee" async = "async" ></script>
+      
+    </div>
+  </div>
 
 
           </div>
@@ -513,6 +670,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/05/14/原型链后续之JavaScript的继承/"
+           data-title="原型链后续之JavaScript的继承" data-url="http://licao404.com/2016/05/14/原型链后续之JavaScript的继承/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -532,8 +697,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="http://7xr868.com1.z0.glb.clouddn.com/me.jpg"
@@ -652,6 +826,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">此文章未包含目录</p>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -789,6 +974,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
