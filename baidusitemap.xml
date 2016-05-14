@@ -3,31 +3,8 @@
 
     
   <url>
-    <loc>http://licao404.com/2016/05/12/%E5%8E%9F%E5%9E%8B%E9%93%BE/</loc>
-    <lastmod>2016-05-13T15:04:13.808Z</lastmod>
-    <data>
-        <display>
-        <title>说清楚JavaScript的原型链</title>
-        <pubTime>2016-05-12T02:15:34.000Z</pubTime>
-        
-        <tag>JavaScript </tag>
-         
-         
-           
-             
-              <breadCrumb title="编程学习" url="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/"/>
-          
-             
-              <breadCrumb title="前端基础" url="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://licao404.com/2016/05/07/%E4%BA%86%E8%A7%A3-HTTP/</loc>
-    <lastmod>2016-05-13T07:02:33.211Z</lastmod>
+    <lastmod>2016-05-14T03:19:00.651Z</lastmod>
     <data>
         <display>
         <title>了解 HTTP</title>
@@ -48,6 +25,29 @@
           
              
               <breadCrumb title="计算机网络" url="http://licao404.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://licao404.com/2016/05/12/%E5%8E%9F%E5%9E%8B%E9%93%BE/</loc>
+    <lastmod>2016-05-13T15:04:13.808Z</lastmod>
+    <data>
+        <display>
+        <title>说清楚JavaScript的原型链</title>
+        <pubTime>2016-05-12T02:15:34.000Z</pubTime>
+        
+        <tag>JavaScript </tag>
+         
+         
+           
+             
+              <breadCrumb title="编程学习" url="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/"/>
+          
+             
+              <breadCrumb title="前端基础" url="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/"/>
           
         </display>
     </data>
