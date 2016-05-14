@@ -113,7 +113,7 @@
 <meta property="og:site_name" content="蓝岚爱肉肉">
 <meta property="og:description" content="还记得这张原型图么（没见过 or 忘了的请戳《OOP For JavaScript》和《说清楚JavaScript的原型链》这两篇博文）？深入学习了JavaScript原型和原型链的的概念和原理后，我们内心会隐隐有种道不明的感觉，如果你学习过其他面向对象语言，你会不自觉发现这是种多么熟悉的感觉啊——这不就像是继承么？此文就将内心的感觉整理出来，作为JavaScript语言的一个核心概念来学习。">
 <meta property="og:image" content="http://7xr868.com1.z0.glb.clouddn.com/task36/Person%E5%8E%9F%E5%9E%8B%E5%9B%BE.png">
-<meta property="og:updated_time" content="2016-05-14T14:31:37.254Z">
+<meta property="og:updated_time" content="2016-05-14T15:02:28.626Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="原型链后续之JavaScript的继承">
 <meta name="twitter:description" content="还记得这张原型图么（没见过 or 忘了的请戳《OOP For JavaScript》和《说清楚JavaScript的原型链》这两篇博文）？深入学习了JavaScript原型和原型链的的概念和原理后，我们内心会隐隐有种道不明的感觉，如果你学习过其他面向对象语言，你会不自觉发现这是种多么熟悉的感觉啊——这不就像是继承么？此文就将内心的感觉整理出来，作为JavaScript语言的一个核心概念来学习。">
@@ -602,6 +602,13 @@
 </li>
 </ul>
 <h4 id="下面两种写法有什么区别"><a href="#下面两种写法有什么区别" class="headerlink" title="下面两种写法有什么区别?"></a><strong>下面两种写法有什么区别?</strong></h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//方法1</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">People</span>(<span class="params">name, sex</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.name = name;</span><br><span class="line">    <span class="keyword">this</span>.sex = sex;</span><br><span class="line">    <span class="keyword">this</span>.printName = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="keyword">this</span>.name);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> p1 = <span class="keyword">new</span> People(<span class="string">'饥人谷'</span>, <span class="number">2</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">//方法2</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">name, sex</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.name = name;</span><br><span class="line">    <span class="keyword">this</span>.sex = sex;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Person.prototype.printName = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="keyword">this</span>.name);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> p1 = <span class="keyword">new</span> Person(<span class="string">'若愚'</span>, <span class="number">27</span>);</span><br></pre></td></tr></table></figure>
+<p>经过前面的总结，可知：上面的代码采用两种不同的创建对象的模式。</p>
+<ul>
+<li><p>方法1 用的是构造函数模式，每次通过 <code>new</code> 创建 <code>People</code> 的新实例，会为每个新实例绑定属性和方法，也就是每个 <code>People</code> 的实例都被添加了 <code>printName</code> 方法；</p>
+</li>
+<li><p>方法2 构造函数模式与原型模式结合，实例的属性都是在构造函数中定义的，而由所有实例共享的属性和方法则是在原型中定义的，也就是所有 <code>Person</code> 的实例都继承了 <code>Person</code> 原型对象的 <code>printName</code> 方法，由原型链指向也可发现这种区别。</p>
+</li>
+</ul>
 <hr>
 
       
