@@ -113,7 +113,7 @@
 <meta property="og:site_name" content="蓝岚爱肉肉">
 <meta property="og:description" content="还记得这张原型图么（没见过 or 忘了的请戳《OOP For JavaScript》和《说清楚JavaScript的原型链》这两篇博文）？深入学习了JavaScript原型和原型链的的概念和原理后，我们内心会隐隐有种道不明的感觉，如果你学习过其他面向对象语言，你会不自觉发现这是种多么熟悉的感觉啊——这不就像是继承么？此文就将内心的感觉整理出来，作为JavaScript语言的一个核心概念来学习。">
 <meta property="og:image" content="http://7xr868.com1.z0.glb.clouddn.com/task36/Person%E5%8E%9F%E5%9E%8B%E5%9B%BE.png">
-<meta property="og:updated_time" content="2016-05-14T15:02:28.626Z">
+<meta property="og:updated_time" content="2016-05-14T15:07:08.828Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="原型链后续之JavaScript的继承">
 <meta name="twitter:description" content="还记得这张原型图么（没见过 or 忘了的请戳《OOP For JavaScript》和《说清楚JavaScript的原型链》这两篇博文）？深入学习了JavaScript原型和原型链的的概念和原理后，我们内心会隐隐有种道不明的感觉，如果你学习过其他面向对象语言，你会不自觉发现这是种多么熟悉的感觉啊——这不就像是继承么？此文就将内心的感觉整理出来，作为JavaScript语言的一个核心概念来学习。">
@@ -609,6 +609,7 @@
 <li><p>方法2 构造函数模式与原型模式结合，实例的属性都是在构造函数中定义的，而由所有实例共享的属性和方法则是在原型中定义的，也就是所有 <code>Person</code> 的实例都继承了 <code>Person</code> 原型对象的 <code>printName</code> 方法，由原型链指向也可发现这种区别。</p>
 </li>
 </ul>
+<h4 id="Object-create-有什么作用？兼容性如何？如何使用？"><a href="#Object-create-有什么作用？兼容性如何？如何使用？" class="headerlink" title="Object.create 有什么作用？兼容性如何？如何使用？"></a><strong>Object.create 有什么作用？兼容性如何？如何使用？</strong></h4><p><code>Object.create()</code> 方法创建一个拥有指定原型和若干个指定属性的对象。</p>
 <hr>
 
       
@@ -862,7 +863,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#继承有什么作用"><span class="nav-number">1.</span> <span class="nav-text">继承有什么作用? </span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#有几种常见创建对象的方式-举例说明"><span class="nav-number">2.</span> <span class="nav-text">有几种常见创建对象的方式? 举例说明?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#下面两种写法有什么区别"><span class="nav-number">3.</span> <span class="nav-text">下面两种写法有什么区别?</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#继承有什么作用"><span class="nav-number">1.</span> <span class="nav-text">继承有什么作用? </span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#有几种常见创建对象的方式-举例说明"><span class="nav-number">2.</span> <span class="nav-text">有几种常见创建对象的方式? 举例说明?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#下面两种写法有什么区别"><span class="nav-number">3.</span> <span class="nav-text">下面两种写法有什么区别?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Object-create-有什么作用？兼容性如何？如何使用？"><span class="nav-number">4.</span> <span class="nav-text">Object.create 有什么作用？兼容性如何？如何使用？</span></a></li></ol></div>
             
           </div>
         </section>
