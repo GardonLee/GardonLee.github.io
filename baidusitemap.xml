@@ -2,6 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     
+    
   <url>
     <loc>http://licao404.com/2016/05/14/%E5%8E%9F%E5%9E%8B%E9%93%BE%E5%90%8E%E7%BB%AD%E4%B9%8BJavaScript%E7%9A%84%E7%BB%A7%E6%89%BF/</loc>
     <lastmod>2016-05-14T17:32:42.563Z</lastmod>
@@ -33,9 +34,9 @@
         <title>了解 HTTP</title>
         <pubTime>2016-05-07T07:03:37.000Z</pubTime>
         
-        <tag>Web服务器 </tag>
-         
         <tag>前后端 </tag>
+         
+        <tag>Web服务器 </tag>
          
         <tag>HTTP </tag>
          
@@ -139,11 +140,11 @@
         <title>从 URI 到页面呈现</title>
         <pubTime>2016-05-07T03:35:26.000Z</pubTime>
         
+        <tag>前后端 </tag>
+         
         <tag>php </tag>
          
         <tag>Web服务器 </tag>
-         
-        <tag>前后端 </tag>
          
         <tag>HTTP </tag>
          
@@ -172,11 +173,11 @@
         <title>使用XAMPP搭建本地Apache服务器</title>
         <pubTime>2016-04-10T08:29:58.000Z</pubTime>
         
+        <tag>前后端 </tag>
+         
         <tag>php </tag>
          
         <tag>Web服务器 </tag>
-         
-        <tag>前后端 </tag>
          
         <tag>Apache </tag>
          
@@ -506,7 +507,6 @@
     </data>
     </url>
 
-    
     
   <url>
     <loc>http://licao404.com/2016/03/01/CSS%E6%B5%8F%E8%A7%88%E5%99%A8%E5%85%BC%E5%AE%B9/</loc>
