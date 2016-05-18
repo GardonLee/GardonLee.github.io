@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://licao404.com/"/>
-  <updated>2016-05-18T08:57:28.352Z</updated>
+  <updated>2016-05-18T08:59:57.035Z</updated>
   <id>http://licao404.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://licao404.com/2016/05/18/%E5%89%8D%E7%AB%AF%E6%A8%A1%E5%9D%97%E5%8C%96%E4%B9%8B%E6%97%85-CommonJS%E3%80%81AMD%E5%92%8CCMD/"/>
     <id>http://licao404.com/2016/05/18/前端模块化之旅-CommonJS、AMD和CMD/</id>
     <published>2016-05-18T03:36:24.000Z</published>
-    <updated>2016-05-18T08:57:28.352Z</updated>
+    <updated>2016-05-18T08:59:57.035Z</updated>
     
     <content type="html">&lt;img src=&quot;http://7xrvo9.com1.z0.glb.clouddn.com/2016.0518/%E5%89%8D%E7%AB%AF%E6%A8%A1%E5%9D%97%E5%8C%96%E4%B9%8B%E6%97%85%E4%BA%8C.jpg&quot; class=&quot;full-image&quot;&gt;
 &lt;blockquote class=&quot;blockquote-center&quot;&gt;继续前篇，各种模块化规范开始推出，其中比较突出的是服务器端的 CommonJS 规范,它是 Nood.JS 在实践中推出的，也是首先采用 JS 模块化概念的语言，跳出了浏览器；进而出现了浏览器环境的模块化方案 AMD和CMD。&lt;/blockquote&gt;
@@ -30,13 +30,13 @@
 &lt;p&gt;它规定一个单独的文件就是一个模块，一个模块中存在一个自由变量 &lt;strong&gt;require&lt;/strong&gt;，这是个函数，用于加载模块：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;这个 &lt;code&gt;require&lt;/code&gt; 函数接受一个模块标识符，返回外部模块所输出的 &lt;code&gt;API&lt;/code&gt;;&lt;/li&gt;
-&lt;li&gt;如果出现依赖闭环(dependency cycle)，那么外部模块在被它的传递依赖（transitive dependencies）所require的时候可能并没有执行完成；在这种情况下，”require”返回的对象必须至少包含此外部模块在调用require函数（会进入当前模块执行环境）之前就已经准备完毕的输出。&lt;/li&gt;
+&lt;li&gt;如果出现&lt;a href=&quot;http://weizhifeng.net/commonjs-module-1.0-specification.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;依赖闭环&lt;/a&gt;(dependency cycle)，那么外部模块在被它的传递依赖（transitive dependencies）所 ``require的时候可能并没有执行完成；在这种情况下，”require”返回的对象必须至少包含此外部模块在调用require函数（会进入当前模块执行环境）之前就已经准备完毕的输出。&lt;/li&gt;
 &lt;li&gt;如果请求的模块不能返回，那么”require”必须抛出一个错误。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;在一个模块中，会存在一个名为 &lt;strong&gt;exports&lt;/strong&gt; 的自由变量，这是一个对象，模块可以在执行的时候把自身的API加入到其中，用于定义模块；&lt;br&gt;&lt;code&gt;exports&lt;/code&gt; 对象是输出模块变量的唯一方式。&lt;/p&gt;
 &lt;p&gt;参照下面的一个例子：&lt;br&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//math.js&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;exports.add = &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;a,b&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; c = a + b;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; c;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//index.js&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; add = &lt;span class=&quot;built_in&quot;&gt;require&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&#39;math&#39;&lt;/span&gt;).add;&lt;span class=&quot;comment&quot;&gt;//&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(add(&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;));&lt;span class=&quot;comment&quot;&gt;//2&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;在 &lt;code&gt;math.js&lt;/code&gt;中将 add 函数绑定到模块中的 &lt;code&gt;exports&lt;/code&gt; 对象中，之后在 &lt;code&gt;index.js&lt;/code&gt; 模块中用 &lt;code&gt;require&lt;/code&gt; 方法加载了 &lt;code&gt;math.js&lt;/code&gt; 模块，并调用该模块中的 add 函数&lt;/p&gt;
-&lt;hr&gt;
+&lt;p&gt;在 &lt;code&gt;math.js&lt;/code&gt;中将 add 函数绑定到模块中的 &lt;code&gt;exports&lt;/code&gt; 对象中，之后在 &lt;code&gt;index.js&lt;/code&gt; 模块中用 &lt;code&gt;require&lt;/code&gt; 方法加载了 &lt;code&gt;math.js&lt;/code&gt; 模块，并调用该模块中的 add 函数。&lt;/p&gt;
+&lt;h4 id=&quot;AMD&quot;&gt;&lt;a href=&quot;#AMD&quot; class=&quot;headerlink&quot; title=&quot;AMD&quot;&gt;&lt;/a&gt;AMD&lt;/h4&gt;&lt;hr&gt;
 </content>
     
     <summary type="html">
