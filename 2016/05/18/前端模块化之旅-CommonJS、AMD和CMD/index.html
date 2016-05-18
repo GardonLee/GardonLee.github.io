@@ -106,17 +106,26 @@
 
 
 
-<meta name="description" content="继续前篇，各种模块化规范开始推出，其中比较突出的是服务器端的       CommonJS规范,它是 Nood.JS 在实践中推出的，也是首先采用 JS 模块化概念的语言，跳出了浏览器；进而出现了浏览器环境的模块化方案">
+<meta name="description" content="继续前篇，各种模块化规范开始推出，其中比较突出的是服务器端的 CommonJS 规范,它是 Nood.JS 在实践中推出的，也是首先采用 JS 模块化概念的语言，跳出了浏览器；进而出现了浏览器环境的模块化方案 AMD和CMD。
+
+CommonJS Modules/1.0CommonJS 规范是服务器端的模块化的规范，是 Nood.js 在实践中推出的。
+它规定一个单独的文件就是一个模块，一个模块">
 <meta property="og:type" content="article">
 <meta property="og:title" content="前端模块化之旅（二）：CommonJS、AMD和CMD">
 <meta property="og:url" content="http://licao404.com/2016/05/18/前端模块化之旅-CommonJS、AMD和CMD/index.html">
 <meta property="og:site_name" content="蓝岚爱肉肉">
-<meta property="og:description" content="继续前篇，各种模块化规范开始推出，其中比较突出的是服务器端的       CommonJS规范,它是 Nood.JS 在实践中推出的，也是首先采用 JS 模块化概念的语言，跳出了浏览器；进而出现了浏览器环境的模块化方案">
+<meta property="og:description" content="继续前篇，各种模块化规范开始推出，其中比较突出的是服务器端的 CommonJS 规范,它是 Nood.JS 在实践中推出的，也是首先采用 JS 模块化概念的语言，跳出了浏览器；进而出现了浏览器环境的模块化方案 AMD和CMD。
+
+CommonJS Modules/1.0CommonJS 规范是服务器端的模块化的规范，是 Nood.js 在实践中推出的。
+它规定一个单独的文件就是一个模块，一个模块">
 <meta property="og:image" content="http://7xrvo9.com1.z0.glb.clouddn.com/2016.0518/%E5%89%8D%E7%AB%AF%E6%A8%A1%E5%9D%97%E5%8C%96%E4%B9%8B%E6%97%85%E4%BA%8C.jpg">
-<meta property="og:updated_time" content="2016-05-18T04:49:55.672Z">
+<meta property="og:updated_time" content="2016-05-18T08:14:51.413Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="前端模块化之旅（二）：CommonJS、AMD和CMD">
-<meta name="twitter:description" content="继续前篇，各种模块化规范开始推出，其中比较突出的是服务器端的       CommonJS规范,它是 Nood.JS 在实践中推出的，也是首先采用 JS 模块化概念的语言，跳出了浏览器；进而出现了浏览器环境的模块化方案">
+<meta name="twitter:description" content="继续前篇，各种模块化规范开始推出，其中比较突出的是服务器端的 CommonJS 规范,它是 Nood.JS 在实践中推出的，也是首先采用 JS 模块化概念的语言，跳出了浏览器；进而出现了浏览器环境的模块化方案 AMD和CMD。
+
+CommonJS Modules/1.0CommonJS 规范是服务器端的模块化的规范，是 Nood.js 在实践中推出的。
+它规定一个单独的文件就是一个模块，一个模块">
 <meta name="twitter:image" content="http://7xrvo9.com1.z0.glb.clouddn.com/2016.0518/%E5%89%8D%E7%AB%AF%E6%A8%A1%E5%9D%97%E5%8C%96%E4%B9%8B%E6%97%85%E4%BA%8C.jpg">
 
 
@@ -577,7 +586,17 @@
 
       
         <img src="http://7xrvo9.com1.z0.glb.clouddn.com/2016.0518/%E5%89%8D%E7%AB%AF%E6%A8%A1%E5%9D%97%E5%8C%96%E4%B9%8B%E6%97%85%E4%BA%8C.jpg" class="full-image">
-<blockquote class="blockquote-center">继续前篇，各种模块化规范开始推出，其中比较突出的是服务器端的       CommonJS规范,它是 Nood.JS 在实践中推出的，也是首先采用 JS 模块化概念的语言，跳出了浏览器；进而出现了浏览器环境的模块化方案</blockquote>
+<blockquote class="blockquote-center">继续前篇，各种模块化规范开始推出，其中比较突出的是服务器端的 CommonJS 规范,它是 Nood.JS 在实践中推出的，也是首先采用 JS 模块化概念的语言，跳出了浏览器；进而出现了浏览器环境的模块化方案 AMD和CMD。</blockquote>
+
+<h4 id="CommonJS-Modules-1-0"><a href="#CommonJS-Modules-1-0" class="headerlink" title="CommonJS Modules/1.0"></a>CommonJS Modules/1.0</h4><p>CommonJS 规范是服务器端的模块化的规范，是 Nood.js 在实践中推出的。</p>
+<p>它规定一个单独的文件就是一个模块，一个模块中存在一个自由变量 “require”，这是个函数，用于加载模块：</p>
+<ul>
+<li>这个 <code>require</code> 函数接受一个模块标识符，返回外部模块所输出的 <code>API</code>;</li>
+<li>如果出现依赖闭环(dependency cycle)，那么外部模块在被它的传递依赖（transitive dependencies）所require的时候可能并没有执行完成；在这种情况下，”require”返回的对象必须至少包含此外部模块在调用require函数（会进入当前模块执行环境）之前就已经准备完毕的输出。</li>
+<li>如果请求的模块不能返回，那么”require”必须抛出一个错误。</li>
+</ul>
+<p>在一个模块中，会存在一个名为”exports”的自由变量，这是一个对象，模块可以在执行的时候把自身的API加入到其中，用于定义模块</p>
+<hr>
 
       
     </div>
@@ -837,7 +856,7 @@
             
 
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#CommonJS-Modules-1-0"><span class="nav-number">1.</span> <span class="nav-text">CommonJS Modules/1.0</span></a></li></ol></div>
             
 
           </div>
