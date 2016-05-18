@@ -113,7 +113,7 @@
 <meta property="og:site_name" content="蓝岚爱肉肉">
 <meta property="og:description" content="随着互联网的快速发展，人们不单单只是需要一个网页了，功能更复杂、交互更丰富的 WebAPP 成为开发者需要面对的日常工作内容。随之而来的是更加庞大与更加复杂的 JavaScript 代码，如此而来，仅仅依靠着我们之前面向对象的 JavaScript 进行代码封装已很难满足生产需求，特别是在团队协作的复杂项目中，JavaScript 模块化已成为一个迫切的需求。">
 <meta property="og:image" content="http://7xrvo9.com1.z0.glb.clouddn.com/2016.0517/%E5%89%8D%E7%AB%AF%E6%A8%A1%E5%9D%97%E5%8C%96%E4%B9%8B%E6%97%85%E4%B8%80.jpg">
-<meta property="og:updated_time" content="2016-05-18T01:26:57.403Z">
+<meta property="og:updated_time" content="2016-05-18T01:30:51.731Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="前端模块化之旅（一）：因何生它">
 <meta name="twitter:description" content="随着互联网的快速发展，人们不单单只是需要一个网页了，功能更复杂、交互更丰富的 WebAPP 成为开发者需要面对的日常工作内容。随之而来的是更加庞大与更加复杂的 JavaScript 代码，如此而来，仅仅依靠着我们之前面向对象的 JavaScript 进行代码封装已很难满足生产需求，特别是在团队协作的复杂项目中，JavaScript 模块化已成为一个迫切的需求。">
@@ -592,7 +592,7 @@
 <p>至此，我们用简陋的工具，和无比勤劳的双手为子孙们搭建了发展的架子，为后续社会发展出更先进好用的模块化工具打下了基石，感谢祖辈们的探索！</p>
 <h3 id="文明社会的探索"><a href="#文明社会的探索" class="headerlink" title="文明社会的探索"></a>文明社会的探索</h3><p>飞速变化的年代里，人们总是不满足于现状。有了前人的封装性还不够，我们引入 JS 文件时是靠不断追加 <code>&lt;script src=&quot;&quot;&gt;&lt;/script&gt;</code> 标签得以实现，每个标签引入顺序是有要求的。当我们引入的文件增多，除了看起来比较累赘，还会出现比较多的依赖关系，而这种写法是无法突出这种关系的，也让后续维护基本上变得无法进行。</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src=<span class="string">"jquery.js"</span>&gt;&lt;script&gt;</span><br><span class="line">&lt;script src="dialog.js"&gt;&lt;script&gt;</span><br><span class="line">&lt;script src="tooltip.js"&gt;&lt;script&gt;</span><br><span class="line">&lt;script src="toast.js"&gt;&lt;script&gt;</span><br><span class="line">&lt;script src="handlebar.js"&gt;&lt;script&gt;</span><br><span class="line">......</span><br></pre></td></tr></table></figure>
-<p>很多时候可能就是由于之前没有引入一个依赖的 js 文件而导致后面 js 的功能失效，浏览器报错。</p>
+<p>很多时候可能就是由于之前没有引入一个依赖的 js 文件而导致后面 js 的功能失效，浏览器报错。大型项目中，一些通用组件往往因此不能轻易地引入到业务代码中去，生产效率低下</p>
 <hr>
 
       
