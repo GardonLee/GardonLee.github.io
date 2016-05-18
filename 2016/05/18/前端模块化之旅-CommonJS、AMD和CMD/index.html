@@ -113,7 +113,7 @@
 <meta property="og:site_name" content="蓝岚爱肉肉">
 <meta property="og:description" content="继续前篇，各种模块化规范开始推出，其中比较突出的是服务器端的 CommonJS 规范,它是 Nood.JS 在实践中推出的，也是首先采用 JS 模块化概念的语言，跳出了浏览器；进而出现了浏览器环境的模块化方案 AMD和CMD。">
 <meta property="og:image" content="http://7xrvo9.com1.z0.glb.clouddn.com/2016.0518/%E5%89%8D%E7%AB%AF%E6%A8%A1%E5%9D%97%E5%8C%96%E4%B9%8B%E6%97%85%E4%BA%8C.jpg">
-<meta property="og:updated_time" content="2016-05-18T08:59:57.035Z">
+<meta property="og:updated_time" content="2016-05-18T09:32:22.957Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="前端模块化之旅（二）：CommonJS、AMD和CMD">
 <meta name="twitter:description" content="继续前篇，各种模块化规范开始推出，其中比较突出的是服务器端的 CommonJS 规范,它是 Nood.JS 在实践中推出的，也是首先采用 JS 模块化概念的语言，跳出了浏览器；进而出现了浏览器环境的模块化方案 AMD和CMD。">
@@ -584,13 +584,24 @@
 <p>它规定一个单独的文件就是一个模块，一个模块中存在一个自由变量 <strong>require</strong>，这是个函数，用于加载模块：</p>
 <ul>
 <li>这个 <code>require</code> 函数接受一个模块标识符，返回外部模块所输出的 <code>API</code>;</li>
-<li>如果出现<a href="http://weizhifeng.net/commonjs-module-1.0-specification.html" target="_blank" rel="external">依赖闭环</a>(dependency cycle)，那么外部模块在被它的传递依赖（transitive dependencies）所 ``require的时候可能并没有执行完成；在这种情况下，”require”返回的对象必须至少包含此外部模块在调用require函数（会进入当前模块执行环境）之前就已经准备完毕的输出。</li>
+<li>如果出现<a href="http://weizhifeng.net/commonjs-module-1.0-specification.html" target="_blank" rel="external">依赖闭环</a>(dependency cycle)，那么外部模块在被它的传递依赖（transitive dependencies）所 <code>require</code> 的时候可能并没有执行完成；在这种情况下，”require”返回的对象必须至少包含此外部模块在调用require函数（会进入当前模块执行环境）之前就已经准备完毕的输出。</li>
 <li>如果请求的模块不能返回，那么”require”必须抛出一个错误。</li>
 </ul>
-<p>在一个模块中，会存在一个名为 <strong>exports</strong> 的自由变量，这是一个对象，模块可以在执行的时候把自身的API加入到其中，用于定义模块；<br><code>exports</code> 对象是输出模块变量的唯一方式。</p>
+<p>在一个模块中，会存在一个名为 <strong>exports</strong> 的自由变量，这是一个对象，模块可以在执行的时候把自身的API加入到其中，用于定义模块，导出给其他地方使用；<br><code>exports</code> 对象是输出模块变量的唯一方式。</p>
 <p>参照下面的一个例子：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//math.js</span></span><br><span class="line">exports.add = <span class="function"><span class="keyword">function</span>(<span class="params">a,b</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> c = a + b;</span><br><span class="line">    <span class="keyword">return</span> c;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//index.js</span></span><br><span class="line"><span class="keyword">var</span> add = <span class="built_in">require</span>(<span class="string">'math'</span>).add;<span class="comment">//</span></span><br><span class="line"><span class="built_in">console</span>.log(add(<span class="number">1</span>,<span class="number">1</span>));<span class="comment">//2</span></span><br></pre></td></tr></table></figure></p>
 <p>在 <code>math.js</code>中将 add 函数绑定到模块中的 <code>exports</code> 对象中，之后在 <code>index.js</code> 模块中用 <code>require</code> 方法加载了 <code>math.js</code> 模块，并调用该模块中的 add 函数。</p>
-<h4 id="AMD"><a href="#AMD" class="headerlink" title="AMD"></a>AMD</h4><hr>
+<h4 id="AMD"><a href="#AMD" class="headerlink" title="AMD"></a>AMD</h4><p>Asynchronous Module Definition，即异步的模块定义，是浏览器端的模块化规范，是 RequireJS 对模块定义的规范化产出。</p>
+<p>与服务器端的模块化规范 CommonJS 不同，AMD 的模块加载是异步的，因为是浏览器端，所以势必要是异步的（浏览器同步加载模块会导致性能、可用性、调试和跨域访问等问题）。因为模块异步加载时不会影响后面程序的执行，前面总结过 js 异步的情况，依赖某些模块的语句均放置在回调函数中，等待模块加载完成后再执行；</p>
+<p>AMD 规范只定义了一个函数 <strong>define</strong> ，是一个全局变量，如下定义一个模块的语法：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">define(id?, dependencies?, factory);</span><br></pre></td></tr></table></figure></p>
+<ul>
+<li><p><code>id</code>：模块的名字，如果没有提供该参数，模块的名字应该默认为模块加载器请求的指定脚本的名字；</p>
+</li>
+<li><p><code>dependencies</code>：模块的依赖，已被模块定义的模块标识的数组字面量。依赖参数是可选的，如果忽略此参数，它应该默认为 <code>[&quot;require&quot;, &quot;exports&quot;, &quot;module&quot;]</code>。然而，如果工厂方法的长度属性小于3，加载器会选择以函数的长度属性指定的参数个数调用工厂方法。</p>
+</li>
+<li><p><code>factory</code>：模块的工厂函数，模块初始化要执行的函数或对象。如果为函数，它应该只被执行一次。如果是对象，此对象应该为模块的输出值。</p>
+</li>
+</ul>
+<hr>
 
       
     </div>
