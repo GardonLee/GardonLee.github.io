@@ -113,7 +113,7 @@
 <meta property="og:site_name" content="蓝岚爱肉肉">
 <meta property="og:description" content="继续前篇，各种模块化规范开始推出，其中比较突出的是服务器端的 CommonJS 规范,它是 Nood.JS 在实践中推出的，也是首先采用 JS 模块化概念的语言，跳出了浏览器；进而出现了浏览器环境的模块化方案 AMD和CMD。">
 <meta property="og:image" content="http://7xrvo9.com1.z0.glb.clouddn.com/2016.0518/%E5%89%8D%E7%AB%AF%E6%A8%A1%E5%9D%97%E5%8C%96%E4%B9%8B%E6%97%85%E4%BA%8C.jpg">
-<meta property="og:updated_time" content="2016-05-18T11:55:27.178Z">
+<meta property="og:updated_time" content="2016-05-18T12:01:02.041Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="前端模块化之旅（二）：CommonJS、AMD和CMD">
 <meta name="twitter:description" content="继续前篇，各种模块化规范开始推出，其中比较突出的是服务器端的 CommonJS 规范,它是 Nood.JS 在实践中推出的，也是首先采用 JS 模块化概念的语言，跳出了浏览器；进而出现了浏览器环境的模块化方案 AMD和CMD。">
@@ -619,6 +619,14 @@
 </blockquote>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//CMD recommanded</span></span><br><span class="line">define(<span class="function"><span class="keyword">function</span>(<span class="params">require, exports, module</span>)</span>&#123;</span><br><span class="line">	<span class="keyword">var</span> a = <span class="built_in">require</span>(<span class="string">'a'</span>);</span><br><span class="line">	a.doSomething();</span><br><span class="line">	<span class="keyword">var</span> b = <span class="built_in">require</span>(<span class="string">'b'</span>);</span><br><span class="line">	b.doSomething();	<span class="comment">// 依赖就近，延迟执行</span></span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">//AMD recommanded</span></span><br><span class="line">define([<span class="string">'a'</span>, <span class="string">'b'</span>], <span class="function"><span class="keyword">function</span>(<span class="params">a, b</span>)</span>&#123;</span><br><span class="line">    a.doSomething();    <span class="comment">// 依赖前置，提前执行</span></span><br><span class="line">    b.doSomething();</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 <p>明显看出和 AMD 不同，模块定义时已不用立马引入依赖，而是运行到需要时候再加载，根据顺序执行，这样更像是 CommonJS 的风格，让人感觉也像是同步加载似的。但实际上 CMD 内部处理是对文件做了一个词法的解析，在还没执行的时候，解析出所需的依赖，并不是真正的同步。</p>
+<hr>
+<blockquote>
+<p>参考：</p>
+<ul>
+<li><a href="https://github.com/amdjs/amdjs-api/wiki/AMD-(%E4%B8%AD%E6%96%87%E7%89%88" target="_blank" rel="external">AMD 模块定义规范</a>)</li>
+<li><a href="https://github.com/seajs/seajs/issues/242" target="_blank" rel="external">CMD 模块定义规范</a></li>
+</ul>
+</blockquote>
 <hr>
 
       
