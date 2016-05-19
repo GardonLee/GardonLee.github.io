@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://licao404.com/"/>
-  <updated>2016-05-18T12:05:16.260Z</updated>
+  <updated>2016-05-19T02:12:32.690Z</updated>
   <id>http://licao404.com/</id>
   
   <author>
@@ -20,9 +20,9 @@
     <link href="http://licao404.com/2016/05/18/%E5%89%8D%E7%AB%AF%E6%A8%A1%E5%9D%97%E5%8C%96%E4%B9%8B%E6%97%85-CommonJS%E3%80%81AMD%E5%92%8CCMD/"/>
     <id>http://licao404.com/2016/05/18/前端模块化之旅-CommonJS、AMD和CMD/</id>
     <published>2016-05-18T03:36:24.000Z</published>
-    <updated>2016-05-18T12:05:16.260Z</updated>
+    <updated>2016-05-19T02:12:32.690Z</updated>
     
-    <content type="html">&lt;img src=&quot;http://7xrvo9.com1.z0.glb.clouddn.com/2016.0518/%E5%89%8D%E7%AB%AF%E6%A8%A1%E5%9D%97%E5%8C%96%E4%B9%8B%E6%97%85%E4%BA%8C.jpg&quot; class=&quot;full-image&quot;&gt;
+    <content type="html">&lt;img src=&quot;http://7xrvo9.com1.z0.glb.clouddn.com/20160518/%E5%89%8D%E7%AB%AF%E6%A8%A1%E5%9D%97%E5%8C%96%E4%B9%8B%E6%97%85%E4%BA%8C.jpg&quot; class=&quot;full-image&quot;&gt;
 &lt;blockquote class=&quot;blockquote-center&quot;&gt;继续前篇，各种模块化规范开始推出，其中比较突出的是服务器端的 CommonJS 规范,它是 Nood.JS 在实践中推出的，也是首先采用 JS 模块化概念的语言，跳出了浏览器；进而出现了浏览器环境的模块化方案 AMD和CMD。&lt;/blockquote&gt;
 
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
@@ -49,7 +49,7 @@
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;code&gt;dependencies&lt;/code&gt;：模块的依赖，已被模块定义的模块标识的数组字面量。依赖参数是可选的，如果忽略此参数，它应该默认为 &lt;code&gt;[&amp;quot;require&amp;quot;, &amp;quot;exports&amp;quot;, &amp;quot;module&amp;quot;]&lt;/code&gt;。然而，如果工厂方法的长度属性小于3，加载器会选择以函数的长度属性指定的参数个数调用工厂方法。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;factory&lt;/code&gt;：模块的工厂函数，模块初始化要执行的函数或对象。如果为函数，它应该只被执行一次。如果是对象，此对象应该为模块的输出值。    &lt;/p&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;factory&lt;/code&gt;：模块的工厂函数，模块初始化要执行的函数或对象。如果为函数，它应该只被执行一次。如果是对象，此对象应该为模块的输出值。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;参照下面的一个例子：&lt;br&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;define(&lt;span class=&quot;string&quot;&gt;&#39;myModule&#39;&lt;/span&gt;,[&lt;span class=&quot;string&quot;&gt;&#39;jQuery&#39;&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&#39;types/Employee&#39;&lt;/span&gt;],&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;$,Employee&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;span class=&quot;comment&quot;&gt;//定义模块myModule，引入依赖jQuery，types/Employee&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	 &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Programmer&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;comment&quot;&gt;//do something&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        Programmer.prototype = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; Employee();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; Programmer;  &lt;span class=&quot;comment&quot;&gt;//return Constructor&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
@@ -79,7 +79,7 @@
     
     <summary type="html">
     
-      &lt;img src=&quot;http://7xrvo9.com1.z0.glb.clouddn.com/2016.0518/%E5%89%8D%E7%AB%AF%E6%A8%A1%E5%9D%97%E5%8C%96%E4%B9%8B%E6%97%85%E4%BA%8C.jpg&quot; class=&quot;full-image&quot; /&gt;
+      &lt;img src=&quot;http://7xrvo9.com1.z0.glb.clouddn.com/20160518/%E5%89%8D%E7%AB%AF%E6%A8%A1%E5%9D%97%E5%8C%96%E4%B9%8B%E6%97%85%E4%BA%8C.jpg&quot; class=&quot;full-image&quot; /&gt;
 &lt;blockquote class=&quot;blockquote-center&quot;&gt;继续前篇，各种模块化规范开始推出，其中比较突出的是服务器端的 CommonJS 规范,它是 Nood.JS 在实践中推出的，也是首先采用 JS 模块化概念的语言，跳出了浏览器；进而出现了浏览器环境的模块化方案 AMD和CMD。&lt;/blockquote&gt;
     
     </summary>
@@ -100,9 +100,9 @@
     <link href="http://licao404.com/2016/05/17/%E5%89%8D%E7%AB%AF%E6%A8%A1%E5%9D%97%E5%8C%96%E4%B9%8B%E6%97%85-%E5%9B%A0%E4%BD%95%E7%94%9F%E5%AE%83/"/>
     <id>http://licao404.com/2016/05/17/前端模块化之旅-因何生它/</id>
     <published>2016-05-17T11:27:30.000Z</published>
-    <updated>2016-05-18T01:59:12.820Z</updated>
+    <updated>2016-05-19T02:12:20.841Z</updated>
     
-    <content type="html">&lt;img src=&quot;http://7xrvo9.com1.z0.glb.clouddn.com/2016.0517/%E5%89%8D%E7%AB%AF%E6%A8%A1%E5%9D%97%E5%8C%96%E4%B9%8B%E6%97%85%E4%B8%80.jpg&quot; class=&quot;full-image&quot;&gt;
+    <content type="html">&lt;img src=&quot;http://7xrvo9.com1.z0.glb.clouddn.com/20160517/%E5%89%8D%E7%AB%AF%E6%A8%A1%E5%9D%97%E5%8C%96%E4%B9%8B%E6%97%85%E4%B8%80.jpg&quot; class=&quot;full-image&quot;&gt;
 &lt;blockquote class=&quot;blockquote-center&quot;&gt;随着互联网的快速发展，人们不单单只是需要一个网页了，功能更复杂、交互更丰富的 WebAPP 成为开发者需要面对的日常工作内容。随之而来的是更加庞大与更加复杂的 JavaScript 代码，如此而来，仅仅依靠着我们之前面向对象的 JavaScript 进行代码封装已很难满足生产需求，特别是在团队协作的复杂项目中，JavaScript 模块化已成为一个迫切的需求。&lt;/blockquote&gt;
 
 
@@ -125,7 +125,7 @@
     
     <summary type="html">
     
-      &lt;img src=&quot;http://7xrvo9.com1.z0.glb.clouddn.com/2016.0517/%E5%89%8D%E7%AB%AF%E6%A8%A1%E5%9D%97%E5%8C%96%E4%B9%8B%E6%97%85%E4%B8%80.jpg&quot; class=&quot;full-image&quot; /&gt;
+      &lt;img src=&quot;http://7xrvo9.com1.z0.glb.clouddn.com/20160517/%E5%89%8D%E7%AB%AF%E6%A8%A1%E5%9D%97%E5%8C%96%E4%B9%8B%E6%97%85%E4%B8%80.jpg&quot; class=&quot;full-image&quot; /&gt;
 &lt;blockquote class=&quot;blockquote-center&quot;&gt;随着互联网的快速发展，人们不单单只是需要一个网页了，功能更复杂、交互更丰富的 WebAPP 成为开发者需要面对的日常工作内容。随之而来的是更加庞大与更加复杂的 JavaScript 代码，如此而来，仅仅依靠着我们之前面向对象的 JavaScript 进行代码封装已很难满足生产需求，特别是在团队协作的复杂项目中，JavaScript 模块化已成为一个迫切的需求。&lt;/blockquote&gt;
     
     </summary>
