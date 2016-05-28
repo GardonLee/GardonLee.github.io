@@ -88,7 +88,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="李操,南京,前端,前端开发,学习,JavaScript,html,衡阳,CSS" />
+  <meta name="keywords" content="JavaScript," />
 
 
 
@@ -106,15 +106,16 @@
 
 
 
-<meta name="description" content="一生想做浪漫极客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="蓝岚爱肉肉">
-<meta property="og:url" content="http://licao404.com/page/2/index.html">
+<meta name="description" content="Not a lot really. Quiz mainly focuses on knowledge of scoping, function expressions (and how they differ from function declarations), references, process of variable and function declaration, order of">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JavaScript的几个选择题">
+<meta property="og:url" content="http://licao404.com/2016/05/28/JavaScript的几个选择题/index.html">
 <meta property="og:site_name" content="蓝岚爱肉肉">
-<meta property="og:description" content="一生想做浪漫极客">
+<meta property="og:description" content="Not a lot really. Quiz mainly focuses on knowledge of scoping, function expressions (and how they differ from function declarations), references, process of variable and function declaration, order of">
+<meta property="og:updated_time" content="2016-05-28T10:06:08.979Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="蓝岚爱肉肉">
-<meta name="twitter:description" content="一生想做浪漫极客">
+<meta name="twitter:title" content="JavaScript的几个选择题">
+<meta name="twitter:description" content="Not a lot really. Quiz mainly focuses on knowledge of scoping, function expressions (and how they differ from function declarations), references, process of variable and function declaration, order of">
 
 
 
@@ -140,7 +141,7 @@
   };
 </script>
 
-  <title> 蓝岚爱肉肉 </title>
+  <title> JavaScript的几个选择题 | 蓝岚爱肉肉 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -177,9 +178,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -467,9 +466,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -488,10 +487,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2016/05/12/原型链/" itemprop="url">
-                  说清楚JavaScript的原型链
-                </a>
+                JavaScript的几个选择题
               
             
           </h1>
@@ -503,8 +499,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-05-12T10:15:34+08:00" content="2016-05-12">
-              2016-05-12
+            <time itemprop="dateCreated" datetime="2016-05-28T17:31:07+08:00" content="2016-05-28">
+              2016-05-28
             </time>
           </span>
 
@@ -517,171 +513,25 @@
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/编程学习/" itemprop="url" rel="index">
-                    <span itemprop="name">编程学习</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/编程学习/前端基础/" itemprop="url" rel="index">
+                  <a href="/categories/前端基础/" itemprop="url" rel="index">
                     <span itemprop="name">前端基础</span>
                   </a>
                 </span>
 
                 
                 
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/05/12/原型链/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/12/原型链/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2016/05/12/原型链/" class="leancloud_visitors" data-flag-title="说清楚JavaScript的原型链">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <blockquote>
-<p>首先通过一个小例子来为我们解释原型链做个准备工作，了解几个概念有助于我们由浅入深挖掘JavaScript原型链。</p>
-</blockquote>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">name</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.name = name;</span><br><span class="line">&#125;</span><br><span class="line">Person.prototype.sayName = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'My name is :'</span> + <span class="keyword">this</span>.name);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> p = <span class="keyword">new</span> Person(<span class="string">"Gardon"</span>)</span><br><span class="line">p.sayName();</span><br></pre></td></tr></table></figure>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/05/12/原型链/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
+                  ， 
                 
-                <a class="post-title-link" href="/2016/05/12/【转】前端开发中的字符编码/" itemprop="url">
-                  【转】前端开发中的字符编码
-                </a>
-              
-            
-          </h1>
-        
 
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-05-12T08:28:36+08:00" content="2016-05-12">
-              2016-05-12
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/编程学习/" itemprop="url" rel="index">
+                  <a href="/categories/前端基础/编程学习/" itemprop="url" rel="index">
                     <span itemprop="name">编程学习</span>
                   </a>
                 </span>
 
                 
                 
-                  ， 
-                
-
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/编程学习/前端高级/" itemprop="url" rel="index">
-                    <span itemprop="name">前端高级</span>
-                  </a>
-                </span>
-
-                
-                
 
               
             </span>
@@ -691,8 +541,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/05/12/【转】前端开发中的字符编码/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/12/【转】前端开发中的字符编码/" itemprop="commentsCount"></span>
+                <a href="/2016/05/28/JavaScript的几个选择题/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/28/JavaScript的几个选择题/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -702,7 +552,7 @@
 
           
           
-             <span id="/2016/05/12/【转】前端开发中的字符编码/" class="leancloud_visitors" data-flag-title="【转】前端开发中的字符编码">
+             <span id="/2016/05/28/JavaScript的几个选择题/" class="leancloud_visitors" data-flag-title="JavaScript的几个选择题">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -724,482 +574,199 @@
       
 
       
-        
-          <img src="http://7xrvo9.com1.z0.glb.clouddn.com/2016.0512/meiziCoder2.jpg" class="full-image" alt="alt" />
-<blockquote class = "blockquote-center">前端开发过程中会接触各种各样的编码，比较常见的主要是UTF－8和HTML实体编码，但是web前端的世界却不止这两种编码，而且编码的选择也会造成一定的问题，如前后端开发过程中不同编码的兼容、多字节编码可能会造成的XSS漏洞等。因此，本文旨在更好的全面了解涉及前端开发领域的字符编码，避免可能出现的交互和开发中的忽视的漏洞。</blockquote>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/05/12/【转】前端开发中的字符编码/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
+        <blockquote class="blockquote-center">Not a lot really. Quiz mainly focuses on knowledge of scoping, function expressions (and how they differ from function declarations), references, process of variable and function declaration, order of evaluation, and a couple more things like <code>delete</code> operator and object instantiation. These are all relatively simple concepts, which I think every professional Javascript developer should know. Most of these are applied in practice quite often. Ideally, even if you can’t answer a question, you should be able to infer answer from specs (without executing the snippet). When creating these questions, I made sure I can answer each one of them off the top of my head, to keep things relatively simple.<br>Note, however, that not all questions are very practical, so don’t worry if you can’t answer some of them. We don’t often use <code>with</code> statement, for example, so failing to know/remember its exact behavior is understandable.<br></blockquote>
+
+<a id="more"></a>
+<h2 id="Few-notes-about-code"><a href="#Few-notes-about-code" class="headerlink" title="Few notes about code"></a>Few notes about code</h2><ul>
+<li>Assuming ECMAScript 3rd edition (not 5th)</li>
+<li>Implementation quirks do not count (assuming standard behavior only)</li>
+<li>Every snippet is run as a global code (not as eval or function one)</li>
+<li>There are no other variables declared (and host environment is not extended with anything beyond what’s defined in specs)</li>
+<li>Answer should correspond to exact return value of entire expression/statement (or last line)</li>
+<li>“Error” in answer indicates that overall snippet results in a runtime error</li>
+</ul>
+<h2 id="Now-Begin"><a href="#Now-Begin" class="headerlink" title="Now Begin"></a>Now Begin</h2><h3 id="1"><a href="#1" class="headerlink" title="1"></a>1</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">typeof</span> <span class="built_in">arguments</span>;</span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure>
+<ul>
+<li>“object”</li>
+<li>“array”</li>
+<li>“arguments”</li>
+<li>“undefined”</li>
+</ul>
+<h3 id="2"><a href="#2" class="headerlink" title="2"></a>2</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> f = <span class="function"><span class="keyword">function</span> <span class="title">g</span>(<span class="params"></span>)</span>&#123; <span class="keyword">return</span> <span class="number">23</span>; &#125;;</span><br><span class="line"><span class="keyword">typeof</span> g();</span><br></pre></td></tr></table></figure>
+<ul>
+<li>“number”</li>
+<li>“undefined”</li>
+<li>“function”</li>
+<li>Error</li>
+</ul>
+<h3 id="3"><a href="#3" class="headerlink" title="3"></a>3</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">(<span class="function"><span class="keyword">function</span>(<span class="params">x</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">delete</span> x;</span><br><span class="line">  <span class="keyword">return</span> x;</span><br><span class="line">&#125;)(<span class="number">1</span>);</span><br></pre></td></tr></table></figure>
+<ul>
+<li>1</li>
+<li>null</li>
+<li>undefined</li>
+<li>Error</li>
+</ul>
+<h3 id="4"><a href="#4" class="headerlink" title="4"></a>4</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> y = <span class="number">1</span>, x = y = <span class="keyword">typeof</span> x;</span><br><span class="line">x;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>1</li>
+<li>“number”</li>
+<li>undefined</li>
+<li>“undefined”</li>
+</ul>
+<h3 id="5"><a href="#5" class="headerlink" title="5"></a>5</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(<span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params">f</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">typeof</span> f();</span><br><span class="line">&#125;)(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; <span class="keyword">return</span> <span class="number">1</span>; &#125;);</span><br></pre></td></tr></table></figure>
+<ul>
+<li>“number”</li>
+<li>“undefined”</li>
+<li>“function”</li>
+<li>Error</li>
+</ul>
+<h3 id="6"><a href="#6" class="headerlink" title="6"></a>6</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> foo = &#123;</span><br><span class="line">  bar: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123; <span class="keyword">return</span> <span class="keyword">this</span>.baz; &#125;,</span><br><span class="line">  baz: <span class="number">1</span></span><br><span class="line">&#125;;</span><br><span class="line">(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">typeof</span> <span class="built_in">arguments</span>[<span class="number">0</span>]();</span><br><span class="line">&#125;)(foo.bar);</span><br></pre></td></tr></table></figure>
+<ul>
+<li>“undefined”</li>
+<li>“object”</li>
+<li>“number”</li>
+<li>“function”</li>
+</ul>
+<h3 id="7"><a href="#7" class="headerlink" title="7"></a>7</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> foo = &#123;</span><br><span class="line">  bar: <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; <span class="keyword">return</span> <span class="keyword">this</span>.baz; &#125;,</span><br><span class="line">  baz: <span class="number">1</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">typeof</span> (f = foo.bar)();</span><br></pre></td></tr></table></figure>
+<ul>
+<li>“undefined”</li>
+<li>“object”</li>
+<li>“number”</li>
+<li>“function”</li>
+</ul>
+<h3 id="8"><a href="#8" class="headerlink" title="8"></a>8</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> f = (<span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params"></span>)</span>&#123; <span class="keyword">return</span> <span class="string">"1"</span>; &#125;, <span class="function"><span class="keyword">function</span> <span class="title">g</span>(<span class="params"></span>)</span>&#123; <span class="keyword">return</span> <span class="number">2</span>; &#125;)();</span><br><span class="line"><span class="keyword">typeof</span> f;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>“string”</li>
+<li>“number”</li>
+<li>“function”</li>
+<li>“undefined”</li>
+</ul>
+<h3 id="9"><a href="#9" class="headerlink" title="9"></a>9</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> x = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">if</span> (<span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params"></span>)</span>&#123;&#125;) &#123;</span><br><span class="line">  x += <span class="keyword">typeof</span> f;</span><br><span class="line">&#125;</span><br><span class="line">x;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>1</li>
+<li>“1function”</li>
+<li>“1undefined”</li>
+<li>NaN</li>
+</ul>
+<h3 id="10"><a href="#10" class="headerlink" title="10"></a>10</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> x = [<span class="keyword">typeof</span> x, <span class="keyword">typeof</span> y][<span class="number">1</span>];</span><br><span class="line"><span class="keyword">typeof</span> <span class="keyword">typeof</span> x;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>“number”</li>
+<li>“string”</li>
+<li>“undefined”</li>
+<li>“object”</li>
+</ul>
+<h3 id="11"><a href="#11" class="headerlink" title="11"></a>11</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(<span class="function"><span class="keyword">function</span>(<span class="params">foo</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">typeof</span> foo.bar;</span><br><span class="line">&#125;)(&#123; foo: &#123; bar: <span class="number">1</span> &#125; &#125;);</span><br></pre></td></tr></table></figure>
+<ul>
+<li>“undefined”</li>
+<li>“object”</li>
+<li>“number”</li>
+<li>Error</li>
+</ul>
+<h3 id="12"><a href="#12" class="headerlink" title="12"></a>12</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">(<span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params"></span>)</span>&#123; <span class="keyword">return</span> <span class="number">1</span>; &#125;</span><br><span class="line">  <span class="keyword">return</span> f();</span><br><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params"></span>)</span>&#123; <span class="keyword">return</span> <span class="number">2</span>; &#125;</span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure>
+<ul>
+<li>1</li>
+<li>2</li>
+<li>Error (e.g. “Too much recursion”)</li>
+<li>undefined</li>
+</ul>
+<h3 id="13"><a href="#13" class="headerlink" title="13"></a>13</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params"></span>)</span>&#123; <span class="keyword">return</span> f; &#125;</span><br><span class="line"><span class="keyword">new</span> f() <span class="keyword">instanceof</span> f;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>true</li>
+<li>false</li>
+</ul>
+<h3 id="14"><a href="#14" class="headerlink" title="14"></a>14</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">with</span> (<span class="function"><span class="keyword">function</span>(<span class="params">x, undefined</span>)</span>&#123;&#125;) length;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>1</li>
+<li>2</li>
+<li>undefined</li>
+<li>Error</li>
+</ul>
+<hr>
+
       
     </div>
 
     <div>
       
+        
+<div id="wechat_subscriber" style="display: block； padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="http://7xrvo9.com1.z0.glb.clouddn.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E5%8D%9A%E5%AE%A2%E5%BE%AE%E4%BF%A1%E8%AE%A2%E9%98%85%E5%8F%B7.jpg" alt="蓝岚 wechat" style="width: 200px; max-width: 100%;"/>
+    <div>欢迎您扫一扫上面的微信公众号，订阅我的博客！</div>
+</div>
+
+      
     </div>
 
     <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>如果您喜欢，请随意打赏。您的支持将鼓励我继续创作！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="http://7xrvo9.com1.z0.glb.clouddn.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E5%BE%AE%E4%BF%A1%E6%89%93%E8%B5%8F%E9%9A%8F%E6%84%8F.png" alt="蓝岚 WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="http://7xrvo9.com1.z0.glb.clouddn.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%94%AF%E4%BB%98%E5%AE%9D%E6%89%93%E8%B5%8F%E9%9A%8F%E6%84%8F.jpg" alt="蓝岚 Alipay"/>
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
+
+
       
     </div>
 
 
     <footer class="post-footer">
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/05/10/OOP-For-JavaScript/" itemprop="url">
-                  OOP For JavaScript
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-05-10T22:08:53+08:00" content="2016-05-10">
-              2016-05-10
-            </time>
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/编程学习/" itemprop="url" rel="index">
-                    <span itemprop="name">编程学习</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/编程学习/前端基础/" itemprop="url" rel="index">
-                    <span itemprop="name">前端基础</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/05/10/OOP-For-JavaScript/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/10/OOP-For-JavaScript/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2016/05/10/OOP-For-JavaScript/" class="leancloud_visitors" data-flag-title="OOP For JavaScript">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
+            <a href="/tags/JavaScript/" rel="tag"># JavaScript</a>
           
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          <blockquote>
-<h3 id="【知识点】"><a href="#【知识点】" class="headerlink" title="【知识点】"></a>【知识点】</h3></blockquote>
-<h4 id="1-OOP-指什么？有哪些特性"><a href="#1-OOP-指什么？有哪些特性" class="headerlink" title="1. OOP 指什么？有哪些特性 "></a><strong>1. OOP 指什么？有哪些特性 </strong></h4><p>OOP （Object Oriented Programming）是面向对象编程，是一种计算机编程架构。面向对象语言（C++，Java等）有一个标志，都有类的概念，通过类可以创建多个具有相同属性和方法的对象（类的实例化）。OOP 达到了软件工程的三个主要目标：重用性、灵活性和扩展性。为了实现整体运算，每个对象都能够接收信息、处理数据和向其它对象发送信息。</p>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/05/10/OOP-For-JavaScript/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/05/27/Why-I-Ditched-Angular-for-React/" rel="next" title="Why I Ditched Angular for React">
+                <i class="fa fa-chevron-left"></i> Why I Ditched Angular for React
+              </a>
+            
           </div>
-        
-      
-    </div>
 
-    <div>
-      
-    </div>
+          <span class="post-nav-divider"></span>
 
-    <div>
-      
-    </div>
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
+          <div class="post-nav-prev post-nav-item">
             
-            
-              
-                
-                <a class="post-title-link" href="/2016/05/07/了解-HTTP/" itemprop="url">
-                  了解 HTTP
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-05-07T15:03:37+08:00" content="2016-05-07">
-              2016-05-07
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/计算机基础/" itemprop="url" rel="index">
-                    <span itemprop="name">计算机基础</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/计算机基础/计算机网络/" itemprop="url" rel="index">
-                    <span itemprop="name">计算机网络</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/05/07/了解-HTTP/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/07/了解-HTTP/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2016/05/07/了解-HTTP/" class="leancloud_visitors" data-flag-title="了解 HTTP">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-          
+          </div>
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          <p><img src="http://7xrvo9.com1.z0.glb.clouddn.com/2016.0507/macbook-926558.jpg" alt=""></p>
-<blockquote>
-<h4 id="OSI-七层模型指什么？"><a href="#OSI-七层模型指什么？" class="headerlink" title="OSI 七层模型指什么？"></a><strong>OSI 七层模型指什么？</strong></h4></blockquote>
-<p>OSI（Open System Interconnection）七层模型是国际标准化组织（ISO）制定的一个用于计算机或通信系统间互联的标准体系，它是一个七层的、抽象的模型，不仅包括一系列抽象的术语或概念，也包括具体的协议。</p>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/05/07/了解-HTTP/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
+
+    <div class="post-spread">
       
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/05/07/从URI到页面呈现/" itemprop="url">
-                  从 URI 到页面呈现
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-05-07T11:35:26+08:00" content="2016-05-07">
-              2016-05-07
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/计算机基础/" itemprop="url" rel="index">
-                    <span itemprop="name">计算机基础</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/计算机基础/计算机网络/" itemprop="url" rel="index">
-                    <span itemprop="name">计算机网络</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/05/07/从URI到页面呈现/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/07/从URI到页面呈现/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2016/05/07/从URI到页面呈现/" class="leancloud_visitors" data-flag-title="从 URI 到页面呈现">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <blockquote class = "blockquote-center">前面提及过怎么用一些软件套件在<a href="./2016/04/10/使用XAMPP搭建本地Web服务器/">本地简单搭建 Web 服务器</a>，具体可以参照我的这篇文章 &gt;&gt; <a href="./2016/04/10/使用XAMPP搭建本地Web服务器/">《使用XAMPP搭建本地Web服务器》</a> ，这次我们理一理从从浏览器输入URL到Web页面呈现在我们眼前，它背后发生了什么？这次我们只是简单说说其过程，它涉及了很多计算机网络知识，<a href="http://baike.baidu.com/link?url=v-ZiUCzKEFsKfexauR5g8UA9H7D6ZsX_bD9jtGIUWOA3CafdHGK-p7EMwUHBeTuF92VEnVXh6A2o9yaAMJNywTBZQYuusmr7gPBMw0K91P95WgfPYswXuUJ_DeTe8DK9tBTE5WdUlKtKj8q78VOOwMROvTECRNRBxrCGuypphyy">HTTP 协议</a>等，可以留待后续学习深究。</blockquote>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/05/07/从URI到页面呈现/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type = "text/javascript" src = "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56ffc85abe3ee8ee" async = "async" ></script>
       
     </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-  </section>
-
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right"></i></a>
-  </nav>
-
+  </div>
 
 
           </div>
@@ -1207,6 +774,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/05/28/JavaScript的几个选择题/"
+           data-title="JavaScript的几个选择题" data-url="http://licao404.com/2016/05/28/JavaScript的几个选择题/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -1226,8 +801,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="http://7xr868.com1.z0.glb.clouddn.com/me.jpg"
@@ -1324,6 +908,20 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Few-notes-about-code"><span class="nav-number">1.</span> <span class="nav-text">Few notes about code</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Now-Begin"><span class="nav-number">2.</span> <span class="nav-text">Now Begin</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1"><span class="nav-number">2.1.</span> <span class="nav-text">1</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2"><span class="nav-number">2.2.</span> <span class="nav-text">2</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3"><span class="nav-number">2.3.</span> <span class="nav-text">3</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4"><span class="nav-number">2.4.</span> <span class="nav-text">4</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5"><span class="nav-number">2.5.</span> <span class="nav-text">5</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6"><span class="nav-number">2.6.</span> <span class="nav-text">6</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7"><span class="nav-number">2.7.</span> <span class="nav-text">7</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8"><span class="nav-number">2.8.</span> <span class="nav-text">8</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9"><span class="nav-number">2.9.</span> <span class="nav-text">9</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10"><span class="nav-number">2.10.</span> <span class="nav-text">10</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11"><span class="nav-number">2.11.</span> <span class="nav-text">11</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12"><span class="nav-number">2.12.</span> <span class="nav-text">12</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#13"><span class="nav-number">2.13.</span> <span class="nav-text">13</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#14"><span class="nav-number">2.14.</span> <span class="nav-text">14</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
       
 
     </div>
@@ -1461,6 +1059,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
 
   
 
