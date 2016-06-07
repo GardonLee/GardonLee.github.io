@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://licao404.com/"/>
-  <updated>2016-06-07T00:34:57.893Z</updated>
+  <updated>2016-06-07T00:42:28.022Z</updated>
   <id>http://licao404.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://licao404.com/2016/06/07/%E4%B8%80%E4%BA%9B%E5%B9%B3%E6%97%B6%E5%81%9A%E7%9A%84%E5%B0%8F%E4%BD%9C%E5%93%81/"/>
     <id>http://licao404.com/2016/06/07/一些平时做的小作品/</id>
     <published>2016-06-06T23:22:36.000Z</published>
-    <updated>2016-06-07T00:34:57.893Z</updated>
+    <updated>2016-06-07T00:42:28.022Z</updated>
     
     <content type="html">&lt;blockquote class=&quot;blockquote-center&quot;&gt;个人平时所写的小东西，这里稍微汇总下。水平有限，还望多多指教&lt;/blockquote&gt;
 
@@ -44,6 +44,10 @@
 &lt;h3 id=&quot;move-dialog组件&quot;&gt;&lt;a href=&quot;#move-dialog组件&quot; class=&quot;headerlink&quot; title=&quot;move dialog组件&quot;&gt;&lt;/a&gt;move dialog组件&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://febox.applinzi.com/goDialogdraggable/index.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;效果预览&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://github.com/gardonlee/Some-Demo...-/tree/master/goDialogdraggable&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;实现代码&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;分享按钮&quot;&gt;&lt;a href=&quot;#分享按钮&quot; class=&quot;headerlink&quot; title=&quot;分享按钮&quot;&gt;&lt;/a&gt;分享按钮&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://febox.applinzi.com/%E5%8E%9F%E7%94%9Fjs%E5%88%86%E4%BA%AB%E6%8C%89%E9%92%AE/demo.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;效果预览&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/gardonlee/Some-Demo...-/tree/master/%E5%8E%9F%E7%94%9Fjs%E5%88%86%E4%BA%AB%E6%8C%89%E9%92%AE&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;实现代码&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&quot;回到顶部插件&quot;&gt;&lt;a href=&quot;#回到顶部插件&quot; class=&quot;headerlink&quot; title=&quot;回到顶部插件&quot;&gt;&lt;/a&gt;回到顶部插件&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://febox.applinzi.com/task29/task29-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;效果预览&lt;/a&gt;&lt;/li&gt;
@@ -126,7 +130,7 @@
 &lt;li&gt;&lt;a href=&quot;http://febox.applinzi.com/task11/task-11-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;效果预览&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://github.com/gardonlee/Some-Demo...-/blob/master/task11/task-11-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;代码实现&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr&gt;
+&lt;h4 id=&quot;还有更多，没有好好整理，更多精彩，等你发现…………………s&quot;&gt;&lt;a href=&quot;#还有更多，没有好好整理，更多精彩，等你发现…………………s&quot; class=&quot;headerlink&quot; title=&quot;还有更多，没有好好整理，更多精彩，等你发现…………………s&quot;&gt;&lt;/a&gt;还有更多，没有好好整理，更多精彩，等你发现…………………s&lt;/h4&gt;&lt;hr&gt;
 </content>
     
     <summary type="html">
