@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://licao404.com/"/>
-  <updated>2016-05-28T10:06:08.979Z</updated>
+  <updated>2016-06-07T00:34:57.893Z</updated>
   <id>http://licao404.com/</id>
   
   <author>
@@ -14,6 +14,131 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>一些平时做的小作品</title>
+    <link href="http://licao404.com/2016/06/07/%E4%B8%80%E4%BA%9B%E5%B9%B3%E6%97%B6%E5%81%9A%E7%9A%84%E5%B0%8F%E4%BD%9C%E5%93%81/"/>
+    <id>http://licao404.com/2016/06/07/一些平时做的小作品/</id>
+    <published>2016-06-06T23:22:36.000Z</published>
+    <updated>2016-06-07T00:34:57.893Z</updated>
+    
+    <content type="html">&lt;blockquote class=&quot;blockquote-center&quot;&gt;个人平时所写的小东西，这里稍微汇总下。水平有限，还望多多指教&lt;/blockquote&gt;
+
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h3 id=&quot;功能组件化的单页面&quot;&gt;&lt;a href=&quot;#功能组件化的单页面&quot; class=&quot;headerlink&quot; title=&quot;功能组件化的单页面&quot;&gt;&lt;/a&gt;功能组件化的单页面&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://febox.applinzi.com/requireJS/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;效果预览&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/gardonlee/Some-Demo...-/tree/master/requireJS&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;代码实现&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;曝光加载&quot;&gt;&lt;a href=&quot;#曝光加载&quot; class=&quot;headerlink&quot; title=&quot;曝光加载&quot;&gt;&lt;/a&gt;曝光加载&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://febox.applinzi.com/task29/task29-2.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;效果预览&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/gardonlee/Some-Demo...-/blob/master/task29/task29-2.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;实现代码&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;曝光加载更多&quot;&gt;&lt;a href=&quot;#曝光加载更多&quot; class=&quot;headerlink&quot; title=&quot;曝光加载更多&quot;&gt;&lt;/a&gt;曝光加载更多&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://febox.applinzi.com/task29/task29-3.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;效果预览&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/gardonlee/Some-Demo...-/blob/master/task29/task29-3.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;实现代码&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;dialog组件&quot;&gt;&lt;a href=&quot;#dialog组件&quot; class=&quot;headerlink&quot; title=&quot;dialog组件&quot;&gt;&lt;/a&gt;dialog组件&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://febox.applinzi.com/goDialog/index.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;效果预览&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/gardonlee/Some-Demo...-/tree/master/goDialog&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;实现代码&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;move-dialog组件&quot;&gt;&lt;a href=&quot;#move-dialog组件&quot; class=&quot;headerlink&quot; title=&quot;move dialog组件&quot;&gt;&lt;/a&gt;move dialog组件&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://febox.applinzi.com/goDialogdraggable/index.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;效果预览&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/gardonlee/Some-Demo...-/tree/master/goDialogdraggable&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;实现代码&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;回到顶部插件&quot;&gt;&lt;a href=&quot;#回到顶部插件&quot; class=&quot;headerlink&quot; title=&quot;回到顶部插件&quot;&gt;&lt;/a&gt;回到顶部插件&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://febox.applinzi.com/task29/task29-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;效果预览&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/gardonlee/Some-Demo...-/blob/master/task29/task29-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;实现代码&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;瀑布流懒加载&quot;&gt;&lt;a href=&quot;#瀑布流懒加载&quot; class=&quot;headerlink&quot; title=&quot;瀑布流懒加载&quot;&gt;&lt;/a&gt;瀑布流懒加载&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://febox.applinzi.com/task32/task32.html#&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;效果预览&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/gardonlee/Some-Demo...-/tree/master/task32&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;实现代码&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;单页面多轮播&quot;&gt;&lt;a href=&quot;#单页面多轮播&quot; class=&quot;headerlink&quot; title=&quot;单页面多轮播&quot;&gt;&lt;/a&gt;单页面多轮播&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://febox.applinzi.com/task35/task35-1.html#&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;效果预览&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/gardonlee/Some-Demo...-/blob/master/task35/task35-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;实现代码&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;无缝轮播&quot;&gt;&lt;a href=&quot;#无缝轮播&quot; class=&quot;headerlink&quot; title=&quot;无缝轮播&quot;&gt;&lt;/a&gt;无缝轮播&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://febox.applinzi.com/task27/task27-3.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;效果预览&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/gardonlee/Some-Demo...-/blob/master/task27/task27-3.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;实现代码&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;无缝轮播-1&quot;&gt;&lt;a href=&quot;#无缝轮播-1&quot; class=&quot;headerlink&quot; title=&quot;无缝轮播&quot;&gt;&lt;/a&gt;无缝轮播&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://febox.applinzi.com/task27/task27-3.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;效果预览&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/gardonlee/Some-Demo...-/blob/master/task27/task27-3.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;实现代码&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;无缝轮播-DOM&quot;&gt;&lt;a href=&quot;#无缝轮播-DOM&quot; class=&quot;headerlink&quot; title=&quot;无缝轮播(DOM)&quot;&gt;&lt;/a&gt;无缝轮播(DOM)&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://febox.applinzi.com/task27/task27-3-2.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;效果预览&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/gardonlee/Some-Demo...-/blob/master/task27/task27-3-2.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;实现代码&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;淡入淡出轮播&quot;&gt;&lt;a href=&quot;#淡入淡出轮播&quot; class=&quot;headerlink&quot; title=&quot;淡入淡出轮播&quot;&gt;&lt;/a&gt;淡入淡出轮播&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://febox.applinzi.com/task27/task27-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;效果预览&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/gardonlee/Some-Demo...-/blob/master/task27/task27-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;实现代码&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;加载更多-php&quot;&gt;&lt;a href=&quot;#加载更多-php&quot; class=&quot;headerlink&quot; title=&quot;加载更多(php)&quot;&gt;&lt;/a&gt;加载更多(php)&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://febox.applinzi.com/task25/task25-3.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;效果预览&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/gardonlee/Some-Demo...-/tree/master/task26&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;实现代码&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;JS加载更多（php）&quot;&gt;&lt;a href=&quot;#JS加载更多（php）&quot; class=&quot;headerlink&quot; title=&quot;JS加载更多（php）&quot;&gt;&lt;/a&gt;JS加载更多（php）&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://febox.applinzi.com/task24-2/task24-2.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;效果预览&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/gardonlee/Some-Demo...-/tree/master/task24-2&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;代码实现&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;JS表单注册（php）&quot;&gt;&lt;a href=&quot;#JS表单注册（php）&quot; class=&quot;headerlink&quot; title=&quot;JS表单注册（php）&quot;&gt;&lt;/a&gt;JS表单注册（php）&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://febox.applinzi.com/task24-3/task24-3.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;效果预览&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/gardonlee/Some-Demo...-/tree/master/task24-3&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;代码实现&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;JS商品分类栏&quot;&gt;&lt;a href=&quot;#JS商品分类栏&quot; class=&quot;headerlink&quot; title=&quot;JS商品分类栏&quot;&gt;&lt;/a&gt;JS商品分类栏&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://febox.applinzi.com/task25/task25-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;效果预览&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/gardonlee/Some-Demo...-/blob/master/task25/task25-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;实现代码&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;JS-Tap切换&quot;&gt;&lt;a href=&quot;#JS-Tap切换&quot; class=&quot;headerlink&quot; title=&quot;JS Tap切换&quot;&gt;&lt;/a&gt;JS Tap切换&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://febox.applinzi.com/task25/task25-2.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;效果预览&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/gardonlee/Some-Demo...-/blob/master/task25/task25-2.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;实现代码&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;JS-加载更多&quot;&gt;&lt;a href=&quot;#JS-加载更多&quot; class=&quot;headerlink&quot; title=&quot;JS 加载更多&quot;&gt;&lt;/a&gt;JS 加载更多&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://febox.applinzi.com/task25/task25-3.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;效果预览&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/gardonlee/Some-Demo...-/blob/master/task25/task25-3.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;实现代码&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;CSS浏览器兼容性&quot;&gt;&lt;a href=&quot;#CSS浏览器兼容性&quot; class=&quot;headerlink&quot; title=&quot;CSS浏览器兼容性&quot;&gt;&lt;/a&gt;CSS浏览器兼容性&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;http://licao404.com/2016/03/01/CSS%E6%B5%8F%E8%A7%88%E5%99%A8%E5%85%BC%E5%AE%B9/&quot;&gt;CSS浏览器兼容性&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;简单的静态仿页面&quot;&gt;&lt;a href=&quot;#简单的静态仿页面&quot; class=&quot;headerlink&quot; title=&quot;简单的静态仿页面&quot;&gt;&lt;/a&gt;简单的静态仿页面&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://febox.applinzi.com/task14/index.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;效果预览&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/gardonlee/Some-Demo...-/tree/master/task14&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;代码实现&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;圣杯布局双飞翼布局&quot;&gt;&lt;a href=&quot;#圣杯布局双飞翼布局&quot; class=&quot;headerlink&quot; title=&quot;圣杯布局双飞翼布局&quot;&gt;&lt;/a&gt;圣杯布局双飞翼布局&lt;/h3&gt;&lt;h4 id=&quot;圣杯三栏布局&quot;&gt;&lt;a href=&quot;#圣杯三栏布局&quot; class=&quot;headerlink&quot; title=&quot;圣杯三栏布局&quot;&gt;&lt;/a&gt;圣杯三栏布局&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://febox.applinzi.com/task12/task-12-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;效果预览&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/gardonlee/Some-Demo...-/blob/master/commonLayout/task-12-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;代码实现&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;圣杯两栏布局&quot;&gt;&lt;a href=&quot;#圣杯两栏布局&quot; class=&quot;headerlink&quot; title=&quot;圣杯两栏布局&quot;&gt;&lt;/a&gt;圣杯两栏布局&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://febox.applinzi.com/task12/task-12-2.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;效果预览&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/gardonlee/Some-Demo...-/blob/master/commonLayout/task-12-2.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;代码实现&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;双飞翼三栏布局&quot;&gt;&lt;a href=&quot;#双飞翼三栏布局&quot; class=&quot;headerlink&quot; title=&quot;双飞翼三栏布局&quot;&gt;&lt;/a&gt;双飞翼三栏布局&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://febox.applinzi.com/task12/task-12-3.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;效果预览&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/gardonlee/Some-Demo...-/blob/master/commonLayout/task-12-3.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;代码实现&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;双飞翼两栏布局&quot;&gt;&lt;a href=&quot;#双飞翼两栏布局&quot; class=&quot;headerlink&quot; title=&quot;双飞翼两栏布局&quot;&gt;&lt;/a&gt;双飞翼两栏布局&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://febox.applinzi.com/task12/task-12-4.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;效果预览&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/gardonlee/Some-Demo...-/blob/master/commonLayout/task-12-4.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;代码实现&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;纯CSS对话框&quot;&gt;&lt;a href=&quot;#纯CSS对话框&quot; class=&quot;headerlink&quot; title=&quot;纯CSS对话框&quot;&gt;&lt;/a&gt;纯CSS对话框&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://febox.applinzi.com/task10/task-10-2.htmll&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;效果预览&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/gardonlee/Some-Demo...-/blob/master/task10/task-10-2.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;代码实现&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;纯CSS导航栏&quot;&gt;&lt;a href=&quot;#纯CSS导航栏&quot; class=&quot;headerlink&quot; title=&quot;纯CSS导航栏&quot;&gt;&lt;/a&gt;纯CSS导航栏&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://febox.applinzi.com/task11/task-11-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;效果预览&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/gardonlee/Some-Demo...-/blob/master/task11/task-11-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;代码实现&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt;个人平时所写的小东西，这里稍微汇总下。水平有限，还望多多指教&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="编程学习" scheme="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>JavaScript的几个选择题</title>
@@ -948,9 +1073,9 @@
       <category term="计算机网络" scheme="http://licao404.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
     
     
-      <category term="Web服务器" scheme="http://licao404.com/tags/Web%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-    
       <category term="前后端" scheme="http://licao404.com/tags/%E5%89%8D%E5%90%8E%E7%AB%AF/"/>
+    
+      <category term="Web服务器" scheme="http://licao404.com/tags/Web%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
       <category term="HTTP" scheme="http://licao404.com/tags/HTTP/"/>
     
@@ -1046,17 +1171,17 @@
       <category term="计算机网络" scheme="http://licao404.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
     
     
-      <category term="php" scheme="http://licao404.com/tags/php/"/>
-    
-      <category term="Web服务器" scheme="http://licao404.com/tags/Web%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-    
       <category term="前后端" scheme="http://licao404.com/tags/%E5%89%8D%E5%90%8E%E7%AB%AF/"/>
     
-      <category term="Apache" scheme="http://licao404.com/tags/Apache/"/>
+      <category term="Web服务器" scheme="http://licao404.com/tags/Web%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
       <category term="HTTP" scheme="http://licao404.com/tags/HTTP/"/>
     
       <category term="TCP/IP" scheme="http://licao404.com/tags/TCP-IP/"/>
+    
+      <category term="php" scheme="http://licao404.com/tags/php/"/>
+    
+      <category term="Apache" scheme="http://licao404.com/tags/Apache/"/>
     
   </entry>
   
@@ -2342,54 +2467,6 @@
       <category term="AJAX" scheme="http://licao404.com/tags/AJAX/"/>
     
       <category term="前后端" scheme="http://licao404.com/tags/%E5%89%8D%E5%90%8E%E7%AB%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>使用XAMPP搭建本地Apache服务器</title>
-    <link href="http://licao404.com/2016/04/10/%E4%BD%BF%E7%94%A8XAMPP%E6%90%AD%E5%BB%BA%E6%9C%AC%E5%9C%B0Web%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-    <id>http://licao404.com/2016/04/10/使用XAMPP搭建本地Web服务器/</id>
-    <published>2016-04-10T08:29:58.000Z</published>
-    <updated>2016-05-07T03:43:39.564Z</updated>
-    
-    <content type="html">&lt;blockquote class=&quot;blockquote-center&quot;&gt;Web服务器的搭建，例如&lt;a href=&quot;http://baike.baidu.com/link?url=MroN_mSBbcJL21A0lYqZlh5FNT3Hukj2ZfurTNf0gxr904iT7hc7zrVaLUC8UuXLTT8ABpm16ilURuOMOMwma9b2R011L2tqMeugghpPt9W&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Apache&lt;/a&gt;，对初学者来说并不是简单事，如果还想添加PHP、MySQL等，就更难了。如果我们借助一些集成软件包，一切操作都简单了。而本文使用的XAMPP，就是这样一个易于安装且包含 MySQL、PHP 和 Perl 的 Apache 发行版，其他类似软件还有&lt;a href=&quot;http://www.wampserver.com/en/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;wamp&lt;/a&gt;等&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;安装及配置&quot;&gt;&lt;a href=&quot;#安装及配置&quot; class=&quot;headerlink&quot; title=&quot;安装及配置&quot;&gt;&lt;/a&gt;安装及配置&lt;/h3&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;p&gt;&lt;strong&gt;1）&lt;/strong&gt;.XAMPP是全平台的，直接在&lt;a href=&quot;https://www.apachefriends.org/zh_cn/index.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;官网&lt;/a&gt;下载系统对应的版本：&lt;a href=&quot;https://www.apachefriends.org/xampp-files/5.6.19/xampp-win32-5.6.19-0-VC11-installer.exe&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;XAMPP for Windows&lt;/a&gt;  |  &lt;a href=&quot;https://www.apachefriends.org/xampp-files/5.6.19/xampp-linux-x64-5.6.19-0-installer.run&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;XAMPP for Linux&lt;/a&gt;  |  &lt;a href=&quot;https://www.apachefriends.org/xampp-files/5.6.19/xampp-osx-5.6.19-0-installer.dmg&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;XAMPP for OS X&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;2）&lt;/strong&gt;.安装XAMPP，不要安装到C盘，安装过程就不详细展开，不了解的可自行搜索。建议至少安装Apache、MySQL、PHP、以及phpMyAdmin；&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;3）&lt;/strong&gt;.新建一个文件夹来存放网站代码，比如我在D盘下新建&lt;code&gt;myWeb&lt;/code&gt;文件夹；&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;4）&lt;/strong&gt;.安装完成后，打开安装目录下的&lt;code&gt;apache&lt;/code&gt;文件夹下的&lt;code&gt;conf&lt;/code&gt;文件夹下的&lt;code&gt;httpd.conf&lt;/code&gt;文件（记事本或其他文本编辑器）。修改&lt;br&gt;&lt;code&gt;DocumentRoot&lt;/code&gt;目录（该目录就是网站代码的路径），大概在240行附近，将其改为刚刚新建的文件夹的路径，例如：&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;DocumentRoot &amp;quot;D:/myWeb&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;Directory &amp;quot;D:/myWeb&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;5）&lt;/strong&gt;.在&lt;code&gt;C:\Windows\System32\drivers\etc&lt;/code&gt;目录下修改&lt;code&gt;host&lt;/code&gt;，加入&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;127.0.0.1 www.licao-train.com&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;这一步的目的是让你后面在浏览器输入&lt;code&gt;www.licao-train.com&lt;/code&gt;域名能定位到你的代码目录（这里是&lt;code&gt;myWeb&lt;/code&gt;目录），当然域名可以替换。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;测试&quot;&gt;&lt;a href=&quot;#测试&quot; class=&quot;headerlink&quot; title=&quot;测试&quot;&gt;&lt;/a&gt;测试&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;1）&lt;/strong&gt;.在存放网站代码文件夹里(这里是myWeb文件夹)新建一个php文件&lt;code&gt;hello.php&lt;/code&gt;，打开文件编写php代码：&lt;br&gt;&lt;figure class=&quot;highlight php&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;&amp;lt;?php&lt;/span&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;hello php&quot;&lt;/span&gt;; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    phpinfo(); &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;2）&lt;/strong&gt;.保存退出，打开XAMPP，启动Apache和MySQL（start）；&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;3）&lt;/strong&gt;.在浏览器地址栏输入&lt;code&gt;http://localhost/index.php&lt;/code&gt;或者&lt;code&gt;http://www.licao-train.com/hello.php&lt;/code&gt;，看是否可以访问刚刚新建的&lt;code&gt;php&lt;/code&gt;文件：&lt;br&gt;&lt;img src=&quot;http://7xr868.com1.z0.glb.clouddn.com/task23/XAMPP%E9%85%8D%E7%BD%AE%E5%B1%95%E7%A4%BA.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;到这里，你的Apache服务器+PHP基本上已经搭建好了。遇到不可测的问题可以在下面回复，我们一起学习。&lt;/p&gt;
-&lt;hr&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;blockquote class = &quot;blockquote-center&quot;&gt;Web服务器的搭建，例如&lt;a href=&quot;http://baike.baidu.com/link?url=MroN_mSBbcJL21A0lYqZlh5FNT3Hukj2ZfurTNf0gxr904iT7hc7zrVaLUC8UuXLTT8ABpm16ilURuOMOMwma9b2R011L2tqMeugghpPt9W&quot;&gt;Apache&lt;/a&gt;，对初学者来说并不是简单事，如果还想添加PHP、MySQL等，就更难了。如果我们借助一些集成软件包，一切操作都简单了。而本文使用的XAMPP，就是这样一个易于安装且包含 MySQL、PHP 和 Perl 的 Apache 发行版，其他类似软件还有&lt;a href=&quot;http://www.wampserver.com/en/&quot;&gt;wamp&lt;/a&gt;等&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;安装及配置&quot;&gt;&lt;a href=&quot;#安装及配置&quot; class=&quot;headerlink&quot; title=&quot;安装及配置&quot;&gt;&lt;/a&gt;安装及配置&lt;/h3&gt;
-    
-    </summary>
-    
-      <category term="计算机基础" scheme="http://licao404.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/"/>
-    
-      <category term="计算机网络" scheme="http://licao404.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
-    
-      <category term="php" scheme="http://licao404.com/tags/php/"/>
-    
-      <category term="Web服务器" scheme="http://licao404.com/tags/Web%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-    
-      <category term="前后端" scheme="http://licao404.com/tags/%E5%89%8D%E5%90%8E%E7%AB%AF/"/>
-    
-      <category term="Apache" scheme="http://licao404.com/tags/Apache/"/>
     
   </entry>
   
