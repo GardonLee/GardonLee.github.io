@@ -1235,11 +1235,11 @@
     
       <category term="Web服务器" scheme="http://licao404.com/tags/Web%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
-      <category term="Apache" scheme="http://licao404.com/tags/Apache/"/>
-    
       <category term="HTTP" scheme="http://licao404.com/tags/HTTP/"/>
     
       <category term="TCP/IP" scheme="http://licao404.com/tags/TCP-IP/"/>
+    
+      <category term="Apache" scheme="http://licao404.com/tags/Apache/"/>
     
   </entry>
   
