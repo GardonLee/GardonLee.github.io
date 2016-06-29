@@ -88,7 +88,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="李操,南京,前端,前端开发,学习,JavaScript,html,衡阳,CSS" />
+  <meta name="keywords" content="JavaScript,设计模式," />
 
 
 
@@ -106,15 +106,18 @@
 
 
 
-<meta name="description" content="一生想做浪漫极客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="蓝岚爱肉肉">
-<meta property="og:url" content="http://licao404.com/categories/编程学习/前端高级/index.html">
+<meta name="description" content="设计模式是前辈总结下来的一套经验和心血，学习设计模式，让我们代码的更加具备可重用性、可靠性，是工程化编程必不可缺的基石。不过遗憾的是，限于本人目前水平，这篇博文谈的不是涵盖所有23种传统设计模式，而是想说明平时在编写JavaScript中经常会用到的几种设计模式，有单例模式、工厂模式、构造函数模式、混合模式、模块模式、发布订阅模式，以及具体编写JavaScript代码的一些小实践，使用设计模式编">
+<meta property="og:type" content="article">
+<meta property="og:title" content="浅析几种设计模式">
+<meta property="og:url" content="http://licao404.com/2016/06/24/浅析几种设计模式/index.html">
 <meta property="og:site_name" content="蓝岚爱肉肉">
-<meta property="og:description" content="一生想做浪漫极客">
+<meta property="og:description" content="设计模式是前辈总结下来的一套经验和心血，学习设计模式，让我们代码的更加具备可重用性、可靠性，是工程化编程必不可缺的基石。不过遗憾的是，限于本人目前水平，这篇博文谈的不是涵盖所有23种传统设计模式，而是想说明平时在编写JavaScript中经常会用到的几种设计模式，有单例模式、工厂模式、构造函数模式、混合模式、模块模式、发布订阅模式，以及具体编写JavaScript代码的一些小实践，使用设计模式编">
+<meta property="og:image" content="http://7xrvo9.com1.z0.glb.clouddn.com/20160624/code211360.jpg">
+<meta property="og:updated_time" content="2016-06-29T15:01:26.388Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="蓝岚爱肉肉">
-<meta name="twitter:description" content="一生想做浪漫极客">
+<meta name="twitter:title" content="浅析几种设计模式">
+<meta name="twitter:description" content="设计模式是前辈总结下来的一套经验和心血，学习设计模式，让我们代码的更加具备可重用性、可靠性，是工程化编程必不可缺的基石。不过遗憾的是，限于本人目前水平，这篇博文谈的不是涵盖所有23种传统设计模式，而是想说明平时在编写JavaScript中经常会用到的几种设计模式，有单例模式、工厂模式、构造函数模式、混合模式、模块模式、发布订阅模式，以及具体编写JavaScript代码的一些小实践，使用设计模式编">
+<meta name="twitter:image" content="http://7xrvo9.com1.z0.glb.clouddn.com/20160624/code211360.jpg">
 
 
 
@@ -140,7 +143,7 @@
   };
 </script>
 
-  <title> 分类: 前端高级 | 蓝岚爱肉肉 </title>
+  <title> 浅析几种设计模式 | 蓝岚爱肉肉 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -177,7 +180,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -466,47 +469,207 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <div class="collection-title">
-      <h2 >
-        前端高级
-        <small>分类</small>
-      </h2>
-    </div>
-
+  <div id="posts" class="posts-expand">
     
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/05/12/【转】前端开发中的字符编码/" itemprop="url">
-              
-                <span itemprop="name">【转】前端开发中的字符编码</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-05-12T08:28:36+08:00"
-              content="2016-05-12" >
-          05-12
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-    
-  </section>
 
   
 
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                浅析几种设计模式
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-06-24T22:43:36+08:00" content="2016-06-24">
+              2016-06-24
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/编程学习/" itemprop="url" rel="index">
+                    <span itemprop="name">编程学习</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/编程学习/前端进阶/" itemprop="url" rel="index">
+                    <span itemprop="name">前端进阶</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/06/24/浅析几种设计模式/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/06/24/浅析几种设计模式/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/06/24/浅析几种设计模式/" class="leancloud_visitors" data-flag-title="浅析几种设计模式">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="http://7xrvo9.com1.z0.glb.clouddn.com/20160624/code211360.jpg" alt=""></p>
+<blockquote class="blockquote-center">设计模式是前辈总结下来的一套经验和心血，学习设计模式，让我们代码的更加具备可重用性、可靠性，是工程化编程必不可缺的基石。不过遗憾的是，限于本人目前水平，这篇博文谈的不是涵盖所有23种传统设计模式，而是想说明平时在编写JavaScript中经常会用到的几种设计模式，有单例模式、工厂模式、构造函数模式、混合模式、模块模式、发布订阅模式，以及具体编写JavaScript代码的一些小实践，使用设计模式编程是一种好习惯，了解其形成的原理更是我们关注的重点，好了，让我们开始吧！</blockquote>
+
+<a id="more"></a>
+<h3 id="单例模式"><a href="#单例模式" class="headerlink" title="单例模式"></a>单例模式</h3><p>从需求出发，什么情况下我们会用到单例模式呢？遇到过这样的场景：点击登录按钮时，页面弹出登录浮窗、或者点击操作按钮后，弹出确认弹窗，这里的登录窗和确认窗都是唯一的，无论点击多少次，这些弹窗只会被创建一次，这时候比较适合用单例模式来创建。</p>
+<h3 id="工厂（方法）模式"><a href="#工厂（方法）模式" class="headerlink" title="工厂（方法）模式"></a>工厂（方法）模式</h3><p>工厂模式抽象了创建具体对象的过程，定义一个用于<strong>创建对象的接口</strong>，让子类决定实例化哪个类。由于在JavaScript中没有类的概念，我们使用一种函数（工厂方法）来封装以<strong>特定接口</strong>创建对象的细节，让这个方法来决定需要创建哪个类的实例，</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">creatCompany</span>(<span class="params">position,obj</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> F2E = <span class="function"><span class="keyword">function</span> (<span class="params">name,age,sex</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.name = name;</span><br><span class="line">        <span class="keyword">this</span>.age = age;</span><br><span class="line">        <span class="keyword">this</span>.sex = sex;</span><br><span class="line">        <span class="keyword">this</span>.saySkills = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="string">"HTML(5)、CSS(3)、JavaScript、Tools、Frameworks......"</span>);</span><br><span class="line">        &#125;;</span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="keyword">var</span> UI = <span class="function"><span class="keyword">function</span> (<span class="params">name,age,sex</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.name = name;</span><br><span class="line">        <span class="keyword">this</span>.age = age;</span><br><span class="line">        <span class="keyword">this</span>.sex = sex;</span><br><span class="line">        <span class="keyword">this</span>.saySkills = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="string">"美术基础、平面设计、交互设计、动效设计、前端相关......"</span>);</span><br><span class="line">        &#125;;</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span>(position === <span class="string">'F2E'</span>)&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> F2E(obj.name,obj.age,obj.sex);</span><br><span class="line">    &#125;<span class="keyword">else</span> <span class="keyword">if</span> (position === <span class="string">'UI'</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> UI(obj.name,obj.age,obj.sex);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> staff01 = <span class="keyword">new</span> creatCompany(<span class="string">'F2E'</span>,&#123;</span><br><span class="line">    name: <span class="string">'licao'</span>,</span><br><span class="line">    age: <span class="number">20</span>,</span><br><span class="line">    sex: <span class="string">'male'</span></span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> staff02 = <span class="keyword">new</span> creatCompany(<span class="string">'UI'</span>,&#123;</span><br><span class="line">    name: <span class="string">'lucy'</span>,</span><br><span class="line">    age: <span class="number">22</span>,</span><br><span class="line">    sex: <span class="string">'female'</span></span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">staff01.saySkills();</span><br><span class="line">staff02.saySkills();</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(staff01);</span><br><span class="line"><span class="built_in">console</span>.log(staff02);</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    <div>
+      
+        
+<div id="wechat_subscriber" style="display: block； padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="http://7xrvo9.com1.z0.glb.clouddn.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E5%8D%9A%E5%AE%A2%E5%BE%AE%E4%BF%A1%E8%AE%A2%E9%98%85%E5%8F%B7.jpg" alt="蓝岚 wechat" style="width: 200px; max-width: 100%;"/>
+    <div>欢迎您扫一扫上面的微信公众号，订阅我的博客！</div>
+</div>
+
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>如果您喜欢，请随意打赏。您的支持将鼓励我继续创作！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="http://7xrvo9.com1.z0.glb.clouddn.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E5%BE%AE%E4%BF%A1%E6%89%93%E8%B5%8F%E9%9A%8F%E6%84%8F.png" alt="蓝岚 WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="http://7xrvo9.com1.z0.glb.clouddn.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%94%AF%E4%BB%98%E5%AE%9D%E6%89%93%E8%B5%8F%E9%9A%8F%E6%84%8F.jpg" alt="蓝岚 Alipay"/>
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
+
+
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/JavaScript/" rel="tag"># JavaScript</a>
+          
+            <a href="/tags/设计模式/" rel="tag"># 设计模式</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/06/07/一些平时做的小作品/" rel="next" title="一些平时做的小作品">
+                <i class="fa fa-chevron-left"></i> 一些平时做的小作品
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type = "text/javascript" src = "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56ffc85abe3ee8ee" async = "async" ></script>
+      
+    </div>
+  </div>
 
 
           </div>
@@ -514,6 +677,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/06/24/浅析几种设计模式/"
+           data-title="浅析几种设计模式" data-url="http://licao404.com/2016/06/24/浅析几种设计模式/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -533,8 +704,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="http://7xr868.com1.z0.glb.clouddn.com/me.jpg"
@@ -631,6 +811,20 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#单例模式"><span class="nav-number">1.</span> <span class="nav-text">单例模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#工厂（方法）模式"><span class="nav-number">2.</span> <span class="nav-text">工厂（方法）模式</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
       
 
     </div>
@@ -768,6 +962,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
 
   
 

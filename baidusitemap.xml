@@ -3,16 +3,16 @@
 
     
   <url>
-    <loc>http://licao404.com/2016/05/19/%E5%89%8D%E7%AB%AF%E6%A8%A1%E5%9D%97%E5%8C%96%E4%B9%8B%E6%97%85%EF%BC%88%E4%B8%89%EF%BC%89%EF%BC%9ARequireJS%E6%A8%A1%E5%9D%97%E5%8C%96%E5%8F%8Ar-js%E6%8C%87%E5%8D%97/</loc>
-    <lastmod>2016-06-15T15:38:00.746Z</lastmod>
+    <loc>http://licao404.com/2016/06/24/%E6%B5%85%E6%9E%90%E5%87%A0%E7%A7%8D%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</loc>
+    <lastmod>2016-06-29T15:01:26.388Z</lastmod>
     <data>
         <display>
-        <title>前端模块化之旅（三）：RequireJS模块化及r.js指南</title>
-        <pubTime>2016-05-18T18:26:05.000Z</pubTime>
+        <title>浅析几种设计模式</title>
+        <pubTime>2016-06-24T14:43:36.000Z</pubTime>
         
         <tag>JavaScript </tag>
          
-        <tag>模块化 </tag>
+        <tag>设计模式 </tag>
          
          
            
@@ -29,7 +29,7 @@
     
   <url>
     <loc>http://licao404.com/2016/06/07/%E4%B8%80%E4%BA%9B%E5%B9%B3%E6%97%B6%E5%81%9A%E7%9A%84%E5%B0%8F%E4%BD%9C%E5%93%81/</loc>
-    <lastmod>2016-06-08T05:25:25.151Z</lastmod>
+    <lastmod>2016-06-29T15:01:03.943Z</lastmod>
     <data>
         <display>
         <title>一些平时做的小作品</title>
@@ -39,6 +39,31 @@
            
              
               <breadCrumb title="编程学习" url="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://licao404.com/2016/05/19/%E5%89%8D%E7%AB%AF%E6%A8%A1%E5%9D%97%E5%8C%96%E4%B9%8B%E6%97%85%EF%BC%88%E4%B8%89%EF%BC%89%EF%BC%9ARequireJS%E6%A8%A1%E5%9D%97%E5%8C%96%E5%8F%8Ar-js%E6%8C%87%E5%8D%97/</loc>
+    <lastmod>2016-06-24T14:15:48.194Z</lastmod>
+    <data>
+        <display>
+        <title>前端模块化之旅（三）：RequireJS模块化及r.js指南</title>
+        <pubTime>2016-05-18T18:26:05.000Z</pubTime>
+        
+        <tag>JavaScript </tag>
+         
+        <tag>模块化 </tag>
+         
+         
+           
+             
+              <breadCrumb title="编程学习" url="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/"/>
+          
+             
+              <breadCrumb title="前端进阶" url="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/%E5%89%8D%E7%AB%AF%E8%BF%9B%E9%98%B6/"/>
           
         </display>
     </data>
@@ -288,13 +313,13 @@
         
         <tag>前后端 </tag>
          
-        <tag>php </tag>
-         
         <tag>Web服务器 </tag>
          
         <tag>HTTP </tag>
          
         <tag>TCP/IP </tag>
+         
+        <tag>php </tag>
          
         <tag>Apache </tag>
          
@@ -321,9 +346,9 @@
         
         <tag>前后端 </tag>
          
-        <tag>php </tag>
-         
         <tag>Web服务器 </tag>
+         
+        <tag>php </tag>
          
         <tag>Apache </tag>
          
