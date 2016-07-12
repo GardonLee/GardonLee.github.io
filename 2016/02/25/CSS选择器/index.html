@@ -147,6 +147,11 @@
   };
 </script>
 
+
+
+
+  <link rel="canonical" href="http://licao404.com/2016/02/25/CSS选择器/"/>
+
   <title> CSS选择器 | 蓝岚爱肉肉 </title>
 </head>
 
@@ -172,7 +177,7 @@
 
 
   <div style="display: none;">
-    <script src="http://s6.cnzz.com/stat.php?id=1258087445&web_id=1258087445" type="text/javascript"></script>
+    <script src="//s6.cnzz.com/stat.php?id=1258087445&web_id=1258087445" type="text/javascript"></script>
   </div>
 
 
@@ -279,7 +284,7 @@
       
         <li class="menu-item menu-item-search">
           
-            <a href="#" class="st-search-show-outputs">
+            <a href="javascript:;" class="st-search-show-outputs">
           
             
               <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
@@ -661,10 +666,11 @@
     <div>
       
         
-<div id="wechat_subscriber" style="display: block； padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+<div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
     <img id="wechat_subscriber_qcode" src="http://7xrvo9.com1.z0.glb.clouddn.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E5%8D%9A%E5%AE%A2%E5%BE%AE%E4%BF%A1%E8%AE%A2%E9%98%85%E5%8F%B7.jpg" alt="蓝岚 wechat" style="width: 200px; max-width: 100%;"/>
     <div>欢迎您扫一扫上面的微信公众号，订阅我的博客！</div>
 </div>
+
 
       
     </div>
@@ -1063,11 +1069,17 @@
   </script>
 
   
+<<<<<<< HEAD
     
       
       <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
       <script src="/js/src/hook-duoshuo.js?v=5.1.0"></script>
     
+=======
+    
+    <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+>>>>>>> 66c5b1c35d50fd92f1de1867a73f0311ea842e77
   
 
 
@@ -1112,6 +1124,14 @@
             var element = document.getElementById(url);
 
             $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
           }
         })
         .fail(function (object, error) {

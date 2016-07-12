@@ -140,6 +140,11 @@
   };
 </script>
 
+
+
+
+  <link rel="canonical" href="http://licao404.com/tags/杂谈/"/>
+
   <title> 标签: 杂谈 | 蓝岚爱肉肉 </title>
 </head>
 
@@ -165,7 +170,7 @@
 
 
   <div style="display: none;">
-    <script src="http://s6.cnzz.com/stat.php?id=1258087445&web_id=1258087445" type="text/javascript"></script>
+    <script src="//s6.cnzz.com/stat.php?id=1258087445&web_id=1258087445" type="text/javascript"></script>
   </div>
 
 
@@ -272,7 +277,7 @@
       
         <li class="menu-item menu-item-search">
           
-            <a href="#" class="st-search-show-outputs">
+            <a href="javascript:;" class="st-search-show-outputs">
           
             
               <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
@@ -879,11 +884,17 @@
   </script>
 
   
+<<<<<<< HEAD
     
       
       <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
       <script src="/js/src/hook-duoshuo.js?v=5.1.0"></script>
     
+=======
+    
+    <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+>>>>>>> 66c5b1c35d50fd92f1de1867a73f0311ea842e77
   
 
 
@@ -928,6 +939,14 @@
             var element = document.getElementById(url);
 
             $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
           }
         })
         .fail(function (object, error) {
