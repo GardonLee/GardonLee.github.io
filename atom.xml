@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://licao404.com/"/>
-  <updated>2016-07-17T04:11:04.481Z</updated>
+  <updated>2016-07-17T04:17:03.432Z</updated>
   <id>http://licao404.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://licao404.com/2016/07/17/%E8%83%BD%E5%81%9A%E5%96%9C%E6%AC%A2%E5%81%9A%E7%9A%84-%E5%B0%B1%E5%BE%88%E5%A5%BD/"/>
     <id>http://licao404.com/2016/07/17/能做喜欢做的-就很好/</id>
     <published>2016-07-17T15:58:04.000Z</published>
-    <updated>2016-07-17T04:11:04.481Z</updated>
+    <updated>2016-07-17T04:17:03.432Z</updated>
     
     <content type="html">&lt;img src=&quot;http://7xrvo9.com1.z0.glb.clouddn.com/20160716/%E8%8D%B7%E8%8A%B1.jpg&quot; class=&quot;full-image&quot;&gt;
 &lt;blockquote class=&quot;blockquote-center&quot;&gt;想来已然是好久没有更新过博客了。六月底匆忙结束了学校的事情，七月出头从南京赶赴杭州，开启一段全新的历程（蓄谋已久），其中的酸爽体验都让我差点忘了还有本站点，哭瞎-。- 不一样的感觉、不一样的环境、不一样的一群人，两个礼拜下来都有新的体验，技术也好，思考方式也罢，一切都还是入坑的开始…&lt;/blockquote&gt;
@@ -46,7 +46,7 @@
 &lt;p&gt;深入理解每一个知识点、每一个元素、每一个属性，以及但他们组合在一起时候的化学反应，相互影响一般是初学者会忽视的地方，这基本上无可避免（做的不够多，实践一次积累一次）。随着入行工作时间的增长和经验加持一般都是会不断的再学习，逐渐加深理解，当达到手速快到不加思考就能秒出符合以上要求的静态页，这样静态页的功底算是炉火纯青了。网上优秀的代码规范很多，也许你刚开始按照规范写，以为自己会写规范化代码，简历上也牛逼的写着，然而这几年前端大牛还是那几个，前端初学者一大堆，入门门槛依然比较低。这是机会也是该看清的，踏实学习比每天追求新技术来的靠谱，当然使用新技术不是什么坏事，不过一切都得建立在你喜欢的基础上，为之付出精力是值得的，学习总是有好处的。&lt;/p&gt;
 &lt;h4 id=&quot;2&quot;&gt;&lt;a href=&quot;#2&quot; class=&quot;headerlink&quot; title=&quot;2&quot;&gt;&lt;/a&gt;2&lt;/h4&gt;&lt;p&gt;&lt;img src=&quot;http://7xrvo9.com1.z0.glb.clouddn.com/20160716/post-bg-js-version.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;p&gt;我想前端基础有意思的部分可能是深入理解原生JavaScript、DOM、BOM，在此基础上熟练使用jQuery等js库，你会发现你是个造物者，利用DOM操作页面上的一切，利用ajax交互数据让你的页面活络起来。这里你会愈加深切的体悟到你就是个彻头彻尾的屌丝程序猿，每天花大量时间在调试程序上，因为会一直遇到问题。做一些可复用组件、通用jQuery插件来提高效率，实现一些炫酷的js动画，可以开始沉淀自己的代码仓库，这时候可以胜任一般的前端业务，这段时期需要大量代码来练手，不断写就是了，特别要注意采用一些设计模式来写代码，注重代码可复用性，封装性，模块化的思想，程序员面向对象编程是必须的（据说有面向工资的，是B厂员工么）。&lt;/p&gt;
-&lt;p&gt;学习并且实践完js的一些核心概念后才基本对前端有了一个大致清晰的认识,尝试做一些有意思的项目，有机会参与开源项目更好。参与团队协作的项目，了解互联网项目开发流程，如何做到和队友不互相伤害（然并卵…），过程并且会用到一些高效工具，例如&lt;code&gt;requireJS&lt;/code&gt;模块化、&lt;code&gt;Gulp&lt;/code&gt;自动化流程（当然会有更高级的&lt;code&gt;Webpack&lt;/code&gt;）、&lt;code&gt;NPM&lt;/code&gt;等,前端工具太多了，要用就去看文档吧；有兴趣的话可以阅读下&lt;code&gt;jQuery&lt;/code&gt;以及&lt;code&gt;Bootstrap&lt;/code&gt;的源码，相信这比自己作死敲代码来得更爽快，并且能更深入理解技术原理，来龙去脉熟稔于心。&lt;/p&gt;
+&lt;p&gt;学习并且实践完js的一些核心概念后才基本对前端有了一个大致清晰的认识,尝试做一些有意思的项目，有机会参与开源项目更好。参与团队协作的项目，了解互联网项目开发流程，如何做到和队友不互相伤害（然并卵…），过程并且会用到一些高效工具，例如&lt;code&gt;less&lt;/code&gt;或&lt;code&gt;sass&lt;/code&gt;等css预处理工具、&lt;code&gt;requireJS&lt;/code&gt;模块化、&lt;code&gt;Gulp&lt;/code&gt;自动化流程（当然会有更高级的&lt;code&gt;Webpack&lt;/code&gt;）、&lt;code&gt;NPM&lt;/code&gt;等,前端工具太多了，要用就去看文档吧；有兴趣的话可以阅读下&lt;code&gt;jQuery&lt;/code&gt;以及&lt;code&gt;Bootstrap&lt;/code&gt;的源码，相信这比自己作死敲代码来得更爽快，并且能更深入理解技术原理，来龙去脉熟稔于心。&lt;/p&gt;
 &lt;h4 id=&quot;3&quot;&gt;&lt;a href=&quot;#3&quot; class=&quot;headerlink&quot; title=&quot;3&quot;&gt;&lt;/a&gt;3&lt;/h4&gt;&lt;p&gt;上面的基础如果打点妥当，可以关注并学习下前端新动向。例如&lt;code&gt;ECMA2015&lt;/code&gt;的新特性新语法，据说之后&lt;code&gt;ECMAScript&lt;/code&gt;会步入每年规范化的道路，这意味着这门语言会更加强大，更新周期也会缩短。同时，如果你对服务器后端感兴趣，&lt;code&gt;NoodJs&lt;/code&gt;会成为你轻易涉足的利器，利用&lt;code&gt;Express&lt;/code&gt;搭建个博客也是入门的不错选择，&lt;code&gt;NoodJs&lt;/code&gt;是个好东西，大前端不是梦。之后，便可以看新技术啦，轻量的&lt;code&gt;MVVM&lt;/code&gt;框架&lt;code&gt;Vue&lt;/code&gt;,近年来如火如荼的&lt;code&gt;Angular&lt;/code&gt;和&lt;code&gt;React&lt;/code&gt;，包括最新的&lt;code&gt;React Native&lt;/code&gt;,不过不太建议一股脑学习，根据个人喜好和项目需要进行学习使用方是良策。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;http://7xrvo9.com1.z0.glb.clouddn.com/20160527/post-bg-re-vs-ng2.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;p&gt;前端体系看似多而杂，好用的工具一箩筐，新技术层出不穷，开源库和框架挑花眼，今天又出了个没听过的词汇，好项目遍地走…. 个人而言握住基本功是关键，这是上手新东西的有力保障，千变万变离不开一些本质的东西。&lt;/p&gt;
