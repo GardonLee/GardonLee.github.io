@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://licao404.com/"/>
-  <updated>2016-07-17T04:34:04.731Z</updated>
+  <updated>2016-07-17T04:34:21.856Z</updated>
   <id>http://licao404.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://licao404.com/2016/07/17/%E8%83%BD%E5%81%9A%E5%96%9C%E6%AC%A2%E5%81%9A%E7%9A%84-%E5%B0%B1%E5%BE%88%E5%A5%BD/"/>
     <id>http://licao404.com/2016/07/17/能做喜欢做的-就很好/</id>
     <published>2016-07-17T15:58:04.000Z</published>
-    <updated>2016-07-17T04:34:04.731Z</updated>
+    <updated>2016-07-17T04:34:21.856Z</updated>
     
     <content type="html">&lt;img src=&quot;http://7xrvo9.com1.z0.glb.clouddn.com/20160716/%E8%8D%B7%E8%8A%B1.jpg&quot; class=&quot;full-image&quot;&gt;
 &lt;blockquote class=&quot;blockquote-center&quot;&gt;想来已然是好久没有更新过博客了。六月底匆忙结束了学校的事情，七月出头从南京赶赴杭州，开启一段全新的历程（蓄谋已久），其中的酸爽体验都让我差点忘了还有本站点，哭瞎-。- 不一样的感觉、不一样的环境、不一样的一群人，两个礼拜下来都有新的体验，技术也好，思考方式也罢，一切都还是入坑的开始…&lt;/blockquote&gt;
@@ -49,7 +49,7 @@
 &lt;p&gt;学习并且实践完js的一些核心概念后才基本对前端有了一个大致清晰的认识,尝试做一些有意思的项目，有机会参与开源项目更好。参与团队协作的项目，了解互联网项目开发流程，如何做到和队友不互相伤害（然并卵…），过程并且会用到一些高效工具，例如&lt;code&gt;less&lt;/code&gt;或&lt;code&gt;sass&lt;/code&gt;等css预处理工具、&lt;code&gt;requireJS&lt;/code&gt;模块化、&lt;code&gt;Gulp&lt;/code&gt;自动化流程（当然会有更高级的&lt;code&gt;Webpack&lt;/code&gt;）、&lt;code&gt;NPM&lt;/code&gt;等,前端工具太多了，要用就去看文档吧；有兴趣的话可以阅读下&lt;code&gt;jQuery&lt;/code&gt;以及&lt;code&gt;Bootstrap&lt;/code&gt;的源码，相信这比自己作死敲代码来得更爽快，并且能更深入理解技术原理，来龙去脉熟稔于心。&lt;/p&gt;
 &lt;h4 id=&quot;3&quot;&gt;&lt;a href=&quot;#3&quot; class=&quot;headerlink&quot; title=&quot;3&quot;&gt;&lt;/a&gt;3&lt;/h4&gt;&lt;p&gt;上面的基础如果打点妥当，可以关注并学习下前端新动向。例如&lt;code&gt;ECMA2015&lt;/code&gt;的新特性新语法，据说之后&lt;code&gt;ECMAScript&lt;/code&gt;会步入每年规范化的道路，这意味着这门语言会更加强大，更新周期也会缩短，关注下新标准有恃无恐，毕竟是吃饭的家伙。同时，如果你对服务器后端感兴趣，&lt;code&gt;NoodJs&lt;/code&gt;会成为你轻易涉足的利器，利用&lt;code&gt;Express&lt;/code&gt;搭建个博客也是入门的不错选择，&lt;code&gt;NoodJs&lt;/code&gt;是个好东西，大前端不是梦。之后，便可以看新技术啦，轻量的&lt;code&gt;MVVM&lt;/code&gt;框架&lt;code&gt;Vue&lt;/code&gt;,近年来如火如荼的&lt;code&gt;Angular&lt;/code&gt;和&lt;code&gt;React&lt;/code&gt;，包括最新的&lt;code&gt;React Native&lt;/code&gt;,不过不太建议一股脑学习，根据个人喜好和项目需要进行学习使用方是良策。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;http://7xrvo9.com1.z0.glb.clouddn.com/20160527/post-bg-re-vs-ng2.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;至于移动端，现在叫无线前端，或者具有中国特色的&lt;code&gt;H5&lt;/code&gt;工程师，看个人兴趣吧，掌握最新的HTML标准，目前而言能用CSS3做出炫酷的动画基本上也能胜任。会&lt;code&gt;canvas&lt;/code&gt;,还可以利用一些插件或动画库做一些小游戏（出现了很火很强大的H5游戏引擎），也是加分项，撩妹杀手锏呀，就冲这点值了（表白，生日，纪念啥的，开始YY）。&lt;/p&gt;
+&lt;p&gt;至于移动端，现在叫无线前端，或者说是具有中国特色的&lt;code&gt;H5&lt;/code&gt;工程师，看个人兴趣吧，掌握最新的HTML标准，目前而言能用CSS3做出炫酷的动画基本上也能胜任。会&lt;code&gt;canvas&lt;/code&gt;,还可以利用一些插件或动画库做一些小游戏（出现了很火很强大的H5游戏引擎），也是加分项，撩妹杀手锏呀，就冲这点值了（表白，生日，纪念啥的，开始YY）。&lt;/p&gt;
 &lt;p&gt;前端体系看似多而杂，好用的工具一箩筐，新技术层出不穷，开源库和框架挑花眼，今天又出了个没听过的词汇，好项目遍地走…. 个人而言握住基本功是关键，这是上手新东西的有力保障，千变万变离不开一些本质的东西。&lt;/p&gt;
 &lt;h3 id=&quot;诗和远方&quot;&gt;&lt;a href=&quot;#诗和远方&quot; class=&quot;headerlink&quot; title=&quot;# 诗和远方&quot;&gt;&lt;/a&gt;# 诗和远方&lt;/h3&gt;&lt;p&gt;前端就像个大坑，而且越挖越大，很多不明不白的往里面跳，挖了一会不见有水，便四处拓宽挖掘面积，以为别处有水。如此一来坑只会变成洼地，不会有井。前端大部分是没有科班出身，高校目前也没有设置前端专业，前端行业的从业人员大部分是所谓野路子出身，一切手法都是自己摸索出来的。我个人也不是纯计算机专业出身，学的电子，应该还算计算机相关专业，粗略学过一些C/C++,数据结构，操作系统，计算机网络等，然而随着你想深入挖掘这个行业，这些东西会逐渐显现出他们的支撑作用，解决问题的思维，技术背后的原理。我想如果想挖到水，想持续深耕这个领域，或者应对未知的变化，这些东西势必是要深入补一补，毕竟努力的人总不会得不到眷顾，这也是很多小伙伴们的顾虑。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;http://7xrvo9.com1.z0.glb.clouddn.com/20160716/wallhaven-216757.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
