@@ -131,139 +131,6 @@
   </entry>
   
   <entry>
-    <title>一些平时做的小作品</title>
-    <link href="http://licao404.com/2016/06/07/%E4%B8%80%E4%BA%9B%E5%B9%B3%E6%97%B6%E5%81%9A%E7%9A%84%E5%B0%8F%E4%BD%9C%E5%93%81/"/>
-    <id>http://licao404.com/2016/06/07/一些平时做的小作品/</id>
-    <published>2016-06-06T23:22:36.000Z</published>
-    <updated>2016-06-29T15:01:03.943Z</updated>
-    
-    <content type="html">&lt;blockquote class=&quot;blockquote-center&quot;&gt;个人平时所写的小东西，这里稍微汇总下。水平有限，还望多多指教&lt;/blockquote&gt;
-
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h3 id=&quot;功能组件化的单页面&quot;&gt;&lt;a href=&quot;#功能组件化的单页面&quot; class=&quot;headerlink&quot; title=&quot;功能组件化的单页面&quot;&gt;&lt;/a&gt;功能组件化的单页面&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://febox.applinzi.com/requireJS/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;效果预览&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/licao404/landemo/tree/master/requireJS&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;代码实现&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;曝光加载&quot;&gt;&lt;a href=&quot;#曝光加载&quot; class=&quot;headerlink&quot; title=&quot;曝光加载&quot;&gt;&lt;/a&gt;曝光加载&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://febox.applinzi.com/task29/task29-2.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;效果预览&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/licao404/landemo/blob/master/task29/task29-2.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;实现代码&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;曝光加载更多&quot;&gt;&lt;a href=&quot;#曝光加载更多&quot; class=&quot;headerlink&quot; title=&quot;曝光加载更多&quot;&gt;&lt;/a&gt;曝光加载更多&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://febox.applinzi.com/task29/task29-3.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;效果预览&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/licao404/landemo/blob/master/task29/task29-3.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;实现代码&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;dialog组件&quot;&gt;&lt;a href=&quot;#dialog组件&quot; class=&quot;headerlink&quot; title=&quot;dialog组件&quot;&gt;&lt;/a&gt;dialog组件&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://febox.applinzi.com/goDialog/index.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;效果预览&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/licao404/landemo/tree/master/goDialog&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;实现代码&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;move-dialog组件&quot;&gt;&lt;a href=&quot;#move-dialog组件&quot; class=&quot;headerlink&quot; title=&quot;move dialog组件&quot;&gt;&lt;/a&gt;move dialog组件&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://febox.applinzi.com/goDialogdraggable/index.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;效果预览&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/licao404/landemo/tree/master/goDialogdraggable&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;实现代码&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;CSS3-简单loading&quot;&gt;&lt;a href=&quot;#CSS3-简单loading&quot; class=&quot;headerlink&quot; title=&quot;CSS3 简单loading&quot;&gt;&lt;/a&gt;CSS3 简单loading&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://febox.applinzi.com/CSS3/loading.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;效果预览&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;&quot;&gt;实现代码&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;分享按钮&quot;&gt;&lt;a href=&quot;#分享按钮&quot; class=&quot;headerlink&quot; title=&quot;分享按钮&quot;&gt;&lt;/a&gt;分享按钮&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://febox.applinzi.com/%E5%8E%9F%E7%94%9Fjs%E5%88%86%E4%BA%AB%E6%8C%89%E9%92%AE/demo.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;效果预览&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/licao404/landemo/tree/master/%E5%8E%9F%E7%94%9Fjs%E5%88%86%E4%BA%AB%E6%8C%89%E9%92%AE&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;实现代码&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;回到顶部插件&quot;&gt;&lt;a href=&quot;#回到顶部插件&quot; class=&quot;headerlink&quot; title=&quot;回到顶部插件&quot;&gt;&lt;/a&gt;回到顶部插件&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://febox.applinzi.com/task29/task29-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;效果预览&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/licao404/landemo/blob/master/task29/task29-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;实现代码&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;瀑布流懒加载&quot;&gt;&lt;a href=&quot;#瀑布流懒加载&quot; class=&quot;headerlink&quot; title=&quot;瀑布流懒加载&quot;&gt;&lt;/a&gt;瀑布流懒加载&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://febox.applinzi.com/task32/task32.html#&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;效果预览&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/licao404/landemo/tree/master/task32&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;实现代码&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;单页面多轮播&quot;&gt;&lt;a href=&quot;#单页面多轮播&quot; class=&quot;headerlink&quot; title=&quot;单页面多轮播&quot;&gt;&lt;/a&gt;单页面多轮播&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://febox.applinzi.com/task35/task35-1.html#&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;效果预览&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/licao404/landemo/blob/master/task35/task35-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;实现代码&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;无缝轮播&quot;&gt;&lt;a href=&quot;#无缝轮播&quot; class=&quot;headerlink&quot; title=&quot;无缝轮播&quot;&gt;&lt;/a&gt;无缝轮播&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://febox.applinzi.com/task27/task27-3.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;效果预览&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/licao404/landemo/blob/master/task27/task27-3.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;实现代码&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;无缝轮播-1&quot;&gt;&lt;a href=&quot;#无缝轮播-1&quot; class=&quot;headerlink&quot; title=&quot;无缝轮播&quot;&gt;&lt;/a&gt;无缝轮播&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://febox.applinzi.com/task27/task27-3.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;效果预览&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/licao404/landemo/blob/master/task27/task27-3.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;实现代码&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;无缝轮播-DOM&quot;&gt;&lt;a href=&quot;#无缝轮播-DOM&quot; class=&quot;headerlink&quot; title=&quot;无缝轮播(DOM)&quot;&gt;&lt;/a&gt;无缝轮播(DOM)&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://febox.applinzi.com/task27/task27-3-2.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;效果预览&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/licao404/landemo/blob/master/task27/task27-3-2.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;实现代码&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;淡入淡出轮播&quot;&gt;&lt;a href=&quot;#淡入淡出轮播&quot; class=&quot;headerlink&quot; title=&quot;淡入淡出轮播&quot;&gt;&lt;/a&gt;淡入淡出轮播&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://febox.applinzi.com/task27/task27-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;效果预览&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/licao404/landemo/blob/master/task27/task27-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;实现代码&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;加载更多-php&quot;&gt;&lt;a href=&quot;#加载更多-php&quot; class=&quot;headerlink&quot; title=&quot;加载更多(php)&quot;&gt;&lt;/a&gt;加载更多(php)&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://febox.applinzi.com/task25/task25-3.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;效果预览&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/licao404/landemo/tree/master/task26&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;实现代码&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;JS加载更多（php）&quot;&gt;&lt;a href=&quot;#JS加载更多（php）&quot; class=&quot;headerlink&quot; title=&quot;JS加载更多（php）&quot;&gt;&lt;/a&gt;JS加载更多（php）&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://febox.applinzi.com/task24-2/task24-2.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;效果预览&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/licao404/landemo/tree/master/task24-2&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;代码实现&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;JS表单注册（php）&quot;&gt;&lt;a href=&quot;#JS表单注册（php）&quot; class=&quot;headerlink&quot; title=&quot;JS表单注册（php）&quot;&gt;&lt;/a&gt;JS表单注册（php）&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://febox.applinzi.com/task24-3/task24-3.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;效果预览&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/licao404/landemo/tree/master/task24-3&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;代码实现&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;JS商品分类栏&quot;&gt;&lt;a href=&quot;#JS商品分类栏&quot; class=&quot;headerlink&quot; title=&quot;JS商品分类栏&quot;&gt;&lt;/a&gt;JS商品分类栏&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://febox.applinzi.com/task25/task25-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;效果预览&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/licao404/landemo/blob/master/task25/task25-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;实现代码&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;JS-Tap切换&quot;&gt;&lt;a href=&quot;#JS-Tap切换&quot; class=&quot;headerlink&quot; title=&quot;JS Tap切换&quot;&gt;&lt;/a&gt;JS Tap切换&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://febox.applinzi.com/task25/task25-2.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;效果预览&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/licao404/landemo/blob/master/task25/task25-2.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;实现代码&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;JS-加载更多&quot;&gt;&lt;a href=&quot;#JS-加载更多&quot; class=&quot;headerlink&quot; title=&quot;JS 加载更多&quot;&gt;&lt;/a&gt;JS 加载更多&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://febox.applinzi.com/task25/task25-3.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;效果预览&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/licao404/landemo/blob/master/task25/task25-3.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;实现代码&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;CSS浏览器兼容性&quot;&gt;&lt;a href=&quot;#CSS浏览器兼容性&quot; class=&quot;headerlink&quot; title=&quot;CSS浏览器兼容性&quot;&gt;&lt;/a&gt;CSS浏览器兼容性&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;http://licao404.com/2016/03/01/CSS%E6%B5%8F%E8%A7%88%E5%99%A8%E5%85%BC%E5%AE%B9/&quot;&gt;CSS浏览器兼容性&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;简单的静态仿页面&quot;&gt;&lt;a href=&quot;#简单的静态仿页面&quot; class=&quot;headerlink&quot; title=&quot;简单的静态仿页面&quot;&gt;&lt;/a&gt;简单的静态仿页面&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://febox.applinzi.com/task14/index.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;效果预览&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/licao404/landemo/tree/master/task14&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;代码实现&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;圣杯布局双飞翼布局&quot;&gt;&lt;a href=&quot;#圣杯布局双飞翼布局&quot; class=&quot;headerlink&quot; title=&quot;圣杯布局双飞翼布局&quot;&gt;&lt;/a&gt;圣杯布局双飞翼布局&lt;/h3&gt;&lt;h4 id=&quot;圣杯三栏布局&quot;&gt;&lt;a href=&quot;#圣杯三栏布局&quot; class=&quot;headerlink&quot; title=&quot;圣杯三栏布局&quot;&gt;&lt;/a&gt;圣杯三栏布局&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://febox.applinzi.com/task12/task-12-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;效果预览&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/licao404/landemo/blob/master/commonLayout/task-12-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;代码实现&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;圣杯两栏布局&quot;&gt;&lt;a href=&quot;#圣杯两栏布局&quot; class=&quot;headerlink&quot; title=&quot;圣杯两栏布局&quot;&gt;&lt;/a&gt;圣杯两栏布局&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://febox.applinzi.com/task12/task-12-2.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;效果预览&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/licao404/landemo/blob/master/commonLayout/task-12-2.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;代码实现&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;双飞翼三栏布局&quot;&gt;&lt;a href=&quot;#双飞翼三栏布局&quot; class=&quot;headerlink&quot; title=&quot;双飞翼三栏布局&quot;&gt;&lt;/a&gt;双飞翼三栏布局&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://febox.applinzi.com/task12/task-12-3.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;效果预览&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/licao404/landemo/blob/master/commonLayout/task-12-3.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;代码实现&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;双飞翼两栏布局&quot;&gt;&lt;a href=&quot;#双飞翼两栏布局&quot; class=&quot;headerlink&quot; title=&quot;双飞翼两栏布局&quot;&gt;&lt;/a&gt;双飞翼两栏布局&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://febox.applinzi.com/task12/task-12-4.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;效果预览&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/licao404/landemo/blob/master/commonLayout/task-12-4.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;代码实现&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;纯CSS对话框&quot;&gt;&lt;a href=&quot;#纯CSS对话框&quot; class=&quot;headerlink&quot; title=&quot;纯CSS对话框&quot;&gt;&lt;/a&gt;纯CSS对话框&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://febox.applinzi.com/task10/task-10-2.htmll&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;效果预览&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/licao404/landemo/blob/master/task10/task-10-2.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;代码实现&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;纯CSS导航栏&quot;&gt;&lt;a href=&quot;#纯CSS导航栏&quot; class=&quot;headerlink&quot; title=&quot;纯CSS导航栏&quot;&gt;&lt;/a&gt;纯CSS导航栏&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://febox.applinzi.com/task11/task-11-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;效果预览&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/licao404/landemo/blob/master/task11/task-11-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;代码实现&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;还有更多，没有好好整理，更多精彩，等你发现-…&quot;&gt;&lt;a href=&quot;#还有更多，没有好好整理，更多精彩，等你发现-…&quot; class=&quot;headerlink&quot; title=&quot;还有更多，没有好好整理，更多精彩，等你发现 …&quot;&gt;&lt;/a&gt;还有更多，没有好好整理，更多精彩，等你发现 …&lt;/h4&gt;&lt;hr&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;blockquote class=&quot;blockquote-center&quot;&gt;个人平时所写的小东西，这里稍微汇总下。水平有限，还望多多指教&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="编程学习" scheme="http://licao404.com/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-  </entry>
-  
-  <entry>
     <title>JavaScript的几个选择题</title>
     <link href="http://licao404.com/2016/05/28/JavaScript%E7%9A%84%E5%87%A0%E4%B8%AA%E9%80%89%E6%8B%A9%E9%A2%98/"/>
     <id>http://licao404.com/2016/05/28/JavaScript的几个选择题/</id>
@@ -1945,6 +1812,463 @@
       <category term="AJAX" scheme="http://licao404.com/tags/AJAX/"/>
     
       <category term="jQuery" scheme="http://licao404.com/tags/jQuery/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>学习 ECharts（一）：初窥</title>
+    <link href="http://licao404.com/2016/04/19/%E5%AD%A6%E4%B9%A0-ECharts%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E5%88%9D%E7%AA%A5/"/>
+    <id>http://licao404.com/2016/04/19/学习-ECharts（一）：初窥/</id>
+    <published>2016-04-18T16:12:50.000Z</published>
+    <updated>2016-04-24T04:28:41.245Z</updated>
+    
+    <content type="html">&lt;img src=&quot;http://7xrvo9.com1.z0.glb.clouddn.com/ECharts/example.png&quot; class=&quot;full-image&quot; alt=&quot;alt&quot;&gt;
+&lt;blockquote class=&quot;blockquote-center&quot;&gt;ECharts，一个纯 Javascript 的图表库，可以流畅的运行在 PC 和移动设备上，兼容当前绝大部分浏览器（IE8/9/10/11，Chrome，Firefox，Safari等），底层依赖轻量级的 Canvas 类库 &lt;a href=&quot;https://github.com/ecomfe/zrender&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ZRender&lt;/a&gt;，提供直观，生动，可交互，可高度个性化定制的数据可视化图表。&lt;/blockquote&gt;
+
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h3 id=&quot;入门-Demo-01&quot;&gt;&lt;a href=&quot;#入门-Demo-01&quot; class=&quot;headerlink&quot; title=&quot;入门 Demo 01&quot;&gt;&lt;/a&gt;入门 Demo 01&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;如下面 demo 展示，我们尝试插入一个简单的柱形图：&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;div id=&quot;wrap0&quot; style=&quot;width: 100%;height: 400px;&quot;&gt;&lt;/div&gt;&lt;!--step2：先为echarts准备有宽高的容器--&gt;&lt;/p&gt;
+&lt;script src=&quot;http://7xrvo9.com1.z0.glb.clouddn.com/Echarts%E5%AE%8C%E6%95%B4%E7%89%88/echarts.min.js&quot;&gt;&lt;/script&gt;&lt;!--step1：引入 ECharts--&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+    //step3：基于准备好的dom，初始化echarts实例
+    var myChart = echarts.init(document.getElementById(&#39;wrap0&#39;));
+    //step4：指定图表的配置项和数据
+    var option = {
+        title: {
+            text: &#39;开始学习ECharts&#39;
+        },
+        tooltip: {},
+        legend: {
+            data: [&#39;决定因素&#39;]
+        },
+        xAxis: {
+            data: [&quot;天赋&quot;,&quot;努力&quot;,&quot;兴趣&quot;,&quot;交流&quot;,&quot;心态&quot;,&quot;好学&quot;]
+        },
+        yAxis: {
+            // data: [&#39;点数&#39;]
+        },
+        backgroundColor: &#39;#fff&#39;,
+        series: [{
+            name: &#39;决定因素&#39;,
+            type: &#39;bar&#39;,
+            data: [5, 20, 36, 10, 10, 20]
+        }]
+
+    }; 
+
+    //step5: 使用刚指定的配置项和数据显示图表。
+    myChart.setOption(option);
+&lt;/script&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;下载 &lt;a href=&quot;http://echarts.baidu.com/download.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ECharts&lt;/a&gt; ，由于是初学，随便下什么版本。然后像普通引入外部 JS 文件一样引入 Echarts ;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;在 &lt;code&gt;body&lt;/code&gt; 里面写一个具有宽高的容器，准备往里面塞 ECharts ：&lt;/p&gt;
+&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;id&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;wrap&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;style&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;width: 100%;height: 400px;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;基于准备好的 &lt;code&gt;dom&lt;/code&gt; ，用 &lt;code&gt;echarts.init()&lt;/code&gt; 初始化一个 ECharts 实例:&lt;/p&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; myChart = echarts.init(&lt;span class=&quot;built_in&quot;&gt;document&lt;/span&gt;.getElementById(&lt;span class=&quot;string&quot;&gt;&#39;wrap&#39;&lt;/span&gt;));&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;指定图表配置和数据,具体见 &lt;a href=&quot;http://echarts.baidu.com/option.html#title&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;配置项手册&lt;/a&gt;：&lt;/p&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; option = &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;comment&quot;&gt;//......&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;通过 &lt;a href=&quot;http://echarts.baidu.com/api.html#echartsInstance.setOption&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;setOption&lt;/a&gt; 方法生成一个简单的柱状图，下面是完整代码。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;41&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;html&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;lang&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;en&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;meta&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;charset&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;UTF-8&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;title&lt;/span&gt;&amp;gt;&lt;/span&gt;demo1&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;title&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;id&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;wrap1&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;style&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;width: 100%;height: 400px;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;comment&quot;&gt;&amp;lt;!--step2：先为echarts准备有宽高的容器--&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;src&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;echarts.min.js&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;undefined&quot;&gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;&amp;lt;!--step1：引入 ECharts,src里面写你放ECharts的JS文件地址，可以是url--&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;type&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;text/javascript&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;javascript&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;comment&quot;&gt;//step3：基于准备好的dom，初始化echarts实例&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; myChart = echarts.init(&lt;span class=&quot;built_in&quot;&gt;document&lt;/span&gt;.getElementById(&lt;span class=&quot;string&quot;&gt;&#39;wrap1&#39;&lt;/span&gt;));&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;comment&quot;&gt;//step4：指定图表的配置项和数据&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; option = &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			title: &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;				text: &lt;span class=&quot;string&quot;&gt;&#39;开始学习ECharts&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			&amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			tooltip: &amp;#123;&amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			legend: &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;				data: [&lt;span class=&quot;string&quot;&gt;&#39;决定因素&#39;&lt;/span&gt;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			&amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			xAxis: &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;				data: [&lt;span class=&quot;string&quot;&gt;&quot;天赋&quot;&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&quot;努力&quot;&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&quot;兴趣&quot;&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&quot;交流&quot;&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&quot;心态&quot;&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&quot;好学&quot;&lt;/span&gt;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			&amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			yAxis: &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;				&lt;span class=&quot;comment&quot;&gt;// data: [&#39;点数&#39;]&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			&amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            backgroundColor: &lt;span class=&quot;string&quot;&gt;&#39;#91C7AE&#39;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			series: [&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;				name: &lt;span class=&quot;string&quot;&gt;&#39;决定因素&#39;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;				type: &lt;span class=&quot;string&quot;&gt;&#39;bar&#39;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;				data: [&lt;span class=&quot;number&quot;&gt;5&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;20&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;36&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;10&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;10&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;20&lt;/span&gt;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			&amp;#125;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&amp;#125;; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;comment&quot;&gt;//step5: 使用刚指定的配置项和数据显示图表。&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		myChart.setOption(option);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;入门-Demo-02&quot;&gt;&lt;a href=&quot;#入门-Demo-02&quot; class=&quot;headerlink&quot; title=&quot;入门 Demo 02&quot;&gt;&lt;/a&gt;入门 Demo 02&lt;/h3&gt;&lt;p&gt;&lt;div id=&quot;wrap2&quot; style=&quot;width: 100%;height: 400px;&quot;&gt;&lt;/div&gt;&lt;!--step2：先为echarts准备有宽高的容器--&gt;&lt;br&gt;&lt;!-- &lt;script src=&quot;echarts.min.js&quot;&gt;&lt;/script&gt; --&gt;&lt;/p&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+    var myChart = echarts.init(document.getElementById(&#39;wrap2&#39;));
+    myChart.setOption({
+        series : [
+            {
+                name: &#39;访问来源&#39;,
+                type: &#39;pie&#39;,
+                radius: &#39;55%&#39;,
+                roseType: &#39;angle&#39;,
+                data:[
+                    {value:235, name:&#39;视频广告&#39;},
+                    {value:274, name:&#39;联盟广告&#39;},
+                    {value:310, name:&#39;邮件营销&#39;},
+                    {value:335, name:&#39;直接访问&#39;},
+                    {value:400, name:&#39;搜索引擎&#39;}
+                ]
+            }
+        ]
+})
+&lt;/script&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;看看上面的demo，我们尝试画一个进化的饼图 —— 南丁格尔图&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;先画一个饼图：&lt;/p&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; myChart = echarts.init(&lt;span class=&quot;built_in&quot;&gt;document&lt;/span&gt;.getElementById(&lt;span class=&quot;string&quot;&gt;&#39;wrap2&#39;&lt;/span&gt;));&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;myChart.setOption(&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    series : [&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            name: &lt;span class=&quot;string&quot;&gt;&#39;访问来源&#39;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            type: &lt;span class=&quot;string&quot;&gt;&#39;pie&#39;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            radius: &lt;span class=&quot;string&quot;&gt;&#39;55%&#39;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            data:[&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                &amp;#123;value:&lt;span class=&quot;number&quot;&gt;400&lt;/span&gt;, name:&lt;span class=&quot;string&quot;&gt;&#39;搜索引擎&#39;&lt;/span&gt;&amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                &amp;#123;value:&lt;span class=&quot;number&quot;&gt;335&lt;/span&gt;, name:&lt;span class=&quot;string&quot;&gt;&#39;直接访问&#39;&lt;/span&gt;&amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                &amp;#123;value:&lt;span class=&quot;number&quot;&gt;310&lt;/span&gt;, name:&lt;span class=&quot;string&quot;&gt;&#39;邮件营销&#39;&lt;/span&gt;&amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                &amp;#123;value:&lt;span class=&quot;number&quot;&gt;274&lt;/span&gt;, name:&lt;span class=&quot;string&quot;&gt;&#39;联盟广告&#39;&lt;/span&gt;&amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                &amp;#123;value:&lt;span class=&quot;number&quot;&gt;235&lt;/span&gt;, name:&lt;span class=&quot;string&quot;&gt;&#39;视频广告&#39;&lt;/span&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            ]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    ]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;这里 &lt;code&gt;data&lt;/code&gt; 属性值不像入门教程里那样每一项都是单个数值，而是一个包含 &lt;code&gt;name&lt;/code&gt; 和 &lt;code&gt;value&lt;/code&gt; 属性的对象，ECharts 中的数据项都是既可以只设成数值，也可以设成一个包含有名称、该数据图形的样式配置、标签配置的对象，具体见 &lt;a href=&quot;http://echarts.baidu.com/option.html#series-pie.data&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;data&lt;/a&gt; 文档。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;ECharts 中的饼图也支持通过设置 &lt;a href=&quot;http://echarts.baidu.com/option.html#series-pie.roseType&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;roseType&lt;/a&gt; 显示成南丁格尔图。&lt;/p&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;roseType: &lt;span class=&quot;string&quot;&gt;&#39;angle&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;南丁格尔图会通过半径表示数据的大小。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;还不够漂亮？试试美化一下吧&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;添加阴影，使用到 &lt;a href=&quot;http://echarts.baidu.com/tutorial.html#series-pie.itemStyle&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;itemStyle&lt;/a&gt;:&lt;br&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;roseType: &lt;span class=&quot;string&quot;&gt;&#39;angle&#39;&lt;/span&gt;,&lt;span class=&quot;comment&quot;&gt;//饼图转换成南丁格尔图&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//添加阴影&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;itemStyle: &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    	normal: &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;// 阴影的大小&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        shadowBlur: &lt;span class=&quot;number&quot;&gt;200&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;// 阴影水平方向上的偏移&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        shadowOffsetX: &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;// 阴影垂直方向上的偏移&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        shadowOffsetY: &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;// 阴影颜色&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        shadowColor: &lt;span class=&quot;string&quot;&gt;&#39;rgba(0, 0, 0, 0.5)&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;div id=&quot;wrap3&quot; style=&quot;width: 100%;height: 400px;&quot;&gt;&lt;/div&gt;&lt;!--step2：先为echarts准备有宽高的容器--&gt;&lt;/p&gt;
+&lt;script src=&quot;echarts.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+    var myChart = echarts.init(document.getElementById(&#39;wrap3&#39;));
+    myChart.setOption({
+        series : [
+            {
+                name: &#39;访问来源&#39;,
+                type: &#39;pie&#39;,
+                radius: &#39;55%&#39;,
+                data:[
+                    {value:235, name:&#39;视频广告&#39;},
+                    {value:274, name:&#39;联盟广告&#39;},
+                    {value:310, name:&#39;邮件营销&#39;},
+                    {value:335, name:&#39;直接访问&#39;},
+                    {value:400, name:&#39;搜索引擎&#39;}
+                ],
+                roseType: &#39;angle&#39;,//饼图转换成南丁格尔图
+                //添加阴影
+                itemStyle: {
+                        normal: {
+                        // 阴影的大小
+                        shadowBlur: 200,
+                        // 阴影水平方向上的偏移
+                        shadowOffsetX: 0,
+                        // 阴影垂直方向上的偏移
+                        shadowOffsetY: 0,
+                        // 阴影颜色
+                        shadowColor: &#39;rgba(0, 0, 0, 0.5)&#39;
+                    }
+                }
+            }
+        ]
+})
+&lt;/script&gt;
+
+&lt;p&gt;&lt;code&gt;itemStyle&lt;/code&gt; 都会有 &lt;code&gt;normal&lt;/code&gt; 和 &lt;code&gt;emphasis&lt;/code&gt; 两个选项，&lt;code&gt;normal&lt;/code&gt; 选项是正常展示下的样式，&lt;code&gt;emphasis&lt;/code&gt; 是鼠标 &lt;code&gt;hover&lt;/code&gt; 时候的高亮样式。这个示例里是正常的样式下加阴影，但是可能更多的时候是 &lt;code&gt;hover&lt;/code&gt; 的时候通过阴影突出。&lt;/p&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;itemStyle: &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    emphasis: &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        shadowBlur: &lt;span class=&quot;number&quot;&gt;200&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        shadowColor: &lt;span class=&quot;string&quot;&gt;&#39;rgba(0, 0, 0, 0.5)&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;div id=&quot;wrap4&quot; style=&quot;width: 100%;height: 400px;&quot;&gt;&lt;/div&gt;&lt;!--step2：先为echarts准备有宽高的容器--&gt;&lt;/p&gt;
+&lt;script src=&quot;echarts.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+    var myChart = echarts.init(document.getElementById(&#39;wrap4&#39;));
+    myChart.setOption({
+        series : [
+            {
+                name: &#39;访问来源&#39;,
+                type: &#39;pie&#39;,
+                radius: &#39;55%&#39;,
+                data:[
+                    {value:235, name:&#39;视频广告&#39;},
+                    {value:274, name:&#39;联盟广告&#39;},
+                    {value:310, name:&#39;邮件营销&#39;},
+                    {value:335, name:&#39;直接访问&#39;},
+                    {value:400, name:&#39;搜索引擎&#39;}
+                ],
+                roseType: &#39;angle&#39;,//饼图转换成南丁格尔图
+                //添加阴影
+                itemStyle: {
+                    emphasis: {
+                        shadowBlur: 200,
+                        shadowColor: &#39;rgba(0, 0, 0, 0.5)&#39;
+                    }
+                }
+            }
+        ]
+})
+&lt;/script&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;设置深色背景和浅色标签&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;背景色是全局的，所以直接在 &lt;code&gt;option&lt;/code&gt; 下设置 &lt;a href=&quot;http://echarts.baidu.com/option.html#backgroundColor&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;backgroundColor&lt;/a&gt; :&lt;/p&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;setOption(&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    backgroundColor: &lt;span class=&quot;string&quot;&gt;&#39;#2c343c&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;文本的样式可以设置全局的 &lt;a href=&quot;http://echarts.baidu.com/option.html#textStyle&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;textStyle&lt;/a&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;setOption(&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    textStyle: &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        color: &lt;span class=&quot;string&quot;&gt;&#39;rgba(255, 255, 255, 0.3)&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;也可以每个系列分别设置，每个系列的文本设置在 &lt;a href=&quot;http://echarts.baidu.com/option.html#series-pie.label.normal.textStyle&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;label.normal.textStyle&lt;/a&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;label: &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    normal: &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        textStyle: &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            color: &lt;span class=&quot;string&quot;&gt;&#39;rgba(255, 255, 255, 0.3)&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;饼图的话还要将标签的视觉引导线的颜色设为浅色。&lt;/p&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;labelLine: &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    normal: &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        lineStyle: &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            color: &lt;span class=&quot;string&quot;&gt;&#39;rgba(255, 255, 255, 0.3)&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;div id=&quot;wrap5&quot; style=&quot;width: 100%;height: 400px;&quot;&gt;&lt;/div&gt;&lt;br&gt;&lt;!--step2：先为echarts准备有宽高的容器--&gt;&lt;/p&gt;
+&lt;script src=&quot;echarts.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+    var myChart = echarts.init(document.getElementById(&#39;wrap5&#39;));
+    myChart.setOption({
+        // // 背景色是全局的，所以直接在 option 下设置 backgroundColor
+        backgroundColor: &#39;#2c343c&#39;,
+        // // 文本的样式可以设置全局的 textStyle
+        // textStyle: {
+        //     color: &#39;rgba(255, 255, 255, 0.3)&#39;
+        // },//
+        series : [
+            {
+                name: &#39;访问来源&#39;,
+                type: &#39;pie&#39;,
+                radius: &#39;55%&#39;,
+                data:[
+                    {value:235, name:&#39;视频广告&#39;},
+                    {value:274, name:&#39;联盟广告&#39;},
+                    {value:310, name:&#39;邮件营销&#39;},
+                    {value:335, name:&#39;直接访问&#39;},
+                    {value:400, name:&#39;搜索引擎&#39;}
+                ],
+                roseType: &#39;angle&#39;,//饼图转换成南丁格尔图
+                // 添加阴影
+                itemStyle: {
+                        normal: {
+                        // 阴影的大小
+                        shadowBlur: 200,
+                        // 阴影水平方向上的偏移
+                        shadowOffsetX: 0,
+                        // 阴影垂直方向上的偏移
+                        shadowOffsetY: 0,
+                        // 阴影颜色
+                        shadowColor: &#39;rgba(0, 0, 0, 0.5)&#39;
+                    }
+                },    
+                // itemStyle: {
+                //     emphasis: {
+                //         shadowBlur: 200,
+                //         shadowColor: &#39;rgba(0, 0, 0, 0.5)&#39;
+                //     }
+                // }    
+
+
+                //每个系列分别设置文本样式，每个系列的文本设置在 label.normal.textStyle                            
+                label: {
+                    normal: {
+                        textStyle: {
+                            color: &#39;rgba(255, 255, 255, 0.3)&#39;
+                        }
+                    }
+                },    
+
+                //饼图的话还要将标签的视觉引导线的颜色设为浅色。
+                labelLine: {
+                    normal: {
+                        lineStyle: {
+                            color: &#39;rgba(255, 255, 255, 0.3)&#39;
+                        }
+                    }
+                }       
+            }
+        ]
+})
+&lt;/script&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;设置扇形的颜色&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;扇形的颜色也是在 itemStyle 中设置：&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;itemStyle: &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    normal: &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;// 设置扇形的颜色&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        color: &lt;span class=&quot;string&quot;&gt;&#39;#c23531&#39;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        shadowBlur: &lt;span class=&quot;number&quot;&gt;200&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        shadowColor: &lt;span class=&quot;string&quot;&gt;&#39;rgba(0, 0, 0, 0.5)&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;div id=&quot;wrap6&quot; style=&quot;width: 100%;height: 400px;&quot;&gt;&lt;/div&gt;&lt;br&gt;&lt;!--step2：先为echarts准备有宽高的容器--&gt;&lt;/p&gt;
+&lt;script src=&quot;echarts.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+    var myChart = echarts.init(document.getElementById(&#39;wrap6&#39;));
+    myChart.setOption({
+        // // 背景色是全局的，所以直接在 option 下设置 backgroundColor
+        backgroundColor: &#39;#2c343c&#39;,
+        // // 文本的样式可以设置全局的 textStyle
+        // textStyle: {
+        //     color: &#39;rgba(255, 255, 255, 0.3)&#39;
+        // },//
+        series : [
+            {
+                name: &#39;访问来源&#39;,
+                type: &#39;pie&#39;,
+                radius: &#39;55%&#39;,
+                data:[
+                    {value:235, name:&#39;视频广告&#39;},
+                    {value:274, name:&#39;联盟广告&#39;},
+                    {value:310, name:&#39;邮件营销&#39;},
+                    {value:335, name:&#39;直接访问&#39;},
+                    {value:400, name:&#39;搜索引擎&#39;}
+                ],
+                roseType: &#39;angle&#39;,//饼图转换成南丁格尔图
+                // 添加阴影
+                itemStyle: {
+                        normal: {
+                        // 阴影的大小
+                        shadowBlur: 200,
+                        // 阴影水平方向上的偏移
+                        shadowOffsetX: 0,
+                        // 阴影垂直方向上的偏移
+                        shadowOffsetY: 0,
+                        // 阴影颜色
+                        shadowColor: &#39;rgba(0, 0, 0, 0.5)&#39;,
+                        // 设置扇形的颜色
+                        color: &#39;#c23531&#39;,
+                        shadowBlur: 200,
+                        shadowColor: &#39;rgba(0, 0, 0, 0.5)&#39;                        
+                    }
+                },    
+                // itemStyle: {
+                //     emphasis: {
+                //         shadowBlur: 200,
+                //         shadowColor: &#39;rgba(0, 0, 0, 0.5)&#39;
+                //     }
+                // }    
+
+
+                //每个系列分别设置文本样式，每个系列的文本设置在 label.normal.textStyle                            
+                label: {
+                    normal: {
+                        textStyle: {
+                            color: &#39;rgba(255, 255, 255, 0.3)&#39;
+                        }
+                    }
+                },    
+
+                //饼图的话还要将标签的视觉引导线的颜色设为浅色。
+                labelLine: {
+                    normal: {
+                        lineStyle: {
+                            color: &#39;rgba(255, 255, 255, 0.3)&#39;
+                        }
+                    }
+                }       
+            }
+        ]
+})
+&lt;/script&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;ECharts 中每个扇形颜色的可以通过分别设置 &lt;code&gt;data&lt;/code&gt; 下的数据项实现。&lt;/p&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;data: [&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    value:&lt;span class=&quot;number&quot;&gt;400&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    name:&lt;span class=&quot;string&quot;&gt;&#39;搜索引擎&#39;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    itemStyle: &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        normal: &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            color: &lt;span class=&quot;string&quot;&gt;&#39;c23531&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;, ...]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;但是这次因为只有明暗度的变化，所以有一种更快捷的方式是通过 &lt;a href=&quot;http://echarts.baidu.com/tutorial.html#option.html#visualMap&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;visualMap&lt;/a&gt; 组件将数值的大小映射到明暗度。&lt;/p&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;visualMap: &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;// 不显示 visualMap 组件，只用于明暗度的映射&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    show: &lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;// 映射的最小值为 80&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    min: &lt;span class=&quot;number&quot;&gt;80&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;// 映射的最大值为 600&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    max: &lt;span class=&quot;number&quot;&gt;600&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    inRange: &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;// 明暗度的范围是 0 到 1&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        colorLightness: [&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;div id=&quot;wrap7&quot; style=&quot;width: 100%;height: 400px;&quot;&gt;&lt;/div&gt;&lt;br&gt;&lt;!--step2：先为echarts准备有宽高的容器--&gt;&lt;/p&gt;
+&lt;script src=&quot;echarts.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+    var myChart = echarts.init(document.getElementById(&#39;wrap7&#39;));
+    myChart.setOption({
+        // // 背景色是全局的，所以直接在 option 下设置 backgroundColor
+        backgroundColor: &#39;#2c343c&#39;,
+        // // 文本的样式可以设置全局的 textStyle
+        // textStyle: {
+        //     color: &#39;rgba(255, 255, 255, 0.3)&#39;
+        // },//
+
+        visualMap: {
+            // 不显示 visualMap 组件，只用于明暗度的映射
+            show: false,
+            // 映射的最小值为 80
+            min: 80,
+            // 映射的最大值为 600
+            max: 600,
+            inRange: {
+                // 明暗度的范围是 0 到 1
+                colorLightness: [0, 1]
+            }
+        },
+
+        series : [
+            {
+                name: &#39;访问来源&#39;,
+                type: &#39;pie&#39;,
+                radius: &#39;55%&#39;,
+                data:[
+                    {value:235, name:&#39;视频广告&#39;},
+                    {value:274, name:&#39;联盟广告&#39;},
+                    {value:310, name:&#39;邮件营销&#39;},
+                    {value:335, name:&#39;直接访问&#39;},
+                    {value:400, name:&#39;搜索引擎&#39;}
+                ],
+                roseType: &#39;angle&#39;,//饼图转换成南丁格尔图
+                // 添加阴影
+                itemStyle: {
+                        normal: {
+                        // 阴影的大小
+                        shadowBlur: 200,
+                        // 阴影水平方向上的偏移
+                        shadowOffsetX: 0,
+                        // 阴影垂直方向上的偏移
+                        shadowOffsetY: 0,
+                        // 阴影颜色
+                        shadowColor: &#39;rgba(0, 0, 0, 0.5)&#39;,
+                        // 设置扇形的颜色
+                        color: &#39;#c23531&#39;,
+                        shadowBlur: 200,
+                        shadowColor: &#39;rgba(0, 0, 0, 0.5)&#39;                        
+                    }
+                },    
+                // itemStyle: {
+                //     emphasis: {
+                //         shadowBlur: 200,
+                //         shadowColor: &#39;rgba(0, 0, 0, 0.5)&#39;
+                //     }
+                // }    
+
+
+                //每个系列分别设置文本样式，每个系列的文本设置在 label.normal.textStyle                            
+                label: {
+                    normal: {
+                        textStyle: {
+                            color: &#39;rgba(255, 255, 255, 0.3)&#39;
+                        }
+                    }
+                },    
+
+                //饼图的话还要将标签的视觉引导线的颜色设为浅色。
+                labelLine: {
+                    normal: {
+                        lineStyle: {
+                            color: &#39;rgba(255, 255, 255, 0.3)&#39;
+                        }
+                    }
+                }       
+            }
+        ]
+})
+&lt;/script&gt;
+
+
+
+
+
+
+&lt;hr&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;img src=&quot;http://7xrvo9.com1.z0.glb.clouddn.com/ECharts/example.png&quot; class=&quot;full-image&quot; alt=&quot;alt&quot; /&gt;
+&lt;blockquote class = &quot;blockquote-center&quot;&gt;ECharts，一个纯 Javascript 的图表库，可以流畅的运行在 PC 和移动设备上，兼容当前绝大部分浏览器（IE8/9/10/11，Chrome，Firefox，Safari等），底层依赖轻量级的 Canvas 类库 &lt;a href=&quot;https://github.com/ecomfe/zrender&quot;&gt;ZRender&lt;/a&gt;，提供直观，生动，可交互，可高度个性化定制的数据可视化图表。&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="数据可视化" scheme="http://licao404.com/categories/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/"/>
+    
+    
+      <category term="库" scheme="http://licao404.com/tags/%E5%BA%93/"/>
+    
+      <category term="图表库" scheme="http://licao404.com/tags/%E5%9B%BE%E8%A1%A8%E5%BA%93/"/>
+    
+      <category term="ECharts" scheme="http://licao404.com/tags/ECharts/"/>
+    
+      <category term="可视化" scheme="http://licao404.com/tags/%E5%8F%AF%E8%A7%86%E5%8C%96/"/>
     
   </entry>
   
