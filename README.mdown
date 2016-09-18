@@ -13,12 +13,11 @@
 ## 域名
 
  >- [licao404.com](http://licao404.com/)
- >- [licao404.coding.io](http://licao404.coding.io/)
 
 
 ## 搭建
 
->- 托管在 `GitHub` 和 `Coding` 上，国内访客建议优先访问  [licao404.coding.io](http://licao404.coding.io/)，速度更快！
+>- 托管在伟大的 `GitHub` 上，万分您的感谢无私;
 
 
 >- 使用快速、简洁且高效的博客框架[Hexo](https://hexo.io/zh-cn/)搭建，感谢他的作者——来自台湾的[Tommy Chen](https://github.com/tommy351)，可以造访这位大神的[博客](https://zespia.tw/)；
