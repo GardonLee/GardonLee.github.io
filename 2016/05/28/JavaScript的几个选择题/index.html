@@ -638,96 +638,96 @@
 <li>Answer should correspond to exact return value of entire expression/statement (or last line)</li>
 <li>“Error” in answer indicates that overall snippet results in a runtime error</li>
 </ul>
-<h2 id="Now-Begin"><a href="#Now-Begin" class="headerlink" title="Now Begin"></a>Now Begin</h2><h3 id="1"><a href="#1" class="headerlink" title="1"></a>1</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">typeof</span> <span class="built_in">arguments</span>;</span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure>
+<h2 id="Now-Begin"><a href="#Now-Begin" class="headerlink" title="Now Begin"></a>Now Begin</h2><h3 id="1"><a href="#1" class="headerlink" title="1"></a>1</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="keyword">return</span> <span class="keyword">typeof</span> <span class="built_in">arguments</span>;</div><div class="line">&#125;)();</div></pre></td></tr></table></figure>
 <ul>
 <li>“object”</li>
 <li>“array”</li>
 <li>“arguments”</li>
 <li>“undefined”</li>
 </ul>
-<h3 id="2"><a href="#2" class="headerlink" title="2"></a>2</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> f = <span class="function"><span class="keyword">function</span> <span class="title">g</span>(<span class="params"></span>)</span>&#123; <span class="keyword">return</span> <span class="number">23</span>; &#125;;</span><br><span class="line"><span class="keyword">typeof</span> g();</span><br></pre></td></tr></table></figure>
+<h3 id="2"><a href="#2" class="headerlink" title="2"></a>2</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> f = <span class="function"><span class="keyword">function</span> <span class="title">g</span>(<span class="params"></span>)</span>&#123; <span class="keyword">return</span> <span class="number">23</span>; &#125;;</div><div class="line"><span class="keyword">typeof</span> g();</div></pre></td></tr></table></figure>
 <ul>
 <li>“number”</li>
 <li>“undefined”</li>
 <li>“function”</li>
 <li>Error</li>
 </ul>
-<h3 id="3"><a href="#3" class="headerlink" title="3"></a>3</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">(<span class="function"><span class="keyword">function</span>(<span class="params">x</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">delete</span> x;</span><br><span class="line">  <span class="keyword">return</span> x;</span><br><span class="line">&#125;)(<span class="number">1</span>);</span><br></pre></td></tr></table></figure>
+<h3 id="3"><a href="#3" class="headerlink" title="3"></a>3</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">(<span class="function"><span class="keyword">function</span>(<span class="params">x</span>)</span>&#123;</div><div class="line">  <span class="keyword">delete</span> x;</div><div class="line">  <span class="keyword">return</span> x;</div><div class="line">&#125;)(<span class="number">1</span>);</div></pre></td></tr></table></figure>
 <ul>
 <li>1</li>
 <li>null</li>
 <li>undefined</li>
 <li>Error</li>
 </ul>
-<h3 id="4"><a href="#4" class="headerlink" title="4"></a>4</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> y = <span class="number">1</span>, x = y = <span class="keyword">typeof</span> x;</span><br><span class="line">x;</span><br></pre></td></tr></table></figure>
+<h3 id="4"><a href="#4" class="headerlink" title="4"></a>4</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> y = <span class="number">1</span>, x = y = <span class="keyword">typeof</span> x;</div><div class="line">x;</div></pre></td></tr></table></figure>
 <ul>
 <li>1</li>
 <li>“number”</li>
 <li>undefined</li>
 <li>“undefined”</li>
 </ul>
-<h3 id="5"><a href="#5" class="headerlink" title="5"></a>5</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(<span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params">f</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">typeof</span> f();</span><br><span class="line">&#125;)(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; <span class="keyword">return</span> <span class="number">1</span>; &#125;);</span><br></pre></td></tr></table></figure>
+<h3 id="5"><a href="#5" class="headerlink" title="5"></a>5</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">(<span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params">f</span>)</span>&#123;</div><div class="line">  <span class="keyword">return</span> <span class="keyword">typeof</span> f();</div><div class="line">&#125;)(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; <span class="keyword">return</span> <span class="number">1</span>; &#125;);</div></pre></td></tr></table></figure>
 <ul>
 <li>“number”</li>
 <li>“undefined”</li>
 <li>“function”</li>
 <li>Error</li>
 </ul>
-<h3 id="6"><a href="#6" class="headerlink" title="6"></a>6</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> foo = &#123;</span><br><span class="line">  bar: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123; <span class="keyword">return</span> <span class="keyword">this</span>.baz; &#125;,</span><br><span class="line">  baz: <span class="number">1</span></span><br><span class="line">&#125;;</span><br><span class="line">(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">typeof</span> <span class="built_in">arguments</span>[<span class="number">0</span>]();</span><br><span class="line">&#125;)(foo.bar);</span><br></pre></td></tr></table></figure>
+<h3 id="6"><a href="#6" class="headerlink" title="6"></a>6</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> foo = &#123;</div><div class="line">  <span class="attr">bar</span>: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123; <span class="keyword">return</span> <span class="keyword">this</span>.baz; &#125;,</div><div class="line">  <span class="attr">baz</span>: <span class="number">1</span></div><div class="line">&#125;;</div><div class="line">(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="keyword">return</span> <span class="keyword">typeof</span> <span class="built_in">arguments</span>[<span class="number">0</span>]();</div><div class="line">&#125;)(foo.bar);</div></pre></td></tr></table></figure>
 <ul>
 <li>“undefined”</li>
 <li>“object”</li>
 <li>“number”</li>
 <li>“function”</li>
 </ul>
-<h3 id="7"><a href="#7" class="headerlink" title="7"></a>7</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> foo = &#123;</span><br><span class="line">  bar: <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; <span class="keyword">return</span> <span class="keyword">this</span>.baz; &#125;,</span><br><span class="line">  baz: <span class="number">1</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">typeof</span> (f = foo.bar)();</span><br></pre></td></tr></table></figure>
+<h3 id="7"><a href="#7" class="headerlink" title="7"></a>7</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> foo = &#123;</div><div class="line">  <span class="attr">bar</span>: <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; <span class="keyword">return</span> <span class="keyword">this</span>.baz; &#125;,</div><div class="line">  <span class="attr">baz</span>: <span class="number">1</span></div><div class="line">&#125;</div><div class="line"><span class="keyword">typeof</span> (f = foo.bar)();</div></pre></td></tr></table></figure>
 <ul>
 <li>“undefined”</li>
 <li>“object”</li>
 <li>“number”</li>
 <li>“function”</li>
 </ul>
-<h3 id="8"><a href="#8" class="headerlink" title="8"></a>8</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> f = (<span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params"></span>)</span>&#123; <span class="keyword">return</span> <span class="string">"1"</span>; &#125;, <span class="function"><span class="keyword">function</span> <span class="title">g</span>(<span class="params"></span>)</span>&#123; <span class="keyword">return</span> <span class="number">2</span>; &#125;)();</span><br><span class="line"><span class="keyword">typeof</span> f;</span><br></pre></td></tr></table></figure>
+<h3 id="8"><a href="#8" class="headerlink" title="8"></a>8</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> f = (<span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params"></span>)</span>&#123; <span class="keyword">return</span> <span class="string">"1"</span>; &#125;, <span class="function"><span class="keyword">function</span> <span class="title">g</span>(<span class="params"></span>)</span>&#123; <span class="keyword">return</span> <span class="number">2</span>; &#125;)();</div><div class="line"><span class="keyword">typeof</span> f;</div></pre></td></tr></table></figure>
 <ul>
 <li>“string”</li>
 <li>“number”</li>
 <li>“function”</li>
 <li>“undefined”</li>
 </ul>
-<h3 id="9"><a href="#9" class="headerlink" title="9"></a>9</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> x = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">if</span> (<span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params"></span>)</span>&#123;&#125;) &#123;</span><br><span class="line">  x += <span class="keyword">typeof</span> f;</span><br><span class="line">&#125;</span><br><span class="line">x;</span><br></pre></td></tr></table></figure>
+<h3 id="9"><a href="#9" class="headerlink" title="9"></a>9</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> x = <span class="number">1</span>;</div><div class="line"><span class="keyword">if</span> (<span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params"></span>)</span>&#123;&#125;) &#123;</div><div class="line">  x += <span class="keyword">typeof</span> f;</div><div class="line">&#125;</div><div class="line">x;</div></pre></td></tr></table></figure>
 <ul>
 <li>1</li>
 <li>“1function”</li>
 <li>“1undefined”</li>
 <li>NaN</li>
 </ul>
-<h3 id="10"><a href="#10" class="headerlink" title="10"></a>10</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> x = [<span class="keyword">typeof</span> x, <span class="keyword">typeof</span> y][<span class="number">1</span>];</span><br><span class="line"><span class="keyword">typeof</span> <span class="keyword">typeof</span> x;</span><br></pre></td></tr></table></figure>
+<h3 id="10"><a href="#10" class="headerlink" title="10"></a>10</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> x = [<span class="keyword">typeof</span> x, <span class="keyword">typeof</span> y][<span class="number">1</span>];</div><div class="line"><span class="keyword">typeof</span> <span class="keyword">typeof</span> x;</div></pre></td></tr></table></figure>
 <ul>
 <li>“number”</li>
 <li>“string”</li>
 <li>“undefined”</li>
 <li>“object”</li>
 </ul>
-<h3 id="11"><a href="#11" class="headerlink" title="11"></a>11</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(<span class="function"><span class="keyword">function</span>(<span class="params">foo</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">typeof</span> foo.bar;</span><br><span class="line">&#125;)(&#123; foo: &#123; bar: <span class="number">1</span> &#125; &#125;);</span><br></pre></td></tr></table></figure>
+<h3 id="11"><a href="#11" class="headerlink" title="11"></a>11</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">(<span class="function"><span class="keyword">function</span>(<span class="params">foo</span>)</span>&#123;</div><div class="line">  <span class="keyword">return</span> <span class="keyword">typeof</span> foo.bar;</div><div class="line">&#125;)(&#123; <span class="attr">foo</span>: &#123; <span class="attr">bar</span>: <span class="number">1</span> &#125; &#125;);</div></pre></td></tr></table></figure>
 <ul>
 <li>“undefined”</li>
 <li>“object”</li>
 <li>“number”</li>
 <li>Error</li>
 </ul>
-<h3 id="12"><a href="#12" class="headerlink" title="12"></a>12</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">(<span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params"></span>)</span>&#123; <span class="keyword">return</span> <span class="number">1</span>; &#125;</span><br><span class="line">  <span class="keyword">return</span> f();</span><br><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params"></span>)</span>&#123; <span class="keyword">return</span> <span class="number">2</span>; &#125;</span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure>
+<h3 id="12"><a href="#12" class="headerlink" title="12"></a>12</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">(<span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params"></span>)</span>&#123; <span class="keyword">return</span> <span class="number">1</span>; &#125;</div><div class="line">  <span class="keyword">return</span> f();</div><div class="line">  <span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params"></span>)</span>&#123; <span class="keyword">return</span> <span class="number">2</span>; &#125;</div><div class="line">&#125;)();</div></pre></td></tr></table></figure>
 <ul>
 <li>1</li>
 <li>2</li>
 <li>Error (e.g. “Too much recursion”)</li>
 <li>undefined</li>
 </ul>
-<h3 id="13"><a href="#13" class="headerlink" title="13"></a>13</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params"></span>)</span>&#123; <span class="keyword">return</span> f; &#125;</span><br><span class="line"><span class="keyword">new</span> f() <span class="keyword">instanceof</span> f;</span><br></pre></td></tr></table></figure>
+<h3 id="13"><a href="#13" class="headerlink" title="13"></a>13</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params"></span>)</span>&#123; <span class="keyword">return</span> f; &#125;</div><div class="line"><span class="keyword">new</span> f() <span class="keyword">instanceof</span> f;</div></pre></td></tr></table></figure>
 <ul>
 <li>true</li>
 <li>false</li>
 </ul>
-<h3 id="14"><a href="#14" class="headerlink" title="14"></a>14</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">with</span> (<span class="function"><span class="keyword">function</span>(<span class="params">x, undefined</span>)</span>&#123;&#125;) length;</span><br></pre></td></tr></table></figure>
+<h3 id="14"><a href="#14" class="headerlink" title="14"></a>14</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">with</span> (<span class="function"><span class="keyword">function</span>(<span class="params">x, undefined</span>)</span>&#123;&#125;) length;</div></pre></td></tr></table></figure>
 <ul>
 <li>1</li>
 <li>2</li>

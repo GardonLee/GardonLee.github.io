@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+
     
   <url>
     <loc>http://licao404.com/2016/07/17/%E8%83%BD%E5%81%9A%E5%96%9C%E6%AC%A2%E5%81%9A%E7%9A%84-%E5%B0%B1%E5%BE%88%E5%A5%BD/</loc>
@@ -10,7 +11,7 @@
         <title>能做喜欢做的-就很好</title>
         <pubTime>2016-07-17T15:58:04.000Z</pubTime>
         
-        <tag>杂谈 </tag>
+        <tag>杂谈</tag>
          
          
            
@@ -30,7 +31,7 @@
         <title>CSS选择器</title>
         <pubTime>2016-02-25T05:14:52.000Z</pubTime>
         
-        <tag>CSS </tag>
+        <tag>CSS</tag>
          
          
            
@@ -53,7 +54,7 @@
         <title>CSS浏览器兼容</title>
         <pubTime>2016-03-01T05:39:11.000Z</pubTime>
         
-        <tag>CSS </tag>
+        <tag>CSS</tag>
          
          
            
@@ -76,7 +77,7 @@
         <title>CSS Sprite/background</title>
         <pubTime>2016-02-26T05:27:33.000Z</pubTime>
         
-        <tag>CSS </tag>
+        <tag>CSS</tag>
          
          
            
@@ -99,7 +100,7 @@
         <title>定位+浮动</title>
         <pubTime>2016-02-27T05:29:46.000Z</pubTime>
         
-        <tag>CSS </tag>
+        <tag>CSS</tag>
          
          
            
@@ -122,7 +123,7 @@
         <title>BFC</title>
         <pubTime>2016-02-28T05:32:34.000Z</pubTime>
         
-        <tag>CSS </tag>
+        <tag>CSS</tag>
          
          
            
@@ -145,7 +146,7 @@
         <title>圣杯布局+双飞翼布局</title>
         <pubTime>2016-02-29T05:36:54.000Z</pubTime>
         
-        <tag>CSS </tag>
+        <tag>CSS</tag>
          
          
            
@@ -168,7 +169,7 @@
         <title>DOM,事件</title>
         <pubTime>2016-04-03T05:13:41.000Z</pubTime>
         
-        <tag>JavaScript </tag>
+        <tag>JavaScript</tag>
          
          
            
@@ -191,11 +192,11 @@
         <title>AJAX-从入门到放弃</title>
         <pubTime>2016-04-11T16:47:32.000Z</pubTime>
         
-        <tag>JavaScript </tag>
+        <tag>JavaScript</tag>
          
-        <tag>AJAX </tag>
+        <tag>AJAX</tag>
          
-        <tag>前后端 </tag>
+        <tag>前后端</tag>
          
          
            
@@ -218,11 +219,11 @@
         <title>jQuery常用方法 & Ajax</title>
         <pubTime>2016-04-19T14:57:05.000Z</pubTime>
         
-        <tag>JavaScript </tag>
+        <tag>JavaScript</tag>
          
-        <tag>AJAX </tag>
+        <tag>AJAX</tag>
          
-        <tag>jQuery </tag>
+        <tag>jQuery</tag>
          
          
            
@@ -245,11 +246,11 @@
         <title>jQuery实现几种轮播</title>
         <pubTime>2016-04-24T02:34:23.000Z</pubTime>
         
-        <tag>JavaScript </tag>
+        <tag>JavaScript</tag>
          
-        <tag>jQuery </tag>
+        <tag>jQuery</tag>
          
-        <tag>效果 </tag>
+        <tag>效果</tag>
          
          
            
@@ -272,11 +273,11 @@
         <title>jQuery懒加载</title>
         <pubTime>2016-04-25T11:49:41.000Z</pubTime>
         
-        <tag>JavaScript </tag>
+        <tag>JavaScript</tag>
          
-        <tag>jQuery </tag>
+        <tag>jQuery</tag>
          
-        <tag>效果 </tag>
+        <tag>效果</tag>
          
          
            
@@ -299,11 +300,11 @@
         <title>瀑布流布局</title>
         <pubTime>2016-04-27T16:04:14.000Z</pubTime>
         
-        <tag>JavaScript </tag>
+        <tag>JavaScript</tag>
          
-        <tag>jQuery </tag>
+        <tag>jQuery</tag>
          
-        <tag>效果 </tag>
+        <tag>效果</tag>
          
          
            
@@ -326,9 +327,9 @@
         <title>OOP For JavaScript</title>
         <pubTime>2016-05-10T14:08:53.000Z</pubTime>
         
-        <tag>JavaScript </tag>
+        <tag>JavaScript</tag>
          
-        <tag>OOP </tag>
+        <tag>OOP</tag>
          
          
            
@@ -351,7 +352,7 @@
         <title>原型链后续之JavaScript的继承</title>
         <pubTime>2016-05-14T04:15:51.000Z</pubTime>
         
-        <tag>JavaScript </tag>
+        <tag>JavaScript</tag>
          
          
            
@@ -374,9 +375,9 @@
         <title>浅析几种设计模式</title>
         <pubTime>2016-06-24T14:43:36.000Z</pubTime>
         
-        <tag>JavaScript </tag>
+        <tag>JavaScript</tag>
          
-        <tag>设计模式 </tag>
+        <tag>设计模式</tag>
          
          
            
@@ -399,9 +400,9 @@
         <title>前端模块化之旅（三）：RequireJS模块化及r.js指南</title>
         <pubTime>2016-05-18T18:26:05.000Z</pubTime>
         
-        <tag>JavaScript </tag>
+        <tag>JavaScript</tag>
          
-        <tag>模块化 </tag>
+        <tag>模块化</tag>
          
          
            
@@ -424,7 +425,7 @@
         <title>JavaScript的几个选择题</title>
         <pubTime>2016-05-28T09:31:07.000Z</pubTime>
         
-        <tag>JavaScript </tag>
+        <tag>JavaScript</tag>
          
          
            
@@ -447,13 +448,13 @@
         <title>Why I Ditched Angular for React</title>
         <pubTime>2016-05-27T10:50:59.000Z</pubTime>
         
-        <tag>Angular </tag>
+        <tag>Angular</tag>
          
-        <tag>React </tag>
+        <tag>React</tag>
          
-        <tag>框架 </tag>
+        <tag>框架</tag>
          
-        <tag>杂谈 </tag>
+        <tag>杂谈</tag>
          
          
            
@@ -477,9 +478,9 @@
         <title>前端模块化之旅（二）：CommonJS、AMD和CMD</title>
         <pubTime>2016-05-18T03:36:24.000Z</pubTime>
         
-        <tag>JavaScript </tag>
+        <tag>JavaScript</tag>
          
-        <tag>模块化 </tag>
+        <tag>模块化</tag>
          
          
            
@@ -502,9 +503,9 @@
         <title>前端模块化之旅（一）：因何生它</title>
         <pubTime>2016-05-17T11:27:30.000Z</pubTime>
         
-        <tag>JavaScript </tag>
+        <tag>JavaScript</tag>
          
-        <tag>模块化 </tag>
+        <tag>模块化</tag>
          
          
            
@@ -530,13 +531,13 @@
         <title>了解 HTTP</title>
         <pubTime>2016-05-07T07:03:37.000Z</pubTime>
         
-        <tag>Web服务器 </tag>
+        <tag>Web服务器</tag>
          
-        <tag>前后端 </tag>
+        <tag>前后端</tag>
          
-        <tag>HTTP </tag>
+        <tag>HTTP</tag>
          
-        <tag>TCP/IP </tag>
+        <tag>TCP/IP</tag>
          
          
            
@@ -559,7 +560,7 @@
         <title>说清楚JavaScript的原型链</title>
         <pubTime>2016-05-12T02:15:34.000Z</pubTime>
         
-        <tag>JavaScript </tag>
+        <tag>JavaScript</tag>
          
          
            
@@ -582,11 +583,11 @@
         <title>【转】前端开发中的字符编码</title>
         <pubTime>2016-05-12T00:28:36.000Z</pubTime>
         
-        <tag>转载 </tag>
+        <tag>转载</tag>
          
-        <tag>干货 </tag>
+        <tag>干货</tag>
          
-        <tag>字符编码 </tag>
+        <tag>字符编码</tag>
          
          
            
@@ -609,17 +610,17 @@
         <title>从 URI 到页面呈现</title>
         <pubTime>2016-05-07T03:35:26.000Z</pubTime>
         
-        <tag>php </tag>
+        <tag>php</tag>
          
-        <tag>Web服务器 </tag>
+        <tag>Web服务器</tag>
          
-        <tag>前后端 </tag>
+        <tag>前后端</tag>
          
-        <tag>HTTP </tag>
+        <tag>HTTP</tag>
          
-        <tag>TCP/IP </tag>
+        <tag>TCP/IP</tag>
          
-        <tag>Apache </tag>
+        <tag>Apache</tag>
          
          
            
@@ -642,13 +643,13 @@
         <title>使用XAMPP搭建本地Apache服务器</title>
         <pubTime>2016-04-10T08:29:58.000Z</pubTime>
         
-        <tag>php </tag>
+        <tag>php</tag>
          
-        <tag>Web服务器 </tag>
+        <tag>Web服务器</tag>
          
-        <tag>前后端 </tag>
+        <tag>前后端</tag>
          
-        <tag>Apache </tag>
+        <tag>Apache</tag>
          
          
            
@@ -671,15 +672,15 @@
         <title>同源策略&跨域请求</title>
         <pubTime>2016-04-28T07:54:22.000Z</pubTime>
         
-        <tag>Web服务器 </tag>
+        <tag>Web服务器</tag>
          
-        <tag>浏览器 </tag>
+        <tag>浏览器</tag>
          
-        <tag>跨域 </tag>
+        <tag>跨域</tag>
          
-        <tag>CORS </tag>
+        <tag>CORS</tag>
          
-        <tag>JSONP </tag>
+        <tag>JSONP</tag>
          
          
            
@@ -705,7 +706,7 @@
         <title>关于 "this" 二三事</title>
         <pubTime>2016-05-04T11:30:55.000Z</pubTime>
         
-        <tag>JavaScript </tag>
+        <tag>JavaScript</tag>
          
          
            
@@ -728,9 +729,9 @@
         <title>为什么你应该（从现在开始就）写博客</title>
         <pubTime>2016-03-27T17:02:53.000Z</pubTime>
         
-        <tag>杂谈 </tag>
+        <tag>杂谈</tag>
          
-        <tag>心语 </tag>
+        <tag>心语</tag>
          
          
            
@@ -753,11 +754,11 @@
         <title>史上最全CSS学习资料大全</title>
         <pubTime>2016-04-03T16:15:45.000Z</pubTime>
         
-        <tag>CSS </tag>
+        <tag>CSS</tag>
          
-        <tag>转载 </tag>
+        <tag>转载</tag>
          
-        <tag>干货 </tag>
+        <tag>干货</tag>
          
          
            
@@ -780,13 +781,13 @@
         <title>学习 ECharts（一）：初窥</title>
         <pubTime>2016-04-18T16:12:50.000Z</pubTime>
         
-        <tag>库 </tag>
+        <tag>库</tag>
          
-        <tag>图表库 </tag>
+        <tag>图表库</tag>
          
-        <tag>ECharts </tag>
+        <tag>ECharts</tag>
          
-        <tag>可视化 </tag>
+        <tag>可视化</tag>
          
          
            
@@ -806,9 +807,9 @@
         <title>jQuery DOM & 事件</title>
         <pubTime>2016-04-16T01:51:23.000Z</pubTime>
         
-        <tag>JavaScript </tag>
+        <tag>JavaScript</tag>
          
-        <tag>jQuery </tag>
+        <tag>jQuery</tag>
          
          
            
@@ -831,7 +832,7 @@
         <title>RegExp类型</title>
         <pubTime>2016-03-31T02:02:14.000Z</pubTime>
         
-        <tag>JavaScript </tag>
+        <tag>JavaScript</tag>
          
          
            
@@ -854,7 +855,7 @@
         <title>理解JavaScript函数</title>
         <pubTime>2016-03-16T13:51:40.000Z</pubTime>
         
-        <tag>JavaScript </tag>
+        <tag>JavaScript</tag>
          
          
            
@@ -877,7 +878,7 @@
         <title>JavaScript基本语法要点</title>
         <pubTime>2016-03-16T02:56:36.000Z</pubTime>
         
-        <tag>JavaScript </tag>
+        <tag>JavaScript</tag>
          
          
            
@@ -900,7 +901,7 @@
         <title>Hexo常用命令收集</title>
         <pubTime>2016-03-19T09:39:36.000Z</pubTime>
         
-        <tag>Hexo </tag>
+        <tag>Hexo</tag>
          
          
            
@@ -920,7 +921,7 @@
         <title>Date类型/引用类型深拷贝</title>
         <pubTime>2016-03-26T12:05:19.000Z</pubTime>
         
-        <tag>JavaScript </tag>
+        <tag>JavaScript</tag>
          
          
            
@@ -943,7 +944,7 @@
         <title>自实现C语言字符串相关函数</title>
         <pubTime>2016-03-18T01:14:45.000Z</pubTime>
         
-        <tag>Linux_C </tag>
+        <tag>Linux_C</tag>
          
          
            
@@ -969,11 +970,11 @@
         <title>鲜花烂漫时</title>
         <pubTime>2016-03-19T16:00:08.000Z</pubTime>
         
-        <tag>杂谈 </tag>
+        <tag>杂谈</tag>
          
-        <tag>看看 </tag>
+        <tag>看看</tag>
          
-        <tag>随手拍 </tag>
+        <tag>随手拍</tag>
          
          
            
@@ -996,9 +997,9 @@
         <title>狠不趁早</title>
         <pubTime>2016-03-20T07:33:12.000Z</pubTime>
         
-        <tag>杂谈 </tag>
+        <tag>杂谈</tag>
          
-        <tag>心语 </tag>
+        <tag>心语</tag>
          
          
            
@@ -1018,7 +1019,7 @@
         <title>闭包/延时器</title>
         <pubTime>2016-03-28T15:33:27.000Z</pubTime>
         
-        <tag>JavaScript </tag>
+        <tag>JavaScript</tag>
          
          
            
@@ -1041,7 +1042,7 @@
         <title>数组/字符串/数学函数</title>
         <pubTime>2016-03-19T09:08:17.000Z</pubTime>
         
-        <tag>JavaScript </tag>
+        <tag>JavaScript</tag>
          
          
            
