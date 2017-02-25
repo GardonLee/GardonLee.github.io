@@ -4,6 +4,33 @@
 
     
   <url>
+    <loc>http://licao404.com/2017/01/14/%E4%B8%89%E4%BA%9A%E7%9C%8B%E6%B5%B7/</loc>
+    <lastmod>2017-02-25T18:17:26.680Z</lastmod>
+    <data>
+        <display>
+        <title>三亚看海</title>
+        <pubTime>2017-01-13T16:23:12.000Z</pubTime>
+        
+        <tag>杂谈</tag>
+         
+        <tag>看看</tag>
+         
+        <tag>随手拍</tag>
+         
+         
+           
+             
+              <breadCrumb title="随想" url="http://licao404.com/categories/%E9%9A%8F%E6%83%B3/"/>
+          
+             
+              <breadCrumb title="摄影" url="http://licao404.com/categories/%E9%9A%8F%E6%83%B3/%E6%91%84%E5%BD%B1/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://licao404.com/2016/07/17/%E8%83%BD%E5%81%9A%E5%96%9C%E6%AC%A2%E5%81%9A%E7%9A%84-%E5%B0%B1%E5%BE%88%E5%A5%BD/</loc>
     <lastmod>2016-08-02T15:45:27.102Z</lastmod>
     <data>
@@ -531,9 +558,9 @@
         <title>了解 HTTP</title>
         <pubTime>2016-05-07T07:03:37.000Z</pubTime>
         
-        <tag>Web服务器</tag>
-         
         <tag>前后端</tag>
+         
+        <tag>Web服务器</tag>
          
         <tag>HTTP</tag>
          
@@ -610,15 +637,15 @@
         <title>从 URI 到页面呈现</title>
         <pubTime>2016-05-07T03:35:26.000Z</pubTime>
         
-        <tag>php</tag>
+        <tag>前后端</tag>
          
         <tag>Web服务器</tag>
-         
-        <tag>前后端</tag>
          
         <tag>HTTP</tag>
          
         <tag>TCP/IP</tag>
+         
+        <tag>php</tag>
          
         <tag>Apache</tag>
          
@@ -643,11 +670,11 @@
         <title>使用XAMPP搭建本地Apache服务器</title>
         <pubTime>2016-04-10T08:29:58.000Z</pubTime>
         
-        <tag>php</tag>
+        <tag>前后端</tag>
          
         <tag>Web服务器</tag>
          
-        <tag>前后端</tag>
+        <tag>php</tag>
          
         <tag>Apache</tag>
          
