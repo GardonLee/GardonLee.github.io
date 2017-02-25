@@ -6,7 +6,7 @@
     <entry>
       <title><![CDATA[能做喜欢做的-就很好]]></title>
       <url>http://licao404.com/2016/07/17/%E8%83%BD%E5%81%9A%E5%96%9C%E6%AC%A2%E5%81%9A%E7%9A%84-%E5%B0%B1%E5%BE%88%E5%A5%BD/</url>
-      <content type="html"><![CDATA[<img src="http://7xrvo9.com1.z0.glb.clouddn.com/20160716/%E8%8D%B7%E8%8A%B1.jpg" class="full-image">
+      <content type="html"><![CDATA[<span itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject"><img itemprop="url image" src="http://7xrvo9.com1.z0.glb.clouddn.com/20160716/%E8%8D%B7%E8%8A%B1.jpg" class="full-image"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
 <blockquote class="blockquote-center">想来已然是好久没有更新过博客了。六月底匆忙结束了学校的事情，七月出头从南京赶赴杭州，开启一段全新的历程（蓄谋已久），其中的酸爽体验都让我差点忘了还有本站点，哭瞎-。- 不一样的感觉、不一样的环境、不一样的一群人，两个礼拜下来都有新的体验，技术也好，思考方式也罢，一切都还是入坑的开始…</blockquote>
 
 <a id="more"></a>
@@ -197,7 +197,7 @@
     <entry>
       <title><![CDATA[Why I Ditched Angular for React]]></title>
       <url>http://licao404.com/2016/05/27/Why-I-Ditched-Angular-for-React/</url>
-      <content type="html"><![CDATA[<img src="http://7xrvo9.com1.z0.glb.clouddn.com/20160527/post-bg-re-vs-ng2.jpg" class="full-image">
+      <content type="html"><![CDATA[<span itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject"><img itemprop="url image" src="http://7xrvo9.com1.z0.glb.clouddn.com/20160527/post-bg-re-vs-ng2.jpg" class="full-image"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
 <blockquote class="blockquote-center">A few years ago, when my code started to get cluttered with jQuery selectors and callbacks, AngularJS came to my rescue.<br><br>Angular helped me with the maintainability of my dev projects. It came with a lot of functionality out-of-the-box. It was tooled for building large-scale web apps, greatly facilitating rapid development in this genre of applications.</blockquote>
 
 <a id="more"></a>
@@ -297,7 +297,7 @@
     <entry>
       <title><![CDATA[前端模块化之旅（三）：RequireJS模块化及r.js指南]]></title>
       <url>http://licao404.com/2016/05/19/%E5%89%8D%E7%AB%AF%E6%A8%A1%E5%9D%97%E5%8C%96%E4%B9%8B%E6%97%85%EF%BC%88%E4%B8%89%EF%BC%89%EF%BC%9ARequireJS%E6%A8%A1%E5%9D%97%E5%8C%96%E5%8F%8Ar-js%E6%8C%87%E5%8D%97/</url>
-      <content type="html"><![CDATA[<img src="http://7xrvo9.com1.z0.glb.clouddn.com/20160519/%E5%89%8D%E7%AB%AF%E6%A8%A1%E5%9D%97%E5%8C%96%E4%B9%8B%E6%97%85%E4%B8%89.jpg" class="full-image">
+      <content type="html"><![CDATA[<span itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject"><img itemprop="url image" src="http://7xrvo9.com1.z0.glb.clouddn.com/20160519/%E5%89%8D%E7%AB%AF%E6%A8%A1%E5%9D%97%E5%8C%96%E4%B9%8B%E6%97%85%E4%B8%89.jpg" class="full-image"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
 <a id="more"></a>
 <p>在<code>html</code>中指定了 <code>RrequireJS</code> 第一次需要加载的模块，也就是通过 <code>data-main</code> 所指定，因此一般作为主模块：如下例中 <code>src/js/app/</code> 目录下的 <code>index.js</code> 文件</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- index.html --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">data-main</span>=<span class="string">"src/js/app/index"</span> <span class="attr">src</span>=<span class="string">"src/js/lib/require.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
@@ -327,7 +327,7 @@
     <entry>
       <title><![CDATA[前端模块化之旅（二）：CommonJS、AMD和CMD]]></title>
       <url>http://licao404.com/2016/05/18/%E5%89%8D%E7%AB%AF%E6%A8%A1%E5%9D%97%E5%8C%96%E4%B9%8B%E6%97%85-CommonJS%E3%80%81AMD%E5%92%8CCMD/</url>
-      <content type="html"><![CDATA[<img src="http://7xrvo9.com1.z0.glb.clouddn.com/20160518/%E5%89%8D%E7%AB%AF%E6%A8%A1%E5%9D%97%E5%8C%96%E4%B9%8B%E6%97%85%E4%BA%8C.jpg" class="full-image">
+      <content type="html"><![CDATA[<span itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject"><img itemprop="url image" src="http://7xrvo9.com1.z0.glb.clouddn.com/20160518/%E5%89%8D%E7%AB%AF%E6%A8%A1%E5%9D%97%E5%8C%96%E4%B9%8B%E6%97%85%E4%BA%8C.jpg" class="full-image"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
 <blockquote class="blockquote-center">继续前篇，各种模块化规范开始推出，其中比较突出的是服务器端的 CommonJS 规范,它是 Nood.JS 在实践中推出的，也是首先采用 JS 模块化概念的语言，跳出了浏览器；进而出现了浏览器环境的模块化方案 AMD和CMD。</blockquote>
 
 <a id="more"></a>
@@ -386,7 +386,7 @@
     <entry>
       <title><![CDATA[前端模块化之旅（一）：因何生它]]></title>
       <url>http://licao404.com/2016/05/17/%E5%89%8D%E7%AB%AF%E6%A8%A1%E5%9D%97%E5%8C%96%E4%B9%8B%E6%97%85-%E5%9B%A0%E4%BD%95%E7%94%9F%E5%AE%83/</url>
-      <content type="html"><![CDATA[<img src="http://7xrvo9.com1.z0.glb.clouddn.com/20160517/%E5%89%8D%E7%AB%AF%E6%A8%A1%E5%9D%97%E5%8C%96%E4%B9%8B%E6%97%85%E4%B8%80.jpg" class="full-image">
+      <content type="html"><![CDATA[<span itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject"><img itemprop="url image" src="http://7xrvo9.com1.z0.glb.clouddn.com/20160517/%E5%89%8D%E7%AB%AF%E6%A8%A1%E5%9D%97%E5%8C%96%E4%B9%8B%E6%97%85%E4%B8%80.jpg" class="full-image"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
 <blockquote class="blockquote-center">随着互联网的快速发展，人们不单单只是需要一个网页了，功能更复杂、交互更丰富的 WebAPP 成为开发者需要面对的日常工作内容。随之而来的是更加庞大与更加复杂的 JavaScript 代码，如此而来，仅仅依靠着我们之前面向对象的 JavaScript 进行代码封装已很难满足生产需求，特别是在团队协作的复杂项目中，JavaScript 模块化已成为一个迫切的需求。</blockquote>
 
 
@@ -537,7 +537,7 @@
     <entry>
       <title><![CDATA[【转】前端开发中的字符编码]]></title>
       <url>http://licao404.com/2016/05/12/%E3%80%90%E8%BD%AC%E3%80%91%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E4%B8%AD%E7%9A%84%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81/</url>
-      <content type="html"><![CDATA[<img src="http://7xrvo9.com1.z0.glb.clouddn.com/2016.0512/meiziCoder2.jpg" class="full-image" alt="alt">
+      <content type="html"><![CDATA[<span itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject"><img itemprop="url image" src="http://7xrvo9.com1.z0.glb.clouddn.com/2016.0512/meiziCoder2.jpg" class="full-image" alt="alt"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
 <blockquote class="blockquote-center">前端开发过程中会接触各种各样的编码，比较常见的主要是UTF－8和HTML实体编码，但是web前端的世界却不止这两种编码，而且编码的选择也会造成一定的问题，如前后端开发过程中不同编码的兼容、多字节编码可能会造成的XSS漏洞等。因此，本文旨在更好的全面了解涉及前端开发领域的字符编码，避免可能出现的交互和开发中的忽视的漏洞。</blockquote>
 
 <a id="more"></a>
@@ -1153,7 +1153,7 @@
     <entry>
       <title><![CDATA[jQuery实现几种轮播]]></title>
       <url>http://licao404.com/2016/04/24/jQuery%E5%AE%9E%E7%8E%B0%E5%87%A0%E7%A7%8D%E8%BD%AE%E6%92%AD/</url>
-      <content type="html"><![CDATA[<img src="http://7xrvo9.com1.z0.glb.clouddn.com/0424/%E8%BD%AE%E6%92%AD.gif" class="full-image" alt="alt">
+      <content type="html"><![CDATA[<span itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject"><img itemprop="url image" src="http://7xrvo9.com1.z0.glb.clouddn.com/0424/%E8%BD%AE%E6%92%AD.gif" class="full-image" alt="alt"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
 <a id="more"></a>
 <hr>
 <blockquote>
@@ -1377,7 +1377,7 @@
     <entry>
       <title><![CDATA[学习 ECharts（一）：初窥]]></title>
       <url>http://licao404.com/2016/04/19/%E5%AD%A6%E4%B9%A0-ECharts%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E5%88%9D%E7%AA%A5/</url>
-      <content type="html"><![CDATA[<img src="http://7xrvo9.com1.z0.glb.clouddn.com/ECharts/example.png" class="full-image" alt="alt">
+      <content type="html"><![CDATA[<span itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject"><img itemprop="url image" src="http://7xrvo9.com1.z0.glb.clouddn.com/ECharts/example.png" class="full-image" alt="alt"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
 <blockquote class="blockquote-center">ECharts，一个纯 Javascript 的图表库，可以流畅的运行在 PC 和移动设备上，兼容当前绝大部分浏览器（IE8/9/10/11，Chrome，Firefox，Safari等），底层依赖轻量级的 Canvas 类库 <a href="https://github.com/ecomfe/zrender" target="_blank" rel="external">ZRender</a>，提供直观，生动，可交互，可高度个性化定制的数据可视化图表。</blockquote>
 
 <a id="more"></a>
@@ -2021,7 +2021,7 @@
     <entry>
       <title><![CDATA[史上最全CSS学习资料大全]]></title>
       <url>http://licao404.com/2016/04/04/%E3%80%902016%E5%B9%B4%E7%89%B9%E5%88%AB%E7%A6%8F%E5%88%A9%E3%80%91%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%85%A8CSS%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99%E5%A4%A7%E5%85%A8/</url>
-      <content type="html"><![CDATA[<img src="http://img.imooc.com/568c7d4400013a4d19201080.jpg" class="full-image" alt="alt">
+      <content type="html"><![CDATA[<span itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject"><img itemprop="url image" src="http://img.imooc.com/568c7d4400013a4d19201080.jpg" class="full-image" alt="alt"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
 <blockquote>
 <p>本文转载自慕课网，原文<a href="http://www.imooc.com/article/3450" target="_blank" rel="external">戳此</a></p>
 </blockquote>
@@ -2420,7 +2420,7 @@
       <url>http://licao404.com/2016/03/20/%E7%8B%A0%E4%B8%8D%E8%B6%81%E6%97%A9/</url>
       <content type="html"><![CDATA[<p>人会下意识的去纵容自己的惰性，这惰性，不只于懒惰，也有沉迷！沉迷于本以为对的方向，懒得停下回头，丢了思考的能力，错过很多如花青春。</p>
 <hr>
-<img src="http://7xrvo9.com1.z0.glb.clouddn.com/0320%2F2015-09-27%2009.31.27%201.jpg" class="full-image" alt="alt">
+<span itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject"><img itemprop="url image" src="http://7xrvo9.com1.z0.glb.clouddn.com/0320%2F2015-09-27%2009.31.27%201.jpg" class="full-image" alt="alt"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
 <hr>
 <p>然而我们总会醒来，时间逼迫我们重新去思索，审视，谋划我们那所剩不多的“后青春”时代，不负当下，不负时光。</p>
 <hr>
