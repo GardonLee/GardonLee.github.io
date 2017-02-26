@@ -3,6 +3,7 @@
 
 
     
+    
   <url>
     <loc>http://licao404.com/2016/03/20/%E9%B2%9C%E8%8A%B1%E7%83%82%E6%BC%AB%E6%97%B6/</loc>
     <lastmod>2017-02-26T02:42:33.313Z</lastmod>
@@ -576,7 +577,6 @@
     
     
     
-    
   <url>
     <loc>http://licao404.com/2016/05/07/%E4%BA%86%E8%A7%A3-HTTP/</loc>
     <lastmod>2016-05-14T03:25:06.988Z</lastmod>
@@ -585,9 +585,9 @@
         <title>了解 HTTP</title>
         <pubTime>2016-05-07T07:03:37.000Z</pubTime>
         
-        <tag>前后端</tag>
-         
         <tag>Web服务器</tag>
+         
+        <tag>前后端</tag>
          
         <tag>HTTP</tag>
          
@@ -664,15 +664,15 @@
         <title>从 URI 到页面呈现</title>
         <pubTime>2016-05-07T03:35:26.000Z</pubTime>
         
-        <tag>前后端</tag>
+        <tag>php</tag>
          
         <tag>Web服务器</tag>
+         
+        <tag>前后端</tag>
          
         <tag>HTTP</tag>
          
         <tag>TCP/IP</tag>
-         
-        <tag>php</tag>
          
         <tag>Apache</tag>
          
@@ -697,11 +697,11 @@
         <title>使用XAMPP搭建本地Apache服务器</title>
         <pubTime>2016-04-10T08:29:58.000Z</pubTime>
         
-        <tag>前后端</tag>
+        <tag>php</tag>
          
         <tag>Web服务器</tag>
          
-        <tag>php</tag>
+        <tag>前后端</tag>
          
         <tag>Apache</tag>
          

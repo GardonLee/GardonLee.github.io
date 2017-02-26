@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://licao404.com/about/index.html</loc>
+    
+    <lastmod>2017-02-26T05:12:54.083Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://licao404.com/2016/03/20/%E9%B2%9C%E8%8A%B1%E7%83%82%E6%BC%AB%E6%97%B6/</loc>
     
     <lastmod>2017-02-26T02:42:33.313Z</lastmod>
@@ -180,13 +187,6 @@
     <loc>http://licao404.com/watch.json</loc>
     
     <lastmod>2016-05-15T07:06:19.615Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://licao404.com/about/index.html</loc>
-    
-    <lastmod>2016-05-15T02:01:22.168Z</lastmod>
     
   </url>
   
